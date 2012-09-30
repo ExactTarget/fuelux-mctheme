@@ -168,20 +168,20 @@
 
 .fuelux body {
   margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 18px;
   color: #333333;
   background-color: #ffffff;
 }
 
 .fuelux a {
-  color: #0088cc;
+  color: #2168a7;
   text-decoration: none;
 }
 
 .fuelux a:hover {
-  color: #005580;
+  color: #385b6b;
   text-decoration: underline;
 }
 
@@ -589,14 +589,14 @@
 }
 
 .fuelux p {
-  margin: 0 0 10px;
+  margin: 0 0 9px;
 }
 
 .fuelux .lead {
-  margin-bottom: 20px;
-  font-size: 21px;
+  margin-bottom: 18px;
+  font-size: 18px;
   font-weight: 200;
-  line-height: 30px;
+  line-height: 27px;
 }
 
 .fuelux small {
@@ -616,23 +616,23 @@
 }
 
 .fuelux .muted {
-  color: #999999;
+  color: #cccccc;
 }
 
 .fuelux .text-warning {
-  color: #c09853;
+  color: #333333;
 }
 
 .fuelux .text-error {
-  color: #b94a48;
+  color: #333333;
 }
 
 .fuelux .text-info {
-  color: #3a87ad;
+  color: #333333;
 }
 
 .fuelux .text-success {
-  color: #468847;
+  color: #333333;
 }
 
 .fuelux h1,
@@ -641,9 +641,9 @@
 .fuelux h4,
 .fuelux h5,
 .fuelux h6 {
-  margin: 10px 0;
+  margin: 9px 0;
   font-family: inherit;
-  font-weight: bold;
+  font-weight: normal;
   line-height: 1;
   color: inherit;
   text-rendering: optimizelegibility;
@@ -657,7 +657,7 @@
 .fuelux h6 small {
   font-weight: normal;
   line-height: 1;
-  color: #999999;
+  color: #cccccc;
 }
 
 .fuelux h1 {
@@ -707,15 +707,15 @@
 }
 
 .fuelux .page-header {
-  padding-bottom: 9px;
-  margin: 20px 0 30px;
-  border-bottom: 1px solid #eeeeee;
+  padding-bottom: 8px;
+  margin: 18px 0 27px;
+  border-bottom: 1px solid #dddddd;
 }
 
 .fuelux ul,
 .fuelux ol {
   padding: 0;
-  margin: 0 0 10px 25px;
+  margin: 0 0 9px 25px;
 }
 
 .fuelux ul ul,
@@ -726,7 +726,7 @@
 }
 
 .fuelux li {
-  line-height: 20px;
+  line-height: 18px;
 }
 
 .fuelux ul.unstyled,
@@ -736,12 +736,12 @@
 }
 
 .fuelux dl {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .fuelux dt,
 .fuelux dd {
-  line-height: 20px;
+  line-height: 18px;
 }
 
 .fuelux dt {
@@ -749,7 +749,7 @@
 }
 
 .fuelux dd {
-  margin-left: 10px;
+  margin-left: 9px;
 }
 
 .fuelux .dl-horizontal {
@@ -782,15 +782,15 @@
 }
 
 .fuelux hr {
-  margin: 20px 0;
+  margin: 18px 0;
   border: 0;
-  border-top: 1px solid #eeeeee;
+  border-top: 1px solid #dddddd;
   border-bottom: 1px solid #ffffff;
 }
 
 .fuelux abbr[title] {
   cursor: help;
-  border-bottom: 1px dotted #999999;
+  border-bottom: 1px dotted #cccccc;
 }
 
 .fuelux abbr.initialism {
@@ -800,21 +800,21 @@
 
 .fuelux blockquote {
   padding: 0 0 0 15px;
-  margin: 0 0 20px;
-  border-left: 5px solid #eeeeee;
+  margin: 0 0 18px;
+  border-left: 5px solid #dddddd;
 }
 
 .fuelux blockquote p {
   margin-bottom: 0;
   font-size: 16px;
   font-weight: 300;
-  line-height: 25px;
+  line-height: 22.5px;
 }
 
 .fuelux blockquote small {
   display: block;
-  line-height: 20px;
-  color: #999999;
+  line-height: 18px;
+  color: #cccccc;
 }
 
 .fuelux blockquote small:before {
@@ -825,7 +825,7 @@
   float: right;
   padding-right: 15px;
   padding-left: 0;
-  border-right: 5px solid #eeeeee;
+  border-right: 5px solid #dddddd;
   border-left: 0;
 }
 
@@ -851,17 +851,17 @@
 
 .fuelux address {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   font-style: normal;
-  line-height: 20px;
+  line-height: 18px;
 }
 
 .fuelux code,
 .fuelux pre {
   padding: 0 3px 2px;
   font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
-  font-size: 12px;
-  color: #333333;
+  font-size: 10px;
+  color: #666666;
   -webkit-border-radius: 3px;
      -moz-border-radius: 3px;
           border-radius: 3px;
@@ -876,10 +876,10 @@
 
 .fuelux pre {
   display: block;
-  padding: 9.5px;
-  margin: 0 0 10px;
-  font-size: 13px;
-  line-height: 20px;
+  padding: 8.5px;
+  margin: 0 0 9px;
+  font-size: 11px;
+  line-height: 18px;
   word-break: break-all;
   word-wrap: break-word;
   white-space: pre;
@@ -893,7 +893,7 @@
 }
 
 .fuelux pre.prettyprint {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .fuelux pre code {
@@ -909,7 +909,7 @@
 }
 
 .fuelux form {
-  margin: 0 0 20px;
+  margin: 0 0 18px;
 }
 
 .fuelux fieldset {
@@ -922,17 +922,17 @@
   display: block;
   width: 100%;
   padding: 0;
-  margin-bottom: 20px;
-  font-size: 21px;
-  line-height: 40px;
-  color: #333333;
+  margin-bottom: 18px;
+  font-size: 18px;
+  line-height: 36px;
+  color: #666666;
   border: 0;
   border-bottom: 1px solid #e5e5e5;
 }
 
 .fuelux legend small {
-  font-size: 15px;
-  color: #999999;
+  font-size: 13.5px;
+  color: #cccccc;
 }
 
 .fuelux label,
@@ -940,16 +940,16 @@
 .fuelux button,
 .fuelux select,
 .fuelux textarea {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: normal;
-  line-height: 20px;
+  line-height: 18px;
 }
 
 .fuelux input,
 .fuelux button,
 .fuelux select,
 .fuelux textarea {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .fuelux label {
@@ -975,12 +975,12 @@
 .fuelux input[type="color"],
 .fuelux .uneditable-input {
   display: inline-block;
-  height: 20px;
+  height: 18px;
   padding: 4px 6px;
   margin-bottom: 9px;
-  font-size: 14px;
-  line-height: 20px;
-  color: #555555;
+  font-size: 12px;
+  line-height: 18px;
+  color: #999999;
   -webkit-border-radius: 3px;
      -moz-border-radius: 3px;
           border-radius: 3px;
@@ -1013,7 +1013,7 @@
 .fuelux input[type="color"],
 .fuelux .uneditable-input {
   background-color: #ffffff;
-  border: 1px solid #cccccc;
+  border: 1px solid #bbbbbb;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
      -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
           box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -1082,7 +1082,7 @@
 .fuelux select {
   width: 220px;
   background-color: #ffffff;
-  border: 1px solid #cccccc;
+  border: 1px solid #bbbbbb;
 }
 
 .fuelux select[multiple],
@@ -1101,10 +1101,10 @@
 
 .fuelux .uneditable-input,
 .fuelux .uneditable-textarea {
-  color: #999999;
+  color: #cccccc;
   cursor: not-allowed;
   background-color: #fcfcfc;
-  border-color: #cccccc;
+  border-color: #bbbbbb;
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.025);
      -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.025);
           box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.025);
@@ -1122,17 +1122,17 @@
 
 .fuelux input:-moz-placeholder,
 .fuelux textarea:-moz-placeholder {
-  color: #999999;
+  color: #cccccc;
 }
 
 .fuelux input:-ms-input-placeholder,
 .fuelux textarea:-ms-input-placeholder {
-  color: #999999;
+  color: #cccccc;
 }
 
 .fuelux input::-webkit-input-placeholder,
 .fuelux textarea::-webkit-input-placeholder {
-  color: #999999;
+  color: #cccccc;
 }
 
 .fuelux .radio,
@@ -1322,7 +1322,7 @@ textarea.span1,
 .fuelux select[readonly],
 .fuelux textarea[readonly] {
   cursor: not-allowed;
-  background-color: #eeeeee;
+  background-color: #dddddd;
 }
 
 .fuelux input[type="radio"][disabled],
@@ -1335,7 +1335,7 @@ textarea.span1,
 .fuelux .control-group.warning > label,
 .fuelux .control-group.warning .help-block,
 .fuelux .control-group.warning .help-inline {
-  color: #c09853;
+  color: #333333;
 }
 
 .fuelux .control-group.warning .checkbox,
@@ -1343,13 +1343,13 @@ textarea.span1,
 .fuelux .control-group.warning input,
 .fuelux .control-group.warning select,
 .fuelux .control-group.warning textarea {
-  color: #c09853;
+  color: #333333;
 }
 
 .fuelux .control-group.warning input,
 .fuelux .control-group.warning select,
 .fuelux .control-group.warning textarea {
-  border-color: #c09853;
+  border-color: #333333;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
      -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
           box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -1358,23 +1358,23 @@ textarea.span1,
 .fuelux .control-group.warning input:focus,
 .fuelux .control-group.warning select:focus,
 .fuelux .control-group.warning textarea:focus {
-  border-color: #a47e3c;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #dbc59e;
-     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #dbc59e;
-          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #dbc59e;
+  border-color: #1a1a1a;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #666666;
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #666666;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #666666;
 }
 
 .fuelux .control-group.warning .input-prepend .add-on,
 .fuelux .control-group.warning .input-append .add-on {
-  color: #c09853;
-  background-color: #fcf8e3;
-  border-color: #c09853;
+  color: #333333;
+  background-color: #fff1e1;
+  border-color: #333333;
 }
 
 .fuelux .control-group.error > label,
 .fuelux .control-group.error .help-block,
 .fuelux .control-group.error .help-inline {
-  color: #b94a48;
+  color: #333333;
 }
 
 .fuelux .control-group.error .checkbox,
@@ -1382,13 +1382,13 @@ textarea.span1,
 .fuelux .control-group.error input,
 .fuelux .control-group.error select,
 .fuelux .control-group.error textarea {
-  color: #b94a48;
+  color: #333333;
 }
 
 .fuelux .control-group.error input,
 .fuelux .control-group.error select,
 .fuelux .control-group.error textarea {
-  border-color: #b94a48;
+  border-color: #333333;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
      -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
           box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -1397,23 +1397,23 @@ textarea.span1,
 .fuelux .control-group.error input:focus,
 .fuelux .control-group.error select:focus,
 .fuelux .control-group.error textarea:focus {
-  border-color: #953b39;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #d59392;
-     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #d59392;
-          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #d59392;
+  border-color: #1a1a1a;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #666666;
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #666666;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #666666;
 }
 
 .fuelux .control-group.error .input-prepend .add-on,
 .fuelux .control-group.error .input-append .add-on {
-  color: #b94a48;
-  background-color: #f2dede;
-  border-color: #b94a48;
+  color: #333333;
+  background-color: #fceced;
+  border-color: #333333;
 }
 
 .fuelux .control-group.success > label,
 .fuelux .control-group.success .help-block,
 .fuelux .control-group.success .help-inline {
-  color: #468847;
+  color: #333333;
 }
 
 .fuelux .control-group.success .checkbox,
@@ -1421,13 +1421,13 @@ textarea.span1,
 .fuelux .control-group.success input,
 .fuelux .control-group.success select,
 .fuelux .control-group.success textarea {
-  color: #468847;
+  color: #333333;
 }
 
 .fuelux .control-group.success input,
 .fuelux .control-group.success select,
 .fuelux .control-group.success textarea {
-  border-color: #468847;
+  border-color: #333333;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
      -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
           box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -1436,23 +1436,23 @@ textarea.span1,
 .fuelux .control-group.success input:focus,
 .fuelux .control-group.success select:focus,
 .fuelux .control-group.success textarea:focus {
-  border-color: #356635;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7aba7b;
-     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7aba7b;
-          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7aba7b;
+  border-color: #1a1a1a;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #666666;
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #666666;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #666666;
 }
 
 .fuelux .control-group.success .input-prepend .add-on,
 .fuelux .control-group.success .input-append .add-on {
-  color: #468847;
-  background-color: #dff0d8;
-  border-color: #468847;
+  color: #333333;
+  background-color: #e9fcde;
+  border-color: #333333;
 }
 
 .fuelux .control-group.info > label,
 .fuelux .control-group.info .help-block,
 .fuelux .control-group.info .help-inline {
-  color: #3a87ad;
+  color: #333333;
 }
 
 .fuelux .control-group.info .checkbox,
@@ -1460,13 +1460,13 @@ textarea.span1,
 .fuelux .control-group.info input,
 .fuelux .control-group.info select,
 .fuelux .control-group.info textarea {
-  color: #3a87ad;
+  color: #333333;
 }
 
 .fuelux .control-group.info input,
 .fuelux .control-group.info select,
 .fuelux .control-group.info textarea {
-  border-color: #3a87ad;
+  border-color: #333333;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
      -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
           box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -1475,17 +1475,17 @@ textarea.span1,
 .fuelux .control-group.info input:focus,
 .fuelux .control-group.info select:focus,
 .fuelux .control-group.info textarea:focus {
-  border-color: #2d6987;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7ab5d3;
-     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7ab5d3;
-          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7ab5d3;
+  border-color: #1a1a1a;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #666666;
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #666666;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #666666;
 }
 
 .fuelux .control-group.info .input-prepend .add-on,
 .fuelux .control-group.info .input-append .add-on {
-  color: #3a87ad;
-  background-color: #d9edf7;
-  border-color: #3a87ad;
+  color: #333333;
+  background-color: #e7f3fe;
+  border-color: #333333;
 }
 
 .fuelux input:focus:required:invalid,
@@ -1505,9 +1505,9 @@ textarea.span1,
 }
 
 .fuelux .form-actions {
-  padding: 19px 20px 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  padding: 17px 20px 18px;
+  margin-top: 18px;
+  margin-bottom: 18px;
   background-color: #f5f5f5;
   border-top: 1px solid #e5e5e5;
   *zoom: 1;
@@ -1531,7 +1531,7 @@ textarea.span1,
 
 .fuelux .help-block {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 9px;
 }
 
 .fuelux .help-inline {
@@ -1558,7 +1558,7 @@ textarea.span1,
   position: relative;
   margin-bottom: 0;
   *margin-left: 0;
-  font-size: 14px;
+  font-size: 12px;
   vertical-align: top;
   -webkit-border-radius: 0 3px 3px 0;
      -moz-border-radius: 0 3px 3px 0;
@@ -1578,15 +1578,15 @@ textarea.span1,
 .fuelux .input-prepend .add-on {
   display: inline-block;
   width: auto;
-  height: 20px;
+  height: 18px;
   min-width: 16px;
   padding: 4px 5px;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: normal;
-  line-height: 20px;
+  line-height: 18px;
   text-align: center;
   text-shadow: 0 1px 0 #ffffff;
-  background-color: #eeeeee;
+  background-color: #dddddd;
   border: 1px solid #ccc;
 }
 
@@ -1602,8 +1602,8 @@ textarea.span1,
 
 .fuelux .input-append .active,
 .fuelux .input-prepend .active {
-  background-color: #a9dba9;
-  border-color: #46a546;
+  background-color: #a4e189;
+  border-color: #51a62b;
 }
 
 .fuelux .input-prepend .add-on,
@@ -1773,16 +1773,16 @@ textarea.span1,
 }
 
 .fuelux .control-group {
-  margin-bottom: 10px;
+  margin-bottom: 9px;
 }
 
 .fuelux legend + .control-group {
-  margin-top: 20px;
+  margin-top: 18px;
   -webkit-margin-top-collapse: separate;
 }
 
 .fuelux .form-horizontal .control-group {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   *zoom: 1;
 }
 
@@ -1822,7 +1822,7 @@ textarea.span1,
 .fuelux .form-horizontal input + .help-block,
 .fuelux .form-horizontal select + .help-block,
 .fuelux .form-horizontal textarea + .help-block {
-  margin-top: 10px;
+  margin-top: 9px;
 }
 
 .fuelux .form-horizontal .form-actions {
@@ -1831,23 +1831,23 @@ textarea.span1,
 
 .fuelux table {
   max-width: 100%;
-  background-color: transparent;
+  background-color: #ffffff;
   border-collapse: collapse;
   border-spacing: 0;
 }
 
 .fuelux .table {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .fuelux .table th,
 .fuelux .table td {
   padding: 8px;
-  line-height: 20px;
+  line-height: 18px;
   text-align: left;
   vertical-align: top;
-  border-top: 1px solid #dddddd;
+  border-top: 1px solid #f0f2f3;
 }
 
 .fuelux .table th {
@@ -1868,7 +1868,7 @@ textarea.span1,
 }
 
 .fuelux .table tbody + tbody {
-  border-top: 2px solid #dddddd;
+  border-top: 2px solid #f0f2f3;
 }
 
 .fuelux .table-condensed th,
@@ -1877,7 +1877,7 @@ textarea.span1,
 }
 
 .fuelux .table-bordered {
-  border: 1px solid #dddddd;
+  border: 1px solid #f0f2f3;
   border-collapse: separate;
   *border-collapse: collapse;
   border-left: 0;
@@ -1888,7 +1888,7 @@ textarea.span1,
 
 .fuelux .table-bordered th,
 .fuelux .table-bordered td {
-  border-left: 1px solid #dddddd;
+  border-left: 1px solid #f0f2f3;
 }
 
 .fuelux .table-bordered caption + thead tr:first-child th,
@@ -1956,12 +1956,12 @@ textarea.span1,
 
 .fuelux .table-striped tbody tr:nth-child(odd) td,
 .fuelux .table-striped tbody tr:nth-child(odd) th {
-  background-color: #f9f9f9;
+  background-color: #ebf6fb;
 }
 
 .fuelux .table-hover tbody tr:hover td,
 .fuelux .table-hover tbody tr:hover th {
-  background-color: #f5f5f5;
+  background-color: #e4eef2;
 }
 
 .fuelux table [class*=span],
@@ -2116,35 +2116,35 @@ textarea.span1,
 }
 
 .fuelux .table tbody tr.success td {
-  background-color: #dff0d8;
+  background-color: #e9fcde;
 }
 
 .fuelux .table tbody tr.error td {
-  background-color: #f2dede;
+  background-color: #fceced;
 }
 
 .fuelux .table tbody tr.warning td {
-  background-color: #fcf8e3;
+  background-color: #fff1e1;
 }
 
 .fuelux .table tbody tr.info td {
-  background-color: #d9edf7;
+  background-color: #e7f3fe;
 }
 
 .fuelux .table-hover tbody tr.success:hover td {
-  background-color: #d0e9c6;
+  background-color: #d9fac7;
 }
 
 .fuelux .table-hover tbody tr.error:hover td {
-  background-color: #ebcccc;
+  background-color: #f9d6d8;
 }
 
 .fuelux .table-hover tbody tr.warning:hover td {
-  background-color: #faf2cc;
+  background-color: #ffe5c7;
 }
 
 .fuelux .table-hover tbody tr.info:hover td {
-  background-color: #c4e3f3;
+  background-color: #cfe7fd;
 }
 
 .fuelux [class^="icon-"],
@@ -2782,7 +2782,7 @@ textarea.span1,
   list-style: none;
   background-color: #ffffff;
   border: 1px solid #ccc;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid #bbbbbb;
   *border-right-width: 2px;
   *border-bottom-width: 2px;
   -webkit-border-radius: 6px;
@@ -2804,7 +2804,7 @@ textarea.span1,
 .fuelux .dropdown-menu .divider {
   *width: 100%;
   height: 1px;
-  margin: 9px 1px;
+  margin: 8px 1px;
   *margin: -5px 0 5px;
   overflow: hidden;
   background-color: #e5e5e5;
@@ -2816,46 +2816,46 @@ textarea.span1,
   padding: 3px 20px;
   clear: both;
   font-weight: normal;
-  line-height: 20px;
-  color: #333333;
+  line-height: 18px;
+  color: #666666;
   white-space: nowrap;
 }
 
 .fuelux .dropdown-menu li > a:hover,
 .fuelux .dropdown-menu li > a:focus,
 .fuelux .dropdown-submenu:hover > a {
-  color: #ffffff;
+  color: #385b6b;
   text-decoration: none;
-  background-color: #0088cc;
-  background-color: #0081c2;
-  background-image: -moz-linear-gradient(top, #0088cc, #0077b3);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0077b3));
-  background-image: -webkit-linear-gradient(top, #0088cc, #0077b3);
-  background-image: -o-linear-gradient(top, #0088cc, #0077b3);
-  background-image: linear-gradient(to bottom, #0088cc, #0077b3);
+  background-color: #b9dff1;
+  background-color: #b1dbef;
+  background-image: -moz-linear-gradient(top, #b9dff1, #a4d5ed);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#b9dff1), to(#a4d5ed));
+  background-image: -webkit-linear-gradient(top, #b9dff1, #a4d5ed);
+  background-image: -o-linear-gradient(top, #b9dff1, #a4d5ed);
+  background-image: linear-gradient(to bottom, #b9dff1, #a4d5ed);
   background-repeat: repeat-x;
-  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0077b3', GradientType=0);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffb9dff1', endColorstr='#ffa4d5ed', GradientType=0);
 }
 
 .fuelux .dropdown-menu .active > a,
 .fuelux .dropdown-menu .active > a:hover {
-  color: #ffffff;
+  color: #385b6b;
   text-decoration: none;
-  background-color: #0088cc;
-  background-color: #0081c2;
-  background-image: linear-gradient(to bottom, #0088cc, #0077b3);
-  background-image: -moz-linear-gradient(top, #0088cc, #0077b3);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0077b3));
-  background-image: -webkit-linear-gradient(top, #0088cc, #0077b3);
-  background-image: -o-linear-gradient(top, #0088cc, #0077b3);
+  background-color: #b9dff1;
+  background-color: #b1dbef;
+  background-image: linear-gradient(to bottom, #b9dff1, #a4d5ed);
+  background-image: -moz-linear-gradient(top, #b9dff1, #a4d5ed);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#b9dff1), to(#a4d5ed));
+  background-image: -webkit-linear-gradient(top, #b9dff1, #a4d5ed);
+  background-image: -o-linear-gradient(top, #b9dff1, #a4d5ed);
   background-repeat: repeat-x;
   outline: 0;
-  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0077b3', GradientType=0);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffb9dff1', endColorstr='#ffa4d5ed', GradientType=0);
 }
 
 .fuelux .dropdown-menu .disabled > a,
 .fuelux .dropdown-menu .disabled > a:hover {
-  color: #999999;
+  color: #cccccc;
 }
 
 .fuelux .dropdown-menu .disabled > a:hover {
@@ -2924,7 +2924,7 @@ textarea.span1,
 }
 
 .fuelux .dropdown-submenu:hover > a:after {
-  border-left-color: #ffffff;
+  border-left-color: #385b6b;
 }
 
 .fuelux .dropdown .dropdown-menu .nav-header {
@@ -3002,7 +3002,7 @@ textarea.span1,
   float: right;
   font-size: 20px;
   font-weight: bold;
-  line-height: 20px;
+  line-height: 18px;
   color: #000000;
   text-shadow: 0 1px 0 #ffffff;
   opacity: 0.2;
@@ -3031,31 +3031,31 @@ textarea.span1,
   padding: 4px 14px;
   margin-bottom: 0;
   *margin-left: .3em;
-  font-size: 14px;
-  line-height: 20px;
-  *line-height: 20px;
-  color: #333333;
+  font-size: 12px;
+  line-height: 18px;
+  *line-height: 18px;
+  color: #666666;
   text-align: center;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
   vertical-align: middle;
   cursor: pointer;
-  background-color: #f5f5f5;
-  *background-color: #e6e6e6;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
-  background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
-  background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
-  background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
-  background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+  background-color: #f0f5f8;
+  *background-color: #dae5ed;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#dae5ed));
+  background-image: -webkit-linear-gradient(top, #ffffff, #dae5ed);
+  background-image: -o-linear-gradient(top, #ffffff, #dae5ed);
+  background-image: linear-gradient(to bottom, #ffffff, #dae5ed);
+  background-image: -moz-linear-gradient(top, #ffffff, #dae5ed);
   background-repeat: repeat-x;
-  border: 1px solid #bbbbbb;
+  border: 1px solid #b5c6d2;
   *border: 0;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  border-color: #e6e6e6 #e6e6e6 #bfbfbf;
-  border-bottom-color: #a2a2a2;
+  border-color: #dae5ed #dae5ed #a7c1d4;
+  border-bottom-color: #95aebf;
   -webkit-border-radius: 4px;
      -moz-border-radius: 4px;
           border-radius: 4px;
-  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffdae5ed', GradientType=0);
   filter: progid:dximagetransform.microsoft.gradient(enabled=false);
   *zoom: 1;
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
@@ -3068,14 +3068,14 @@ textarea.span1,
 .fuelux .btn.active,
 .fuelux .btn.disabled,
 .fuelux .btn[disabled] {
-  color: #333333;
-  background-color: #e6e6e6;
-  *background-color: #d9d9d9;
+  color: #666666;
+  background-color: #dae5ed;
+  *background-color: #c9d9e5;
 }
 
 .fuelux .btn:active,
 .fuelux .btn.active {
-  background-color: #cccccc \9;
+  background-color: #b8cddc \9;
 }
 
 .fuelux .btn:first-child {
@@ -3083,7 +3083,7 @@ textarea.span1,
 }
 
 .fuelux .btn:hover {
-  color: #333333;
+  color: #666666;
   text-decoration: none;
   background-color: #e6e6e6;
   *background-color: #d9d9d9;
@@ -3127,7 +3127,7 @@ textarea.span1,
 
 .fuelux .btn-large {
   padding: 9px 14px;
-  font-size: 16px;
+  font-size: 14px;
   line-height: normal;
   -webkit-border-radius: 5px;
      -moz-border-radius: 5px;
@@ -3140,8 +3140,8 @@ textarea.span1,
 
 .fuelux .btn-small {
   padding: 3px 9px;
-  font-size: 12px;
-  line-height: 18px;
+  font-size: 10px;
+  line-height: 16px;
 }
 
 .fuelux .btn-small [class^="icon-"] {
@@ -3150,8 +3150,8 @@ textarea.span1,
 
 .fuelux .btn-mini {
   padding: 2px 6px;
-  font-size: 11px;
-  line-height: 17px;
+  font-size: 9px;
+  line-height: 15px;
 }
 
 .fuelux .btn-block {
@@ -3191,17 +3191,17 @@ textarea.span1,
 .fuelux .btn-primary {
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #006dcc;
-  *background-color: #0044cc;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0044cc));
-  background-image: -webkit-linear-gradient(top, #0088cc, #0044cc);
-  background-image: -o-linear-gradient(top, #0088cc, #0044cc);
-  background-image: linear-gradient(to bottom, #0088cc, #0044cc);
-  background-image: -moz-linear-gradient(top, #0088cc, #0044cc);
+  background-color: #6ba6da;
+  *background-color: #4e8abe;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#7fb9ec), to(#4e8abe));
+  background-image: -webkit-linear-gradient(top, #7fb9ec, #4e8abe);
+  background-image: -o-linear-gradient(top, #7fb9ec, #4e8abe);
+  background-image: linear-gradient(to bottom, #7fb9ec, #4e8abe);
+  background-image: -moz-linear-gradient(top, #7fb9ec, #4e8abe);
   background-repeat: repeat-x;
-  border-color: #0044cc #0044cc #002a80;
+  border-color: #4e8abe #4e8abe #33638c;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0044cc', GradientType=0);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ff7fb9ec', endColorstr='#ff4e8abe', GradientType=0);
   filter: progid:dximagetransform.microsoft.gradient(enabled=false);
 }
 
@@ -3211,29 +3211,29 @@ textarea.span1,
 .fuelux .btn-primary.disabled,
 .fuelux .btn-primary[disabled] {
   color: #ffffff;
-  background-color: #0044cc;
-  *background-color: #003bb3;
+  background-color: #4e8abe;
+  *background-color: #417db1;
 }
 
 .fuelux .btn-primary:active,
 .fuelux .btn-primary.active {
-  background-color: #003399 \9;
+  background-color: #3a709f \9;
 }
 
 .fuelux .btn-warning {
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #faa732;
-  *background-color: #f89406;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fbb450), to(#f89406));
-  background-image: -webkit-linear-gradient(top, #fbb450, #f89406);
-  background-image: -o-linear-gradient(top, #fbb450, #f89406);
-  background-image: linear-gradient(to bottom, #fbb450, #f89406);
-  background-image: -moz-linear-gradient(top, #fbb450, #f89406);
+  background-color: #fca144;
+  *background-color: #f7841d;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffb55e), to(#f7841d));
+  background-image: -webkit-linear-gradient(top, #ffb55e, #f7841d);
+  background-image: -o-linear-gradient(top, #ffb55e, #f7841d);
+  background-image: linear-gradient(to bottom, #ffb55e, #f7841d);
+  background-image: -moz-linear-gradient(top, #ffb55e, #f7841d);
   background-repeat: repeat-x;
-  border-color: #f89406 #f89406 #ad6704;
+  border-color: #f7841d #f7841d #c15f07;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#fffbb450', endColorstr='#fff89406', GradientType=0);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffffb55e', endColorstr='#fff7841d', GradientType=0);
   filter: progid:dximagetransform.microsoft.gradient(enabled=false);
 }
 
@@ -3243,29 +3243,29 @@ textarea.span1,
 .fuelux .btn-warning.disabled,
 .fuelux .btn-warning[disabled] {
   color: #ffffff;
-  background-color: #f89406;
-  *background-color: #df8505;
+  background-color: #f7841d;
+  *background-color: #f27709;
 }
 
 .fuelux .btn-warning:active,
 .fuelux .btn-warning.active {
-  background-color: #c67605 \9;
+  background-color: #d96b08 \9;
 }
 
 .fuelux .btn-danger {
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #da4f49;
-  *background-color: #bd362f;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ee5f5b), to(#bd362f));
-  background-image: -webkit-linear-gradient(top, #ee5f5b, #bd362f);
-  background-image: -o-linear-gradient(top, #ee5f5b, #bd362f);
-  background-image: linear-gradient(to bottom, #ee5f5b, #bd362f);
-  background-image: -moz-linear-gradient(top, #ee5f5b, #bd362f);
+  background-color: #eb5858;
+  *background-color: #e64141;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ee6767), to(#e64141));
+  background-image: -webkit-linear-gradient(top, #ee6767, #e64141);
+  background-image: -o-linear-gradient(top, #ee6767, #e64141);
+  background-image: linear-gradient(to bottom, #ee6767, #e64141);
+  background-image: -moz-linear-gradient(top, #ee6767, #e64141);
   background-repeat: repeat-x;
-  border-color: #bd362f #bd362f #802420;
+  border-color: #e64141 #e64141 #c11919;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffee5f5b', endColorstr='#ffbd362f', GradientType=0);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffee6767', endColorstr='#ffe64141', GradientType=0);
   filter: progid:dximagetransform.microsoft.gradient(enabled=false);
 }
 
@@ -3275,29 +3275,29 @@ textarea.span1,
 .fuelux .btn-danger.disabled,
 .fuelux .btn-danger[disabled] {
   color: #ffffff;
-  background-color: #bd362f;
-  *background-color: #a9302a;
+  background-color: #e64141;
+  *background-color: #e32a2a;
 }
 
 .fuelux .btn-danger:active,
 .fuelux .btn-danger.active {
-  background-color: #942a25 \9;
+  background-color: #d81c1c \9;
 }
 
 .fuelux .btn-success {
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #5bb75b;
-  *background-color: #51a351;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#62c462), to(#51a351));
-  background-image: -webkit-linear-gradient(top, #62c462, #51a351);
-  background-image: -o-linear-gradient(top, #62c462, #51a351);
-  background-image: linear-gradient(to bottom, #62c462, #51a351);
-  background-image: -moz-linear-gradient(top, #62c462, #51a351);
+  background-color: #74bf53;
+  *background-color: #51a62b;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#8bd06d), to(#51a62b));
+  background-image: -webkit-linear-gradient(top, #8bd06d, #51a62b);
+  background-image: -o-linear-gradient(top, #8bd06d, #51a62b);
+  background-image: linear-gradient(to bottom, #8bd06d, #51a62b);
+  background-image: -moz-linear-gradient(top, #8bd06d, #51a62b);
   background-repeat: repeat-x;
-  border-color: #51a351 #51a351 #387038;
+  border-color: #51a62b #51a62b #33691b;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ff62c462', endColorstr='#ff51a351', GradientType=0);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ff8bd06d', endColorstr='#ff51a62b', GradientType=0);
   filter: progid:dximagetransform.microsoft.gradient(enabled=false);
 }
 
@@ -3307,29 +3307,29 @@ textarea.span1,
 .fuelux .btn-success.disabled,
 .fuelux .btn-success[disabled] {
   color: #ffffff;
-  background-color: #51a351;
-  *background-color: #499249;
+  background-color: #51a62b;
+  *background-color: #479226;
 }
 
 .fuelux .btn-success:active,
 .fuelux .btn-success.active {
-  background-color: #408140 \9;
+  background-color: #3d7d21 \9;
 }
 
 .fuelux .btn-info {
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #49afcd;
-  *background-color: #2f96b4;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#5bc0de), to(#2f96b4));
-  background-image: -webkit-linear-gradient(top, #5bc0de, #2f96b4);
-  background-image: -o-linear-gradient(top, #5bc0de, #2f96b4);
-  background-image: linear-gradient(to bottom, #5bc0de, #2f96b4);
-  background-image: -moz-linear-gradient(top, #5bc0de, #2f96b4);
+  background-color: #a2d0ef;
+  *background-color: #7fb9ec;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#b9dff1), to(#7fb9ec));
+  background-image: -webkit-linear-gradient(top, #b9dff1, #7fb9ec);
+  background-image: -o-linear-gradient(top, #b9dff1, #7fb9ec);
+  background-image: linear-gradient(to bottom, #b9dff1, #7fb9ec);
+  background-image: -moz-linear-gradient(top, #b9dff1, #7fb9ec);
   background-repeat: repeat-x;
-  border-color: #2f96b4 #2f96b4 #1f6377;
+  border-color: #7fb9ec #7fb9ec #3c95e2;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ff5bc0de', endColorstr='#ff2f96b4', GradientType=0);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffb9dff1', endColorstr='#ff7fb9ec', GradientType=0);
   filter: progid:dximagetransform.microsoft.gradient(enabled=false);
 }
 
@@ -3339,29 +3339,29 @@ textarea.span1,
 .fuelux .btn-info.disabled,
 .fuelux .btn-info[disabled] {
   color: #ffffff;
-  background-color: #2f96b4;
-  *background-color: #2a85a0;
+  background-color: #7fb9ec;
+  *background-color: #69ade9;
 }
 
 .fuelux .btn-info:active,
 .fuelux .btn-info.active {
-  background-color: #24748c \9;
+  background-color: #53a1e5 \9;
 }
 
 .fuelux .btn-inverse {
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #363636;
-  *background-color: #222222;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#444444), to(#222222));
-  background-image: -webkit-linear-gradient(top, #444444, #222222);
-  background-image: -o-linear-gradient(top, #444444, #222222);
-  background-image: linear-gradient(to bottom, #444444, #222222);
-  background-image: -moz-linear-gradient(top, #444444, #222222);
+  background-color: #3d3d3d;
+  *background-color: #333333;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#444444), to(#333333));
+  background-image: -webkit-linear-gradient(top, #444444, #333333);
+  background-image: -o-linear-gradient(top, #444444, #333333);
+  background-image: linear-gradient(to bottom, #444444, #333333);
+  background-image: -moz-linear-gradient(top, #444444, #333333);
   background-repeat: repeat-x;
-  border-color: #222222 #222222 #000000;
+  border-color: #333333 #333333 #0d0d0d;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ff444444', endColorstr='#ff222222', GradientType=0);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ff444444', endColorstr='#ff333333', GradientType=0);
   filter: progid:dximagetransform.microsoft.gradient(enabled=false);
 }
 
@@ -3371,13 +3371,13 @@ textarea.span1,
 .fuelux .btn-inverse.disabled,
 .fuelux .btn-inverse[disabled] {
   color: #ffffff;
-  background-color: #222222;
-  *background-color: #151515;
+  background-color: #333333;
+  *background-color: #262626;
 }
 
 .fuelux .btn-inverse:active,
 .fuelux .btn-inverse.active {
-  background-color: #080808 \9;
+  background-color: #1a1a1a \9;
 }
 
 .fuelux button.btn,
@@ -3421,7 +3421,7 @@ textarea.span1,
 }
 
 .fuelux .btn-link {
-  color: #0088cc;
+  color: #2168a7;
   cursor: pointer;
   border-color: transparent;
   -webkit-border-radius: 0;
@@ -3430,13 +3430,13 @@ textarea.span1,
 }
 
 .fuelux .btn-link:hover {
-  color: #005580;
+  color: #385b6b;
   text-decoration: underline;
   background-color: transparent;
 }
 
 .fuelux .btn-link[disabled]:hover {
-  color: #333333;
+  color: #666666;
   text-decoration: none;
 }
 
@@ -3457,8 +3457,8 @@ textarea.span1,
 }
 
 .fuelux .btn-toolbar {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 9px;
+  margin-bottom: 9px;
   font-size: 0;
 }
 
@@ -3489,7 +3489,7 @@ textarea.span1,
 
 .fuelux .btn-group > .btn,
 .fuelux .btn-group > .dropdown-menu {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .fuelux .btn-group > .btn-mini {
@@ -3593,31 +3593,31 @@ textarea.span1,
 }
 
 .fuelux .btn-group.open .btn.dropdown-toggle {
-  background-color: #e6e6e6;
+  background-color: #dae5ed;
 }
 
 .fuelux .btn-group.open .btn-primary.dropdown-toggle {
-  background-color: #0044cc;
+  background-color: #4e8abe;
 }
 
 .fuelux .btn-group.open .btn-warning.dropdown-toggle {
-  background-color: #f89406;
+  background-color: #f7841d;
 }
 
 .fuelux .btn-group.open .btn-danger.dropdown-toggle {
-  background-color: #bd362f;
+  background-color: #e64141;
 }
 
 .fuelux .btn-group.open .btn-success.dropdown-toggle {
-  background-color: #51a351;
+  background-color: #51a62b;
 }
 
 .fuelux .btn-group.open .btn-info.dropdown-toggle {
-  background-color: #2f96b4;
+  background-color: #7fb9ec;
 }
 
 .fuelux .btn-group.open .btn-inverse.dropdown-toggle {
-  background-color: #222222;
+  background-color: #333333;
 }
 
 .fuelux .btn .caret {
@@ -3700,11 +3700,11 @@ textarea.span1,
 
 .fuelux .alert {
   padding: 8px 35px 8px 14px;
-  margin-bottom: 20px;
-  color: #c09853;
+  margin-bottom: 18px;
+  color: #333333;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-  background-color: #fcf8e3;
-  border: 1px solid #fbeed5;
+  background-color: #fff1e1;
+  border: 1px solid #f8d8b3;
   -webkit-border-radius: 4px;
      -moz-border-radius: 4px;
           border-radius: 4px;
@@ -3718,26 +3718,26 @@ textarea.span1,
   position: relative;
   top: -2px;
   right: -21px;
-  line-height: 20px;
+  line-height: 18px;
 }
 
 .fuelux .alert-success {
-  color: #468847;
-  background-color: #dff0d8;
-  border-color: #d6e9c6;
+  color: #333333;
+  background-color: #e9fcde;
+  border-color: #b8d8a5;
 }
 
 .fuelux .alert-danger,
 .fuelux .alert-error {
-  color: #b94a48;
-  background-color: #f2dede;
-  border-color: #eed3d7;
+  color: #333333;
+  background-color: #fceced;
+  border-color: #edbfbf;
 }
 
 .fuelux .alert-info {
-  color: #3a87ad;
-  background-color: #d9edf7;
-  border-color: #bce8f1;
+  color: #333333;
+  background-color: #e7f3fe;
+  border-color: #bed5e8;
 }
 
 .fuelux .alert-block {
@@ -3755,7 +3755,7 @@ textarea.span1,
 }
 
 .fuelux .nav {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   margin-left: 0;
   list-style: none;
 }
@@ -3766,7 +3766,7 @@ textarea.span1,
 
 .fuelux .nav > li > a:hover {
   text-decoration: none;
-  background-color: #eeeeee;
+  background-color: #dddddd;
 }
 
 .fuelux .nav > .pull-right {
@@ -3778,8 +3778,8 @@ textarea.span1,
   padding: 3px 15px;
   font-size: 11px;
   font-weight: bold;
-  line-height: 20px;
-  color: #999999;
+  line-height: 18px;
+  color: #cccccc;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
   text-transform: uppercase;
 }
@@ -3809,7 +3809,7 @@ textarea.span1,
 .fuelux .nav-list > .active > a:hover {
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
-  background-color: #0088cc;
+  background-color: #2168a7;
 }
 
 .fuelux .nav-list [class^="icon-"] {
@@ -3819,7 +3819,7 @@ textarea.span1,
 .fuelux .nav-list .divider {
   *width: 100%;
   height: 1px;
-  margin: 9px 1px;
+  margin: 8px 1px;
   *margin: -5px 0 5px;
   overflow: hidden;
   background-color: #e5e5e5;
@@ -3869,7 +3869,7 @@ textarea.span1,
 .fuelux .nav-tabs > li > a {
   padding-top: 8px;
   padding-bottom: 8px;
-  line-height: 20px;
+  line-height: 18px;
   border: 1px solid transparent;
   -webkit-border-radius: 4px 4px 0 0;
      -moz-border-radius: 4px 4px 0 0;
@@ -3877,12 +3877,12 @@ textarea.span1,
 }
 
 .fuelux .nav-tabs > li > a:hover {
-  border-color: #eeeeee #eeeeee #dddddd;
+  border-color: #dddddd #dddddd #dddddd;
 }
 
 .fuelux .nav-tabs > .active > a,
 .fuelux .nav-tabs > .active > a:hover {
-  color: #555555;
+  color: #999999;
   cursor: default;
   background-color: #ffffff;
   border: 1px solid #ddd;
@@ -3902,7 +3902,7 @@ textarea.span1,
 .fuelux .nav-pills > .active > a,
 .fuelux .nav-pills > .active > a:hover {
   color: #ffffff;
-  background-color: #0088cc;
+  background-color: #2168a7;
 }
 
 .fuelux .nav-stacked > li {
@@ -3969,13 +3969,13 @@ textarea.span1,
 
 .fuelux .nav .dropdown-toggle .caret {
   margin-top: 6px;
-  border-top-color: #0088cc;
-  border-bottom-color: #0088cc;
+  border-top-color: #2168a7;
+  border-bottom-color: #2168a7;
 }
 
 .fuelux .nav .dropdown-toggle:hover .caret {
-  border-top-color: #005580;
-  border-bottom-color: #005580;
+  border-top-color: #385b6b;
+  border-bottom-color: #385b6b;
 }
 
 .fuelux .nav-tabs .dropdown-toggle .caret {
@@ -3988,8 +3988,8 @@ textarea.span1,
 }
 
 .fuelux .nav-tabs .active .dropdown-toggle .caret {
-  border-top-color: #555555;
-  border-bottom-color: #555555;
+  border-top-color: #999999;
+  border-bottom-color: #999999;
 }
 
 .fuelux .nav > .dropdown.active > a:hover {
@@ -4000,8 +4000,8 @@ textarea.span1,
 .fuelux .nav-pills .open .dropdown-toggle,
 .fuelux .nav > li.dropdown.open.active > a:hover {
   color: #ffffff;
-  background-color: #999999;
-  border-color: #999999;
+  background-color: #cccccc;
+  border-color: #cccccc;
 }
 
 .fuelux .nav li.dropdown.open .caret,
@@ -4014,7 +4014,7 @@ textarea.span1,
 }
 
 .fuelux .tabs-stacked .open > a:hover {
-  border-color: #999999;
+  border-color: #cccccc;
 }
 
 .fuelux .tabbable {
@@ -4103,7 +4103,7 @@ textarea.span1,
 }
 
 .fuelux .tabs-left > .nav-tabs > li > a:hover {
-  border-color: #eeeeee #dddddd #eeeeee #eeeeee;
+  border-color: #dddddd #dddddd #dddddd #dddddd;
 }
 
 .fuelux .tabs-left > .nav-tabs .active > a,
@@ -4126,7 +4126,7 @@ textarea.span1,
 }
 
 .fuelux .tabs-right > .nav-tabs > li > a:hover {
-  border-color: #eeeeee #eeeeee #eeeeee #dddddd;
+  border-color: #dddddd #dddddd #dddddd #dddddd;
 }
 
 .fuelux .tabs-right > .nav-tabs .active > a,
@@ -4136,7 +4136,7 @@ textarea.span1,
 }
 
 .fuelux .nav > .disabled > a {
-  color: #999999;
+  color: #cccccc;
 }
 
 .fuelux .nav > .disabled > a:hover {
@@ -4148,7 +4148,7 @@ textarea.span1,
 .fuelux .navbar {
   *position: relative;
   *z-index: 2;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   overflow: visible;
   color: #777777;
 }
@@ -4197,7 +4197,7 @@ textarea.span1,
 .fuelux .navbar .brand {
   display: block;
   float: left;
-  padding: 10px 20px 10px;
+  padding: 11px 20px 11px;
   margin-left: -20px;
   font-size: 20px;
   font-weight: 200;
@@ -4219,7 +4219,7 @@ textarea.span1,
 }
 
 .fuelux .navbar-link:hover {
-  color: #333333;
+  color: #666666;
 }
 
 .fuelux .navbar .divider-vertical {
@@ -4297,7 +4297,7 @@ textarea.span1,
 .fuelux .navbar-search .search-query {
   padding: 4px 14px;
   margin-bottom: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
   font-weight: normal;
   line-height: 1;
@@ -4391,7 +4391,7 @@ textarea.span1,
 
 .fuelux .navbar .nav > li > a {
   float: none;
-  padding: 10px 15px 10px;
+  padding: 11px 15px 11px;
   color: #777777;
   text-decoration: none;
   text-shadow: 0 1px 0 #ffffff;
@@ -4403,7 +4403,7 @@ textarea.span1,
 
 .fuelux .navbar .nav > li > a:focus,
 .fuelux .navbar .nav > li > a:hover {
-  color: #333333;
+  color: #666666;
   text-decoration: none;
   background-color: transparent;
 }
@@ -4411,7 +4411,7 @@ textarea.span1,
 .fuelux .navbar .nav > .active > a,
 .fuelux .navbar .nav > .active > a:hover,
 .fuelux .navbar .nav > .active > a:focus {
-  color: #555555;
+  color: #999999;
   text-decoration: none;
   background-color: #e5e5e5;
   -webkit-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
@@ -4484,7 +4484,7 @@ textarea.span1,
   border-right: 7px solid transparent;
   border-bottom: 7px solid #ccc;
   border-left: 7px solid transparent;
-  border-bottom-color: rgba(0, 0, 0, 0.2);
+  border-bottom-color: #bbbbbb;
   content: '';
 }
 
@@ -4504,7 +4504,7 @@ textarea.span1,
   bottom: -7px;
   border-top: 7px solid #ccc;
   border-bottom: 0;
-  border-top-color: rgba(0, 0, 0, 0.2);
+  border-top-color: #bbbbbb;
 }
 
 .fuelux .navbar-fixed-bottom .nav > li > .dropdown-menu:after {
@@ -4517,7 +4517,7 @@ textarea.span1,
 .fuelux .navbar .nav li.dropdown.open > .dropdown-toggle,
 .fuelux .navbar .nav li.dropdown.active > .dropdown-toggle,
 .fuelux .navbar .nav li.dropdown.open.active > .dropdown-toggle {
-  color: #555555;
+  color: #999999;
   background-color: #e5e5e5;
 }
 
@@ -4529,8 +4529,8 @@ textarea.span1,
 .fuelux .navbar .nav li.dropdown.open > .dropdown-toggle .caret,
 .fuelux .navbar .nav li.dropdown.active > .dropdown-toggle .caret,
 .fuelux .navbar .nav li.dropdown.open.active > .dropdown-toggle .caret {
-  border-top-color: #555555;
-  border-bottom-color: #555555;
+  border-top-color: #999999;
+  border-bottom-color: #999999;
 }
 
 .fuelux .navbar .pull-right > li > .dropdown-menu,
@@ -4563,7 +4563,7 @@ textarea.span1,
 }
 
 .fuelux .navbar-inverse {
-  color: #999999;
+  color: #cccccc;
 }
 
 .fuelux .navbar-inverse .navbar-inner {
@@ -4580,7 +4580,7 @@ textarea.span1,
 
 .fuelux .navbar-inverse .brand,
 .fuelux .navbar-inverse .nav > li > a {
-  color: #999999;
+  color: #cccccc;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
 
@@ -4603,7 +4603,7 @@ textarea.span1,
 }
 
 .fuelux .navbar-inverse .navbar-link {
-  color: #999999;
+  color: #cccccc;
 }
 
 .fuelux .navbar-inverse .navbar-link:hover {
@@ -4623,8 +4623,8 @@ textarea.span1,
 }
 
 .fuelux .navbar-inverse .nav li.dropdown > .dropdown-toggle .caret {
-  border-top-color: #999999;
-  border-bottom-color: #999999;
+  border-top-color: #cccccc;
+  border-bottom-color: #cccccc;
 }
 
 .fuelux .navbar-inverse .nav li.dropdown.open > .dropdown-toggle .caret,
@@ -4662,7 +4662,7 @@ textarea.span1,
 .fuelux .navbar-inverse .navbar-search .search-query:focus,
 .fuelux .navbar-inverse .navbar-search .search-query.focused {
   padding: 5px 15px;
-  color: #333333;
+  color: #666666;
   text-shadow: 0 1px 0 #ffffff;
   background-color: #ffffff;
   border: 0;
@@ -4706,7 +4706,7 @@ textarea.span1,
 
 .fuelux .breadcrumb {
   padding: 8px 15px;
-  margin: 0 0 20px;
+  margin: 0 0 18px;
   list-style: none;
   background-color: #f5f5f5;
   -webkit-border-radius: 4px;
@@ -4727,12 +4727,12 @@ textarea.span1,
 }
 
 .fuelux .breadcrumb .active {
-  color: #999999;
+  color: #cccccc;
 }
 
 .fuelux .pagination {
-  height: 40px;
-  margin: 20px 0;
+  height: 36px;
+  margin: 18px 0;
 }
 
 .fuelux .pagination ul {
@@ -4757,10 +4757,10 @@ textarea.span1,
 .fuelux .pagination ul > li > span {
   float: left;
   padding: 0 14px;
-  line-height: 38px;
+  line-height: 34px;
   text-decoration: none;
-  background-color: #ffffff;
-  border: 1px solid #dddddd;
+  background-color: #f0f2f3;
+  border: 1px solid #cccccc;
   border-left-width: 0;
 }
 
@@ -4772,14 +4772,14 @@ textarea.span1,
 
 .fuelux .pagination ul > .active > a,
 .fuelux .pagination ul > .active > span {
-  color: #999999;
+  color: #cccccc;
   cursor: default;
 }
 
 .fuelux .pagination ul > .disabled > span,
 .fuelux .pagination ul > .disabled > a,
 .fuelux .pagination ul > .disabled > a:hover {
-  color: #999999;
+  color: #cccccc;
   cursor: default;
   background-color: transparent;
 }
@@ -4808,7 +4808,7 @@ textarea.span1,
 }
 
 .fuelux .pager {
-  margin: 20px 0;
+  margin: 18px 0;
   text-align: center;
   list-style: none;
   *zoom: 1;
@@ -4857,7 +4857,7 @@ textarea.span1,
 .fuelux .pager .disabled a,
 .fuelux .pager .disabled a:hover,
 .fuelux .pager .disabled span {
-  color: #999999;
+  color: #cccccc;
   cursor: default;
   background-color: #fff;
 }
@@ -5235,14 +5235,14 @@ textarea.span1,
 
 .fuelux .thumbnails > li {
   float: left;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   margin-left: 20px;
 }
 
 .fuelux .thumbnail {
   display: block;
   padding: 4px;
-  line-height: 20px;
+  line-height: 18px;
   border: 1px solid #ddd;
   -webkit-border-radius: 4px;
      -moz-border-radius: 4px;
@@ -5257,7 +5257,7 @@ textarea.span1,
 }
 
 .fuelux a.thumbnail:hover {
-  border-color: #0088cc;
+  border-color: #2168a7;
   -webkit-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
      -moz-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
           box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
@@ -5272,19 +5272,19 @@ textarea.span1,
 
 .fuelux .thumbnail .caption {
   padding: 9px;
-  color: #555555;
+  color: #999999;
 }
 
 .fuelux .label,
 .fuelux .badge {
-  font-size: 11.844px;
+  font-size: 10.152px;
   font-weight: bold;
   line-height: 14px;
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   white-space: nowrap;
   vertical-align: baseline;
-  background-color: #999999;
+  background-color: #cccccc;
 }
 
 .fuelux .label {
@@ -5310,52 +5310,52 @@ textarea.span1,
 
 .fuelux .label-important,
 .fuelux .badge-important {
-  background-color: #b94a48;
+  background-color: #333333;
 }
 
 .fuelux .label-important[href],
 .fuelux .badge-important[href] {
-  background-color: #953b39;
+  background-color: #1a1a1a;
 }
 
 .fuelux .label-warning,
 .fuelux .badge-warning {
-  background-color: #f89406;
+  background-color: #f7841d;
 }
 
 .fuelux .label-warning[href],
 .fuelux .badge-warning[href] {
-  background-color: #c67605;
+  background-color: #d96b08;
 }
 
 .fuelux .label-success,
 .fuelux .badge-success {
-  background-color: #468847;
+  background-color: #333333;
 }
 
 .fuelux .label-success[href],
 .fuelux .badge-success[href] {
-  background-color: #356635;
+  background-color: #1a1a1a;
 }
 
 .fuelux .label-info,
 .fuelux .badge-info {
-  background-color: #3a87ad;
+  background-color: #333333;
 }
 
 .fuelux .label-info[href],
 .fuelux .badge-info[href] {
-  background-color: #2d6987;
+  background-color: #1a1a1a;
 }
 
 .fuelux .label-inverse,
 .fuelux .badge-inverse {
-  background-color: #333333;
+  background-color: #666666;
 }
 
 .fuelux .label-inverse[href],
 .fuelux .badge-inverse[href] {
-  background-color: #1a1a1a;
+  background-color: #4d4d4d;
 }
 
 .fuelux .btn .label,
@@ -5415,8 +5415,8 @@ textarea.span1,
 }
 
 .fuelux .progress {
-  height: 20px;
-  margin-bottom: 20px;
+  height: 18px;
+  margin-bottom: 18px;
   overflow: hidden;
   background-color: #f7f7f7;
   background-image: -moz-linear-gradient(top, #f5f5f5, #f9f9f9);
@@ -5557,19 +5557,19 @@ textarea.span1,
 
 .fuelux .progress-warning .bar,
 .fuelux .progress .bar-warning {
-  background-color: #faa732;
-  background-image: -moz-linear-gradient(top, #fbb450, #f89406);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fbb450), to(#f89406));
-  background-image: -webkit-linear-gradient(top, #fbb450, #f89406);
-  background-image: -o-linear-gradient(top, #fbb450, #f89406);
-  background-image: linear-gradient(to bottom, #fbb450, #f89406);
+  background-color: #f99c49;
+  background-image: -moz-linear-gradient(top, #faac67, #f7841d);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#faac67), to(#f7841d));
+  background-image: -webkit-linear-gradient(top, #faac67, #f7841d);
+  background-image: -o-linear-gradient(top, #faac67, #f7841d);
+  background-image: linear-gradient(to bottom, #faac67, #f7841d);
   background-repeat: repeat-x;
-  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#fffbb450', endColorstr='#fff89406', GradientType=0);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#fffaac67', endColorstr='#fff7841d', GradientType=0);
 }
 
 .fuelux .progress-warning.progress-striped .bar,
 .fuelux .progress-striped .bar-warning {
-  background-color: #fbb450;
+  background-color: #faac67;
   background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -5578,7 +5578,7 @@ textarea.span1,
 }
 
 .fuelux .accordion {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .fuelux .accordion-group {
@@ -5609,7 +5609,7 @@ textarea.span1,
 
 .fuelux .carousel {
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   line-height: 1;
 }
 
@@ -5683,7 +5683,7 @@ textarea.span1,
   line-height: 30px;
   color: #ffffff;
   text-align: center;
-  background: #222222;
+  background: #333333;
   border: 3px solid #ffffff;
   -webkit-border-radius: 23px;
      -moz-border-radius: 23px;
@@ -5710,13 +5710,13 @@ textarea.span1,
   bottom: 0;
   left: 0;
   padding: 15px;
-  background: #333333;
+  background: #666666;
   background: rgba(0, 0, 0, 0.75);
 }
 
 .fuelux .carousel-caption h4,
 .fuelux .carousel-caption p {
-  line-height: 20px;
+  line-height: 18px;
   color: #ffffff;
 }
 
@@ -5731,7 +5731,7 @@ textarea.span1,
 .fuelux .hero-unit {
   padding: 60px;
   margin-bottom: 30px;
-  background-color: #eeeeee;
+  background-color: #dddddd;
   -webkit-border-radius: 6px;
      -moz-border-radius: 6px;
           border-radius: 6px;
@@ -5748,7 +5748,7 @@ textarea.span1,
 .fuelux .hero-unit p {
   font-size: 18px;
   font-weight: 200;
-  line-height: 30px;
+  line-height: 27px;
   color: inherit;
 }
 
@@ -5777,11 +5777,11 @@ textarea.span1,
 }
 
 .fuelux .combobox a {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .fuelux .datagrid thead {
-  background-color: #f9f9f9;
+  background-color: #ebf6fb;
 }
 
 .fuelux .datagrid thead .datagrid-header-title {
@@ -5803,16 +5803,16 @@ textarea.span1,
 .fuelux .datagrid thead .sorted {
   color: #333333;
   text-shadow: 'none';
-  background-color: #f1f1f1;
-  background-image: -moz-linear-gradient(top, #f9f9f9, #e5e5e5);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f9f9f9), to(#e5e5e5));
-  background-image: -webkit-linear-gradient(top, #f9f9f9, #e5e5e5);
-  background-image: -o-linear-gradient(top, #f9f9f9, #e5e5e5);
-  background-image: linear-gradient(to bottom, #f9f9f9, #e5e5e5);
+  background-color: #ddf0f8;
+  background-image: -moz-linear-gradient(top, #ebf6fb, #c9e7f4);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ebf6fb), to(#c9e7f4));
+  background-image: -webkit-linear-gradient(top, #ebf6fb, #c9e7f4);
+  background-image: -o-linear-gradient(top, #ebf6fb, #c9e7f4);
+  background-image: linear-gradient(to bottom, #ebf6fb, #c9e7f4);
   background-repeat: repeat-x;
-  border-color: #e5e5e5 #e5e5e5 #bebebe;
+  border-color: #c9e7f4 #c9e7f4 #89cae7;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#fff9f9f9', endColorstr='#ffe5e5e5', GradientType=0);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffebf6fb', endColorstr='#ffc9e7f4', GradientType=0);
 }
 
 .fuelux .datagrid thead .sorted i {
@@ -5827,20 +5827,20 @@ textarea.span1,
 .fuelux .datagrid thead .sortable:hover {
   color: #333333;
   text-shadow: 'none';
-  background-color: #f1f1f1;
-  background-image: -moz-linear-gradient(top, #f9f9f9, #e5e5e5);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f9f9f9), to(#e5e5e5));
-  background-image: -webkit-linear-gradient(top, #f9f9f9, #e5e5e5);
-  background-image: -o-linear-gradient(top, #f9f9f9, #e5e5e5);
-  background-image: linear-gradient(to bottom, #f9f9f9, #e5e5e5);
+  background-color: #ddf0f8;
+  background-image: -moz-linear-gradient(top, #ebf6fb, #c9e7f4);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ebf6fb), to(#c9e7f4));
+  background-image: -webkit-linear-gradient(top, #ebf6fb, #c9e7f4);
+  background-image: -o-linear-gradient(top, #ebf6fb, #c9e7f4);
+  background-image: linear-gradient(to bottom, #ebf6fb, #c9e7f4);
   background-repeat: repeat-x;
-  border-color: #e5e5e5 #e5e5e5 #bebebe;
+  border-color: #c9e7f4 #c9e7f4 #89cae7;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#fff9f9f9', endColorstr='#ffe5e5e5', GradientType=0);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffebf6fb', endColorstr='#ffc9e7f4', GradientType=0);
 }
 
 .fuelux .datagrid tfoot {
-  background-color: #f9f9f9;
+  background-color: #ebf6fb;
 }
 
 .fuelux .datagrid tfoot .datagrid-footer-left {
@@ -5899,14 +5899,14 @@ textarea.span1,
   float: left;
   padding: 1px 4px 2px;
   margin: 2px;
-  font-size: 11.844px;
+  font-size: 10.152px;
   font-weight: bold;
   line-height: 21px;
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   vertical-align: baseline;
   cursor: pointer;
-  background-color: #999999;
+  background-color: #cccccc;
   -webkit-border-radius: 3px;
      -moz-border-radius: 3px;
           border-radius: 3px;
@@ -5919,7 +5919,7 @@ textarea.span1,
   padding-left: 4px;
   font-size: 20px;
   font-weight: bold;
-  line-height: 20px;
+  line-height: 18px;
   color: #000000;
   text-shadow: 0 1px 0 #ffffff;
   content: " \00D7";
@@ -5933,19 +5933,19 @@ textarea.span1,
 }
 
 .fuelux .pillbox li.status-important {
-  background-color: #b94a48;
+  background-color: #333333;
 }
 
 .fuelux .pillbox li.status-warning {
-  background-color: #f89406;
+  background-color: #f7841d;
 }
 
 .fuelux .pillbox li.status-success {
-  background-color: #468847;
+  background-color: #333333;
 }
 
 .fuelux .pillbox li.status-info {
-  background-color: #3a87ad;
+  background-color: #333333;
 }
 
 .fuelux .spinner input {
@@ -5989,4 +5989,1058 @@ textarea.span1,
 .fuelux .spinner .spinner-down i {
   position: relative;
   top: -5px;
+}
+
+.fuelux .alert .close {
+  right: -27px;
+}
+
+.fuelux .btn-group > .btn + .dropdown-toggle {
+  -webkit-box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.125), inset 0 1px 0 rgba(255, 255, 255, 0.2), 1px 1px 2px rgba(0, 0, 0, 0.15);
+     -moz-box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.125), inset 0 1px 0 rgba(255, 255, 255, 0.2), 1px 1px 2px rgba(0, 0, 0, 0.15);
+          box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.125), inset 0 1px 0 rgba(255, 255, 255, 0.2), 1px 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.fuelux .btn {
+  padding: 0 10px 1px;
+  font-weight: bold;
+  line-height: 18px;
+  color: #4E8ABE;
+  text-shadow: none;
+  border: 1px solid #B5C6D2;
+  -webkit-box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.15);
+     -moz-box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.15);
+}
+
+.fuelux .btn:hover {
+  color: #4E8ABE;
+  background-color: #e0eef8;
+  background-color: transparent;
+  *background-color: #f2f9ff;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f9ff), to(#c6ddee));
+  background-image: -webkit-linear-gradient(top, #f2f9ff, #c6ddee);
+  background-image: -o-linear-gradient(top, #f2f9ff, #c6ddee);
+  background-image: linear-gradient(to bottom, #f2f9ff, #c6ddee);
+  background-image: -moz-linear-gradient(top, #f2f9ff, #c6ddee);
+  background-position: center top;
+  background-repeat: repeat-x;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#fff2f9ff', endColorstr='#ffc6ddee', GradientType=0);
+}
+
+.fuelux .btn.active,
+.fuelux .btn:active {
+  color: #4E8ABE;
+  background-color: #d9e6ef;
+  *background-color: #D5E4EB;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#d5e4eb), to(#deeaf6));
+  background-image: -webkit-linear-gradient(top, #d5e4eb, #deeaf6);
+  background-image: -o-linear-gradient(top, #d5e4eb, #deeaf6);
+  background-image: linear-gradient(to bottom, #d5e4eb, #deeaf6);
+  background-image: -moz-linear-gradient(top, #d5e4eb, #deeaf6);
+  background-repeat: repeat-x;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffd5e4eb', endColorstr='#ffdeeaf6', GradientType=0);
+  -webkit-box-shadow: inset 0 0 3px rgba(0, 61, 99, 0.2);
+     -moz-box-shadow: inset 0 0 3px rgba(0, 61, 99, 0.2);
+          box-shadow: inset 0 0 3px rgba(0, 61, 99, 0.2);
+}
+
+.fuelux .btn.disabled,
+.fuelux .btn[disabled] {
+  color: #4E8ABE;
+  cursor: default;
+  background-color: #f0f5f8;
+  *background-color: #ffffff;
+  background-image: -moz-linear-gradient(top, #ffffff, #dae5ed);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#dae5ed));
+  background-image: -webkit-linear-gradient(top, #ffffff, #dae5ed);
+  background-image: -o-linear-gradient(top, #ffffff, #dae5ed);
+  background-image: linear-gradient(to bottom, #ffffff, #dae5ed);
+  background-repeat: repeat-x;
+  border: 1px solid #B5C6D2;
+  opacity: 0.6;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffdae5ed', GradientType=0);
+  filter: alpha(opacity=60);
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
+}
+
+.fuelux .btn-primary {
+  padding: 1px 10px 2px;
+  color: #ffffff;
+  text-shadow: none;
+  background-color: #7FB9EC;
+  background-color: #6ba6da;
+  *background-color: #7FB9EC;
+  background-image: -moz-linear-gradient(top, #7fb9ec, #4e8abe);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#7fb9ec), to(#4e8abe));
+  background-image: -webkit-linear-gradient(top, #7fb9ec, #4e8abe);
+  background-image: -o-linear-gradient(top, #7fb9ec, #4e8abe);
+  background-image: linear-gradient(to bottom, #7fb9ec, #4e8abe);
+  background-repeat: repeat-x;
+  border-width: 0;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ff7fb9ec', endColorstr='#ff4e8abe', GradientType=0);
+  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+}
+
+.fuelux .btn-primary:hover {
+  color: #ffffff;
+  background-color: #85bae7;
+  background-color: #9ACCF7;
+  *background-color: #9ACCF7;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#9accf7), to(#669ecf));
+  background-image: -webkit-linear-gradient(top, #9accf7, #669ecf);
+  background-image: -o-linear-gradient(top, #9accf7, #669ecf);
+  background-image: linear-gradient(to bottom, #9accf7, #669ecf);
+  background-image: -moz-linear-gradient(top, #9accf7, #669ecf);
+  background-repeat: repeat-x;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ff9accf7', endColorstr='#ff669ecf', GradientType=0);
+  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+}
+
+.fuelux .btn-primary.active,
+.fuelux .btn-primary:active {
+  color: #ffffff;
+  background-color: #528ec2;
+  background-color: #4E8ABE;
+  *background-color: #4E8ABE;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#4e8abe), to(#5793c7));
+  background-image: -webkit-linear-gradient(top, #4e8abe, #5793c7);
+  background-image: -o-linear-gradient(top, #4e8abe, #5793c7);
+  background-image: linear-gradient(to bottom, #4e8abe, #5793c7);
+  background-image: -moz-linear-gradient(top, #4e8abe, #5793c7);
+  background-repeat: repeat-x;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ff4e8abe', endColorstr='#ff5793c7', GradientType=0);
+  -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+     -moz-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+.fuelux .btn-primary.disabled,
+.fuelux .btn-primary[disabled] {
+  color: #ffffff;
+  cursor: default;
+  background-color: #6ba6da;
+  *background-color: #7FB9EC;
+  background-image: -moz-linear-gradient(top, #7fb9ec, #4e8abe);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#7fb9ec), to(#4e8abe));
+  background-image: -webkit-linear-gradient(top, #7fb9ec, #4e8abe);
+  background-image: -o-linear-gradient(top, #7fb9ec, #4e8abe);
+  background-image: linear-gradient(to bottom, #7fb9ec, #4e8abe);
+  background-repeat: repeat-x;
+  opacity: 0.5;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ff7fb9ec', endColorstr='#ff4e8abe', GradientType=0);
+  filter: alpha(opacity=50);
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
+}
+
+.fuelux .btn-warning {
+  padding: 1px 10px 2px;
+  color: #ffffff;
+  text-shadow: none;
+  background-color: #ffb55e;
+  background-color: #fca144;
+  *background-color: #f7841d;
+  background-image: -moz-linear-gradient(top, #ffb55e, #f7841d);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffb55e), to(#f7841d));
+  background-image: -webkit-linear-gradient(top, #ffb55e, #f7841d);
+  background-image: -o-linear-gradient(top, #ffb55e, #f7841d);
+  background-image: linear-gradient(to bottom, #ffb55e, #f7841d);
+  background-repeat: repeat-x;
+  border-width: 0;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffffb55e', endColorstr='#fff7841d', GradientType=0);
+  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+}
+
+.fuelux .btn-warning:hover {
+  color: #ffffff;
+  background-color: #ffa944;
+  background-color: #ffa944;
+  *background-color: #ffa944;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffa944), to(#ffa944));
+  background-image: -webkit-linear-gradient(top, #ffa944, #ffa944);
+  background-image: -o-linear-gradient(top, #ffa944, #ffa944);
+  background-image: linear-gradient(to bottom, #ffa944, #ffa944);
+  background-image: -moz-linear-gradient(top, #ffa944, #ffa944);
+  background-repeat: repeat-x;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffffa944', endColorstr='#ffffa944', GradientType=0);
+  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+}
+
+.fuelux .btn-danger {
+  padding: 1px 10px 2px;
+  color: #ffffff;
+  text-shadow: none;
+  background-color: #ee6767;
+  background-color: #eb5858;
+  *background-color: #e64141;
+  background-image: -moz-linear-gradient(top, #ee6767, #e64141);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ee6767), to(#e64141));
+  background-image: -webkit-linear-gradient(top, #ee6767, #e64141);
+  background-image: -o-linear-gradient(top, #ee6767, #e64141);
+  background-image: linear-gradient(to bottom, #ee6767, #e64141);
+  background-repeat: repeat-x;
+  border-width: 0;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffee6767', endColorstr='#ffe64141', GradientType=0);
+  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+}
+
+.fuelux .btn-danger:hover {
+  color: #ffffff;
+  background-color: #e84141;
+  background-color: #eb5050;
+  *background-color: #e32a2a;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#eb5050), to(#e32a2a));
+  background-image: -webkit-linear-gradient(top, #eb5050, #e32a2a);
+  background-image: -o-linear-gradient(top, #eb5050, #e32a2a);
+  background-image: linear-gradient(to bottom, #eb5050, #e32a2a);
+  background-image: -moz-linear-gradient(top, #eb5050, #e32a2a);
+  background-repeat: repeat-x;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffeb5050', endColorstr='#ffe32a2a', GradientType=0);
+  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+}
+
+.fuelux .btn-success {
+  padding: 1px 10px 2px;
+  color: #ffffff;
+  text-shadow: none;
+  background-color: #8bd06d;
+  background-color: #74bf53;
+  *background-color: #51a62b;
+  background-image: -moz-linear-gradient(top, #8bd06d, #51a62b);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#8bd06d), to(#51a62b));
+  background-image: -webkit-linear-gradient(top, #8bd06d, #51a62b);
+  background-image: -o-linear-gradient(top, #8bd06d, #51a62b);
+  background-image: linear-gradient(to bottom, #8bd06d, #51a62b);
+  background-repeat: repeat-x;
+  border-width: 0;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ff8bd06d', endColorstr='#ff51a62b', GradientType=0);
+  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+}
+
+.fuelux .btn-success:hover {
+  color: #ffffff;
+  background-color: #67b345;
+  background-color: #7cca5a;
+  *background-color: #479226;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#7cca5a), to(#479226));
+  background-image: -webkit-linear-gradient(top, #7cca5a, #479226);
+  background-image: -o-linear-gradient(top, #7cca5a, #479226);
+  background-image: linear-gradient(to bottom, #7cca5a, #479226);
+  background-image: -moz-linear-gradient(top, #7cca5a, #479226);
+  background-repeat: repeat-x;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ff7cca5a', endColorstr='#ff479226', GradientType=0);
+  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+}
+
+.fuelux .btn-info {
+  padding: 1px 10px 2px;
+  color: #ffffff;
+  text-shadow: none;
+  background-color: #b9dff1;
+  background-color: #a2d0ef;
+  *background-color: #7fb9ec;
+  background-image: -moz-linear-gradient(top, #b9dff1, #7fb9ec);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#b9dff1), to(#7fb9ec));
+  background-image: -webkit-linear-gradient(top, #b9dff1, #7fb9ec);
+  background-image: -o-linear-gradient(top, #b9dff1, #7fb9ec);
+  background-image: linear-gradient(to bottom, #b9dff1, #7fb9ec);
+  background-repeat: repeat-x;
+  border-width: 0;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffb9dff1', endColorstr='#ff7fb9ec', GradientType=0);
+  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+}
+
+.fuelux .btn-info:hover {
+  color: #ffffff;
+  background-color: #8cc5eb;
+  background-color: #a4d5ed;
+  *background-color: #69ade9;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#a4d5ed), to(#69ade9));
+  background-image: -webkit-linear-gradient(top, #a4d5ed, #69ade9);
+  background-image: -o-linear-gradient(top, #a4d5ed, #69ade9);
+  background-image: linear-gradient(to bottom, #a4d5ed, #69ade9);
+  background-image: -moz-linear-gradient(top, #a4d5ed, #69ade9);
+  background-repeat: repeat-x;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffa4d5ed', endColorstr='#ff69ade9', GradientType=0);
+  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+}
+
+.fuelux .btn-inverse {
+  padding: 1px 10px 2px;
+  color: #ffffff;
+  text-shadow: none;
+  background-color: #444444;
+  background-color: #3d3d3d;
+  *background-color: #333333;
+  background-image: -moz-linear-gradient(top, #444444, #333333);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#444444), to(#333333));
+  background-image: -webkit-linear-gradient(top, #444444, #333333);
+  background-image: -o-linear-gradient(top, #444444, #333333);
+  background-image: linear-gradient(to bottom, #444444, #333333);
+  background-repeat: repeat-x;
+  border-width: 0;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ff444444', endColorstr='#ff333333', GradientType=0);
+  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+}
+
+.fuelux .btn-inverse:hover {
+  color: #ffffff;
+  background-color: #303030;
+  background-color: #373737;
+  *background-color: #262626;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#373737), to(#262626));
+  background-image: -webkit-linear-gradient(top, #373737, #262626);
+  background-image: -o-linear-gradient(top, #373737, #262626);
+  background-image: linear-gradient(to bottom, #373737, #262626);
+  background-image: -moz-linear-gradient(top, #373737, #262626);
+  background-repeat: repeat-x;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ff373737', endColorstr='#ff262626', GradientType=0);
+  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+}
+
+.fuelux .btn-large {
+  padding: 4px 10px;
+  font-size: 13px;
+}
+
+.fuelux .btn-small {
+  padding: 0 8px;
+  font-size: 11px;
+  line-height: 14px;
+}
+
+.fuelux .btn-mini {
+  padding: 0 8px;
+  font-size: 10px;
+  line-height: 13px;
+}
+
+.fuelux .btn-link,
+.fuelux .btn-link:active,
+.fuelux .btn-link[disabled] {
+  background-color: transparent;
+  background-image: none;
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
+}
+
+.fuelux .btn-link {
+  color: #2168a7;
+  cursor: pointer;
+  border-color: transparent;
+  -webkit-border-radius: 0;
+     -moz-border-radius: 0;
+          border-radius: 0;
+}
+
+.fuelux .btn-link:hover {
+  color: #385b6b;
+  text-decoration: underline;
+  background: transparent none;
+}
+
+.fuelux .btn-link[disabled]:hover {
+  color: #666666;
+  text-decoration: none;
+}
+
+.fuelux .close {
+  font-size: 24px;
+  font-weight: normal;
+  color: #999999;
+  text-shadow: 0 1px 1px #ffffff;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.fuelux .close:hover {
+  color: #5b9bd2;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.fuelux .caret {
+  border-top: 4px solid #666666;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+}
+
+.fuelux select,
+.fuelux textarea,
+.fuelux input[type="text"],
+.fuelux input[type="password"],
+.fuelux input[type="datetime"],
+.fuelux input[type="datetime-local"],
+.fuelux input[type="date"],
+.fuelux input[type="month"],
+.fuelux input[type="time"],
+.fuelux input[type="week"],
+.fuelux input[type="number"],
+.fuelux input[type="email"],
+.fuelux input[type="url"],
+.fuelux input[type="search"],
+.fuelux input[type="tel"],
+.fuelux input[type="color"],
+.fuelux .uneditable-input {
+  padding: 1px 6px 2px;
+  color: #333333;
+}
+
+.fuelux select,
+.fuelux input[type="file"] {
+  height: 20px;
+  *margin-top: 4px;
+  line-height: 20px;
+}
+
+.fuelux select[multiple],
+.fuelux select[size] {
+  height: auto;
+}
+
+.fuelux .input-append .add-on,
+.fuelux .input-prepend .add-on {
+  padding: 1px 5px 2px;
+}
+
+.fuelux .input-append .btn,
+.fuelux .input-prepend .btn {
+  padding: 1px 5px 2px;
+  -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+     -moz-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+          box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+}
+
+.fuelux .input-append.dropdown .btn {
+  -webkit-border-radius: 0 3px 3px 0;
+     -moz-border-radius: 0 3px 3px 0;
+          border-radius: 0 3px 3px 0;
+}
+
+.fuelux .modal-backdrop,
+.fuelux .modal-backdrop.fade.in {
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+}
+
+.fuelux .modal {
+  border: 0 none;
+}
+
+.fuelux .modal-header {
+  padding: 10px 9px;
+  font-size: 14px;
+  line-height: 14px;
+  background: #E7EDF0;
+  border-top: 1px solid #F8F9FA;
+  -webkit-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.2);
+     -moz-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.2);
+}
+
+.fuelux .modal-header h3 {
+  line-height: 14px;
+}
+
+.fuelux .modal-header .close {
+  margin-top: -2px;
+  font-size: 21px;
+  color: #C5C7C8;
+  text-shadow: none;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.fuelux .modal-header .close:hover {
+  color: #4E8ABE;
+}
+
+.fuelux .modal-body {
+  padding: 10px 9px;
+}
+
+.fuelux .modal-footer {
+  padding: 10px 20px;
+  background-color: #ffffff;
+  background-image: -o-linear-gradient(#e7edf0, #ffffff 80%, #ffffff);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#e7edf0), color-stop(80%, #ffffff), to(#ffffff));
+  background-image: -webkit-linear-gradient(#e7edf0, #ffffff 80%, #ffffff);
+  background-image: -moz-linear-gradient(top, #e7edf0, #ffffff 80%, #ffffff);
+  background-image: linear-gradient(#e7edf0, #ffffff 80%, #ffffff);
+  background-repeat: no-repeat;
+  border-top: 1px solid #CACCCF;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffe7edf0', endColorstr='#ffffffff', GradientType=0);
+  -webkit-box-shadow: inset 0 1px 0 0 #f5f8f9;
+     -moz-box-shadow: inset 0 1px 0 0 #f5f8f9;
+          box-shadow: inset 0 1px 0 0 #f5f8f9;
+}
+
+.fuelux .pagination ul > li > a:hover,
+.fuelux .pagination ul > .active > a,
+.fuelux .pagination ul > .active > span {
+  background-color: #b9dff1;
+}
+
+.fuelux .pagination ul > .active > a,
+.fuelux .pagination ul > .active > span {
+  color: #999999;
+  cursor: default;
+}
+
+@-webkit-keyframes progress-bar-stripes {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 11px 0;
+  }
+}
+
+@-moz-keyframes progress-bar-stripes {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 11px 0;
+  }
+}
+
+@-ms-keyframes progress-bar-stripes {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 11px 0;
+  }
+}
+
+@-o-keyframes progress-bar-stripes {
+  from {
+    background-position: 11px 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+
+@keyframes progress-bar-stripes {
+  from {
+    background-position: 11px 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+
+.fuelux .progress {
+  height: 11px;
+  overflow: hidden;
+  background-color: #ebebeb;
+  background-image: linear-gradient(to bottom, #f5f5f5, #dcdcdc);
+  background-image: -moz-linear-gradient(top, #f5f5f5, #dcdcdc);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f5f5f5), to(#dcdcdc));
+  background-image: -webkit-linear-gradient(top, #f5f5f5, #dcdcdc);
+  background-image: -o-linear-gradient(top, #f5f5f5, #dcdcdc);
+  background-repeat: repeat-x;
+  border: 1px solid #6896BD;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#fff5f5f5', endColorstr='#ffdcdcdc', GradientType=0);
+  -webkit-box-shadow: inset 0 3px 4px rgba(255, 255, 255, 0.8);
+     -moz-box-shadow: inset 0 3px 4px rgba(255, 255, 255, 0.8);
+          box-shadow: inset 0 3px 4px rgba(255, 255, 255, 0.8);
+}
+
+.fuelux .progress .bar {
+  background-color: #73A6D2;
+  background-color: #92c3ed;
+  background-image: -moz-linear-gradient(top, #a6d6ff, #73a6d2);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#a6d6ff), to(#73a6d2));
+  background-image: -webkit-linear-gradient(top, #a6d6ff, #73a6d2);
+  background-image: -o-linear-gradient(top, #a6d6ff, #73a6d2);
+  background-image: linear-gradient(to bottom, #a6d6ff, #73a6d2);
+  background-repeat: repeat-x;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffa6d6ff', endColorstr='#ff73a6d2', GradientType=0);
+  -webkit-box-shadow: inset 0 3px 4px rgba(255, 255, 255, 0.8);
+     -moz-box-shadow: inset 0 3px 4px rgba(255, 255, 255, 0.8);
+          box-shadow: inset 0 3px 4px rgba(255, 255, 255, 0.8);
+}
+
+.fuelux .progress .bar + .bar {
+  -webkit-box-shadow: inset 0 3px 4px rgba(255, 255, 255, 0.8), inset 1px 0 0 #dcdcdc;
+     -moz-box-shadow: inset 0 3px 4px rgba(255, 255, 255, 0.8), inset 1px 0 0 #dcdcdc;
+          box-shadow: inset 0 3px 4px rgba(255, 255, 255, 0.8), inset 1px 0 0 #dcdcdc;
+}
+
+.fuelux .progress-striped .bar {
+  background-color: #73a6d2;
+  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
+  background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -moz-linear-gradient(135deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(135deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  -webkit-background-size: 11px 11px;
+     -moz-background-size: 11px 11px;
+       -o-background-size: 11px 11px;
+          background-size: 11px 11px;
+}
+
+.fuelux .progress.active .bar {
+  -webkit-animation: progress-bar-stripes 1s linear infinite;
+     -moz-animation: progress-bar-stripes 1s linear infinite;
+      -ms-animation: progress-bar-stripes 1s linear infinite;
+       -o-animation: progress-bar-stripes 1s linear infinite;
+          animation: progress-bar-stripes 1s linear infinite;
+}
+
+.fuelux .progress-danger {
+  border-color: #D57575;
+}
+
+.fuelux .progress-danger .bar,
+.fuelux .progress .bar-danger {
+  background: #EB7F7F;
+  background-color: #f1a5a5;
+  background-image: -moz-linear-gradient(top, #f5bfbf, #eb7f7f);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f5bfbf), to(#eb7f7f));
+  background-image: -webkit-linear-gradient(top, #f5bfbf, #eb7f7f);
+  background-image: -o-linear-gradient(top, #f5bfbf, #eb7f7f);
+  background-image: linear-gradient(to bottom, #f5bfbf, #eb7f7f);
+  background-repeat: repeat-x;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#fff5bfbf', endColorstr='#ffeb7f7f', GradientType=0);
+}
+
+.fuelux .progress-danger.progress-striped .bar,
+.fuelux .progress-striped .bar-danger {
+  background-color: #eb7f7f;
+  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
+  background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -moz-linear-gradient(135deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(135deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  -webkit-background-size: 11px 11px;
+     -moz-background-size: 11px 11px;
+       -o-background-size: 11px 11px;
+          background-size: 11px 11px;
+}
+
+.fuelux .progress-success {
+  border-color: #62A147;
+}
+
+.fuelux .progress-success .bar,
+.fuelux .progress .bar-success {
+  background: #69B14A;
+  background-color: #96c880;
+  background-image: -moz-linear-gradient(top, #b4d8a4, #69b14a);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#b4d8a4), to(#69b14a));
+  background-image: -webkit-linear-gradient(top, #b4d8a4, #69b14a);
+  background-image: -o-linear-gradient(top, #b4d8a4, #69b14a);
+  background-image: linear-gradient(to bottom, #b4d8a4, #69b14a);
+  background-repeat: repeat-x;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffb4d8a4', endColorstr='#ff69b14a', GradientType=0);
+}
+
+.fuelux .progress-success.progress-striped .bar,
+.fuelux .progress-striped .bar-success {
+  background-color: #69b14a;
+  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
+  background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -moz-linear-gradient(135deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(135deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  -webkit-background-size: 11px 11px;
+     -moz-background-size: 11px 11px;
+       -o-background-size: 11px 11px;
+          background-size: 11px 11px;
+}
+
+.fuelux .progress-info {
+  border-color: #80b5d9;
+}
+
+.fuelux .progress-info .bar,
+.fuelux .progress .bar-info {
+  background: #b9dff1;
+  background-color: #d0e8f3;
+  background-image: -moz-linear-gradient(top, #dfeef5, #b9dff1);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#dfeef5), to(#b9dff1));
+  background-image: -webkit-linear-gradient(top, #dfeef5, #b9dff1);
+  background-image: -o-linear-gradient(top, #dfeef5, #b9dff1);
+  background-image: linear-gradient(to bottom, #dfeef5, #b9dff1);
+  background-repeat: repeat-x;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffdfeef5', endColorstr='#ffb9dff1', GradientType=0);
+}
+
+.fuelux .progress-info.progress-striped .bar,
+.fuelux .progress-striped .bar-info {
+  background-color: #b9dff1;
+  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
+  background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -moz-linear-gradient(135deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(135deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  -webkit-background-size: 11px 11px;
+     -moz-background-size: 11px 11px;
+       -o-background-size: 11px 11px;
+          background-size: 11px 11px;
+}
+
+.fuelux .progress-warning {
+  border-color: #D67C2A;
+}
+
+.fuelux .progress-warning .bar,
+.fuelux .progress .bar-warning {
+  background: #ED892F;
+  background-color: #f2ab6c;
+  background-image: -moz-linear-gradient(top, #f6c294, #ed892f);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f6c294), to(#ed892f));
+  background-image: -webkit-linear-gradient(top, #f6c294, #ed892f);
+  background-image: -o-linear-gradient(top, #f6c294, #ed892f);
+  background-image: linear-gradient(to bottom, #f6c294, #ed892f);
+  background-repeat: repeat-x;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#fff6c294', endColorstr='#ffed892f', GradientType=0);
+}
+
+.fuelux .progress-warning.progress-striped .bar,
+.fuelux .progress-striped .bar-warning {
+  background-color: #ed892f;
+  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
+  background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -moz-linear-gradient(135deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(135deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  -webkit-background-size: 11px 11px;
+     -moz-background-size: 11px 11px;
+       -o-background-size: 11px 11px;
+          background-size: 11px 11px;
+}
+
+.fuelux .icon-search {
+  background-image: url(../img/glyphicons-halflings-carbon.png);
+  background-position: 0  0;
+}
+
+.fuelux .table {
+  border: 0 none;
+}
+
+.fuelux .table th,
+.fuelux .table td {
+  padding: 8px 10px;
+  border-top: 1px dotted #ccc;
+}
+
+.fuelux .table th {
+  font-weight: bold;
+}
+
+.fuelux .table caption + thead tr:first-child th,
+.fuelux .table caption + thead tr:first-child td,
+.fuelux .table colgroup + thead tr:first-child th,
+.fuelux .table colgroup + thead tr:first-child td,
+.fuelux .table thead:first-child tr:first-child th,
+.fuelux .table thead:first-child tr:first-child td {
+  border-top: 0;
+}
+
+.fuelux .table-condensed th,
+.fuelux .table-condensed td {
+  padding: 4px 5px;
+}
+
+.fuelux .table-bordered {
+  border: 1px solid #ccc;
+}
+
+.fuelux .table-bordered th {
+  border-color: transparent;
+}
+
+.fuelux .table-bordered td,
+.fuelux .table-bordered th {
+  border-width: 1px 0;
+}
+
+.fuelux .table-bordered thead th {
+  background-color: #f0f2f4;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ebedf0), to(#f8f9f9));
+  background-image: -webkit-linear-gradient(top, #ebedf0, #f8f9f9);
+  background-image: -o-linear-gradient(top, #ebedf0, #f8f9f9);
+  background-image: linear-gradient(to bottom, #ebedf0, #f8f9f9);
+  background-image: -moz-linear-gradient(top, #ebedf0, #f8f9f9);
+  background-repeat: repeat-x;
+  border-top: 1px solid #ccc;
+  border-bottom: 0 none;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffebedf0', endColorstr='#fff8f9f9', GradientType=0);
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.15);
+     -moz-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.15);
+}
+
+.fuelux .table-bordered tbody th {
+  background-color: #f0f2f3;
+  background-image: -moz-linear-gradient(left, #d4d9de, #f0f2f3);
+  background-image: -webkit-gradient(linear, 0 0, 100% 0, from(#d4d9de), to(#f0f2f3));
+  background-image: -webkit-linear-gradient(left, #d4d9de, #f0f2f3);
+  background-image: -o-linear-gradient(left, #d4d9de, #f0f2f3);
+  background-image: linear-gradient(to right, #d4d9de, #f0f2f3);
+  background-repeat: repeat-x;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffd4d9de', endColorstr='#fff0f2f3', GradientType=1);
+}
+
+.fuelux .table-bordered tbody tr:first-child td,
+.fuelux .table-bordered tbody tr:first-child th {
+  border-top: 1px solid #ccc;
+}
+
+.fuelux h1 {
+  font-size: 21px;
+  line-height: 27px;
+}
+
+.fuelux h2 {
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.fuelux h3 {
+  font-size: 16px;
+  line-height: 27px;
+}
+
+.fuelux h4 {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.fuelux h5 {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.fuelux h6 {
+  font-size: 11px;
+  line-height: 18px;
+}
+
+.fuelux h1 small {
+  font-size: 16px;
+}
+
+.fuelux h2 small {
+  font-size: 14px;
+}
+
+.fuelux h3 small {
+  font-size: 12px;
+}
+
+.fuelux h4 small {
+  font-size: 11px;
+}
+
+.fuelux .datagrid thead tr:first-child th {
+  background: #F0F2F3;
+  -webkit-box-shadow: inset 0 0 0 1px #ffffff;
+     -moz-box-shadow: inset 0 0 0 1px #ffffff;
+          box-shadow: inset 0 0 0 1px #ffffff;
+}
+
+.fuelux .datagrid thead .sortable:hover {
+  background-color: #daeaf2;
+  background-image: -moz-linear-gradient(top, #e5f0f6, #c9e1ec);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#e5f0f6), to(#c9e1ec));
+  background-image: -webkit-linear-gradient(top, #e5f0f6, #c9e1ec);
+  background-image: -o-linear-gradient(top, #e5f0f6, #c9e1ec);
+  background-image: linear-gradient(to bottom, #e5f0f6, #c9e1ec);
+  background-repeat: repeat-x;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffe5f0f6', endColorstr='#ffc9e1ec', GradientType=0);
+}
+
+.fuelux .datagrid thead .sorted {
+  background-color: #daeaf2;
+  background-image: -moz-linear-gradient(top, #e5f0f6, #c9e1ec);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#e5f0f6), to(#c9e1ec));
+  background-image: -webkit-linear-gradient(top, #e5f0f6, #c9e1ec);
+  background-image: -o-linear-gradient(top, #e5f0f6, #c9e1ec);
+  background-image: linear-gradient(to bottom, #e5f0f6, #c9e1ec);
+  background-repeat: repeat-x;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffe5f0f6', endColorstr='#ffc9e1ec', GradientType=0);
+}
+
+.fuelux .datagrid thead .sorted i {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-top: 7px;
+  vertical-align: top;
+  background: transparent none;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  content: "";
+}
+
+.fuelux .datagrid thead .sorted i.icon-chevron-down {
+  border-top: 4px solid #666;
+}
+
+.fuelux .datagrid thead .sorted i.icon-chevron-up {
+  border-bottom: 4px solid #666;
+}
+
+.fuelux .datagrid tfoot {
+  background: #F0F2F3 none;
+}
+
+.fuelux .datagrid tfoot th {
+  border-top: 1px solid #ccc;
+  -webkit-box-shadow: inset 0 0 0 1px #ffffff;
+     -moz-box-shadow: inset 0 0 0 1px #ffffff;
+          box-shadow: inset 0 0 0 1px #ffffff;
+}
+
+.fuelux .datagrid tfoot .datagrid-footer-right .grid-pager > span {
+  top: 5px;
+}
+
+.fuelux .datagrid tfoot .datagrid-footer-right .grid-pager > button {
+  top: 4px;
+}
+
+.fuelux .datagrid tfoot .datagrid-footer-right .grid-pager > button i {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-top: 6px;
+  vertical-align: top;
+  background: transparent none;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  content: "";
+}
+
+.fuelux .datagrid tfoot .datagrid-footer-right .grid-pager > button.grid-prevpage {
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
+.fuelux .datagrid tfoot .datagrid-footer-right .grid-pager > button.grid-prevpage i {
+  border-right: 4px solid #69b;
+}
+
+.fuelux .datagrid tfoot .datagrid-footer-right .grid-pager > button.grid-nextpage {
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
+.fuelux .datagrid tfoot .datagrid-footer-right .grid-pager > button.grid-nextpage i {
+  border-left: 4px solid #69b;
+}
+
+.fuelux .datagrid-footer-left .grid-pagesize {
+  padding-right: 1px;
+}
+
+.fuelux .pillbox li {
+  font-size: 11px;
+  font-weight: normal;
+  line-height: 14px;
+  color: #333;
+  text-shadow: none;
+}
+
+.fuelux .pillbox li:after {
+  top: 2px;
+  right: 0;
+  padding: 0 1px;
+  margin-left: 4px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 17px;
+  line-height: 11px;
+  color: #999;
+  text-shadow: none;
+  background-color: #fff;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+  content: "\00D7";
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.fuelux .pillbox li:hover:after {
+  color: #f74747;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.fuelux .pillbox li.status-important {
+  background-color: #f8d97a;
+}
+
+.fuelux .pillbox li.status-warning {
+  background-color: #f4ba86;
+}
+
+.fuelux .pillbox li.status-success {
+  background-color: #a7d991;
+}
+
+.fuelux .pillbox li.status-info {
+  background-color: #c2d4e3;
+}
+
+.fuelux .spinner .btn {
+  width: 12px;
+  height: 10px;
+}
+
+.fuelux .spinner .spinner-buttons {
+  left: -14px;
+  width: 12px;
+  height: 20px;
+}
+
+.fuelux .spinner .spinner-up {
+  padding: 0;
+}
+
+.fuelux .spinner .spinner-up i {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-top: 7px;
+  vertical-align: top;
+  background: transparent none;
+  border-right: 3px solid transparent;
+  border-bottom: 3px solid #666666;
+  border-left: 3px solid transparent;
+  content: "";
+}
+
+.fuelux .spinner .spinner-down {
+  height: 10px;
+  padding: 0;
+}
+
+.fuelux .spinner .spinner-down i {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-top: 8px;
+  vertical-align: top;
+  background: transparent none;
+  border-top: 3px solid #666666;
+  border-right: 3px solid transparent;
+  border-left: 3px solid transparent;
+  content: "";
 }
