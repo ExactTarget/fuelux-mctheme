@@ -1,5 +1,7 @@
 # Fuel UX Carbon Theme
 
+[Primary Fuel UX repo](https://github.com/ExactTarget/fuelux)
+
 Fuel UX extends Twitter Bootstrap with additional lightweight JavaScript controls.
 Other benefits include easy installation into web projects, integrated scripts for customizing Bootstrap and Fuel UX,
 simple updates, and solid optimization for deployment. All functionality is covered by live documentation and unit tests.
