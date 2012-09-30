@@ -55,35 +55,6 @@ module.exports = function(grunt) {
 			}
 		},
 		uglify: {},
-		requirejs: {
-			combine: {
-				options: {
-					appDir: 'src',
-					baseUrl: '.',
-					dir: 'dist',
-					optimize: 'none',
-					optimizeCss: 'none',
-					paths: {
-						almond: '../lib/almond',
-						bootstrap: '../lib/bootstrap/js',
-						jquery: '../lib/jquery',
-						fuelux: '../dist'
-					},
-					modules: [
-						{
-							name: 'fuelux/all',
-							exclude: ['jquery']
-						},
-						{
-							name: 'fuelux/loader',
-							include: ['almond', 'fuelux/all'],
-							insertRequire: ['fuelux/loader'],
-							exclude: ['jquery']
-						}
-					]
-				}
-			}
-		},
 		recess: {
 			compile: {
 				src: ['src/less/fuelux.less'],
@@ -121,6 +92,14 @@ module.exports = function(grunt) {
 			zipsrc: ['dist/fuelux']
 		},
 		copy: {
+			fuelux: {
+				options: {
+					basePath: 'lib/bootstrap/fuelux'
+				},
+				files: {
+					'dist': 'lib/bootstrap/fuelux/**'
+				}
+			},
 			images: {
 				options: {
 					basePath: 'lib/bootstrap/img'
@@ -152,7 +131,7 @@ module.exports = function(grunt) {
 	});
 
 	// Default task.
-	grunt.registerTask('default', 'lint qunit requirejs recess copy:images clean:dist min copy:zipsrc compress clean:zipsrc');
+	grunt.registerTask('default', 'lint qunit copy:fuelux recess copy:images clean:dist min copy:zipsrc compress clean:zipsrc');
 	grunt.registerTask('devserver', 'lint qunit recess server watch'); // development server
 
 };
