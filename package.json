@@ -1,0 +1,49 @@
+{
+  "name": "fuelux-carbon",
+  "title": "Fuel UX - Carbon Theme",
+  "version": "2.0.0",
+  "description": "Base Fuel UX styles and controls",
+  "homepage": "https://github.com/ExactTarget/fuelux-carbon",
+  "author": {
+    "name": "ExactTarget",
+    "email": "aalexander@exacttarget.com",
+    "url": "http://code.exacttarget.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ExactTarget/fuelux-carbon.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ExactTarget/fuelux-carbon/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/ExactTarget/fuelux-carbon/blob/master/COPYING"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.6.0"
+  },
+  "scripts": {
+    "test": "grunt qunit"
+  },
+  "dependencies": {
+    "grunt": "~0.3.11",
+    "grunt-contrib": "~0.1.0",
+    "grunt-recess": "~0.1.0"
+  },
+  "keywords": [
+    "fuelux",
+    "fuel ux",
+    "bootstrap"
+  ],
+  "private": true,
+  "volo": {
+    "baseDir": "lib",
+    "url": "https://raw.github.com/ExactTarget/fuelux-carbon/{version}/dist/fuelux.zip",
+    "type": "directory",
+    "dependencies": {
+    }
+  }
+}
