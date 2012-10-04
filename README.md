@@ -1,4 +1,4 @@
-# Fuel UX Carbon Theme
+# Fuel UX IMH Theme
 
 [Primary Fuel UX repo](https://github.com/ExactTarget/fuelux)
 
@@ -7,9 +7,9 @@ Other benefits include easy installation into web projects, integrated scripts f
 simple updates, and solid optimization for deployment. All functionality is covered by live documentation and unit tests.
 
 ## Getting Started
-* `git clone git://github.com/ExactTarget/fuelux-carbon.git`
-* Carbon-themed Fuel UX files for production use are located in the [dist](https://github.com/ExactTarget/fuelux-carbon/tree/master/dist) directory
-* To customize, modify the files under [src](https://github.com/ExactTarget/fuelux-carbon/tree/master/src) then run `grunt` to regenerate your [dist](https://github.com/ExactTarget/fuelux-carbon/tree/master/dist) directory (more below)
+* `git clone git://github.com/ExactTarget/fuelux-imhtheme.git`
+* IMH-themed Fuel UX files for production use are located in the [dist](https://github.com/ExactTarget/fuelux-imhtheme/tree/master/dist) directory
+* To customize, modify the files under [src](https://github.com/ExactTarget/fuelux-imhtheme/tree/master/src) then run `grunt` to regenerate your [dist](https://github.com/ExactTarget/fuelux-imhtheme/tree/master/dist) directory (more below)
 
 ### Important notes
 Please don't edit files in the `dist` directory as they are generated via grunt. You'll find source code in the `src` directory!

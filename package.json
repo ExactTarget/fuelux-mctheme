@@ -1,9 +1,9 @@
 {
-  "name": "fuelux-carbon",
-  "title": "Fuel UX - Carbon Theme",
+  "name": "fuelux-imhtheme",
+  "title": "Fuel UX - IMH Theme",
   "version": "2.0.0",
   "description": "Base Fuel UX styles and controls",
-  "homepage": "https://github.com/ExactTarget/fuelux-carbon",
+  "homepage": "https://github.com/ExactTarget/fuelux-imhtheme",
   "author": {
     "name": "ExactTarget",
     "email": "aalexander@exacttarget.com",
@@ -11,15 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/ExactTarget/fuelux-carbon.git"
+    "url": "git://github.com/ExactTarget/fuelux-imhtheme.git"
   },
   "bugs": {
-    "url": "https://github.com/ExactTarget/fuelux-carbon/issues"
+    "url": "https://github.com/ExactTarget/fuelux-imhtheme/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/ExactTarget/fuelux-carbon/blob/master/COPYING"
+      "url": "https://github.com/ExactTarget/fuelux-imhtheme/blob/master/COPYING"
     }
   ],
   "engines": {
@@ -41,7 +41,7 @@
   "private": true,
   "volo": {
     "baseDir": "lib",
-    "url": "https://raw.github.com/ExactTarget/fuelux-carbon/{version}/dist/fuelux.zip",
+    "url": "https://raw.github.com/ExactTarget/fuelux-imhtheme/{version}/dist/fuelux.zip",
     "type": "directory",
     "dependencies": {
     }
