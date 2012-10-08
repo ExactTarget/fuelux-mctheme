@@ -11,16 +11,16 @@ simple updates, and solid optimization for deployment. All functionality is cove
 * IMH-themed Fuel UX files for production use are located in the [dist](https://github.com/ExactTarget/fuelux-imhtheme/tree/master/dist) directory
 * To customize, modify the files under [src](https://github.com/ExactTarget/fuelux-imhtheme/tree/master/src) then run `grunt` to regenerate your [dist](https://github.com/ExactTarget/fuelux-imhtheme/tree/master/dist) directory (more below)
 
-## Documentation and Examples
-
-To see some work ExactTarget has made available to our client base, please check out [Fuel UX] (http://code.exacttarget.com/devcenter/fuel-ux) on our [Developer Community] (http://code.exacttarget.com/devcenter/home)
-
 ### Important notes
 Please don't edit files in the `dist` directory as they are generated via grunt. You'll find source code in the `src` directory!
 
 While grunt can run the included unit tests via PhantomJS, this isn't a substitute for the real thing. Please be sure to test the `test/*.html` unit test file(s) in real browsers as well.
 
 More about [Installing grunt and PhantomJS](https://github.com/ExactTarget/fuelux/wiki/Installing-grunt-and-PhantomJS)
+
+## Documentation and Examples
+
+To see some work ExactTarget has made available to our client base, please check out [Fuel UX] (http://code.exacttarget.com/devcenter/fuel-ux) on our [Developer Community] (http://code.exacttarget.com/devcenter/home)
 
 ## Copyright and license
 
