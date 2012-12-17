@@ -1891,7 +1891,7 @@ textarea.span1,
 
 .fuelux table {
   max-width: 100%;
-  background-color: #ffffff;
+  background-color: transparent;
   border-collapse: collapse;
   border-spacing: 0;
 }
