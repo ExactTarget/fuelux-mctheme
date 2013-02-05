@@ -15,7 +15,13 @@ require(['jquery', 'fuelux/datagrid'], function($) {
 	});
 
 	asyncTest("should render data source", function () {
-		var $datagrid = $(datagridHTML).datagrid({ dataSource: stubDataSource }).on('loaded', function () {
+		var $datagrid = $(datagridHTML).datagrid({ dataSource: new StubDataSource() }).on('loaded', function () {
+
+			var $topHeader = $datagrid.find('thead tr:first').find('th');
+			equal($topHeader.attr('colspan'), '3', 'header spans all columns');
+
+			var $footer = $datagrid.find('tfoot th');
+			equal($footer.attr('colspan'), '3', 'footer spans all columns');
 
 			var $columnHeaders = $datagrid.find('thead tr').eq(1).find('th');
 			equal($columnHeaders.eq(0).text(), 'Property One', 'column 1 header has label');
@@ -41,7 +47,10 @@ require(['jquery', 'fuelux/datagrid'], function($) {
 			equal($status.text(), '1 - 2 of 3 items', 'status is correctly displayed');
 
 			var $page = $datagrid.find('.grid-pager input');
-			equal($page.val(), '4', 'page is correctly displayed');
+			equal($page.val(), '1', 'page is correctly displayed');
+
+			var $pagedropdownitems = $datagrid.find('.grid-pager .dropdown-menu li');
+			equal($pagedropdownitems.length, 5, 'dropdown shows all pages');
 
 			var $pages = $datagrid.find('.grid-pages');
 			equal($pages.text(), '5', 'page count is correctly displayed');
@@ -61,12 +70,157 @@ require(['jquery', 'fuelux/datagrid'], function($) {
 
 			var $testcell = $datarows.eq(0).find('td');
 			equal($testcell.text(), '0 items', 'empty status is displayed');
+			equal($testcell.attr('colspan'), '2', 'empty status spans all columns');
 
 			start();
 		});
 
 		var $activityrow = $datagrid.find('tbody tr');
 		equal($activityrow.length, 1, 'activity row was rendered');
+	});
+
+	asyncTest("should handle header clicks", function () {
+		var stubDataSource = new StubDataSource();
+		var $datagrid = $(datagridHTML).datagrid({ dataSource: stubDataSource }).one('loaded', function () {
+
+			var $columnHeaders = $datagrid.find('thead tr').eq(1).find('th');
+
+			$datagrid.one('loaded', function () {
+
+				equal(stubDataSource.options.sortProperty, 'property1', 'iteration one - sort property was set properly');
+				equal(stubDataSource.options.sortDirection, 'asc', 'iteration one - sort direction was set properly');
+				ok($columnHeaders.eq(0).hasClass('sorted'), 'iteration one - header has sorted class');
+				ok($columnHeaders.eq(0).find('i').hasClass('icon-chevron-up'), 'iteration one - header has sorting indicator');
+
+				$datagrid.one('loaded', function () {
+
+					equal(stubDataSource.options.sortProperty, 'property1', 'iteration two - sort property was set properly');
+					equal(stubDataSource.options.sortDirection, 'desc', 'iteration two - sort direction was set properly');
+					ok($columnHeaders.eq(0).hasClass('sorted'), 'iteration two - header has sorted class');
+					ok($columnHeaders.eq(0).find('i').hasClass('icon-chevron-down'), 'iteration two - header has sorting indicator');
+
+					$datagrid.one('loaded', function () {
+
+						equal(stubDataSource.options.sortProperty, 'property2', 'iteration three - sort property was set properly');
+						equal(stubDataSource.options.sortDirection, 'asc', 'iteration three - sort direction was set properly');
+						ok($columnHeaders.eq(1).hasClass('sorted'), 'iteration three - header has sorted class');
+						ok($columnHeaders.eq(1).find('i').hasClass('icon-chevron-up'), 'iteration three - header has sorting indicator');
+
+						start();
+					});
+
+					$columnHeaders.eq(1).click();
+				});
+
+				$columnHeaders.eq(0).click();
+			});
+
+			$columnHeaders.eq(0).click();
+		});
+	});
+
+	asyncTest("should handle page changes", function () {
+		var stubDataSource = new StubDataSource();
+		var $datagrid = $(datagridHTML).datagrid({ dataSource: stubDataSource }).one('loaded', function () {
+
+			var $pagecontrols = $datagrid.find('.grid-pager');
+			var $previousbutton = $pagecontrols.find('button:first');
+			var $nextbutton = $pagecontrols.find('button:last');
+			var $pageinput = $pagecontrols.find('input');
+
+			equal($previousbutton.attr('disabled'), 'disabled', 'iteration one - previous button is disabled');
+			equal($nextbutton.attr('disabled'), undefined, 'iteration one - next button is enabled');
+
+			$datagrid.one('loaded', function () {
+
+				equal(stubDataSource.options.pageIndex, 1, 'iteration two - page index was incremented');
+				equal($previousbutton.attr('disabled'), undefined, 'iteration two - previous button is enabled');
+				equal($nextbutton.attr('disabled'), undefined, 'iteration two - next button is enabled');
+
+				$datagrid.one('loaded', function () {
+
+					equal(stubDataSource.options.pageIndex, 0, 'iteration three - page index was incremented');
+					equal($previousbutton.attr('disabled'), 'disabled', 'iteration three - previous button is disabled');
+					equal($nextbutton.attr('disabled'), undefined, 'iteration three - next button is enabled');
+
+					$datagrid.one('loaded', function () {
+
+						equal(stubDataSource.options.pageIndex, 4, 'iteration four - page index was changed');
+						equal($previousbutton.attr('disabled'), undefined, 'iteration four - previous button is enabled');
+						equal($nextbutton.attr('disabled'), 'disabled', 'iteration four - next button is disabled');
+
+						start();
+					});
+
+					$pageinput.val('5').change();
+				});
+
+				$previousbutton.click();
+			});
+
+			$nextbutton.click();
+		});
+	});
+
+	asyncTest("should handle page size changes", function () {
+		var stubDataSource = new StubDataSource();
+		var $datagrid = $(datagridHTML).datagrid({ dataSource: stubDataSource }).one('loaded', function () {
+
+			var $pagesize = $datagrid.find('.grid-pagesize');
+
+			equal(stubDataSource.options.pageSize, 3, 'page size has default value');
+
+			$datagrid.one('loaded', function () {
+
+				equal(stubDataSource.options.pageSize, 6, 'page size was changed');
+				start();
+			});
+
+			$pagesize.val('6').change();
+		});
+	});
+
+	asyncTest("should handle search changes", function () {
+		var stubDataSource = new StubDataSource();
+		var $datagrid = $(datagridHTML).datagrid({ dataSource: stubDataSource }).one('loaded', function () {
+
+			var $searchcontrol = $datagrid.find('.search');
+
+			equal(stubDataSource.options.search, undefined, 'search is undefined by default');
+
+			$datagrid.one('loaded', function () {
+
+				equal(stubDataSource.options.search, 'my search', 'search was changed');
+
+				$datagrid.one('loaded', function () {
+
+					equal(stubDataSource.options.search, undefined, 'search was cleared');
+					start();
+				});
+
+				$searchcontrol.trigger('cleared');
+			});
+
+			$searchcontrol.trigger('searched', 'my search');
+		});
+	});
+
+	asyncTest("should handle reload method", function () {
+		var stubDataSource = new StubDataSource();
+		var $datagrid = $(datagridHTML).datagrid({ dataSource: stubDataSource, dataOptions: { pageIndex: 1, pageSize: 10 } }).one('loaded', function () {
+
+			var dataCallCount = stubDataSource.dataCallCount;
+
+			$datagrid.one('loaded', function () {
+
+				equal(stubDataSource.dataCallCount, dataCallCount + 1, 'reload was completed');
+				equal(stubDataSource.options.pageIndex, 0, 'first page was shown');
+				start();
+
+			});
+
+			$datagrid.datagrid('reload');
+		});
 	});
 
 	var emptyDataSource = {
@@ -88,40 +242,45 @@ require(['jquery', 'fuelux/datagrid'], function($) {
 		}
 	};
 
-	var stubDataSource = {
-		columns: function () {
-			return [{
-				property: 'property1',
-				label: 'Property One',
-				sortable: true
-			}, {
-				property: 'property2',
-				label: 'Property Two',
-				sortable: true
-			}, {
-				property: 'property3',
-				label: 'Property Three',
-				sortable: false
-			}];
-		},
-		data: function (options, callback) {
-			setTimeout(function () {
-				callback({
-					data: [
-						{ property1: 'A', property2: 'B', property3: 'C' },
-						{ property1: 'D', property2: 'E', property3: 'F' },
-						{ property1: 'G', property2: 'H', property3: 'I' },
-						{ property1: 'J', property2: 'K', property3: 'L' },
-						{ property1: 'M', property2: 'N', property3: 'O' },
-						{ property1: 'P', property2: 'Q', property3: 'R' },
-						{ property1: 'S', property2: 'T', property3: 'U' },
-						{ property1: 'V', property2: 'W', property3: 'X' }
-					],
-					start: 1, end: 2, count: 3, pages: 5, page: 4
-				});
-			}, 0);
+	var StubDataSource = function () {};
 
-		}
+	StubDataSource.prototype.columns = function () {
+		return [{
+			property: 'property1',
+			label: 'Property One',
+			sortable: true
+		}, {
+			property: 'property2',
+			label: 'Property Two',
+			sortable: true
+		}, {
+			property: 'property3',
+			label: 'Property Three',
+			sortable: false
+		}];
+	};
+
+	StubDataSource.prototype.data = function (options, callback) {
+		this.dataCallCount = this.dataCallCount || 0;
+		this.dataCallCount++;
+
+		this.options = options;
+
+		setTimeout(function () {
+			callback({
+				data: [
+					{ property1: 'A', property2: 'B', property3: 'C' },
+					{ property1: 'D', property2: 'E', property3: 'F' },
+					{ property1: 'G', property2: 'H', property3: 'I' },
+					{ property1: 'J', property2: 'K', property3: 'L' },
+					{ property1: 'M', property2: 'N', property3: 'O' },
+					{ property1: 'P', property2: 'Q', property3: 'R' },
+					{ property1: 'S', property2: 'T', property3: 'U' },
+					{ property1: 'V', property2: 'W', property3: 'X' }
+				],
+				start: 1, end: 2, count: 3, pages: 5, page: options.pageIndex + 1
+			});
+		}, 0);
 	};
 
 	var datagridHTML = '<table id="MyGrid" class="table table-bordered datagrid">' +
@@ -133,7 +292,7 @@ require(['jquery', 'fuelux/datagrid'], function($) {
 		'<tfoot><tr><th>' +
 		'<div class="datagrid-footer-left"><div class="grid-controls">' +
 		'<span><span class="grid-start"></span> - <span class="grid-end"></span> of <span class="grid-count"></span></span>' +
-		'<select class="grid-pagesize"><option>3</option></select>' +
+		'<select class="grid-pagesize"><option>3</option><option>6</option></select>' +
 		'<span>Per Page</span>' +
 		'</div></div>' +
 		'<div class="datagrid-footer-right"><div class="grid-pager">' +

@@ -24,6 +24,17 @@ require(['jquery', 'fuelux/search'], function($) {
 		equal($search.find('i').attr('class'), 'icon-search', 'search icon has not changed');
 	});
 
+	test("should ignore disabled button click", function () {
+		var searchHTML = '<div><input><button class="disabled"><i class="icon-search"></i></button></div>';
+
+		var $search = $(searchHTML).search();
+
+		$search.find('input').val('search text');
+		$search.find('button').click();
+
+		equal($search.find('i').attr('class'), 'icon-search', 'search icon has not changed');
+	});
+
 	test("should process valid search", function () {
 		var searchHTML = '<div><input><button><i></i></button></div>';
 		var searchText = '';
@@ -71,6 +82,20 @@ require(['jquery', 'fuelux/search'], function($) {
 
 		equal($search.find('i').attr('class'), 'icon-remove', 'search icon has changed');
 		equal(searchText, 'search text 2', 'search text was provided in event');
+	});
+
+	test("should correctly respond to disable and enable methods", function () {
+		var searchHTML = '<div><input><button><i></i></button></div>';
+
+		var $search = $(searchHTML).search('disable');
+
+		equal($search.find('input').attr('disabled'), 'disabled', 'input was disabled');
+		equal($search.find('button').hasClass('disabled'), true, 'button was disabled');
+
+		$search.search('enable');
+
+		equal($search.find('input').attr('disabled'), undefined, 'input was enabled');
+		equal($search.find('button').hasClass('disabled'), false, 'button was enabled');
 	});
 
 });
