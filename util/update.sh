@@ -12,27 +12,13 @@ echo "--------------------------------------------------------------------------
 
 
 echo
-echo
-echo "running git status"
-echo "(this shows you what changes were brought in by volo)"
-git status
-echo
-echo "Commit changes? yN"
-read yN
-if [ "$yN" = "y" ] || [ "$yN" = "Y" ]; then
-	echo "committing changes!"
-	git add -A
-	git commit -m "updated bootstrap and fuelux"
-	git status
-else
-	echo "not committing changes"
-fi
-
+echo "grunt"
+grunt
 echo
 echo "NOTICE::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::"
 echo
-echo "You will need to checkout the latest >2.2 tag from fuelux "
-echo "and copy over the test/* files in order for unit tests to run properly."
+echo "You may need to checkout the latest >2.2 tag from fuelux (especially if grunt failed "
+echo "just now) and copy over the test/* files in order for unit tests to run properly."
 echo ""
 echo "Make sure you update the path to fuelux in test/fuelux.html."
 echo "Path will change from '../src' to '../lib/fuelux'"
@@ -40,3 +26,30 @@ echo
 echo "NOTICE::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::"
 echo
 echo "If you didn't see any errors above, you are probably good to go! ;)"
+
+echo
+echo
+echo "run git status? yN"
+echo "(this shows you what changes were brought in by volo)"
+read runstatus
+if [ "$runstatus" = "y" ] || [ "$runstatus" = "Y" ]; then
+	echo "git status"
+	git status
+	echo
+	echo "add and commit all changes? yN"
+	read yN
+	if [ "$yN" = "y" ] || [ "$yN" = "Y" ]; then
+		echo "committing changes!"
+		echo "git add -A"
+		git add -A
+		echo
+		echo "git commit -m \"updated bootstrap and fuelux\""
+		git commit -m "updated bootstrap and fuelux"
+		echo
+		echo "git status"
+		git status
+	else
+		echo "not committing changes"
+	fi
+fi
+echo "------------------------------------------------------------------------------------"
