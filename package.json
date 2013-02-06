@@ -1,7 +1,7 @@
 {
   "name": "fuelux-imhtheme",
   "title": "Fuel UX - IMH Theme",
-  "version": "2.1.1",
+  "version": "2.2.2",
   "description": "Base Fuel UX styles and controls",
   "homepage": "https://github.com/ExactTarget/fuelux-imhtheme",
   "author": {
@@ -9,6 +9,13 @@
     "email": "aalexander@exacttarget.com",
     "url": "http://code.exacttarget.com"
   },
+  "contributors": [
+    {
+      "name": "Christopher McCulloh",
+      "email": "cmcculloh@exacttarget.com",
+      "url": "https://github.com/cmcculloh"
+    }
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/ExactTarget/fuelux-imhtheme.git"
