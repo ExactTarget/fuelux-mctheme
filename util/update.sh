@@ -6,16 +6,16 @@ if [ -n "$pwd" ];then
 	cd ..
 fi
 
-./util/update-bootstrap.sh
+./util/update-bootstrap.sh < /dev/null
 echo "------------------------------------------------------------------------------------"
 
-./util/update-fuelux.sh
+./util/update-fuelux.sh < /dev/null
 echo "------------------------------------------------------------------------------------"
 
 
 echo
 echo "grunt"
-grunt
+grunt < /dev/null
 echo
 echo "NOTICE::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::"
 echo
