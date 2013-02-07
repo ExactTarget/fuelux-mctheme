@@ -1,3 +1,5 @@
+#!/bin/sh
+
 #make sure we are in the root dir
 pwd=$(pwd | grep "util")
 if [ -n "$pwd" ];then

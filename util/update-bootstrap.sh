@@ -1,9 +1,7 @@
 #!/bin/sh
 
-rm -rf lib/bootstrap
-
-echo "running volo add -nostamp bootstrap"
-volo add -nostamp bootstrap
+echo "running volo add -nostamp -f bootstrap"
+volo add -nostamp -f bootstrap
 
 volo amdify lib/bootstrap/js/bootstrap-transition.js depends=jquery
 volo amdify lib/bootstrap/js/bootstrap-affix.js depends=bootstrap/bootstrap-transition

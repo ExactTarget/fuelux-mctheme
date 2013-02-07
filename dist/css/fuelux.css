@@ -6503,6 +6503,10 @@ textarea.span1,
           border-radius: 6px;
 }
 
+.fuelux .tree .tree-item:hover {
+  background-color: #dfeef5;
+}
+
 .fuelux .tree .tree-item .tree-item-name {
   position: absolute;
   left: 29px;
