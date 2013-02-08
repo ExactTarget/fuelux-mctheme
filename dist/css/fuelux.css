@@ -7569,6 +7569,30 @@ textarea.span1,
   font-size: 11px;
 }
 
+.fuelux .tree i {
+  background-image: url(../img/glyphicons-halflings-imh.png);
+}
+
+.fuelux .tree .tree-folder i.icon-folder-open {
+  background-position: -16px -16px;
+}
+
+.fuelux .tree .tree-folder i.icon-folder-close {
+  background-position: -1px -16px;
+}
+
+.fuelux .tree .tree-item i.tree-dot {
+  background-color: #BCBFC3;
+}
+
+.fuelux .tree .tree-item i.icon-ok {
+  background-position: -33px -15px;
+}
+
+.fuelux .tree .tree-item:hover i.tree-dot {
+  background-color: #3F5B6B;
+}
+
 .fuelux .datagrid thead tr:first-child th {
   background: #F0F2F3;
   -webkit-box-shadow: inset 0 0 0 1px #ffffff;
