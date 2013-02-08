@@ -7062,6 +7062,10 @@ textarea.span1,
   text-decoration: none;
 }
 
+.fuelux .checkbox-custom i {
+  font-size: 14px;
+}
+
 .fuelux .close {
   font-size: 24px;
   font-weight: normal;
@@ -7435,6 +7439,10 @@ textarea.span1,
      -moz-background-size: 11px 11px;
        -o-background-size: 11px 11px;
           background-size: 11px 11px;
+}
+
+.fuelux .radio-custom i {
+  font-size: 14px;
 }
 
 .fuelux .icon-search {
