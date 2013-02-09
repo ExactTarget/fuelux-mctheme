@@ -1,0 +1,68 @@
+.wizard {
+	background-color: transparent;
+
+	.badge-info{
+		background-color: #5795CA;
+	}
+
+	.badge-success{
+		background-color: #5FB21C;
+	}
+
+	.steps .badge{
+		font-size: 15px;
+		padding: 4px 8px;
+		border-radius: 16px;
+	}
+
+	ul{
+		li.complete{
+			color: #5FB21C;
+		}
+
+		li.active{
+			color: #5795CA;
+		}
+	}
+
+	.btn {
+		border-radius: 0.45em;
+		font-size: 11px;
+		padding: 4px 8px 5px 8px;
+		border: 0 solid #fff;
+
+		i[class^="icon-"]{
+			background-image: url("../img/glyphicons-halflings-imh.png");
+		}
+
+		.icon-arrow-right{
+			background-position: -48px -16px;
+		}
+
+		.icon-arrow-left{
+			background-position: -64px -16px;
+		}
+	}
+
+	.btn-next{
+		background: -moz-linear-gradient(top, #7db7e9, #4d87b8);
+		background: -webkit-gradient(linear, left top, left bottom, from(#7db7e9), to(#4d87b8));
+		color: #fff;
+	}
+	.btn-next:hover{
+		background: -moz-linear-gradient(top, #98c9f4, #659bc9);
+		background: -webkit-gradient(linear, left top, left bottom, from(#98c9f4), to(#659bc9));
+	}
+	.btn-prev{
+		border: 0 none;
+		background: transparent none;
+		color: #2168a7;
+		box-shadow: none;
+		font-size: 13px;
+		font-weight: normal;
+
+		i{
+			visibility: hidden;
+		}
+	}
+}

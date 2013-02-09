@@ -7593,6 +7593,75 @@ textarea.span1,
   background-color: #3F5B6B;
 }
 
+.fuelux .wizard {
+  background-color: transparent;
+}
+
+.fuelux .wizard .badge-info {
+  background-color: #5795CA;
+}
+
+.fuelux .wizard .badge-success {
+  background-color: #5FB21C;
+}
+
+.fuelux .wizard .steps .badge {
+  padding: 4px 8px;
+  font-size: 15px;
+  border-radius: 16px;
+}
+
+.fuelux .wizard ul li.complete {
+  color: #5FB21C;
+}
+
+.fuelux .wizard ul li.active {
+  color: #5795CA;
+}
+
+.fuelux .wizard .btn {
+  padding: 4px 8px 5px 8px;
+  font-size: 11px;
+  border: 0 solid #fff;
+  border-radius: 0.45em;
+}
+
+.fuelux .wizard .btn i[class^="icon-"] {
+  background-image: url("../img/glyphicons-halflings-imh.png");
+}
+
+.fuelux .wizard .btn .icon-arrow-right {
+  background-position: -48px -16px;
+}
+
+.fuelux .wizard .btn .icon-arrow-left {
+  background-position: -64px -16px;
+}
+
+.fuelux .wizard .btn-next {
+  color: #fff;
+  background: -moz-linear-gradient(top, #7db7e9, #4d87b8);
+  background: -webkit-gradient(linear, left top, left bottom, from(#7db7e9), to(#4d87b8));
+}
+
+.fuelux .wizard .btn-next:hover {
+  background: -moz-linear-gradient(top, #98c9f4, #659bc9);
+  background: -webkit-gradient(linear, left top, left bottom, from(#98c9f4), to(#659bc9));
+}
+
+.fuelux .wizard .btn-prev {
+  font-size: 13px;
+  font-weight: normal;
+  color: #2168a7;
+  background: transparent none;
+  border: 0 none;
+  box-shadow: none;
+}
+
+.fuelux .wizard .btn-prev i {
+  visibility: hidden;
+}
+
 .fuelux .datagrid thead tr:first-child th {
   background: #F0F2F3;
   -webkit-box-shadow: inset 0 0 0 1px #ffffff;
