@@ -7638,17 +7638,6 @@ textarea.span1,
   background-position: -64px -16px;
 }
 
-.fuelux .wizard .btn-next {
-  color: #fff;
-  background: -moz-linear-gradient(top, #7db7e9, #4d87b8);
-  background: -webkit-gradient(linear, left top, left bottom, from(#7db7e9), to(#4d87b8));
-}
-
-.fuelux .wizard .btn-next:hover {
-  background: -moz-linear-gradient(top, #98c9f4, #659bc9);
-  background: -webkit-gradient(linear, left top, left bottom, from(#98c9f4), to(#659bc9));
-}
-
 .fuelux .wizard .btn-prev {
   font-size: 13px;
   font-weight: normal;
