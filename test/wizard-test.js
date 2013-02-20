@@ -5,27 +5,48 @@
 require(['jquery', 'fuelux/wizard'], function ($) {
 
 	var html = '<div>' +
-			'<div class="wizard">' +
-				'<ul class="steps">' +
-					'<li data-target="#step1" class="active"><span class="badge badge-info">1</span>Step 1</li>' +
-					'<li data-target="#step2"><span class="badge">2</span>Step 2</li>' +
-					'<li data-target="#step3"><span class="badge">3</span>Step 3</li>' +
-					'<li data-target="#step4"><span class="badge">4</span>Step 4</li>' +
-					'<li data-target="#step5"><span class="badge">5</span>Step 5</li>' +
-				'</ul>' +
-				'<div class="actions">' +
-					'<a href="#">Cancel</a>' +
-					'<button class="btn btn-mini btn-primary btn-prev"> <i class="icon-white icon-arrow-left"></i>Prev</button>' +
-					'<button class="btn btn-mini btn-primary btn-next" data-last="Finish">Next<i class="icon-white icon-arrow-right"></i></button>' +
-				'</div>' +
-			'</div>' +
-			'<div class="step-content">' +
-				'<div class="step-pane active" id="step1">This is step 1</div>' +
-				'<div class="step-pane" id="step2">This is step 2</div>' +
-				'<div class="step-pane" id="step3">This is step 3</div>' +
-				'<div class="step-pane" id="step4">This is step 4</div>' +
-				'<div class="step-pane" id="step5">This is step 5</div>' +
-			'</div>' +
+		'<div class="wizard">' +
+		'<ul class="steps">' +
+		'<li data-target="#step1" class="active"><span class="badge badge-info">1</span>Step 1</li>' +
+		'<li data-target="#step2"><span class="badge">2</span>Step 2</li>' +
+		'<li data-target="#step3"><span class="badge">3</span>Step 3</li>' +
+		'<li data-target="#step4"><span class="badge">4</span>Step 4</li>' +
+		'<li data-target="#step5"><span class="badge">5</span>Step 5</li>' +
+		'</ul>' +
+		'<div class="actions">' +
+		'<a href="#">Cancel</a>' +
+		'<button class="btn btn-mini btn-primary btn-prev"> <i class="icon-white icon-arrow-left"></i>Prev</button>' +
+		'<button class="btn btn-mini btn-primary btn-next" data-last="Finish">Next<i class="icon-white icon-arrow-right"></i></button>' +
+		'</div>' +
+		'</div>' +
+		'<div class="step-content">' +
+		'<div class="step-pane active" id="step1">This is step 1</div>' +
+		'<div class="step-pane" id="step2">This is step 2</div>' +
+		'<div class="step-pane" id="step3">This is step 3</div>' +
+		'<div class="step-pane" id="step4">This is step 4</div>' +
+		'<div class="step-pane" id="step5">This is step 5</div>' +
+		'</div>' +
+		'</div>';
+
+	var htmlWithSpaces = '<div>' +
+		'<div class="wizard">' +
+		'<ul class="steps">' +
+		'<li data-target="#step1" class="active"><span class="badge badge-info">1</span>Step 1</li>' +
+		'<li data-target="#step2"><span class="badge">2</span>Step 2</li>' +
+		'</ul>' +
+		'<div class="actions">' +
+		'<a href="#">Cancel</a>' +
+		'<button class="btn btn-mini btn-primary btn-prev"> <i class="icon-white icon-arrow-left"></i>Prev</button>' +
+		'<button class="btn btn-mini btn-primary btn-next nextBtn" data-last="Finish">' +
+		'Next\n' +
+		'<i class="icon-white icon-arrow-right"></i>\n' +
+		'</button>' +
+		'</div>' +
+		'</div>' +
+		'<div class="step-content">' +
+		'<div class="step-pane active" id="step1">This is step 1</div>' +
+		'<div class="step-pane" id="step2">This is step 2</div>' +
+		'</div>' +
 		'</div>';
 
 
@@ -101,6 +122,27 @@ require(['jquery', 'fuelux/wizard'], function ($) {
 		equal(index, 1, 'step not changed');
 	});
 
+	test("should suppress stepclick event", function () {
+		var eventFired = false;
+
+		var $wizard = $(html).wizard().on('stepclick', function (evt, data) {
+			eventFired = true;
+			return evt.preventDefault(); // prevent action
+		});
+		
+		// move to second step
+		$wizard.wizard('next');
+
+		// click first step
+		$wizard.find('.steps li:first').click();
+
+		var index = $wizard.wizard('selectedItem').step;
+
+		equal(eventFired, true, 'stepclick event fired');
+		equal(index, 2, 'step not changed');
+	});
+
+
 	test("should fire finished event", function () {
 		var eventFired = false;
 
@@ -116,6 +158,26 @@ require(['jquery', 'fuelux/wizard'], function ($) {
 		$wizard.wizard('next'); // calling next method on last step triggers event
 
 		equal(eventFired, true, 'finish event fired');
+	});
+
+	test("should change nextBtn text as appropriate", function () {
+		var $markup = $(htmlWithSpaces);
+		var $wizard = $markup.wizard();
+		var $nextClone;
+
+		$nextClone = $markup.find('.nextBtn').clone();
+		$nextClone.children().remove();
+		equal($.trim($nextClone.text()), 'Next', 'nextBtn text equal to "Next"');
+
+		$wizard.wizard('next');
+		$nextClone = $markup.find('.nextBtn').clone();
+		$nextClone.children().remove();
+		equal($.trim($nextClone.text()), 'Finish', 'nextBtn text equal to "Finish"');
+
+		$wizard.wizard('previous');
+		$nextClone = $markup.find('.nextBtn').clone();
+		$nextClone.children().remove();
+		equal($.trim($nextClone.text()), 'Next', 'nextBtn text equal to "Next"');
 	});
 
 	/*
