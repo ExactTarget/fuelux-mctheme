@@ -6876,7 +6876,7 @@ textarea.span1,
 
 .fuelux .btn {
   padding: 0 10px 1px;
-  font-weight: bold;
+  font-weight: normal;
   line-height: 18px;
   color: #4E8ABE;
   text-shadow: none;
@@ -7265,7 +7265,7 @@ textarea.span1,
 .fuelux input[type="tel"],
 .fuelux input[type="color"],
 .fuelux .uneditable-input {
-  padding: 1px 6px 2px;
+  padding: 2px 6px 1px;
   color: #333333;
 }
 
@@ -7738,7 +7738,7 @@ textarea.span1,
 }
 
 .fuelux .tree .tree-folder i.icon-folder-close {
-  background-position: -1px -16px;
+  background-position: 0 -16px;
 }
 
 .fuelux .tree .tree-item i.tree-dot {
@@ -7754,7 +7754,7 @@ textarea.span1,
 }
 
 .fuelux .wizard {
-  background-color: transparent;
+  background-color: #F3F4F5;
 }
 
 .fuelux .wizard .badge-info {
@@ -7779,36 +7779,8 @@ textarea.span1,
   color: #5795CA;
 }
 
-.fuelux .wizard .btn {
-  padding: 4px 8px 5px 8px;
-  font-size: 11px;
-  border: 0 solid #fff;
-  border-radius: 0.45em;
-}
-
-.fuelux .wizard .btn i[class^="icon-"] {
-  background-image: url("../img/glyphicons-halflings-imh.png");
-}
-
-.fuelux .wizard .btn .icon-arrow-right {
-  background-position: -48px -16px;
-}
-
-.fuelux .wizard .btn .icon-arrow-left {
-  background-position: -64px -16px;
-}
-
-.fuelux .wizard .btn-prev {
-  font-size: 13px;
-  font-weight: normal;
-  color: #2168a7;
-  background: transparent none;
-  border: 0 none;
-  box-shadow: none;
-}
-
-.fuelux .wizard .btn-prev i {
-  visibility: hidden;
+.fuelux .wizard .btn-link {
+  text-decoration: none;
 }
 
 .fuelux .datagrid thead tr:first-child th {

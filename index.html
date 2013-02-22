@@ -1,379 +1,665 @@
 <!DOCTYPE html>
 <html lang="en" class="fuelux">
 <head>
-	<meta charset="utf-8">
-	<title>Fuel UX 2</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<title>Fuel UX 2</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link href="dist/css/fuelux.css" rel="stylesheet">
+<link href="dist/css/fuelux.css" rel="stylesheet">
 
-	<script src="lib/require.js"></script>
+<script src="lib/require.js"></script>
 
-	<style type="text/css">
-		.pillbox {
-			border: 1px solid #bbb;
-			margin-bottom: 10px;
-			-webkit-border-radius: 4px;
-			-moz-border-radius: 4px;
-			border-radius: 4px;
-			width: 251px;
-		}
+<style type="text/css">
+	body {
+		padding-bottom: 200px;
+	}
 
-		.container > div, .container > table {
-			margin: 20px;
-		}
-	</style>
+	.pillbox {
+		border: 1px solid #bbb;
+		margin-bottom: 10px;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+		width: 251px;
+	}
 
-	<script>
-		requirejs.config({
-			paths: {
-				'jquery': 'https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min',
-				'underscore': 'http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.3.3/underscore-min',
-				'bootstrap': 'lib/bootstrap/js',
-				'fuelux': 'dist'
+	.tree {
+		width: 430px;
+		height: 350px;
+	}
+
+	.static-loader {
+		margin-left: 30px;
+	}
+
+	.step-content {
+		border: 1px solid #D4D4D4;
+		border-top: 0;
+		border-radius: 0 0 4px 4px;
+		padding: 10px;
+		margin-bottom: 10px;
+	}
+</style>
+
+<script>
+requirejs.config({
+	paths: {
+		'jquery': 'lib/jquery',
+		'underscore': 'http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.3.3/underscore-min',
+		'bootstrap': 'lib/bootstrap/js',
+		'fuelux': 'dist'
+	}
+});
+
+require(['jquery', 'sample/data', 'sample/datasource', 'sample/datasourceTree', 'fuelux/all'], function ($, sampleData, StaticDataSource, DataSourceTree) {
+
+	// COMBOBOX
+	$('#btnComboboxDisable').on('click', function () {
+		$('#MyCombobox').combobox('disable');
+	});
+	$('#btnComboboxEnable').on('click', function () {
+		$('#MyCombobox').combobox('enable');
+	});
+	$('#btnComboboxGetSelectedItem').on('click', function () {
+		console.log($('#MyCombobox').combobox('selectedItem'));
+	});
+	$('#btnComboboxSelectByValue').on('click', function () {
+		$('#MyCombobox').combobox('selectByValue', '3');
+	});
+	$('#btnComboboxSelectBySelector').on('click', function () {
+		$('#MyCombobox').combobox('selectBySelector', 'li[data-fizz=buzz]');
+	});
+	$('#btnComboboxSelectByIndex').on('click', function () {
+		$('#MyCombobox').combobox('selectByIndex', '3');
+	});
+	$('#btnComboboxSelectByText').on('click', function () {
+		$('#MyCombobox').combobox('selectByText', 'Four');
+	});
+	$('#MyCombobox').on('changed', function (evt, data) {
+		console.log(data);
+	});
+
+	// SEARCH CONTROL
+	$('#MySearch').on('searched', function (e, text) {
+		alert('Searched: ' + text);
+	});
+	$('#btnSearchDisable').on('click', function () {
+		$('#MySearch').search('disable');
+	});
+	$('#btnSearchEnable').on('click', function () {
+		$('#MySearch').search('enable');
+	});
+
+	// PILLBOX
+	$('#btnAdd').click(function () {
+		$('#MyPillbox ul').append('<li>Item Eight</li>');
+	});
+
+	$('#btnRemove').click(function () {
+		$('#MyPillbox li[data-value="foo"]').remove();
+	});
+
+	$('#btnItems').click(function () {
+		var items = $('#MyPillbox').pillbox('items');
+		console.log(items);
+	});
+
+
+	// DATAGRID
+	var dataSource = new StaticDataSource({
+		columns: [
+			{
+				property: 'toponymName',
+				label: 'Name',
+				sortable: true
+			},
+			{
+				property: 'countrycode',
+				label: 'Country',
+				sortable: true
+			},
+			{
+				property: 'population',
+				label: 'Population',
+				sortable: true
+			},
+			{
+				property: 'fcodeName',
+				label: 'Type',
+				sortable: true
 			}
-		});
+		],
+		data: sampleData.geonames,
+		delay: 250
+	});
 
-		require(['jquery', 'sample/data', 'sample/datasource', 'sample/datasourceTree', 'fuelux/all'], function ($, sampleData, StaticDataSource, TreeDataSource) {
+	$('#MyGrid').datagrid({
+		dataSource: dataSource
+	});
 
-			// SEARCH CONTROL
-			$('#MySearch').on('searched', function (e, text) {
-				alert('Searched: ' + text);
-			});
+	$('#MyStretchGrid').datagrid({
+		dataSource: dataSource,
+		stretchHeight: true
+	});
 
+	// SELECT
+	$('#MySelect').on('changed', function (evt, data) {
+		console.log(data);
+	});
+	$('#getSelectedItem').on('click', function () {
+		console.log($('#MySelect').select('selectedItem'));
+	});
+	$('#selectByValue').on('click', function () {
+		$('#MySelect').select('selectByValue', '3');
+	});
+	$('#selectBySelector').on('click', function () {
+		$('#MySelect').select('selectBySelector', 'li[data-fizz=buzz]');
+	});
+	$('#selectByIndex').on('click', function () {
+		$('#MySelect').select('selectByIndex', '3');
+	});
+	$('#selectByText').on('click', function () {
+		$('#MySelect').select('selectByText', 'One');
+	});
+	$('#enableSelect').on('click', function () {
+		$('#MySelect').select('enable');
+	});
+	$('#disableSelect').on('click', function () {
+		$('#MySelect').select('disable');
 
-			// PILLBOX
-			$('#btnAdd').click(function() {
-				$('#MyPillbox ul').append('<li>Item Eight</li>');
-			});
+	});
 
-			$('#btnRemove').click(function() {
-				$('#MyPillbox li[data-value="foo"]').remove();
-			});
+	// SPINNER
 
-			$('#btnItems').click(function() {
-				var items = $('#MyPillbox').pillbox('items');
-				console.log(items);
-			});
+	$('#ex-spinner').on('changed', function (e, value) {
+		console.log('Spinner changed: ', value);
+	});
 
+	// TREE
+	var dataSourceTree = new DataSourceTree({
+		data: [
+			{ name: 'Test Folder 1', type: 'folder', additionalParameters: { id: 'F1' } },
+			{ name: 'Test Folder 2', type: 'folder', additionalParameters: { id: 'F2' } },
+			{ name: 'Test Item 1', type: 'item', additionalParameters: { id: 'I1' } },
+			{ name: 'Test Item 2', type: 'item', additionalParameters: { id: 'I2' } }
+		],
+		delay: 400
+	});
 
-			// DATAGRID
-			var dataSource = new StaticDataSource({
-				columns: [{
-					property: 'toponymName',
-					label: 'Name',
-					sortable: true
-				}, {
-					property: 'countrycode',
-					label: 'Country',
-					sortable: true
-				}, {
-					property: 'population',
-					label: 'Population',
-					sortable: true
-				}, {
-					property: 'fcodeName',
-					label: 'Type',
-					sortable: true
-				}],
-				data: sampleData.geonames,
-				delay: 250
-			});
+	$('#ex-tree').on('loaded', function (e) {
+		console.log('Loaded');
+	});
 
-			$('#MyGrid').datagrid({
-				dataSource: dataSource
-			});
+	$('#ex-tree').tree({
+		dataSource: dataSourceTree,
+		loadingHTML: '<div class="static-loader">Loading...</div>',
+		multiSelect: true,
+		cacheItems: true
+	});
 
-			// INITIALIZING TREE
-			var treeDataSource = new TreeDataSource({
-				data: [
-					{ name: 'Test Folder 1', type: 'folder', additionalParameters: { id: 'F1' } },
-					{ name: 'Test Folder 2', type: 'folder', additionalParameters: { id: 'F2' } },
-					{ name: 'Test Item 1', type: 'item', additionalParameters: { id: 'I1' } },
-					{ name: 'Test Item 2', type: 'item', additionalParameters: { id: 'I2' } }
-				],
-				delay: 400
-			});
+	$('#ex-tree').on('selected', function (e, info) {
+		console.log('Select Event: ', info);
+	});
 
-			$('#MyTree').tree({dataSource: treeDataSource});
+	$('#ex-tree').on('opened', function (e, info) {
+		console.log('Open Event: ', info);
+	});
 
-			$('#tree-selected-items').on('click', function () {
-				console.log("selected items: ", $('#MyTree').tree('selectedItems'));
-			});
-
-			$('#MyTree').on('loaded', function (evt, data) {
-				console.log('tree content loaded');
-			});
-
-			$('#MyTree').on('opened', function (evt, data) {
-				console.log('sub-folder opened: ', data);
-			});
-
-			$('#MyTree').on('closed', function (evt, data) {
-				console.log('sub-folder closed: ', data);
-			});
-
-			$('#MyTree').on('selected', function (evt, data) {
-				console.log('item selected: ', data);
-			});
+	$('#ex-tree').on('closed', function (e, info) {
+		console.log('Close Event: ', info);
+	});
 
 
-		});
-	</script>
+	// CHECKBOX
+	$('#btnChkToggle').on('click', function() {
+		$('#chk1').checkbox('toggle');
+	});
+	$('#btnChkDisable').on('click', function() {
+		$('#chk1').checkbox('disable');
+	});
+	$('#btnChkEnable').on('click', function() {
+		$('#chk1').checkbox('enable');
+	});
+
+
+	// RADIO
+	$('#btnRadioDisable').on('click', function() {
+		$('#radio1').radio('disable');
+	});
+	$('#btnRadioEnable').on('click', function() {
+		$('#radio1').radio('enable');
+	});
+
+
+	// WIZARD
+	$('#MyWizard').on('change', function(e, data) {
+		console.log('change');
+		if(data.step===3 && data.direction==='next') {
+			// return e.preventDefault();
+		}
+	});
+	$('#MyWizard').on('changed', function(e, data) {
+		console.log('changed');
+	});
+	$('#MyWizard').on('finished', function(e, data) {
+		console.log('finished');
+	});
+	$('#btnWizardPrev').on('click', function() {
+		$('#MyWizard').wizard('previous');
+	});
+	$('#btnWizardNext').on('click', function() {
+		$('#MyWizard').wizard('next','foo');
+	});
+	$('#btnWizardStep').on('click', function() {
+		var item = $('#MyWizard').wizard('selectedItem');
+		console.log(item.step);
+	});
+	$('#MyWizard').on('stepclick', function(e, data) {
+		console.log('step' + data.step + ' clicked');
+		if(data.step===1) {
+			// return e.preventDefault();
+		}
+	});
+
+});
+</script>
 
 
 </head>
 
 <body>
 
-<div class="navbar navbar-fixed-top">
-	<div class="navbar-inner">
-		<div class="container">
-			<a class="brand" href="#">FuelUX - IMH Theme</a>
-			<ul class="nav">
-				<li><a href="#checkbox">checkbox</a></li>
-				<li><a href="#combobox">combobox</a></li>
-				<li><a href="#datagrid">datagrid</a></li>
-				<li><a href="#pillbox">pillbox</a></li>
-				<li><a href="#radio">radio</a></li>
-				<li><a href="#search">search</a></li>
-				<li><a href="#select">select</a></li>
-				<li><a href="#spinner">spinner</a></li>
-				<li><a href="#tree">tree</a></li>
-				<li><a href="#wizard">wizard</a></li>
-			</ul>
+	<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a class="brand" href="#">FuelUX - IMH Theme</a>
+				<ul class="nav">
+					<li><a href="#checkbox">Checkbox</a></li>
+					<li><a href="#combobox">Combobox</a></li>
+					<li><a href="#datagrid">Datagrid</a></li>
+					<li><a href="#pillbox">Pillbox</a></li>
+					<li><a href="#radio">Radio</a></li>
+					<li><a href="#search">Search</a></li>
+					<li><a href="#select">Select</a></li>
+					<li><a href="#spinner">Spinner</a></li>
+					<li><a href="#tree">Tree</a></li>
+					<li><a href="#wizard">Wizard</a></li>
+				</ul>
+			</div>
 		</div>
 	</div>
-</div>
-<div class="container">
-	<a name="checkbox"></a>
-	<!-- CHECKBOX -->
-	<div class="well">
-		<h2>Checkbox</h2>
-		<p><a href="http://exacttarget.github.com/fuelux/#checkbox">Fuel UX Documentation</a></p>
-		<div class="checkbox-example">
-			<label class="checkbox checkbox-custom">
-				<input type="checkbox" checked="checked" id="myCheckbox">
-				<i class="checkbox checked"></i>
-			</label>
-			<label class="checkbox checkbox-custom">
-				<input type="checkbox" id="myCheckbox">
-				<i class="checkbox"></i>
-			</label>
-			<label class="checkbox checkbox-custom">
-				<input type="checkbox" checked="checked" disabled="disabled" id="myCheckbox">
-				<i class="checkbox checked disabled"></i>
-			</label>
-			<label class="checkbox checkbox-custom">
-				<input type="checkbox" disabled="disabled" id="myCheckbox">
-				<i class="checkbox disabled"></i>
-			</label>
+	<div class="container" style="padding-top:50px;">
+
+		<!-- CHECKBOX -->
+		<a name="checkbox"></a>
+		<div class="well">
+			<h2>Checkbox</h2>
+			<p><a href="http://exacttarget.github.com/fuelux/#checkbox">Fuel UX Documentation</a></p>
+
+			<label class="checkbox checkbox-custom"><input type="checkbox" checked="checked"><i class="checkbox"></i>Checked Enabled<br/>Second Line</label>
+			<label class="checkbox checkbox-custom"><input type="checkbox" id="chk1"><i class="checkbox"></i>Unchecked Enabled</label>
+			<label class="checkbox checkbox-custom"><input type="checkbox" checked="checked" disabled="disabled"><i class="checkbox"></i>Checked Disabled</label>
+			<label class="checkbox checkbox-custom"><input type="checkbox" disabled="disabled"><i class="checkbox"></i>Unchecked Disabled</label>
+			<button type="button" class="btn btn-mini" id="btnChkToggle">toggle</button>
+			<button type="button" class="btn btn-mini" id="btnChkDisable">disable</button>
+			<button type="button" class="btn btn-mini" id="btnChkEnable">enable</button>
 		</div>
-	</div>
 
-	<a name="combobox"></a>
-	<!-- COMBOBOX -->
-	<div class="well">
-		<h2>Combobox</h2>
-		<p><a href="http://exacttarget.github.com/fuelux/#combobox">Fuel UX Documentation</a></p>
-		<div class="input-append dropdown combobox">
-			<input class="span2" type="text"><button class="btn" data-toggle="dropdown"><i class="caret"></i></button>
-			<ul class="dropdown-menu">
-				<li><a href="#">Item One</a></li>
-				<li><a href="#">Item Two</a></li>
-				<li><a href="#">Item Three</a></li>
-				<li class="divider"></li>
-				<li><a href="#">Item After Divider</a></li>
-			</ul>
+
+		<!-- COMBOBOX -->
+		<a name="combobox"></a>
+		<div class="well">
+			<h2>Combobox</h2>
+			<p><a href="http://exacttarget.github.com/fuelux/#combobox">Fuel UX Documentation</a></p>
+
+			<div id="MyCombobox" class="input-append dropdown combobox">
+				<input class="span2" type="text">
+				<button class="btn" data-toggle="dropdown"><i class="caret"></i></button>
+				<ul class="dropdown-menu">
+					<li data-value="1" data-foo="bar"><a href="#">One</a></li>
+					<li data-value="2"><a href="#">Two</a></li>
+					<li data-value="3" data-selected="true"><a href="#">Three</a></li>
+					<li data-value="4" data-fizz="buzz"><a href="#">Four</a></li>
+				</ul>
+			</div>
+			<br/>
+			<input id="btnComboboxGetSelectedItem" type="button" class="btn btn-mini" value="log item"/>
+			<input id="btnComboboxSelectByValue" type="button" class="btn btn-mini" value="set by value"/>
+			<input id="btnComboboxSelectByIndex" type="button" class="btn btn-mini" value="set by index"/>
+			<input id="btnComboboxSelectByText" type="button" class="btn btn-mini" value="set by text"/>
+			<input id="btnComboboxSelectBySelector" type="button" class="btn btn-mini" value="set by selector"/>
+			<input id="btnComboboxDisable" type="button" class="btn btn-mini" value="disable"/>
+			<input id="btnComboboxEnable" type="button" class="btn btn-mini" value="enable"/>
 		</div>
-	</div>
 
-	<a name="datagrid"></a>
-	<!-- DATAGRID -->
-	<div class="well">
-		<h2>Datagrid</h2>
-		<p><a href="http://exacttarget.github.com/fuelux/#datagrid">Fuel UX Documentation</a></p>
-		<table id="MyGrid" class="table table-bordered datagrid">
 
-			<thead>
-			<tr>
-				<th>
-					<span class="datagrid-header-title">Geographic Data Sample</span>
-					<div class="datagrid-header-left">
+		<!-- DATAGRID -->
+		<a name="datagrid"></a>
+		<div class="well">
+			<h2>Datagrid</h2>
+			<p><a href="http://exacttarget.github.com/fuelux/#datagrid">Fuel UX Documentation</a></p>
 
-					</div>
-					<div class="datagrid-header-right">
-						<div class="input-append search">
-							<input type="text" class="input-medium" placeholder="Search"><button class="btn"><i class="icon-search"></i></button>
-						</div>
-					</div>
-				</th>
-			</tr>
-			</thead>
+			<table id="MyGrid" class="table table-bordered datagrid">
 
-			<tfoot>
-			<tr>
-				<th>
-					<div class="datagrid-footer-left" style="display:none;">
-						<div class="grid-controls">
-							<span><span class="grid-start"></span> - <span class="grid-end"></span> of <span class="grid-count"></span></span>
-							<select class="grid-pagesize"><option>10</option><option>20</option><option>50</option><option>100</option></select>
-							<span>Per Page</span>
-						</div>
-					</div>
-					<div class="datagrid-footer-right" style="display:none;">
-						<div class="grid-pager">
-							<button class="btn grid-prevpage"><i class="icon-chevron-left"></i></button>
-							<span>Page</span>
-							<div class="input-append dropdown combobox">
-								<input class="span1" type="text"><button class="btn" data-toggle="dropdown"><i class="caret"></i></button>
-								<ul class="dropdown-menu"></ul>
+				<thead>
+				<tr>
+					<th>
+						<span class="datagrid-header-title">Geographic Data Sample</span>
+
+						<div class="datagrid-header-left">
+							<div class="input-append search">
+								<input type="text" class="input-medium" placeholder="Search">
+								<button class="btn"><i class="icon-search"></i></button>
 							</div>
-							<span>of <span class="grid-pages"></span></span>
-							<button class="btn grid-nextpage"><i class="icon-chevron-right"></i></button>
 						</div>
+						<div class="datagrid-header-right">
+							<div class="select filter" data-resize="auto">
+								<button data-toggle="dropdown" class="btn dropdown-toggle">
+									<span class="dropdown-label"></span>
+									<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu">
+									<li data-value="all" data-selected="true"><a href="#">All</a></li>
+									<li data-value="lt5m"><a href="#">Population &lt; 5M</a></li>
+									<li data-value="gte5m"><a href="#">Population &gt;= 5M</a></li>
+								</ul>
+							</div>
+						</div>
+					</th>
+				</tr>
+				</thead>
+
+				<tfoot>
+				<tr>
+					<th>
+						<div class="datagrid-footer-left" style="display:none;">
+							<div class="grid-controls">
+										<span>
+											<span class="grid-start"></span> -
+											<span class="grid-end"></span> of
+											<span class="grid-count"></span>
+										</span>
+								<div class="select grid-pagesize" data-resize="auto">
+									<button data-toggle="dropdown" class="btn dropdown-toggle">
+										<span class="dropdown-label"></span>
+										<span class="caret"></span>
+									</button>
+									<ul class="dropdown-menu">
+										<li data-value="5" data-selected="true"><a href="#">5</a></li>
+										<li data-value="10"><a href="#">10</a></li>
+										<li data-value="20"><a href="#">20</a></li>
+										<li data-value="50"><a href="#">50</a></li>
+										<li data-value="100"><a href="#">100</a></li>
+									</ul>
+								</div>
+								<span>Per Page</span>
+							</div>
+						</div>
+						<div class="datagrid-footer-right" style="display:none;">
+							<div class="grid-pager">
+								<button class="btn grid-prevpage"><i class="icon-chevron-left"></i></button>
+								<span>Page</span>
+
+								<div class="input-append dropdown combobox">
+									<input class="span1" type="text">
+									<button class="btn" data-toggle="dropdown"><i class="caret"></i></button>
+									<ul class="dropdown-menu"></ul>
+								</div>
+								<span>of <span class="grid-pages"></span></span>
+								<button class="btn grid-nextpage"><i class="icon-chevron-right"></i></button>
+							</div>
+						</div>
+					</th>
+				</tr>
+				</tfoot>
+
+			</table>
+
+			<!-- STRETCH DATAGRID -->
+			<div style="height:250px;width:100%">
+				<table id="MyStretchGrid" class="table table-bordered datagrid">
+
+					<thead>
+					<tr>
+						<th>
+							<span class="datagrid-header-title">Geographic Data Sample</span>
+
+							<div class="datagrid-header-left">
+								<div class="input-append search">
+									<input type="text" class="input-medium" placeholder="Search">
+									<button class="btn"><i class="icon-search"></i></button>
+								</div>
+							</div>
+							<div class="datagrid-header-right">
+								<div class="select filter" data-resize="auto">
+									<button data-toggle="dropdown" class="btn dropdown-toggle">
+										<span class="dropdown-label"></span>
+										<span class="caret"></span>
+									</button>
+									<ul class="dropdown-menu">
+										<li data-value="all" data-selected="true"><a href="#">All</a></li>
+										<li data-value="lt5m"><a href="#">Population &lt; 5M</a></li>
+										<li data-value="gte5m"><a href="#">Population &gt;= 5M</a></li>
+									</ul>
+								</div>
+							</div>
+						</th>
+					</tr>
+					</thead>
+
+					<tfoot>
+					<tr>
+						<th>
+							<div class="datagrid-footer-left" style="display:none;">
+								<div class="grid-controls">
+											<span>
+												<span class="grid-start"></span> -
+												<span class="grid-end"></span> of
+												<span class="grid-count"></span>
+											</span>
+									<div class="select grid-pagesize" data-resize="auto">
+										<button data-toggle="dropdown" class="btn dropdown-toggle">
+											<span class="dropdown-label"></span>
+											<span class="caret"></span>
+										</button>
+										<ul class="dropdown-menu">
+											<li data-value="5" data-selected="true"><a href="#">5</a></li>
+											<li data-value="10"><a href="#">10</a></li>
+											<li data-value="20"><a href="#">20</a></li>
+											<li data-value="50"><a href="#">50</a></li>
+											<li data-value="100"><a href="#">100</a></li>
+										</ul>
+									</div>
+									<span>Per Page</span>
+								</div>
+							</div>
+							<div class="datagrid-footer-right" style="display:none;">
+								<div class="grid-pager">
+									<button class="btn grid-prevpage"><i class="icon-chevron-left"></i></button>
+									<span>Page</span>
+
+									<div class="input-append dropdown combobox">
+										<input class="span1" type="text">
+										<button class="btn" data-toggle="dropdown"><i class="caret"></i></button>
+										<ul class="dropdown-menu"></ul>
+									</div>
+									<span>of <span class="grid-pages"></span></span>
+									<button class="btn grid-nextpage"><i class="icon-chevron-right"></i></button>
+								</div>
+							</div>
+						</th>
+					</tr>
+					</tfoot>
+
+				</table>
+			</div>
+		</div>
+
+
+		<!-- PILLBOX -->
+		<a name="pillbox"></a>
+		<div class="well">
+			<h2>Pillbox</h2>
+			<p><a href="http://exacttarget.github.com/fuelux/#pillbox">Fuel UX Documentation</a></p>
+
+			<div id="MyPillbox" class="pillbox">
+				<ul>
+					<li data-value="foo">Item One</li>
+					<li class="status-success">Item Two</li>
+					<li class="status-warning">Item Three</li>
+					<li class="status-important">Item Four</li>
+					<li class="status-info">Item Five</li>
+					<li class="status-success">Item Six</li>
+					<li>Item Seven</li>
+				</ul>
+			</div>
+
+			<input type="button" class="btn btn-mini" id="btnAdd" value="add">
+			<input type="button" class="btn btn-mini" id="btnRemove" value="remove">
+			<input type="button" class="btn btn-mini" id="btnItems" value="log items to console">
+		</div>
+
+
+		<!-- RADIO -->
+		<a name="radio"></a>
+		<div class="well">
+			<h2>Radio</h2>
+			<p><a href="http://exacttarget.github.com/fuelux/#radio">Fuel UX Documentation</a></p>
+
+			<label class="radio radio-custom"><input type="radio" name="radio1a" checked="checked"><i class="radio"></i>Checked Enabled</label>
+			<label class="radio radio-custom"><input type="radio" name="radio1a" id="radio1"><i class="radio"></i>Unchecked Enabled</label>
+			<label class="radio radio-custom"><input type="radio" name="radio1b" checked="checked" disabled="disabled"><i class="radio"></i>Checked Disabled</label>
+			<label class="radio radio-custom"><input type="radio" name="radio1b" disabled="disabled"><i class="radio"></i>Unchecked Disabled</label>
+			<button type="button" class="btn btn-mini" id="btnRadioDisable">disable</button>
+			<button type="button" class="btn btn-mini" id="btnRadioEnable">enable</button>
+		</div>
+
+
+		<!-- SEARCH CONTROL -->
+		<a name="search"></a>
+		<div class="well">
+			<h2>Search</h2>
+			<p><a href="http://exacttarget.github.com/fuelux/#search">Fuel UX Documentation</a></p>
+
+			<div id="MySearch" class="input-append search">
+				<input type="text" class="input-medium" placeholder="Search">
+				<button class="btn"><i class="icon-search"></i></button>
+			</div>
+			<br/>
+			<input id="btnSearchDisable" type="button" class="btn btn-mini" value="disable"/>
+			<input id="btnSearchEnable" type="button" class="btn btn-mini" value="enable"/>
+		</div>
+
+
+		<!-- SELECT -->
+		<a name="select"></a>
+		<div class="well">
+			<h2>Select</h2>
+			<p><a href="http://exacttarget.github.com/fuelux/#select">Fuel UX Documentation</a></p>
+
+			<div id="MySelect" class="select btn-group" data-resize="auto">
+				<button data-toggle="dropdown" class="btn dropdown-toggle"><span class="dropdown-label"></span><span
+						class="caret"></span></button>
+				<ul class="dropdown-menu">
+					<li data-value="1"><a href="#">One</a></li>
+					<li data-value="2"><a href="#">Two</a></li>
+					<li data-value="3" data-selected="true"><a href="#">Three</a></li>
+					<li data-value="4" data-fizz="buzz"><a href="#">Four</a></li>
+				</ul>
+			</div>
+
+			<br/>
+			<input id="getSelectedItem" type="button" class="btn btn-mini" value="log item"/>
+			<input id="selectByValue" type="button" class="btn btn-mini" value="set by value"/>
+			<input id="selectByIndex" type="button" class="btn btn-mini" value="set by index"/>
+			<input id="selectByText" type="button" class="btn btn-mini" value="set by text"/>
+			<input id="selectBySelector" type="button" class="btn btn-mini" value="set by selector"/>
+			<input id="enableSelect" type="button" class="btn btn-mini" value="enable"/>
+			<input id="disableSelect" type="button" class="btn btn-mini" value="disable"/>
+		</div>
+
+
+		<!-- SPINNER -->
+		<a name="spinner"></a>
+		<div class="well">
+			<h2>Spinner</h2>
+			<p><a href="http://exacttarget.github.com/fuelux/#spinner">Fuel UX Documentation</a></p>
+
+			<div class="clearfix">
+				<div id="ex-spinner" class="spinner">
+					<input type="text" class="input-mini spinner-input">
+
+					<div class="spinner-buttons  btn-group btn-group-vertical">
+						<button class="btn spinner-up">
+							<i class="icon-chevron-up"></i>
+						</button>
+						<button class="btn spinner-down">
+							<i class="icon-chevron-down"></i>
+						</button>
 					</div>
-				</th>
-			</tr>
-			</tfoot>
-
-		</table>
-	</div>
-
-	<a name="pillbox"></a>
-	<!-- PILLBOX -->
-	<div class="well">
-		<h2>Pillbox</h2>
-		<p><a href="http://exacttarget.github.com/fuelux/#pillbox">Fuel UX Documentation</a></p>
-		<div id="MyPillbox" class="pillbox">
-			<ul>
-				<li data-value="foo">Item One</li>
-				<li class="status-success">Item Two</li>
-				<li class="status-warning">Item Three</li>
-				<li class="status-important">Item Four</li>
-				<li class="status-info">Item Five</li>
-				<li class="status-success">Item Six</li>
-				<li>Item Seven</li>
-			</ul>
-		</div>
-		<input type="button" class="btn" id="btnAdd" value="add">
-		<input type="button" class="btn" id="btnRemove" value="remove">
-		<input type="button" class="btn" id="btnItems" value="log items to console">
-	</div>
-
-	<a name="radio"></a>
-	<!-- RADIO BUTTON -->
-	<div class="well">
-		<h2>Radio</h2>
-		<p><a href="http://exacttarget.github.com/fuelux/#radio">Fuel UX Documentation</a></p>
-		<div class="radio-example">
-			<label class="radio radio-custom"><input type="radio" name="radioA" checked="checked" id="myRadio"><i class="radio checked"></i>Checked Enabled</label>
-			<label class="radio radio-custom"><input type="radio" name="radioA"><i class="radio"></i>Unchecked
-				Enabled</label>
-			<label class="radio radio-custom"><input type="radio" name="radioB" checked="checked" disabled="disabled"><i class="radio checked disabled"></i>Checked
-				Disabled</label>
-			<label class="radio radio-custom"><input type="radio" name="radioB" disabled="disabled"><i class="radio disabled"></i>Unchecked Disabled</label>
-		</div>
-	</div>
-
-	<a name="search"></a>
-	<!-- SEARCH CONTROL -->
-	<div class="well">
-		<h2>Search</h2>
-		<p><a href="http://exacttarget.github.com/fuelux/#search">Fuel UX Documentation</a></p>
-		<div id="MySearch" class="input-append search">
-			<input type="text" class="input-medium" placeholder="Search"><button class="btn"><i class="icon-search"></i></button>
-		</div>
-	</div>
-
-	<a name="select"></a>
-	<!-- SEARCH CONTROL -->
-	<div class="well">
-		<h2>Select</h2>
-		<p><a href="http://exacttarget.github.com/fuelux/#select">Fuel UX Documentation</a></p>
-		<div id="mySelect" class="select btn-group" data-resize="auto">
-			<button data-toggle="dropdown" class="btn dropdown-toggle"><span class="dropdown-label" style="width: 69px;">Item One</span><span class="caret"></span></button>
-			<ul class="dropdown-menu">
-				<li data-value="1"><a href="#">Item One</a></li>
-				<li data-value="2"><a href="#">Item Two</a></li>
-				<li data-value="3" data-fizz="buzz"><a href="#">Item Three</a></li>
-				<li class="divider"></li>
-				<li data-value="4"><a href="#">Item Four</a></li>
-			</ul>
-		</div>
-	</div>
-
-	<a name="spinner"></a>
-	<!-- SPINNER -->
-	<div class="well">
-		<h2>Spinner</h2>
-		<p><a href="http://exacttarget.github.com/fuelux/#spinner">Fuel UX Documentation</a></p>
-		<div id="ex-spinner" class="spinner">
-			<input type="text" class="input-mini spinner-input">
-			<div class="spinner-buttons  btn-group btn-group-vertical">
-				<button class="btn spinner-up">
-					<i class="icon-chevron-up"></i>
-				</button>
-				<button class="btn spinner-down">
-					<i class="icon-chevron-down"></i>
-				</button>
-			</div>
-		</div>
-	</div>
-
-	<a name="tree"></a>
-	<!-- TREE -->
-	<div class="well">
-		<h2>Tree</h2>
-		<p><a href="http://exacttarget.github.com/fuelux/#tree">Fuel UX Documentation</a></p>
-		<div id="MyTree" class="tree">
-			<div class = "tree-folder" style="display:none;">
-				<div class="tree-folder-header">
-					<i class="icon-folder-close"></i>
-					<div class="tree-folder-name"></div>
 				</div>
-				<div class="tree-folder-content"></div>
-				<div class="tree-loader" style="display:none"></div>
-			</div>
-			<div class="tree-item" style="display:none;">
-				<i class="tree-dot"></i>
-				<div class="tree-item-name"></div>
 			</div>
 		</div>
-	</div>
 
-	<a name="wizard"></a>
-	<!-- WIZARD -->
-	<div class="well">
-		<h2>Wizard</h2>
-		<p><a href="http://exacttarget.github.com/fuelux/#wizard">Fuel UX Documentation</a></p>
-		<div id="myWizard" class="wizard">
-			<ul class="steps">
-				<li data-target="#step1" class="active"><span class="badge badge-info">1</span>Step 1<span class="chevron"></span></li>
-				<li data-target="#step2"><span class="badge">2</span>Step 2<span class="chevron"></span></li>
-				<li data-target="#step3"><span class="badge">3</span>Step 3<span class="chevron"></span></li>
-				<li data-target="#step4"><span class="badge">4</span>Step 4<span class="chevron"></span></li>
-				<li data-target="#step5"><span class="badge">5</span>Step 5<span class="chevron"></span></li>
-			</ul>
-			<div class="actions">
-				<button class="btn btn-mini btn-prev"> <i class="icon-arrow-left"></i>Prev</button>
-				<button class="btn btn-mini btn-next btn-primary" data-last="Finish">Next<i class="icon-arrow-right"></i></button>
+
+		<!-- TREE -->
+		<a name="tree"></a>
+		<div class="well">
+			<h2>Tree</h2>
+			<p><a href="http://exacttarget.github.com/fuelux/#tree">Fuel UX Documentation</a></p>
+
+			<div id="ex-tree" class="tree">
+				<div class="tree-folder" style="display:none;">
+					<div class="tree-folder-header">
+						<i class="icon-folder-close"></i>
+
+						<div class="tree-folder-name"></div>
+					</div>
+					<div class="tree-folder-content"></div>
+					<div class="tree-loader" style="display:none">
+					</div>
+				</div>
+				<div class="tree-item" style="display:none;">
+					<i class="tree-dot"></i>
+
+					<div class="tree-item-name"></div>
+				</div>
 			</div>
 		</div>
-		<div class="step-content">
-			<div class="step-pane active" id="step1">This is step 1</div>
-			<div class="step-pane" id="step2">This is step 2</div>
-			<div class="step-pane" id="step3">This is step 3</div>
-			<div class="step-pane" id="step4">This is step 4</div>
-			<div class="step-pane" id="step5">This is step 5</div>
+
+
+		<!-- WIZARD -->
+		<a name="wizard"></a>
+		<div class="well">
+			<h2>Wizard</h2>
+			<p><a href="http://exacttarget.github.com/fuelux/#wizard">Fuel UX Documentation</a></p>
+
+			<div id="MyWizard" class="wizard">
+				<ul class="steps">
+					<li data-target="#step1" class="active"><span class="badge badge-info">1</span>Step 1<span class="chevron"></span></li>
+					<li data-target="#step2"><span class="badge">2</span>Step 2<span class="chevron"></span></li>
+					<li data-target="#step3"><span class="badge">3</span>Step 3<span class="chevron"></span></li>
+					<li data-target="#step4"><span class="badge">4</span>Step 4<span class="chevron"></span></li>
+					<li data-target="#step5"><span class="badge">5</span>Step 5<span class="chevron"></span></li>
+				</ul>
+				<div class="actions">
+					<button class="btn-link btn-prev">Prev</button>
+					<button class="btn btn-primary btn-next" data-last="Finish">Next<i class="icon-arrow-right icon-white"></i></button>
+				</div>
+			</div>
+			<div class="step-content">
+				<div class="step-pane active" id="step1">This is step 1</div>
+				<div class="step-pane" id="step2">This is step 2</div>
+				<div class="step-pane" id="step3">This is step 3</div>
+				<div class="step-pane" id="step4">This is step 4</div>
+				<div class="step-pane" id="step5">This is step 5</div>
+			</div>
+
+			<input type="button" class="btn btn-mini" id="btnWizardPrev" value="prev">
+			<input type="button" class="btn btn-mini" id="btnWizardNext" value="next">
+			<input type="button" class="btn btn-mini" id="btnWizardStep" value="current step">
 		</div>
 	</div>
-
-	<div class="well" style="height: 800px">
-		This space intentionally left blank.
-	</div>
-
-</div>
 
 </body>
 </html>
