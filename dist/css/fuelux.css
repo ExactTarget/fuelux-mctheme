@@ -7886,9 +7886,10 @@ textarea.span1,
 }
 
 .fuelux .pillbox li {
+  padding: 1px 3px 1px;
   font-size: 11px;
   font-weight: normal;
-  line-height: 14px;
+  line-height: 16px;
   color: #333;
   text-shadow: none;
 }
@@ -7896,7 +7897,7 @@ textarea.span1,
 .fuelux .pillbox li:after {
   top: 2px;
   right: 0;
-  padding: 0 1px;
+  padding: 1px 1px 0 1px;
   margin-left: 4px;
   font-family: "Courier New", Courier, monospace;
   font-size: 17px;
