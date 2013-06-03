@@ -7300,6 +7300,46 @@ textarea.span1,
           border-radius: 0 4px 4px 0;
 }
 
+.fuelux .label-important,
+.fuelux .badge-important {
+  background-color: #d9534f;
+}
+
+.fuelux .label-important[href],
+.fuelux .badge-important[href] {
+  background-color: #c9302c;
+}
+
+.fuelux .label-warning,
+.fuelux .badge-warning {
+  background-color: #f0ad4e;
+}
+
+.fuelux .label-warning[href],
+.fuelux .badge-warning[href] {
+  background-color: #ec971f;
+}
+
+.fuelux .label-success,
+.fuelux .badge-success {
+  background-color: #5cb85c;
+}
+
+.fuelux .label-success[href],
+.fuelux .badge-success[href] {
+  background-color: #449d44;
+}
+
+.fuelux .label-info,
+.fuelux .badge-info {
+  background-color: #5bc0de;
+}
+
+.fuelux .label-info[href],
+.fuelux .badge-info[href] {
+  background-color: #31b0d5;
+}
+
 .fuelux .modal-backdrop,
 .fuelux .modal-backdrop.fade.in {
   opacity: 0.65;
@@ -7686,6 +7726,100 @@ textarea.span1,
   border-top: 1px solid #ccc;
 }
 
+.fuelux .tooltip {
+  position: absolute;
+  z-index: 1030;
+  display: block;
+  font-size: 11px;
+  line-height: 1.4;
+  visibility: visible;
+}
+
+.fuelux .tooltip.top {
+  padding: 5px 0;
+  margin-top: -3px;
+}
+
+.fuelux .tooltip.right {
+  padding: 0 5px;
+  margin-left: 3px;
+}
+
+.fuelux .tooltip.bottom {
+  padding: 5px 0;
+  margin-top: 3px;
+}
+
+.fuelux .tooltip.left {
+  padding: 0 5px;
+  margin-left: -3px;
+}
+
+.fuelux .tooltip-inner {
+  max-width: 200px;
+  padding: 4px;
+  font-size: 11px;
+  color: #666666;
+  text-align: center;
+  text-decoration: none;
+  background-color: #f7f6c9;
+  background-color: #f6f4c6;
+  background-image: -webkit-linear-gradient(top, #f2f0b9, #fcfbda);
+  background-image: -moz-linear-gradient(top, #f2f0b9, #fcfbda);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f0b9), to(#fcfbda));
+  background-image: linear-gradient(to bottom, #f2f0b9, #fcfbda);
+  background-image: -o-linear-gradient(top, #f2f0b9, #fcfbda);
+  background-repeat: repeat-x;
+  border: none;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#fff2f0b9', endColorstr='#fffcfbda', GradientType=0);
+  -webkit-box-shadow: 0 4px 8px #999999;
+     -moz-box-shadow: 0 4px 8px #999999;
+          box-shadow: 0 4px 8px #999999;
+}
+
+.fuelux .tooltip-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+
+.fuelux .tooltip.top .tooltip-arrow {
+  bottom: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-top-color: #f7f6c9;
+  border-width: 5px 5px 0;
+}
+
+.fuelux .tooltip.right .tooltip-arrow {
+  top: 50%;
+  left: 0;
+  margin-top: -5px;
+  border-right-color: #f7f6c9;
+  border-width: 5px 5px 5px 0;
+}
+
+.fuelux .tooltip.left .tooltip-arrow {
+  top: 50%;
+  right: 0;
+  margin-top: -5px;
+  border-left-color: #f7f6c9;
+  border-width: 5px 0 5px 5px;
+}
+
+.fuelux .tooltip.bottom .tooltip-arrow {
+  top: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-bottom-color: #f7f6c9;
+  border-width: 0 5px 5px;
+}
+
 .fuelux h1 {
   font-size: 21px;
   line-height: 27px;
@@ -7854,100 +7988,6 @@ textarea.span1,
 
 .fuelux .wizard .btn-link {
   text-decoration: none;
-}
-
-.fuelux .tooltip {
-  position: absolute;
-  z-index: 1030;
-  display: block;
-  font-size: 11px;
-  line-height: 1.4;
-  visibility: visible;
-}
-
-.fuelux .tooltip.top {
-  padding: 5px 0;
-  margin-top: -3px;
-}
-
-.fuelux .tooltip.right {
-  padding: 0 5px;
-  margin-left: 3px;
-}
-
-.fuelux .tooltip.bottom {
-  padding: 5px 0;
-  margin-top: 3px;
-}
-
-.fuelux .tooltip.left {
-  padding: 0 5px;
-  margin-left: -3px;
-}
-
-.fuelux .tooltip-inner {
-  max-width: 200px;
-  padding: 4px;
-  font-size: 11px;
-  color: #666666;
-  text-align: center;
-  text-decoration: none;
-  background-color: #f7f6c9;
-  background-color: #f6f4c6;
-  background-image: -webkit-linear-gradient(top, #f2f0b9, #fcfbda);
-  background-image: -moz-linear-gradient(top, #f2f0b9, #fcfbda);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f0b9), to(#fcfbda));
-  background-image: linear-gradient(to bottom, #f2f0b9, #fcfbda);
-  background-image: -o-linear-gradient(top, #f2f0b9, #fcfbda);
-  background-repeat: repeat-x;
-  border: none;
-  -webkit-border-radius: 4px;
-     -moz-border-radius: 4px;
-          border-radius: 4px;
-  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#fff2f0b9', endColorstr='#fffcfbda', GradientType=0);
-  -webkit-box-shadow: 0 4px 8px #999999;
-     -moz-box-shadow: 0 4px 8px #999999;
-          box-shadow: 0 4px 8px #999999;
-}
-
-.fuelux .tooltip-arrow {
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-}
-
-.fuelux .tooltip.top .tooltip-arrow {
-  bottom: 0;
-  left: 50%;
-  margin-left: -5px;
-  border-top-color: #f7f6c9;
-  border-width: 5px 5px 0;
-}
-
-.fuelux .tooltip.right .tooltip-arrow {
-  top: 50%;
-  left: 0;
-  margin-top: -5px;
-  border-right-color: #f7f6c9;
-  border-width: 5px 5px 5px 0;
-}
-
-.fuelux .tooltip.left .tooltip-arrow {
-  top: 50%;
-  right: 0;
-  margin-top: -5px;
-  border-left-color: #f7f6c9;
-  border-width: 5px 0 5px 5px;
-}
-
-.fuelux .tooltip.bottom .tooltip-arrow {
-  top: 0;
-  left: 50%;
-  margin-left: -5px;
-  border-bottom-color: #f7f6c9;
-  border-width: 0 5px 5px;
 }
 
 .fuelux .datagrid thead tr:first-child th {
