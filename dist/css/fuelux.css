@@ -8103,6 +8103,11 @@ textarea.span1,
   border-bottom: none;
 }
 
+.fuelux .datagrid-stretch-wrapper .datagrid td,
+.fuelux .datagrid-stretch-wrapper .datagrid th {
+  border-bottom: 0;
+}
+
 .fuelux .datagrid-stretch-footer tfoot:first-child th:first-child {
   border-top: 0;
 }
