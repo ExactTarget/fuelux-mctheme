@@ -27,11 +27,11 @@
 					background: transparent none;
 
 				&.icon-chevron-down {
-					border-top:   4px solid #666;
+					border-top:	4px solid #666;
 				}
 
 				&.icon-chevron-up {
-					border-bottom:   4px solid #666;
+					border-bottom: 4px solid #666;
 				}
 			}
 		}
@@ -61,7 +61,7 @@
 						height: 0;
 						vertical-align: top;
 						width: 0;
-						border-bottom:   4px solid transparent;
+						border-bottom: 4px solid transparent;
 						border-top: 4px solid transparent;
 						background: transparent none;
 					}
@@ -90,9 +90,42 @@
 
 	}
 }
+
 .datagrid-footer-left {
 
 	.grid-pagesize {
 		padding-right: 1px;
 	}
 }
+
+.datagrid-stretch-wrapper {
+	border-bottom: none;
+	border-top: none;
+	border-left: solid 1px #ccc;
+	border-right: solid 1px #ccc;
+
+	.datagrid {
+
+		tbody:first-child {
+
+			tr:last-child td {
+				border-bottom: none;
+			}
+
+		}
+
+	}
+}
+
+.datagrid-stretch-footer {
+
+	tfoot:first-child {
+
+		th:first-child {
+			border-top: 0;
+		}
+
+	}
+}
+
+
