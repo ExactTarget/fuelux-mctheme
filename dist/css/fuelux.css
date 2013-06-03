@@ -5328,10 +5328,10 @@ textarea.span1,
 .fuelux .tooltip-inner {
   max-width: 200px;
   padding: 8px;
-  color: #ffffff;
+  color: #666666;
   text-align: center;
   text-decoration: none;
-  background-color: #000000;
+  background-color: #f7f6c9;
   -webkit-border-radius: 4px;
      -moz-border-radius: 4px;
           border-radius: 4px;
@@ -5349,7 +5349,7 @@ textarea.span1,
   bottom: 0;
   left: 50%;
   margin-left: -5px;
-  border-top-color: #000000;
+  border-top-color: #f7f6c9;
   border-width: 5px 5px 0;
 }
 
@@ -5357,7 +5357,7 @@ textarea.span1,
   top: 50%;
   left: 0;
   margin-top: -5px;
-  border-right-color: #000000;
+  border-right-color: #f7f6c9;
   border-width: 5px 5px 5px 0;
 }
 
@@ -5365,7 +5365,7 @@ textarea.span1,
   top: 50%;
   right: 0;
   margin-top: -5px;
-  border-left-color: #000000;
+  border-left-color: #f7f6c9;
   border-width: 5px 0 5px 5px;
 }
 
@@ -5373,7 +5373,7 @@ textarea.span1,
   top: 0;
   left: 50%;
   margin-left: -5px;
-  border-bottom-color: #000000;
+  border-bottom-color: #f7f6c9;
   border-width: 0 5px 5px;
 }
 
@@ -7854,6 +7854,100 @@ textarea.span1,
 
 .fuelux .wizard .btn-link {
   text-decoration: none;
+}
+
+.fuelux .tooltip {
+  position: absolute;
+  z-index: 1030;
+  display: block;
+  font-size: 11px;
+  line-height: 1.4;
+  visibility: visible;
+}
+
+.fuelux .tooltip.top {
+  padding: 5px 0;
+  margin-top: -3px;
+}
+
+.fuelux .tooltip.right {
+  padding: 0 5px;
+  margin-left: 3px;
+}
+
+.fuelux .tooltip.bottom {
+  padding: 5px 0;
+  margin-top: 3px;
+}
+
+.fuelux .tooltip.left {
+  padding: 0 5px;
+  margin-left: -3px;
+}
+
+.fuelux .tooltip-inner {
+  max-width: 200px;
+  padding: 4px;
+  font-size: 11px;
+  color: #666666;
+  text-align: center;
+  text-decoration: none;
+  background-color: #f7f6c9;
+  background-color: #f6f4c6;
+  background-image: -webkit-linear-gradient(top, #f2f0b9, #fcfbda);
+  background-image: -moz-linear-gradient(top, #f2f0b9, #fcfbda);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f0b9), to(#fcfbda));
+  background-image: linear-gradient(to bottom, #f2f0b9, #fcfbda);
+  background-image: -o-linear-gradient(top, #f2f0b9, #fcfbda);
+  background-repeat: repeat-x;
+  border: none;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#fff2f0b9', endColorstr='#fffcfbda', GradientType=0);
+  -webkit-box-shadow: 0 4px 8px #999999;
+     -moz-box-shadow: 0 4px 8px #999999;
+          box-shadow: 0 4px 8px #999999;
+}
+
+.fuelux .tooltip-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+
+.fuelux .tooltip.top .tooltip-arrow {
+  bottom: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-top-color: #f7f6c9;
+  border-width: 5px 5px 0;
+}
+
+.fuelux .tooltip.right .tooltip-arrow {
+  top: 50%;
+  left: 0;
+  margin-top: -5px;
+  border-right-color: #f7f6c9;
+  border-width: 5px 5px 5px 0;
+}
+
+.fuelux .tooltip.left .tooltip-arrow {
+  top: 50%;
+  right: 0;
+  margin-top: -5px;
+  border-left-color: #f7f6c9;
+  border-width: 5px 0 5px 5px;
+}
+
+.fuelux .tooltip.bottom .tooltip-arrow {
+  top: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-bottom-color: #f7f6c9;
+  border-width: 0 5px 5px;
 }
 
 .fuelux .datagrid thead tr:first-child th {
