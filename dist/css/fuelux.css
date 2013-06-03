@@ -6865,7 +6865,31 @@ textarea.span1,
 }
 
 .fuelux .alert .close {
+  top: 0;
   right: -27px;
+}
+
+.fuelux .alert {
+  padding-left: 36px;
+  background-image: url(/dist/img/warn.png);
+  background-position: 7px 7px;
+  background-repeat: no-repeat;
+}
+
+.fuelux .alert-success {
+  background-image: url(/dist/img/success.png);
+}
+
+.fuelux .alert-danger {
+  background-image: url(/dist/img/warn.png);
+}
+
+.fuelux .alert-error {
+  background-image: url(/dist/img/error.png);
+}
+
+.fuelux .alert-info {
+  background-image: url(/dist/img/info.png);
 }
 
 .fuelux .btn-group > .btn + .dropdown-toggle {
