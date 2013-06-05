@@ -7,18 +7,37 @@
   padding-left: 36px;
   background-repeat: no-repeat;
   background-position: 7px 7px;
-  background-image: url(/dist/img/warn.png);
+  position: relative;
+  &:before {
+    content: '';
+    height: 20px;
+    left: 7px;
+    position: absolute;
+    top: 8px;
+    width: 22px;
+    background-image: url(../img/form.png);
+    background-repeat: no-repeat;
+    background-position: -67px -33px;
+  }
 }
 
 .alert-success {
-  background-image: url(/dist/img/success.png);
+  &:before {
+    background-position: -44px -33px;
+  }
 }
 .alert-danger {
-  background-image: url(/dist/img/warn.png);
+  &:before {
+    background-position: -67px -33px;
+  }
 }
 .alert-error {
-  background-image: url(/dist/img/error.png);
+  &:before {
+    background-position: 0px -33px;
+  }
 }
 .alert-info {
-  background-image: url(/dist/img/info.png);
+  &:before {
+    background-position: -22px -33px;
+  }
 }
