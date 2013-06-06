@@ -6888,6 +6888,10 @@ textarea.span1,
   content: '';
 }
 
+.fuelux .alert-block:before {
+  top: 13px;
+}
+
 .fuelux .alert-success:before {
   background-position: -44px -33px;
 }
