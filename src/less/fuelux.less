@@ -1,5 +1,5 @@
 /*!
- * Bootstrap v2.2.2
+ * Bootstrap v2.3.0
  *
  * Copyright 2012 Twitter, Inc
  * Licensed under the Apache License v2.0
@@ -10,12 +10,12 @@
 
 .fuelux {
 
-	// CSS Reset
-	@import "../../lib/bootstrap/less/reset.less";
-
 	// Core variables and mixins
 	@import "variables.less"; // Modify this for custom colors, font-sizes, etc
 	@import "../../lib/bootstrap/less/mixins.less";
+
+	// CSS Reset
+	@import "../../lib/bootstrap/less/reset.less";
 
 	// Grid system and page structure
 	@import "../../lib/bootstrap/less/scaffolding.less";
@@ -70,6 +70,7 @@
 	@import "../../lib/fuelux/less/datagrid.less";
 	@import "../../lib/fuelux/less/pillbox.less";
 	@import "../../lib/fuelux/less/radio.less";
+	@import "../../lib/fuelux/less/search.less";
 	@import "../../lib/fuelux/less/select.less";
 	@import "../../lib/fuelux/less/spinner.less";
 	@import "../../lib/fuelux/less/tree.less";
@@ -83,12 +84,14 @@
 	@import "close.less";
 	@import "dropdowns.less";
 	@import "forms.less";
+	@import "labels-badges.less";
 	@import "modals.less";
 	@import "pagination.less";
 	@import "progress-bars.less";
 	@import "radio.less";
 	@import "sprites.less";
 	@import "tables.less";
+	@import "tooltip.less";
 	@import "type.less";
 	@import "tree.less";
 	@import "wizard.less";
@@ -96,6 +99,7 @@
 	// IMH Theme FuelUX overrides
 	@import "datagrid.less";
 	@import "pillbox.less";
+	@import "select.less";
 	@import "spinner.less";
 
 }
