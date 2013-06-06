@@ -7222,10 +7222,18 @@ textarea.span1,
   line-height: 14px;
 }
 
+.fuelux .btn-small .caret {
+  margin-top: 5px;
+}
+
 .fuelux .btn-mini {
   padding: 0 8px;
   font-size: 10px;
   line-height: 13px;
+}
+
+.fuelux .btn-mini .caret {
+  margin-top: 4px;
 }
 
 .fuelux .btn-link,
@@ -8069,6 +8077,12 @@ textarea.span1,
 .fuelux .datagrid-stretch-wrapper .datagrid td,
 .fuelux .datagrid-stretch-wrapper .datagrid th {
   border-bottom: 0;
+}
+
+.fuelux .datagrid-stretch-header thead th {
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
 }
 
 .fuelux .datagrid-stretch-footer tfoot:first-child th:first-child {
