@@ -8139,6 +8139,14 @@ textarea.span1,
   background-color: #c2d4e3;
 }
 
+.fuelux .select .dropdown-label {
+  padding-top: 2px;
+}
+
+.fuelux .select .caret {
+  margin-top: 9px;
+}
+
 .fuelux .spinner .btn {
   width: 12px;
   height: 10px;
