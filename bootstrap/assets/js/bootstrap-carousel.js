@@ -1,8 +1,8 @@
 /* ==========================================================
- * bootstrap-carousel.js v2.3.0
- * http://twitter.github.com/bootstrap/javascript.html#carousel
+ * bootstrap-carousel.js v2.3.2
+ * http://twbs.github.com/bootstrap/javascript.html#carousel
  * ==========================================================
- * Copyright 2012 Twitter, Inc.
+ * Copyright 2013 Twitter, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -75,7 +75,7 @@
       if (!e) this.paused = true
       if (this.$element.find('.next, .prev').length && $.support.transition.end) {
         this.$element.trigger($.support.transition.end)
-        this.cycle()
+        this.cycle(true)
       }
       clearInterval(this.interval)
       this.interval = null

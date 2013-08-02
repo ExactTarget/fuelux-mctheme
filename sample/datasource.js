@@ -36,11 +36,32 @@
 				// SEARCHING
 				if (options.search) {
 					data = _.filter(data, function (item) {
-						for (var prop in item) {
-							if (!item.hasOwnProperty(prop)) continue;
-							if (~item[prop].toString().toLowerCase().indexOf(options.search.toLowerCase())) return true;
+						var match = false;
+
+						_.each(item, function (prop) {
+							if (_.isString(prop) || _.isFinite(prop)) {
+								if (prop.toString().toLowerCase().indexOf(options.search.toLowerCase()) !== -1) match = true;
+							}
+						});
+
+						return match;
+					});
+				}
+
+				// FILTERING
+				if (options.filter) {
+					data = _.filter(data, function (item) {
+						switch(options.filter.value) {
+							case 'lt5m':
+								if(item.population < 5000000) return true;
+								break;
+							case 'gte5m':
+								if(item.population >= 5000000) return true;
+								break;
+							default:
+								return true;
+								break;
 						}
-						return false;
 					});
 				}
 

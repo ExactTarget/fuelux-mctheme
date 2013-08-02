@@ -1,4 +1,3 @@
-
 /*
  * Fuel UX Data components - static data source
  * https://github.com/ExactTarget/fuelux-data
@@ -16,7 +15,7 @@
 }(this, function () {
 
 	var DataSourceTree = function (options) {
-		this._data = options.data;
+		this._data 	= options.data;
 		this._delay = options.delay;
 	};
 
