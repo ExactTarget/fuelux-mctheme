@@ -168,7 +168,7 @@ require(['jquery', 'fuelux/datagrid'], function($) {
 
 			var $pagesize = $datagrid.find('.grid-pagesize');
 
-			equal(stubDataSource.options.pageSize, 5, 'page size has default value');
+			equal(stubDataSource.options.pageSize, 10, 'page size has default value');
 
 			$datagrid.one('loaded', function () {
 
@@ -186,7 +186,7 @@ require(['jquery', 'fuelux/datagrid'], function($) {
 
 			var $pagesize = $datagrid.find('.grid-pagesize');
 
-			equal(stubDataSource.options.pageSize, 5, 'page size has default value');
+			equal(stubDataSource.options.pageSize, 10, 'page size has default value');
 
 			$datagrid.one('loaded', function () {
 
