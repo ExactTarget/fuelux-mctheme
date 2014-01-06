@@ -36,9 +36,9 @@
     "test": "grunt qunit"
   },
   "dependencies": {
-    "grunt": "~0.3.11",
-    "grunt-contrib": "~0.1.0",
-    "grunt-recess": "~0.1.0"
+    "grunt": "~0.3.17",
+    "grunt-contrib": "~0.1.7",
+    "grunt-recess": "~0.2.0"
   },
   "keywords": [
     "fuelux",
@@ -50,7 +50,6 @@
     "baseDir": "lib",
     "url": "https://raw.github.com/ExactTarget/fuelux-imhtheme/{version}/dist/fuelux.zip",
     "type": "directory",
-    "dependencies": {
-    }
+    "dependencies": {}
   }
 }
