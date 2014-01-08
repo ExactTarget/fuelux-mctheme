@@ -35,11 +35,7 @@
   "scripts": {
     "test": "grunt qunit"
   },
-  "dependencies": {
-    "grunt": "~0.3.17",
-    "grunt-contrib": "~0.1.7",
-    "grunt-recess": "~0.2.0"
-  },
+  "dependencies": {},
   "keywords": [
     "fuelux",
     "fuel ux",
