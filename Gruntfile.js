@@ -1,5 +1,5 @@
 /*jshint expr:true*/
-/*global module:false, process:false*/
+/*global module:false*/
 module.exports = function (grunt) {
 
 	grunt.loadNpmTasks('grunt-contrib-clean');
