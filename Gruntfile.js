@@ -147,9 +147,16 @@ module.exports = function (grunt) {
 		},
 		watch: {
 			files: ['Gruntfile.js', 'lib/**', 'src/**', 'test/**'],
-			tasks: []
+			tasks: ['quicktest', 'quickcss']
 		}
 	});
 
+	grunt.registerTask('quicktest', ['jshint', 'qunit:simple']);
+
+	grunt.registerTask('quickcss', ['recess:compile', 'recess:compile_responsive']);
+	grunt.registerTask('fullcss', ['quickcss', 'recess:compress', 'recess:compress_responsive']);
+
+	grunt.registerTask('default', ['quicktest', 'clean:dist', 'copy:bootstrapImages', 'copy:fuelux', 'copy:images', 'fullcss', 'uglify', 'copy:zipsrc', 'compress', 'clean:zipsrc']);
+	grunt.registerTask('devserver', ['quicktest', 'quickcss', 'watch']);
 
 };
