@@ -29,6 +29,8 @@
     "test": "grunt qunit"
   },
   "dependencies": {},
+  "devDependencies": {
+  },
   "keywords": [
     "fuelux",
     "fuel ux",
