@@ -4,9 +4,62 @@
 	<meta charset="utf-8">
 	<title>Bootstrap CSS (IMH Theme)</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+
+	<style type="text/css">
+		.thin-box {
+			border: 1px solid #ddd;
+		}
+
+		.table.borderless > thead > tr > th,
+		.table.borderless > tbody > tr > th,
+		.table.borderless > tfoot > tr > th,
+		.table.borderless > thead > tr > td,
+		.table.borderless > tbody > tr > td,
+		.table.borderless > tfoot > tr > td {
+			border-top: none;
+			vertical-align: middle;
+		}
+	</style>
 </head>
 <body>
 
+	<div class="container">
+
+		<h1>Typography</h1>
+		<div class="thin-box">
+			<table class="table borderless" style="border-top: none">
+				<tbody>
+				<tr>
+					<td><h1>h1. Bootstrap heading</h1></td>
+					<td class="type-info">Semibold 36px</td>
+				</tr>
+				<tr>
+					<td><h2>h2. Bootstrap heading</h2></td>
+					<td class="type-info">Semibold 30px</td>
+				</tr>
+				<tr>
+					<td><h3>h3. Bootstrap heading</h3></td>
+					<td class="type-info">Semibold 24px</td>
+				</tr>
+				<tr>
+					<td><h4>h4. Bootstrap heading</h4></td>
+					<td class="type-info">Semibold 18px</td>
+				</tr>
+				<tr>
+					<td><h5>h5. Bootstrap heading</h5></td>
+					<td class="type-info">Semibold 14px</td>
+				</tr>
+				<tr>
+					<td><h6>h6. Bootstrap heading</h6></td>
+					<td class="type-info">Semibold 12px</td>
+				</tr>
+				</tbody>
+			</table>
+		</div>
+
+	</div>
 
 </body>
 </html>
