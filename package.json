@@ -16,12 +16,10 @@
   "bugs": {
     "url": "https://github.com/ExactTarget/fuelux-imhtheme/issues"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/ExactTarget/fuelux-imhtheme/blob/master/COPYING"
-    }
-  ],
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/ExactTarget/fuelux-imhtheme/blob/master/COPYING"
+  },
   "engines": {
     "node": ">= 0.6.0"
   },
@@ -39,7 +37,10 @@
     "grunt-contrib-copy": "^0.5.0",
     "grunt-contrib-less": "^0.11.3",
     "grunt-contrib-watch": "^0.6.1",
-    "volo": "^0.3.3"
+    "volo": "^0.3.3",
+    "grunt-banner": "^0.2.3",
+    "load-grunt-tasks": "^0.6.0",
+    "grunt-text-replace": "^0.3.12"
   },
   "keywords": [
     "fuelux",

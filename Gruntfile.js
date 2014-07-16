@@ -33,13 +33,13 @@ module.exports = function (grunt) {
 			}
 		},
 		copy: {
-			fonts: {
+			/*fonts: {
 				cwd: 'fonts/',
 				dest: 'dist/fonts/',
 				expand: true,
 				filter: 'isFile',
 				src: ['*']
-			},
+			},*/
 			zipsrc: {
 				cwd: 'dist/',
 				dest: 'dist/fuelux-imhtheme/',
@@ -78,6 +78,35 @@ module.exports = function (grunt) {
 				}
 			}
 		},
+		replace: {
+			imgpaths: {
+				overwrite: true,
+				replacements:[
+					{
+						from: "'../../img",
+						to: "'../img"
+					}
+				],
+				src: [
+					'dist/css/fuelux-imhtheme.css',
+					'dist/css/fuelux-imhtheme.css.map'
+				]
+			}
+		},
+		usebanner: {
+			dist: {
+				options: {
+					position: 'top',
+					banner: '<%= banner %>'
+				},
+				files: {
+					src: [
+						'dist/css/<%= pkg.name %>.css',
+						'dist/css/<%= pkg.name %>.min.css'
+					]
+				}
+			}
+		},
 		watch: {
 			files: ['Gruntfile.js', 'lib/**', 'src/**', 'test/**'],
 			tasks: ['quicktest', 'quickcss']
@@ -92,13 +121,13 @@ module.exports = function (grunt) {
 	 ------------- */
 
 	// CSS distribution task
-	grunt.registerTask('distcss', ['less', 'usebanner']);
+	grunt.registerTask('distcss', ['less:dist', 'replace:imgpaths', 'less:minify', 'usebanner']);
 
 	// ZIP distribution task
 	grunt.registerTask('distzip', ['copy:zipsrc', 'compress', 'clean:zipsrc']);
 
 	// Full distribution task
-	grunt.registerTask('dist', ['clean:dist', 'distcss', 'copy:fonts', 'distzip']);
+	grunt.registerTask('dist', ['clean:dist', 'distcss', /*'copy:fonts',*/ 'distzip']);
 
 	//The default build task
 	grunt.registerTask('default', ['dist']);
