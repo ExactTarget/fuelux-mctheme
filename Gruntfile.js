@@ -108,8 +108,8 @@ module.exports = function (grunt) {
 			}
 		},
 		watch: {
-			files: ['Gruntfile.js', 'lib/**', 'src/**', 'test/**'],
-			tasks: ['quicktest', 'quickcss']
+			files: ['less/**'],
+			tasks: ['distcss']
 		}
 	});
 
@@ -131,11 +131,5 @@ module.exports = function (grunt) {
 
 	//The default build task
 	grunt.registerTask('default', ['dist']);
-
-	/* -------------
-		SERVE
-	 ------------- */
-	grunt.registerTask('serve', ['test', 'dist', 'connect:server', 'watch:full']);
-	grunt.registerTask('servecss', ['connect:server', 'watch:css']);
 
 };
