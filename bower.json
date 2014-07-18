@@ -1,23 +1,29 @@
 {
-	"name": "fuelux-imhtheme",
-	"version": "2.5.2",
-	"main": [],
-	"ignore": [
-		"**/.*",
-		"_*",
-		"bootstrap",
-		"lib",
-		"node_modules",
-		"sample",
-		"src",
-		"test",
-		"util",
-		"Gruntfile.js",
-		"package.json",
-		"testem.json",
-		"*.html"
-	],
-	"dependencies": {
-		"jquery": ">= 1.9.0"
-	}
+  "name": "fuelux-imhtheme",
+  "version": "2.5.2",
+  "main": [],
+  "ignore": [
+    "**/.*",
+    "_*",
+    "bootstrap",
+    "lib",
+    "node_modules",
+    "sample",
+    "src",
+    "test",
+    "util",
+    "Gruntfile.js",
+    "package.json",
+    "testem.json",
+    "*.html"
+  ],
+  "dependencies": {
+    "jquery": ">= 1.9.0"
+  },
+  "devDependencies": {
+    "bootstrap": "~3.2.0",
+    "fuelux": "3.0.0-wip",
+    "jquery": "~2.1.1",
+    "requirejs": "~2.1.14"
+  }
 }
