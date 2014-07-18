@@ -34,12 +34,12 @@ module.exports = function (grunt) {
 		},
 		copy: {
 			/*fonts: {
-				cwd: 'fonts/',
-				dest: 'dist/fonts/',
-				expand: true,
-				filter: 'isFile',
-				src: ['*']
-			},*/
+			 cwd: 'fonts/',
+			 dest: 'dist/fonts/',
+			 expand: true,
+			 filter: 'isFile',
+			 src: ['*']
+			 },*/
 			zipsrc: {
 				cwd: 'dist/',
 				dest: 'dist/fuelux-imhtheme/',
@@ -56,7 +56,19 @@ module.exports = function (grunt) {
 			}
 		},
 		less: {
-			dist: {
+			'bootstrap-css': {
+				options: {
+					strictMath: true,
+					sourceMap: true,
+					outputSourceFiles: true,
+					sourceMapURL: 'bootstrap-css.css.map',
+					sourceMapFilename: 'dist/css/bootstrap-css.css.map'
+				},
+				files: {
+					'dist/css/bootstrap-css.css': 'less/bootstrap-css/bootstrap-css.less'
+				}
+			},
+			'fuelux-imhtheme': {
 				options: {
 					strictMath: true,
 					sourceMap: true,
@@ -68,12 +80,26 @@ module.exports = function (grunt) {
 					'dist/css/fuelux-imhtheme.css': 'less/fuelux-imhtheme.less'
 				}
 			},
+			'fuelux-controls': {
+				options: {
+					strictMath: true,
+					sourceMap: true,
+					outputSourceFiles: true,
+					sourceMapURL: 'fuelux-controls.css.map',
+					sourceMapFilename: 'dist/css/fuelux-controls.css.map'
+				},
+				files: {
+					'dist/css/fuelux-controls.css': 'less/fuelux-controls/fuelux-controls.less'
+				}
+			},
 			minify: {
 				options: {
 					cleancss: true,
 					report: 'min'
 				},
 				files: {
+					'dist/css/bootstrap-css.min.css': 'dist/css/bootstrap-css.css',
+					'dist/css/fuelux-controls.min.css': 'dist/css/fuelux-controls.css',
 					'dist/css/<%= pkg.name %>.min.css': 'dist/css/<%= pkg.name %>.css'
 				}
 			}
@@ -117,11 +143,11 @@ module.exports = function (grunt) {
 	require('load-grunt-tasks')(grunt, {scope: 'devDependencies'});
 
 	/* -------------
-		BUILD
+	 BUILD
 	 ------------- */
 
 	// CSS distribution task
-	grunt.registerTask('distcss', ['less:dist', 'replace:imgpaths', 'less:minify', 'usebanner']);
+	grunt.registerTask('distcss', ['less:bootstrap-css', 'less:fuelux-controls', 'less:fuelux-imhtheme', 'replace:imgpaths', 'less:minify', 'usebanner']);
 
 	// ZIP distribution task
 	grunt.registerTask('distzip', ['copy:zipsrc', 'compress', 'clean:zipsrc']);
