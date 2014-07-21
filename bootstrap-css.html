@@ -15,8 +15,12 @@
 
 	<style type="text/css">
 		h1.section {
-			margin-top: 50px;
+			margin-top: 80px;
 		}
+
+        h2{
+            margin: 40px 0 20px 0;
+        }
 
 		hr.darker {
 			border-top: 1px solid #ddd;
@@ -28,7 +32,7 @@
 
 		.thin-box {
 			border: 1px solid #ddd;
-			padding: 4px;
+			padding: 20px 20px;
 		}
 	</style>
 </head>
@@ -41,12 +45,12 @@
 
 		<h2>Headings</h2>
 		<div class="thin-box">
-			<h1>h1. Bootstrap heading <small>Secondary text</small></h1>
-			<h2>h2. Bootstrap heading <small>Secondary text</small></h2>
-			<h3>h3. Bootstrap heading <small>Secondary text</small></h3>
-			<h4>h4. Bootstrap heading <small>Secondary text</small></h4>
-			<h5>h5. Bootstrap heading <small>Secondary text</small></h5>
-			<h6>h6. Bootstrap heading <small>Secondary text</small></h6>
+			<h1>h1. Headers and Page Titles <small>Secondary text</small></h1>
+			<h2>h2. Form Titles <small>Secondary text</small></h2>
+			<h3>h3. Table Titles <small>Secondary text</small></h3>
+			<!--<h4>h4. Bootstrap heading <small>Secondary text</small></h4>-->
+			<!--<h5>h5. Bootstrap heading <small>Secondary text</small></h5>-->
+			<!--<h6>h6. Bootstrap heading <small>Secondary text</small></h6>-->
 		</div>
 
 		<h2>Body copy</h2>
@@ -935,10 +939,11 @@
         <div class="thin-box">
              <button type="button" class="btn btn-default">Default</button>
              <button type="button" class="btn btn-primary">Primary</button>
-             <button type="button" class="btn btn-success">Success</button>
-             <button type="button" class="btn btn-info">Info</button>
-             <button type="button" class="btn btn-warning">Warning</button>
-             <button type="button" class="btn btn-danger">Danger</button>
+            <button type="button" class="btn btn-secondary">Secondary</button>
+             <!--<button type="button" class="btn btn-success">Success</button>-->
+             <!--<button type="button" class="btn btn-info">Info</button>-->
+             <!--<button type="button" class="btn btn-warning">Warning</button>-->
+             <!--<button type="button" class="btn btn-danger">Danger</button>-->
              <button type="button" class="btn btn-link">Link</button>
         </div>
 
@@ -946,25 +951,25 @@
         <div class="thin-box">
             <p>
                 <button type="button" class="btn btn-primary btn-lg">Large button</button>
-                <button type="button" class="btn btn-default btn-lg">Large button</button>
+                <!--<button type="button" class="btn btn-default btn-lg">Large button</button>-->
             </p>
             <p>
                 <button type="button" class="btn btn-primary">Default button</button>
-                <button type="button" class="btn btn-default">Default button</button>
+                <button type="button" class="btn btn-secondary">Default button</button>
             </p>
             <p>
                 <button type="button" class="btn btn-primary btn-sm">Small button</button>
-                <button type="button" class="btn btn-default btn-sm">Small button</button>
+                <button type="button" class="btn btn-secondary btn-sm">Small button</button>
             </p>
-            <p>
-                <button type="button" class="btn btn-primary btn-xs">Extra small button</button>
-                <button type="button" class="btn btn-default btn-xs">Extra small button</button>
-            </p>
+            <!--<p>-->
+                <!--<button type="button" class="btn btn-primary btn-xs">Extra small button</button>-->
+                <!--<button type="button" class="btn btn-default btn-xs">Extra small button</button>-->
+            <!--</p>-->
             <br/>
 
             <div class="well" style="max-width: 400px; margin: 0 auto 10px;">
                 <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
-                <button type="button" class="btn btn-default btn-lg btn-block">Block level button</button>
+                <button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button>
             </div>
         </div>
 
@@ -972,24 +977,24 @@
         <div class="thin-box">
             <h3>Button element</h3>
             <button type="button" class="btn btn-primary btn-lg active">Primary button</button>
-            <button type="button" class="btn btn-default btn-lg active">Button</button>
+            <button type="button" class="btn btn-secondary btn-lg active">Secondary button</button>
             <br/>
 
             <h3>Anchor element</h3>
             <a href="#" class="btn btn-primary btn-lg active" role="button">Primary link</a>
-            <a href="#" class="btn btn-default btn-lg active" role="button">Link</a>
+            <a href="#" class="btn btn-secondary btn-lg active" role="button">Secondary link</a>
         </div>
 
         <h2>Disabled state</h2>
         <div class="thin-box">
             <h3>Button element</h3>
             <button type="button" class="btn btn-primary btn-lg" disabled="disabled">Primary button</button>
-            <button type="button" class="btn btn-default btn-lg" disabled="disabled">Button</button>
+            <button type="button" class="btn btn-secondary btn-lg" disabled="disabled">Secondary button</button>
             <br/>
 
             <h3>Anchor element</h3>
             <a href="#" class="btn btn-primary btn-lg disabled" role="button">Primary link</a>
-            <a href="#" class="btn btn-default btn-lg disabled" role="button">Link</a>
+            <a href="#" class="btn btn-secondary btn-lg disabled" role="button">Secondary link</a>
         </div>
 
         <h2>Button tags</h2>
@@ -1000,7 +1005,7 @@
             <input class="btn btn-default" type="submit" value="Submit">
         </div>
 
-        <h1>Images</h1>
+        <h1 class="section">Images</h1>
         <hr class="darker"/>
 
         <h2>Responsive images</h2>
@@ -1015,7 +1020,7 @@
         </div>
 
 
-        <h1>Helper classes</h1>
+        <h1 class="section">Helper classes</h1>
         <hr class="darker"/>
 
         <h2>Contextual colors</h2>
