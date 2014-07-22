@@ -1,0 +1,43 @@
+body{
+  font-family: @font-family-base;
+  color: @gray-dark;
+  font-size: @font-size-base;
+}
+
+h1, .h1 {
+  &.title-header-page {
+    font-size: @font-size-h1;
+    color: @gray-dark;
+    margin: 20px 0 0 0;
+  }
+}
+h2, .h2 {
+  &.title-table {
+    font-size: @font-size-h2;
+    color: @gray-dark;
+    margin: 18px 0 0 0;
+  }
+}
+h3, .h3 {
+  &.title-form {
+    font-size: @font-size-h3;
+    color: @gray-dark;
+  }
+}
+
+p {
+  color: red;//@gray-dark;
+  font-size: @font-size-base;
+
+  &.support-text{
+    color: @gray-light-medium;
+  }
+
+  &.hint-text{
+    color: @gray-lighter-medium-1;
+  }
+
+  &.disabled-text{
+    color: @gray-lighter-medium-2;
+  }
+}
