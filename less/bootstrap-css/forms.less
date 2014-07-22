@@ -130,6 +130,7 @@ output {
   // Customize the `:focus` state to imitate native WebKit styles.
   .form-control-focus();
 
+  // Specially to show the focus state
   &.form-on-focus{
     @color-rgba: rgba(red(@input-border-focus), green(@input-border-focus), blue(@input-border-focus), .6);
     border-color: @input-border-focus;
@@ -139,6 +140,14 @@ output {
 
   // Placeholder
   .placeholder();
+
+  // Select box gradient background
+  &.select-bg{
+    background: -moz-linear-gradient(#FEFEFE,#E0E0E0);
+    border-color: 1px solid #bbb;
+    .box-shadow(0 1px 1px rgba(0,0,0,.05));
+  }
+
 
   // Disabled and read-only inputs
   //
