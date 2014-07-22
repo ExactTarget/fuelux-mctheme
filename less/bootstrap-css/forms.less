@@ -381,7 +381,12 @@ input[type="checkbox"] {
 .has-error {
   .form-control-validation(@state-danger-text; @state-danger-text; @state-danger-bg);
 }
-
+.has-incomplete {
+  .form-control{
+    .placeholder(@state-danger-text);
+    background-color: @gray-lighter;
+  }
+}
 
 // Reposition feedback icon if label is hidden with "screenreader only" state
 .has-feedback label.sr-only ~ .form-control-feedback {
