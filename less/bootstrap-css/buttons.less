@@ -62,6 +62,17 @@
 }
 .btn-primary {
   .button-variant(@btn-primary-color; @btn-primary-bg; @btn-primary-bg-hover; @btn-primary-bg-press; @btn-primary-bg-disabled; @btn-primary-border);
+
+  //set border to 0, adjust padding
+  border: 0px;
+  padding: @padding-base-vertical + 1  @padding-base-horizontal;
+  &.btn-lg{
+    padding: @padding-large-vertical + 1  @padding-large-horizontal;
+  }
+  &.btn-sm{
+    padding: @padding-small-vertical + 1  @padding-small-horizontal;
+  }
+
   &:active,&.active,&:focus{
     background: @btn-primary-bg-press;
   }
@@ -70,7 +81,7 @@
   &.create-btn{
     height: 26px;
     border-radius: 13px;
-    //padding-left: 40px;
+    padding-left: 5px;
 
     &:before{
       content: "+";
@@ -78,19 +89,28 @@
       padding: 0 5px;
       margin-right: 5px;
       border-radius: 100%;
+      background: -webkit-linear-gradient(#4E8ABE,#7FB9EC);
       background: -moz-linear-gradient(#4E8ABE,#7FB9EC);
+      background: -o-linear-gradient(#4E8ABE,#7FB9EC);
+      background: linear-gradient(#4E8ABE,#7FB9EC);
     }
 
     &.hover,
     &:hover{
       &:before{
+        background: -webkit-linear-gradient(#669ECF, #9ACCF7);
         background: -moz-linear-gradient(#669ECF, #9ACCF7);
+        background: -o-linear-gradient(#669ECF, #9ACCF7);
+        background: linear-gradient(#669ECF, #9ACCF7);
       }
     }
 
     &:active,&.active,&:focus{
       &:before{
+        background: -webkit-linear-gradient(#4377a3, #6ab6f5);
         background: -moz-linear-gradient(#4377a3, #6ab6f5);
+        background: -o-linear-gradient(#4377a3, #6ab6f5);
+        background: linear-gradient(#4377a3, #6ab6f5);
         //.box-shadow(0 -2px 2px rgba(0,0,0,.3) inset)
       }
     }
