@@ -63,6 +63,7 @@
 .btn-primary {
   .button-variant(@btn-primary-color; @btn-primary-bg; @btn-primary-bg-hover; @btn-primary-bg-press; @btn-primary-bg-disabled; @btn-primary-border);
 
+  font-weight: bold;
   //set border to 0, adjust padding
   border: 0px;
   padding: @padding-base-vertical + 1  @padding-base-horizontal;
@@ -147,7 +148,6 @@
 // Make a button look and behave like a link
 .btn-link {
   color: @link-color;
-  font-weight: bold;
   cursor: pointer;
   border-radius: 0;
   .box-shadow(none);

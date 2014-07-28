@@ -408,11 +408,13 @@ input[type="checkbox"] {
 }
 .has-incomplete {
 
+  .has-error-label{
+    margin-right: 114px;//leave space for the label on the right
+  }
+  
   .form-control{
     .placeholder(@state-danger-text);
     background-color: @gray-lighter;
-
-    margin-right: 400px;
     display: inline;
   }
 
@@ -422,13 +424,12 @@ input[type="checkbox"] {
     font-weight: normal;
     color: #fff;
     padding: 6px 5px 7px 5px;
-    margin-left: 2px;
+    margin-left: 8px;
     display: inline-block;
-    float: right;
 
     //height: 21px;
     background: linear-gradient(#EE6767,#E64141);
-    position: relative;
+    position: absolute;
     -moz-border-radius:    3px;
     -webkit-border-radius: 3px;
     border-radius:         3px;

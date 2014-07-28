@@ -45,12 +45,9 @@
 
 		<h2>Headings</h2>
 		<div class="thin-box">
-			<h1 class="title-header-page">h1. Headers and Page Titles <small>Secondary text</small></h1>
-			<h2 class="title-table">h2. Table Titles <small>Secondary text</small></h2>
-			<h3 class="title-form">h3. Form Titles <small>Secondary text</small></h3>
-			<!--<h4>h4. Bootstrap heading <small>Secondary text</small></h4>-->
-			<!--<h5>h5. Bootstrap heading <small>Secondary text</small></h5>-->
-			<!--<h6>h6. Bootstrap heading <small>Secondary text</small></h6>-->
+			<div class="title-header-page">Headers and Page Titles <small>Secondary text</small></div>
+			<div class="title-table">Table Titles <small>Secondary text</small></div>
+			<div class="title-form">Form Titles <small>Secondary text</small></div>
 		</div>
 
 		<h2>Body copy</h2>
@@ -233,41 +230,54 @@
 			<samp>This text is meant to be treated as sample output from a computer program.</samp>
 		</div>
 
-
-
 		<h1 class="section">Tables</h1>
 		<hr class="darker"/>
 
 		<h2>Basic Example</h2>
 		<div class="thin-box">
 			<table class="table">
+                <div class="title-table-bg title-table">Grid Name</div>
 				<thead>
 				<tr>
-					<th>#</th>
-					<th>First Name</th>
-					<th>Last Name</th>
 					<th>Username</th>
+					<th>Name</th>
+                    <th>Description</th>
+					<th>Number</th>
 				</tr>
 				</thead>
 				<tbody>
 				<tr>
-					<td>1</td>
+					<td><a>@mdoiw</a></td>
 					<td>Mark</td>
-					<td>Otto</td>
-					<td>@mdo</td>
+                    <td>Cum sociis natoque penatibus et magnis dis parturient montes</td>
+					<td>25,813,874</td>
 				</tr>
 				<tr>
-					<td>2</td>
+					<td><a>@fat</a></td>
 					<td>Jacob</td>
-					<td>Thornton</td>
-					<td>@fat</td>
+                    <td>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion
+                        daikon amaranth tatsoi tomatillo melon azuki bean garlic. </td>
+					<td>873</td>
 				</tr>
 				<tr>
-					<td>3</td>
+					<td><a>@twitter</a></td>
 					<td>Larry</td>
-					<td>the Bird</td>
-					<td>@twitter</td>
+                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</td>
+					<td>9,702</td>
 				</tr>
+                <tr>
+                    <td><a>@apple</a></td>
+                    <td>Penelope</td>
+                    <td>Donec ullamcorper nulla non metus auctor fringilla. Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion
+                        daikon amaranth tatsoi tomatillo melon azuki bean garlic.</td>
+                    <td>19,056</td>
+                </tr>
+                <tr>
+                    <td><a>@jsvlsiusoiemn</a></td>
+                    <td>Issan</td>
+                    <td>VConsectetur adipiscing elit </td>
+                    <td>739,276</td>
+                </tr>
 				</tbody>
 			</table>
 		</div>
@@ -841,8 +851,11 @@
                 </div>
                 <div class="form-group has-incomplete">
                     <label class="control-label" for="inputIncomplete1">With incomplete required field</label>
-                    <input type="text" class="form-control" id="inputIncomplete1" placeholder="Description required" style="margin-right: 210px;">
-                    <label class="error-label" style="width:200px;float:right;">Required Field</label>
+                    <div class="has-error-label">
+                        <input type="text" class="form-control" id="inputIncomplete1" placeholder="Description required">
+                        <label class="error-label">Required Field</label>
+                    </div>
+
 
                     <!--<div style="width:200px; float:right;background: #fa8365">alkhgjlda</div>-->
                     <!--<div style="margin-right: 210px;background: #63f027">alkhgjlda</div>-->
@@ -1100,6 +1113,7 @@
                 <br/>
                 <small>kzhang@exacttarget.com </small><small>kzhang@exacttarget.com </small><small>kzhang@exacttarget.com</small>
                 <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+                <!--<button type="button" class="close"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>-->
             </p>
 
         </div>
@@ -1107,7 +1121,10 @@
         <h2>Close icon</h2>
         <div class="thin-box">
             <p class="clearfix">
-                <button type="button" class="close"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                <button type="button" class="close">
+                    <span aria-hidden="true">×</span>
+                    <span class="sr-only">Close</span>
+                </button>
             </p>
         </div>
 
