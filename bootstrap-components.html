@@ -9,7 +9,7 @@
 
 	<!--CLIENT-SIDE LESS COMPILATION FOR WATCHER-LESS DEV-->
 	<!--<link href="less/fuelux-imhtheme.less" rel="stylesheet/less" type="text/css" />-->
-	<link href="less/bootstrap-css/bootstrap-components.less" rel="stylesheet/less" type="text/css"/>
+	<link href="less/bootstrap-components/bootstrap-components.less" rel="stylesheet/less" type="text/css"/>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.7.0/less.min.js"></script>
 	<script type="text/javascript">if(window.console && window.console.clear){ window.console.clear(); }</script>
 
@@ -17,8 +17,12 @@
 
 	<style type="text/css">
 		h1.section {
-			margin-top: 50px;
+			margin-top: 80px;
 		}
+
+        h2{
+            margin: 40px 0 20px 0;
+        }
 
 		hr.darker {
 			border-top: 1px solid #ddd;
@@ -37,6 +41,46 @@
 <body>
 
 	<div class="container main">
+
+        <h1 class="section">Dropdowns</h1>
+        <hr class="darker"/>
+
+        <h2>Example</h2>
+        <div class="thin-box">
+            <div class="dropdown clearfix">
+                <button data-toggle="dropdown" id="dropdownMenu1" type="button" class="btn btn-default dropdown-toggle">
+                    Dropdown
+                    <span class="caret"></span>
+                </button>
+                <ul aria-labelledby="dropdownMenu1" role="menu" class="dropdown-menu">
+                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Action</a></li>
+                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Another action</a></li>
+                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Something else here</a></li>
+                    <li class="divider" role="presentation"></li>
+                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Separated link</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <h2>Headers</h2>
+        <div class="thin-box">
+            <div class="dropdown clearfix">
+                <button data-toggle="dropdown" id="dropdownMenu2" type="button" class="btn btn-default dropdown-toggle">
+                    Dropdown
+                    <span class="caret"></span>
+                </button>
+                <ul aria-labelledby="dropdownMenu2" role="menu" class="dropdown-menu">
+                    <li class="dropdown-header" role="presentation">Dropdown header</li>
+                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Action</a></li>
+                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Another action</a></li>
+                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Something else here</a></li>
+                    <li class="divider" role="presentation"></li>
+                    <li class="dropdown-header" role="presentation">Dropdown header</li>
+                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Separated link</a></li>
+                </ul>
+            </div>
+        </div>
+
 	</div>
 
 </body>
