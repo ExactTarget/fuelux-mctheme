@@ -371,7 +371,7 @@ input[type="checkbox"] {
 // Feedback icon (requires .glyphicon classes)
 .form-control-feedback {
   position: absolute;
-  top: (@line-height-computed + 5); // Height of the `label` and its margin
+  top: 26px;//(@line-height-computed + 5);//cannot be applied here // Height of the `label` and its margin
   right: 0;
   z-index: 2; // Ensure icon is above input groups
   display: block;
@@ -410,12 +410,14 @@ input[type="checkbox"] {
 
   .has-error-label{
     margin-right: 114px;//leave space for the label on the right
+    position: relative;
   }
 
   .form-control{
     .placeholder(@state-danger-text);
     background-color: @gray-lighter;
     display: inline;
+    position: absolute;
   }
 
   //label on the right
@@ -427,7 +429,8 @@ input[type="checkbox"] {
     margin-left: 8px;
     margin-top: -5px;
     display: inline-block;
-
+    left: 100%;
+    white-space: nowrap;
     //height: 21px;
     background: linear-gradient(#EE6767,#E64141);
     position: absolute;
