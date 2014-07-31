@@ -1,0 +1,42 @@
+body{
+  font-family: @font-family-base;
+  color: @gray-dark;
+  font-size: @font-size-base;
+  line-height: @line-height-base;
+}
+
+.title-form, .title-header-page, .title-table {
+  color: @gray-dark;
+  line-height: @line-height-base;
+
+  small,
+  .small {
+    font-weight: normal;
+    line-height: 1;
+    color: @gray-light;
+    font-size: 65%;
+  }
+}
+
+.title-header-page { font-size: @font-size-h1; }
+
+.title-table { font-size: @font-size-h2; }
+
+.title-form { font-size: @font-size-h3; }
+
+p {
+  color: @gray-dark;
+  font-size: @font-size-base;
+
+  &.support-text{
+    color: @gray-light-medium;
+  }
+
+  &.hint-text{
+    color: @gray-lighter-medium-1;
+  }
+
+  &.disabled-text{
+    color: @gray-lighter-medium-2;
+  }
+}
