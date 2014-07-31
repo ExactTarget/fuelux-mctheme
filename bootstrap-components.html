@@ -38,6 +38,13 @@
 			padding: 20px;
             position: relative;
 		}
+
+        .thin-box .btn-toolbar {
+            padding-bottom: 10px;
+        }
+        .thin-box .btn-toolbar:last-child {
+            padding-bottom: 0;
+        }
         .thin-box .navbar-fixed-top,
         .thin-box .navbar-fixed-bottom {
             position: absolute;
@@ -1157,8 +1164,10 @@
 
         <div class="thin-box">
             <a href="#">Inbox <span class="badge">42</span></a>
-            <br/>
-            <h3>Adapts to active nav states</h3>
+        </div>
+
+        <h2>Adapts to active nav states</h2>
+        <div class="thin-box">
             <ul class="nav nav-pills">
                 <li class="active"><a href="#">Home <span class="badge">42</span></a></li>
                 <li><a href="#">Profile</a></li>
