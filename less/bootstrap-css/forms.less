@@ -371,7 +371,7 @@ input[type="checkbox"] {
 // Feedback icon (requires .glyphicon classes)
 .form-control-feedback {
   position: absolute;
-  top: (@line-height-computed + 5); // Height of the `label` and its margin
+  top: 25.5px;//to make icon in the center when screen width < 768px//(@line-height-computed + 5);//cannot be applied here // Height of the `label` and its margin
   right: 0;
   z-index: 2; // Ensure icon is above input groups
   display: block;
@@ -410,12 +410,14 @@ input[type="checkbox"] {
 
   .has-error-label{
     margin-right: 114px;//leave space for the label on the right
+    position: relative;
   }
-  
+
   .form-control{
     .placeholder(@state-danger-text);
     background-color: @gray-lighter;
     display: inline;
+    position: absolute;
   }
 
   //label on the right
@@ -425,8 +427,10 @@ input[type="checkbox"] {
     color: #fff;
     padding: 6px 5px 7px 5px;
     margin-left: 8px;
+    margin-top: -5px;
     display: inline-block;
-
+    left: 100%;
+    white-space: nowrap;
     //height: 21px;
     background: linear-gradient(#EE6767,#E64141);
     position: absolute;
@@ -438,7 +442,7 @@ input[type="checkbox"] {
     content:"";
     position: absolute;
     right: 100%;
-    top: 10.5px;
+    top: 11px;
     width: 0;
     height: 0;
     border-top: 5px solid transparent;
@@ -491,6 +495,7 @@ input[type="checkbox"] {
       display: inline-block;
       margin-bottom: 0;
       vertical-align: middle;
+      line-height: 1;//to make sure the icon and input box are both of 21px height
     }
 
     // In navbar-form, allow folks to *not* use `.form-group`

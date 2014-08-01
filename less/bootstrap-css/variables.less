@@ -38,21 +38,21 @@
 @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-sans-serif;
 
-@font-size-base:          11pt;
-@font-size-large:         12pt; //ceil((@font-size-base * 1.25)); // ~18px
-@font-size-small:         10pt; //ceil((@font-size-base * 0.85)); // ~12px
+@font-size-base:          11pt; // ~15px
+@font-size-large:         12pt; // ~16px
+@font-size-small:         10pt; // ~13px
 
-@font-size-h1:            20pt; //floor((@font-size-base * 2.6)); // ~36px
-@font-size-h2:            15pt; //floor((@font-size-base * 2.15)); // ~30px
-@font-size-h3:            14pt; //ceil((@font-size-base * 1.7)); // ~24px
+@font-size-h1:            20pt; // ~26px
+@font-size-h2:            15pt; // ~21px
+@font-size-h3:            14pt; // ~19px
 @font-size-h4:            ceil((@font-size-base * 1.25)); // ~18px
 @font-size-h5:            @font-size-base;
 @font-size-h6:            ceil((@font-size-base * 0.85)); // ~12px
 
 //** Unit-less `line-height` for use in components like buttons.
-@line-height-base:        1.428571429; // 20/14
+@line-height-base:        1.4;//1.428571429; // 21/15
 //** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
-@line-height-computed:    floor((@font-size-base * @line-height-base)); // ~20px
+@line-height-computed:    floor((@font-size-base * @line-height-base)); // ~21px
 
 
 
@@ -183,7 +183,7 @@
 @state-info-bg:                  #DFEEF5;
 @state-info-border:              darken(spin(@state-info-bg, -10), 7%);
 
-@state-warning-text:             #8a6d3b;
+@state-warning-text:             #f99d4a;
 @state-warning-bg:               #FFF1E1;
 @state-warning-border:           darken(spin(@state-warning-bg, -10), 5%);
 
@@ -239,7 +239,7 @@
 //** Number of columns in the grid.
 @grid-columns:              12;
 //** Padding between columns. Gets divided in half for the left and right.
-@grid-gutter-width:         30px;
+@grid-gutter-width:         20px;
 // Navbar collapse
 //** Point at which the navbar becomes uncollapsed.
 @grid-float-breakpoint:     @screen-sm-min;
