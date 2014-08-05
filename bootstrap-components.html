@@ -362,7 +362,7 @@
         </div>
 
     <h2>Split button dropdowns</h2>
-        <div class="bs-example">
+        <div class="thin-box">
             <div class="btn-group">
                 <button class="btn btn-default" type="button">Default</button>
                 <button data-toggle="dropdown" class="btn btn-default dropdown-toggle" type="button">
@@ -469,20 +469,6 @@
                 <div class="btn-group">
                     <button data-toggle="dropdown" type="button" class="btn btn-default btn-sm dropdown-toggle">
                         Small button <span class="caret"></span>
-                    </button>
-                    <ul role="menu" class="dropdown-menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
-                    </ul>
-                </div><!-- /btn-group -->
-            </div><!-- /btn-toolbar -->
-            <div role="toolbar" class="btn-toolbar">
-                <div class="btn-group">
-                    <button data-toggle="dropdown" type="button" class="btn btn-default btn-xs dropdown-toggle">
-                        Extra small button <span class="caret"></span>
                     </button>
                     <ul role="menu" class="dropdown-menu">
                         <li><a href="#">Action</a></li>
@@ -1301,9 +1287,26 @@
 
         <h2>Dismissible alerts</h2>
         <div class="thin-box">
+            <div class="alert alert-success alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                <strong>Check me out!</strong> Maecenas sed diam eget risus varius blandit sit amet non magna.
+            </div>
+            <div class="alert alert-info alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                <strong>Duis mollis</strong>, est non commodo luctus, nisi erat porttitor ligula.
+            </div>
             <div class="alert alert-warning alert-dismissible" role="alert">
                 <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
                 <strong>Warning!</strong> Better check yourself, you're not looking too good.
+            </div>
+            <div class="alert alert-danger alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                <strong>3 contacts were entered incorrectly.</strong>
+                <a>Update now</a>
+                <br/>
+                <small>kzhang@exacttarget.com </small><small>kzhang@exacttarget.com </small><small>kzhang@exacttarget.com</small>
+                <small> Duis mollis, est non aaaaa commodo luctus, nisi erat porttitor ligula.  Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+                    Duis mollis, est non a commodo luctus, nisi erat porttitor ligula.  Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</small>
             </div>
         </div>
 
