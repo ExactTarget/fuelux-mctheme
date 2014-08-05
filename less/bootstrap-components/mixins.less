@@ -1,0 +1,37 @@
+//Drop-shadows
+//
+.box-shadow(@shadow) {
+  -webkit-box-shadow: @shadow; // iOS <4.3 & Android <4.1
+  box-shadow: @shadow;
+}
+
+
+#gradient {
+  //Background gradient
+  //
+  .gradient-bg(@color-end: #dbdbdb, @color-start: lighten(@color-end, 20%)) {
+    background-color: @color-start;
+    background: -webkit-linear-gradient(@color-start, @color-end);
+    background: -moz-linear-gradient(@color-start, @color-end);
+    background: -o-linear-gradient(@color-start, @color-end);
+    background: linear-gradient(@color-start, @color-end);
+  }
+
+  //stripes
+  .striped(@color: #dbdbdb){
+    background: repeating-linear-gradient(-45deg, transparent, transparent 4px, rgba(255, 255, 255, 0.3) 4px, rgba(255, 255, 255 , 0.3) 8px),
+                /* on "bottom" */
+                linear-gradient(lighten(@color, 30%), @color);
+  }
+}
+
+//Progress bars
+//
+.progress-bar-variant(@color) {
+  #gradient > .gradient-bg(@color);
+}
+
+.progress-bar-variant-striped(@color) {
+  // Deprecated parent class requirement as of v3.2.0
+  #gradient > .striped(@color);
+}

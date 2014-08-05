@@ -176,7 +176,7 @@ output {
 //Add-ons
 .input-group-addon {
   padding: 1px 5px;
-  font-size: 11pt;
+  font-size: 11px; //11pt;
   font-weight: normal;
   line-height: 1;
   color: #555;
@@ -371,7 +371,7 @@ input[type="checkbox"] {
 // Feedback icon (requires .glyphicon classes)
 .form-control-feedback {
   position: absolute;
-  top: 25.5px;//to make icon in the center when screen width < 768px//(@line-height-computed + 5);//cannot be applied here // Height of the `label` and its margin
+  top: 19.5px; //25.5px;//to make icon in the center when screen width < 768px//(@line-height-computed + 5);//cannot be applied here // Height of the `label` and its margin
   right: 0;
   z-index: 2; // Ensure icon is above input groups
   display: block;
@@ -409,7 +409,7 @@ input[type="checkbox"] {
 .has-incomplete {
 
   .has-error-label{
-    margin-right: 114px;//leave space for the label on the right
+    margin-right: 87px; //114px;//leave space for the label on the right
     position: relative;
   }
 
@@ -421,17 +421,23 @@ input[type="checkbox"] {
   }
 
   //label on the right
+  //
+  //* Styleguide doesn't describe it correctly.
+  //* When the font is 11pt (or 11px as I assumed it should be), padding-up is 6px, padding-down is 7px,
+  //* the height of this label in total cannot be 21px.
+  //* Here, I used height: 21px as the base and ignored the padding. Hence, other details were changed correspondingly.
   .error-label{
-    font-size: 11pt;
+    font-size: 11px; //11pt;
     font-weight: normal;
     color: #fff;
-    padding: 6px 5px 7px 5px;
-    margin-left: 8px;
-    margin-top: -5px;
+    padding: 0 5px;//6px 5px 7px 5px; //This padding described in styleguide cannot be possible.
+    margin-left: 5px;//8px;
+    margin-top: 0; //-5px;
     display: inline-block;
     left: 100%;
     white-space: nowrap;
-    //height: 21px;
+    height: 21px; // Height: 21px and padding: 6px 5px 7px 5px are conflicting.
+    line-height: 21px; //in order to make the padding right
     background: linear-gradient(#EE6767,#E64141);
     position: absolute;
     -moz-border-radius:    3px;
@@ -442,12 +448,12 @@ input[type="checkbox"] {
     content:"";
     position: absolute;
     right: 100%;
-    top: 11px;
+    top: 7px; //11px;
     width: 0;
     height: 0;
-    border-top: 5px solid transparent;
-    border-right: 5px solid #ee5457;
-    border-bottom: 5px solid transparent;
+    border-top: 3px solid transparent;
+    border-right: 3px solid #ee5457;
+    border-bottom: 3px solid transparent;
     }
   }
 }

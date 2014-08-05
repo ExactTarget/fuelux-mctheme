@@ -12,12 +12,13 @@
   font-weight: @btn-font-weight;
   text-align: center;
   vertical-align: middle;
+  line-height: 1;
   cursor: pointer;
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
-  border: 1px solid transparent;
   .box-shadow(0px 2px 2px rgba(0,0,0,.15));
   white-space: nowrap;
-  .button-size(@padding-base-vertical; @padding-base-horizontal; @font-size-base; @line-height-base; @border-radius-base);
+  border: 0; //overwrite border = 1px
+  .button-size(5px; 10px; @font-size-base; @border-radius-base);
   //.user-select(none);
 
   &,
@@ -58,21 +59,15 @@
 // --------------------------------------------------
 
 .btn-default {
-  .button-variant(@btn-default-color; @btn-default-bg; @btn-default-bg-hover; @btn-default-bg-press; @btn-default-bg-disabled; @btn-default-border);
+  //padding + border = 5px
+  border: 1px solid @btn-default-border;
+  padding: 4px 10px;
+  .button-variant(@btn-default-color; @btn-default-bg; @btn-default-bg-hover; @btn-default-bg-press; @btn-default-bg-disabled);
 }
 .btn-primary {
-  .button-variant(@btn-primary-color; @btn-primary-bg; @btn-primary-bg-hover; @btn-primary-bg-press; @btn-primary-bg-disabled; @btn-primary-border);
+  .button-variant(@btn-primary-color; @btn-primary-bg; @btn-primary-bg-hover; @btn-primary-bg-press; @btn-primary-bg-disabled);
 
   font-weight: bold;
-  //set border to 0, adjust padding
-  border: 0px;
-  padding: @padding-base-vertical + 1  @padding-base-horizontal;
-  &.btn-lg{
-    padding: @padding-large-vertical + 1  @padding-large-horizontal;
-  }
-  &.btn-sm{
-    padding: @padding-small-vertical + 1  @padding-small-horizontal;
-  }
 
   &:active,&.active,&:focus{
     background: @btn-primary-bg-press;
@@ -80,14 +75,14 @@
 
   //For create button
   &.create-btn{
-    height: 26px;
-    border-radius: 13px;
-    padding-left: 5px;
+    height: 21px;
+    border-radius: 10.5px;
+    padding: 5px 10px 5px 4px;
 
     &:before{
       content: "+";
       position: relative;
-      padding: 0 5px;
+      padding: 1px 5px;
       margin-right: 5px;
       border-radius: 100%;
       background: -webkit-linear-gradient(#4E8ABE,#7FB9EC);
@@ -115,12 +110,30 @@
         //.box-shadow(0 -2px 2px rgba(0,0,0,.3) inset)
       }
     }
+
+    //large create button
+    &.btn-lg {
+      height: 26px;
+      border-radius: 13px;
+      padding: 7px 12px 7px 5px;
+
+      &:before {
+        margin-right: 6px;
+      }
+    }
   }
 }
 .btn-secondary{
-  .button-variant(@btn-secondary-color; @btn-secondary-bg; @btn-secondary-bg-hover; @btn-secondary-bg-press; @btn-secondary-bg-disabled; @btn-secondary-border);
+  //padding + border = 5px
+  border: 1px solid @btn-secondary-border;
+  padding: 4px 10px;
+  .button-variant(@btn-secondary-color; @btn-secondary-bg; @btn-secondary-bg-hover; @btn-secondary-bg-press; @btn-secondary-bg-disabled);
   &:active,&.active,&:focus{
     background: @btn-secondary-bg-press;
+  }
+  &.btn-sm {
+    //padding + border = 3px
+    padding: 2px 8px;
   }
 }
 
@@ -187,16 +200,11 @@
 // --------------------------------------------------
 
 .btn-lg {
-  // line-height: ensure even-numbered height of button next to large input
-  .button-size( @padding-large-vertical; @padding-large-horizontal; @font-size-large; @line-height-large; @border-radius-large);
+  .button-size( 7px; 10px; @font-size-large; @border-radius-large);
 }
 .btn-sm {
-  // line-height: ensure proper height of button next to small input
-  .button-size( @padding-small-vertical; @padding-small-horizontal; @font-size-small; @line-height-small; @border-radius-small);
+  .button-size( 3px; 8px; @font-size-small; @border-radius-small);
 }
-//.btn-xs {
-//  .button-size(@padding-xs-vertical; @padding-xs-horizontal; @font-size-small; @line-height-small; @border-radius-small);
-//}
 
 
 // Block button
