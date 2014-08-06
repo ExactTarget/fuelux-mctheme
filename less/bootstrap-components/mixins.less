@@ -19,9 +19,10 @@
 
   //stripes
   .striped(@color: #dbdbdb){
-    background: repeating-linear-gradient(-45deg, transparent, transparent 4px, rgba(255, 255, 255, 0.3) 4px, rgba(255, 255, 255 , 0.3) 8px),
+    background: repeating-linear-gradient(-45deg, rgba(255, 255, 255, .15) 0, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent),
                 /* on "bottom" */
                 linear-gradient(lighten(@color, 30%), @color);
+    background-size: @progress-bar-height @progress-bar-height;
   }
 }
 
