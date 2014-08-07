@@ -130,10 +130,10 @@
 }
 
 .btn-secondary{
+  //because this button has 1px border, padding needs to be adjusted
   //padding + border = 5px
-  border: 1px solid @btn-secondary-border;
   padding: 4px 10px;
-  //.button-variant(@btn-secondary-color; @btn-secondary-bg; @btn-secondary-bg-hover; @btn-secondary-bg-press; @btn-secondary-bg-disabled);
+  border: 1px solid @btn-secondary-border;
   .button-variant(@btn-secondary-color;
                   @btn-secondary-bg-start; @btn-secondary-bg-end;
                   @btn-secondary-bg-hover-start; @btn-secondary-bg-hover-end;
@@ -142,6 +142,12 @@
   &:active,&.active,&:focus{
     #gradient > .gradient-bg(@btn-secondary-bg-press-start, @btn-secondary-bg-press-end);
   }
+
+  &.btn-lg {
+    //padding + border = 7px
+    padding: 6px 10px;
+  }
+
   &.btn-sm {
     //padding + border = 3px
     padding: 2px 8px;
