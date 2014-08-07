@@ -209,11 +209,11 @@
                 <button class="btn btn-secondary" type="button">2</button>
 
                 <div class="btn-group dropdown">
-                    <button data-toggle="dropdown" class="btn btn-secondary dropdown-toggle" type="button" id="btnGroupDrop1">
+                    <button data-toggle="dropdown" class="btn btn-secondary dropdown-toggle" type="button" id="btnGroupDrop0">
                         <div class="btn-dropdown-text">Dropdown</div>
                         <span class="caret"></span>
                     </button>
-                    <ul aria-labelledby="btnGroupDrop1" role="menu" class="dropdown-menu">
+                    <ul aria-labelledby="btnGroupDrop0" role="menu" class="dropdown-menu">
                         <li><a href="#">Dropdown link</a></li>
                         <li><a href="#">Dropdown link</a></li>
                     </ul>
@@ -386,7 +386,10 @@
                 </ul>
             </div><!-- /btn-group -->
             <div class="btn-group">
-                <button data-toggle="dropdown" class="btn btn-info dropdown-toggle" type="button">Info <span class="caret"></span></button>
+                <button data-toggle="dropdown" class="btn btn-warning dropdown-toggle" type="button">
+                    <div class="btn-dropdown-text">Warning</div>
+                    <span class="caret"></span>
+                </button>
                 <ul role="menu" class="dropdown-menu">
                     <li><a href="#">Action</a></li>
                     <li><a href="#">Another action</a></li>
@@ -396,17 +399,10 @@
                 </ul>
             </div><!-- /btn-group -->
             <div class="btn-group">
-                <button data-toggle="dropdown" class="btn btn-warning dropdown-toggle" type="button">Warning <span class="caret"></span></button>
-                <ul role="menu" class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">Separated link</a></li>
-                </ul>
-            </div><!-- /btn-group -->
-            <div class="btn-group">
-                <button data-toggle="dropdown" class="btn btn-danger dropdown-toggle" type="button">Danger <span class="caret"></span></button>
+                <button data-toggle="dropdown" class="btn btn-danger dropdown-toggle" type="button">
+                    <div class="btn-dropdown-text">Danger</div>
+                    <span class="caret"></span>
+                </button>
                 <ul role="menu" class="dropdown-menu">
                     <li><a href="#">Action</a></li>
                     <li><a href="#">Another action</a></li>
@@ -434,8 +430,22 @@
                 </ul>
             </div><!-- /btn-group -->
             <div class="btn-group">
+                <button class="btn btn-dropdown" type="button">Dropdown</button>
+                <button data-toggle="dropdown" class="btn btn-dropdown dropdown-toggle" type="button">
+                    <span class="caret"></span>
+                    <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <ul role="menu" class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                </ul>
+            </div><!-- /btn-group -->
+            <div class="btn-group">
                 <button class="btn btn-primary" type="button">Primary</button>
-                <button data-toggle="dropdown" class="btn btn-primary dropdown-toggle" type="button">
+                <button data-toggle="dropdown" class="btn btn-primary btn-split dropdown-toggle" type="button">
                     <span class="caret"></span>
                     <span class="sr-only">Toggle Dropdown</span>
                 </button>
@@ -449,21 +459,7 @@
             </div><!-- /btn-group -->
             <div class="btn-group">
                 <button class="btn btn-success" type="button">Success</button>
-                <button data-toggle="dropdown" class="btn btn-success dropdown-toggle" type="button">
-                    <span class="caret"></span>
-                    <span class="sr-only">Toggle Dropdown</span>
-                </button>
-                <ul role="menu" class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">Separated link</a></li>
-                </ul>
-            </div><!-- /btn-group -->
-            <div class="btn-group">
-                <button class="btn btn-info" type="button">Info</button>
-                <button data-toggle="dropdown" class="btn btn-info dropdown-toggle" type="button">
+                <button data-toggle="dropdown" class="btn btn-success btn-split dropdown-toggle" type="button">
                     <span class="caret"></span>
                     <span class="sr-only">Toggle Dropdown</span>
                 </button>
@@ -477,7 +473,7 @@
             </div><!-- /btn-group -->
             <div class="btn-group">
                 <button class="btn btn-warning" type="button">Warning</button>
-                <button data-toggle="dropdown" class="btn btn-warning dropdown-toggle" type="button">
+                <button data-toggle="dropdown" class="btn btn-warning btn-split dropdown-toggle" type="button">
                     <span class="caret"></span>
                     <span class="sr-only">Toggle Dropdown</span>
                 </button>
@@ -491,7 +487,7 @@
             </div><!-- /btn-group -->
             <div class="btn-group">
                 <button class="btn btn-danger" type="button">Danger</button>
-                <button data-toggle="dropdown" class="btn btn-danger dropdown-toggle" type="button">
+                <button data-toggle="dropdown" class="btn btn-danger btn-split dropdown-toggle" type="button">
                     <span class="caret"></span>
                     <span class="sr-only">Toggle Dropdown</span>
                 </button>
@@ -509,8 +505,9 @@
         <div class="thin-box">
             <div role="toolbar" class="btn-toolbar">
                 <div class="btn-group">
-                    <button data-toggle="dropdown" type="button" class="btn btn-primary btn-lg dropdown-toggle">
-                        Large button <span class="caret"></span>
+                    <button data-toggle="dropdown" type="button" class="btn btn-dropdown btn-lg dropdown-toggle">
+                        <div class="btn-dropdown-text">Large button</div>
+                        <span class="caret"></span>
                     </button>
                     <ul role="menu" class="dropdown-menu">
                         <li><a href="#">Action</a></li>
@@ -523,8 +520,24 @@
             </div><!-- /btn-toolbar -->
             <div role="toolbar" class="btn-toolbar">
                 <div class="btn-group">
-                    <button data-toggle="dropdown" type="button" class="btn btn-primary btn-sm dropdown-toggle">
-                        Small button <span class="caret"></span>
+                    <button data-toggle="dropdown" type="button" class="btn btn-dropdown dropdown-toggle">
+                        <div class="btn-dropdown-text">Medium button</div>
+                        <span class="caret"></span>
+                    </button>
+                    <ul role="menu" class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </div><!-- /btn-group -->
+            </div>
+            <div role="toolbar" class="btn-toolbar">
+                <div class="btn-group">
+                    <button data-toggle="dropdown" type="button" class="btn btn-dropdown btn-sm dropdown-toggle">
+                        <div class="btn-dropdown-text">Small button</div>
+                        <span class="caret"></span>
                     </button>
                     <ul role="menu" class="dropdown-menu">
                         <li><a href="#">Action</a></li>
@@ -541,8 +554,8 @@
         <div class="thin-box">
             <div role="toolbar" class="btn-toolbar">
                 <div class="btn-group dropup">
-                    <button class="btn btn-default" type="button">Dropup</button>
-                    <button data-toggle="dropdown" class="btn btn-default dropdown-toggle" type="button">
+                    <button class="btn btn-dropdown" type="button">Dropup</button>
+                    <button data-toggle="dropdown" class="btn btn-dropdown dropdown-toggle" type="button">
                         <span class="caret"></span>
                         <span class="sr-only">Toggle Dropdown</span>
                     </button>
@@ -556,7 +569,7 @@
                 </div><!-- /btn-group -->
                 <div class="btn-group dropup">
                     <button class="btn btn-primary" type="button">Right dropup</button>
-                    <button data-toggle="dropdown" class="btn btn-primary dropdown-toggle" type="button">
+                    <button data-toggle="dropdown" class="btn btn-primary btn-split dropdown-toggle" type="button">
                         <span class="caret"></span>
                         <span class="sr-only">Toggle Dropdown</span>
                     </button>
