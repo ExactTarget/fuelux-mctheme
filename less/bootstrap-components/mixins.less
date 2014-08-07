@@ -9,7 +9,7 @@
 #gradient {
   //Background gradient
   //
-  .gradient-bg(@color-end: #dbdbdb, @color-start: lighten(@color-end, 20%)) {
+  .gradient-bg( @color-start: #fdfdfd, @color-end: #dbdbdb) {
     background-color: @color-start;
     background: -webkit-linear-gradient(@color-start, @color-end);
     background: -moz-linear-gradient(@color-start, @color-end);
@@ -29,7 +29,7 @@
 //Progress bars
 //
 .progress-bar-variant(@color) {
-  #gradient > .gradient-bg(@color);
+  #gradient > .gradient-bg(lighten(@color, 30%), @color);
 }
 
 .progress-bar-variant-striped(@color) {

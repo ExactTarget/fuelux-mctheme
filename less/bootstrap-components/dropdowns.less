@@ -1,4 +1,39 @@
+// Dropdown button
+//
+.btn-dropdown {
+  color: #333;
+  text-align: left;
+  //padding + border = 5px
+  border: 1px solid #bbb;
+  padding: 4px 10px;
+  #gradient > .gradient-bg(#fdfdfd,#dee2e4);
+
+  &:active,&.active,&:focus{
+    background: #eee;
+    .box-shadow(inset 0 1px 2px rgba(0,0,0,.2));
+  }
+  &.btn-sm {
+    //padding + border = 3px
+    padding: 2px 8px;
+  }
+}
+
+//keeps caret in dropdown buttons to the right
+.dropdown > .btn > .caret {
+      margin-top: 4px;
+      margin-left: 10px;
+      float: right;
+}
+
+//keeps text to the left
+.btn-dropdown-text {
+  float: left;
+}
+
+// Dropdown menu
+//
 .dropdown-menu {
+  .box-shadow(0 1px 2px rgba(0,0,0,.175));
   font-size: @font-size-base; // ~11px
 
   // Links within the dropdown menu

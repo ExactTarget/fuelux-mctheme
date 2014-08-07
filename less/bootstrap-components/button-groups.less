@@ -1,0 +1,14 @@
+.btn-group {
+  .btn,
+  .btn-primary, .btn-secondary, .btn-dropdown {
+    // button in active state doesn't have shadow, so make them all don't have shadow
+    .box-shadow(0 0 0 transparent);
+  }
+}
+
+//to keep the caret to the right
+.btn-group > .btn > .caret {
+  margin-top: 4px;
+  margin-left: 10px;
+  float: right;
+}
