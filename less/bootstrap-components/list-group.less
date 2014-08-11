@@ -1,3 +1,18 @@
+.list-group-item {
+  &.active,
+  &.active:hover,
+  &.active:focus {
+    background-color: @brand-primary;
+    border-color: @brand-primary;
+  }
+  &.disabled,
+  &.disabled:hover,
+  &.disabled:focus {
+    cursor: not-allowed;
+  }
+}
+
+//contextual colors
 .list-group-item-variant(success; @state-success-bg; @state-success-text);
 .list-group-item-variant(info; @state-info-bg; @state-info-text);
 .list-group-item-variant(warning; @state-warning-bg; @state-warning-text);
