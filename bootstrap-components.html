@@ -1116,48 +1116,74 @@
 
         <h2>Default pagination</h2>
         <div class="thin-box">
+            <button class="btn pagination-btn"><span class="pagination-previous"></span>
+                <span class="sr-only">previous</span></button>
+            <button class="btn pagination-btn"><span class="pagination-next"></span>
+                <span class="sr-only">next</span></button>
+            <br/><br/>
             <ul class="pagination">
-                <li><a href="#">«</a></li>
+                <li><a href="#" class="pagination-btn">
+                    <span class="pagination-previous"></span>
+                    <span class="sr-only">previous</span>
+                </a></li>
                 <li><a href="#">1</a></li>
                 <li><a href="#">2</a></li>
                 <li><a href="#">3</a></li>
                 <li><a href="#">4</a></li>
                 <li><a href="#">5</a></li>
-                <li><a href="#">»</a></li>
+                <li><a href="#" class="pagination-btn"><span class="pagination-next"></span>
+                    <span class="sr-only">next</span></a></li>
             </ul>
             <br/>
             <h3>Disabled and active states</h3>
             <ul class="pagination">
-                <li class="disabled"><a href="#">«</a></li>
+                <li class="disabled"><a href="#" class="pagination-btn"><span class="pagination-previous"></span><span class="sr-only">previous</span></a></li>
                 <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
                 <li><a href="#">2</a></li>
                 <li><a href="#">3</a></li>
                 <li><a href="#">4</a></li>
                 <li><a href="#">5</a></li>
-                <li><a href="#">»</a></li>
+                <li><a href="#" class="pagination-btn"><span class="pagination-next"></span>
+                    <span class="sr-only">next</span></a></li>
+            </ul>
+            <br/>
+            <ul class="pagination">
+                <li><a href="#" class="pagination-btn"><span class="pagination-previous"></span><span class="sr-only">previous</span></a></li>
+                <li><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li class="active"><a href="#">5<span class="sr-only">(current)</span></a></li>
+                <li class="disabled"><a href="#" class="pagination-btn"><span class="pagination-next"></span>
+                    <span class="sr-only">next</span></a></li>
             </ul>
             <br/>
             <h3>Sizing</h3>
             <div>
                 <ul class="pagination pagination-lg">
-                    <li><a href="#">«</a></li>
+                    <li><a href="#" class="pagination-btn"> <span class="pagination-previous"></span>
+                        <span class="sr-only">previous</span></a></li>
                     <li><a href="#">1</a></li>
                     <li><a href="#">2</a></li>
                     <li><a href="#">3</a></li>
                     <li><a href="#">4</a></li>
                     <li><a href="#">5</a></li>
-                    <li><a href="#">»</a></li>
+                    <li><a href="#" class="pagination-btn"><span class="pagination-next"></span>
+                        <span class="sr-only">next</span></a></li>
                 </ul>
             </div>
+            <br/>
             <div>
                 <ul class="pagination">
-                    <li><a href="#">«</a></li>
+                    <li><a href="#" class="pagination-btn"> <span class="pagination-previous"></span>
+                        <span class="sr-only">previous</span></a></li>
                     <li><a href="#">1</a></li>
                     <li><a href="#">2</a></li>
                     <li><a href="#">3</a></li>
                     <li><a href="#">4</a></li>
                     <li><a href="#">5</a></li>
-                    <li><a href="#">»</a></li>
+                    <li><a href="#" class="pagination-btn"><span class="pagination-next"></span>
+                        <span class="sr-only">next</span></a></li>
                 </ul>
             </div>
         </div>
