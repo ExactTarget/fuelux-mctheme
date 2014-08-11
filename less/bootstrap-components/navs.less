@@ -18,6 +18,7 @@
       line-height: 1;
       border: 1px solid #ddd;
       background-color: #f6f6f6;
+      margin-left: 0;
       margin-right: 3px;
       .box-shadow(inset 0 -1px 2px rgba(0,0,0,0.08));
 
@@ -58,6 +59,42 @@
     &:focus {
       background-color: #edf8fd;
       border-color: #ddd;
+    }
+  }
+}
+
+
+// vertical tabs
+.nav-tab-vertical {
+  padding: 10px 0;
+  display: inline-block;
+  border-bottom: 0;
+  border-right: 1px solid #ddd;
+  > li {
+    width: 80px;
+    float: none;
+    + li {
+      margin-top: 3px;
+      margin-left: 0; // no need for this gap between nav items
+      margin-right: 0;
+    }
+    > a {
+      .box-shadow(inset -1px 0 2px rgba(0,0,0,0.08));
+      border-right: 0;
+      border-radius: @border-radius-base 0 0 @border-radius-base;
+      margin-right: 0;
+    }
+
+    &.active {
+      > a {
+        &,
+        &:hover,
+        &:focus {
+          #gradient > .gradient-vertical-bg(#eef9fe, #fff);
+          border-right: 0;
+          border-bottom-color: #ddd;
+        }
+      }
     }
   }
 }

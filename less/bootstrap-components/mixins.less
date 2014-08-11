@@ -17,6 +17,14 @@
     background: linear-gradient(@color-start, @color-end);
   }
 
+  .gradient-vertical-bg( @color-start: #fdfdfd, @color-end: #dbdbdb) {
+    background-color: @color-start;
+    background: -webkit-linear-gradient(left, @color-start, @color-end);
+    background: -moz-linear-gradient(left, @color-start, @color-end);
+    background: -o-linear-gradient(left, @color-start, @color-end);
+    background: linear-gradient(left, @color-start, @color-end);
+  }
+
   //stripes
   .striped(@color: #dbdbdb){
     background: repeating-linear-gradient(-45deg, rgba(255, 255, 255, .15) 0, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent),
