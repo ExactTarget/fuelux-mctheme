@@ -985,6 +985,9 @@
             <button type="button" class="btn btn-primary">Primary</button>
             <button type="button" class="btn btn-primary create-btn">Create</button>
             <button type="button" class="btn btn-secondary">Secondary</button>
+            <button type="button" class="btn btn-success">Success</button>
+            <button type="button" class="btn btn-warning">Warning</button>
+            <button type="button" class="btn btn-danger">Danger</button>
             <button type="button" class="btn btn-link">Link</button>
         </div>
 
@@ -992,20 +995,18 @@
         <div class="thin-box">
             <p>
                 <button type="button" class="btn btn-primary btn-lg">Large button</button>
-                <!--<button type="button" class="btn btn-default btn-lg">Large button</button>-->
+                <button type="button" class="btn btn-primary create-btn btn-lg">Large button</button>
             </p>
             <p>
                 <button type="button" class="btn btn-primary">Default button</button>
+                <button type="button" class="btn btn-primary create-btn">Default button</button>
                 <button type="button" class="btn btn-secondary">Default button</button>
             </p>
             <p>
                 <button type="button" class="btn btn-primary btn-sm">Small button</button>
                 <button type="button" class="btn btn-secondary btn-sm">Small button</button>
             </p>
-            <!--<p>-->
-                <!--<button type="button" class="btn btn-primary btn-xs">Extra small button</button>-->
-                <!--<button type="button" class="btn btn-default btn-xs">Extra small button</button>-->
-            <!--</p>-->
+
             <br/>
 
             <div class="well" style="max-width: 400px; margin: 0 auto 10px;">
@@ -1078,34 +1079,30 @@
         <h2>Contextual backgrounds</h2>
         <div class="thin-box">
             <!--<p class="bg-primary">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>-->
-            <p class="alert">This is an awesome default notification.
-                <span class="sec-text">Something cool. </span>
+            <p class="alert">
+                <strong>This is an awesome default notification.</strong> Something cool.
                 <a href="#">View this</a>
                 <br/>
                 <small>kzhang@exacttarget.com</small>
-                <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+                <!--Example of cross icon and functional dismissible alerts can be found in bootstrap components.-->
+                <!--Below is just for display, not function attached.-->
+                <!--<span class="glyphicon glyphicon-remove form-control-feedback"></span>-->
             </p>
             <p class="alert alert-info">
-                Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-                <span class="glyphicon glyphicon-remove form-control-feedback"></span>
-                <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+                <strong>Duis mollis</strong>, est non commodo luctus, nisi erat porttitor ligula.
             </p>
             <p class="alert alert-success">
-                Maecenas sed diam eget risus varius blandit sit amet non magna.
-                <span class="glyphicon glyphicon-remove form-control-feedback"></span></p>
-            <p class="alert alert-danger">
-                Warning Message:
-                <span class="sec-text">Donec ullamcorper nulla non metus auctor fringilla.</span>
-                <a>View now</a>
-                <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+               <strong>Maecenas sed diam eget risus varius blandit sit amet non magna.</strong>
             </p>
-            <p class="alert alert-error">
-                3 contacts were entered incorrectly.
+            <p class="alert alert-warning">
+                <strong>Warning Message:</strong> Donec ullamcorper nulla non metus auctor fringilla.
+                <a>View now</a>
+            </p>
+            <p class="alert alert-danger">
+                <strong>3 contacts were entered incorrectly.</strong>
                 <a>Update now</a>
                 <br/>
                 <small>kzhang@exacttarget.com </small><small>kzhang@exacttarget.com </small><small>kzhang@exacttarget.com</small>
-                <span class="glyphicon glyphicon-remove form-control-feedback"></span>
-                <!--<button type="button" class="close"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>-->
             </p>
 
         </div>

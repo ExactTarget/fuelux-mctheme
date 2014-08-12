@@ -1,49 +1,46 @@
-.alert .close {
-  right: -27px;
-  top: 0;
-}
-
 .alert {
   color: #333;
-  font-size: 12pt;
-  font-weight: bold;
+  font-size: 12px; //12pt;
   border: 1px solid #666;
-  padding: 9px 36px 10px;
+  padding: 6px 21px 5px 34px;
   background-repeat: no-repeat;
   background-position: 7px 7px;
   position: relative;
+
+  //icons
   &:before {
     content: '';
-    height: 20px;
-    left: 7px;
     position: absolute;
-    top: 9px;
+    height: 20px;
+    left: 4px;
+    top: 4px;
     width: 22px;
     background-image: url(../../img/form.png);
     background-repeat: no-repeat;
     background-position: -67px -33px; //default icon: warning
   }
 
-  span.sec-text{
-    font-weight: normal;
+  strong {
+    font-weight: bold;
   }
-  a{
+
+  a {
     font-weight: normal;
     color: #2168A7;
     cursor: pointer;
   }
 
-  small{
+  small {
     color: #666;
-    font-size: 11pt;
+    font-size: 11px; //11pt;
     font-weight: normal;
   }
 
   //remove icon
-  span.form-control-feedback{
+  span.form-control-feedback {
     color: #bbb;
-    top: 9px;
-    right: 8px;
+    top: 3px;
+    right: 2px;
     cursor: pointer;
 
     &:hover, &.hover{
@@ -76,14 +73,14 @@
     background-position: -44px -33px;
   }
 }
-.alert-danger {
+.alert-warning {
   background-color: #FFF1E1;
   border-color: #F8D8B3;
   &:before {
     background-position: -67px -33px;
   }
 }
-.alert-error {
+.alert-danger {
   background-color: #FCECED;
   border-color: #EDBFBF;
   &:before {

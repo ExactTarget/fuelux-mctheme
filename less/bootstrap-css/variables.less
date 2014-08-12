@@ -38,13 +38,13 @@
 @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-sans-serif;
 
-@font-size-base:          11pt; // ~15px
-@font-size-large:         12pt; // ~16px
-@font-size-small:         10pt; // ~13px
+@font-size-base:          11px; //11pt; // ~15px
+@font-size-large:         12px; //12pt; // ~16px
+@font-size-small:         10px; //10pt; // ~13px
 
-@font-size-h1:            20pt; // ~26px
-@font-size-h2:            15pt; // ~21px
-@font-size-h3:            14pt; // ~19px
+@font-size-h1:            20px; //20pt; // ~26px
+@font-size-h2:            15px; //15pt; // ~21px
+@font-size-h3:            14px; //14pt; // ~19px
 @font-size-h4:            ceil((@font-size-base * 1.25)); // ~18px
 @font-size-h5:            @font-size-base;
 @font-size-h6:            ceil((@font-size-base * 0.85)); // ~12px
@@ -61,7 +61,7 @@
 //## Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).
 
 @padding-base-vertical:     1px;
-@padding-base-horizontal:   10px;
+@padding-base-horizontal:   5px; //10px;
 
 @padding-large-vertical:    8px;
 @padding-large-horizontal:  10px;
@@ -80,9 +80,9 @@
 @line-height-medium:        1.4;
 
 @border-radius-base:        3px;
-@border-radius-large:       6px;
+@border-radius-large:       4px;
 @border-radius-small:       3px;
-@border-radius-medium:      4px;
+@border-radius-medium:      3px;
 
 
 
@@ -100,18 +100,26 @@
 @btn-default-border:             #ccc;
 
 @btn-primary-color:              #fff;
-@btn-primary-bg:                 linear-gradient(#7FB9EC, #4E8ABE);
-@btn-primary-bg-hover:           linear-gradient(#9ACCF7, #669ECF);
-@btn-primary-bg-press:           linear-gradient(#4E8ABE, #5793C7);
-@btn-primary-bg-disabled:        linear-gradient(#7FB9EF, #4E8ABE);
+@btn-primary-bg-start:           #7FB9EC;
+@btn-primary-bg-end:             #4E8ABE;
+@btn-primary-bg-hover-start:     #9ACCF7;
+@btn-primary-bg-hover-end:       #669ECF;
+@btn-primary-bg-press-start:     #4E8ABE;
+@btn-primary-bg-press-end:       #5793C7;
+@btn-primary-bg-disabled-start:  #7FB9EF;
+@btn-primary-bg-disabled-end:    #4E8ABE;
 @btn-primary-border:             transparent;
 
-@btn-secondary-color:            #4E8ABE;
-@btn-secondary-bg:               linear-gradient(#FFF, #DAE5ED);
-@btn-secondary-bg-hover:         linear-gradient(#F2F9FF, #C6DDEE);
-@btn-secondary-bg-press:         linear-gradient(#D5E4EB, #DEEAF6);
-@btn-secondary-bg-disabled:      linear-gradient(#FFF, #DAE5ED);
-@btn-secondary-border:           #B5C6D2;
+@btn-secondary-color:              #4E8ABE;
+@btn-secondary-bg-start:           #FFF;
+@btn-secondary-bg-end:             #DAE5ED;
+@btn-secondary-bg-hover-start:     #F2F9FF;
+@btn-secondary-bg-hover-end:       #C6DDEE;
+@btn-secondary-bg-press-start:     #D5E4EB;
+@btn-secondary-bg-press-end:       #DEEAF6;
+@btn-secondary-bg-disabled-start:  #FFF;
+@btn-secondary-bg-disabled-end:    #DAE5ED;
+@btn-secondary-border:             #B5C6D2;
 
 @btn-success-color:              #fff;
 @btn-success-bg:                 @brand-success;
