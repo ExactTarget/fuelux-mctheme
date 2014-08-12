@@ -53,6 +53,12 @@ module.exports = function (grunt) {
 					hostname: '*',
 					port: 8000
 				}
+			},
+			testServer: {
+				options: {
+					hostname: '*',
+					port: 9000		// allows main server to be run simultaneously 
+				}
 			}
 		},
 		less: {
@@ -134,8 +140,10 @@ module.exports = function (grunt) {
 			}
 		},
 		watch: {
+			full: {
 			files: ['less/**'],
 			tasks: ['distcss']
+			}
 		}
 	});
 
@@ -157,5 +165,11 @@ module.exports = function (grunt) {
 
 	//The default build task
 	grunt.registerTask('default', ['dist']);
+
+	/* -------------
+			SERVE
+		------------- */
+		grunt.registerTask('serve', ['dist', 'connect:server', 'watch:full']);
+		grunt.registerTask('servecss', ['connect:server', 'watch:css']);
 
 };
