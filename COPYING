@@ -1,4 +1,4 @@
-Copyright (C) 2012, ExactTarget, Inc.
+Copyright (C) 2014, ExactTarget, Inc.
 All rights reserved.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
@@ -17,17 +17,3 @@ PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIG
 HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF
 CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE
 OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-====================================================================
-
-The above license does not apply to the following bundled components:
-
-•	jQuery located at lib/jquery.js
-•	Bootstrap Apache 2.0 Located under lib/bootstrap
-•	RequireJS located at lib/require.js
-•	QUnit located under lib/qunit
-•	Grunt located under node-modules/grunt
-•	Grunt-contrib located under node-modules/grunt-contrib
-•	Grunt-recess located under node-modules/grunt-recess
-
-Licensing information regarding the above packages can be found in the THIRD-PARTY file.
