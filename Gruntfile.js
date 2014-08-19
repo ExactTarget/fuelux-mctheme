@@ -6,8 +6,8 @@ module.exports = function (grunt) {
 	grunt.initConfig({
 		// Metadata
 		banner: '/*!\n' +
-			' * Fuel UX IMH-Theme v<%= pkg.version %> \n' +
-			' * Copyright 2012-<%= grunt.template.today("yyyy") %> <%= pkg.author.name %>\n' +
+			' * IMH-Theme v<%= pkg.version %> \n' +
+			' * Copyright <%= grunt.template.today("yyyy") %> <%= pkg.author.name %>\n' +
 			' * Licensed under <%= pkg.license.type %> (<%= pkg.license.url %>)\n' +
 			' */\n',
 		pkg: grunt.file.readJSON('package.json'),
@@ -15,7 +15,7 @@ module.exports = function (grunt) {
 		// Tasks configuration
 		clean: {
 			dist: ['dist/**'],
-			zipsrc: ['dist/fuelux-imhtheme']
+			zipsrc: ['dist/imhtheme']
 		},
 		compress: {
 			zip: {
@@ -23,26 +23,19 @@ module.exports = function (grunt) {
 					{
 						cwd: 'dist/',
 						expand: true,
-						src: ['fuelux-imhtheme/**']
+						src: ['imhtheme/**']
 					}
 				],
 				options: {
-					archive: 'dist/fuelux-imhtheme.zip',
+					archive: 'dist/imhtheme.zip',
 					mode: 'zip'
 				}
 			}
 		},
 		copy: {
-			/*fonts: {
-			 cwd: 'fonts/',
-			 dest: 'dist/fonts/',
-			 expand: true,
-			 filter: 'isFile',
-			 src: ['*']
-			 },*/
 			zipsrc: {
 				cwd: 'dist/',
-				dest: 'dist/fuelux-imhtheme/',
+				dest: 'dist/imhtheme/',
 				expand: true,
 				src: ['**']
 			}
@@ -62,19 +55,7 @@ module.exports = function (grunt) {
 			}
 		},
 		less: {
-			'bootstrap-css': {
-				options: {
-					strictMath: true,
-					sourceMap: true,
-					outputSourceFiles: true,
-					sourceMapURL: 'bootstrap-css.css.map',
-					sourceMapFilename: 'dist/css/bootstrap-css.css.map'
-				},
-				files: {
-					'dist/css/bootstrap-css.css': 'less/bootstrap-css/bootstrap-css.less'
-				}
-			},
-			'fuelux-imhtheme': {
+			'imhtheme': {
 				options: {
 					strictMath: true,
 					sourceMap: true,
@@ -83,19 +64,7 @@ module.exports = function (grunt) {
 					sourceMapFilename: 'dist/css/<%= pkg.name %>.css.map'
 				},
 				files: {
-					'dist/css/fuelux-imhtheme.css': 'less/fuelux-imhtheme.less'
-				}
-			},
-			'fuelux-controls': {
-				options: {
-					strictMath: true,
-					sourceMap: true,
-					outputSourceFiles: true,
-					sourceMapURL: 'fuelux-controls.css.map',
-					sourceMapFilename: 'dist/css/fuelux-controls.css.map'
-				},
-				files: {
-					'dist/css/fuelux-controls.css': 'less/fuelux-controls/fuelux-controls.less'
+					'dist/css/imhtheme.css': 'less/imhtheme.less'
 				}
 			},
 			minify: {
@@ -104,9 +73,7 @@ module.exports = function (grunt) {
 					report: 'min'
 				},
 				files: {
-					'dist/css/bootstrap-css.min.css': 'dist/css/bootstrap-css.css',
-					'dist/css/fuelux-controls.min.css': 'dist/css/fuelux-controls.css',
-					'dist/css/<%= pkg.name %>.min.css': 'dist/css/<%= pkg.name %>.css'
+					'dist/css/imhtheme.min.css': 'dist/css/imhtheme.css'
 				}
 			}
 		},
@@ -133,8 +100,8 @@ module.exports = function (grunt) {
 				},
 				files: {
 					src: [
-						'dist/css/<%= pkg.name %>.css',
-						'dist/css/<%= pkg.name %>.min.css'
+						'dist/css/imhtheme.css',
+						'dist/css/imhtheme.min.css'
 					]
 				}
 			}
@@ -155,13 +122,13 @@ module.exports = function (grunt) {
 	 ------------- */
 
 	// CSS distribution task
-	grunt.registerTask('distcss', ['less:bootstrap-css', 'less:fuelux-controls', 'less:fuelux-imhtheme', 'replace:imgpaths', 'less:minify', 'usebanner']);
+	grunt.registerTask('distcss', ['less:imhtheme', 'replace:imgpaths', 'less:minify', 'usebanner']);
 
 	// ZIP distribution task
 	grunt.registerTask('distzip', ['copy:zipsrc', 'compress', 'clean:zipsrc']);
 
 	// Full distribution task
-	grunt.registerTask('dist', ['clean:dist', 'distcss', /*'copy:fonts',*/ 'distzip']);
+	grunt.registerTask('dist', ['clean:dist', 'distcss', 'distzip']);
 
 	//The default build task
 	grunt.registerTask('default', ['dist']);

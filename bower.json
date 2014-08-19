@@ -1,29 +1,44 @@
 {
-  "name": "fuelux-imhtheme",
-  "version": "2.5.2",
-  "main": [],
+  "dependencies": {
+    "jquery-1.11.0": "jquery#1.11.0",
+    "requirejs": "~2.1.11",
+    "bootstrap": "~3.2.0",
+    "moment": "2.7.0"
+  },
+  "devDependencies": {
+    "jquery": null,
+    "jquery-1.9.1": "jquery#1.9.1"
+  },
   "ignore": [
     "**/.*",
     "_*",
-    "bootstrap",
-    "lib",
-    "node_modules",
-    "sample",
-    "src",
-    "test",
-    "util",
+    "*.yml",
     "Gruntfile.js",
-    "package.json",
-    "testem.json",
-    "*.html"
+    "index.css",
+    "index.html",
+    "index.js",
+    "node_modules",
+    "Procfile",
+    "www"
   ],
-  "dependencies": {
-    "jquery": ">= 1.9.0"
-  },
-  "devDependencies": {
-    "bootstrap": "~3.2.0",
-    "fuelux": "3.0.0-wip",
-    "jquery": "~2.1.1",
-    "requirejs": "~2.1.14"
-  }
+  "keywords": [
+    "fuelux",
+    "css",
+    "js",
+    "less",
+    "front-end",
+    "web"
+  ],
+  "main": [
+    "bootstrap-imhtheme.css",
+    "bootstrap-imhtheme.css.map",
+    "bootstrap-imhtheme.min.css",
+    "fuelux-controls.css",
+    "fuelux-controls.min.css",
+    "fuelux-imhtheme.css",
+    "fuelux-imhtheme.css.map",
+    "fuelux-imhtheme.min.css"
+  ],
+  "name": "fuelux-imhtheme",
+  "version": "3.0.0"
 }
