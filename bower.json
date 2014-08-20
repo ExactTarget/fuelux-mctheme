@@ -8,7 +8,8 @@
   },
   "devDependencies": {
     "jquery": null,
-    "jquery-1.9.1": "jquery#1.9.1"
+    "jquery-1.9.1": "jquery#1.9.1",
+    "holderjs": "~2.4.0"
   },
   "ignore": [
     "**/.*",
