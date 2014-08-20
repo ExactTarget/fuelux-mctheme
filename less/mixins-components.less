@@ -1,104 +1,104 @@
 //Drop-shadows
 //
 .box-shadow(@shadow) {
-  -webkit-box-shadow: @shadow; // iOS <4.3 & Android <4.1
-  box-shadow: @shadow;
+	-webkit-box-shadow: @shadow; // iOS <4.3 & Android <4.1
+	box-shadow: @shadow;
 }
 
 
 #gradient {
-  //Background gradient
-  //
-  .gradient-bg( @color-start: #fdfdfd, @color-end: #dbdbdb) {
-    background-color: @color-start;
-    background: -webkit-linear-gradient(@color-start, @color-end);
-    background: -moz-linear-gradient(@color-start, @color-end);
-    background: -o-linear-gradient(@color-start, @color-end);
-    background: linear-gradient(@color-start, @color-end);
-  }
+	//Background gradient
+	//
+	.gradient-bg( @color-start: #fdfdfd, @color-end: #dbdbdb) {
+		background-color: @color-start;
+		background: -webkit-linear-gradient(@color-start, @color-end);
+		background: -moz-linear-gradient(@color-start, @color-end);
+		background: -o-linear-gradient(@color-start, @color-end);
+		background: linear-gradient(@color-start, @color-end);
+	}
 
-  .gradient-vertical-bg( @color-start: #fdfdfd, @color-end: #dbdbdb) {
-    background-color: @color-start;
-    background: -webkit-linear-gradient(left, @color-start, @color-end);
-    background: -moz-linear-gradient(left, @color-start, @color-end);
-    background: -o-linear-gradient(left, @color-start, @color-end);
-    background: linear-gradient(left, @color-start, @color-end);
-  }
+	.gradient-vertical-bg( @color-start: #fdfdfd, @color-end: #dbdbdb) {
+		background-color: @color-start;
+		background: -webkit-linear-gradient(left, @color-start, @color-end);
+		background: -moz-linear-gradient(left, @color-start, @color-end);
+		background: -o-linear-gradient(left, @color-start, @color-end);
+		background: linear-gradient(left, @color-start, @color-end);
+	}
 
-  //stripes
-  .striped(@color: #dbdbdb){
-    background: repeating-linear-gradient(-45deg, rgba(255, 255, 255, .15) 0, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent),
-                /* on "bottom" */
-                linear-gradient(lighten(@color, 30%), @color);
-    background-size: @progress-bar-height @progress-bar-height;
-  }
+	//stripes
+	.striped(@color: #dbdbdb){
+		background: repeating-linear-gradient(-45deg, rgba(255, 255, 255, .15) 0, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent),
+								/* on "bottom" */
+								linear-gradient(lighten(@color, 30%), @color);
+		background-size: @progress-bar-height @progress-bar-height;
+	}
 }
 
 //Progress bars
 //
 .progress-bar-variant(@color) {
-  #gradient > .gradient-bg(lighten(@color, 30%), @color);
+	#gradient > .gradient-bg(lighten(@color, 30%), @color);
 }
 
 .progress-bar-variant-striped(@color) {
-  // Deprecated parent class requirement as of v3.2.0
-  #gradient > .striped(@color);
+	// Deprecated parent class requirement as of v3.2.0
+	#gradient > .striped(@color);
 }
 
 //List group
 //
 
 .list-group-item-variant(@state; @background; @color) {
-  .list-group-item-@{state} {
-    color: @color;
-    background-color: @background;
+	.list-group-item-@{state} {
+		color: @color;
+		background-color: @background;
 
-    a& {
-      color: @color;
+		a& {
+			color: @color;
 
-      .list-group-item-heading {
-        color: inherit;
-      }
+			.list-group-item-heading {
+				color: inherit;
+			}
 
-      &:hover,
-      &:focus {
-        color: @color;
-        background-color: darken(@background, 5%);
-      }
-      &.active,
-      &.active:hover,
-      &.active:focus {
-        color: #fff;
-        background-color: @color;
-        border-color: @color;
-      }
-    }
-  }
+			&:hover,
+			&:focus {
+				color: @color;
+				background-color: darken(@background, 5%);
+			}
+			&.active,
+			&.active:hover,
+			&.active:focus {
+				color: #fff;
+				background-color: @color;
+				border-color: @color;
+			}
+		}
+	}
 }
 
 //Panels
 //
 .panel-variant(@border; @heading-text-color; @heading-bg-color; @heading-border) {
-  border-color: @border;
+	border-color: @border;
 
-  & > .panel-heading {
-    color: @heading-text-color;
-    background-color: @heading-bg-color;
-    border-color: @heading-border;
-    line-height: @line-height-base;
-    .box-shadow(inset 0 0 2px #fff);
+	& > .panel-heading {
+		color: @heading-text-color;
+		background-color: @heading-bg-color;
+		border-color: @heading-border;
+		line-height: @line-height-base;
+		.box-shadow(inset 0 0 2px #fff);
 
-    + .panel-collapse > .panel-body {
-      border-top-color: @border;
-    }
-    .badge {
-      color: @heading-bg-color;
-      background-color: @heading-text-color;
-    }
-  }
-  & > .panel-footer {
-    + .panel-collapse > .panel-body {
-      border-bottom-color: @border;
-    }
-  }
+		+ .panel-collapse > .panel-body {
+			border-top-color: @border;
+		}
+		.badge {
+			color: @heading-bg-color;
+			background-color: @heading-text-color;
+		}
+	}
+	& > .panel-footer {
+		+ .panel-collapse > .panel-body {
+			border-bottom-color: @border;
+		}
+	}
 }
