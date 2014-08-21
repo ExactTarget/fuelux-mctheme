@@ -33,12 +33,22 @@
 // Dropdown menu
 //
 .dropdown-menu {
-	.box-shadow(0 1px 1px rgba(0,0,0,.175));
+	.box-shadow(0 0 3px #ababab);
 	font-size: @font-size-base; // ~11px
+	border-radius: 4px;
+	padding: 2px;
+	border: solid 1px #c1c1c1;
 
 	// Links within the dropdown menu
 	> li > a {
 		padding: 2px 9px;
+		border-radius: 4px;
+		color: #7f7f7f;
+
+		&:hover {
+			background-color: @nav-link-hover-bg;
+			color: #507587;
+		}
 	}
 
 	// Divider within the menu
