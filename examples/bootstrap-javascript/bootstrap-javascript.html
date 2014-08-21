@@ -6,9 +6,30 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link href="../../bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css">
-	<link href="../../dist/css/imhtheme.css" rel="stylesheet" type="text/css"/>
+
+	<!--<link href="../../dist/css/imhtheme.css" rel="stylesheet" type="text/css"/>-->
+
+	<!--CLIENT-SIDE LESS COMPILATION FOR WATCHER-LESS DEV-->
+	<link href="../../less/bootstrap-javascript.less" rel="stylesheet/less" type="text/css"/>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.7.0/less.min.js"></script>
+	<script type="text/javascript">if(window.console && window.console.clear){ window.console.clear(); }</script>
+
 	<link href="bootstrap-javascript-examples.css" rel="stylesheet" type="text/css"/>
 
+	<script src="../../bower_components/jquery/dist/jquery.js"></script>
+	<script src="../../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+
+	<script type="text/javascript">
+		$(function(){
+			$('button[data-loading-text]:first').click(function () {
+				var btn = $(this);
+				btn.button('loading');
+				setTimeout(function(){
+					btn.button('reset');
+				}, 3000);
+			});
+		});
+	</script>
 </head>
 <body>
 
@@ -162,7 +183,7 @@
 				<div class="arrow"></div>
 				<h3 class="popover-title">Popover top</h3>
 				<div class="popover-content">
-					<p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+					Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
 				</div>
 			</div>
 
@@ -170,7 +191,7 @@
 				<div class="arrow"></div>
 				<h3 class="popover-title">Popover right</h3>
 				<div class="popover-content">
-					<p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+					Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
 				</div>
 			</div>
 
@@ -179,7 +200,7 @@
 				<h3 class="popover-title">Popover bottom</h3>
 
 				<div class="popover-content">
-					<p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+					Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
 				</div>
 			</div>
 
@@ -187,7 +208,7 @@
 				<div class="arrow"></div>
 				<h3 class="popover-title">Popover left</h3>
 				<div class="popover-content">
-					<p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+					Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
 				</div>
 			</div>
 
@@ -224,15 +245,15 @@
 		<h2 id="alerts-examples">Example alerts</h2>
 		<p>Add dismiss functionality to all alert messages with this plugin.</p>
 		<div class="bs-example">
-			<div class="alert alert-warning fade in">
-				<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+			<div class="alert alert-dismissible alert-warning fade in" role="alert">
+				<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
 				<strong>Holy guacamole!</strong> Best check yo self, you're not looking too good.
 			</div>
 		</div><!-- /example -->
 
 		<div class="bs-example">
-			<div class="alert alert-danger fade in">
-				<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+			<div class="alert alert-danger alert-dismissible fade in" role="alert">
+				<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
 				<h4>Oh snap! You got an error!</h4>
 				<p>Change this and that and try again. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
 				<p>
@@ -241,7 +262,6 @@
 				</p>
 			</div>
 		</div><!-- /example -->
-
 
 		<h1 class="section">Buttons</h1>
 		<hr class="darker"/>
@@ -362,13 +382,22 @@
 					</ol>
 					<div class="carousel-inner">
 						<div class="item active">
-							<img data-src="holder.js/900x500/auto/#777:#555/text:First slide" alt="First slide">
+							<img src="https://dl.dropboxusercontent.com/u/12146987/slides/Andromeda%20Galaxy.jpg" alt="Slide One">
+							<div class="carousel-caption">
+								Slide One
+							</div>
 						</div>
 						<div class="item">
-							<img data-src="holder.js/900x500/auto/#666:#444/text:Second slide" alt="Second slide">
+							<img src="https://dl.dropboxusercontent.com/u/12146987/slides/Beach.jpg" alt="Slide Two">
+							<div class="carousel-caption">
+								Slide Two
+							</div>
 						</div>
 						<div class="item">
-							<img data-src="holder.js/900x500/auto/#555:#333/text:Third slide" alt="Third slide">
+							<img src="https://dl.dropboxusercontent.com/u/12146987/slides/Bristle%20Grass.jpg" alt="Slide Three">
+							<div class="carousel-caption">
+								Slide Three
+							</div>
 						</div>
 					</div>
 					<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
@@ -388,12 +417,5 @@
 		<p>The side navigation is an example of affix.</p>
 
 	</div>
-
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.js"></script>
-	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-	<script src="//www.fuelcdn.com/fuelux/3.0.0/js/fuelux.min.js"></script>
-
-	<script src="../../bower_components/holderjs/holder.js"></script>
-
 </body>
 </html>

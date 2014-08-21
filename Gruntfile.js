@@ -33,6 +33,13 @@ module.exports = function (grunt) {
 			}
 		},
 		copy: {
+			img: {
+				cwd: 'img/',
+				dest: 'dist/img/',
+				expand: true,
+				filter: 'isFile',
+				src: ['*']
+			},
 			zipsrc: {
 				cwd: 'dist/',
 				dest: 'dist/imhtheme/',
@@ -128,7 +135,7 @@ module.exports = function (grunt) {
 	grunt.registerTask('distzip', ['copy:zipsrc', 'compress', 'clean:zipsrc']);
 
 	// Full distribution task
-	grunt.registerTask('dist', ['clean:dist', 'distcss', 'distzip']);
+	grunt.registerTask('dist', ['clean:dist', 'copy:img', 'distcss', 'distzip']);
 
 	//The default build task
 	grunt.registerTask('default', ['dist']);

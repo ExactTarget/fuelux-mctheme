@@ -1,3 +1,55 @@
 .popover {
-	
+	background: #f6f6f6;
+	border: 1px solid #bbb;
+	padding: 0;
+
+	&.bottom > .arrow {
+		border-bottom-color: #9dc9f1;
+
+		&:after {
+			display: none;
+		}
+	}
+
+	&.left > .arrow {
+		border-left-color: #bbb;
+
+		&:after {
+			border-left-color: #f6f6f6;
+		}
+	}
+
+	&.right > .arrow {
+		border-right-color: #bbb;
+
+		&:after {
+			border-right-color: #f6f6f6;
+		}
+	}
+
+	&.top > .arrow {
+		border-top-color: #bbb;
+
+		&:after {
+			border-top-color: #f6f6f6;
+		}
+	}
+
+	&-content {
+		font-size: 12px;
+		padding: 10px;
+	}
+
+	&-title {
+		background-color: #7fb9ec;
+		background-image: -webkit-linear-gradient(top, #9dc9f1, #60a8e7);
+		background-image: linear-gradient(to bottom, #9dc9f1, #60a8e7);
+		border-bottom: 0;
+		color: #fff;
+		font-size: 12px;
+		font-weight: bold;
+		line-height: 14px;
+		margin: -1px -1px 0;
+		padding: 4px 8px;
+	}
 }
