@@ -1,3 +1,53 @@
 .tooltip {
-	
+	border-radius: 4px;
+	background: linear-gradient(#f2f0b9, #fcfbda);
+	box-shadow: 0 3px 10px rgba(0, 0, 0, .4);
+	line-height: 1.2;
+	padding: 0;
+
+	.tooltip-inner {
+		background: transparent !important;
+		color: #333;
+	}
+
+	&.left {
+		#gradient > .horizontal(#f2f0b9, #fcfbda);
+
+		.tooltip-arrow {
+			border-left-color: #fcfbda;
+			right: -5px;
+		}
+	}
+
+	&.right {
+		#gradient > .horizontal(#fcfbda, #f2f0b9);
+		
+		.tooltip-arrow {
+			border-right-color: #fcfbda;
+			left: -5px;
+		}
+	}
+
+	&.top {
+		#gradient > .vertical(#f2f0b9, #fcfbda);
+		padding: 0;
+		
+		.tooltip-arrow {
+			border-top-color: #fcfbda;
+			bottom: -5px;
+		}
+	}
+
+	&.bottom {
+		box-shadow: 0 -3px 10px rgba(0, 0, 0, .4);
+		#gradient > .vertical(#fcfbda, #f2f0b9);
+		padding: 0;
+		
+		.tooltip-arrow {
+			border-bottom-color: #fcfbda;
+			top: -5px;
+		}
+	}
+
 }
+
