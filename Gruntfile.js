@@ -33,12 +33,37 @@ module.exports = function (grunt) {
 			}
 		},
 		copy: {
+			img: {
+				cwd: 'img/',
+				dest: 'dist/img/',
+				expand: true,
+				filter: 'isFile',
+				src: ['*']
+			},
 			zipsrc: {
 				cwd: 'dist/',
 				dest: 'dist/imhtheme/',
 				expand: true,
 				src: ['**']
+			},
+			docscss: {
+				cwd: 'dist/css/',
+				dest: 'docs/dist/css/',
+				expand: true,
+				src: ['**'],
+		      rename: function (dest, src) {
+		        return dest + src.replace(/imh/g, 'bootstrap-');
+		    }
+			},
+			docsimg: {
+				cwd: 'dist/img/',
+				dest: 'docs/dist/img/',
+				expand: true,
+				src: ['**']
 			}
+		},
+		unzip: {
+			'docs': 'docs.zip'
 		},
 		connect: {
 			server: {
@@ -53,6 +78,10 @@ module.exports = function (grunt) {
 					port: 9000		// allows main server to be run simultaneously 
 				}
 			}
+		},
+		curl: {
+		// Micro libraries via http://microjs.com/
+			'docs.zip': 'https://github.com/twbs/bootstrap/archive/master.zip'
 		},
 		less: {
 			'imhtheme': {
@@ -128,10 +157,12 @@ module.exports = function (grunt) {
 	grunt.registerTask('distzip', ['copy:zipsrc', 'compress', 'clean:zipsrc']);
 
 	// Full distribution task
-	grunt.registerTask('dist', ['clean:dist', 'distcss', 'distzip']);
+	grunt.registerTask('dist', ['clean:dist', 'copy:img', 'distcss', 'distzip']);
 
 	//The default build task
 	grunt.registerTask('default', ['dist']);
+
+	grunt.registerTask('docs', ['dist', 'copy:docscss', 'copy:docsimg']);
 
 	/* -------------
 			SERVE
