@@ -1,19 +1,14 @@
 .btn-group {
-  .btn,
-  .btn-primary, .btn-secondary, .btn-dropdown {
-    // button in active state doesn't have shadow, so make them all don't have shadow
-    //.box-shadow(0 0 0 transparent);
-  }
+	.btn,	.btn-primary, .btn-secondary, .btn-dropdown {
+		// button in active state doesn't have shadow, so make them all not have shadow
+		//.box-shadow(0 0 0 transparent);
+	}
+
 }
 
-//to keep the caret to the right
-.btn-group > .btn > .caret {
-  margin-top: 4px;
-  margin-bottom: 3px;
-  float: right;
-}
-
-.btn-group > .btn-lg > .caret {
-  margin-top: 5px;
-  margin-bottom: 2px;
+.caret {
+	border-top: 3px solid ;
+	border-left: 3px solid transparent;
+	border-right: 3px solid transparent;
+	color: @gray-light;
 }

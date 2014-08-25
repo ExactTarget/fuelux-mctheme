@@ -1,3 +1,37 @@
 .spinbox {
+	border: solid 1px #bbbbbb;
+	border-radius: 4px;
+
+	.form-control {
+		border: none;
+		background: transparent;
+		color: @gray;
+	}
+
+	.spinbox-buttons {
+		width: 12px;
+		top: -1px;
+	}
+
+	.btn {
+		height: 8px;
+		font-size: 7px;
+		padding: 0 0 8px 0px;
+		box-shadow: none;
+		right: -1px;
+	}
+
+	&.disabled {
+		border: 1px solid #cfcfcf;
+
+		.form-control {
+			background: #fff;
+			color: #cfcfcf;
+		}
+
+		.spinbox-buttons {
+			visibility: hidden;
+		}
+	}
 
 }

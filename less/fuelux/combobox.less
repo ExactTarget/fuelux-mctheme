@@ -1,3 +1,30 @@
 .combobox {
+	border: solid 1px #bbbbbb;
+	border-radius: 4px;
 
+	.form-control {
+		border: 0;
+		z-index: 0;
+	}
+
+	.dropdown-toggle {
+		margin: 2px 2px 2px 2px;
+		border: 1px solid #bbbbbb;
+		background: linear-gradient(#FFFFFF, @gray-lighter);
+		padding: 2px 5px 2px 4px;
+		border-radius: 4px;
+	}
+
+	&.disabled {
+		border: 1px solid #cfcfcf;
+
+		.form-control {
+			background: #fff;
+			color: #cfcfcf;
+		}
+
+		.dropdown-toggle {
+			visibility: hidden;
+		}
+	}
 }
