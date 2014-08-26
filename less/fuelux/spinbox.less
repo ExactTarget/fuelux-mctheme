@@ -9,16 +9,32 @@
 	}
 
 	.spinbox-buttons {
-		width: 12px;
+		width: 15px;
 		top: -1px;
+		right: 1px;
+	}
+
+	.spinbox-up {
+		height: 10px;
+		.glyphicon-chevron-up {
+			transform: translate(0.5px, 0.5px);
+		}
+	}
+
+	.spinbox-down {
+		.glyphicon-chevron-down {
+			top: 1px;
+			transform: translate(1px, 0px);
+		}
 	}
 
 	.btn {
-		height: 8px;
+		height: 10px;
 		font-size: 7px;
 		padding: 0 0 8px 0px;
 		box-shadow: none;
-		right: -1px;
+		right: 0px;
+		background: linear-gradient(#FFFFFF, @gray-lighter);
 	}
 
 	&.disabled {
