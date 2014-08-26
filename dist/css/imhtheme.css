@@ -235,6 +235,9 @@ fieldset[disabled] .btn-primary.active {
   background: -o-linear-gradient(#4e8abe, #5793c7);
   background: linear-gradient(#4e8abe, #5793c7);
 }
+.btn-primary.dropdown-toggle .caret {
+  color: #fff;
+}
 .btn-primary.create-btn {
   height: 21px;
   border-radius: 10.5px;
@@ -353,6 +356,9 @@ fieldset[disabled] .btn-secondary.active {
   background: -o-linear-gradient(#d5e4eb, #deeaf6);
   background: linear-gradient(#d5e4eb, #deeaf6);
 }
+.btn-secondary.dropdown-toggle .caret {
+  color: #fff;
+}
 .btn-secondary.btn-lg {
   padding: 6px 10px;
 }
@@ -424,6 +430,9 @@ fieldset[disabled] .btn-success.active {
   color: #71ba53;
   background: #ffffff;
 }
+.btn-success.dropdown-toggle .caret {
+  color: #fff;
+}
 .btn-warning {
   color: #ffffff;
   background-color: #fccba0;
@@ -489,6 +498,9 @@ fieldset[disabled] .btn-warning.active {
   color: #f99a47;
   background: #ffffff;
 }
+.btn-warning.dropdown-toggle .caret {
+  color: #fff;
+}
 .btn-danger {
   color: #ffffff;
   background-color: #f3a5a6;
@@ -553,6 +565,9 @@ fieldset[disabled] .btn-danger.active {
 .btn-danger .badge {
   color: #e85457;
   background: #ffffff;
+}
+.btn-danger.dropdown-toggle .caret {
+  color: #fff;
 }
 .btn-link {
   color: #4e8abe;
@@ -1667,7 +1682,7 @@ table th[class*="col-"] {
   color: #333;
   text-align: left;
   border: 1px solid #bbb;
-  padding: 4px 10px;
+  padding: 4px 7px 4px 7px;
   background-color: #fdfdfd;
   background: -webkit-linear-gradient(#fdfdfd, #dee2e4);
   background: -moz-linear-gradient(#fdfdfd, #dee2e4);
@@ -1690,7 +1705,7 @@ table th[class*="col-"] {
 }
 .btn-dropdown-text {
   float: left;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 .dropdown-menu {
   -webkit-box-shadow: 0 0 3px #ababab;
@@ -1716,14 +1731,11 @@ table th[class*="col-"] {
   font-size: 10px;
   padding: 2px 9px;
 }
-.btn-group > .btn > .caret {
-  margin-top: 4px;
-  margin-bottom: 3px;
-  float: right;
-}
-.btn-group > .btn-lg > .caret {
-  margin-top: 5px;
-  margin-bottom: 2px;
+.caret {
+  border-top: 3px solid ;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  color: #777777;
 }
 .input-group-lg > .form-control,
 .input-group-lg > .input-group-addon,
@@ -2403,16 +2415,18 @@ a.list-group-item-danger.active:focus {
 }
 .modal .modal-header,
 .modal .modal-footer {
-  border-top: 1px solid #CACCCF;
   background-color: #eeeeee;
-  padding: 10px 9px 9px 12px;
-  border-bottom: 1px solid #ddd;
+  padding: 9px 9px 8px 12px;
 }
 .modal .modal-header {
   border-radius: 5px 5px 0 0;
 }
 .modal .modal-footer {
+  border-top: 1px solid #E1E2E5;
   border-radius: 0 0 5px 5px;
+}
+.modal .modal-body {
+  box-shadow: inset 0 7px 7px -9px #afb0b2;
 }
 .modal .modal-footer .btn-default[data-dismiss=modal] {
   float: left;
@@ -2420,6 +2434,7 @@ a.list-group-item-danger.active:focus {
   box-shadow: none;
   border: none;
   color: #4e8abe;
+  padding-left: 0;
 }
 .modal .modal-footer .btn-default[data-dismiss=modal]:hover {
   background: transparent !important;
@@ -2533,5 +2548,66 @@ a.list-group-item-danger.active:focus {
   line-height: 14px;
   margin: -1px -1px 0;
   padding: 4px 8px;
+}
+.fuelux .combobox {
+  border: solid 1px #bbbbbb;
+  border-radius: 4px;
+}
+.fuelux .combobox .form-control {
+  border: 0;
+  z-index: 0;
+}
+.fuelux .combobox .dropdown-toggle {
+  margin: 2px 2px 2px 2px;
+  border: 1px solid #bbbbbb;
+  background: linear-gradient(#ffffff, #eeeeee);
+  padding: 2px 5px 2px 4px;
+  border-radius: 4px;
+}
+.fuelux .combobox.disabled {
+  border: 1px solid #cfcfcf;
+}
+.fuelux .combobox.disabled .form-control {
+  background: #fff;
+  color: #cfcfcf;
+}
+.fuelux .combobox.disabled .dropdown-toggle {
+  visibility: hidden;
+}
+.fuelux .spinbox {
+  border: solid 1px #bbbbbb;
+  border-radius: 4px;
+}
+.fuelux .spinbox .form-control {
+  border: none;
+  background: transparent;
+  color: #555555;
+}
+.fuelux .spinbox .spinbox-buttons {
+  width: 12px;
+  top: -1px;
+}
+.fuelux .spinbox .btn {
+  height: 8px;
+  font-size: 7px;
+  padding: 0 0 8px 0px;
+  box-shadow: none;
+  right: -1px;
+}
+.fuelux .spinbox.disabled {
+  border: 1px solid #cfcfcf;
+}
+.fuelux .spinbox.disabled .form-control {
+  background: #fff;
+  color: #cfcfcf;
+}
+.fuelux .spinbox.disabled .spinbox-buttons {
+  visibility: hidden;
+}
+.fuelux .selectlist .btn {
+  background: linear-gradient(#ffffff, #eeeeee);
+}
+.fuelux .selectlist .btn.dropdown-toggle .selected-label {
+  padding-right: 4px;
 }
 /*# sourceMappingURL=fuelux-imhtheme.css.map */
