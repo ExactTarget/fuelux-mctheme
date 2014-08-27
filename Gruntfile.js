@@ -75,7 +75,7 @@ module.exports = function (grunt) {
 			testServer: {
 				options: {
 					hostname: '*',
-					port: 9000		// allows main server to be run simultaneously 
+					port: 9000		// allows main server to be run simultaneously
 				}
 			}
 		},
@@ -93,7 +93,8 @@ module.exports = function (grunt) {
 					sourceMapFilename: 'dist/css/<%= pkg.name %>.css.map'
 				},
 				files: {
-					'dist/css/imhtheme.css': 'less/imhtheme.less'
+					'dist/css/imhtheme.css': 'less/imhtheme.less',
+					'dist/css/imhtheme-font.css': 'less/fuelux/font.less'
 				}
 			},
 			minify: {
