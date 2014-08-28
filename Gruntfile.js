@@ -51,9 +51,9 @@ module.exports = function (grunt) {
 				dest: 'docs/dist/css/',
 				expand: true,
 				src: ['**'],
-		      rename: function (dest, src) {
-		        return dest + src.replace(/imh/g, 'bootstrap-');
-		    }
+				rename: function (dest, src) {
+					return dest + src.replace(/imh/g, 'bootstrap-');
+				}
 			},
 			docsimg: {
 				cwd: 'dist/img/',
@@ -93,8 +93,7 @@ module.exports = function (grunt) {
 					sourceMapFilename: 'dist/css/<%= pkg.name %>.css.map'
 				},
 				files: {
-					'dist/css/imhtheme.css': 'less/imhtheme.less',
-					'dist/css/imhtheme-font.css': 'less/fuelux/font.less'
+					'dist/css/imhtheme.css': 'less/imhtheme.less'
 				}
 			},
 			minify: {
