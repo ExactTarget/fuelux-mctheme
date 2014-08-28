@@ -2,7 +2,7 @@ define(function(require){
 	var data = require('data');
 	var jquery = require('jquery');
 
-	require('fuelux/all');
+	require('fuelux');
 
 	// CHECKBOX
 	$('#MyCheckbox1').on('change.fu.checkbox', function() {
