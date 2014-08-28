@@ -1,4 +1,78 @@
 .tree {
+	padding: 10px 10px 10px 10px;
 
+	.icon-caret {
+		display: none;
+	}
+
+	.icon-folder {
+		margin-right: 4px;
+		background: transparent url("../img/treeSprite.png") no-repeat 0 2px;
+		height: 16px;
+		width: 16px;
+	}
+
+	.tree-item-name:hover {
+		background: #dfeef5;
+		color: darken(#385b6b, .2);
+	}
+
+	.icon-folder:before {
+		content: '';
+	}
+
+	.icon-item {
+		margin-right: 4px;
+		background: transparent url("../img/treeSprite.png") no-repeat -48px 2px;
+		// background: transparent url("../img/treeSprite.png") no-repeat -66px -2px; //hover
+		height: 16px;
+		width: 16px;
+	}
+
+	.icon-item:before {
+		content: '';
+	}
+
+	.tree-item {
+		margin-left: 0;
+	}
+
+	.tree-branch {
+		.tree-branch-children {
+			margin-left: 18px;
+		}
+	}
+
+		.tree-folder-select .tree-branch.tree-selected > .tree-branch-header .tree-branch-name,
+		.tree-item.tree-selected > .tree-item-name {
+			background: @blue-light;
+			color: #385b6b;
+	}
+
+
+
+	.tree-item.tree-selected .icon-item {
+		background: transparent url("../img/treeSprite.png") no-repeat -32px 3px; // selected
+	}
+
+	.tree-open {
+		& > .tree-branch-header .icon-folder {
+			background: transparent url("../img/treeSprite.png") no-repeat -16px 2px;
+		}
+	}
+
+	&.tree-folder-select {
+		.icon-caret {
+			display: inline-block;
+
+			&:before {
+				color: @blue-light;
+			}
+		}
+
+		.tree-item {
+			margin-left: 25px;
+		}
+	}
 
 }

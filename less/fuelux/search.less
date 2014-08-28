@@ -1,3 +1,47 @@
 .search {
 
+	.form-control {
+		padding-right: 23px;
+	}
+
+	.glyphicon-search:before, .glyphicon-remove:before {
+		content: '';
+	}
+
+	.btn {
+		margin: 1px -28px 0px 4px;
+		background-image: url(../img/search_sprite.png);
+		background-repeat: no-repeat;
+		background-position: 0px 0px;
+		width: 20px;
+		height: 20px;
+		border: 0;
+		float: left;
+		position: relative;
+		right: 25px;
+		z-index: 100;
+	}
+
+	.btn:hover {
+		background-position: 0 -30px;
+	}
+
+	&.disabled {
+		.form-control {
+			background: #fff;
+			color: #cfcfcf;
+		}
+	}
+
+	&.searched {
+		.btn {
+			background-position: 0px -60px;
+		}
+		.btn {
+			background-position: 0px -90px;
+		}
+	}
+
+
+
 }
