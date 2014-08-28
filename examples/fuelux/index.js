@@ -98,7 +98,10 @@ define(function(require){
 		$(this).closest('.section').append(markup);
 	});
 
-	$('#MyDatepicker').datepicker();
+	$('#MyDatepicker').datepicker({
+		allowPastDates: true,
+		restricted: [{ from: '08/10/2014', to: '08/15/2014' }]
+	});
 
 	// $('#MyDatepicker').datepicker({
 	// 	allowPastDates: true,

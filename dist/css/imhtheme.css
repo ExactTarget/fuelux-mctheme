@@ -2669,10 +2669,10 @@ a.list-group-item-danger.active:focus {
   background: #eee;
   border-radius: 3px;
   min-height: 223px;
-  padding: 5px 5px 0;
+  padding: 5px 5px 10px;
 }
 .fuelux .datepicker-calendar-days {
-  margin: 0 0 8px 0;
+  margin: 0;
 }
 .fuelux .datepicker-calendar-days thead {
   border-bottom: none;
@@ -2693,12 +2693,20 @@ a.list-group-item-danger.active:focus {
   background: #E6E6E6;
   border: 1px solid #999;
 }
-.fuelux .datepicker-calendar-days tbody td.restricted button:before {
-  display: none;
-}
-.fuelux .datepicker-calendar-days tbody td.restricted button:hover {
+.fuelux .datepicker-calendar-days tbody td.past button {
   background: #fff;
-  border: 1px solid #d3d3d3;
+  border: 1px solid #ddd;
+  color: #ddd;
+}
+.fuelux .datepicker-calendar-days tbody td.restricted button,
+.fuelux .datepicker-calendar-days tbody td.restricted button:hover {
+  background: #f3f3f3;
+  border: 1px solid #e4e4e4;
+  color: #bbb;
+}
+.fuelux .datepicker-calendar-days tbody td.restricted button:before,
+.fuelux .datepicker-calendar-days tbody td.restricted button:hover:before {
+  display: none;
 }
 .fuelux .datepicker-calendar-days tbody td.selected button,
 .fuelux .datepicker-calendar-days tbody td.selected button:hover {

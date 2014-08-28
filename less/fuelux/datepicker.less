@@ -62,10 +62,10 @@
 		background: #eee;
 		border-radius: 3px;
 		min-height: 223px;
-		padding: 5px 5px 0;
+		padding: 5px 5px 10px;
 
 		&-days {
-			margin: 0 0 8px 0;
+			margin: 0;
 
 			thead {
 				border-bottom: none;
@@ -93,15 +93,22 @@
 						}
 					}
 
-					&.restricted {
+					&.past {
 						button {
+							background: #fff;
+							border: 1px solid #ddd;
+							color: #ddd;
+						}
+					}
+
+					&.restricted {
+						button, button:hover {
+							background: #f3f3f3;
+							border: 1px solid #e4e4e4;
+							color: #bbb;
+
 							&:before {
 								display: none;
-							}
-
-							&:hover {
-								background: #fff;
-								border: 1px solid #d3d3d3;
 							}
 						}
 					}
