@@ -1,3 +1,119 @@
 .repeater {
+	&-filters {
+		margin-top: 2px;
+	}
 
+	&-footer, &-header {
+		background: #f0f2f3;
+		box-shadow: 0px 0px 0px 1px #fff inset;
+		min-height: 46px;
+		padding: 10px;
+	}
+
+	&-itemization {
+		font-size: 12px;
+		margin-top: 3px;
+
+		.selectlist {
+			margin: 0 4px;
+			position: relative;
+			top: -1px;
+		}
+	}
+
+	&-pagination {
+		font-size: 12px;
+		margin-top: 2px;
+
+		.repeater-next, .repeater-prev {
+			background: #f0f5f8;
+			background-image: -webkit-linear-gradient(top, #feffff, #e0e9f0);
+			background-image: linear-gradient(to bottom, #feffff, #e0e9f0);
+			border: 1px solid #b5c6d2;
+			height: 17px;
+			position: relative;
+			top: -1px;
+			width: 17px;
+
+			&:hover {
+				background: #ddecf7;
+				background-image: -webkit-linear-gradient(top, #e8f6ff, #cee1ee);
+				background-image: linear-gradient(to bottom, #e8f6ff, #cee1ee);
+
+				.repeater-next {
+					.glyphicon {
+						border-color: transparent transparent transparent #6699bb;
+					}
+				}
+
+				.repeater-prev {
+					.glyphicon {
+						border-color: transparent #6699bb transparent transparent;
+					}
+				}
+			}
+
+			.glyphicon {
+				display: block;
+				left: 6px;
+				position: absolute;
+				top: 4px;
+
+				&:before {
+					display: none;
+				}
+			}
+		}
+
+		.repeater-next {
+			.glyphicon {
+				border-color: transparent transparent transparent #6799bb;
+				border-style: solid none solid solid;
+				border-width: 4px medium 4px 4px;
+			}
+		}
+
+		.repeater-prev {
+			.glyphicon {
+				border-color: transparent #6799bb transparent transparent;
+				border-style: solid solid solid none;
+				border-width: 4px 4px 4px medium;
+			}
+		}
+
+		.repeater-primaryPaging {
+			background: #fff;
+			border-radius: 4px;
+		}
+	}
+
+	&-search {
+		margin-top: 2px;
+
+		.input-group {
+			.form-control {
+				border-radius: 4px;
+
+				&:first-child {
+					border-radius: 4px;
+				}
+			}
+		}
+	}
+
+	&-title {
+		color: #333;
+		font-size: 14px;
+		line-height: 25px
+	}
+
+	&-views {
+		margin-top: 2px;
+
+		.btn-secondary {
+			background-repeat: no-repeat;
+			font-size: 14px;
+			padding: 2px 4px 3px;
+		}
+	}
 }
