@@ -2944,6 +2944,133 @@ a.list-group-item-danger.active:focus {
 .fuelux .radio-custom.radio-inline.highlight:before {
   top: 6px;
 }
+.fuelux .repeater-filters {
+  margin-top: 2px;
+}
+.fuelux .repeater-footer,
+.fuelux .repeater-header {
+  background: #f0f2f3;
+  box-shadow: 0px 0px 0px 1px #fff inset;
+  min-height: 46px;
+  padding: 10px;
+}
+.fuelux .repeater-itemization {
+  font-size: 12px;
+  margin-top: 3px;
+}
+.fuelux .repeater-itemization .selectlist {
+  margin: 0 4px;
+  position: relative;
+  top: -1px;
+}
+.fuelux .repeater-pagination {
+  font-size: 12px;
+  margin-top: 2px;
+}
+.fuelux .repeater-pagination .repeater-next,
+.fuelux .repeater-pagination .repeater-prev {
+  background: #f0f5f8;
+  background-image: -webkit-linear-gradient(top, #feffff, #e0e9f0);
+  background-image: linear-gradient(to bottom, #feffff, #e0e9f0);
+  border: 1px solid #b5c6d2;
+  height: 17px;
+  position: relative;
+  top: -1px;
+  width: 17px;
+}
+.fuelux .repeater-pagination .repeater-next:hover,
+.fuelux .repeater-pagination .repeater-prev:hover {
+  background: #ddecf7;
+  background-image: -webkit-linear-gradient(top, #e8f6ff, #cee1ee);
+  background-image: linear-gradient(to bottom, #e8f6ff, #cee1ee);
+}
+.fuelux .repeater-pagination .repeater-next:hover .repeater-next .glyphicon,
+.fuelux .repeater-pagination .repeater-prev:hover .repeater-next .glyphicon {
+  border-color: transparent transparent transparent #6699bb;
+}
+.fuelux .repeater-pagination .repeater-next:hover .repeater-prev .glyphicon,
+.fuelux .repeater-pagination .repeater-prev:hover .repeater-prev .glyphicon {
+  border-color: transparent #6699bb transparent transparent;
+}
+.fuelux .repeater-pagination .repeater-next .glyphicon,
+.fuelux .repeater-pagination .repeater-prev .glyphicon {
+  display: block;
+  left: 6px;
+  position: absolute;
+  top: 4px;
+}
+.fuelux .repeater-pagination .repeater-next .glyphicon:before,
+.fuelux .repeater-pagination .repeater-prev .glyphicon:before {
+  display: none;
+}
+.fuelux .repeater-pagination .repeater-next .glyphicon {
+  border-color: transparent transparent transparent #6799bb;
+  border-style: solid none solid solid;
+  border-width: 4px medium 4px 4px;
+}
+.fuelux .repeater-pagination .repeater-prev .glyphicon {
+  border-color: transparent #6799bb transparent transparent;
+  border-style: solid solid solid none;
+  border-width: 4px 4px 4px medium;
+}
+.fuelux .repeater-pagination .repeater-primaryPaging {
+  background: #fff;
+  border-radius: 4px;
+}
+.fuelux .repeater-search {
+  margin-top: 2px;
+}
+.fuelux .repeater-search .input-group .form-control {
+  border-radius: 4px;
+}
+.fuelux .repeater-search .input-group .form-control:first-child {
+  border-radius: 4px;
+}
+.fuelux .repeater-title {
+  color: #333;
+  font-size: 14px;
+  line-height: 25px;
+}
+.fuelux .repeater-views {
+  margin-top: 2px;
+}
+.fuelux .repeater-views .btn-secondary {
+  background-repeat: no-repeat;
+  font-size: 14px;
+  padding: 2px 4px 3px;
+}
+.fuelux .repeater[data-currentview="list"] .repeater-list-header,
+.fuelux .repeater[data-currentview="list"] .repeater-list-items {
+  border: none;
+}
+.fuelux .repeater[data-currentview="list"] .repeater-list-header tr td,
+.fuelux .repeater[data-currentview="list"] .repeater-list-items tr td {
+  text-align: left;
+}
+.fuelux .repeater[data-currentview="list"] .repeater-list-header tr td {
+  background: #f4f6f7;
+  background-image: -webkit-linear-gradient(top, #f1f3f4, #f8f9f9);
+  background-image: linear-gradient(to bottom, #f1f3f4, #f8f9f9);
+}
+.fuelux .repeater[data-currentview="list"] .repeater-list-header tr td.sortable:hover {
+  background: #e1eaed;
+  background-image: -webkit-linear-gradient(top, #e8ecee, #dee8eb);
+  background-image: linear-gradient(to bottom, #e8ecee, #dee8eb);
+}
+.fuelux .repeater[data-currentview="list"] .repeater-list-header tr td.sorted,
+.fuelux .repeater[data-currentview="list"] .repeater-list-header tr td.sorted:hover {
+  background: #d6e2e6;
+  background-image: -webkit-linear-gradient(top, #e8ecee, #cadde3);
+  background-image: linear-gradient(to bottom, #e8ecee, #cadde3);
+}
+.fuelux .repeater[data-currentview="list"] .repeater-list-header tr td.sorted .glyphicon {
+  color: #45514f;
+}
+.fuelux .repeater[data-currentview="list"] .repeater-list-items tr td {
+  border-bottom: 1px dotted #ccc;
+  border-left: none;
+  border-right: none;
+}
 .fuelux .spinbox {
   border: solid 1px #bbbbbb;
   border-radius: 4px;
