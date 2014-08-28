@@ -1,3 +1,285 @@
 .datepicker {
+	&:hover {
+		.dropdown-toggle {
+			background: transparent;
+			border-color: #ccc;
 
+			.glyphicon-calendar {
+				.sprite(-112px, -1px);
+			}
+		}
+	}
+
+	input.form-control {
+		border-right: none;
+	}
+
+	.dropdown-toggle {
+		border-left: none;
+		padding: 2px 2px 0;
+
+		&:focus {
+			background: transparent;
+		}
+
+		&:hover {
+			background: transparent;
+			border-color: #ccc;
+
+			.glyphicon-calendar {
+				.sprite(-112px, -1px);
+			}
+		}
+
+		&[disabled] {
+			background: #eee;
+			border-color: #ccc;
+			opacity: 1;
+
+			.glyphicon-calendar {
+				.sprite(-128px, -1px);
+			}
+		}
+
+		.glyphicon-calendar {
+			height: 15px;
+			.sprite(-96px, -1px);
+			width: 15px;
+			top: 0;
+
+			&:before {
+				display: none;
+			}
+		}
+	}
+
+	.open > .dropdown-toggle.btn-default {
+		background-image: none;
+		border: 1px solid #ccc;
+	}
+
+	&-calendar {
+		background: #eee;
+		border-radius: 3px;
+		min-height: 223px;
+		padding: 5px 5px 0;
+
+		&-days {
+			margin: 0 0 8px 0;
+
+			thead {
+				border-bottom: none;
+
+				th {
+					font-size: 11px;
+					font-weight: bold;
+					height: 24px;
+					vertical-align: middle;
+				}
+			}
+
+			tbody {
+				&:before {
+					display: none;
+				}
+
+				td {
+					height: 24px;
+
+					&.current-day {
+						button {
+							background: #E6E6E6;
+							border: 1px solid #999;
+						}
+					}
+
+					&.restricted {
+						button {
+							&:before {
+								display: none;
+							}
+
+							&:hover {
+								background: #fff;
+								border: 1px solid #d3d3d3;
+							}
+						}
+					}
+
+					&.selected {
+						button, button:hover {
+							background: #85c6e4;
+							border: none;
+							-webkit-box-shadow: 1px 2px 2px 0 rgba(0, 0, 0, 0.1) inset;
+							box-shadow: 1px 2px 2px 0 rgba(0, 0, 0, 0.1) inset;
+						}
+
+						span, span:hover {
+							background: none;
+						}
+					}
+
+					span {
+						display: inline-block;
+
+						&:hover {
+							background: none;
+						}
+					}
+
+					.datepicker-date {
+						background: #fff;
+						border: 1px solid #d3d3d3;
+						color: #555555;
+						font-size: 10px;
+						height: 22px;
+						padding: 2px;
+						text-align: right;
+						width: 28px;
+
+						&:hover {
+							background: #DFEEF5;
+							border: 1px solid #98D2EE;
+						}
+					}
+
+					&.last-month, &.next-month {
+						visibility: hidden;
+					}
+				}
+			}
+		}
+
+		&-header {
+			background: #9f9f9f;
+			background-image: -webkit-linear-gradient(top, #b6b6b6, #949494);
+			background-image: linear-gradient(to bottom, #b6b6b6, #949494);
+			border-radius: 4px;
+			padding: 4px 6px;
+
+			.next, .prev {
+				background: #fefffe;
+				box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.25);
+				height: 12px;
+				margin: 4px 0 0;
+				width: 12px;
+
+				&:hover {
+					background: #87b9e5;
+					background-image: -webkit-linear-gradient(top, #a8d4fa, #71a1cc);
+					background-image: linear-gradient(to bottom, #a8d4fa, #71a1cc);
+					border: 1px solid #fff;
+
+					.glyphicon-chevron-left {
+						border-color: transparent #fff transparent transparent;
+						left: 3px;
+					}
+
+					.glyphicon-chevron-right {
+						border-color: transparent transparent transparent #fff;
+						left: 4px;
+					}
+				}
+
+				.glyphicon-chevron-left, .glyphicon-chevron-right{
+					display: block;
+					height: 0;
+					top: 0;
+					width: 0;
+
+					&:before {
+						display: none;
+					}
+				}
+			}
+
+			.next {
+				.glyphicon-chevron-right {
+					border-color: transparent transparent transparent #4e8abe;
+					border-style: solid none solid solid;
+					border-width: 3px medium 3px 3px;
+					left: 5px;
+				}
+			}
+
+			.prev {
+				.glyphicon-chevron-left {
+					border-color: transparent #4e8abe transparent transparent;
+					border-style: solid solid solid none;
+					border-width: 3px 3px 3px medium;
+					left: 4px;
+				}
+			}
+
+			.title {
+				color: #fff;
+				font-size: 12px;
+				font-weight: bold;
+				line-height: 20px;
+
+				&:hover {
+					color: #4e8abe;
+				}
+			}
+		}
+
+		&-footer {
+			display: none;
+		}
+
+		&-wrapper {
+			border: 1px solid #bbbbbb;
+			width: 224px;
+		}
+	}
+
+	&-wheels {
+		&-footer {
+			background: #eee;
+			height: 28px;
+
+			.datepicker-wheels-back {
+				box-shadow: none;
+				color: #333;
+				line-height: 17px;
+			}
+
+			.datepicker-wheels-select {
+				box-shadow: none;
+				line-height: 17px;
+			}
+		}
+
+		&-month, &-year {
+			.header {
+				background: #eee;
+				color: #333;
+				font-size: 12px;
+				font-weight: bold;
+				line-height: 27px;
+			}
+
+			ul {
+				height: 167px;
+
+				li {
+					&.selected {
+						button, button:hover {
+							background: #86c6e4;
+						}
+					}
+
+					button {
+						color: #555;
+						font-size: 10px;
+						line-height: 20px;
+
+						&:hover {
+							background: #dfeef5;
+						}
+					}
+				}
+			}
+		}
+	}
 }

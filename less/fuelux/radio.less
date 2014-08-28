@@ -1,3 +1,63 @@
-.radio {
+.radio-custom {
+	font-size: 12px;
+	line-height: 20px;
 
+	&:after {
+		display: none;
+	}
+
+	&:before {
+		border: none;
+		border-radius: 0;
+		content: " ";
+		height: 15px;
+		padding: 0;
+		.sprite(0, -16px);
+		top: 2px;
+		width: 15px;
+	}
+
+	&:hover {
+		&:before {
+			.sprite(-16px, -16px);
+		}
+
+		&.checked {
+			&:before {
+				.sprite(-32px, -16px);
+			}
+		}
+	}
+
+	&.checked {
+		&:before {
+			content: " ";
+			.sprite(-48px, -16px);
+		}
+	}
+
+	&.disabled {
+		&:before {
+			opacity: 1;
+			.sprite(-64px, -16px);
+		}
+
+		&.checked {
+			&:before {
+				.sprite(-80px, -16px);
+			}
+		}
+	}
+
+	&.radio-inline {
+		&:before {
+			top: 2px;
+		}
+
+		&.highlight {
+			&:before {
+				top: 6px;
+			}
+		}
+	}
 }

@@ -1,3 +1,44 @@
-.checkbox {
-	
+.checkbox-custom {
+	font-size: 12px;
+	line-height: 20px;
+
+	&:before {
+		border: none;
+		border-radius: 0;
+		content: " ";
+		padding: 0;
+		.sprite(-1px, -1px);
+	}
+
+	&:hover {
+		&:before {
+			.sprite(-17px, -1px);
+		}
+
+		&.checked {
+			&:before {
+				.sprite(-33px, -1px);
+			}
+		}
+	}
+
+	&.checked {
+		&:before {
+			content: " ";
+			.sprite(-49px, -1px);
+		}
+	}
+
+	&.disabled {
+		&:before {
+			opacity: 1;
+			.sprite(-65px, -1px);
+		}
+
+		&.checked {
+			&:before {
+				.sprite(-81px, -1px);
+			}
+		}
+	}
 }

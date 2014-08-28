@@ -362,7 +362,8 @@ fieldset[disabled] .btn-secondary.active {
 .btn-secondary.btn-lg {
   padding: 6px 10px;
 }
-.btn-secondary.btn-sm {
+.btn-secondary.btn-sm,
+.btn-secondary.btn-xs {
   padding: 2px 8px;
 }
 .btn-success {
@@ -609,7 +610,8 @@ fieldset[disabled] .btn-link:focus {
   font-size: 12px;
   border-radius: 4px;
 }
-.btn-sm {
+.btn-sm,
+.btn-xs {
   padding: 3px 8px;
   font-size: 10px;
   border-radius: 3px;
@@ -675,7 +677,7 @@ input[type="checkbox"]:focus {
 }
 output {
   display: block;
-  padding-top: 0px;
+  padding-top: 3px;
   font-size: 11px;
   line-height: 1.4;
   color: #333333;
@@ -684,7 +686,7 @@ output {
   display: block;
   width: 100%;
   height: 21px;
-  padding: 1px 5px;
+  padding: 4px 5px;
   font-size: 11px;
   line-height: 1.4;
   color: #333333;
@@ -843,8 +845,8 @@ fieldset[disabled] .checkbox label {
   cursor: not-allowed;
 }
 .form-control-static {
-  padding-top: 0px;
-  padding-bottom: 2px;
+  padding-top: 3px;
+  padding-bottom: 5px;
   margin-bottom: 0;
 }
 .form-control-static.input-lg,
@@ -856,7 +858,7 @@ fieldset[disabled] .checkbox label {
 .input-sm,
 .form-horizontal .form-group-sm .form-control {
   height: 21px;
-  padding: 1px 8px;
+  padding: 4px 8px;
   font-size: 10px;
   line-height: 1.5;
   border-radius: 3px;
@@ -1125,11 +1127,11 @@ select[multiple].input-md {
 .form-horizontal .checkbox-inline {
   margin-top: 0;
   margin-bottom: 0;
-  padding-top: 2px;
+  padding-top: 5px;
 }
 .form-horizontal .radio,
 .form-horizontal .checkbox {
-  min-height: 17px;
+  min-height: 20px;
 }
 .form-horizontal .form-group {
   margin-left: -10px;
@@ -1139,7 +1141,7 @@ select[multiple].input-md {
   .form-horizontal .control-label {
     text-align: right;
     margin-bottom: 0;
-    padding-top: 0px;
+    padding-top: 3px;
   }
 }
 .form-horizontal .has-feedback .form-control-feedback {
@@ -1153,7 +1155,7 @@ select[multiple].input-md {
 }
 @media (min-width: 768px) {
   .form-horizontal .form-group-sm .control-label {
-    padding-top: 0px;
+    padding-top: 3px;
   }
 }
 @media (min-width: 768px) {
@@ -1787,7 +1789,7 @@ select[multiple].input-group-md > .input-group-btn > .btn {
 .input-group-sm > .input-group-addon,
 .input-group-sm > .input-group-btn > .btn {
   height: 21px;
-  padding: 1px 8px;
+  padding: 4px 8px;
   font-size: 10px;
   line-height: 1.5;
   border-radius: 3px;
@@ -2549,6 +2551,50 @@ a.list-group-item-danger.active:focus {
   margin: -1px -1px 0;
   padding: 4px 8px;
 }
+.fuelux .clearfix,
+.fuelux .form-horizontal .form-group {
+  *zoom: 1;
+}
+.fuelux .clearfix:before,
+.fuelux .clearfix:after,
+.fuelux .form-horizontal .form-group:before,
+.fuelux .form-horizontal .form-group:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.fuelux .clearfix:after,
+.fuelux .form-horizontal .form-group:after {
+  clear: both;
+}
+.fuelux .checkbox-custom {
+  font-size: 12px;
+  line-height: 20px;
+}
+.fuelux .checkbox-custom:before {
+  border: none;
+  border-radius: 0;
+  content: " ";
+  padding: 0;
+  background: transparent url("../img/form.png") no-repeat -1px -1px;
+}
+.fuelux .checkbox-custom:hover:before {
+  background: transparent url("../img/form.png") no-repeat -17px -1px;
+}
+.fuelux .checkbox-custom:hover.checked:before {
+  background: transparent url("../img/form.png") no-repeat -33px -1px;
+}
+.fuelux .checkbox-custom.checked:before {
+  content: " ";
+  background: transparent url("../img/form.png") no-repeat -49px -1px;
+}
+.fuelux .checkbox-custom.disabled:before {
+  opacity: 1;
+  background: transparent url("../img/form.png") no-repeat -65px -1px;
+}
+.fuelux .checkbox-custom.disabled.checked:before {
+  background: transparent url("../img/form.png") no-repeat -81px -1px;
+}
 .fuelux .combobox {
   border: solid 1px #bbbbbb;
   border-radius: 4px;
@@ -2574,61 +2620,329 @@ a.list-group-item-danger.active:focus {
 .fuelux .combobox.disabled .dropdown-toggle {
   visibility: hidden;
 }
-.fuelux .loader {
-  height: 64px;
-  font-size: 64px;
-  position: relative;
-  width: 64px;
+.fuelux .datepicker:hover .dropdown-toggle {
+  background: transparent;
+  border-color: #ccc;
 }
-.fuelux .loader:after,
-.fuelux .loader:before {
-  font-family: "fuelux" !important;
-  font-style: normal !important;
-  font-weight: normal !important;
-  font-variant: normal !important;
-  text-transform: none !important;
-  line-height: 1;
-  speak: none;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  bottom: 0;
-  display: block;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
+.fuelux .datepicker:hover .dropdown-toggle .glyphicon-calendar {
+  background: transparent url("../img/form.png") no-repeat -112px -1px;
 }
-.fuelux .loader:before {
-  content: '\e000';
-  opacity: 0.33;
+.fuelux .datepicker input.form-control {
+  border-right: none;
 }
-.fuelux .loader.iefix:before {
-  color: #bcbcbc;
+.fuelux .datepicker .dropdown-toggle {
+  border-left: none;
+  padding: 2px 2px 0;
+}
+.fuelux .datepicker .dropdown-toggle:focus {
+  background: transparent;
+}
+.fuelux .datepicker .dropdown-toggle:hover {
+  background: transparent;
+  border-color: #ccc;
+}
+.fuelux .datepicker .dropdown-toggle:hover .glyphicon-calendar {
+  background: transparent url("../img/form.png") no-repeat -112px -1px;
+}
+.fuelux .datepicker .dropdown-toggle[disabled] {
+  background: #eee;
+  border-color: #ccc;
   opacity: 1;
 }
-.fuelux .loader[data-frame="1"]:after {
-  content: '\e001';
+.fuelux .datepicker .dropdown-toggle[disabled] .glyphicon-calendar {
+  background: transparent url("../img/form.png") no-repeat -128px -1px;
 }
-.fuelux .loader[data-frame="2"]:after {
-  content: '\e002';
+.fuelux .datepicker .dropdown-toggle .glyphicon-calendar {
+  height: 15px;
+  background: transparent url("../img/form.png") no-repeat -96px -1px;
+  width: 15px;
+  top: 0;
 }
-.fuelux .loader[data-frame="3"]:after {
-  content: '\e003';
+.fuelux .datepicker .dropdown-toggle .glyphicon-calendar:before {
+  display: none;
 }
-.fuelux .loader[data-frame="4"]:after {
-  content: '\e004';
+.fuelux .datepicker .open > .dropdown-toggle.btn-default {
+  background-image: none;
+  border: 1px solid #ccc;
 }
-.fuelux .loader[data-frame="5"]:after {
-  content: '\e005';
+.fuelux .datepicker-calendar {
+  background: #eee;
+  border-radius: 3px;
+  min-height: 223px;
+  padding: 5px 5px 0;
 }
-.fuelux .loader[data-frame="6"]:after {
-  content: '\e006';
+.fuelux .datepicker-calendar-days {
+  margin: 0 0 8px 0;
 }
-.fuelux .loader[data-frame="7"]:after {
-  content: '\e007';
+.fuelux .datepicker-calendar-days thead {
+  border-bottom: none;
 }
-.fuelux .loader[data-frame="8"]:after {
-  content: '\e008';
+.fuelux .datepicker-calendar-days thead th {
+  font-size: 11px;
+  font-weight: bold;
+  height: 24px;
+  vertical-align: middle;
+}
+.fuelux .datepicker-calendar-days tbody:before {
+  display: none;
+}
+.fuelux .datepicker-calendar-days tbody td {
+  height: 24px;
+}
+.fuelux .datepicker-calendar-days tbody td.current-day button {
+  background: #E6E6E6;
+  border: 1px solid #999;
+}
+.fuelux .datepicker-calendar-days tbody td.restricted button:before {
+  display: none;
+}
+.fuelux .datepicker-calendar-days tbody td.restricted button:hover {
+  background: #fff;
+  border: 1px solid #d3d3d3;
+}
+.fuelux .datepicker-calendar-days tbody td.selected button,
+.fuelux .datepicker-calendar-days tbody td.selected button:hover {
+  background: #85c6e4;
+  border: none;
+  -webkit-box-shadow: 1px 2px 2px 0 rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 1px 2px 2px 0 rgba(0, 0, 0, 0.1) inset;
+}
+.fuelux .datepicker-calendar-days tbody td.selected span,
+.fuelux .datepicker-calendar-days tbody td.selected span:hover {
+  background: none;
+}
+.fuelux .datepicker-calendar-days tbody td span {
+  display: inline-block;
+}
+.fuelux .datepicker-calendar-days tbody td span:hover {
+  background: none;
+}
+.fuelux .datepicker-calendar-days tbody td .datepicker-date {
+  background: #fff;
+  border: 1px solid #d3d3d3;
+  color: #555555;
+  font-size: 10px;
+  height: 22px;
+  padding: 2px;
+  text-align: right;
+  width: 28px;
+}
+.fuelux .datepicker-calendar-days tbody td .datepicker-date:hover {
+  background: #DFEEF5;
+  border: 1px solid #98D2EE;
+}
+.fuelux .datepicker-calendar-days tbody td.last-month,
+.fuelux .datepicker-calendar-days tbody td.next-month {
+  visibility: hidden;
+}
+.fuelux .datepicker-calendar-header {
+  background: #9f9f9f;
+  background-image: -webkit-linear-gradient(top, #b6b6b6, #949494);
+  background-image: linear-gradient(to bottom, #b6b6b6, #949494);
+  border-radius: 4px;
+  padding: 4px 6px;
+}
+.fuelux .datepicker-calendar-header .next,
+.fuelux .datepicker-calendar-header .prev {
+  background: #fefffe;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.25);
+  height: 12px;
+  margin: 4px 0 0;
+  width: 12px;
+}
+.fuelux .datepicker-calendar-header .next:hover,
+.fuelux .datepicker-calendar-header .prev:hover {
+  background: #87b9e5;
+  background-image: -webkit-linear-gradient(top, #a8d4fa, #71a1cc);
+  background-image: linear-gradient(to bottom, #a8d4fa, #71a1cc);
+  border: 1px solid #fff;
+}
+.fuelux .datepicker-calendar-header .next:hover .glyphicon-chevron-left,
+.fuelux .datepicker-calendar-header .prev:hover .glyphicon-chevron-left {
+  border-color: transparent #fff transparent transparent;
+  left: 3px;
+}
+.fuelux .datepicker-calendar-header .next:hover .glyphicon-chevron-right,
+.fuelux .datepicker-calendar-header .prev:hover .glyphicon-chevron-right {
+  border-color: transparent transparent transparent #fff;
+  left: 4px;
+}
+.fuelux .datepicker-calendar-header .next .glyphicon-chevron-left,
+.fuelux .datepicker-calendar-header .prev .glyphicon-chevron-left,
+.fuelux .datepicker-calendar-header .next .glyphicon-chevron-right,
+.fuelux .datepicker-calendar-header .prev .glyphicon-chevron-right {
+  display: block;
+  height: 0;
+  top: 0;
+  width: 0;
+}
+.fuelux .datepicker-calendar-header .next .glyphicon-chevron-left:before,
+.fuelux .datepicker-calendar-header .prev .glyphicon-chevron-left:before,
+.fuelux .datepicker-calendar-header .next .glyphicon-chevron-right:before,
+.fuelux .datepicker-calendar-header .prev .glyphicon-chevron-right:before {
+  display: none;
+}
+.fuelux .datepicker-calendar-header .next .glyphicon-chevron-right {
+  border-color: transparent transparent transparent #4e8abe;
+  border-style: solid none solid solid;
+  border-width: 3px medium 3px 3px;
+  left: 5px;
+}
+.fuelux .datepicker-calendar-header .prev .glyphicon-chevron-left {
+  border-color: transparent #4e8abe transparent transparent;
+  border-style: solid solid solid none;
+  border-width: 3px 3px 3px medium;
+  left: 4px;
+}
+.fuelux .datepicker-calendar-header .title {
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 20px;
+}
+.fuelux .datepicker-calendar-header .title:hover {
+  color: #4e8abe;
+}
+.fuelux .datepicker-calendar-footer {
+  display: none;
+}
+.fuelux .datepicker-calendar-wrapper {
+  border: 1px solid #bbbbbb;
+  width: 224px;
+}
+.fuelux .datepicker-wheels-footer {
+  background: #eee;
+  height: 28px;
+}
+.fuelux .datepicker-wheels-footer .datepicker-wheels-back {
+  box-shadow: none;
+  color: #333;
+  line-height: 17px;
+}
+.fuelux .datepicker-wheels-footer .datepicker-wheels-select {
+  box-shadow: none;
+  line-height: 17px;
+}
+.fuelux .datepicker-wheels-month .header,
+.fuelux .datepicker-wheels-year .header {
+  background: #eee;
+  color: #333;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 27px;
+}
+.fuelux .datepicker-wheels-month ul,
+.fuelux .datepicker-wheels-year ul {
+  height: 167px;
+}
+.fuelux .datepicker-wheels-month ul li.selected button,
+.fuelux .datepicker-wheels-year ul li.selected button,
+.fuelux .datepicker-wheels-month ul li.selected button:hover,
+.fuelux .datepicker-wheels-year ul li.selected button:hover {
+  background: #86c6e4;
+}
+.fuelux .datepicker-wheels-month ul li button,
+.fuelux .datepicker-wheels-year ul li button {
+  color: #555;
+  font-size: 10px;
+  line-height: 20px;
+}
+.fuelux .datepicker-wheels-month ul li button:hover,
+.fuelux .datepicker-wheels-year ul li button:hover {
+  background: #dfeef5;
+}
+.fuelux .loader {
+  color: #468ac5;
+}
+.fuelux .pillbox[data-readonly] > .pill-group > .pill {
+  padding: 4px;
+}
+.fuelux .pillbox > .pill-group > .pill {
+  background: #e5e5e5;
+  border: none;
+  box-shadow: none;
+  padding: 4px 16px 4px 4px;
+}
+.fuelux .pillbox > .pill-group > .pill .glyphicon-close:before {
+  background: #fff;
+  border-radius: 2px;
+  content: " ";
+  display: block;
+  height: 10px;
+  position: absolute;
+  top: -8px;
+  width: 10px;
+}
+.fuelux .pillbox > .pill-group > .pill .glyphicon-close:after {
+  color: #999;
+  content: "\00d7";
+  display: block;
+  height: 10px;
+  position: absolute;
+  top: -11px;
+  width: 10px;
+}
+.fuelux .pillbox > .pill-group > .pill .glyphicon-close:hover {
+  opacity: 1;
+}
+.fuelux .pillbox > .pill-group > .pill .glyphicon-close:hover:after {
+  color: #f13737;
+}
+.fuelux .pillbox .pillbox-input-wrap.editing {
+  border: 1px solid #e5e5e5;
+  margin: 2px;
+}
+.fuelux .pillbox .pillbox-input-wrap.editing input.pillbox-add-item {
+  height: 18px;
+}
+.fuelux .pillbox .pillbox-input-wrap input.pillbox-add-item {
+  height: 17px;
+}
+.fuelux .pillbox .pillbox-more {
+  line-height: 15px;
+}
+.fuelux .placard-cancel {
+  font-size: 10px;
+}
+.fuelux .radio-custom {
+  font-size: 12px;
+  line-height: 20px;
+}
+.fuelux .radio-custom:after {
+  display: none;
+}
+.fuelux .radio-custom:before {
+  border: none;
+  border-radius: 0;
+  content: " ";
+  height: 15px;
+  padding: 0;
+  background: transparent url("../img/form.png") no-repeat 0 -16px;
+  top: 2px;
+  width: 15px;
+}
+.fuelux .radio-custom:hover:before {
+  background: transparent url("../img/form.png") no-repeat -16px -16px;
+}
+.fuelux .radio-custom:hover.checked:before {
+  background: transparent url("../img/form.png") no-repeat -32px -16px;
+}
+.fuelux .radio-custom.checked:before {
+  content: " ";
+  background: transparent url("../img/form.png") no-repeat -48px -16px;
+}
+.fuelux .radio-custom.disabled:before {
+  opacity: 1;
+  background: transparent url("../img/form.png") no-repeat -64px -16px;
+}
+.fuelux .radio-custom.disabled.checked:before {
+  background: transparent url("../img/form.png") no-repeat -80px -16px;
+}
+.fuelux .radio-custom.radio-inline:before {
+  top: 2px;
+}
+.fuelux .radio-custom.radio-inline.highlight:before {
+  top: 6px;
 }
 .fuelux .spinbox {
   border: solid 1px #bbbbbb;
@@ -2640,15 +2954,27 @@ a.list-group-item-danger.active:focus {
   color: #555555;
 }
 .fuelux .spinbox .spinbox-buttons {
-  width: 12px;
+  width: 15px;
   top: -1px;
+  right: 1px;
+}
+.fuelux .spinbox .spinbox-up {
+  height: 10px;
+}
+.fuelux .spinbox .spinbox-up .glyphicon-chevron-up {
+  transform: translate(0.5px, 0.5px);
+}
+.fuelux .spinbox .spinbox-down .glyphicon-chevron-down {
+  top: 1px;
+  transform: translate(1px, 0px);
 }
 .fuelux .spinbox .btn {
-  height: 8px;
+  height: 10px;
   font-size: 7px;
   padding: 0 0 8px 0px;
   box-shadow: none;
-  right: -1px;
+  right: 0px;
+  background: linear-gradient(#ffffff, #eeeeee);
 }
 .fuelux .spinbox.disabled {
   border: 1px solid #cfcfcf;
@@ -2660,10 +2986,310 @@ a.list-group-item-danger.active:focus {
 .fuelux .spinbox.disabled .spinbox-buttons {
   visibility: hidden;
 }
+.fuelux .scheduler .form-group {
+  margin-left: 0px;
+}
+.fuelux .scheduler .row {
+  margin-left: -10px;
+}
+.fuelux .scheduler .inline-form-text {
+  line-height: inherit;
+}
+.fuelux .scheduler .timezone-container {
+  margin-left: 0px;
+}
+.fuelux .scheduler .repeat-days-of-the-week .btn {
+  padding: 4px 10px;
+  border: 1px solid #b5c6d2;
+  color: #4e8abe;
+  background-color: #ffffff;
+  background: -webkit-linear-gradient(#ffffff, #dae5ed);
+  background: -moz-linear-gradient(#ffffff, #dae5ed);
+  background: -o-linear-gradient(#ffffff, #dae5ed);
+  background: linear-gradient(#ffffff, #dae5ed);
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+}
+.fuelux .scheduler .repeat-days-of-the-week .btn:hover {
+  color: #4e8abe;
+  background-color: #f2f9ff;
+  background: -webkit-linear-gradient(#f2f9ff, #c6ddee);
+  background: -moz-linear-gradient(#f2f9ff, #c6ddee);
+  background: -o-linear-gradient(#f2f9ff, #c6ddee);
+  background: linear-gradient(#f2f9ff, #c6ddee);
+}
+.fuelux .scheduler .repeat-days-of-the-week .btn:active {
+  color: #4e8abe;
+  background-color: #d5e4eb;
+  background: -webkit-linear-gradient(#d5e4eb, #deeaf6);
+  background: -moz-linear-gradient(#d5e4eb, #deeaf6);
+  background: -o-linear-gradient(#d5e4eb, #deeaf6);
+  background: linear-gradient(#d5e4eb, #deeaf6);
+}
+.open > .dropdown-toggle.fuelux .scheduler .repeat-days-of-the-week .btn {
+  color: #4e8abe;
+  background-color: #d5e4eb;
+  background: -webkit-linear-gradient(#d5e4eb, #deeaf6);
+  background: -moz-linear-gradient(#d5e4eb, #deeaf6);
+  background: -o-linear-gradient(#d5e4eb, #deeaf6);
+  background: linear-gradient(#d5e4eb, #deeaf6);
+}
+.fuelux .scheduler .repeat-days-of-the-week .btn:visited {
+  color: #4e8abe;
+  text-decoration: none;
+}
+.fuelux .scheduler .repeat-days-of-the-week .btn.disabled,
+.fuelux .scheduler .repeat-days-of-the-week .btn[disabled],
+fieldset[disabled] .fuelux .scheduler .repeat-days-of-the-week .btn,
+.fuelux .scheduler .repeat-days-of-the-week .btn.disabled:hover,
+.fuelux .scheduler .repeat-days-of-the-week .btn[disabled]:hover,
+fieldset[disabled] .fuelux .scheduler .repeat-days-of-the-week .btn:hover,
+.fuelux .scheduler .repeat-days-of-the-week .btn.disabled:focus,
+.fuelux .scheduler .repeat-days-of-the-week .btn[disabled]:focus,
+fieldset[disabled] .fuelux .scheduler .repeat-days-of-the-week .btn:focus,
+.fuelux .scheduler .repeat-days-of-the-week .btn.disabled:active,
+.fuelux .scheduler .repeat-days-of-the-week .btn[disabled]:active,
+fieldset[disabled] .fuelux .scheduler .repeat-days-of-the-week .btn:active,
+.fuelux .scheduler .repeat-days-of-the-week .btn.disabled.active,
+.fuelux .scheduler .repeat-days-of-the-week .btn[disabled].active,
+fieldset[disabled] .fuelux .scheduler .repeat-days-of-the-week .btn.active {
+  background-color: #ffffff;
+  background: -webkit-linear-gradient(#ffffff, #dae5ed);
+  background: -moz-linear-gradient(#ffffff, #dae5ed);
+  background: -o-linear-gradient(#ffffff, #dae5ed);
+  background: linear-gradient(#ffffff, #dae5ed);
+  opacity: 0.5;
+  pointer-events: none;
+}
+.fuelux .scheduler .repeat-days-of-the-week .btn .badge {
+  color: #dae5ed;
+  background: #4e8abe;
+}
+.fuelux .scheduler .repeat-days-of-the-week .btn:active,
+.fuelux .scheduler .repeat-days-of-the-week .btn.active,
+.fuelux .scheduler .repeat-days-of-the-week .btn:focus {
+  background-color: #d5e4eb;
+  background: -webkit-linear-gradient(#d5e4eb, #deeaf6);
+  background: -moz-linear-gradient(#d5e4eb, #deeaf6);
+  background: -o-linear-gradient(#d5e4eb, #deeaf6);
+  background: linear-gradient(#d5e4eb, #deeaf6);
+}
+.fuelux .scheduler .repeat-days-of-the-week .btn.dropdown-toggle .caret {
+  color: #fff;
+}
+.fuelux .scheduler .repeat-days-of-the-week .btn.btn-lg {
+  padding: 6px 10px;
+}
+.fuelux .scheduler .repeat-days-of-the-week .btn.btn-sm,
+.fuelux .scheduler .repeat-days-of-the-week .btn.btn-xs {
+  padding: 2px 8px;
+}
+.fuelux .scheduler .repeat-panel .radio {
+  min-width: 55px;
+}
+.fuelux .scheduler .repeat-yearly .year-month {
+  margin-left: 0;
+}
+.fuelux .scheduler .repeat-yearly-day .year-month {
+  margin-left: 10px;
+}
+.fuelux .scheduler .timezone-container .scheduler-label {
+  min-width: 100px;
+}
+.fuelux .search .form-control {
+  padding-right: 23px;
+}
+.fuelux .search .glyphicon-search:before,
+.fuelux .search .glyphicon-remove:before {
+  content: '';
+}
+.fuelux .search .btn {
+  margin: 1px -28px 0px 4px;
+  background-image: url(../img/search_sprite.png);
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  width: 20px;
+  height: 20px;
+  border: 0;
+  float: left;
+  position: relative;
+  right: 25px;
+  z-index: 100;
+}
+.fuelux .search .btn:hover {
+  background-position: 0 -30px;
+}
+.fuelux .search.disabled .form-control {
+  background: #fff;
+  color: #cfcfcf;
+}
+.fuelux .search.searched .btn {
+  background-position: 0px -60px;
+}
+.fuelux .search.searched .btn {
+  background-position: 0px -90px;
+}
 .fuelux .selectlist .btn {
   background: linear-gradient(#ffffff, #eeeeee);
 }
 .fuelux .selectlist .btn.dropdown-toggle .selected-label {
   padding-right: 4px;
+}
+.fuelux .tree {
+  padding: 10px 10px 10px 10px;
+}
+.fuelux .tree .icon-caret {
+  display: none;
+}
+.fuelux .tree .icon-folder {
+  margin-right: 4px;
+  background: transparent url("../img/treeSprite.png") no-repeat 0 2px;
+  height: 16px;
+  width: 16px;
+}
+.fuelux .tree .tree-item-name:hover {
+  background: #dfeef5;
+  color: #385a6a;
+}
+.fuelux .tree .icon-folder:before {
+  content: '';
+}
+.fuelux .tree .icon-item {
+  margin-right: 4px;
+  background: transparent url("../img/treeSprite.png") no-repeat -48px 2px;
+  height: 16px;
+  width: 16px;
+}
+.fuelux .tree .icon-item:before {
+  content: '';
+}
+.fuelux .tree .tree-item {
+  margin-left: 0;
+}
+.fuelux .tree .tree-branch .tree-branch-children {
+  margin-left: 18px;
+}
+.fuelux .tree .tree-folder-select .tree-branch.tree-selected > .tree-branch-header .tree-branch-name,
+.fuelux .tree .tree-item.tree-selected > .tree-item-name {
+  background: #b9dff1;
+  color: #385b6b;
+}
+.fuelux .tree .tree-item.tree-selected .icon-item {
+  background: transparent url("../img/treeSprite.png") no-repeat -32px 3px;
+}
+.fuelux .tree .tree-open > .tree-branch-header .icon-folder {
+  background: transparent url("../img/treeSprite.png") no-repeat -16px 2px;
+}
+.fuelux .tree.tree-folder-select .icon-caret {
+  display: inline-block;
+}
+.fuelux .tree.tree-folder-select .icon-caret:before {
+  color: #b9dff1;
+}
+.fuelux .tree.tree-folder-select .tree-item {
+  margin-left: 25px;
+}
+.fuelux .wizard {
+  position: relative;
+}
+.fuelux .wizard .actions {
+  background: #f4f5f6;
+  background-image: -webkit-linear-gradient(top, #fafafa, #eeeff1);
+  background-image: linear-gradient(to bottom, #fafafa, #eeeff1);
+  float: none;
+  top: 0;
+}
+.fuelux .wizard .actions .btn-next .glyphicon,
+.fuelux .wizard .actions .btn-prev .glyphicon {
+  display: none;
+}
+.fuelux .wizard .actions .btn-prev {
+  background: none;
+  border: none;
+  box-shadow: none;
+  color: #2168a7;
+}
+.fuelux .wizard .steps {
+  background: #f4f5f6;
+  background-image: -webkit-linear-gradient(top, #fafafa, #eeeff1);
+  background-image: linear-gradient(to bottom, #fafafa, #eeeff1);
+  *zoom: 1;
+}
+.fuelux .wizard .steps:before,
+.fuelux .wizard .steps:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.fuelux .wizard .steps:after {
+  clear: both;
+}
+.fuelux .wizard .steps li {
+  background: #f3f4f5;
+  box-shadow: 0px 0px 0px 1px #fff inset;
+}
+.fuelux .wizard .steps li:before {
+  background: #d4d4d4;
+  bottom: -1px;
+  content: " ";
+  display: block;
+  height: 1px;
+  position: absolute;
+  right: -1px;
+  width: 5px;
+  z-index: 5;
+}
+.fuelux .wizard .steps li.active {
+  color: #5390c4;
+}
+.fuelux .wizard .steps li.active .badge {
+  background: #5390c4;
+}
+.fuelux .wizard .steps li.active .chevron:before {
+  border-color: transparent transparent transparent #fff;
+}
+.fuelux .wizard .steps li.active .chevron:after {
+  border-color: transparent transparent transparent #f1f6fc;
+}
+.fuelux .wizard .steps li.complete {
+  color: #5fb21c;
+}
+.fuelux .wizard .steps li.complete .badge {
+  background: #5fb21c;
+  color: #5fb21c;
+  position: relative;
+}
+.fuelux .wizard .steps li.complete .badge:before {
+  color: #fff;
+  content: "\e013";
+  display: block;
+  font-family: "Glyphicons Halflings";
+  font-size: 10px;
+  left: 4px;
+  position: absolute;
+  top: 4px;
+}
+.fuelux .wizard .steps li.complete .chevron:before {
+  border-color: transparent transparent transparent #fff;
+}
+.fuelux .wizard .steps li.complete .chevron:after {
+  border-color: transparent transparent transparent #f3f4f5;
+}
+.fuelux .wizard .steps li .badge {
+  background: #999;
+  padding: 3px 6px;
+}
+.fuelux .wizard .steps li .chevron:before {
+  border-color: transparent transparent transparent #fff;
+}
+.fuelux .wizard .steps li .chevron:after {
+  border: 24px solid transparent;
+  border-left: 14px solid #f3f4f5;
+  border-right: 0;
+  content: "";
+  display: block;
+  position: absolute;
+  right: 2px;
+  top: -24px;
 }
 /*# sourceMappingURL=fuelux-imhtheme.css.map */
