@@ -1,0 +1,23 @@
+{
+	"name": "fuelux-imhtheme",
+	"version": "2.5.2",
+	"main": [],
+	"ignore": [
+		"**/.*",
+		"_*",
+		"bootstrap",
+		"lib",
+		"node_modules",
+		"sample",
+		"src",
+		"test",
+		"util",
+		"Gruntfile.js",
+		"package.json",
+		"testem.json",
+		"*.html"
+	],
+	"dependencies": {
+		"jquery": ">= 1.9.0"
+	}
+}
