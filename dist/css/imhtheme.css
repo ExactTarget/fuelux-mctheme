@@ -727,7 +727,7 @@ output {
   background: -webkit-linear-gradient(#fefefe, #e0e0e0);
   background: -o-linear-gradient(#fefefe, #e0e0e0);
   background: linear-gradient(#fefefe, #e0e0e0);
-  border-color: 1px solid #bbb;
+  border: 1px solid #bbb;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
 }
@@ -1685,11 +1685,11 @@ table th[class*="col-"] {
   text-align: left;
   border: 1px solid #bbb;
   padding: 4px 7px 4px 7px;
-  background-color: #fdfdfd;
-  background: -webkit-linear-gradient(#fdfdfd, #dee2e4);
-  background: -moz-linear-gradient(#fdfdfd, #dee2e4);
-  background: -o-linear-gradient(#fdfdfd, #dee2e4);
-  background: linear-gradient(#fdfdfd, #dee2e4);
+  background-color: #fefefe;
+  background: -webkit-linear-gradient(#fefefe, #e0e0e0);
+  background: -moz-linear-gradient(#fefefe, #e0e0e0);
+  background: -o-linear-gradient(#fefefe, #e0e0e0);
+  background: linear-gradient(#fefefe, #e0e0e0);
 }
 .btn-dropdown:active,
 .btn-dropdown.active,
