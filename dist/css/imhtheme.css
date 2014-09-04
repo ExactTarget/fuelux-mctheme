@@ -3271,27 +3271,68 @@ fieldset[disabled] .fuelux .scheduler .repeat-days-of-the-week .btn.active {
   padding-right: 4px;
 }
 .fuelux .tree {
-  padding: 10px 10px 10px 10px;
+  padding: 0;
+}
+.fuelux .tree button:focus .tree-label {
+  color: ;
 }
 .fuelux .tree .icon-caret {
   display: none;
+  background: transparent url("../img/accordion_toggle_sprite.png") no-repeat 0px 0px;
+  width: 13px;
+  height: 13px;
+  position: relative;
+  top: -1px;
+  left: 0;
+}
+.fuelux .tree .icon-caret:before {
+  content: '';
+}
+.fuelux .tree .tree-branch-header:hover > .icon-caret {
+  background: transparent url("../img/accordion_toggle_sprite.png") no-repeat -13px 0px;
 }
 .fuelux .tree .icon-folder {
   margin-right: 4px;
-  background: transparent url("../img/treeSprite.png") no-repeat 0 2px;
+  background: transparent url("../img/spritesheet.png") no-repeat -96px 3px;
   height: 16px;
   width: 16px;
 }
-.fuelux .tree .tree-item-name:hover {
-  background: #dfeef5;
-  color: #385a6a;
+.fuelux .tree.tree-folder-select .tree-branch.tree-selected > .tree-branch-header .tree-branch-name:hover,
+.fuelux .tree .tree-branch.tree-selected > .tree-branch-header .tree-branch-name,
+.fuelux .tree.tree-folder-select .tree-branch.tree-selected > .tree-branch-header .tree-branch-name,
+.fuelux .tree .tree-item.tree-selected > .tree-item-name {
+  background: transparent;
+  color: #385b6b;
+}
+.fuelux .tree .tree-selected > .tree-branch-header,
+.fuelux .tree .tree-item.tree-selected {
+  background: #b9dff1;
+}
+.fuelux .tree .tree-branch {
+  margin: 0;
+}
+.fuelux .tree .tree-branch .tree-branch-header {
+  padding: 0 3px 2px 8px;
+  border-radius: 0;
+  line-height: 16px;
+}
+.fuelux .tree .tree-item-name,
+.fuelux .tree .tree-branch-name {
+  line-height: 16px;
+  padding: 2px 0 2px 2px;
+  background: transparent;
+}
+.fuelux .tree .tree-item-name:hover,
+.fuelux .tree .tree-item-name:hover .tree-label {
+  background: transparent;
+  color: #4e8abe;
 }
 .fuelux .tree .icon-folder:before {
   content: '';
 }
 .fuelux .tree .icon-item {
   margin-right: 4px;
-  background: transparent url("../img/treeSprite.png") no-repeat -48px 2px;
+  background: transparent url("../img/spritesheet.png") no-repeat -143px 3px;
   height: 16px;
   width: 16px;
 }
@@ -3300,20 +3341,29 @@ fieldset[disabled] .fuelux .scheduler .repeat-days-of-the-week .btn.active {
 }
 .fuelux .tree .tree-item {
   margin-left: 0;
+  padding: 0 3px 2px 8px;
+  border-radius: 0;
+  line-height: 16px;
 }
 .fuelux .tree .tree-branch .tree-branch-children {
   margin-left: 18px;
 }
-.fuelux .tree .tree-folder-select .tree-branch.tree-selected > .tree-branch-header .tree-branch-name,
-.fuelux .tree .tree-item.tree-selected > .tree-item-name {
-  background: #b9dff1;
-  color: #385b6b;
+.fuelux .tree .tree-branch-header:hover .tree-label {
+  color: #4e8abe;
 }
 .fuelux .tree .tree-item.tree-selected .icon-item {
-  background: transparent url("../img/treeSprite.png") no-repeat -32px 3px;
+  background: transparent url("../img/treeSprite.png") no-repeat -143px 3px;
 }
 .fuelux .tree .tree-open > .tree-branch-header .icon-folder {
   background: transparent url("../img/treeSprite.png") no-repeat -16px 2px;
+}
+.fuelux .tree .tree-open > .tree-branch-header .glyphicon-play {
+  left: 0;
+  transform: none;
+  background: transparent url("../img/accordion_toggle_sprite.png") no-repeat 0px -13px;
+}
+.fuelux .tree .tree-open > .tree-branch-header:hover .glyphicon-play {
+  background-position: -13px -13px;
 }
 .fuelux .tree.tree-folder-select .icon-caret {
   display: inline-block;
