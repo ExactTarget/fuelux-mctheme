@@ -36,11 +36,12 @@
 	}
 
 	&:active,
-	&.active {
+	&.active,
+	&:focus {
 
 		outline: 0;
 		//background-image: none;
-		.box-shadow( 0 3px 3px rgba(0,0,0,.3) inset);
+		.box-shadow( none );
 	}
 
 	&.disabled,
@@ -144,6 +145,8 @@
 									@btn-secondary-bg-press-start; @btn-secondary-bg-press-end;
 									@btn-secondary-bg-disabled-start; @btn-secondary-bg-disabled-end);
 	&:active,&.active,&:focus{
+		color: @btn-secondary-active-color;
+
 		#gradient > .gradient-bg(@btn-secondary-bg-press-start, @btn-secondary-bg-press-end);
 	}
 
