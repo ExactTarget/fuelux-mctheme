@@ -19,15 +19,33 @@
 	<script src="../../bower_components/bootstrap/dist/js/bootstrap.js"></script>
 
 	<script type="text/javascript">
-		$(function(){
-			$('button[data-loading-text]:first').click(function () {
-				var btn = $(this);
-				btn.button('loading');
-				setTimeout(function(){
-					btn.button('reset');
-				}, 3000);
-			});
-		});
+        $(function() {
+            // Tooltip and popover demos
+            $('.tooltip-demo').tooltip({
+                selector: '[data-toggle="tooltip"]',
+                container: 'body'
+            });
+            $('.popover-demo').popover({
+                selector: '[data-toggle="popover"]',
+                container: 'body'
+            });
+
+            // Demos within modals
+            $('.tooltip-test').tooltip();
+            $('.popover-test').popover();
+
+            // Popover demos
+            $('.bs-example-popover').popover();
+
+            // Button state demo
+            $('button[data-loading-text]:first').click(function () {
+                var btn = $(this);
+                btn.button('loading');
+                setTimeout(function(){
+                    btn.button('reset');
+                }, 3000);
+            });
+        });
 	</script>
 </head>
 <body>
@@ -371,7 +389,7 @@
 		</div>
 
 		<h4>Four directions</h4>
-
+        <div class="bs-example popover-demo">
 				<button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
 					Popover on left
 				</button>
@@ -384,6 +402,7 @@
 				<button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
 					Popover on right
 				</button>
+        </div>
 
 		<h1 class="section">Alert messages</h1>
 		<hr class="darker"/>
