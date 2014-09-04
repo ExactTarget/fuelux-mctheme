@@ -19,15 +19,33 @@
 	<script src="../../bower_components/bootstrap/dist/js/bootstrap.js"></script>
 
 	<script type="text/javascript">
-		$(function(){
-			$('button[data-loading-text]:first').click(function () {
-				var btn = $(this);
-				btn.button('loading');
-				setTimeout(function(){
-					btn.button('reset');
-				}, 3000);
-			});
-		});
+        $(function() {
+            // Tooltip and popover demos
+            $('.tooltip-demo').tooltip({
+                selector: '[data-toggle="tooltip"]',
+                container: 'body'
+            });
+            $('.popover-demo').popover({
+                selector: '[data-toggle="popover"]',
+                container: 'body'
+            });
+
+            // Demos within modals
+            $('.tooltip-test').tooltip();
+            $('.popover-test').popover();
+
+            // Popover demos
+            $('.bs-example [data-toggle="popover"]').popover();
+
+            // Button state demo
+            $('button[data-loading-text]:first').click(function () {
+                var btn = $(this);
+                btn.button('loading');
+                setTimeout(function(){
+                    btn.button('reset');
+                }, 3000);
+            });
+        });
 	</script>
 </head>
 <body>
@@ -74,7 +92,7 @@
 								<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
 
 								<h4>Popover in a modal</h4>
-								<p>This <a href="#" role="button" class="btn btn-default popover-test" title="A Title" data-content="And here's some amazing content. It's very engaging. right?">button</a> should trigger a popover on click.</p>
+								<p>This <button role="button" class="btn btn-default popover-test" title="A Title" data-content="And here's some amazing content. It's very engaging. right?">button</button> should trigger a popover on click.</p>
 
 								<h4>Tooltips in a modal</h4>
 								<p><a href="#" class="tooltip-test" title="Tooltip">This link</a> and <a href="#" class="tooltip-test" title="Tooltip">that link</a> should have tooltips on hover.</p>
@@ -367,11 +385,11 @@
 
 		<h3>Live demo</h3>
 		<div class="bs-example" style="padding-bottom: 24px;">
-			<a href="#" class="btn btn-lg btn-danger" data-toggle="popover" title="A Title" data-content="And here's some amazing content. It's very engaging. right?" role="button">Click to toggle popover</a>
+			<button class="btn btn-lg btn-danger" data-toggle="popover" title="A Title" data-content="And here's some amazing content. It's very engaging. right?" role="button">Click to toggle popover</button>
 		</div>
 
 		<h4>Four directions</h4>
-
+        <div class="bs-example popover-demo">
 				<button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
 					Popover on left
 				</button>
@@ -379,11 +397,12 @@
 					Popover on top
 				</button>
 				<button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-					Popover on bottom
+                    Popover on bottom
 				</button>
 				<button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
 					Popover on right
 				</button>
+        </div>
 
 		<h1 class="section">Alert messages</h1>
 		<hr class="darker"/>
