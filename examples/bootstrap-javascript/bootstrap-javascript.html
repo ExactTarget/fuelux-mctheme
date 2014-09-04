@@ -35,7 +35,7 @@
             $('.popover-test').popover();
 
             // Popover demos
-            $('.bs-example-popover').popover();
+            $('.bs-example [data-toggle="popover"]').popover();
 
             // Button state demo
             $('button[data-loading-text]:first').click(function () {
@@ -385,7 +385,7 @@
 
 		<h3>Live demo</h3>
 		<div class="bs-example" style="padding-bottom: 24px;">
-			<a href="#" class="btn btn-lg btn-danger" data-toggle="popover" title="A Title" data-content="And here's some amazing content. It's very engaging. right?" role="button">Click to toggle popover</a>
+			<button class="btn btn-lg btn-danger" data-toggle="popover" title="A Title" data-content="And here's some amazing content. It's very engaging. right?" role="button">Click to toggle popover</button>
 		</div>
 
 		<h4>Four directions</h4>
@@ -397,7 +397,7 @@
 					Popover on top
 				</button>
 				<button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-					Popover on bottom
+                    Popover on bottom
 				</button>
 				<button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
 					Popover on right
