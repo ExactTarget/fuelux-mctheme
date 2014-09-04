@@ -1,63 +1,142 @@
-.tree {
-	padding: 10px 10px 10px 10px;
+// * {
+// 	outline: 1px solid red;
+// }
 
+.tree {
+	padding: 0;
+
+	// * {
+	// 	outline: 1px solid red;
+	// }
+
+	button:focus .tree-label {
+		color: inherit;
+	}
+
+	.tree-label {
+		line-height: 18px;
+	}
+
+	li {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	// ICONS - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 	.icon-caret {
 		display: none;
+		.sprite(-176px, 0);
+		width: 13px;
+		height: 13px;
+	}
+
+	.icon-caret:before, &.tree-folder-select .tree-branch-header .icon-caret:before {
+		font-size: 0px;
+	}
+
+	.tree-branch-header > .icon-caret:hover {
+		.sprite(-192px, 0);
 	}
 
 	.icon-folder {
 		margin-right: 4px;
-		background: transparent url("../img/treeSprite.png") no-repeat 0 2px;
-		height: 16px;
+		.sprite(-96px, -2px);
+		height: 12px;
 		width: 16px;
 	}
 
-	.tree-item-name:hover {
-		background: #dfeef5;
-		color: darken(#385b6b, .2);
+	// SELECTED - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+	&.tree-folder-select .tree-branch.tree-selected > .tree-branch-header .tree-branch-name:hover,
+	.tree-branch.tree-selected > .tree-branch-header .tree-branch-name,
+	&.tree-folder-select .tree-branch.tree-selected > .tree-branch-header .tree-branch-name,
+	.tree-item.tree-selected > .tree-item-name {
+		background: transparent;
+		color: #385b6b;
+	}
+
+	.tree-selected > .tree-branch-header, 
+	.tree-item.tree-selected {
+		background: @blue-light;
+	}
+
+	// text and icon alignment - - - - - - - - - - - - - - - - - - - - - - - - -
+	.tree-branch {
+		margin: 0;
+	}
+
+	.tree-branch .tree-branch-header, .tree-item {
+		padding: 0 3px 0px 8px;
+		border-radius: 0;
+		line-height: 16px;
+	}
+
+	.tree-item-name, .tree-branch-name {
+		line-height: 16px;
+		padding: 0px 0 0px 2px;
+		background: transparent;
+	}
+
+	.tree-item-name:hover, 
+	.tree-item-name:hover .tree-label {
+		background: transparent;
+		color: @brand-primary;
 	}
 
 	.icon-folder:before {
-		content: '';
+		font-size: 0px;
 	}
 
 	.icon-item {
 		margin-right: 4px;
-		background: transparent url("../img/treeSprite.png") no-repeat -48px 2px;
-		// background: transparent url("../img/treeSprite.png") no-repeat -66px -2px; //hover
-		height: 16px;
+		.sprite(-143px, -2px);
+		height: 12px;
 		width: 16px;
 	}
 
 	.icon-item:before {
-		content: '';
+		font-size: 0px;
 	}
 
 	.tree-item {
 		margin-left: 0;
+		padding: 0 3px 2px 8px;
+		border-radius: 0;
+		line-height: 16px;
 	}
 
 	.tree-branch {
+
 		.tree-branch-children {
 			margin-left: 18px;
 		}
 	}
 
-		.tree-folder-select .tree-branch.tree-selected > .tree-branch-header .tree-branch-name,
-		.tree-item.tree-selected > .tree-item-name {
-			background: @blue-light;
-			color: #385b6b;
+	.tree-branch-header:hover .tree-label {
+		color: @brand-primary;
 	}
 
-
+	.tree-item:hover .icon-item {
+		background-position: -159px -2px; // entity dot hover
+	}
 
 	.tree-item.tree-selected .icon-item {
-		background: transparent url("../img/treeSprite.png") no-repeat -32px 3px; // selected
+		background-position: -128px -1px; // entity dot selected
 	}
+
 
 	.tree-open {
 		& > .tree-branch-header .icon-folder {
-			background: transparent url("../img/treeSprite.png") no-repeat -16px 2px;
+			.sprite(-112px, -2px);
+		}
+
+		& > .tree-branch-header .icon-caret {
+			left: 0;
+			transform: none;
+			.sprite(-176px, -16px);
+		}
+
+		& > .tree-branch-header .icon-caret:hover {
+			.sprite(-192px, -16px);
 		}
 	}
 
@@ -71,7 +150,7 @@
 		}
 
 		.tree-item {
-			margin-left: 25px;
+			margin-left: 16px;
 		}
 	}
 

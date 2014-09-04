@@ -1,47 +1,60 @@
 .search {
-
-	.form-control {
-		padding-right: 23px;
-	}
-
-	.glyphicon-search:before, .glyphicon-remove:before {
-		content: '';
-	}
-
-	.btn {
-		margin: 1px -28px 0px 4px;
-		background-image: url(../img/search_sprite.png);
-		background-repeat: no-repeat;
-		background-position: 0px 0px;
-		width: 20px;
-		height: 20px;
-		border: 0;
-		float: left;
-		position: relative;
-		right: 25px;
-		z-index: 100;
-	}
-
-	.btn:hover {
-		background-position: 0 -30px;
-	}
+	background: #fff;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	.box-shadow(inset 0 1px 1px rgba(0,0,0,.075));
 
 	&.disabled {
-		.form-control {
-			background: #fff;
+		background: @disabled-background;
+		color: #cfcfcf;
+	}
+
+	&.searched .input-group-btn button {
+		&:hover .glyphicon {
+			.sprite(-171px, -35px);
+		}
+
+		.glyphicon {
+			.sprite(-147px, -35px);
+		}
+	}
+
+	input.form-control {
+		background: none;
+		border: none;
+		box-shadow: none;
+
+		&[disabled] {
 			color: #cfcfcf;
 		}
 	}
 
-	&.searched {
-		.btn {
-			background-position: 0px -60px;
-		}
-		.btn {
-			background-position: 0px -90px;
+	.input-group-btn {
+		background: none;
+		border: none;
+		border-radius: 0 4px 4px 0;
+
+		button {
+			background: none;
+			border: none;
+			padding: 0 2px;
+
+			&:hover {
+				.glyphicon {
+					.sprite(-123px, -35px);
+				}
+			}
+
+			.glyphicon {
+				background: red;
+				height: 17px;
+				.sprite(-99px, -35px);
+				width: 17px;
+
+				&:before {
+					display: none;
+				}
+			}
 		}
 	}
-
-
-
 }
