@@ -137,8 +137,11 @@ module.exports = function (grunt) {
 		},
 		watch: {
 			full: {
-			files: ['less/**'],
-			tasks: ['distcss']
+				files: ['less/**'],
+				options: {
+					livereload: true,
+				},
+				tasks: ['distcss']
 			}
 		}
 	});
@@ -167,7 +170,6 @@ module.exports = function (grunt) {
 	/* -------------
 			SERVE
 		------------- */
-		grunt.registerTask('serve', ['dist', 'connect:server', 'watch:full']);
-		grunt.registerTask('servecss', ['connect:server', 'watch:css']);
+	grunt.registerTask('serve', ['dist', 'connect:server', 'watch:full']);
 
 };
