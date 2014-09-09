@@ -3,15 +3,16 @@
 .progress {
 	#gradient > .gradient-bg(#f5f5f5, #dbdbdb);
 	height: @progress-bar-height;
-	border-radius: @progress-bar-height/2;
+	border-radius: @progress-bar-height;
 	border: 1px solid #d1d1d1;
+	border-bottom-color: #BBB;
 	.box-shadow(0 1px 1px rgba(0,0,0,0.15));
 	position: relative;
 	margin-bottom: 0;
 
 	&.progress-sm {
 		height: @progress-bar-height-sm;
-		border-radius: @progress-bar-height-sm/2;
+		border-radius: @progress-bar-height-sm;
 	}
 }
 
