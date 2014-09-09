@@ -25,7 +25,7 @@
 	// ICONS - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 	.icon-caret {
 		display: none;
-		background: transparent url("../img/spritesheet.png") no-repeat -176px 0px;	// gray caret
+		.sprite(-176px, 0);
 		width: 13px;
 		height: 13px;
 	}
@@ -35,12 +35,12 @@
 	}
 
 	.tree-branch-header > .icon-caret:hover {
-		background: transparent url("../img/spritesheet.png") no-repeat -192px 0px;	// blue caret
+		.sprite(-192px, 0);
 	}
 
 	.icon-folder {
 		margin-right: 4px;
-		background: transparent url("../img/spritesheet.png") no-repeat -96px -2px;	// closed folder
+		.sprite(-96px, -2px);
 		height: 12px;
 		width: 16px;
 	}
@@ -88,7 +88,7 @@
 
 	.icon-item {
 		margin-right: 4px;
-		background: transparent url("../img/spritesheet.png") no-repeat -143px -2px;	// entity dot
+		.sprite(-143px, -2px);
 		height: 12px;
 		width: 16px;
 	}
@@ -126,17 +126,17 @@
 
 	.tree-open {
 		& > .tree-branch-header .icon-folder {
-			background: transparent url("../img/spritesheet.png") no-repeat -112px -2px;	//open folder
+			.sprite(-112px, -2px);
 		}
 
 		& > .tree-branch-header .icon-caret {
 			left: 0;
 			transform: none;
-			background: transparent url("../img/spritesheet.png") no-repeat -176px -16px;	//open caret (down)
+			.sprite(-176px, -16px);
 		}
 
 		& > .tree-branch-header .icon-caret:hover {
-			background-position: -192px -16px;	// open caret blue hover
+			.sprite(-192px, -16px);
 		}
 	}
 

@@ -3,6 +3,12 @@
 		&-header, &-items {
 			border: none;
 
+			tr {
+				&:focus {
+					outline: 1px dotted #66afe9;
+				}
+			}
+
 			tr td {
 				text-align: left;
 			}
@@ -20,6 +26,17 @@
 						background-image: -webkit-linear-gradient(top, #e8ecee, #dee8eb);
 						background-image: linear-gradient(to bottom, #e8ecee, #dee8eb);
 					}
+
+					.glyphicon {
+						display: block;
+						height: 0;
+						margin-top: 5px;
+						width: 0;
+
+						&:before {
+							display: none;
+						}
+					}
 				}
 
 				&.sorted,
@@ -27,11 +44,21 @@
 					background: #d6e2e6;
 					background-image: -webkit-linear-gradient(top, #e8ecee, #cadde3);
 					background-image: linear-gradient(to bottom, #e8ecee, #cadde3);
-				}
 
-				&.sorted {
 					.glyphicon {
-						color: #45514f;
+						&.glyphicon-chevron {
+							&-down {
+								border-width: 5px 5px 0 5px;
+								border-color: #45514f transparent transparent transparent;
+								border-style: solid;
+							}
+
+							&-up {
+								border-width: 0 5px 5px 5px;
+								border-color: transparent transparent #45514f transparent;
+								border-style: solid;
+							}
+						}
 					}
 				}
 			}
