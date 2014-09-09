@@ -1,7 +1,35 @@
+.btn-panel {
+	border: 1px solid #ddd;
+	border-top: none;
+	background: #f6f6f6;
+	padding: 20px;
+}
 
-#MyInfiniteScrollContainer .infinitescroll {
-	height: 200px;
+.thin-box {
+	border: 1px solid #ddd;
+	padding: 20px 20px;
+}
+
+#loaderWrapper .loader {
 	float: left;
-	margin-bottom: 20px;
-	border: solid 1px #bbbbbb;
+	margin-right: 20px;
+}
+
+#mainWrapper {
+	padding-bottom: 40px;
+}
+
+#myInfiniteScroll1, #myInfiniteScroll2 {
+	border: 1px solid #ddd;
+	float: left;
+	height: 200px;
+	width: 45%;
+}
+
+#myInfiniteScroll2 {
+	float: right;
+}
+
+#myPlacard1, #myPlacard2, #myPlacard3 {
+	width: 300px;
 }
