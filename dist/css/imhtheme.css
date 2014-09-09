@@ -727,7 +727,7 @@ output {
   background: -webkit-linear-gradient(#fefefe, #e0e0e0);
   background: -o-linear-gradient(#fefefe, #e0e0e0);
   background: linear-gradient(#fefefe, #e0e0e0);
-  border-color: 1px solid #bbb;
+  border: 1px solid #bbb;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
 }
@@ -1699,11 +1699,11 @@ table th[class*="col-"] {
   text-align: left;
   border: 1px solid #bbb;
   padding: 4px 7px 4px 7px;
-  background-color: #fdfdfd;
-  background: -webkit-linear-gradient(#fdfdfd, #dee2e4);
-  background: -moz-linear-gradient(#fdfdfd, #dee2e4);
-  background: -o-linear-gradient(#fdfdfd, #dee2e4);
-  background: linear-gradient(#fdfdfd, #dee2e4);
+  background-color: #fefefe;
+  background: -webkit-linear-gradient(#fefefe, #e0e0e0);
+  background: -moz-linear-gradient(#fefefe, #e0e0e0);
+  background: -o-linear-gradient(#fefefe, #e0e0e0);
+  background: linear-gradient(#fefefe, #e0e0e0);
 }
 .btn-dropdown:active,
 .btn-dropdown.active,
@@ -3285,49 +3285,108 @@ fieldset[disabled] .fuelux .scheduler .repeat-days-of-the-week .btn.active {
   padding-right: 4px;
 }
 .fuelux .tree {
-  padding: 10px 10px 10px 10px;
+  padding: 0;
+}
+.fuelux .tree button:focus .tree-label {
+  color: inherit;
+}
+.fuelux .tree .tree-label {
+  line-height: 18px;
+}
+.fuelux .tree li {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .fuelux .tree .icon-caret {
   display: none;
+  background: transparent url("../img/spritesheet.png") no-repeat -176px 0px;
+  width: 13px;
+  height: 13px;
+}
+.fuelux .tree .icon-caret:before,
+.fuelux .tree.tree-folder-select .tree-branch-header .icon-caret:before {
+  font-size: 0px;
+}
+.fuelux .tree .tree-branch-header > .icon-caret:hover {
+  background: transparent url("../img/spritesheet.png") no-repeat -192px 0px;
 }
 .fuelux .tree .icon-folder {
   margin-right: 4px;
-  background: transparent url("../img/treeSprite.png") no-repeat 0 2px;
-  height: 16px;
+  background: transparent url("../img/spritesheet.png") no-repeat -96px -2px;
+  height: 12px;
   width: 16px;
 }
-.fuelux .tree .tree-item-name:hover {
-  background: #dfeef5;
-  color: #385a6a;
+.fuelux .tree.tree-folder-select .tree-branch.tree-selected > .tree-branch-header .tree-branch-name:hover,
+.fuelux .tree .tree-branch.tree-selected > .tree-branch-header .tree-branch-name,
+.fuelux .tree.tree-folder-select .tree-branch.tree-selected > .tree-branch-header .tree-branch-name,
+.fuelux .tree .tree-item.tree-selected > .tree-item-name {
+  background: transparent;
+  color: #385b6b;
+}
+.fuelux .tree .tree-selected > .tree-branch-header,
+.fuelux .tree .tree-item.tree-selected {
+  background: #b9dff1;
+}
+.fuelux .tree .tree-branch {
+  margin: 0;
+}
+.fuelux .tree .tree-branch .tree-branch-header,
+.fuelux .tree .tree-item {
+  padding: 0 3px 0px 8px;
+  border-radius: 0;
+  line-height: 16px;
+}
+.fuelux .tree .tree-item-name,
+.fuelux .tree .tree-branch-name {
+  line-height: 16px;
+  padding: 0px 0 0px 2px;
+  background: transparent;
+}
+.fuelux .tree .tree-item-name:hover,
+.fuelux .tree .tree-item-name:hover .tree-label {
+  background: transparent;
+  color: #4e8abe;
 }
 .fuelux .tree .icon-folder:before {
-  content: '';
+  font-size: 0px;
 }
 .fuelux .tree .icon-item {
   margin-right: 4px;
-  background: transparent url("../img/treeSprite.png") no-repeat -48px 2px;
-  height: 16px;
+  background: transparent url("../img/spritesheet.png") no-repeat -143px -2px;
+  height: 12px;
   width: 16px;
 }
 .fuelux .tree .icon-item:before {
-  content: '';
+  font-size: 0px;
 }
 .fuelux .tree .tree-item {
   margin-left: 0;
+  padding: 0 3px 2px 8px;
+  border-radius: 0;
+  line-height: 16px;
 }
 .fuelux .tree .tree-branch .tree-branch-children {
   margin-left: 18px;
 }
-.fuelux .tree .tree-folder-select .tree-branch.tree-selected > .tree-branch-header .tree-branch-name,
-.fuelux .tree .tree-item.tree-selected > .tree-item-name {
-  background: #b9dff1;
-  color: #385b6b;
+.fuelux .tree .tree-branch-header:hover .tree-label {
+  color: #4e8abe;
+}
+.fuelux .tree .tree-item:hover .icon-item {
+  background-position: -159px -2px;
 }
 .fuelux .tree .tree-item.tree-selected .icon-item {
-  background: transparent url("../img/treeSprite.png") no-repeat -32px 3px;
+  background-position: -128px -1px;
 }
 .fuelux .tree .tree-open > .tree-branch-header .icon-folder {
-  background: transparent url("../img/treeSprite.png") no-repeat -16px 2px;
+  background: transparent url("../img/spritesheet.png") no-repeat -112px -2px;
+}
+.fuelux .tree .tree-open > .tree-branch-header .icon-caret {
+  left: 0;
+  transform: none;
+  background: transparent url("../img/spritesheet.png") no-repeat -176px -16px;
+}
+.fuelux .tree .tree-open > .tree-branch-header .icon-caret:hover {
+  background-position: -192px -16px;
 }
 .fuelux .tree.tree-folder-select .icon-caret {
   display: inline-block;
@@ -3336,7 +3395,7 @@ fieldset[disabled] .fuelux .scheduler .repeat-days-of-the-week .btn.active {
   color: #b9dff1;
 }
 .fuelux .tree.tree-folder-select .tree-item {
-  margin-left: 25px;
+  margin-left: 16px;
 }
 .fuelux .wizard {
   position: relative;
