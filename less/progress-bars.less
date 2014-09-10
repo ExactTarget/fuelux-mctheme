@@ -33,7 +33,7 @@
 //Progress bar
 //
 .progress-bar {
-	#gradient > .gradient-bg(lighten(@progress-bar-bg, 30%), @progress-bar-bg);
+	#gradient > .gradient-bg(@brand-primary-medium-light, @brand-primary-medium);
 	.box-shadow(0 0 0 rgba(0,0,0,0.15));
 	//texts on progress bar
 	font-size: 9px;
@@ -55,30 +55,30 @@
 //
 
 .progress-bar-info {
-	.progress-bar-variant(@progress-bar-info-bg);
+	.progress-bar-variant(@progress-bar-info-bg-dark, @progress-bar-info-bg-light);
 	&.progress-bar-striped {
-		#gradient > .striped(@progress-bar-info-bg);
+		#gradient > .striped(@progress-bar-info-bg-dark);
 	}
 }
 
 .progress-bar-success {
-	.progress-bar-variant(@progress-bar-success-bg);
+	.progress-bar-variant(@progress-bar-success-bg-dark, @progress-bar-success-bg-light);
 	&.progress-bar-striped {
-		#gradient > .striped(@progress-bar-success-bg);
+		#gradient > .striped(@progress-bar-success-bg-dark);
 	}
 }
 
 .progress-bar-warning {
-	.progress-bar-variant(@progress-bar-warning-bg);
+	.progress-bar-variant(@progress-bar-warning-bg-dark, @progress-bar-warning-bg-light);
 	&.progress-bar-striped {
-		#gradient > .striped(@progress-bar-warning-bg);
+		#gradient > .striped(@progress-bar-warning-bg-dark);
 	}
 }
 
 .progress-bar-danger {
-	.progress-bar-variant(@progress-bar-danger-bg);
+	.progress-bar-variant(@progress-bar-danger-bg-dark, @progress-bar-danger-bg-light);
 	&.progress-bar-striped {
-		#gradient > .striped(@progress-bar-danger-bg);
+		#gradient > .striped(@progress-bar-danger-bg-dark);
 	}
 }
 

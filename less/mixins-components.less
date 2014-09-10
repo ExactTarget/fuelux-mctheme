@@ -36,8 +36,8 @@
 
 //Progress bars
 //
-.progress-bar-variant(@color) {
-	#gradient > .gradient-bg(lighten(@color, 30%), @color);
+.progress-bar-variant(@dark-color, @light-color) {
+	#gradient > .gradient-bg(@light-color, @dark-color);
 }
 
 .progress-bar-variant-striped(@color) {

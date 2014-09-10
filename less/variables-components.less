@@ -1,5 +1,5 @@
 //Nav bars
-@nav-link-hover-bg: #b4dff0;
+@nav-link-hover-bg: @brand-primary-medium-light;
 
 //Progress bars
 //
@@ -12,15 +12,20 @@
 @progress-bar-color:          #fff;
 
 //** Default progress bar color
-@progress-bar-bg:             @brand-primary;
+@progress-bar-bg-dark:          #5fa8d0;
+@progress-bar-bg-light:         #e9f4fb;
 //** Success progress bar color
-@progress-bar-success-bg:     #72b257;
+@progress-bar-success-bg-dark:  #66b762;
+@progress-bar-success-bg-light: #ddedd5;
 //** Warning progress bar color
-@progress-bar-warning-bg:     #e8833c;
+@progress-bar-warning-bg-dark:  #fc8441;
+@progress-bar-warning-bg-light: #fde7d9;
 //** Danger progress bar color
-@progress-bar-danger-bg:      @brand-danger;
+@progress-bar-danger-bg-dark:   @brand-danger-dark;
+@progress-bar-danger-bg-light:  @brand-danger-light;
 //** Info progress bar color
-@progress-bar-info-bg:        #589ed6;
+@progress-bar-info-bg-dark:     @progress-bar-bg-dark;
+@progress-bar-info-bg-light:    @progress-bar-bg-light;
 
 //Panels
 //
@@ -33,8 +38,8 @@
 @panel-default-heading-bg:    #f0f2f3;
 
 @panel-primary-text:          #fff;
-@panel-primary-border:        @brand-primary;
-@panel-primary-heading-bg:    @brand-primary;
+@panel-primary-border:        @brand-primary-medium;
+@panel-primary-heading-bg:    @brand-primary-medium;
 
 @panel-success-text:          @state-success-text;
 @panel-success-border:        @state-success-border;
