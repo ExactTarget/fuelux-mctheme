@@ -5,33 +5,43 @@
 .tree {
 	padding: 0;
 
+	// * {
+	// 	outline: 1px solid red;
+	// }
+
 	button:focus .tree-label {
-		color: ;
+		color: inherit;
+	}
+
+	.tree-label {
+		line-height: 18px;
+	}
+
+	li {
+		margin-top: 0;
+		margin-bottom: 0;
 	}
 
 	// ICONS - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 	.icon-caret {
 		display: none;
-		background: transparent url("../img/accordion_toggle_sprite.png") no-repeat 0px 0px;
+		.sprite(-176px, 0);
 		width: 13px;
 		height: 13px;
-		position: relative;
-		top: -1px;
-		left: 0;
 	}
 
-	.icon-caret:before {
-		content: '';
+	.icon-caret:before, &.tree-folder-select .tree-branch-header .icon-caret:before {
+		font-size: 0px;
 	}
 
-	.tree-branch-header:hover > .icon-caret {
-		background: transparent url("../img/accordion_toggle_sprite.png") no-repeat -13px 0px;
+	.tree-branch-header > .icon-caret:hover {
+		.sprite(-192px, 0);
 	}
 
 	.icon-folder {
 		margin-right: 4px;
-		background: transparent url("../img/spritesheet.png") no-repeat -96px 3px;
-		height: 16px;
+		.sprite(-96px, -2px);
+		height: 12px;
 		width: 16px;
 	}
 
@@ -54,15 +64,15 @@
 		margin: 0;
 	}
 
-	.tree-branch .tree-branch-header {
-		padding: 0 3px 2px 8px;
+	.tree-branch .tree-branch-header, .tree-item {
+		padding: 0 3px 0px 8px;
 		border-radius: 0;
 		line-height: 16px;
 	}
 
 	.tree-item-name, .tree-branch-name {
 		line-height: 16px;
-		padding: 2px 0 2px 2px;
+		padding: 0px 0 0px 2px;
 		background: transparent;
 	}
 
@@ -73,18 +83,18 @@
 	}
 
 	.icon-folder:before {
-		content: '';
+		font-size: 0px;
 	}
 
 	.icon-item {
 		margin-right: 4px;
-		background: transparent url("../img/spritesheet.png") no-repeat -143px 3px;
-		height: 16px;
+		.sprite(-143px, -2px);
+		height: 12px;
 		width: 16px;
 	}
 
 	.icon-item:before {
-		content: '';
+		font-size: 0px;
 	}
 
 	.tree-item {
@@ -105,24 +115,28 @@
 		color: @brand-primary-medium;
 	}
 
+	.tree-item:hover .icon-item {
+		background-position: -159px -2px; // entity dot hover
+	}
 
 	.tree-item.tree-selected .icon-item {
-		background: transparent url("../img/treeSprite.png") no-repeat -143px 3px; // selected
+		background-position: -128px -1px; // entity dot selected
 	}
+
 
 	.tree-open {
 		& > .tree-branch-header .icon-folder {
-			background: transparent url("../img/treeSprite.png") no-repeat -16px 2px;
+			.sprite(-112px, -2px);
 		}
 
-		& > .tree-branch-header .glyphicon-play {
+		& > .tree-branch-header .icon-caret {
 			left: 0;
 			transform: none;
-			background: transparent url("../img/accordion_toggle_sprite.png") no-repeat 0px -13px;
+			.sprite(-176px, -16px);
 		}
 
-		& > .tree-branch-header:hover .glyphicon-play {
-			background-position: -13px -13px;
+		& > .tree-branch-header .icon-caret:hover {
+			.sprite(-192px, -16px);
 		}
 	}
 
@@ -136,7 +150,7 @@
 		}
 
 		.tree-item {
-			margin-left: 25px;
+			margin-left: 16px;
 		}
 	}
 

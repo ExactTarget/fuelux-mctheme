@@ -41,7 +41,7 @@
 
 		outline: 0;
 		//background-image: none;
-		.box-shadow( none );
+		.box-shadow( 0 3px 3px rgba(0,0,0,.1) inset);
 	}
 
 	&.disabled,
@@ -64,15 +64,37 @@
 // --------------------------------------------------
 
 .btn-default {
+	//because this button has 1px border, padding needs to be adjusted
 	//padding + border = 5px
-	border: 1px solid @btn-default-border;
 	padding: 4px 10px;
+	border: 1px solid @btn-default-border;
 	.button-variant(@btn-default-color;
-									@btn-default-bg; @btn-default-bg;
-									@btn-default-bg-hover; @btn-default-bg-hover;
-									@btn-default-bg-press; @btn-default-bg-press;
-									@btn-default-bg-disabled; @btn-default-bg-disabled);
+									@btn-default-bg-start; @btn-default-bg-end;
+									@btn-default-bg-hover-start; @btn-default-bg-hover-end;
+									@btn-default-bg-press-start; @btn-default-bg-press-end;
+									@btn-default-bg-disabled-start; @btn-default-bg-disabled-end);
+	&:active,&.active,&:focus{
+		#gradient > .gradient-bg(@btn-default-bg-press-start, @btn-default-bg-press-end);
+		color: @btn-default-color;
+	}
+
+	&.dropdown-toggle .caret {
+		color: #fff;
+	}
+
+	&.btn-lg {
+		//padding + border = 7px
+		padding: 6px 10px;
+	}
+
+	&.btn-sm,
+	&.btn-xs
+	{
+		//padding + border = 3px
+		padding: 2px 8px;
+	}
 }
+
 .btn-primary {
 	//.button-variant(@btn-primary-color; @btn-primary-bg; @btn-primary-bg-hover; @btn-primary-bg-press; @btn-primary-bg-disabled);
 
@@ -93,7 +115,7 @@
 	}
 
 	//For create button
-	&.create-btn{
+	&.btn-create{
 		height: 21px;
 		border-radius: 10.5px;
 		padding: 5px 10px 5px 4px;
@@ -162,7 +184,6 @@
 	&.btn-sm,
 	&.btn-xs
 	{
-		//padding + border = 3px
 		padding: 2px 8px;
 	}
 }
@@ -258,6 +279,7 @@
 
 .btn-lg {
 	.button-size( 7px; 10px; @font-size-large; @border-radius-large);
+	font-weight: bold;
 }
 .btn-sm,
 .btn-xs
@@ -286,5 +308,40 @@ input[type="button"] {
 	&.btn-block {
 		width: 100%;
 	}
+}
+
+// Checkmark Toggle Button Groups
+// --------------------------------------------------
+
+.btn-group-check-toggle {
+	span {
+		font-size: 0;
+	}
+
+	label.active {
+		background: none;
+		background-color: #4e8abe; // light blue
+		color: #fff;
+
+		span {
+			font-size: inherit;
+		}
+
+	}
+
+}
+
+.btn-group-switch {
+	label.active:first-child {
+		background: none;
+		background-color: #7fc75f;
+	}
+
+	label.active:last-child {
+		color: #fff;
+		background: none;
+		background-color: #f76c6c;
+	}
+
 }
 

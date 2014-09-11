@@ -49,14 +49,6 @@ input[type="search"] {
 //  .box-sizing(border-box);
 }
 
-// Position radios and checkboxes better
-input[type="radio"],
-input[type="checkbox"] {
-	margin: 4px 0 0;
-	margin-top: 1px \9; // IE8-9
-	line-height: normal;
-}
-
 // Set the height of file controls to match text inputs
 input[type="file"] {
 	display: block;
@@ -160,10 +152,12 @@ output {
 	// don't honor that edge case; we style them as disabled anyway.
 	&[disabled],
 	&[readonly],
-	fieldset[disabled] & {
+	fieldset[disabled] &,
+	&[disabled] .select-bg {
 		cursor: not-allowed;
 		background-color: @input-bg-disabled;
 		opacity: 1; // iOS fix for unreadable disabled content
+		color: #555;
 	}
 
 	// Reset height for `textarea`s
@@ -240,6 +234,15 @@ input[type="month"] {
 //
 // Indent the labels to position radios/checkboxes as hanging controls.
 
+// Position radios and checkboxes better
+input[type="radio"],
+input[type="checkbox"] {
+	margin: 4px 0 0;
+	margin-top: 1px \9; // IE8-9
+	line-height: normal;
+	top: -2px;
+}
+
 .radio,
 .checkbox {
 	position: relative;
@@ -284,6 +287,21 @@ input[type="month"] {
 	margin-top: 0;
 	margin-left: 10px; // space out consecutive inline controls
 }
+
+.checkbox-inline {
+	input[type="checkbox"] {
+		position: static;
+		margin-right: 5px;
+	}
+}
+
+.radio-inline {
+	input[type="radio"] {
+		position: static;
+		margin-right: 5px;
+	}
+}
+
 
 // Apply same disabled cursor tweak as for inputs
 // Some special care is needed because <label>s don't inherit their parent's `cursor`.

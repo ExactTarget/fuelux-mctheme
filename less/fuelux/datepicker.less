@@ -2,20 +2,29 @@
 	&:hover {
 		.dropdown-toggle {
 			background: transparent;
-			border-color: #ccc;
 
 			.glyphicon-calendar {
-				.sprite(-112px, -1px);
+				.sprite(-112px, -17px);
 			}
 		}
 	}
 
+	&.disabled {
+		background: @disabled-background;
+	}
+
 	input.form-control {
-		border-right: none;
+		background: none;
+		border: none;
+		box-shadow: none;
+
+		&[disabled] {
+			color: #cfcfcf;
+		}
 	}
 
 	.dropdown-toggle {
-		border-left: none;
+		border: none;
 		padding: 2px 2px 0;
 
 		&:focus {
@@ -27,23 +36,23 @@
 			border-color: #ccc;
 
 			.glyphicon-calendar {
-				.sprite(-112px, -1px);
+				.sprite(-112px, -17px);
 			}
 		}
 
 		&[disabled] {
-			background: #eee;
+			background: none;
 			border-color: #ccc;
 			opacity: 1;
 
 			.glyphicon-calendar {
-				.sprite(-128px, -1px);
+				.sprite(-128px, -17px);
 			}
 		}
 
 		.glyphicon-calendar {
 			height: 15px;
-			.sprite(-96px, -1px);
+			.sprite(-96px, -17px);
 			width: 15px;
 			top: 0;
 
@@ -53,9 +62,19 @@
 		}
 	}
 
+	.input-group {
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		.box-shadow(inset 0 1px 1px rgba(0,0,0,.075));
+	}
+
+	.input-group-btn {
+		border: none;
+		border-radius: 0 4px 4px 0;
+	}
+
 	.open > .dropdown-toggle.btn-default {
 		background-image: none;
-		border: 1px solid #ccc;
 	}
 
 	&-calendar {

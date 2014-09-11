@@ -5,9 +5,8 @@
 	<title>Fuel UX 3</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<!--<link href="http://www.fuelcdn.com/fonts/neue-helvetica.css" rel="stylesheet" type="text/css"/>-->
-	<link href="../../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-	<link href="http://www.fuelcdn.com/fuelux/3.0.0/css/fuelux.css" rel="stylesheet" type="text/css">
+	<link href="../../bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="../../bower_components/fuelux/dist/css/fuelux.css" rel="stylesheet" type="text/css">
 
 	<!--<link href="../../dist/css/imhtheme.css" rel="stylesheet" type="text/css">-->
 
@@ -21,26 +20,6 @@
 	<script src="../../bower_components/requirejs/require.js"></script>
 	<script type="text/javascript">
 		(function () {
-			var jQueryPath;
-
-			// Feature detect for jQuery version
-			if('querySelector' in document
-				&& 'localStorage' in window
-				&& 'addEventListener' in window ) {
-				jQueryPath = '../../bower_components/jquery/dist/jquery';
-			} else {
-				jQueryPath = '../../bower_components/jquery-1.9.1/jquery';
-			}
-
-			// or force/overwrite the variable with a version via ?jquery= URL parameter
-			var jqverParam = location.search.match(/[?&]jquery=(.*?)(?=&|$)/);
-			var jqver = (jqverParam) ? jqverParam[1] : undefined;
-
-			// if jquery version does not using dist folder
-			if(jqver == '1.9.1') {
-				jQueryPath = '../../bower_components/jquery-' + jqver + '/jquery';
-			}
-
 			requirejs.config({
 				config: {
 					moment: {
@@ -48,11 +27,11 @@
 					}
 				},
 				paths: {
-					jquery: jQueryPath,
+					jquery: '../../bower_components/jquery/dist/jquery',
 					underscore: '../../bower_components/underscore/underscore',
 					bootstrap: '../../bower_components/bootstrap/dist/js/bootstrap',
-					//moment: '../../bower_components/moment/min/moment-with-langs', // comment out if you dont want momentjs to be default
-					fuelux: 'http://www.fuelcdn.com/fuelux/3.0.0/js/fuelux'
+					//moment: '../../bower_components/moment/min/moment-with-langs',
+					fuelux: '../../bower_components/fuelux/dist/js/fuelux'
 				},
 				shim: {
 					'bootstrap': {
@@ -62,736 +41,584 @@
 				}
 			});
 		})();
-		require(['jquery', 'index'], function($){
-			setTimeout(function(){
-				if(window.console && window.console.clear){ window.console.clear(); }
-			}, 100);
-		});
+		require(['jquery', 'main'], function($){ });
 	</script>
 </head>
-
 <body>
-
-	<!--<form action="#">-->
-
-	<div class="container">
-
-		<div class="section clearfix">
-
-			<h2 id="checkbox"><a href="#checkbox">#</a>Checkbox</h2>
-
-			<div id="MyCheckboxContainer">
-
-				<div id="MyCheckboxWrapper1" class="checkbox">
-					<label class="checkbox-custom checked" data-initialize="checkbox">
-						<input id="MyCheckbox1" class="sr-only checked" type="checkbox" value="" checked="checked">
-						<span class="checkbox-label">Custom appearance checkbox checked at page load (#MyCheckbox1)</span>
-					</label>
-				</div>
-				<div id="MyCheckboxWrapper2" class="checkbox">
-					<label class="checkbox-custom" data-initialize="checkbox">
-						<input id="MyCheckbox2" class="sr-only checked" type="checkbox" value="" checked="checked" data-toggle="#checkboxToggle1">
-						<span class="checkbox-label">Custom appearance checkbox checked at page load with linked element visibility toggle by id </span>
-					</label>
-				</div>
-				<div id="MyCheckboxWrapper3" class="checkbox">
-					<label class="checkbox-custom" data-initialize="checkbox">
-						<input id="MyCheckbox3" class="sr-only checkbox" type="checkbox" value="" data-toggle=".checkboxToggle2">
-						<span class="checkbox-label">Custom appearance checkbox unchecked on page load <i>with linked element visibility toggle by class</i></span>
-					</label>
-				</div>
-				<div id="MyCheckboxWrapper4" class="checkbox">
-					<label class="checkbox-custom" data-initialize="checkbox">
-						<input id="MyCheckbox4" class="sr-only checkbox" type="checkbox" value="" checked="checked" disabled="disabled">
-						<span class="checkbox-label">Disabled custom appearance checkbox <i>checked on page load</i></span>
-					</label>
-				</div>
-				<div id="MyCheckboxWrapper5" class="checkbox">
-					<label class="checkbox-custom" data-initialize="checkbox">
-						<input id="MyCheckbox5" class="sr-only checkbox" type="checkbox" value="" disabled="disabled">
-						<span class="checkbox-label">Disabled custom appearance checkbox <i>unchecked on page load</i></span>
-					</label>
-				</div>
-
-			</div>
-
+	<div class="container" id="mainWrapper">
+		<h2>Checkboxes</h2>
+		<div class="thin-box">
+			<!--Block-level Checkboxes-->
 			<div class="checkbox">
-				<label>
-					<input checked="checked" type="checkbox" value="">
-					<span class="checkbox-label">Native checkbox: Checked Enabled</span>
+				<label class="checkbox-custom" data-initialize="checkbox" id="myCustomCheckbox1">
+					<input class="sr-only" type="checkbox" value="">
+					<span class="checkbox-label">Custom checkbox unchecked on page load</span>
 				</label>
 			</div>
 			<div class="checkbox">
-				<label>
-					<input type="checkbox" value="">
-					<span class="checkbox-label">Native Checkbox: Unchecked Enabled</span>
+				<label class="checkbox-custom" data-initialize="checkbox" id="myCustomCheckbox2">
+					<input checked="checked" class="checked sr-only" type="checkbox" value="">
+					<span class="checkbox-label">Custom checkbox checked on page load</span>
 				</label>
 			</div>
 			<div class="checkbox">
-				<label>
-					<input checked="checked" disabled="disabled" type="checkbox" value="">
-					<span class="checkbox-label">Native Checkbox: Checked Disabled</span>
+				<label class="checkbox-custom" data-initialize="checkbox" id="myCustomCheckbox3">
+					<input class="sr-only" disabled="disabled" type="checkbox" value="">
+					<span class="checkbox-label">Custom checkbox disabled and unchecked on page load</span>
 				</label>
 			</div>
 			<div class="checkbox">
-				<label>
-					<input disabled="disabled" type="checkbox" value="">
-					<span class="checkbox-label">Native Checkbox: Unchecked Disabled</span>
+				<label class="checkbox-custom" data-initialize="checkbox" id="myCustomCheckbox4">
+					<input checked="checked" class="checked sr-only" disabled="disabled" type="checkbox" value="">
+					<span class="checkbox-label">Custom checkbox disabled and checked on page load</span>
 				</label>
 			</div>
 
 			<br/>
-			<h5>Sample element visibility toggle bound to checkboxes</h5>
-			<div id="checkboxToggle1" class="alert bg-info hide" aria-hidden="true">This message's visibility toggles by id with a checkbox above.</div>
-			<div class="checkboxToggle2 alert bg-warning hide" aria-hidden="true">This message's visibility toggles by class with a checkbox above.</div>
-			<div class="checkboxToggle2 alert bg-success hide" aria-hidden="true">This message's visibility toggles by class with a checkbox above.</div>
+			<!--Inline checkboxes-->
+			<label class="checkbox-custom checkbox-inline" data-initialize="checkbox" id="myCustomInlineCheckbox1">
+				<input checked="checked" class="checked sr-only" type="checkbox" value=""> <span class="checkbox-label">1, 2, buckle my shoe</span>
+			</label>
+			<label class="checkbox-custom checkbox-inline" data-initialize="checkbox" id="myCustomInlineCheckbox2">
+				<input class="sr-only" type="checkbox" value=""> <span class="checkbox-label">3, 4, shut the door</span>
+			</label>
+			<label class="checkbox-custom checkbox-inline" data-initialize="checkbox" id="myCustomInlineCheckbox3">
+				<input class="sr-only" disabled="disabled" type="checkbox" value=""> <span class="checkbox-label">5, 6, pick up sticks</span>
+			</label>
+			<label class="checkbox-custom checkbox-inline" data-initialize="checkbox" id="myCustomInlineCheckbox4">
+				<input checked="checked" class="checked sr-only" disabled="disabled" type="checkbox" value=""> <span class="checkbox-label">7, 8, lay them straight</span>
+			</label>
+
+			<br/><br/>
+			<!--Toggling capability-->
+			<div class="checkbox">
+				<label class="checkbox-custom" data-initialize="checkbox" id="myCustomTogglingCheckbox1">
+					<input class="sr-only" data-toggle=".checkboxToggle" type="checkbox" value="">
+					<span class="checkbox-label">Custom checkbox toggles by class</span>
+				</label>
+			</div>
+			<div class="checkbox">
+				<label class="checkbox-custom" data-initialize="checkbox" id="myCustomTogglingCheckbox2">
+					<input class="sr-only" data-toggle="#checkboxToggle" type="checkbox" value="">
+					<span class="checkbox-label">Custom checkbox toggles by id</span>
+				</label>
+			</div>
+
+			<div aria-hidden="true" class="checkboxToggle alert alert-warning hide">This message's visibility toggles by class with a checkbox above.</div>
+			<div aria-hidden="true" class="checkboxToggle alert alert-success hide">This message's visibility toggles by class with a checkbox above.</div>
+			<div aria-hidden="true" class="alert alert-info hide" id="checkboxToggle">This message's visibility toggles by id with a checkbox above.</div>
 
 			<br/>
-			<h5>Sample Methods</h5>
-
-			<div class="btn-group">
-				<button type="button" class="btn btn-default" id="btnCheckboxToggle">toggle #MyCheckbox1</button>
-				<button type="button" class="btn btn-default" id="btnCheckboxDisable">disable #MyCheckbox1</button>
-				<button type="button" class="btn btn-default" id="btnCheckboxEnable">enable #MyCheckbox1</button>
-				<button type="button" class="btn btn-default" id="btnCheckboxDestroy">destroy and append #MyCheckbox1</button>
+			<!--Highlight capability-->
+			<div class="checkbox highlight">
+				<label class="checkbox-custom highlight" data-initialize="checkbox" id="myCustomHighlightCheckbox1">
+					<input class="sr-only" type="checkbox" value="">
+					<span class="checkbox-label">Custom block-level highlight checkbox</span>
+				</label>
 			</div>
-			<hr/>
-
+			<div class="checkbox highlight">
+				<label class="checkbox-custom highlight" data-initialize="checkbox" id="myCustomHighlightCheckbox2">
+					<input class="sr-only" type="checkbox" value="">
+					<span class="checkbox-label">Custom block-level highlight checkbox</span>
+				</label>
+			</div>
+			<label class="checkbox-custom checkbox-inline highlight" data-initialize="checkbox" id="myCustomHighlightCheckbox3">
+				<input class="sr-only" type="checkbox" value=""> <span class="checkbox-label">Custom inline highlight checkbox</span>
+			</label>
+			<label class="checkbox-custom checkbox-inline highlight" data-initialize="checkbox" id="myCustomHighlightCheckbox4">
+				<input class="sr-only" type="checkbox" value=""> <span class="checkbox-label">Custom inline highlight checkbox</span>
+			</label>
+		</div>
+		<div class="btn-panel">
+			<button type="button" class="btn btn-default" id="btnCheckboxToggle">toggle #myCustomCheckbox1</button>
+			<button type="button" class="btn btn-default" id="btnCheckboxDisable">disable #myCustomCheckbox1</button>
+			<button type="button" class="btn btn-default" id="btnCheckboxEnable">enable #myCustomCheckbox1</button>
+			<button type="button" class="btn btn-default" id="btnCheckboxDestroy">destroy and append #myCustomCheckbox1</button>
 		</div>
 
-		<div class="section clearfix">
+		<h2>Combobox</h2>
+		<div class="thin-box">
+			<div style="width: 300px;">
 
-			<h2 id="combobox"><a href="#combobox">#</a>Combobox</h2>
-
-			<div id="MyComboboxContainer">
-
-				<div class="form-group">
-					<label class="control-label" for="MyComboBoxWithSelectedInput">Has selected item</label>
-
-					<div id="MyComboboxWithSelected" class="input-group input-append dropdown combobox" data-initialize="combobox">
-						<input id="MyComboBoxWithSelectedInput" type="text" class="form-control" placeholder="Select an option">
-						<div class="input-group-btn">
-							<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-								<span class="caret"></span>
-								<span class="sr-only">Toggle Dropdown</span>
-							</button>
-							<ul class="dropdown-menu dropdown-menu-right" role="menu">
-								<li data-value="1"><a href="#">One</a></li>
-								<li data-value="2"><a href="#">Two</a></li>
-								<li data-value="3" data-selected="true"><a href="#">Three</a></li>
-								<li data-value="4" ><a href="#">Four</a></li>
-								<li data-value="Item Five"><a href="#">Item Five</a></li>
-								<li data-value="6" data-foo="bar" data-fizz="buzz"><a href="#">Six</a></li>
-							</ul>
-						</div>
+				<div class="input-group input-append dropdown combobox" data-initialize="combobox" id="myCombobox">
+					<input type="text" class="form-control">
+					<div class="input-group-btn">
+						<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right">
+							<li data-value="1"><a href="#">One</a></li>
+							<li data-value="2"><a href="#">Two</a></li>
+							<li data-selected="true" data-value="3"><a href="#">Three</a></li>
+							<li data-value="4" ><a href="#">Four</a></li>
+							<li data-value="Item Five" data-foo="bar" data-fizz="buzz"><a href="#">Item Five</a></li>
+						</ul>
 					</div>
-
-				</div>
-
-				<div class="form-group">
-					<label class="control-label" for="MyComboBoxInput">No selected item</label>
-
-					<div id="MyCombobox" class="input-group input-append dropdown combobox" data-initialize="combobox">
-						<input id="MyComboBoxInput" type="text" class="form-control">
-						<div class="input-group-btn">
-							<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-								<span class="caret"></span>
-								<span class="sr-only">Toggle Dropdown</span>
-							</button>
-							<ul class="dropdown-menu dropdown-menu-right" role="menu">
-								<li data-value="1"><a href="#">One</a></li>
-								<li data-value="2"><a href="#">Two</a></li>
-								<li data-value="3"><a href="#">Three</a></li>
-								<li data-value="4" ><a href="#">Four</a></li>
-								<li data-value="Item Five"><a href="#">Item Five</a></li>
-								<li data-value="6" data-foo="bar" data-fizz="buzz"><a href="#">Six</a></li>
-							</ul>
-						</div>
-					</div>
-
 				</div>
 
 			</div>
-
-			<br/>
-			<h5>Sample Methods</h5>
-			<div class="btn-group clearfix">
-				<button id="btnComboboxGetSelectedItem" type="button" class="btn btn-default">log item</button>
-				<button id="btnComboboxSelectByValue" type="button" class="btn btn-default">set by value (1)</button>
-				<button id="btnComboboxSelectByIndex" type="button" class="btn btn-default">set by element index (1)</button>
-				<button id="btnComboboxSelectByText" type="button" class="btn btn-default">set by text (Four)</button>
-			</div>
-			<div class="btn-group clearfix">
-				<button id="btnComboboxSelectBySelector" type="button" class="btn btn-default">set by CSS selector li[data-fizz=buzz] (6)</button>
-				<button id="btnComboboxDisable" type="button" class="btn btn-default">disable</button>
-				<button id="btnComboboxEnable" type="button" class="btn btn-default">enable</button>
-				<button id="btnComboboxDestroy" type="button" class="btn btn-default">destroy and append</button>
-			</div>
-
-			<hr/>
+		</div>
+		<div class="btn-panel">
+			<button id="btnComboboxGetSelectedItem" type="button" class="btn btn-default">log item</button>
+			<button id="btnComboboxSelectByValue" type="button" class="btn btn-default">set by value (One)</button>
+			<button id="btnComboboxSelectByIndex" type="button" class="btn btn-default">set by element index (Two)</button>
+			<button id="btnComboboxSelectByText" type="button" class="btn btn-default">set by text (Four)</button>
+			<button id="btnComboboxSelectBySelector" type="button" class="btn btn-default">set by CSS selector li[data-fizz=buzz] (Item Five)</button>
+			<button id="btnComboboxDisable" type="button" class="btn btn-default">disable</button>
+			<button id="btnComboboxEnable" type="button" class="btn btn-default">enable</button>
+			<button id="btnComboboxDestroy" type="button" class="btn btn-default">destroy and append</button>
 		</div>
 
-		<div class="section clearfix">
-			<h2 id="datepicker"><a href="#datepicker">#</a>Datepicker</h2>
+		<h2>Datepicker</h2>
+		<div class="thin-box">
+			<div style="width: 300px;">
 
-			<div id="MyDatepickerContainer">
-
-				<div class="form-group">
-					<label class="control-label" for="MyDatepickerInput">Choose a date (default) </label>
-						<div>
-
-							<div id="MyDatepicker" class="datepicker">
-							<div class="input-group">
-								<input id="MyDatepickerInput" class="form-control" type="text"/>
-								<div class="input-group-btn">
-									<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-										<span class="glyphicon glyphicon-calendar"></span>
-										<span class="sr-only">Toggle Calendar</span>
-									</button>
-									<div class="dropdown-menu dropdown-menu-right datepicker-calendar-wrapper" role="menu">
-										<div class="datepicker-calendar">
-											<div class="datepicker-calendar-header">
-												<button type="button" class="prev"><span class="glyphicon glyphicon-chevron-left"></span><span class="sr-only">Previous Month</span></button>
-												<button type="button" class="next"><span class="glyphicon glyphicon-chevron-right"></span><span class="sr-only">Next Month</span></button>
-												<button type="button" class="title">
-														<span class="month">
-															<span data-month="0">January</span>
-															<span data-month="1">February</span>
-															<span data-month="2">March</span>
-															<span data-month="3">April</span>
-															<span data-month="4">May</span>
-															<span data-month="5">June</span>
-															<span data-month="6">July</span>
-															<span data-month="7">August</span>
-															<span data-month="8">September</span>
-															<span data-month="9">October</span>
-															<span data-month="10">November</span>
-															<span data-month="11">December</span>
-														</span> <span class="year"></span>
-												</button>
-											</div>
-											<table class="datepicker-calendar-days">
-												<thead>
-												<tr>
-													<th>Su</th>
-													<th>Mo</th>
-													<th>Tu</th>
-													<th>We</th>
-													<th>Th</th>
-													<th>Fr</th>
-													<th>Sa</th>
-												</tr>
-												</thead>
-												<tbody></tbody>
-											</table>
-											<div class="datepicker-calendar-footer">
-												<button type="button" class="datepicker-today">Today</button>
-											</div>
-										</div>
-										<div class="datepicker-wheels" aria-hidden="true">
-											<div class="datepicker-wheels-month">
-												<h2 class="header">Month</h2>
-												<ul>
-													<li data-month="0"><button type="button">Jan</button></li>
-													<li data-month="1"><button type="button">Feb</button></li>
-													<li data-month="2"><button type="button">Mar</button></li>
-													<li data-month="3"><button type="button">Apr</button></li>
-													<li data-month="4"><button type="button">May</button></li>
-													<li data-month="5"><button type="button">Jun</button></li>
-													<li data-month="6"><button type="button">Jul</button></li>
-													<li data-month="7"><button type="button">Aug</button></li>
-													<li data-month="8"><button type="button">Sep</button></li>
-													<li data-month="9"><button type="button">Oct</button></li>
-													<li data-month="10"><button type="button">Nov</button></li>
-													<li data-month="11"><button type="button">Dec</button></li>
-												</ul>
-											</div>
-											<div class="datepicker-wheels-year">
-												<h2 class="header">Year</h2>
-												<ul></ul>
-											</div>
-											<div class="datepicker-wheels-footer clearfix">
-												<button type="button" class="btn datepicker-wheels-back"><span class="glyphicon glyphicon-arrow-left"></span><span class="sr-only">Return to Calendar</span></button>
-												<button type="button" class="btn datepicker-wheels-select">Select <span class="sr-only">Month and Year</span></button>
-											</div>
-										</div>
+				<div class="datepicker" id="myDatepicker">
+					<div class="input-group">
+						<input class="form-control" id="myDatepickerInput" type="text"/>
+						<div class="input-group-btn">
+							<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+								<span class="glyphicon glyphicon-calendar"></span>
+								<span class="sr-only">Toggle Calendar</span>
+							</button>
+							<div class="dropdown-menu dropdown-menu-right datepicker-calendar-wrapper" role="menu">
+								<div class="datepicker-calendar">
+									<div class="datepicker-calendar-header">
+										<button type="button" class="prev"><span class="glyphicon glyphicon-chevron-left"></span><span class="sr-only">Previous Month</span></button>
+										<button type="button" class="next"><span class="glyphicon glyphicon-chevron-right"></span><span class="sr-only">Next Month</span></button>
+										<button type="button" class="title">
+											<span class="month">
+												<span data-month="0">January</span>
+												<span data-month="1">February</span>
+												<span data-month="2">March</span>
+												<span data-month="3">April</span>
+												<span data-month="4">May</span>
+												<span data-month="5">June</span>
+												<span data-month="6">July</span>
+												<span data-month="7">August</span>
+												<span data-month="8">September</span>
+												<span data-month="9">October</span>
+												<span data-month="10">November</span>
+												<span data-month="11">December</span>
+											</span> <span class="year"></span>
+										</button>
+									</div>
+									<table class="datepicker-calendar-days">
+										<thead>
+										<tr>
+											<th>Su</th>
+											<th>Mo</th>
+											<th>Tu</th>
+											<th>We</th>
+											<th>Th</th>
+											<th>Fr</th>
+											<th>Sa</th>
+										</tr>
+										</thead>
+										<tbody></tbody>
+									</table>
+									<div class="datepicker-calendar-footer">
+										<button type="button" class="datepicker-today">Today</button>
+									</div>
+								</div>
+								<div class="datepicker-wheels" aria-hidden="true">
+									<div class="datepicker-wheels-month">
+										<h2 class="header">Month</h2>
+										<ul>
+											<li data-month="0"><button type="button">Jan</button></li>
+											<li data-month="1"><button type="button">Feb</button></li>
+											<li data-month="2"><button type="button">Mar</button></li>
+											<li data-month="3"><button type="button">Apr</button></li>
+											<li data-month="4"><button type="button">May</button></li>
+											<li data-month="5"><button type="button">Jun</button></li>
+											<li data-month="6"><button type="button">Jul</button></li>
+											<li data-month="7"><button type="button">Aug</button></li>
+											<li data-month="8"><button type="button">Sep</button></li>
+											<li data-month="9"><button type="button">Oct</button></li>
+											<li data-month="10"><button type="button">Nov</button></li>
+											<li data-month="11"><button type="button">Dec</button></li>
+										</ul>
+									</div>
+									<div class="datepicker-wheels-year">
+										<h2 class="header">Year</h2>
+										<ul></ul>
+									</div>
+									<div class="datepicker-wheels-footer clearfix">
+										<button type="button" class="btn datepicker-wheels-back"><span class="glyphicon glyphicon-arrow-left"></span><span class="sr-only">Return to Calendar</span></button>
+										<button type="button" class="btn datepicker-wheels-select">Select <span class="sr-only">Month and Year</span></button>
 									</div>
 								</div>
 							</div>
 						</div>
-						
 					</div>
 				</div>
 
 			</div>
+		</div>
+		<div class="btn-panel">
+			<button type="button" class="btn btn-default" id="btnDatepickerEnable">enable</button>
+			<button type="button" class="btn btn-default" id="btnDatepickerDisable">disable</button>
+			<button type="button" class="btn btn-default" id="btnDatepickerLogFormattedDate">log formatted date</button>
+			<button type="button" class="btn btn-default" id="btnDatepickerLogDateObj">log date object</button>
+			<button type="button" class="btn btn-default" id="btnDatepickerSetDate">set date 7 days ahead (will log new value)</button>
+			<button type="button" class="btn btn-default" id="btnDatepickerDestroy">destroy and append</button>
+		</div>
 
+		<h2>Infinite Scroll</h2>
+		<div class="clearfix thin-box">
+			<div class="infinitescroll" id="myInfiniteScroll1">
+				<p>Hodor, hodor. Hodor. Hodor, hodor hodor hodor hodor, hodor. Hodor hodor, hodor, hodor hodor. Hodor! Hodor hodor, hodor - hodor hodor hodor? Hodor hodor HODOR! Hodor hodor, hodor. Hodor hodor... Hodor hodor hodor hodor?! Hodor hodor HODOR! Hodor hodor - hodor, hodor. Hodor hodor hodor! Hodor hodor - hodor... Hodor hodor hodor, hodor, hodor hodor. Hodor hodor - hodor; hodor hodor hodor hodor?! Hodor, HODOR hodor, hodor hodor? Hodor! Hodor hodor, hodor, hodor. Hodor hodor? </p>
+				<p>Hodor hodor HODOR! Hodor hodor hodor - hodor, hodor, hodor hodor. Hodor. Hodor hodor - hodor?! Hodor HODOR hodor, hodor hodor. Hodor. Hodor hodor - hodor HODOR hodor, hodor hodor hodor! Hodor. Hodor hodor hodor hodor hodor?! Hodor hodor HODOR! Hodor hodor hodor hodor, hodor, hodor hodor. Hodor! Hodor hodor, hodor; hodor hodor hodor, hodor, hodor hodor. </p>
+				<p>Hodor hodor hodor - hodor? Hodor hodor hodor hodor hodor hodor! Hodor! Hodor hodor, hodor, hodor. Hodor hodor; hodor hodor - hodor. Hodor. Hodor hodor hodor. Hodor! Hodor hodor, hodor - hodor? </p>
+				<p>Hodor hodor HODOR! Hodor hodor hodor; hodor hodor hodor! Hodor. Hodor hodor... Hodor hodor hodor hodor. Hodor, hodor, hodor. Hodor hodor - HODOR hodor, hodor hodor? Hodor, hodor. Hodor. Hodor, hodor - HODOR hodor, hodor hodor - hodor. Hodor hodor, hodor. Hodor hodor?! Hodor hodor... Hodor hodor hodor - hodor. Hodor. </p>
+				<p>Hodor, hodor. Hodor. Hodor, HODOR hodor, hodor HODOR hodor, hodor hodor hodor, hodor. Hodor hodor. Hodor. Hodor hodor - hodor... Hodor hodor hodor, hodor, hodor hodor. Hodor, hodor. Hodor. Hodor, hodor hodor hodor? Hodor hodor - hodor... Hodor hodor hodor?! Hodor, hodor hodor hodor; hodor hodor; hodor hodor hodor! </p>
+			</div>
+			<div class="infinitescroll" id="myInfiniteScroll2">
+				<p>Hodor, hodor. Hodor. Hodor, hodor hodor hodor hodor, hodor. Hodor hodor, hodor, hodor hodor. Hodor! Hodor hodor, hodor - hodor hodor hodor? Hodor hodor HODOR! Hodor hodor, hodor. Hodor hodor... Hodor hodor hodor hodor?! Hodor hodor HODOR! Hodor hodor - hodor, hodor. Hodor hodor hodor! Hodor hodor - hodor... Hodor hodor hodor, hodor, hodor hodor. Hodor hodor - hodor; hodor hodor hodor hodor?! Hodor, HODOR hodor, hodor hodor? Hodor! Hodor hodor, hodor, hodor. Hodor hodor? </p>
+				<p>Hodor hodor HODOR! Hodor hodor hodor - hodor, hodor, hodor hodor. Hodor. Hodor hodor - hodor?! Hodor HODOR hodor, hodor hodor. Hodor. Hodor hodor - hodor HODOR hodor, hodor hodor hodor! Hodor. Hodor hodor hodor hodor hodor?! Hodor hodor HODOR! Hodor hodor hodor hodor, hodor, hodor hodor. Hodor! Hodor hodor, hodor; hodor hodor hodor, hodor, hodor hodor. </p>
+				<p>Hodor hodor hodor - hodor? Hodor hodor hodor hodor hodor hodor! Hodor! Hodor hodor, hodor, hodor. Hodor hodor; hodor hodor - hodor. Hodor. Hodor hodor hodor. Hodor! Hodor hodor, hodor - hodor? </p>
+				<p>Hodor hodor HODOR! Hodor hodor hodor; hodor hodor hodor! Hodor. Hodor hodor... Hodor hodor hodor hodor. Hodor, hodor, hodor. Hodor hodor - HODOR hodor, hodor hodor? Hodor, hodor. Hodor. Hodor, hodor - HODOR hodor, hodor hodor - hodor. Hodor hodor, hodor. Hodor hodor?! Hodor hodor... Hodor hodor hodor - hodor. Hodor. </p>
+				<p>Hodor, hodor. Hodor. Hodor, HODOR hodor, hodor HODOR hodor, hodor hodor hodor, hodor. Hodor hodor. Hodor. Hodor hodor - hodor... Hodor hodor hodor, hodor, hodor hodor. Hodor, hodor. Hodor. Hodor, hodor hodor hodor? Hodor hodor - hodor... Hodor hodor hodor?! Hodor, hodor hodor hodor; hodor hodor; hodor hodor hodor! </p>
+			</div>
+		</div>
+		<div class="btn-panel">
+			<button type="button" class="btn btn-default" id="btnInfiniteScrollEnable">enable</button>
+			<button type="button" class="btn btn-default" id="btnInfiniteScrollDisable">disable</button>
+			<button type="button" class="btn btn-default" id="btnInfiniteScrollDestroy">destroy and append</button>
+		</div>
+
+		<h2>Loader</h2>
+		<div class="clearfix thin-box" id="loaderWrapper">
+			<div class="loader" data-initialize="loader" id="myLoader1"></div>
+			<div class="loader" data-frame="5" data-initialize="loader" id="myLoader2"></div>
+			<div class="loader" data-delay="500" data-initialize="loader" id="myLoader3"></div>
+			<div class="loader" data-begin="3" data-end="6" data-initialize="loader" id="myLoader4"></div>
+		</div>
+		<div class="btn-panel">
+			<button type="button" class="btn btn-default" id="btnLoaderPlay">play</button>
+			<button type="button" class="btn btn-default" id="btnLoaderPause">pause</button>
+			<button type="button" class="btn btn-default" id="btnLoaderNext">next</button>
+			<button type="button" class="btn btn-default" id="btnLoaderPrevious">previous</button>
+			<button type="button" class="btn btn-default" id="btnLoaderDestroy">destroy and append</button>
+		</div>
+
+		<h2>Pillbox</h2>
+		<div class="thin-box">
+			<div style="width: 300px;">
+				<div class="pillbox" id="myPillbox1">
+					<ul class="clearfix pill-group">
+						<li class="pillbox-input-wrap btn-group">
+							<a class="pillbox-more">and <span class="pillbox-more-count"></span> more...</a>
+							<input type="text" class="form-control dropdown-toggle pillbox-add-item" placeholder="add item">
+							<button type="button" class="dropdown-toggle sr-only">
+								<span class="caret"></span>
+								<span class="sr-only">Toggle Dropdown</span>
+							</button>
+							<ul class="suggest dropdown-menu" role="menu" data-toggle="dropdown" data-flip="auto"></ul>
+						</li>
+					</ul>
+				</div>
+			</div>
 			<br/>
-			<h5>Sample Methods</h5>
-			<div class="btn-group">
-				<button type="button" class="btn btn-default" id="btnDatepickerEnable">enable</button>
-				<button type="button" class="btn btn-default" id="btnDatepickerDisable">disable</button>
-				<button type="button" class="btn btn-default" id="btnDatepickerLogFormattedDate">log formatted date</button>
-				<button type="button" class="btn btn-default" id="btnDatepickerLogDateObj">log date object</button>
-				<button type="button" class="btn btn-default" id="btnDatepickerSetDate">set date 7 days ahead (will log new value)</button>
-				<button type="button" class="btn btn-default" id="btnDatepickerDestroy">destroy and append</button>
-			</div>
-			<hr/>
+			<div style="width: 230px;">
+				<div class="pillbox" data-readonly="readonly" id="myPillbox2">
+					<ul class="clearfix pill-group">
 
+						<li class="btn btn-default pill" data-value="foo">
+							<span>Item 1</span>
+							<span class="glyphicon glyphicon-close">
+								<span class="sr-only">Remove</span>
+							</span>
+						</li>
+						<li class="btn btn-default pill">
+							<span>Item 2</span>
+							<span class="glyphicon glyphicon-close">
+								<span class="sr-only">Remove</span>
+							</span>
+						</li>
+						<li class="btn btn-default pill" data-value="three-value">
+							<span>Item 3</span>
+							<span class="glyphicon glyphicon-close">
+								<span class="sr-only">Remove</span>
+							</span>
+						</li>
+						<li class="btn btn-default pill">
+							<span>Item 4</span>
+							<span class="glyphicon glyphicon-close">
+								<span class="sr-only">Remove</span>
+							</span>
+						</li>
+						<li class="btn btn-default pill">
+							<span>Item 5</span>
+							<span class="glyphicon glyphicon-close">
+								<span class="sr-only">Remove</span>
+							</span>
+						</li>
+
+						<li class="pillbox-input-wrap btn-group">
+							<a class="pillbox-more">and <span class="pillbox-more-count"></span> more...</a>
+							<input type="text" class="form-control dropdown-toggle pillbox-add-item" placeholder="add item">
+							<button type="button" class="dropdown-toggle sr-only">
+								<span class="caret"></span>
+								<span class="sr-only">Toggle Dropdown</span>
+							</button>
+							<ul class="suggest dropdown-menu" role="menu" data-toggle="dropdown" data-flip="auto"></ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="btn-panel">
+			<!--<button type="button" class="btn btn-default" id="btnPillboxEnable">enable</button>-->
+			<!--<button type="button" class="btn btn-default" id="btnPillboxDisable">disable</button>-->
+			<button type="button" class="btn btn-default" id="btnPillboxAdd">add</button>
+			<button type="button" class="btn btn-default" id="btnPillboxRemoveByValue">remove by value</button>
+			<button type="button" class="btn btn-default" id="btnPillboxRemoveBySelector">remove by selector</button>
+			<button type="button" class="btn btn-default" id="btnPillboxRemoveByText">remove by text</button>
+			<button type="button" class="btn btn-default" id="btnPillboxItems">log items to console</button>
+			<button type="button" class="btn btn-default" id="btnPillboxDestroy">destroy and append</button>
 		</div>
 
-		<div class="section clearfix">
-			<h2 id="infinite-scroll"><a href="#infinite-scroll">#</a>Infinite Scroll</h2>
-
-			<div id="MyInfiniteScrollContainer" class="clearfix">
-
-				<div class="infinitescroll" id="MyInfiniteScroll1">
-					<p>Hodor, hodor. Hodor. Hodor, hodor hodor hodor hodor, hodor. Hodor hodor, hodor, hodor hodor. Hodor! Hodor hodor, hodor - hodor hodor hodor? Hodor hodor HODOR! Hodor hodor, hodor. Hodor hodor... Hodor hodor hodor hodor?! Hodor hodor HODOR! Hodor hodor - hodor, hodor. Hodor hodor hodor! Hodor hodor - hodor... Hodor hodor hodor, hodor, hodor hodor. Hodor hodor - hodor; hodor hodor hodor hodor?! Hodor, HODOR hodor, hodor hodor? Hodor! Hodor hodor, hodor, hodor. Hodor hodor? </p>
-					<p>Hodor hodor HODOR! Hodor hodor hodor - hodor, hodor, hodor hodor. Hodor. Hodor hodor - hodor?! Hodor HODOR hodor, hodor hodor. Hodor. Hodor hodor - hodor HODOR hodor, hodor hodor hodor! Hodor. Hodor hodor hodor hodor hodor?! Hodor hodor HODOR! Hodor hodor hodor hodor, hodor, hodor hodor. Hodor! Hodor hodor, hodor; hodor hodor hodor, hodor, hodor hodor. </p>
-					<p>Hodor hodor hodor - hodor? Hodor hodor hodor hodor hodor hodor! Hodor! Hodor hodor, hodor, hodor. Hodor hodor; hodor hodor - hodor. Hodor. Hodor hodor hodor. Hodor! Hodor hodor, hodor - hodor? </p>
-					<p>Hodor hodor HODOR! Hodor hodor hodor; hodor hodor hodor! Hodor. Hodor hodor... Hodor hodor hodor hodor. Hodor, hodor, hodor. Hodor hodor - HODOR hodor, hodor hodor? Hodor, hodor. Hodor. Hodor, hodor - HODOR hodor, hodor hodor - hodor. Hodor hodor, hodor. Hodor hodor?! Hodor hodor... Hodor hodor hodor - hodor. Hodor. </p>
-					<p>Hodor, hodor. Hodor. Hodor, HODOR hodor, hodor HODOR hodor, hodor hodor hodor, hodor. Hodor hodor. Hodor. Hodor hodor - hodor... Hodor hodor hodor, hodor, hodor hodor. Hodor, hodor. Hodor. Hodor, hodor hodor hodor? Hodor hodor - hodor... Hodor hodor hodor?! Hodor, hodor hodor hodor; hodor hodor; hodor hodor hodor! </p>
-				</div>
-
-				<div class="infinitescroll" id="MyInfiniteScroll2">
-					<p>Hodor, hodor. Hodor. Hodor, hodor hodor hodor hodor, hodor. Hodor hodor, hodor, hodor hodor. Hodor! Hodor hodor, hodor - hodor hodor hodor? Hodor hodor HODOR! Hodor hodor, hodor. Hodor hodor... Hodor hodor hodor hodor?! Hodor hodor HODOR! Hodor hodor - hodor, hodor. Hodor hodor hodor! Hodor hodor - hodor... Hodor hodor hodor, hodor, hodor hodor. Hodor hodor - hodor; hodor hodor hodor hodor?! Hodor, HODOR hodor, hodor hodor? Hodor! Hodor hodor, hodor, hodor. Hodor hodor? </p>
-					<p>Hodor hodor HODOR! Hodor hodor hodor - hodor, hodor, hodor hodor. Hodor. Hodor hodor - hodor?! Hodor HODOR hodor, hodor hodor. Hodor. Hodor hodor - hodor HODOR hodor, hodor hodor hodor! Hodor. Hodor hodor hodor hodor hodor?! Hodor hodor HODOR! Hodor hodor hodor hodor, hodor, hodor hodor. Hodor! Hodor hodor, hodor; hodor hodor hodor, hodor, hodor hodor. </p>
-					<p>Hodor hodor hodor - hodor? Hodor hodor hodor hodor hodor hodor! Hodor! Hodor hodor, hodor, hodor. Hodor hodor; hodor hodor - hodor. Hodor. Hodor hodor hodor. Hodor! Hodor hodor, hodor - hodor? </p>
-					<p>Hodor hodor HODOR! Hodor hodor hodor; hodor hodor hodor! Hodor. Hodor hodor... Hodor hodor hodor hodor. Hodor, hodor, hodor. Hodor hodor - HODOR hodor, hodor hodor? Hodor, hodor. Hodor. Hodor, hodor - HODOR hodor, hodor hodor - hodor. Hodor hodor, hodor. Hodor hodor?! Hodor hodor... Hodor hodor hodor - hodor. Hodor. </p>
-					<p>Hodor, hodor. Hodor. Hodor, HODOR hodor, hodor HODOR hodor, hodor hodor hodor, hodor. Hodor hodor. Hodor. Hodor hodor - hodor... Hodor hodor hodor, hodor, hodor hodor. Hodor, hodor. Hodor. Hodor, hodor hodor hodor? Hodor hodor - hodor... Hodor hodor hodor?! Hodor, hodor hodor hodor; hodor hodor; hodor hodor hodor! </p>
-				</div>
-
-			</div>
-
-			<div>
-				<br/>
-				<h5>Sample Methods</h5>
-				<div class="btn-group">
-					<button type="button" class="btn btn-default" id="btnInfiniteScrollEnable">enable</button>
-					<button type="button" class="btn btn-default" id="btnInfiniteScrollDisable">disable</button>
-					<button type="button" class="btn btn-default" id="btnInfiniteScrollDestroy">destroy and append</button>
-				</div>
-				<hr/>
-			</div>
-
-		</div>
-
-		<div class="section clearfix">
-			<h2><a href="#loader">#</a>Loader</h2>
-
-			<div>
-				<div id="MyLoader1" class="loader" data-initialize="loader" role="alert"><span class="sr-only">Loading</span></div>
-			</div>
-
-			<hr/>
-
-			<div>
-				<br/>
-				<h5>Sample Methods</h5>
-				<div class="btn-group">
-					<button type="button" class="btn btn-default" id="btnLoaderPlay">play</button>
-					<button type="button" class="btn btn-default" id="btnLoaderPause">pause</button>
-					<button type="button" class="btn btn-default" id="btnLoaderNext">next</button>
-					<button type="button" class="btn btn-default" id="btnLoaderPrevious">previous</button>
-					<button type="button" class="btn btn-default" id="btnLoaderDestroy">destroy and append</button>
-				</div>
-				<hr/>
-			</div>
-
-			<hr/>
-		</div>
-
-		<div class="section clearfix">
-			<h2 id="pillbox"><a href="#pillbox">#</a>Pillbox</h2>
-
-			<div id="MyPillbox" class="pillbox">
-				<ul class="clearfix pill-group">
-					<li class="btn btn-default pill" data-value="foo">
-						<span>Item 1</span>
-						<span class="glyphicon glyphicon-close">
-							<span class="sr-only">Remove</span>
-						</span>
-					</li>
-					<li class="btn btn-default pill">
-						<span>Item 2</span>
-						<span class="glyphicon glyphicon-close">
-							<span class="sr-only">Remove</span>
-						</span>
-					</li>
-					<li class="btn btn-default pill" data-value="three-value">
-						<span>Item 3</span>
-						<span class="glyphicon glyphicon-close">
-							<span class="sr-only">Remove</span>
-						</span>
-					</li>
-					<li class="btn btn-default pill">
-						<span>Item 4</span>
-						<span class="glyphicon glyphicon-close">
-							<span class="sr-only">Remove</span>
-						</span>
-					</li>
-					<li class="btn btn-default pill">
-						<span>Item 5</span>
-						<span class="glyphicon glyphicon-close">
-							<span class="sr-only">Remove</span>
-						</span>
-					</li>
-					<li class="pillbox-input-wrap btn-group">
-						<a class="pillbox-more">and <span class="pillbox-more-count"></span> more...</a>
-						<input type="text" class="form-control dropdown-toggle pillbox-add-item" placeholder="add item">
-						
-						<button type="button" class="dropdown-toggle sr-only">
-							<span class="caret"></span>
-							<span class="sr-only">Toggle Dropdown</span>
-						</button>
-						<ul class="suggest dropdown-menu" role="menu" data-toggle="dropdown" data-flip="auto"></ul>
-					</li>
-				</ul>
-			</div>
-
-			<h5>Empty Pillbox (No Suggest)</h5>
-
-			<div id="MyPillboxEmpty" class="pillbox" data-initialize="pillbox">
-				<ul class="clearfix pill-group">
-					<li class="pillbox-input-wrap btn-group">
-						<a class="pillbox-more">and <span class="pillbox-more-count"></span> more...</a>
-						<input type="text" class="form-control dropdown-toggle pillbox-add-item" placeholder="add item">
-						
-						<button type="button" class="dropdown-toggle sr-only">
-							<span class="caret"></span>
-							<span class="sr-only">Toggle Dropdown</span>
-						</button>
-						<ul class="suggest dropdown-menu" role="menu" data-toggle="dropdown" data-flip="auto"></ul>
-					</li>
-				</ul>
-			</div>
-
-			<h5>Truncated Pillbox</h5>
-
-			<div id="MyPillboxTruncateReadOnly" data-readonly="read-only" class="pillbox" style="width: 200px;">
-				<ul class="clearfix pill-group">
-					<li class="btn btn-default pill" data-value="foo">
-						<span>Item 1</span>
-						<span class="glyphicon glyphicon-close">
-							<span class="sr-only">Remove</span>
-						</span>
-					</li>
-					<li class="btn btn-default pill">
-						<span>Item 2</span>
-						<span class="glyphicon glyphicon-close">
-							<span class="sr-only">Remove</span>
-						</span>
-					</li>
-					<li class="btn btn-default pill" data-value="three-value">
-						<span>Item 3</span>
-						<span class="glyphicon glyphicon-close">
-							<span class="sr-only">Remove</span>
-						</span>
-					</li>
-					<li class="btn btn-default pill truncate">
-						<span>Item 4</span>
-						<span class="glyphicon glyphicon-close">
-							<span class="sr-only">Remove</span>
-						</span>
-					</li>
-					<li class="btn btn-default pill truncate">
-						<span>Item 5</span>
-						<span class="glyphicon glyphicon-close">
-							<span class="sr-only">Remove</span>
-						</span>
-					</li>
-					<li class="pillbox-input-wrap btn-group">
-						<a class="pillbox-more">and <span class="pillbox-more-count"></span> more...</a>
-						<input type="text" class="form-control dropdown-toggle pillbox-add-item" placeholder="add item">
-						
-						<button type="button" class="dropdown-toggle sr-only">
-							<span class="caret"></span>
-							<span class="sr-only">Toggle Dropdown</span>
-						</button>
-						<ul class="suggest dropdown-menu" role="menu" data-toggle="dropdown" data-flip="auto"></ul>
-					</li>
-				</ul>
+		<h2>Placard</h2>
+		<div class="thin-box">
+			<div class="placard" data-initialize="placard" id="myPlacard1">
+				<div class="placard-popup"></div>
+				<input class="form-control placard-field" type="text"/>
 			</div>
 
 			<br/>
-			<h5>Sample Methods</h5>
-			<div class="btn-group">
-				<button type="button" class="btn btn-default" id="btnPillboxEnable">enable</button>
-				<button type="button" class="btn btn-default" id="btnPillboxDisable">disable</button>
-				<button type="button" class="btn btn-default" id="btnPillboxAdd">add</button>
-				<button type="button" class="btn btn-default" id="btnPillboxRemoveByValue">remove by value</button>
-				<button type="button" class="btn btn-default" id="btnPillboxRemoveBySelector">remove by selector</button>
-				<button type="button" class="btn btn-default" id="btnPillboxRemoveByText">remove by text</button>
-				<button type="button" class="btn btn-default" id="btnPillboxItems">log items to console</button>
-				<button type="button" class="btn btn-default" id="btnPillboxDestroy">destroy and append</button>
-			</div>
-			<hr/>
 
-		</div>
-
-		<div class="section">
-
-			<div class="clearfix" style="background: #f3f3f3; padding: 5px;">
-
-				<h2 id="placard"><a href="#placard">#</a>Placard</h2>
-
-				<div id="MyPlacard1" class="placard" data-initialize="placard">
-					<div class="placard-popup"></div>
-					<input class="form-control placard-field" type="text" placeholder="[Field label]"/>
+			<div class="placard" data-ellipsis="true" data-initialize="placard" id="myPlacard2">
+				<div class="placard-popup"></div>
+				<div class="placard-header"><h5>Header</h5></div>
+				<input class="form-control placard-field" type="text"/>
+				<div class="placard-footer">
+					<a class="placard-cancel" href="#">Cancel</a>
+					<button class="btn btn-primary btn-xs placard-accept" type="button">Save</button>
 				</div>
+			</div>
 
-				<br/>
+			<br/>
 
-				<div id="MyPlacard2" class="placard" data-initialize="placard" data-ellipsis="true">
+			<div style="background: #eee; display: inline-block; padding: 10px;">
+				<div class="placard" data-ellipsis="true" data-initialize="placard" id="myPlacard3">
 					<div class="placard-popup"></div>
-					<div class="placard-header"><h6>Field label</h6></div>
-					<input class="form-control placard-field" type="text" placeholder="[Field label]"/>
+					<div class="placard-header"><h5>Header</h5></div>
+					<textarea class="form-control glass placard-field"></textarea>
 					<div class="placard-footer">
 						<a class="placard-cancel" href="#">Cancel</a>
 						<button class="btn btn-primary btn-xs placard-accept" type="button">Save</button>
 					</div>
 				</div>
-
-				<br/>
-
-				<div id="MyPlacard3" class="placard" data-initialize="placard" data-ellipsis="true">
-					<div class="placard-popup"></div>
-					<div class="placard-header"><h5>Field label</h5></div>
-					<textarea class="form-control placard-field glass" placeholder="[Field label]"></textarea>
-					<div class="placard-footer">
-						<button class="btn btn-primary btn-xs placard-accept" type="button">Save</button>
-						<a class="placard-cancel" href="#">Cancel</a>
-					</div>
-				</div>
-
-			<br/>
-			<h5>Sample Methods</h5>
-			<div class="btn-group">
-				<button type="button" class="btn btn-default" id="btnPlacardEnable">enable</button>
-				<button type="button" class="btn btn-default" id="btnPlacardDisable">disable</button>
-				<button type="button" class="btn btn-default" id="btnPlacardDestroy">destroy and append</button>
 			</div>
-			<hr/>
-
-			</div>
-
+		</div>
+		<div class="btn-panel">
+			<button type="button" class="btn btn-default" id="btnPlacardEnable">enable</button>
+			<button type="button" class="btn btn-default" id="btnPlacardDisable">disable</button>
+			<button type="button" class="btn btn-default" id="btnPlacardDestroy">destroy and append</button>
 		</div>
 
-		<div class="section clearfix radio-container">
-
-			<h2 id="radio"><a href="#radio">#</a>Radio</h2>
-
-			<div id="MyRadioContainer">
-
-				<div class="radio" data-initialize="radio">
-					<label class="radio-custom">
-						<input id="MyRadio1" class="sr-only" name="radioEx1" type="radio" value="option1">
-						<span class="radio-label">Browser-independent radio unchecked on page load</span>
-					</label>
-				</div>
-				
-				<div class="radio" data-initialize="radio">
-					<label class="radio-custom checked">
-						<input class="sr-only" checked="checked" name="radioEx1" type="radio" value="option2">
-						<span class="radio-label">Browser-independent radio checked on page load</span>
-					</label>
-				</div>
-
-				<div class="radio" data-initialize="radio">
-					<label id="lbl3" class="radio-custom checked">
-						<input id="radio3" class="sr-only" checked="checked" disabled="disabled" name="radio1b" type="radio" value="option3">
-						<span class="radio-label">Disabled custom appearance radio selected on page load</span>
-					</label>
-				</div>
-
-				<div class="radio" data-initialize="radio">
-					<label class="radio-custom">
-						<input class="sr-only" disabled="disabled" name="radioEx2" type="radio" value="option4">
-						<span class="radio-label">Disabled browser-independent radio unchecked on page load</span>
-					</label>
-				</div>
-
-			</div>
-
+		<h2>Radio</h2>
+		<div class="thin-box">
+			<!--Block-level Radios-->
 			<div class="radio">
-				<label>
-					<input type="radio" name="radio2a" checked="checked">
-					<span class="radio-label">Native: Checked Enabled</span>
+				<label class="radio-custom" data-initialize="radio" id="myCustomRadio1">
+					<input class="sr-only" name="radio1" type="radio" value="">
+					<span class="radio-label">Custom radio unchecked on page load</span>
 				</label>
 			</div>
 			<div class="radio">
-				<label>
-					<input type="radio" name="radio2a">
-					<span class="radio-label">Native: Unchecked Enabled</span>
+				<label class="radio-custom" data-initialize="radio" id="myCustomRadio2">
+					<input checked="checked" class="checked sr-only" name="radio1" type="radio" value="">
+					<span class="radio-label">Custom radio checked on page load</span>
 				</label>
 			</div>
 			<div class="radio">
-				<label>
-					<input type="radio" name="radio2b" checked="checked" disabled="disabled">
-					<span class="radio-label">Native: Checked Disabled</span>
+				<label class="radio-custom" data-initialize="radio" id="myCustomRadio3">
+					<input class="sr-only" disabled="disabled" name="radio2" type="radio" value="">
+					<span class="radio-label">Custom radio disabled and unchecked on page load</span>
 				</label>
 			</div>
 			<div class="radio">
-				<label>
-					<input type="radio" name="radio2b" disabled="disabled">
-					<span class="radio-label">Native: Unchecked Disabled</span>
+				<label class="radio-custom" data-initialize="radio" id="myCustomRadio4">
+					<input checked="checked" class="checked sr-only" disabled="disabled" name="radio2" type="radio" value="">
+					<span class="radio-label">Custom radio disabled and checked on page load</span>
 				</label>
 			</div>
 
 			<br/>
-			<h5>Sample element visibility toggle bound to radios</h5>
-			<div id="radioToggle1" class="alert bg-info hide" aria-hidden="true">This message's visibility toggles by id with a radio above.</div>
-			<div class="radioToggle2 alert bg-warning hide" aria-hidden="true">This message's visibility toggles by class with a radio above.</div>
-			<div class="radioToggle2 alert bg-success hide" aria-hidden="true">This message's visibility toggles by class with a radio above.</div>
+			<!--Inline radios-->
+			<label class="radio-custom radio-inline" data-initialize="radio" id="myCustomInlineRadio1">
+				<input checked="checked" class="checked sr-only" name="radio3" type="radio" value=""> <span class="radio-label">1, 2, buckle my shoe</span>
+			</label>
+			<label class="radio-custom radio-inline" data-initialize="radio" id="myCustomInlineRadio2">
+				<input class="sr-only" name="radio3" type="radio" value=""> <span class="radio-label">3, 4, shut the door</span>
+			</label>
+			<label class="radio-custom radio-inline" data-initialize="radio" id="myCustomInlineRadio3">
+				<input class="sr-only" disabled="disabled" name="radio4" type="radio" value=""> <span class="radio-label">5, 6, pick up sticks</span>
+			</label>
+			<label class="radio-custom radio-inline" data-initialize="radio" id="myCustomInlineRadio4">
+				<input checked="checked" class="checked sr-only" disabled="disabled" name="radio4" type="radio" value=""> <span class="radio-label">7, 8, lay them straight</span>
+			</label>
+
+			<br/><br/>
+			<!--Toggling capability-->
+			<div class="radio">
+				<label class="radio-custom" data-initialize="radio" id="myCustomTogglingRadio1">
+					<input class="sr-only" data-toggle=".radioToggle" name="radio5" type="radio" value="">
+					<span class="radio-label">Custom radio toggles by class</span>
+				</label>
+			</div>
+			<div class="radio">
+				<label class="radio-custom" data-initialize="radio" id="myCustomTogglingRadio2">
+					<input class="sr-only" data-toggle="#radioToggle" name="radio5" type="radio" value="">
+					<span class="radio-label">Custom radio toggles by id</span>
+				</label>
+			</div>
+
+			<div aria-hidden="true" class="radioToggle alert alert-warning hide">This message's visibility toggles by class with a radio above.</div>
+			<div aria-hidden="true" class="radioToggle alert alert-success hide">This message's visibility toggles by class with a radio above.</div>
+			<div aria-hidden="true" class="alert alert-info hide" id="radioToggle">This message's visibility toggles by id with a radio above.</div>
 
 			<br/>
-			<h5>Sample Methods</h5>
-
-			<div class="btn-group">
-				<button type="button" class="btn btn-default" id="btnRadioDisable">disable radio1a</button>
-				<button type="button" class="btn btn-default" id="btnRadioEnable">enable radio1a</button>
-				<button type="button" class="btn btn-default" id="btnRadioDisableAll">disable all</button>
-				<button type="button" class="btn btn-default" id="btnRadioEnableAll">enable all</button>
-				<button type="button" class="btn btn-default" id="btnRadioDestroy">destroy and append radio1a</button>
+			<!--Highlight capability-->
+			<div class="radio highlight">
+				<label class="radio-custom highlight" data-initialize="radio" id="myCustomHighlightRadio1">
+					<input class="sr-only" name="radio6" type="radio" value="">
+					<span class="radio-label">Custom block-level highlight radio</span>
+				</label>
 			</div>
-			<hr/>
+			<div class="radio highlight">
+				<label class="radio-custom highlight" data-initialize="radio" id="myCustomHighlightRadio2">
+					<input class="sr-only" name="radio6" type="radio" value="">
+					<span class="radio-label">Custom block-level highlight radio</span>
+				</label>
+			</div>
+			<label class="radio-custom radio-inline highlight" data-initialize="radio" id="myCustomHighlightRadio3">
+				<input class="sr-only" name="radio7" type="radio" value=""> <span class="radio-label">Custom inline highlight radio</span>
+			</label>
+			<label class="radio-custom radio-inline highlight" data-initialize="radio" id="myCustomHighlightRadio4">
+				<input class="sr-only" name="radio7" type="radio" value=""> <span class="radio-label">Custom inline highlight radio</span>
+			</label>
+		</div>
+		<div class="btn-panel">
+			<button type="button" class="btn btn-default" id="btnRadioDisable">disable radio1</button>
+			<button type="button" class="btn btn-default" id="btnRadioEnable">enable radio1</button>
+			<button type="button" class="btn btn-default" id="btnRadioDestroy">destroy and append</button>
 		</div>
 
-		<div class="section clearfix">
-
-			<h2 id="repeater"><a href="#repeater">#</a>Repeater</h2>
-
-			<div id="MyRepeaterContainer">
-
-				<div id="MyRepeater" class="repeater" data-staticheight="500px">
-					<div class="repeater-header">
-						<div class="repeater-header-left">
-							<span class="repeater-title">Awesome Repeater</span>
-							<div class="repeater-search">
-								<div class="search input-group">
-									<input type="search" class="form-control" placeholder="Search"/>
-									<span class="input-group-btn">
-										<button class="btn btn-default" type="button">
-											<span class="glyphicon glyphicon-search"></span>
-											<span class="sr-only">Search</span>
-										</button>
-									</span>
-								</div>
+		<h2>Repeater</h2>
+		<div class="thin-box">
+			<div class="repeater" data-staticheight="400" id="myRepeater">
+				<div class="repeater-header">
+					<div class="repeater-header-left">
+						<span class="repeater-title">Awesome Repeater</span>
+						<div class="repeater-search">
+							<div class="search input-group">
+								<input type="search" class="form-control" placeholder="Search"/>
+					<span class="input-group-btn">
+						<button class="btn btn-default" type="button">
+							<span class="glyphicon glyphicon-search"></span>
+							<span class="sr-only">Search</span>
+						</button>
+					</span>
 							</div>
 						</div>
-						<div class="repeater-header-right">
-							<div class="btn-group selectlist repeater-filters" data-resize="auto">
+					</div>
+					<div class="repeater-header-right">
+						<div class="btn-group selectlist repeater-filters" data-resize="auto">
+							<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+								<span class="selected-label">&nbsp;</span>
+								<span class="caret"></span>
+								<span class="sr-only">Toggle Filters</span>
+							</button>
+							<ul class="dropdown-menu" role="menu">
+								<li data-value="all" data-selected="true"><a href="#">All</a></li>
+								<li data-value="some"><a href="#">Some</a></li>
+								<li data-value="others"><a href="#">Others</a></li>
+							</ul>
+							<input class="hidden hidden-field" name="filterSelection" readonly="readonly" aria-hidden="true" type="text"/>
+						</div>
+						<div class="btn-group repeater-views" data-toggle="buttons">
+							<label class="btn btn-default active">
+								<input name="repeaterViews" type="radio" value="list"><span class="glyphicon glyphicon-list"></span>
+							</label>
+							<label class="btn btn-default">
+								<input name="repeaterViews" type="radio" value="thumbnail"><span class="glyphicon glyphicon-th"></span>
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="repeater-viewport">
+					<div class="repeater-canvas"></div>
+					<div class="loader repeater-loader"></div>
+				</div>
+				<div class="repeater-footer">
+					<div class="repeater-footer-left">
+						<div class="repeater-itemization">
+							<span><span class="repeater-start"></span> - <span class="repeater-end"></span> of <span class="repeater-count"></span> items</span>
+							<div class="btn-group selectlist" data-resize="auto">
 								<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
 									<span class="selected-label">&nbsp;</span>
 									<span class="caret"></span>
-									<span class="sr-only">Toggle Filters</span>
+									<span class="sr-only">Toggle Dropdown</span>
 								</button>
 								<ul class="dropdown-menu" role="menu">
-									<li data-value="all" data-selected="true"><a href="#">All</a></li>
-									<li data-value="some"><a href="#">Some</a></li>
-									<li data-value="others"><a href="#">Others</a></li>
+									<li data-value="5"><a href="#">5</a></li>
+									<li data-value="10" data-selected="true"><a href="#">10</a></li>
+									<li data-value="20"><a href="#">20</a></li>
+									<li data-value="50" data-foo="bar" data-fizz="buzz"><a href="#">50</a></li>
+									<li data-value="100"><a href="#">100</a></li>
 								</ul>
-								<input class="hidden hidden-field" name="filterSelection" readonly="readonly" aria-hidden="true" type="text"/>
+								<input class="hidden hidden-field" name="itemsPerPage" readonly="readonly" aria-hidden="true" type="text"/>
 							</div>
-							<div class="btn-group repeater-views" data-toggle="buttons">
-								<label class="btn btn-secondary active">
-									<input name="repeaterViews" type="radio" value="list">
-									<span class="glyphicon glyphicon-list">
-										<span class="sr-only">List View</span>
-									</span>
-								</label>
-								<label class="btn btn-secondary">
-									<input name="repeaterViews" type="radio" value="thumbnail">
-										<span class="glyphicon glyphicon-th">
-											<span class="sr-only">Thumbnail View</span>
-										</span>
-								</label>
-							</div>
+							<span>Per Page</span>
 						</div>
 					</div>
-					<div class="repeater-viewport">
-						<div class="repeater-canvas"></div>
-						<div class="loader repeater-loader"></div>
-					</div>
-					<div class="repeater-footer">
-						<div class="repeater-footer-left">
-							<div class="repeater-itemization">
-								<span><span class="repeater-start"></span> - <span class="repeater-end"></span> of <span class="repeater-count"></span> items</span>
-								<div class="btn-group selectlist" data-resize="auto">
-									<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-										<span class="selected-label">&nbsp;</span>
-										<span class="caret"></span>
-										<span class="sr-only">Toggle Dropdown</span>
-									</button>
-									<ul class="dropdown-menu" role="menu">
-										<li data-value="5"><a href="#">5</a></li>
-										<li data-value="10" data-selected="true"><a href="#">10</a></li>
-										<li data-value="20"><a href="#">20</a></li>
-										<li data-value="50" data-foo="bar" data-fizz="buzz"><a href="#">50</a></li>
-										<li data-value="100"><a href="#">100</a></li>
-									</ul>
-									<input class="hidden hidden-field" name="itemsPerPage" readonly="readonly" aria-hidden="true" type="text"/>
-								</div>
-								<span>Per Page</span>
-							</div>
-						</div>
-						<div class="repeater-footer-right">
-							<div class="repeater-pagination">
-								<button type="button" class="btn btn-default btn-sm repeater-prev">
-									<span class="glyphicon glyphicon-chevron-left"></span>
-									<span class="sr-only">Previous Page</span>
-								</button>
-								<label id="MyPageLabel" class="page-label">Page</label>
-								<div class="repeater-primaryPaging active">
-									<div class="input-group input-append dropdown combobox">
-										<input type="text" class="form-control" aria-labelledby="MyPageLabel">
-										<div class="input-group-btn">
-											<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-												<span class="caret"></span>
-												<span class="sr-only">Toggle Dropdown</span>
-											</button>
-											<ul class="dropdown-menu dropdown-menu-right"></ul>
-										</div>
+					<div class="repeater-footer-right">
+						<div class="repeater-pagination">
+							<button type="button" class="btn btn-default btn-sm repeater-prev">
+								<span class="glyphicon glyphicon-chevron-left"></span>
+								<span class="sr-only">Previous Page</span>
+							</button>
+							<label id="myPageLabel" class="page-label">Page</label>
+							<div class="repeater-primaryPaging active">
+								<div class="input-group input-append dropdown combobox">
+									<input type="text" class="form-control" aria-labelledby="MyPageLabel">
+									<div class="input-group-btn">
+										<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+											<span class="caret"></span>
+											<span class="sr-only">Toggle Dropdown</span>
+										</button>
+										<ul class="dropdown-menu dropdown-menu-right"></ul>
 									</div>
 								</div>
-								<input type="text" class="form-control repeater-secondaryPaging" aria-labelledby="MyPageLabel">
-								<span>of <span class="repeater-pages"></span></span>
-								<button type="button" class="btn btn-default btn-sm repeater-next">
-									<span class="glyphicon glyphicon-chevron-right"></span>
-									<span class="sr-only">Next Page</span>
-								</button>
 							</div>
+							<input type="text" class="form-control repeater-secondaryPaging" aria-labelledby="MyPageLabel">
+							<span>of <span class="repeater-pages"></span></span>
+							<button type="button" class="btn btn-default btn-sm repeater-next">
+								<span class="glyphicon glyphicon-chevron-right"></span>
+								<span class="sr-only">Next Page</span>
+							</button>
 						</div>
 					</div>
 				</div>
-
 			</div>
-
-			<br/>
-			<h5>Sample Methods</h5>
-
-			<div class="btn-group">
-				<button type="button" class="btn btn-default" id="btnRepeaterDisable">disable ???</button>
-				<button type="button" class="btn btn-default" id="btnRepeaterEnable">enable ???</button>
-				<button type="button" class="btn btn-default" id="btnRepeaterDestroy">destroy and append</button>
-			</div>
-
+		</div>
+		<div class="btn-panel">
+			<!--<button type="button" class="btn btn-default" id="btnRepeaterDisable">disable ???</button>-->
+			<!--<button type="button" class="btn btn-default" id="btnRepeaterEnable">enable ???</button>-->
+			<button type="button" class="btn btn-default" id="btnRepeaterDestroy">destroy and append</button>
 		</div>
 
-		<div class="section clearfix">
-
-			<h2 id="scheduler"><a href="#scheduler">#</a>Scheduler</h2>
-
-			<div><!-- <div class="bs-example fu-example-scheduler"> -->
-
-			<div id="MyScheduler" class="form-horizontal container-fluid scheduler" role="form" data-initialize="scheduler">
+		<h2>Scheduler</h2>
+		<div class="thin-box">
+			<div class="form-horizontal container-fluid scheduler" data-initialize="scheduler" role="form" id="myScheduler">
 				<div class="form-group start-datetime">
-					<label class="col-sm-2 control-label scheduler-label" for="MyStartDate">Start Date</label>
+					<label class="col-sm-2 control-label scheduler-label" for="myStartDate">Start Date</label>
 					<div class="row col-sm-10">
 						<div class="col-sm-8 form-group">
-
 							<div class="datepicker start-date">
 								<div class="input-group">
-									<input id="MyStartDate" class="form-control" type="text"/>
+									<input class="form-control" id="myStartDate" type="text"/>
 									<div class="input-group-btn">
 										<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
 											<span class="glyphicon glyphicon-calendar"></span>
@@ -800,9 +627,9 @@
 										<div class="dropdown-menu dropdown-menu-right datepicker-calendar-wrapper" role="menu">
 											<div class="datepicker-calendar">
 												<div class="datepicker-calendar-header">
-													<button type="button" class="prev"><span class="glyphicon glyphicon-chevron-left"></span><span class="sr-only">Previous Month</span></button>
-													<button type="button" class="next"><span class="glyphicon glyphicon-chevron-right"></span><span class="sr-only">Next Month</span></button>
-													<button type="button" class="title">
+													<button class="prev"><span class="glyphicon glyphicon-chevron-left"></span><span class="sr-only">Previous Month</span></button>
+													<button class="next"><span class="glyphicon glyphicon-chevron-right"></span><span class="sr-only">Next Month</span></button>
+													<button class="title">
 														<span class="month">
 															<span data-month="0">January</span>
 															<span data-month="1">February</span>
@@ -834,25 +661,25 @@
 													<tbody></tbody>
 												</table>
 												<div class="datepicker-calendar-footer">
-													<button type="button" class="datepicker-today">Today</button>
+													<button class="datepicker-today">Today</button>
 												</div>
 											</div>
 											<div class="datepicker-wheels" aria-hidden="true">
 												<div class="datepicker-wheels-month">
 													<h2 class="header">Month</h2>
 													<ul>
-														<li data-month="0"><button type="button">Jan</button></li>
-														<li data-month="1"><button type="button">Feb</button></li>
-														<li data-month="2"><button type="button">Mar</button></li>
-														<li data-month="3"><button type="button">Apr</button></li>
-														<li data-month="4"><button type="button">May</button></li>
-														<li data-month="5"><button type="button">Jun</button></li>
-														<li data-month="6"><button type="button">Jul</button></li>
-														<li data-month="7"><button type="button">Aug</button></li>
-														<li data-month="8"><button type="button">Sep</button></li>
-														<li data-month="9"><button type="button">Oct</button></li>
-														<li data-month="10"><button type="button">Nov</button></li>
-														<li data-month="11"><button type="button">Dec</button></li>
+														<li data-month="0"><button>Jan</button></li>
+														<li data-month="1"><button>Feb</button></li>
+														<li data-month="2"><button>Mar</button></li>
+														<li data-month="3"><button>Apr</button></li>
+														<li data-month="4"><button>May</button></li>
+														<li data-month="5"><button>Jun</button></li>
+														<li data-month="6"><button>Jul</button></li>
+														<li data-month="7"><button>Aug</button></li>
+														<li data-month="8"><button>Sep</button></li>
+														<li data-month="9"><button>Oct</button></li>
+														<li data-month="10"><button>Nov</button></li>
+														<li data-month="11"><button>Dec</button></li>
 													</ul>
 												</div>
 												<div class="datepicker-wheels-year">
@@ -860,7 +687,7 @@
 													<ul></ul>
 												</div>
 												<div class="datepicker-wheels-footer clearfix">
-													<button type="button" class="btn datepicker-wheels-back"><span class="glyphicon glyphicon-arrow-left"></span><span class="sr-only">Return to Calendar</span></button>
+													<button class="btn datepicker-wheels-back"><span class="glyphicon glyphicon-arrow-left"></span><span class="sr-only">Return to Calendar</span></button>
 													<button type="button" class="btn datepicker-wheels-select">Select <span class="sr-only">Month and Year</span></button>
 												</div>
 											</div>
@@ -868,13 +695,12 @@
 									</div>
 								</div>
 							</div>
-
 						</div>
-						
+
 						<div class="col-sm-4 form-group">
 							<label class="sr-only" for="MyStartTime">Start Time</label>
 							<div class="input-group combobox start-time">
-								<input id="MyStartTime" type="text" class="form-control" />
+								<input id="myStartTime" type="text" class="form-control" />
 								<div class="input-group-btn">
 									<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
 										<span class="caret"></span>
@@ -933,7 +759,6 @@
 								</div>
 							</div>
 						</div>
-						
 					</div>
 				</div>
 
@@ -1087,31 +912,30 @@
 						</div>
 
 						<div class="form-group repeat-panel repeat-weekly repeat-days-of-the-week hide" aria-hidden="true">
-								<fieldset class="btn-group" data-toggle="buttons">
-									<label class="btn btn-default">
-										<input type="checkbox" data-value="SU">Sun
-									</label>
-									<label class="btn btn-default">
-										<input type="checkbox" data-value="MO">Mon
-									</label>
-									<label class="btn btn-default">
-										<input type="checkbox" data-value="TU">Tue
-									</label>
-									<label class="btn btn-default">
-										<input type="checkbox" data-value="WE"> Wed
-									</label>
-									<label class="btn btn-default">
-										<input type="checkbox" data-value="TH"> Thu
-									</label>
-									<label class="btn btn-default">
-										<input type="checkbox" data-value="FR"> Fri
-									</label>
-									<label class="btn btn-default">
-										<input type="checkbox" data-value="SA"> Sat
-									</label>
-								</fieldset>
-							</div>
-
+							<fieldset class="btn-group" data-toggle="buttons">
+								<label class="btn btn-default">
+									<input type="checkbox" data-value="SU">Sun
+								</label>
+								<label class="btn btn-default">
+									<input type="checkbox" data-value="MO">Mon
+								</label>
+								<label class="btn btn-default">
+									<input type="checkbox" data-value="TU">Tue
+								</label>
+								<label class="btn btn-default">
+									<input type="checkbox" data-value="WE"> Wed
+								</label>
+								<label class="btn btn-default">
+									<input type="checkbox" data-value="TH"> Thu
+								</label>
+								<label class="btn btn-default">
+									<input type="checkbox" data-value="FR"> Fri
+								</label>
+								<label class="btn btn-default">
+									<input type="checkbox" data-value="SA"> Sat
+								</label>
+							</fieldset>
+						</div>
 
 						<div class="repeat-panel repeat-monthly hide" aria-hidden="true">
 							<div class="form-group repeat-monthly-date">
@@ -1171,7 +995,6 @@
 										<span class="radio-label">on the</span>
 									</label>
 								</div>
-
 								<div data-resize="auto" class="btn-group selectlist month-day-pos pull-left">
 									<button data-toggle="dropdown" class="btn btn-default dropdown-toggle" type="button">
 										<span class="selected-label">First</span>
@@ -1186,7 +1009,6 @@
 									</ul>
 									<input type="text" aria-hidden="true" readonly="readonly" name="monthlySelectlist" class="hidden hidden-field">
 								</div>
-
 								<div data-resize="auto" class="btn-group selectlist month-days pull-left">
 									<button data-toggle="dropdown" class="btn btn-default dropdown-toggle" type="button">
 										<span class="selected-label">Sunday</span>
@@ -1206,21 +1028,17 @@
 									</ul>
 									<input type="text" aria-hidden="true" readonly="readonly" name="monthlySelectlist" class="hidden hidden-field">
 								</div>
-
 							</div>
 						</div>
-						
+
 						<div class="repeat-panel repeat-yearly hide" aria-hidden="true">
-
 							<div class="form-group repeat-yearly-date">
-
 								<div class="radio pull-left">
 									<label class="radio-custom">
 										<input class="sr-only" type="radio" checked="checked" name="repeat-yearly" value="bymonthday">
 										<span class="radio-label">on</span>
 									</label>
-									</div>
-
+								</div>
 								<div data-resize="auto" class="btn-group selectlist year-month pull-left">
 									<button data-toggle="dropdown" class="btn btn-default dropdown-toggle" type="button">
 										<span class="selected-label">January</span>
@@ -1242,7 +1060,6 @@
 									</ul>
 									<input type="text" aria-hidden="true" readonly="readonly" name="monthlySelectlist" class="hidden hidden-field">
 								</div>
-
 								<div data-resize="auto" class="btn-group selectlist year-month-day pull-left">
 									<button data-toggle="dropdown" class="btn btn-default dropdown-toggle" type="button">
 										<span class="selected-label">1</span>
@@ -1286,9 +1103,7 @@
 							</div>
 
 							<div class="form-group repeat-yearly-day">
-
 								<div class="radio pull-left"><label class="radio-custom"><input class="sr-only" type="radio" name="repeat-yearly" value="bysetpos"> on the</label></div>
-
 								<div data-resize="auto" class="btn-group selectlist year-month-day-pos pull-left">
 									<button data-toggle="dropdown" class="btn btn-default dropdown-toggle" type="button">
 										<span class="selected-label">First</span>
@@ -1351,7 +1166,6 @@
 								</div>
 							</div>
 						</div>
-
 					</div>
 				</div>
 
@@ -1373,7 +1187,7 @@
 								<input type="text" aria-hidden="true" readonly="readonly" name="EndSelectlist" class="hidden hidden-field">
 							</div>
 						</div>
-						
+
 						<div class="col-sm-6 form-group end-option-panel end-after-panel pull-left hide" aria-hidden="true">
 							<div class="spinbox digits-3 end-after">
 								<label id="MyEndAfter" class="sr-only">End After</label>
@@ -1402,9 +1216,9 @@
 										<div class="dropdown-menu dropdown-menu-right datepicker-calendar-wrapper" role="menu">
 											<div class="datepicker-calendar">
 												<div class="datepicker-calendar-header">
-													<button type="button" class="prev"><span class="glyphicon glyphicon-chevron-left"></span><span class="sr-only">Previous Month</span></button>
-													<button type="button" class="next"><span class="glyphicon glyphicon-chevron-right"></span><span class="sr-only">Next Month</span></button>
-													<button type="button" class="title">
+													<button class="prev"><span class="glyphicon glyphicon-chevron-left"></span><span class="sr-only">Previous Month</span></button>
+													<button class="next"><span class="glyphicon glyphicon-chevron-right"></span><span class="sr-only">Next Month</span></button>
+													<button class="title">
 														<span class="month">
 															<span data-month="0">January</span>
 															<span data-month="1">February</span>
@@ -1436,25 +1250,25 @@
 													<tbody></tbody>
 												</table>
 												<div class="datepicker-calendar-footer">
-													<button type="button" class="datepicker-today">Today</button>
+													<button class="datepicker-today">Today</button>
 												</div>
 											</div>
 											<div class="datepicker-wheels" aria-hidden="true">
 												<div class="datepicker-wheels-month">
 													<h2 class="header">Month</h2>
 													<ul>
-														<li data-month="0"><button type="button">Jan</button></li>
-														<li data-month="1"><button type="button">Feb</button></li>
-														<li data-month="2"><button type="button">Mar</button></li>
-														<li data-month="3"><button type="button">Apr</button></li>
-														<li data-month="4"><button type="button">May</button></li>
-														<li data-month="5"><button type="button">Jun</button></li>
-														<li data-month="6"><button type="button">Jul</button></li>
-														<li data-month="7"><button type="button">Aug</button></li>
-														<li data-month="8"><button type="button">Sep</button></li>
-														<li data-month="9"><button type="button">Oct</button></li>
-														<li data-month="10"><button type="button">Nov</button></li>
-														<li data-month="11"><button type="button">Dec</button></li>
+														<li data-month="0"><button>Jan</button></li>
+														<li data-month="1"><button>Feb</button></li>
+														<li data-month="2"><button>Mar</button></li>
+														<li data-month="3"><button>Apr</button></li>
+														<li data-month="4"><button>May</button></li>
+														<li data-month="5"><button>Jun</button></li>
+														<li data-month="6"><button>Jul</button></li>
+														<li data-month="7"><button>Aug</button></li>
+														<li data-month="8"><button>Sep</button></li>
+														<li data-month="9"><button>Oct</button></li>
+														<li data-month="10"><button>Nov</button></li>
+														<li data-month="11"><button>Dec</button></li>
 													</ul>
 												</div>
 												<div class="datepicker-wheels-year">
@@ -1462,7 +1276,7 @@
 													<ul></ul>
 												</div>
 												<div class="datepicker-wheels-footer clearfix">
-													<button type="button" class="btn datepicker-wheels-back"><span class="glyphicon glyphicon-arrow-left"></span><span class="sr-only">Return to Calendar</span></button>
+													<button class="btn datepicker-wheels-back"><span class="glyphicon glyphicon-arrow-left"></span><span class="sr-only">Return to Calendar</span></button>
 													<button type="button" class="btn datepicker-wheels-select">Select <span class="sr-only">Month and Year</span></button>
 												</div>
 											</div>
@@ -1471,505 +1285,201 @@
 								</div>
 							</div>
 						</div>
-
 					</div>
-				</div>
-			</div>
-
-			</div> <!-- example -->
-
-			<br/>
-			<h5>Sample Methods</h5>
-			<div class="btn-group">
-				<button type="button" class="btn btn-default" id="btnSchedulerEnable">enable</button>
-				<button type="button" class="btn btn-default" id="btnSchedulerDisable">disable</button>
-				<button type="button" class="btn btn-default" id="btnSchedulerLogValue">log value</button>
-				<button type="button" class="btn btn-default" id="btnSchedulerSetValue">set value to the following schedule</button>
-				<button type="button" class="btn btn-default" id="btnSchedulerDestroy">destroy and append</button>
-			</div>
-			<br/>
-			<br/>
-			<textarea id="MySchedule" style="width: 100%; height: 150px;">{ "startDateTime": "2014-03-31T03:23+02:00",
-"timeZone": {
-	"name": "Namibia Standard Time",
-		"offset": "+02:00"
-	},
-"recurrencePattern": "FREQ=MONTHLY;INTERVAL=6;BYDAY=WE;BYSETPOS=3;UNTIL=20140919;"
-}</textarea>
-			<hr/>
-
-		</div>
-
-
-		<div class="section clearfix">
-			<h2 id="search"><a href="#search">#</a>Search</h2>
-
-				<div id="MySearch" class="search input-group" role="search" data-initialize="search">
-					<input type="search" class="form-control" placeholder="Search"/>
-					<span class="input-group-btn">
-						<button class="btn btn-default" type="button">
-							<span class="glyphicon glyphicon-search"></span>
-							<span class="sr-only">Search</span>
-						</button>
-					</span>
-				</div>
-
-			<br/>
-			<h5>Sample Methods</h5>
-			<div class="btn-group">
-				<button type="button" class="btn btn-default" id="btnSearchDisable">disable</button>
-				<button type="button" class="btn btn-default" id="btnSearchEnable">enable</button>
-				<button type="button" class="btn btn-default" id="btnSearchDestroy">destroy and append</button>
-			</div>
-			<hr/>
-
-		</div>
-
-		<div class="section clearfix">
-			<h2 id="selectlist"><a href="#selectlist">#</a>Selectlist</h2>
-
-			<div class="form-group">
-				<label class="control-label" for="MySelectlistHiddenInput">With auto-resize</label>
-				<div class="input-group">
-
-					<div id="MySelectlist" class="btn-group selectlist" data-initialize="selectlist" data-resize="auto">
-						<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-							<span class="selected-label"></span>
-							<span class="caret"></span>
-							<span class="sr-only">Toggle Dropdown</span>
-						</button>
-						<ul class="dropdown-menu" role="menu">
-							<li data-value="1"><a href="#">One</a></li>
-							<li data-value="2" data-selected="true"><a href="#">Two</a></li>
-							<li data-value="3"><a href="#">Three</a></li>
-							<li data-value="4" data-foo="bar" data-fizz="buzz"><a href="#">Buzz</a></li>
-							<li data-value="Item Five"><a href="#">Item Five</a></li>
-						</ul>
-						<input id="MySelectlistHiddenInput" class="hidden hidden-field" name="MySelectlist" readonly="readonly" aria-hidden="true" type="text"/>
-					</div>
-
-			</div>
-
-			</div>
-
-			<div class="form-group">
-				<label class="control-label" for="MySelectlistHiddenInput2">Default</label>
-				<div class="input-group">
-
-					<div id="MySelectlist2" class="btn-group selectlist" data-initialize="selectlist">
-						<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-							<span class="selected-label"></span>
-							<span class="caret"></span>
-							<span class="sr-only">Toggle Dropdown</span>
-						</button>
-						<ul class="dropdown-menu" role="menu">
-							<li data-value="1"><a href="#">One</a></li>
-							<li data-value="2" data-selected="true"><a href="#">Two</a></li>
-							<li data-value="3"><a href="#">Three</a></li>
-							<li data-value="4" data-foo="bar" data-fizz="buzz"><a href="#">Buzz</a></li>
-							<li data-value="Item Five"><a href="#">Item Five</a></li>
-						</ul>
-						<input id="MySelectlistHiddenInput2" class="hidden hidden-field" name="MySelectlist" readonly="readonly" aria-hidden="true" type="text"/>
-					</div>
-
-				</div>
-			</div>
-
-			<br/>
-			<br/>
-			<h5>Sample Methods</h5>
-			<div class="btn-group">
-				<button type="button" class="btn btn-default" id="btnSelectlistGetSelectedItem">log selected item/value</button>
-				<button type="button" class="btn btn-default" id="btnSelectlistSelectByValue">set by value (3)</button>
-				<button type="button" class="btn btn-default" id="btnSelectlistSelectByIndex">set by element index (zero-based) ('4')</button>
-			</div>
-
-			<div class="btn-group">
-				<button type="button" class="btn btn-default" id="btnSelectlistSelectByText">set by text ('One')</button>
-				<button type="button" class="btn btn-default" id="btnSelectlistSelectBySelector">set by CSS selector ('li[data-fizz=buzz]')</button>
-				<button type="button" class="btn btn-default" id="btnSelectlistEnableSelectlist">enable</button>
-				<button type="button" class="btn btn-default" id="btnSelectlistDisableSelectlist">disable</button>
-				<button type="button" class="btn btn-default" id="btnSelectlistDestroy">destroy and append</button>
-			</div>
-			<hr/>
-
-		</div>
-
-
-		<div class="section clearfix">
-
-			<h2 id="spinbox"><a href="#spinbox">#</a>Spinbox</h2>
-
-			<div id="MySpinboxContainer">
-
-				<div class="form-group">
-					<label class="control-label" for="MySpinboxInput">Without default</label>
-					<div class="form-group">
-					
-						<div id="MySpinbox" class="spinbox" data-initialize="spinbox">
-							<input id="MySpinboxInput" type="text" class="form-control input-mini spinbox-input">
-							<div class="spinbox-buttons btn-group btn-group-vertical">
-								<button type="button" class="btn btn-default spinbox-up btn-xs">
-									<span class="glyphicon glyphicon-chevron-up"></span><span class="sr-only">Increase</span>
-								</button>
-								<button type="button" class="btn btn-default spinbox-down btn-xs">
-									<span class="glyphicon glyphicon-chevron-down"></span><span class="sr-only">Decrease</span>
-								</button>
-							</div>
-						</div>
-
-					</div>
-				</div>
-
-				<div class="form-group">
-					<label class="control-label" for="MySpinboxWithDefaultInput">With default and 3-digit class</label>
-					<div class="form-group">
-						
-						<div id="MySpinboxWithDefault" class="spinbox digits-3" data-initialize="spinbox">
-							<input id="MySpinboxWithDefaultInput" type="text" value="3" class="form-control input-mini spinbox-input">
-
-							<div class="spinbox-buttons btn-group btn-group-vertical">
-								<button type="button" class="btn btn-default spinbox-up btn-xs">
-									<span class="glyphicon glyphicon-chevron-up"></span><span class="sr-only">Increase</span>
-								</button>
-								<button type="button" class="btn btn-default spinbox-down btn-xs">
-									<span class="glyphicon glyphicon-chevron-down"></span><span class="sr-only">Decrease</span>
-								</button>
-							</div>
-						</div>
-
-					</div>
-				</div>
-
-				<div class="form-group">
-					<label class="control-label" for="MySpinboxWithDecimalInput">With custom decimal mark and units</label>
-					<div class="form-group">
-						
-						<div id="MySpinboxDecimal" class="spinbox">
-							<input id="MySpinboxWithDecimalInput" type="text" class="form-control input-mini spinbox-input">
-
-							<div class="spinbox-buttons btn-group btn-group-vertical">
-								<button type="button" class="btn btn-default spinbox-up btn-xs">
-									<span class="glyphicon glyphicon-chevron-up"></span><span class="sr-only">Increase</span>
-								</button>
-								<button type="button" class="btn btn-default spinbox-down btn-xs">
-									<span class="glyphicon glyphicon-chevron-down"></span><span class="sr-only">Decrease</span>
-								</button>
-							</div>
-						</div>
-
-					</div>
-				</div>
-
-
-
-			</div>
-
-			<h5>Sample Methods</h5>
-			<div class="btn-group">
-				<input id="spinboxSetValueBtn" type="button" class="btn btn-default" value="set value (4)"/>
-				<input id="spinboxGetValueBtn" type="button" class="btn btn-default" value="get value"/>
-				<input id="enableSpinbox" type="button" class="btn btn-default" value="enable"/>
-				<input id="disableSpinbox" type="button" class="btn btn-default" value="disable"/>
-				<button id="btnSpinboxDestroy" type="button" class="btn btn-default">destroy and append</button>
-			</div>
-
-		</div>
-
-		<div class="section clearfix">
-
-			<h2 id="tree"><a href="#tree">#</a>Tree</h2>
-
-			<div class="form-group">
-				<label class="control-label">Items selectable only</label>
-				<div class="form-group">
-
-					<ul id="MyTree" class="tree" role="tree">
-						<!-- branch/folder template -->
-						<li class="tree-branch hide" data-template="treebranch" role="treeitem" aria-expanded="false">
-							<div class="tree-branch-header">
-								<button type="button" class="tree-branch-name">
-									<span class="glyphicon icon-caret glyphicon-play"></span>
-									<span class="glyphicon icon-folder glyphicon-folder-close"></span>
-									<span class="tree-label"></span>
-								</button>
-							</div>
-							<ul class="tree-branch-children" role="group"></ul>
-							<div class="tree-loader" role="alert">Loading...</div>
-						</li>
-						<!-- item template -->
-						<li class="tree-item hide" data-template="treeitem" role="treeitem">
-							<button type="button" class="tree-item-name">
-								<span class="glyphicon icon-item fueluxicon-bullet"></span>
-								<span class="tree-label"></span>
-							</button>
-						</li>
-					</ul>
-				
-				</div>
-			</div>
-
-			<br/>
-			<h5>Sample Methods</h5>
-
-			<div class="btn-group">
-				<button type="button" class="btn btn-default" id="btnTreeDestroy">destroy and append #MyTree</button>
-			</div>
-			<hr/>
-
-			<div class="form-group">
-				<label class="control-label">Folders selectable</label>
-				<div class="form-group">
-
-					<ul id="MyTreeSelectableFolder" class="tree tree-folder-select" role="tree">
-						<!-- branch/folder template -->
-						<li class="tree-branch hide" data-template="treebranch" role="treeitem" aria-expanded="false">
-							<div class="tree-branch-header">
-								<button type="button" class="glyphicon icon-caret glyphicon-play"><span class="sr-only">Open</span></button>
-								<button type="button" class="tree-branch-name">
-									<span class="glyphicon icon-folder glyphicon-folder-close"></span>
-									<span class="tree-label"></span>
-								</button>
-							</div>
-							<ul class="tree-branch-children"></ul>
-							<div class="tree-loader" role="alert">Loading...</div>
-						</li>
-						<!-- item template -->
-						<li class="tree-item hide" data-template="treeitem" role="treeitem">
-							<button type="button" class="tree-item-name">
-								<span class="glyphicon icon-item fueluxicon-bullet"></span>
-								<span class="tree-label"></span>
-							</button>
-						</li>
-					</ul>
-
-				</div>
-			</div>
-
-			<div class="form-group">
-				<label class="control-label">Folders default </label>
-				<div class="form-group">
-
-					<ul id="MyTreeDefault" class="tree tree-folder-select" role="tree">
-						<!-- branch/folder template -->
-						<li class="tree-branch hide" data-template="treebranch" role="treeitem" aria-expanded="false">
-							<div class="tree-branch-header">
-								<button type="button" class="glyphicon icon-caret glyphicon-play"><span class="sr-only">Open</span></button>
-								<button type="button" class="tree-branch-name">
-									<span class="glyphicon icon-folder glyphicon-folder-close"></span>
-									<span class="tree-label"></span>
-								</button>
-							</div>
-							<div class="tree-branch-children"></div>
-							<div class="tree-loader" role="alert">Loading...</div>
-						</li>
-						<!-- item template -->
-						<li class="tree-item hide" data-template="treeitem" role="treeitem">
-							<button type="button" class="tree-item-name">
-								<span class="glyphicon icon-item fueluxicon-bullet"></span>
-								<span class="tree-label"></span>
-							</button>
-						</li>
-					</ul>
-
-				</div>
-			</div>
-
-			<hr/>
-
-
-			<hr/>
-
-		</div>
-
-			<div class="section clearfix">
-
-			<h2 id="wizard"><a href="#wizard">#</a>Wizard</h2>
-
-			<div id="MyWizard" class="wizard" data-initialize="wizard">
-				<ul class="steps">
-					<li class="active" data-step="1"><span class="badge badge-info">1</span>Campaign<span class="chevron"></span></li>
-					<li data-step="2"><span class="badge">2</span>Recipients<span class="chevron"></span></li>
-					<li data-step="3"><span class="badge">3</span>Template<span class="chevron"></span></li>
-					<li data-step="4"><span class="badge">4</span>Preview<span class="chevron"></span></li>
-					<li data-step="5"><span class="badge">5</span>Send<span class="chevron"></span></li>
-				</ul>
-				<div class="actions">
-					<button type="button" class="btn btn-default btn-prev"><span class="glyphicon glyphicon-arrow-left"></span>Back</button>
-					<button type="button" class="btn btn-primary btn-next" data-last="Finish">Next<span class="glyphicon glyphicon-arrow-right"></span></button>
-				</div>
-				<div class="step-content">
-					<div class="step-pane active sample-pane alert" data-step="1">
-						<h4>Setup Campaign</h4>
-						<p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic. Beetroot water spinach okra water chestnut ricebean pea catsear courgette.</p>
-						<p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi beetroot carrot watercress. Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke. Beetroot water spinach okra water chestnut ricebean pea catsear courgette.</p>
-						<p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini. </p>
-					</div>
-					<div class="step-pane sample-pane bg-info alert" data-step="2">
-						<h4>Choose Recipients</h4>
-						<p>Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori. Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard. </p>
-						<p>Pea horseradish azuki bean lettuce avocado asparagus okra. Kohlrabi radish okra azuki bean corn fava bean mustard tigernut jÃ­cama green bean celtuce collard greens avocado quandong fennel gumbo black-eyed pea. Grape silver beet watercress potato tigernut corn groundnut. Chickweed okra pea winter purslane coriander yarrow sweet pepper radish garlic brussels sprout groundnut summer purslane earthnut pea tomato spring onion azuki bean gourd. Gumbo kakadu plum komatsuna black-eyed pea green bean zucchini gourd winter purslane silver beet rock melon radish asparagus spinach. </p>
-						<p>Beetroot water spinach okra water chestnut ricebean pea catsear courgette summer purslane. Water spinach arugula pea tatsoi aubergine spring onion bush tomato kale radicchio turnip chicory salsify pea sprouts fava bean. Dandelion zucchini burdock yarrow chickpea dandelion sorrel courgette turnip greens. </p>
-					</div>
-					<div class="step-pane sample-pane bg-danger alert" data-step="3">
-						<h4>Design Template</h4>
-						<p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley jÃ­cama salsify. </p>
-						<p>Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori. Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard. </p>
-						<p>Pea horseradish azuki bean lettuce avocado asparagus okra. Kohlrabi radish okra azuki bean corn fava bean mustard tigernut jÃ­cama green bean celtuce collard greens avocado quandong fennel gumbo black-eyed pea. Grape silver beet watercress potato tigernut corn groundnut. Chickweed okra pea winter purslane coriander yarrow sweet pepper radish garlic brussels sprout groundnut summer purslane earthnut pea tomato spring onion azuki bean gourd. Gumbo kakadu plum komatsuna black-eyed pea green bean zucchini gourd winter purslane silver beet rock melon radish asparagus spinach. </p>
-					</div>
-					<div class="step-pane sample-pane bg-warning alert" data-step="4">
-						<h4>Preview Message</h4>
-						<p>Beetroot water spinach okra water chestnut ricebean pea catsear courgette summer purslane. Water spinach arugula pea tatsoi aubergine spring onion bush tomato kale radicchio turnip chicory salsify pea sprouts fava bean. Dandelion zucchini burdock yarrow chickpea dandelion sorrel courgette turnip greens tigernut soybean radish artichoke wattle seed endive groundnut broccoli arugula. Beetroot water spinach okra water chestnut ricebean pea catsear courgette.</p>
-						<p>Soko radicchio bunya nuts gram dulse silver beet parsnip napa cabbage lotus root sea lettuce brussels sprout cabbage. Catsear cauliflower garbanzo yarrow salsify chicory garlic bell pepper napa cabbage lettuce tomato kale arugula melon sierra leone bologi rutabaga tigernut. Sea lettuce gumbo grape kale kombu cauliflower salsify kohlrabi okra sea lettuce broccoli celery lotus root carrot winter purslane turnip greens garlic.</p> 
-						<p>Ja­cama garlic courgette coriander radicchio plantain scallion cauliflower fava bean desert raisin spring onion chicory bunya nuts. Sea lettuce water spinach gram fava bean leek dandelion silver beet eggplant bush tomato. </p>
-					</div>
-					<div class="step-pane sample-pane bg-success alert" data-step="5">
-						<h4>Send Message</h4>
-						<p>Soko radicchio bunya nuts gram dulse silver beet parsnip napa cabbage lotus root sea lettuce brussels sprout cabbage. Catsear cauliflower garbanzo yarrow salsify chicory garlic bell pepper napa cabbage lettuce tomato kale arugula melon sierra leone bologi rutabaga tigernut.</p> 
-						<p>Sea lettuce gumbo grape kale kombu cauliflower salsify kohlrabi okra sea lettuce broccoli celery lotus root carrot winter purslane turnip greens garlic. JÃ­cama garlic courgette coriander radicchio plantain scallion cauliflower fava bean desert raisin spring onion chicory bunya nuts. Sea lettuce water spinach gram fava bean leek dandelion silver beet eggplant bush tomato. </p>
-						<p>Pea horseradish azuki bean lettuce avocado asparagus okra. Kohlrabi radish okra azuki bean corn fava bean mustard tigernut jÃ­cama green bean celtuce collard greens avocado quandong fennel gumbo black-eyed pea. Grape silver beet watercress potato tigernut corn groundnut. Chickweed okra pea winter purslane coriander yarrow sweet pepper radish garlic brussels sprout groundnut summer purslane earthnut pea tomato spring onion azuki bean gourd.  </p>
-					</div>
-				</div>
-			</div>
-
-			<br/>
-			<h5>Sample Methods</h5>
-			<div class="btn-group">
-				<button type="button" class="btn btn-default" id="btnWizardPrev">previous</button>
-				<button type="button" class="btn btn-default" id="btnWizardNext">next</button>
-				<button type="button" class="btn btn-default" id="btnWizardStep">log current step index</button>
-				<button type="button" class="btn btn-default" id="btnWizardSetStep">jump to step 3 (recipients)</button>
-				<button type="button" class="btn btn-default" id="btnWizardAddSteps">add step (setup)</button>
-				<button type="button" class="btn btn-default" id="btnWizardRemoveStep">remove step (preview)</button>
-				<button type="button" class="btn btn-default" id="btnWizardDestroy">destroy and append</button>
-
-			</div>
-			<hr/>
-
-			<br/>
-			<br/>
-
-			<div id="MyWizardPreviousStepDisabled" class="wizard" data-initialize="wizard" data-restrict="previous">
-				<ul class="steps">
-					<li class="active" data-step="1"><span class="badge badge-info">1</span>Campaign<span class="chevron"></span></li>
-					<li data-step="2"><span class="badge">2</span>Recipients<span class="chevron"></span></li>
-					<li data-step="3"><span class="badge">3</span>Template<span class="chevron"></span></li>
-					<li data-step="4"><span class="badge">4</span>Preview<span class="chevron"></span></li>
-					<li data-step="5"><span class="badge">5</span>Send<span class="chevron"></span></li>
-				</ul>
-				<div class="actions">
-					<button type="button" class="btn btn-default btn-prev"><span class="glyphicon glyphicon-arrow-left"></span>Back</button>
-					<button type="button" class="btn btn-primary btn-next" data-last="Finish">Next<span class="glyphicon glyphicon-arrow-right"></span></button>
-				</div>
-				<div class="step-content">
-					<div class="step-pane active sample-pane alert" data-step="1">
-						<h4>Setup Campaign</h4>
-						<p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic. Beetroot water spinach okra water chestnut ricebean pea catsear courgette.</p>
-						<p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi beetroot carrot watercress. Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke. Beetroot water spinach okra water chestnut ricebean pea catsear courgette.</p>
-						<p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini. </p>
-					</div>
-					<div class="step-pane sample-pane bg-info alert" data-step="2">
-						<h4>Choose Recipients</h4>
-						<p>Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori. Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard. </p>
-						<p>Pea horseradish azuki bean lettuce avocado asparagus okra. Kohlrabi radish okra azuki bean corn fava bean mustard tigernut jÃ­cama green bean celtuce collard greens avocado quandong fennel gumbo black-eyed pea. Grape silver beet watercress potato tigernut corn groundnut. Chickweed okra pea winter purslane coriander yarrow sweet pepper radish garlic brussels sprout groundnut summer purslane earthnut pea tomato spring onion azuki bean gourd. Gumbo kakadu plum komatsuna black-eyed pea green bean zucchini gourd winter purslane silver beet rock melon radish asparagus spinach. </p>
-						<p>Beetroot water spinach okra water chestnut ricebean pea catsear courgette summer purslane. Water spinach arugula pea tatsoi aubergine spring onion bush tomato kale radicchio turnip chicory salsify pea sprouts fava bean. Dandelion zucchini burdock yarrow chickpea dandelion sorrel courgette turnip greens. </p>
-					</div>
-					<div class="step-pane sample-pane bg-danger alert" data-step="3">
-						<h4>Design Template</h4>
-						<p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley jÃ­cama salsify. </p>
-						<p>Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori. Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard. </p>
-						<p>Pea horseradish azuki bean lettuce avocado asparagus okra. Kohlrabi radish okra azuki bean corn fava bean mustard tigernut jÃ­cama green bean celtuce collard greens avocado quandong fennel gumbo black-eyed pea. Grape silver beet watercress potato tigernut corn groundnut. Chickweed okra pea winter purslane coriander yarrow sweet pepper radish garlic brussels sprout groundnut summer purslane earthnut pea tomato spring onion azuki bean gourd. Gumbo kakadu plum komatsuna black-eyed pea green bean zucchini gourd winter purslane silver beet rock melon radish asparagus spinach. </p>
-					</div>
-					<div class="step-pane sample-pane bg-warning alert" data-step="4">
-						<h4>Preview Message</h4>
-						<p>Beetroot water spinach okra water chestnut ricebean pea catsear courgette summer purslane. Water spinach arugula pea tatsoi aubergine spring onion bush tomato kale radicchio turnip chicory salsify pea sprouts fava bean. Dandelion zucchini burdock yarrow chickpea dandelion sorrel courgette turnip greens tigernut soybean radish artichoke wattle seed endive groundnut broccoli arugula. Beetroot water spinach okra water chestnut ricebean pea catsear courgette.</p>
-						<p>Soko radicchio bunya nuts gram dulse silver beet parsnip napa cabbage lotus root sea lettuce brussels sprout cabbage. Catsear cauliflower garbanzo yarrow salsify chicory garlic bell pepper napa cabbage lettuce tomato kale arugula melon sierra leone bologi rutabaga tigernut. Sea lettuce gumbo grape kale kombu cauliflower salsify kohlrabi okra sea lettuce broccoli celery lotus root carrot winter purslane turnip greens garlic.</p> 
-						<p>Ja­cama garlic courgette coriander radicchio plantain scallion cauliflower fava bean desert raisin spring onion chicory bunya nuts. Sea lettuce water spinach gram fava bean leek dandelion silver beet eggplant bush tomato. </p>
-					</div>
-					<div class="step-pane sample-pane bg-success alert" data-step="5">
-						<h4>Send Message</h4>
-						<p>Soko radicchio bunya nuts gram dulse silver beet parsnip napa cabbage lotus root sea lettuce brussels sprout cabbage. Catsear cauliflower garbanzo yarrow salsify chicory garlic bell pepper napa cabbage lettuce tomato kale arugula melon sierra leone bologi rutabaga tigernut.</p> 
-						<p>Sea lettuce gumbo grape kale kombu cauliflower salsify kohlrabi okra sea lettuce broccoli celery lotus root carrot winter purslane turnip greens garlic. JÃ­cama garlic courgette coriander radicchio plantain scallion cauliflower fava bean desert raisin spring onion chicory bunya nuts. Sea lettuce water spinach gram fava bean leek dandelion silver beet eggplant bush tomato. </p>
-						<p>Pea horseradish azuki bean lettuce avocado asparagus okra. Kohlrabi radish okra azuki bean corn fava bean mustard tigernut jÃ­cama green bean celtuce collard greens avocado quandong fennel gumbo black-eyed pea. Grape silver beet watercress potato tigernut corn groundnut. Chickweed okra pea winter purslane coriander yarrow sweet pepper radish garlic brussels sprout groundnut summer purslane earthnut pea tomato spring onion azuki bean gourd.  </p>
-					</div>
-				</div>
-			</div>
-
-			<br/>
-			<br/>
-
-			<div id="MyWizardWithSpaces" class="wizard" data-initialize="wizard">
-			<ul class="steps">
-				<li class="active" data-step="1"><span class="badge badge-info">1</span>This is step 1<span class="chevron"></span></li>
-				<li data-step="2"><span class="badge">2</span>This is step 2<span class="chevron"></span></li>
-				<li data-step="3"><span class="badge">3</span>This is step 3<span class="chevron"></span></li>
-				<li data-step="4"><span class="badge">4</span>This is step 4<span class="chevron"></span></li>
-				<li data-step="5"><span class="badge">5</span>This is step 5<span class="chevron"></span></li>
-			</ul>
-			<div class="actions">
-				<button type="button" class="btn btn-default btn-prev"><span class="glyphicon glyphicon-arrow-left"></span>Back</button>
-				<button type="button" class="btn btn-primary btn-next" data-last="Finish">Next<span class="glyphicon glyphicon-arrow-right"></span></button>
-			</div>
-			<div class="step-content">
-				<div class="step-pane active sample-pane alert" data-step="1">
-					<h4>Setup Campaign</h4>
-					<p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic. Beetroot water spinach okra water chestnut ricebean pea catsear courgette.</p>
-					<p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi beetroot carrot watercress. Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke. Beetroot water spinach okra water chestnut ricebean pea catsear courgette.</p>
-					<p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini. </p>
-				</div>
-				<div class="step-pane sample-pane bg-info alert" data-step="2">
-					<h4>Choose Recipients</h4>
-					<p>Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori. Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard. </p>
-					<p>Pea horseradish azuki bean lettuce avocado asparagus okra. Kohlrabi radish okra azuki bean corn fava bean mustard tigernut jÃ­cama green bean celtuce collard greens avocado quandong fennel gumbo black-eyed pea. Grape silver beet watercress potato tigernut corn groundnut. Chickweed okra pea winter purslane coriander yarrow sweet pepper radish garlic brussels sprout groundnut summer purslane earthnut pea tomato spring onion azuki bean gourd. Gumbo kakadu plum komatsuna black-eyed pea green bean zucchini gourd winter purslane silver beet rock melon radish asparagus spinach. </p>
-					<p>Beetroot water spinach okra water chestnut ricebean pea catsear courgette summer purslane. Water spinach arugula pea tatsoi aubergine spring onion bush tomato kale radicchio turnip chicory salsify pea sprouts fava bean. Dandelion zucchini burdock yarrow chickpea dandelion sorrel courgette turnip greens. </p>
-				</div>
-				<div class="step-pane sample-pane bg-danger alert" data-step="3">
-					<h4>Design Template</h4>
-					<p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley jÃ­cama salsify. </p>
-					<p>Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori. Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard. </p>
-					<p>Pea horseradish azuki bean lettuce avocado asparagus okra. Kohlrabi radish okra azuki bean corn fava bean mustard tigernut jÃ­cama green bean celtuce collard greens avocado quandong fennel gumbo black-eyed pea. Grape silver beet watercress potato tigernut corn groundnut. Chickweed okra pea winter purslane coriander yarrow sweet pepper radish garlic brussels sprout groundnut summer purslane earthnut pea tomato spring onion azuki bean gourd. Gumbo kakadu plum komatsuna black-eyed pea green bean zucchini gourd winter purslane silver beet rock melon radish asparagus spinach. </p>
-				</div>
-				<div class="step-pane sample-pane bg-warning alert" data-step="4">
-					<h4>Preview Message</h4>
-					<p>Beetroot water spinach okra water chestnut ricebean pea catsear courgette summer purslane. Water spinach arugula pea tatsoi aubergine spring onion bush tomato kale radicchio turnip chicory salsify pea sprouts fava bean. Dandelion zucchini burdock yarrow chickpea dandelion sorrel courgette turnip greens tigernut soybean radish artichoke wattle seed endive groundnut broccoli arugula. Beetroot water spinach okra water chestnut ricebean pea catsear courgette.</p>
-					<p>Soko radicchio bunya nuts gram dulse silver beet parsnip napa cabbage lotus root sea lettuce brussels sprout cabbage. Catsear cauliflower garbanzo yarrow salsify chicory garlic bell pepper napa cabbage lettuce tomato kale arugula melon sierra leone bologi rutabaga tigernut. Sea lettuce gumbo grape kale kombu cauliflower salsify kohlrabi okra sea lettuce broccoli celery lotus root carrot winter purslane turnip greens garlic.</p> 
-					<p>Ja­cama garlic courgette coriander radicchio plantain scallion cauliflower fava bean desert raisin spring onion chicory bunya nuts. Sea lettuce water spinach gram fava bean leek dandelion silver beet eggplant bush tomato. </p>
-				</div>
-				<div class="step-pane sample-pane bg-success alert" data-step="5">
-					<h4>Send Message</h4>
-					<p>Soko radicchio bunya nuts gram dulse silver beet parsnip napa cabbage lotus root sea lettuce brussels sprout cabbage. Catsear cauliflower garbanzo yarrow salsify chicory garlic bell pepper napa cabbage lettuce tomato kale arugula melon sierra leone bologi rutabaga tigernut.</p> 
-					<p>Sea lettuce gumbo grape kale kombu cauliflower salsify kohlrabi okra sea lettuce broccoli celery lotus root carrot winter purslane turnip greens garlic. JÃ­cama garlic courgette coriander radicchio plantain scallion cauliflower fava bean desert raisin spring onion chicory bunya nuts. Sea lettuce water spinach gram fava bean leek dandelion silver beet eggplant bush tomato. </p>
-					<p>Pea horseradish azuki bean lettuce avocado asparagus okra. Kohlrabi radish okra azuki bean corn fava bean mustard tigernut jÃ­cama green bean celtuce collard greens avocado quandong fennel gumbo black-eyed pea. Grape silver beet watercress potato tigernut corn groundnut. Chickweed okra pea winter purslane coriander yarrow sweet pepper radish garlic brussels sprout groundnut summer purslane earthnut pea tomato spring onion azuki bean gourd.  </p>
 				</div>
 			</div>
 		</div>
-
+		<div class="btn-panel">
+			<button type="button" class="btn btn-default" id="btnSchedulerEnable">enable</button>
+			<button type="button" class="btn btn-default" id="btnSchedulerDisable">disable</button>
+			<button type="button" class="btn btn-default" id="btnSchedulerLogValue">log value</button>
+			<button type="button" class="btn btn-default" id="btnSchedulerSetValue">set value</button>
+			<button type="button" class="btn btn-default" id="btnSchedulerDestroy">destroy and append</button>
 		</div>
 
-		<div class="section clearfix">
+		<h2>Search</h2>
+		<div class="thin-box">
+			<div class="search input-group" data-initialize="search" role="search" id="mySearch">
+				<input type="search" class="form-control" placeholder="Search"/>
+				<span class="input-group-btn">
+					<button class="btn btn-default" type="button">
+						<span class="glyphicon glyphicon-search"></span>
+						<span class="sr-only">Search</span>
+					</button>
+				</span>
+			</div>
+		</div>
+		<div class="btn-panel">
+			<button type="button" class="btn btn-default" id="btnSearchDisable">disable</button>
+			<button type="button" class="btn btn-default" id="btnSearchEnable">enable</button>
+			<button type="button" class="btn btn-default" id="btnSearchDestroy">destroy and append</button>
+		</div>
 
-			<h2 id="auto-flip"><a href="#auto-flip">#</a>Dropdown Auto Flip Menu</h2>
-
-			<div class="btn-group">
-				<button type="button" class="btn btn-danger">Action</button>
-				<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" data-flip="auto" >
+		<h2>Selectlist</h2>
+		<div class="thin-box">
+			<div class="btn-group selectlist" data-initialize="selectlist" data-resize="auto" id="mySelectlist">
+				<button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">
+					<span class="selected-label">&nbsp;</span>
 					<span class="caret"></span>
 					<span class="sr-only">Toggle Dropdown</span>
 				</button>
-				<ul class="dropdown-menu" role="menu" >
-					<li><a href="#">Action</a></li>
-					<li><a href="#">Another action</a></li>
-					<li><a href="#">Something else here</a></li>
-					<li class="divider"></li>
-					<li><a href="#">Separated link</a></li>
+				<ul class="dropdown-menu" role="menu">
+					<li data-value="1"><a href="#">One</a></li>
+					<li data-value="2"><a href="#">Two</a></li>
+					<li data-selected="true" data-value="3"><a href="#">Three</a></li>
+					<li data-value="4"><a href="#">Buzz</a></li>
+					<li data-value="Item Five" data-foo="bar" data-fizz="buzz"><a href="#">Item Five</a></li>
 				</ul>
+				<input class="hidden hidden-field" name="mySelectlist" readonly="readonly" aria-hidden="true" type="text"/>
 			</div>
-
+		</div>
+		<div class="btn-panel">
+			<button type="button" class="btn btn-default" id="btnSelectlistGetSelectedItem">log selected item/value</button>
+			<button type="button" class="btn btn-default" id="btnSelectlistSelectByValue">set by value (2)</button>
+			<button type="button" class="btn btn-default" id="btnSelectlistSelectByIndex">set by element index (zero-based) ('4')</button>
+			<button type="button" class="btn btn-default" id="btnSelectlistSelectByText">set by text ('One')</button>
+			<button type="button" class="btn btn-default" id="btnSelectlistSelectBySelector">set by CSS selector ('li[data-fizz=buzz]')</button>
+			<button type="button" class="btn btn-default" id="btnSelectlistEnableSelectlist">enable</button>
+			<button type="button" class="btn btn-default" id="btnSelectlistDisableSelectlist">disable</button>
+			<button type="button" class="btn btn-default" id="btnSelectlistDestroy">destroy and append</button>
 		</div>
 
-	</div><!-- container -->
+		<h2>Spinbox</h2>
+		<div class="thin-box">
+			<div class="spinbox" data-initialize="spinbox" id="mySpinbox1">
+				<input class="form-control input-mini spinbox-input" id="mySpinboxInput" type="text" value="10">
+				<div class="spinbox-buttons btn-group btn-group-vertical">
+					<button class="btn btn-default spinbox-up btn-xs">
+						<span class="glyphicon glyphicon-chevron-up"></span><span class="sr-only">Increase</span>
+					</button>
+					<button class="btn btn-default spinbox-down btn-xs">
+						<span class="glyphicon glyphicon-chevron-down"></span><span class="sr-only">Decrease</span>
+					</button>
+				</div>
+			</div>
+			<div class="spinbox" id="mySpinbox2">
+				<input class="form-control input-mini spinbox-input" id="mySpinboxInput" type="text" value="10">
+				<div class="spinbox-buttons btn-group btn-group-vertical">
+					<button class="btn btn-default spinbox-up btn-xs">
+						<span class="glyphicon glyphicon-chevron-up"></span><span class="sr-only">Increase</span>
+					</button>
+					<button class="btn btn-default spinbox-down btn-xs">
+						<span class="glyphicon glyphicon-chevron-down"></span><span class="sr-only">Decrease</span>
+					</button>
+				</div>
+			</div>
+		</div>
+		<div class="btn-panel">
+			<button id="spinboxSetValueBtn" type="button" class="btn btn-default">set value (4)</button>
+			<button id="spinboxGetValueBtn" type="button" class="btn btn-default">get value</button>
+			<button id="enableSpinbox" type="button" class="btn btn-default">enable</button>
+			<button id="disableSpinbox" type="button" class="btn btn-default">disable</button>
+			<button id="btnSpinboxDestroy" type="button" class="btn btn-default">destroy and append</button>
+		</div>
 
-<!--</form>-->
+		<h2>Tree</h2>
+		<div class="thin-box">
+			<ul class="tree" id="myTree1" role="tree">
+				<li class="tree-branch hide" data-template="treebranch" role="treeitem" aria-expanded="false">
+					<div class="tree-branch-header">
+						<button class="tree-branch-name">
+							<span class="glyphicon icon-caret glyphicon-play"></span>
+							<span class="glyphicon icon-folder glyphicon-folder-close"></span>
+							<span class="tree-label"></span>
+						</button>
+					</div>
+					<ul class="tree-branch-children" role="group"></ul>
+					<div class="tree-loader" role="alert">Loading...</div>
+				</li>
+				<li class="tree-item hide" data-template="treeitem" role="treeitem">
+					<button class="tree-item-name">
+						<span class="glyphicon icon-item fueluxicon-bullet"></span>
+						<span class="tree-label"></span>
+					</button>
+				</li>
+			</ul>
 
+			<ul class="tree tree-folder-select" id="myTree2" role="tree">
+				<li class="tree-branch hide" data-template="treebranch" role="treeitem" aria-expanded="false">
+					<div class="tree-branch-header">
+						<button class="glyphicon icon-caret glyphicon-play"><span class="sr-only">Open</span></button>
+						<button class="tree-branch-name">
+							<span class="glyphicon icon-folder glyphicon-folder-close"></span>
+							<span class="tree-label"></span>
+						</button>
+					</div>
+					<ul class="tree-branch-children" role="group"></ul>
+					<div class="tree-loader" role="alert">Loading...</div>
+				</li>
+				<li class="tree-item hide" data-template="treeitem" role="treeitem">
+					<button class="tree-item-name">
+						<span class="glyphicon icon-item fueluxicon-bullet"></span>
+						<span class="tree-label"></span>
+					</button>
+				</li>
+			</ul>
+		</div>
+		<div class="btn-panel">
+			<button type="button" class="btn btn-default" id="btnTreeDestroy">destroy and append</button>
+		</div>
+
+		<h2>Wizard</h2>
+		<div class="thin-box">
+			<div class="wizard" data-initialize="wizard" id="myWizard">
+				<ul class="steps">
+					<li data-step="1"><span class="badge">1</span>Campaign<span class="chevron"></span></li>
+					<li class="active" data-step="2"><span class="badge">2</span>Recipients<span class="chevron"></span></li>
+					<li data-step="3"><span class="badge">3</span>Template<span class="chevron"></span></li>
+					<li data-step="4"><span class="badge">4</span>Preview<span class="chevron"></span></li>
+					<li data-step="5"><span class="badge">5</span>Send<span class="chevron"></span></li>
+				</ul>
+				<div class="actions">
+					<button class="btn btn-default btn-prev"><span class="glyphicon glyphicon-arrow-left"></span>Prev</button>
+					<button class="btn btn-default btn-next" data-last="Complete">Next<span class="glyphicon glyphicon-arrow-right"></span></button>
+				</div>
+				<div class="step-content">
+					<div class="step-pane active sample-pane alert" data-step="1">
+						<h4>Setup Campaign</h4>
+						<p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic. Beetroot water spinach okra water chestnut ricebean pea catsear courgette.</p>
+						<p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi beetroot carrot watercress. Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke. Beetroot water spinach okra water chestnut ricebean pea catsear courgette.</p>
+						<p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini. </p>
+					</div>
+					<div class="step-pane sample-pane alert-info alert" data-step="2">
+						<h4>Choose Recipients</h4>
+						<p>Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori. Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard. </p>
+						<p>Pea horseradish azuki bean lettuce avocado asparagus okra. Kohlrabi radish okra azuki bean corn fava bean mustard tigernut jÃ­cama green bean celtuce collard greens avocado quandong fennel gumbo black-eyed pea. Grape silver beet watercress potato tigernut corn groundnut. Chickweed okra pea winter purslane coriander yarrow sweet pepper radish garlic brussels sprout groundnut summer purslane earthnut pea tomato spring onion azuki bean gourd. Gumbo kakadu plum komatsuna black-eyed pea green bean zucchini gourd winter purslane silver beet rock melon radish asparagus spinach. </p>
+						<p>Beetroot water spinach okra water chestnut ricebean pea catsear courgette summer purslane. Water spinach arugula pea tatsoi aubergine spring onion bush tomato kale radicchio turnip chicory salsify pea sprouts fava bean. Dandelion zucchini burdock yarrow chickpea dandelion sorrel courgette turnip greens. </p>
+					</div>
+					<div class="step-pane sample-pane alert-danger alert" data-step="3">
+						<h4>Design Template</h4>
+						<p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley jÃ­cama salsify. </p>
+						<p>Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori. Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard. </p>
+						<p>Pea horseradish azuki bean lettuce avocado asparagus okra. Kohlrabi radish okra azuki bean corn fava bean mustard tigernut jÃ­cama green bean celtuce collard greens avocado quandong fennel gumbo black-eyed pea. Grape silver beet watercress potato tigernut corn groundnut. Chickweed okra pea winter purslane coriander yarrow sweet pepper radish garlic brussels sprout groundnut summer purslane earthnut pea tomato spring onion azuki bean gourd. Gumbo kakadu plum komatsuna black-eyed pea green bean zucchini gourd winter purslane silver beet rock melon radish asparagus spinach. </p>
+					</div>
+					<div class="step-pane sample-pane alert-warning alert" data-step="4">
+						<h4>Preview Message</h4>
+						<p>Beetroot water spinach okra water chestnut ricebean pea catsear courgette summer purslane. Water spinach arugula pea tatsoi aubergine spring onion bush tomato kale radicchio turnip chicory salsify pea sprouts fava bean. Dandelion zucchini burdock yarrow chickpea dandelion sorrel courgette turnip greens tigernut soybean radish artichoke wattle seed endive groundnut broccoli arugula. Beetroot water spinach okra water chestnut ricebean pea catsear courgette.</p>
+						<p>Soko radicchio bunya nuts gram dulse silver beet parsnip napa cabbage lotus root sea lettuce brussels sprout cabbage. Catsear cauliflower garbanzo yarrow salsify chicory garlic bell pepper napa cabbage lettuce tomato kale arugula melon sierra leone bologi rutabaga tigernut. Sea lettuce gumbo grape kale kombu cauliflower salsify kohlrabi okra sea lettuce broccoli celery lotus root carrot winter purslane turnip greens garlic.</p>
+						<p>Ja­cama garlic courgette coriander radicchio plantain scallion cauliflower fava bean desert raisin spring onion chicory bunya nuts. Sea lettuce water spinach gram fava bean leek dandelion silver beet eggplant bush tomato. </p>
+					</div>
+					<div class="step-pane sample-pane alert-success alert" data-step="5">
+						<h4>Send Message</h4>
+						<p>Soko radicchio bunya nuts gram dulse silver beet parsnip napa cabbage lotus root sea lettuce brussels sprout cabbage. Catsear cauliflower garbanzo yarrow salsify chicory garlic bell pepper napa cabbage lettuce tomato kale arugula melon sierra leone bologi rutabaga tigernut.</p>
+						<p>Sea lettuce gumbo grape kale kombu cauliflower salsify kohlrabi okra sea lettuce broccoli celery lotus root carrot winter purslane turnip greens garlic. JÃ­cama garlic courgette coriander radicchio plantain scallion cauliflower fava bean desert raisin spring onion chicory bunya nuts. Sea lettuce water spinach gram fava bean leek dandelion silver beet eggplant bush tomato. </p>
+						<p>Pea horseradish azuki bean lettuce avocado asparagus okra. Kohlrabi radish okra azuki bean corn fava bean mustard tigernut jÃ­cama green bean celtuce collard greens avocado quandong fennel gumbo black-eyed pea. Grape silver beet watercress potato tigernut corn groundnut. Chickweed okra pea winter purslane coriander yarrow sweet pepper radish garlic brussels sprout groundnut summer purslane earthnut pea tomato spring onion azuki bean gourd.  </p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="btn-panel">
+			<button type="button" class="btn btn-default" id="btnWizardPrev">previous</button>
+			<button type="button" class="btn btn-default" id="btnWizardNext">next</button>
+			<button type="button" class="btn btn-default" id="btnWizardStep">log current step index</button>
+			<button type="button" class="btn btn-default" id="btnWizardSetStep">jump to step 3 (recipients)</button>
+			<button type="button" class="btn btn-default" id="btnWizardAddSteps">add step (setup)</button>
+			<button type="button" class="btn btn-default" id="btnWizardRemoveStep">remove step (preview)</button>
+			<button type="button" class="btn btn-default" id="btnWizardDestroy">destroy and append</button>
+		</div>
+	</div>
 </body>
 </html>

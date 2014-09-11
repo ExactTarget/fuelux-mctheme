@@ -9,6 +9,9 @@
 	<link href="../../dist/css/imhtheme.css" rel="stylesheet" type="text/css"/>
 	<link href="bootstrap-css-examples.css" rel="stylesheet" type="text/css"/>
 
+	<script src="../../bower_components/jquery/dist/jquery.js"></script>
+	<script src="../../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+
 </head>
 <body>
 
@@ -779,7 +782,7 @@
 			</form>
 		</div>
 
-		<h2>Disables inputs</h2>
+		<h2>Disabled inputs</h2>
 		<div class="thin-box">
 			<form role="form">
 				<input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here…" disabled="">
@@ -964,8 +967,7 @@
 		<div class="thin-box">
 			<button type="button" class="btn btn-default">Default</button>
 			<button type="button" class="btn btn-primary">Primary</button>
-			<button type="button" class="btn btn-primary create-btn">Create</button>
-			<button type="button" class="btn btn-secondary">Secondary</button>
+			<button type="button" class="btn btn-primary btn-create">Create</button>
 			<button type="button" class="btn btn-success">Success</button>
 			<button type="button" class="btn btn-warning">Warning</button>
 			<button type="button" class="btn btn-danger">Danger</button>
@@ -976,23 +978,24 @@
 		<div class="thin-box">
 			<p>
 				<button type="button" class="btn btn-primary btn-lg">Large button</button>
-				<button type="button" class="btn btn-primary create-btn btn-lg">Large button</button>
+				<button type="button" class="btn btn-primary btn-create btn-lg">Create button</button>
+				<button type="button" class="btn btn-primary btn-create btn-lg" disabled="disabled">Create button</button>
 			</p>
 			<p>
 				<button type="button" class="btn btn-primary">Default button</button>
-				<button type="button" class="btn btn-primary create-btn">Default button</button>
-				<button type="button" class="btn btn-secondary">Default button</button>
+				<button type="button" class="btn btn-primary btn-create">Default button</button>
+				<button type="button" class="btn btn-default">Default button</button>
 			</p>
 			<p>
 				<button type="button" class="btn btn-primary btn-sm">Small button</button>
-				<button type="button" class="btn btn-secondary btn-sm">Small button</button>
+				<button type="button" class="btn btn-default btn-sm">Small button</button>
 			</p>
 
 			<br/>
 
 			<div class="well" style="max-width: 400px; margin: 0 auto 10px;">
 				<button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
-				<button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button>
+				<button type="button" class="btn btn-default btn-lg btn-block">Block level button</button>
 			</div>
 		</div>
 
@@ -1000,25 +1003,24 @@
 		<div class="thin-box">
 			<h3>Button element</h3>
 			<button type="button" class="btn btn-primary btn-lg active">Primary button</button>
-			<button type="button" class="btn btn-secondary btn-lg active">Secondary button</button>
+			<button type="button" class="btn btn-default btn-lg active">Default button</button>
 			<br/>
 
 			<h3>Anchor element</h3>
 			<a href="#" class="btn btn-primary btn-lg active" role="button">Primary link</a>
-			<a href="#" class="btn btn-secondary btn-lg active" role="button">Secondary link</a>
+			<a href="#" class="btn btn-default btn-lg active" role="button">Default link</a>
 		</div>
 
 		<h2>Disabled state</h2>
 		<div class="thin-box">
 			<h3>Button element</h3>
 			<button type="button" class="btn btn-primary btn-lg" disabled="disabled">Primary button</button>
-			<!--<button type="button" class="btn btn-secondary btn-lg" disabled="disabled">Secondary button</button>-->
-			<button type="button" class="btn btn-secondary btn-lg" disabled="disabled">Secondary button</button>
+			<button type="button" class="btn btn-default btn-lg" disabled="disabled">Default button</button>
 			<br/>
 
 			<h3>Anchor element</h3>
 			<a href="#" class="btn btn-primary btn-lg disabled" role="button">Primary link</a>
-			<a href="#" class="btn btn-secondary btn-lg disabled" role="button">Secondary link</a>
+			<a href="#" class="btn btn-default btn-lg disabled" role="button">Default link</a>
 		</div>
 
 		<h2>Button tags</h2>
@@ -1029,20 +1031,55 @@
 			<input class="btn btn-default" type="submit" value="Submit">
 		</div>
 
-		<h1 class="section">Images</h1>
-		<hr class="darker"/>
-
-		<h2>Responsive images</h2>
+		<h2>Like/Dislike</h2>
 		<div class="thin-box">
+			<button class="btn btn-default btn-lg" type="button"><span class="glyphicon glyphicon-thumbs-up"></span> Like This</button>
+			<button class="btn btn-default btn-lg" type="button"><span class="glyphicon glyphicon-thumbs-down"></span> Needs Work</button>
 		</div>
 
-		<h2>Image shapes</h2>
+		<h2>Arrows</h2>
 		<div class="thin-box">
-		<!--<img data-src="holder.js/140x140" class="img-rounded" alt="140x140" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+" style="width: 140px; height: 140px;">-->
-		<!--<img data-src="holder.js/140x140" class="img-circle" alt="140x140" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+" style="width: 140px; height: 140px;">-->
-		<!--<img data-src="holder.js/140x140" class="img-thumbnail" alt="140x140" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+" style="width: 140px; height: 140px;">-->
+			<button class="btn btn-primary" type="button"><span class="glyphicon glyphicon-arrow-left"></span> Previous</button>
+			<button class="btn btn-primary" type="button" disabled="disabled"><span class="glyphicon glyphicon-arrow-left"></span> Previous</button>
+			<br/><br/>
+
+			<button class="btn btn-primary" type="button">Next <span class="glyphicon glyphicon-arrow-right"></span></button>
+			<button class="btn btn-primary" type="button" disabled="disabled">Next <span class="glyphicon glyphicon-arrow-right"></span></button>
+			<br/><br/>
+
+			<button class="btn btn-primary" type="button"><span class="glyphicon glyphicon-arrow-up"></span> Up</button>
+			<button class="btn btn-primary" type="button" disabled="disabled"><span class="glyphicon glyphicon-arrow-up"></span> Up</button>
+			<br/><br/>
+
+			<button class="btn btn-primary" type="button"><span class="glyphicon glyphicon-arrow-down"></span> Previous</button>
+			<button class="btn btn-primary" type="button" disabled="disabled"><span class="glyphicon glyphicon-arrow-down"></span> Down</button>
+			<br/><br/>
 		</div>
 
+		<h2>Toggle</h2>
+		<div class="thin-box">
+
+			<div class="btn-group btn-group-check-toggle btn-group-switch" data-toggle="buttons">
+				<label class="btn btn-default active">
+					<input type="radio" name="options" id="option1" checked><span class="glyphicon glyphicon-ok"></span> Available
+				</label>
+				<label class="btn btn-default">
+					<input type="radio" name="options" id="option2"><span class="glyphicon glyphicon-ok"></span> Not Available
+				</label>
+			</div>
+
+			<br/><br/>
+
+			<div class="btn-group btn-group-check-toggle" data-toggle="buttons">
+				<label class="btn btn-default active">
+					<input type="radio" name="options" id="option1" checked><span class="glyphicon glyphicon-ok"></span> On
+				</label>
+				<label class="btn btn-default">
+					<input type="radio" name="options" id="option2"><span class="glyphicon glyphicon-ok"></span> Off
+				</label>
+			</div>
+
+		</div>
 
 		<h1 class="section">Helper classes</h1>
 		<hr class="darker"/>
@@ -1086,6 +1123,11 @@
 				<small>kzhang@exacttarget.com </small><small>kzhang@exacttarget.com </small><small>kzhang@exacttarget.com</small>
 			</p>
 
+		</div>
+
+		<h2>Breadcrumbs</h2>
+		<div class="thin-box">
+			<a href="#">Home</a> <span class="mcthemeicon-breadcrumb"></span> <a href="#">Section</a> <span class="mcthemeicon-breadcrumb"></span> This Page
 		</div>
 
 		<h2>Close icon</h2>
