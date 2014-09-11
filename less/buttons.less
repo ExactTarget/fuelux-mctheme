@@ -36,7 +36,8 @@
 	}
 
 	&:active,
-	&.active {
+	&.active,
+	&:focus {
 
 		outline: 0;
 		//background-image: none;
@@ -152,6 +153,38 @@
 				margin-right: 6px;
 			}
 		}
+	}
+}
+
+.btn-secondary{
+	//because this button has 1px border, padding needs to be adjusted
+	//padding + border = 5px
+	padding: 4px 10px;
+	border: 1px solid @btn-secondary-border;
+	.button-variant(@btn-secondary-color;
+									@btn-secondary-bg-start; @btn-secondary-bg-end;
+									@btn-secondary-bg-hover-start; @btn-secondary-bg-hover-end;
+									@btn-secondary-bg-press-start; @btn-secondary-bg-press-end;
+									@btn-secondary-bg-disabled-start; @btn-secondary-bg-disabled-end);
+	&:active,&.active,&:focus{
+		color: @btn-secondary-active-color;
+
+		#gradient > .gradient-bg(@btn-secondary-bg-press-start, @btn-secondary-bg-press-end);
+	}
+
+	&.dropdown-toggle .caret {
+		color: @btn-secondary-color;
+	}
+
+	&.btn-lg {
+		//padding + border = 7px
+		padding: 6px 10px;
+	}
+
+	&.btn-sm,
+	&.btn-xs
+	{
+		padding: 2px 8px;
 	}
 }
 

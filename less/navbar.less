@@ -11,10 +11,10 @@
 
 	.navbar-nav {
 		> li > a {
-			color:@brand-primary;
+			color:@brand-primary-medium;
 			&:hover,
 			&:focus {
-				color: @brand-primary;
+				color: @brand-primary-medium;
 				background-color: #ddeef4;
 			}
 		}
@@ -23,7 +23,7 @@
 			&,
 			&:hover,
 			&:focus {
-				background-color: #b4dff0;
+				background-color: @brand-primary-medium-light;
 			}
 		}
 		.open > a {
@@ -31,7 +31,7 @@
 			&:hover,
 			&:focus {
 				background-color: #ddeef4;
-				color: @brand-primary;
+				color: @brand-primary-medium;
 			}
 		}
 	}
@@ -40,12 +40,14 @@
 .navbar-inverse {
 	.navbar-brand {
 		padding: 5px 15px;
+		height: 30px;
 	}
 }
 
 //adjust position of different components on navbar
 .navbar-form {
 	margin-top: 5px;
+	margin-bottom: 4px;
 	padding-left: 10px;
 }
 
@@ -59,6 +61,7 @@
 
 .navbar-text {
 	margin-top: 10px;
+	margin-bottom: 0;
 }
 
 .navbar-nav {
