@@ -246,6 +246,7 @@
 
 .btn-lg {
 	.button-size( 7px; 10px; @font-size-large; @border-radius-large);
+	font-weight: bold;
 }
 .btn-sm,
 .btn-xs
@@ -274,5 +275,40 @@ input[type="button"] {
 	&.btn-block {
 		width: 100%;
 	}
+}
+
+// Checkmark Toggle Button Groups
+// --------------------------------------------------
+
+.btn-group-check-toggle {
+	span {
+		font-size: 0;
+	}
+
+	label.active {
+		background: none;
+		background-color: #4e8abe; // light blue
+		color: #fff;
+
+		span {
+			font-size: inherit;
+		}
+
+	}
+
+}
+
+.btn-group-switch {
+	label.active:first-child {
+		background: none;
+		background-color: #7fc75f;
+	}
+
+	label.active:last-child {
+		color: #fff;
+		background: none;
+		background-color: #f76c6c;
+	}
+
 }
 
