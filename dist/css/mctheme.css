@@ -220,7 +220,7 @@ fieldset[disabled] .btn-default.active {
   color: #4e8abe;
 }
 .btn-default.dropdown-toggle .caret {
-  color: #fff;
+  color: #4e8abe;
 }
 .btn-default.btn-lg {
   padding: 6px 10px;
@@ -2804,7 +2804,6 @@ a.list-group-item-danger.active:focus {
   border-radius: 4px;
 }
 .fuelux .combobox .dropdown-toggle .caret {
-  color: #5c656b;
   margin-left: 1px;
 }
 .fuelux .combobox.disabled {
