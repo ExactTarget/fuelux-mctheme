@@ -48,3 +48,15 @@
 		}
 	}
 }
+
+@media(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+	.checkbox-custom:before,
+	.checkbox-custom:hover:before,
+	.checkbox-custom.checked:before,
+	.checkbox-custom.checked:hover:before,
+	.checkbox-custom.disabled:before,
+	.checkbox-custom.disabled.checked:before
+	{
+		.sprite2x();
+	}
+}

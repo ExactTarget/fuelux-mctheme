@@ -14,10 +14,16 @@
 	}
 }
 
-// Sprite
+// Sprites
 .sprite(@positionLeft: left, @positionTop: top, @sheet: url("../img/spritesheet.png")){
 	background: transparent @sheet no-repeat @positionLeft @positionTop;
 }
+
+.sprite2x(){
+	background-image: url(../img/spritesheet-2x.png);
+	background-size: 240px auto;
+}
+
 
 #gradient {
 	//Background gradient

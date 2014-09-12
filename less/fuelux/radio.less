@@ -65,3 +65,15 @@
 		}
 	}
 }
+
+@media(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+	.radio-custom:before,
+	.radio-custom:hover:before,
+	.radio-custom.checked:before,
+	.radio-custom.checked:hover:before,
+	.radio-custom.disabled:before,
+	.radio-custom.disabled.checked:before
+	{
+		.sprite2x();
+	}
+}

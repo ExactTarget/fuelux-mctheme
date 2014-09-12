@@ -71,6 +71,10 @@
 	.input-group-btn {
 		border: none;
 		border-radius: 0 4px 4px 0;
+
+		button {
+			background: none;
+		}
 	}
 
 	.open > .dropdown-toggle.btn-default {
@@ -307,5 +311,15 @@
 				}
 			}
 		}
+	}
+}
+
+@media(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+	.datepicker .dropdown-toggle .glyphicon-calendar,
+	.datepicker .dropdown-toggle:hover .glyphicon-calendar,
+	.datepicker .dropdown-toggle[disabled] .glyphicon-calendar,
+	.datepicker:hover .dropdown-toggle .glyphicon-calendar,
+	{
+		.sprite2x();
 	}
 }

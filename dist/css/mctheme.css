@@ -718,6 +718,12 @@ input[type="button"].btn-block {
   display: inline-block;
   background: transparent url("../img/spritesheet.png") no-repeat -210px 0;
 }
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .mcthemeicon-breadcrumb {
+    background-image: url(../img/spritesheet-2x.png);
+    background-size: 240px auto;
+  }
+}
 fieldset {
   padding: 0;
   margin: 0;
@@ -1797,6 +1803,15 @@ table th[class*="col-"] {
 .fuel-help:hover {
   background-position: -160px -16px;
 }
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .fuel-help,
+  .fuel-help:hover,
+  .fueluxicon-question-mark,
+  .fueluxicon-question-mark:hover {
+    background-image: url(../img/spritesheet-2x.png);
+    background-size: 240px auto;
+  }
+}
 .btn-dropdown {
   color: #333;
   text-align: left;
@@ -2709,6 +2724,17 @@ a.list-group-item-danger.active:focus {
 .fuelux .checkbox-custom.checkbox-inline input {
   position: absolute;
 }
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .fuelux .checkbox-custom:before,
+  .fuelux .checkbox-custom:hover:before,
+  .fuelux .checkbox-custom.checked:before,
+  .fuelux .checkbox-custom.checked:hover:before,
+  .fuelux .checkbox-custom.disabled:before,
+  .fuelux .checkbox-custom.disabled.checked:before {
+    background-image: url(../img/spritesheet-2x.png);
+    background-size: 240px auto;
+  }
+}
 .fuelux .combobox {
   background: #fff;
   border: solid 1px #bbbbbb;
@@ -2797,6 +2823,9 @@ a.list-group-item-danger.active:focus {
 .fuelux .datepicker .input-group-btn {
   border: none;
   border-radius: 0 4px 4px 0;
+}
+.fuelux .datepicker .input-group-btn button {
+  background: none;
 }
 .fuelux .datepicker .open > .dropdown-toggle.btn-default {
   background-image: none;
@@ -2995,6 +3024,15 @@ a.list-group-item-danger.active:focus {
 .fuelux .datepicker-wheels-year ul li button:hover {
   background: #dfeef5;
 }
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .fuelux .datepicker .dropdown-toggle .glyphicon-calendar,
+  .fuelux .datepicker .dropdown-toggle:hover .glyphicon-calendar,
+  .fuelux .datepicker .dropdown-toggle[disabled] .glyphicon-calendar,
+  .fuelux .datepicker:hover .dropdown-toggle .glyphicon-calendar {
+    background-image: url(../img/spritesheet-2x.png);
+    background-size: 240px auto;
+  }
+}
 .fuelux .loader {
   color: #468ac5;
 }
@@ -3097,6 +3135,17 @@ a.list-group-item-danger.active:focus {
 }
 .fuelux .radio-custom.radio-inline input {
   position: absolute;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .fuelux .radio-custom:before,
+  .fuelux .radio-custom:hover:before,
+  .fuelux .radio-custom.checked:before,
+  .fuelux .radio-custom.checked:hover:before,
+  .fuelux .radio-custom.disabled:before,
+  .fuelux .radio-custom.disabled.checked:before {
+    background-image: url(../img/spritesheet-2x.png);
+    background-size: 240px auto;
+  }
 }
 .fuelux .repeater-filters {
   margin-top: 2px;
@@ -3382,6 +3431,15 @@ a.list-group-item-danger.active:focus {
 .fuelux .search .input-group-btn button .glyphicon:before {
   display: none;
 }
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .fuelux .search .input-group-btn button .glyphicon,
+  .fuelux .search .input-group-btn button:hover .glyphicon,
+  .fuelux .search.searched .input-group-btn button .glyphicon,
+  .fuelux .search.searched .input-group-btn button:hover .glyphicon {
+    background-image: url(../img/spritesheet-2x.png);
+    background-size: 240px auto;
+  }
+}
 .fuelux .selectlist .btn {
   background: linear-gradient(#ffffff, #eeeeee);
 }
@@ -3500,6 +3558,18 @@ a.list-group-item-danger.active:focus {
 }
 .fuelux .tree.tree-folder-select .tree-item {
   margin-left: 16px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .fuelux .tree .icon-caret,
+  .fuelux .tree .icon-folder,
+  .fuelux .tree .icon-item,
+  .fuelux .tree .tree-branch-header > .icon-caret:hover,
+  .fuelux .tree .tree-open > .tree-branch-header .icon-folder,
+  .fuelux .tree .tree-open > .tree-branch-header .icon-caret,
+  .fuelux .tree .tree-open > .tree-branch-header .icon-caret:hover {
+    background-image: url(../img/spritesheet-2x.png);
+    background-size: 240px auto;
+  }
 }
 .fuelux .wizard {
   position: relative;
