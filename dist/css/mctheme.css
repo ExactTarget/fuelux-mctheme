@@ -1706,9 +1706,7 @@ table th[class*="col-"] {
   left: 4px;
   top: 4px;
   width: 22px;
-  background-image: url(../img/form.png);
-  background-repeat: no-repeat;
-  background-position: -67px -33px;
+  background: transparent url("../img/spritesheet.png") no-repeat -73px -34px;
 }
 .alert strong {
   font-weight: bold;
@@ -1746,33 +1744,33 @@ table th[class*="col-"] {
   border-color: #B8D8A5;
 }
 .alert-success:before {
-  background-position: -44px -33px;
+  background-position: -50px -34px;
 }
 .alert-warning {
   background-color: #FFF1E1;
   border-color: #F8D8B3;
 }
 .alert-warning:before {
-  background-position: -67px -33px;
+  background-position: -73px -34px;
 }
 .alert-danger {
   background-color: #FCECED;
   border-color: #EDBFBF;
 }
 .alert-danger:before {
-  background-position: 0px -33px;
+  background-position: -2px -34px;
 }
 .alert-info {
   background-color: #E7F3FE;
   border-color: #BED5E8;
 }
 .alert-info:before {
-  background-position: -22px -33px;
+  background-position: -26px -34px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .alert:before {
-    background-image: url(../img/form-hdpi.png);
-    background-size: 96px auto;
+    background-image: url(../img/spritesheet-2x.png);
+    background-size: 240px auto;
   }
 }
 .close {
@@ -2708,6 +2706,9 @@ a.list-group-item-danger.active:focus {
 .fuelux .checkbox-custom.disabled.checked:before {
   background: transparent url("../img/spritesheet.png") no-repeat -81px -1px;
 }
+.fuelux .checkbox-custom.checkbox-inline input {
+  position: absolute;
+}
 .fuelux .combobox {
   background: #fff;
   border: solid 1px #bbbbbb;
@@ -3093,6 +3094,9 @@ a.list-group-item-danger.active:focus {
 }
 .fuelux .radio-custom.radio-inline.highlight:before {
   top: 6px;
+}
+.fuelux .radio-custom.radio-inline input {
+  position: absolute;
 }
 .fuelux .repeater-filters {
   margin-top: 2px;

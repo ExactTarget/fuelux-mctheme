@@ -37,9 +37,7 @@
 		left: 4px;
 		top: 4px;
 		width: 22px;
-		background-image: url(../img/form.png);
-		background-repeat: no-repeat;
-		background-position: -67px -33px; //default icon: warning
+		.sprite(-73px, -34px);
 	}
 
 	strong {
@@ -85,28 +83,28 @@
 		background-color: #E9FCDE;
 		border-color: #B8D8A5;
 		&:before {
-			background-position: -44px -33px;
+			background-position: -50px -34px;
 		}
 	}
 	&-warning {
 		background-color: #FFF1E1;
 		border-color: #F8D8B3;
 		&:before {
-			background-position: -67px -33px;
+			background-position: -73px -34px;
 		}
 	}
 	&-danger {
 		background-color: #FCECED;
 		border-color: #EDBFBF;
 		&:before {
-			background-position: 0px -33px;
+			background-position: -2px -34px;
 		}
 	}
 	&-info {
 		background-color: #E7F3FE;
 		border-color: #BED5E8;
 		&:before {
-			background-position: -22px -33px;
+			background-position: -26px -34px;
 		}
 	}
 }
@@ -114,8 +112,8 @@
 @media(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
 	.alert {
 		&:before {
-			background-image: url(../img/form-hdpi.png);
-			background-size: 96px auto;
+			background-image: url(../img/spritesheet-2x.png);
+			background-size: 240px auto;
 		}
 	}
 }
