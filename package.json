@@ -1,9 +1,9 @@
 {
-  "name": "fuelux-imhtheme",
-  "title": "Internet Marketing Hub Theme",
-  "version": "3.0.0",
-  "description": "IMH styling",
-  "homepage": "https://github.com/ExactTarget/fuelux-imhtheme",
+  "name": "fuelux-mctheme",
+  "title": "Marketing Cloud Theme",
+  "version": "1.0.0",
+  "description": "Salesforce ExactTarget Marketing Cloud styling",
+  "homepage": "https://github.com/ExactTarget/fuelux-mctheme",
   "author": {
     "name": "ExactTarget",
     "email": "kparkerson@exacttarget.com",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/ExactTarget/fuelux-imhtheme.git"
+    "url": "git://github.com/ExactTarget/fuelux-mctheme.git"
   },
   "bugs": {
-    "url": "https://github.com/ExactTarget/fuelux-imhtheme/issues"
+    "url": "https://github.com/ExactTarget/fuelux-mctheme/issues"
   },
   "license": {
     "type": "MIT",
-    "url": "https://github.com/ExactTarget/fuelux-imhtheme/blob/master/COPYING"
+    "url": "https://github.com/ExactTarget/fuelux-mctheme/blob/master/COPYING"
   },
   "engines": {
     "node": ">= 0.8.0"
@@ -59,7 +59,7 @@
   "private": true,
   "volo": {
     "baseDir": "lib",
-    "url": "https://raw.github.com/ExactTarget/fuelux-imhtheme/{version}/dist/fuelux-imhtheme.zip",
+    "url": "https://raw.github.com/ExactTarget/fuelux-mctheme/{version}/dist/fuelux-mctheme.zip",
     "type": "directory",
     "dependencies": {}
   }

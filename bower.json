@@ -32,15 +32,15 @@
     "web"
   ],
   "main": [
-    "bootstrap-imhtheme.css",
-    "bootstrap-imhtheme.css.map",
-    "bootstrap-imhtheme.min.css",
+    "bootstrap-mctheme.css",
+    "bootstrap-mctheme.css.map",
+    "bootstrap-mctheme.min.css",
     "fuelux-controls.css",
     "fuelux-controls.min.css",
-    "fuelux-imhtheme.css",
-    "fuelux-imhtheme.css.map",
-    "fuelux-imhtheme.min.css"
+    "fuelux-mctheme.css",
+    "fuelux-mctheme.css.map",
+    "fuelux-mctheme.min.css"
   ],
-  "name": "fuelux-imhtheme",
+  "name": "fuelux-mctheme",
   "version": "3.0.0"
 }

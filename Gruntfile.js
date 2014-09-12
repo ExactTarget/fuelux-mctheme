@@ -6,7 +6,7 @@ module.exports = function (grunt) {
 	grunt.initConfig({
 		// Metadata
 		banner: '/*!\n' +
-			' * IMH-Theme v<%= pkg.version %> \n' +
+			' * Marketing Cloud Theme v<%= pkg.version %> \n' +
 			' * Copyright <%= grunt.template.today("yyyy") %> <%= pkg.author.name %>\n' +
 			' * Licensed under <%= pkg.license.type %> (<%= pkg.license.url %>)\n' +
 			' */\n',
@@ -15,7 +15,7 @@ module.exports = function (grunt) {
 		// Tasks configuration
 		clean: {
 			dist: ['dist/**'],
-			zipsrc: ['dist/imhtheme']
+			zipsrc: ['dist/mctheme']
 		},
 		compress: {
 			zip: {
@@ -23,11 +23,11 @@ module.exports = function (grunt) {
 					{
 						cwd: 'dist/',
 						expand: true,
-						src: ['imhtheme/**']
+						src: ['mctheme/**']
 					}
 				],
 				options: {
-					archive: 'dist/imhtheme.zip',
+					archive: 'dist/mctheme.zip',
 					mode: 'zip'
 				}
 			}
@@ -42,22 +42,7 @@ module.exports = function (grunt) {
 			},
 			zipsrc: {
 				cwd: 'dist/',
-				dest: 'dist/imhtheme/',
-				expand: true,
-				src: ['**']
-			},
-			docscss: {
-				cwd: 'dist/css/',
-				dest: 'docs/dist/css/',
-				expand: true,
-				src: ['**'],
-				rename: function (dest, src) {
-					return dest + src.replace(/imh/g, 'bootstrap-');
-				}
-			},
-			docsimg: {
-				cwd: 'dist/img/',
-				dest: 'docs/dist/img/',
+				dest: 'dist/mctheme/',
 				expand: true,
 				src: ['**']
 			}
@@ -84,7 +69,7 @@ module.exports = function (grunt) {
 			'docs.zip': 'https://github.com/twbs/bootstrap/archive/master.zip'
 		},
 		less: {
-			'imhtheme': {
+			'mctheme': {
 				options: {
 					strictMath: true,
 					sourceMap: true,
@@ -93,7 +78,7 @@ module.exports = function (grunt) {
 					sourceMapFilename: 'dist/css/<%= pkg.name %>.css.map'
 				},
 				files: {
-					'dist/css/imhtheme.css': 'less/imhtheme.less'
+					'dist/css/mctheme.css': 'less/mctheme.less'
 				}
 			},
 			minify: {
@@ -102,7 +87,7 @@ module.exports = function (grunt) {
 					report: 'min'
 				},
 				files: {
-					'dist/css/imhtheme.min.css': 'dist/css/imhtheme.css'
+					'dist/css/mctheme.min.css': 'dist/css/mctheme.css'
 				}
 			}
 		},
@@ -116,8 +101,8 @@ module.exports = function (grunt) {
 					}
 				],
 				src: [
-					'dist/css/fuelux-imhtheme.css',
-					'dist/css/fuelux-imhtheme.css.map'
+					'dist/css/fuelux-mctheme.css',
+					'dist/css/fuelux-mctheme.css.map'
 				]
 			}
 		},
@@ -129,8 +114,8 @@ module.exports = function (grunt) {
 				},
 				files: {
 					src: [
-						'dist/css/imhtheme.css',
-						'dist/css/imhtheme.min.css'
+						'dist/css/mctheme.css',
+						'dist/css/mctheme.min.css'
 					]
 				}
 			}
@@ -154,7 +139,7 @@ module.exports = function (grunt) {
 	 ------------- */
 
 	// CSS distribution task
-	grunt.registerTask('distcss', ['less:imhtheme', 'replace:imgpaths', 'less:minify', 'usebanner']);
+	grunt.registerTask('distcss', ['less:mctheme', 'replace:imgpaths', 'less:minify', 'usebanner']);
 
 	// ZIP distribution task
 	grunt.registerTask('distzip', ['copy:zipsrc', 'compress', 'clean:zipsrc']);
@@ -164,8 +149,6 @@ module.exports = function (grunt) {
 
 	//The default build task
 	grunt.registerTask('default', ['dist']);
-
-	grunt.registerTask('docs', ['dist', 'copy:docscss', 'copy:docsimg']);
 
 	/* -------------
 			SERVE
