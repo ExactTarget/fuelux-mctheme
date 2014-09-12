@@ -15,15 +15,22 @@
 	}
 
 	.modal-header, .modal-footer {
-		background-color: @gray-lighter;
 		padding: 9px 9px 8px 12px;
 	}
 
 	.modal-header {
+		background: #eaf0f3;
 		border-radius: 5px 5px 0 0;
 	}
 
+@modal-bg-gradient-dark:  #e7edf0;
+@modal-bg-gradient-light: #fff;
+
 	.modal-footer {
+		background: -webkit-linear-gradient(@modal-bg-gradient-dark, @modal-bg-gradient-light);
+		background: -moz-linear-gradient(@modal-bg-gradient-dark, @modal-bg-gradient-light);
+		background: -o-linear-gradient(@modal-bg-gradient-dark, @modal-bg-gradient-light);
+		background: linear-gradient(@modal-bg-gradient-dark, @modal-bg-gradient-light);
 		border-top: 1px solid #E1E2E5;
 		border-radius: 0 0 5px 5px;
 	}
