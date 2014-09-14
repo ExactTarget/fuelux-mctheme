@@ -2804,6 +2804,7 @@ a.list-group-item-danger.active:focus {
   border-radius: 4px;
 }
 .fuelux .combobox .dropdown-toggle .caret {
+  color: #5c656b;
   margin-left: 1px;
 }
 .fuelux .combobox.disabled {
