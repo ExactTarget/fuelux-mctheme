@@ -1,0 +1,66 @@
+{
+  "name": "fuelux-mctheme",
+  "title": "Marketing Cloud Theme",
+  "version": "1.0.0",
+  "description": "Salesforce ExactTarget Marketing Cloud styling",
+  "homepage": "https://github.com/ExactTarget/fuelux-mctheme",
+  "author": {
+    "name": "ExactTarget",
+    "email": "kparkerson@exacttarget.com",
+    "url": "http://code.exacttarget.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ExactTarget/fuelux-mctheme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ExactTarget/fuelux-mctheme/issues"
+  },
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/ExactTarget/fuelux-mctheme/blob/master/COPYING"
+  },
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "main": "www/server.js",
+    "postinstall": "./node_modules/bower/bin/bower install"
+  },
+  "dependencies": {
+    "connect": "~3.0.0",
+    "bower": "~1.3.9",
+    "serve-static": "~1.5.3"
+  },
+  "devDependencies": {
+    "bower": "^1.3.7",
+    "connect": "~3.0.0",
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-contrib-compress": "~0.9.1",
+    "grunt-contrib-copy": "^0.5.0",
+    "grunt-contrib-less": "^0.11.3",
+    "grunt-contrib-watch": "^0.6.1",
+    "volo": "^0.3.3",
+    "grunt-banner": "^0.2.3",
+    "load-grunt-tasks": "^0.6.0",
+    "grunt-text-replace": "^0.3.12",
+    "grunt-contrib-connect": "~0.8.0",
+    "serve-static": "~1.5.3",
+    "grunt-curl": "~2.0.2",
+    "grunt-zip": "~0.16.0"
+  },
+  "keywords": [
+    "fuelux",
+    "fuel ux",
+    "bootstrap"
+  ],
+  "private": true,
+  "volo": {
+    "baseDir": "lib",
+    "url": "https://raw.github.com/ExactTarget/fuelux-mctheme/{version}/dist/fuelux-mctheme.zip",
+    "type": "directory",
+    "dependencies": {}
+  }
+}

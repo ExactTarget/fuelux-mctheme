@@ -1,0 +1,46 @@
+//panel with tables
+.panel {
+	.table {
+		border: 0;
+	}
+}
+
+.panel-body {
+	padding: 15px 10px;
+}
+
+.panel-heading {
+	background-color: #f0f2f3;
+	line-height: @line-height-base;
+	padding: 10px;
+	border-bottom: 1px solid transparent;
+	.box-shadow(inset 0 0 2px #fff);
+	.panel-title {
+		font-size: 14px;
+	}
+}
+
+.panel-footer {
+	padding: 10px;
+	.box-shadow(inset 0 0 2px #fff);
+}
+
+// Contextual variations
+.panel-default {
+	.panel-variant(@panel-default-border; @panel-default-text; @panel-default-heading-bg; @panel-default-border);
+}
+.panel-primary {
+	.panel-variant(@panel-primary-border; @panel-primary-text; @panel-primary-heading-bg; @panel-primary-border);
+}
+.panel-success {
+	.panel-variant(@panel-success-border; @panel-success-text; @panel-success-heading-bg; @panel-success-border);
+}
+.panel-info {
+	.panel-variant(@panel-info-border; @panel-info-text; @panel-info-heading-bg; @panel-info-border);
+}
+.panel-warning {
+	.panel-variant(@panel-warning-border; @panel-warning-text; @panel-warning-heading-bg; @panel-warning-border);
+}
+.panel-danger {
+	.panel-variant(@panel-danger-border; @panel-danger-text; @panel-danger-heading-bg; @panel-danger-border);
+}

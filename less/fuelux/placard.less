@@ -1,0 +1,18 @@
+.placard {
+	&-cancel {
+		font-size: 10px;
+	}
+
+	.placard-field {
+		&[disabled] {
+			background: @disabled-background;
+			color: #cfcfcf;
+		}
+
+		&.glass {
+			&[disabled] {
+				background: none;
+			}
+		}
+	}
+}

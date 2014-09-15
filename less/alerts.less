@@ -1,0 +1,116 @@
+//alerts
+//
+//basic styles are described in bootstrap-css/helper-classes.less
+
+// Dismissible alerts
+//
+// Adjust close button's positioning.
+
+.alert-dismissable, // The misspelled .alert-dismissable was deprecated in 3.2.0.//interesting!
+.alert-dismissible {
+
+	// Adjust close link position
+	.close {
+		top: -4px;
+		right: -13px;
+
+		&:hover, &:focus {
+			color: #2168A7;
+		}
+	}
+}
+
+.alert {
+	color: #333;
+	font-size: 12px; //12pt;
+	border: 1px solid #666;
+	padding: 6px 21px 6px 34px;
+	background-repeat: no-repeat;
+	background-position: 7px 7px;
+	position: relative;
+
+	//icons
+	&:before {
+		content: '';
+		position: absolute;
+		height: 20px;
+		left: 4px;
+		top: 4px;
+		width: 22px;
+		.sprite(-73px, -34px);
+	}
+
+	strong {
+		font-weight: bold;
+	}
+
+	a {
+		font-weight: normal;
+		color: #2168A7;
+		cursor: pointer;
+	}
+
+	small {
+		color: #666;
+		font-size: 11px; //11pt;
+		font-weight: normal;
+	}
+
+	//remove icon
+	span.form-control-feedback {
+		color: #bbb;
+		top: 3px;
+		right: 2px;
+		cursor: pointer;
+
+		&:hover, &.hover{
+			color: #2168A7;
+		}
+	}
+
+	.alert-link {
+		font-weight: normal;
+		color: #2168A7;
+		cursor: pointer;
+	}
+
+	&-block {
+		&:before {
+			top: 13px;
+		}
+	}
+	&-success {
+		background-color: #E9FCDE;
+		border-color: #B8D8A5;
+		&:before {
+			background-position: -50px -34px;
+		}
+	}
+	&-warning {
+		background-color: #FFF1E1;
+		border-color: #F8D8B3;
+		&:before {
+			background-position: -73px -34px;
+		}
+	}
+	&-danger {
+		background-color: #FCECED;
+		border-color: #EDBFBF;
+		&:before {
+			background-position: -2px -34px;
+		}
+	}
+	&-info {
+		background-color: #E7F3FE;
+		border-color: #BED5E8;
+		&:before {
+			background-position: -26px -34px;
+		}
+	}
+}
+
+@media(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+	.alert:before {
+		.sprite2x();
+	}
+}
