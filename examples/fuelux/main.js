@@ -1,6 +1,6 @@
 define(function(require) {
 	var data = require('data');
-	var jquery = require('jquery');
+	var $ = require('jquery');
 	var log = function(){
 		if(window.console && window.console.log){
 			var args = Array.prototype.slice.call(arguments);

@@ -5,10 +5,9 @@
 	<title>Fuel UX 3</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link href="../../bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css">
-	<link href="../../bower_components/fuelux/dist/css/fuelux.css" rel="stylesheet" type="text/css">
-
-	<link href="../../dist/css/fuelux-mctheme.css" rel="stylesheet" type="text/css">
+	<link href="../../assets/vendor/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="../../assets/vendor/fuelux/dist/css/fuelux.css" rel="stylesheet" type="text/css">
+	<link href="../../assets/vendor/fuelux-mctheme/dist/css/fuelux-mctheme.css" rel="stylesheet" type="text/css"/>
 
 	<!--CLIENT-SIDE LESS COMPILATION FOR WATCHER-LESS DEV-->
 	<!--<link href="../../less/fuelux-mctheme.less" rel="stylesheet/less" type="text/css"/>-->
@@ -17,7 +16,7 @@
 
 	<link href="fuelux-examples.css" rel="stylesheet" type="text/css">
 
-	<script src="../../bower_components/requirejs/require.js"></script>
+	<script src="../../assets/vendor/requirejs/require.js"></script>
 	<script type="text/javascript">
 		(function () {
 			requirejs.config({
@@ -27,11 +26,10 @@
 					}
 				},
 				paths: {
-					jquery: '../../bower_components/jquery/dist/jquery',
-					underscore: '../../bower_components/underscore/underscore',
-					bootstrap: '../../bower_components/bootstrap/dist/js/bootstrap',
-					//moment: '../../bower_components/moment/min/moment-with-langs',
-					fuelux: '../../bower_components/fuelux/dist/js/fuelux'
+					jquery: '../../assets/vendor/jquery/dist/jquery',
+					bootstrap: '../../assets/vendor/bootstrap/dist/js/bootstrap',
+					//moment: '../../assets/vendor/moment/min/moment-with-langs',
+					fuelux: '../../assets/vendor/fuelux/dist/js/fuelux'
 				},
 				shim: {
 					'bootstrap': {
