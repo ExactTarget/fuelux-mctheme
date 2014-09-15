@@ -1,0 +1,46 @@
+{
+  "dependencies": {
+    "jquery-1.11.0": "jquery#1.11.0",
+    "requirejs": "~2.1.11",
+    "bootstrap": "~3.2.0",
+    "moment": "2.7.0",
+    "fuelux": "~3.0"
+  },
+  "devDependencies": {
+    "jquery": null,
+    "jquery-1.9.1": "jquery#1.9.1",
+    "holderjs": "~2.4.0"
+  },
+  "ignore": [
+    "**/.*",
+    "_*",
+    "*.yml",
+    "Gruntfile.js",
+    "index.css",
+    "index.html",
+    "index.js",
+    "node_modules",
+    "Procfile",
+    "www"
+  ],
+  "keywords": [
+    "fuelux",
+    "css",
+    "js",
+    "less",
+    "front-end",
+    "web"
+  ],
+  "main": [
+    "bootstrap-mctheme.css",
+    "bootstrap-mctheme.css.map",
+    "bootstrap-mctheme.min.css",
+    "fuelux-controls.css",
+    "fuelux-controls.min.css",
+    "fuelux-mctheme.css",
+    "fuelux-mctheme.css.map",
+    "fuelux-mctheme.min.css"
+  ],
+  "name": "fuelux-mctheme",
+  "version": "3.0.0"
+}
