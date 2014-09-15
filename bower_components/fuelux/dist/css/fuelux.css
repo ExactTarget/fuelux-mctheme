@@ -1,5 +1,5 @@
 /*!
- * Fuel UX v3.0.1 
+ * Fuel UX v3.0.2 
  * Copyright 2012-2014 ExactTarget
  * Licensed under the BSD-3-Clause license ()
  */
@@ -1453,7 +1453,7 @@ END
   position: relative;
   cursor: pointer;
   border-radius: 6px;
-  margin-left: 19px;
+  margin-left: 26px;
 }
 .fuelux .tree .tree-item .tree-item-name {
   white-space: nowrap;
@@ -1473,16 +1473,6 @@ END
   padding-left: 7px;
   margin-bottom: 0;
   cursor: pointer;
-}
-.fuelux .tree .tree-item .tree-dot {
-  position: absolute;
-  top: 8px;
-  left: 10px;
-  display: block;
-  width: 4px;
-  height: 4px;
-  background-color: #333333;
-  border-radius: 6px;
 }
 .fuelux .tree .icon-caret:hover + .tree-branch-name {
   color: #999999;

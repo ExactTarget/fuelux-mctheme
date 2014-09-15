@@ -63,7 +63,7 @@
 
 		populate: function ($el) {
 			var self = this;
-			var $parent = $el.parent();
+			var $parent = ($el.hasClass('tree')) ? $el : $el.parent();
 			var loader = $parent.find('.tree-loader:eq(0)');
 
 			loader.removeClass('hide');
@@ -158,7 +158,7 @@
 				});
 			} else if ($all[0] !== $el[0]) {
 				$all.removeClass('tree-selected')
-					.find('.glyphicon').removeClass('glyphicon-ok').addClass('tree-dot');
+					.find('.glyphicon').removeClass('glyphicon-ok').addClass('fueluxicon-bullet');
 				data.push($el.data());
 			}
 
