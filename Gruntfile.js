@@ -15,7 +15,7 @@ module.exports = function (grunt) {
 		// Tasks configuration
 		clean: {
 			dist: ['dist/**'],
-			zipsrc: ['dist/mctheme']
+			zipsrc: ['dist/fuelux-mctheme']
 		},
 		compress: {
 			zip: {
@@ -23,11 +23,11 @@ module.exports = function (grunt) {
 					{
 						cwd: 'dist/',
 						expand: true,
-						src: ['mctheme/**']
+						src: ['fuelux-mctheme/**']
 					}
 				],
 				options: {
-					archive: 'dist/mctheme.zip',
+					archive: 'dist/fuelux-mctheme.zip',
 					mode: 'zip'
 				}
 			}
@@ -42,7 +42,7 @@ module.exports = function (grunt) {
 			},
 			zipsrc: {
 				cwd: 'dist/',
-				dest: 'dist/mctheme/',
+				dest: 'dist/fuelux-mctheme/',
 				expand: true,
 				src: ['**']
 			}
@@ -69,7 +69,7 @@ module.exports = function (grunt) {
 			'docs.zip': 'https://github.com/twbs/bootstrap/archive/master.zip'
 		},
 		less: {
-			'mctheme': {
+			'fuelux-mctheme': {
 				options: {
 					strictMath: true,
 					sourceMap: true,
@@ -78,7 +78,7 @@ module.exports = function (grunt) {
 					sourceMapFilename: 'dist/css/<%= pkg.name %>.css.map'
 				},
 				files: {
-					'dist/css/mctheme.css': 'less/mctheme.less'
+					'dist/css/fuelux-mctheme.css': 'less/fuelux-mctheme.less'
 				}
 			},
 			minify: {
@@ -87,7 +87,7 @@ module.exports = function (grunt) {
 					report: 'min'
 				},
 				files: {
-					'dist/css/mctheme.min.css': 'dist/css/mctheme.css'
+					'dist/css/fuelux-mctheme.min.css': 'dist/css/fuelux-mctheme.css'
 				}
 			}
 		},
@@ -114,8 +114,8 @@ module.exports = function (grunt) {
 				},
 				files: {
 					src: [
-						'dist/css/mctheme.css',
-						'dist/css/mctheme.min.css'
+						'dist/css/fuelux-mctheme.css',
+						'dist/css/fuelux-mctheme.min.css'
 					]
 				}
 			}
@@ -139,7 +139,7 @@ module.exports = function (grunt) {
 	 ------------- */
 
 	// CSS distribution task
-	grunt.registerTask('distcss', ['less:mctheme', 'replace:imgpaths', 'less:minify', 'usebanner']);
+	grunt.registerTask('distcss', ['less:fuelux-mctheme', 'replace:imgpaths', 'less:minify', 'usebanner']);
 
 	// ZIP distribution task
 	grunt.registerTask('distzip', ['copy:zipsrc', 'compress', 'clean:zipsrc']);
