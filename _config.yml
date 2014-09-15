@@ -2,13 +2,17 @@
 #destination:      ./_gh_pages
 exclude:          [".editorconfig", ".gitignore", "bower.json", "composer.json", "CONTRIBUTING.md", "CNAME", "LICENSE", "Gruntfile.js", "package.json", "node_modules", "README.md", "less", 'config.ru', 'Gemfile', 'Gemfile.lock', 'bundle']
 #port:             9001
-url:              http://exacttarget.github.io/fuelux-mctheme
+#url:              http://exacttarget.github.io/fuelux-mctheme
 # local dev
-#url:              http://localhost:4000/
+url:              http://localhost:4000/
 
 # Custom vars
 current_version:  1.0.0
 repo:             https://github.com/ExactTarget/fuelux-mctheme
+
+mctheme:
+  css:            //www.fuelcdn.com/fuelux-mctheme/1.0.0/css/fuelux-mctheme.min.css
+
 
 # To view gh-pages locally
 # bundle exec jekyll serve
