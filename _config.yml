@@ -10,8 +10,14 @@ url:              http://exacttarget.github.io/fuelux-mctheme
 current_version:  1.0.0
 repo:             https://github.com/ExactTarget/fuelux-mctheme
 
+cdn:
+  css:            //www.fuelcdn.com/fuelux/3.0.2/css/fuelux.min.css
+
 mctheme:
   css:            //www.fuelcdn.com/fuelux-mctheme/1.0.0/css/fuelux-mctheme.min.css
+
+bootstrap:
+  css:            //maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css
 
 
 # To view gh-pages locally
