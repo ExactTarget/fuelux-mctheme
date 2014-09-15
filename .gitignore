@@ -1,13 +1,5 @@
 # filesystem
 .DS_Store
 
-# dependencies
-node_modules
-bower_components
 
-# logs
-*.log
-validation-status.json
-
-# Editors / IDEs
-.idea
+_site
