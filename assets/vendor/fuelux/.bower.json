@@ -55,14 +55,15 @@
   ],
   "name": "fuelux",
   "homepage": "https://github.com/ExactTarget/fuelux",
-  "version": "3.0.1",
-  "_release": "3.0.1",
+  "version": "3.0.2",
+  "_release": "3.0.2",
   "_resolution": {
     "type": "version",
-    "tag": "3.0.1",
-    "commit": "fedc721612ebb7436d582514423c13d5dd4879ed"
+    "tag": "3.0.2",
+    "commit": "2bea5cb289e94f57349d2cecf3531289309379d2"
   },
   "_source": "git://github.com/ExactTarget/fuelux.git",
-  "_target": "~3.0",
-  "_originalSource": "fuelux"
+  "_target": "~3.0.2",
+  "_originalSource": "fuelux",
+  "_direct": true
 }

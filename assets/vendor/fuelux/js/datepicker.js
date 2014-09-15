@@ -288,7 +288,10 @@
 			for(i=0,l=restricted.length; i<l; i++){
 				from = restricted[i].from;
 				to = restricted[i].to;
-				if((date>=from.date && month>=from.month && year>=from.year) && (date<=to.date && month<=to.month && year<=to.year)){
+				if(
+					(year>from.year || (year===from.year && month>from.month) || (year===from.year && month===from.month && date>=from.date)) &&
+					(year<to.year || (year===to.year && month<to.month) || (year===to.year && month===to.month && date<=to.date))
+				){
 					return true;
 				}
 			}
@@ -624,10 +627,10 @@
 
 		var $set = this.each(function () {
 			var $this   = $( this );
-			var data    = $this.data( 'datepicker' );
+			var data    = $this.data( 'fu.datepicker' );
 			var options = typeof option === 'object' && option;
 
-			if( !data ) $this.data('datepicker', (data = new Datepicker( this, options ) ) );
+			if( !data ) $this.data('fu.datepicker', (data = new Datepicker( this, options ) ) );
 			if( typeof option === 'string' ) methodReturn = data[ option ].apply( data, args );
 		});
 
