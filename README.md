@@ -37,7 +37,7 @@ The Marketing Cloud Theme can be obtained one of three ways:
    Using [Bower](https://github.com/bower/bower):
 
    ```
-   bower install mctheme
+   bower install fuelux-mctheme
    ```
    Update with `bower update fuelux-mctheme`.
 
