@@ -738,6 +738,7 @@ input[type="button"].btn-block {
 }
 .btn-group-check-toggle label.active span {
   font-size: inherit;
+  line-height: 8px;
 }
 .btn-group-switch label.active:first-child {
   background: none;
@@ -1741,7 +1742,7 @@ table th[class*="col-"] {
 .alert {
   color: #333;
   font-size: 12px;
-  border: 1px solid #666;
+  border: 1px solid #999;
   padding: 6px 21px 6px 34px;
   background-repeat: no-repeat;
   background-position: 7px 7px;
