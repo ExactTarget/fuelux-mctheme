@@ -275,9 +275,3 @@
 .bs-example-modal  {
   background: #5a5a5a;
 }
-
-#myModal .scroll-body {
-	height: 400px;
-	overflow-y: scroll;
-}
-
