@@ -3476,6 +3476,9 @@ a.list-group-item-danger.active:focus {
 .fuelux .repeater[data-currentview="list"] .repeater-list .table tbody tr:focus {
   outline: 1px dotted #66afe9;
 }
+.fuelux .repeater[data-currentview="list"] .repeater-list-check {
+  float: left;
+}
 .fuelux .spinbox {
   border: solid 1px #bbbbbb;
   border-radius: 4px;
