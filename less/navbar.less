@@ -5,17 +5,35 @@
 .navbar-default {
 
 	.navbar-brand {
-		padding: 5px 15px;
-		height: 30px;
+		padding: 9px 16px;
+		height: 36px;
 	}
 
 	.navbar-nav {
-		> li > a {
-			color:@brand-primary-medium;
-			&:hover,
-			&:focus {
+		position: relative;
+		display: inline-block;
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		> li {
+			height: 36px;
+			display: inline-block;
+			&:first-child {
+				padding-left: 0;
+			}
+			> a {
 				color: @brand-primary-medium;
-				background-color: #ddeef4;
+				padding: 9px 16px;
+				font-size: 12px;
+				display: inline-block;
+				line-height: 21px;
+				border: 1px solid transparent;
+				border-top: 0;
+				border-radius: 0;
+				&:hover,
+				&:focus {
+					.navbar-active-gradient;
+				}
 			}
 		}
 
@@ -23,15 +41,14 @@
 			&,
 			&:hover,
 			&:focus {
-				background-color: @brand-primary-medium-light;
+				.navbar-active-gradient;
 			}
 		}
 		.open > a {
 			&,
 			&:hover,
 			&:focus {
-				background-color: #ddeef4;
-				color: @brand-primary-medium;
+				.navbar-active-gradient;
 			}
 		}
 	}
@@ -46,7 +63,7 @@
 
 //adjust position of different components on navbar
 .navbar-form {
-	margin-top: 5px;
+	margin-top: 8px;
 	margin-bottom: 4px;
 	padding-left: 10px;
 }
@@ -56,11 +73,11 @@
 }
 
 .navbar-btn {
-	margin-top: 5px;
+	margin-top: 8px;
 }
 
 .navbar-text {
-	margin-top: 10px;
+	margin-top: 12px;
 	margin-bottom: 0;
 }
 
