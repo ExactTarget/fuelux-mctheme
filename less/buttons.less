@@ -153,6 +153,17 @@
 				margin-right: 6px;
 			}
 		}
+
+		//extra small create button
+		&.btn-xs {
+			height: auto;
+			.button-size( 3px; 8px; @font-size-small; 8px);
+
+			&:before{
+				margin-left: -5px;
+				padding: 0px 3px;
+			}
+		}
 	}
 }
 
@@ -261,6 +272,7 @@
 		color: @link-hover-color;
 		text-decoration: underline;
 		background-color: transparent;
+		.box-shadow(none);
 	}
 	&[disabled],
 	fieldset[disabled] & {
@@ -325,6 +337,7 @@ input[type="button"] {
 
 		span {
 			font-size: inherit;
+			line-height: 8px;
 		}
 
 	}
