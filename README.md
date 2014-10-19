@@ -25,7 +25,7 @@ View [demos of the Marketing Cloud Theme](http://exacttarget.github.com/fuelux-m
 	```
     <!-- <link href="BOOTSTRAP-CSS" rel="stylesheet" type="text/css"/> -->
     <!-- <link href="FUELUX-CSS" rel="stylesheet" type="text/css"/> -->
-    <link href="http://www.fuelcdn.com/fuelux-mctheme/1.0.0/css/fuelux-mctheme.min.css" rel="stylesheet" type="text/css"/>
+    <link href="http://www.fuelcdn.com/fuelux-mctheme/1.1.0/css/fuelux-mctheme.min.css" rel="stylesheet" type="text/css"/>
     ```
 3. Add markup from the [Bootstrap documentation](http://getbootstrap.com/) or the [Fuel UX documentation](http://exacttarget.github.io/fuelux/).
 
@@ -50,7 +50,7 @@ The Marketing Cloud Theme can be obtained one of three ways:
 
    Cloning the repository ensures you can apply future updates to FuelUX easily, but requires to you manage its [dependencies](#dependencies) on your own.
 
-3. **Also an option:** Download a .zip archive of the [latest release](http://www.fuelcdn.com/fuelux-mctheme/1.0.0/fuelux.zip)  or request files from [the Fuel CDN](http://www.fuelcdn.com/fuelux-mctheme/1.0.0/).
+3. **Also an option:** Download a .zip archive of the [latest release](http://www.fuelcdn.com/fuelux-mctheme/1.1.0/fuelux.zip)  or request files from [the Fuel CDN](http://www.fuelcdn.com/fuelux-mctheme/1.1.0/).
 
    *Note: Using the Marketing Cloud Theme in this way can make updating to future releases difficult. This approach is not recommended.*
 
