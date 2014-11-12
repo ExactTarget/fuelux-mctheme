@@ -14,4 +14,4 @@ validation-status.json
 
 #Dist files
 
-/dist/*
+dist/**
