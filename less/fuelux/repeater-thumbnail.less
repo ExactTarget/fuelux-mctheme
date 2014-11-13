@@ -1,3 +1,16 @@
-.repeater-thumbnail {
-
+.repeater[data-currentview="thumbnail"] {
+	.repeater-thumbnail-cont {
+		.thumbnail {
+			&.selected {
+				background:@blue-light;
+				color:@brand-info-dark;
+				&:hover {
+					background:@brand-primary-medium-light;
+				}
+				&:focus {
+					outline: 1px dotted #66afe9;
+				}
+			}
+		}
+	}
 }

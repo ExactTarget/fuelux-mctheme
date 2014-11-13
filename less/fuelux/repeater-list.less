@@ -6,6 +6,7 @@
 			thead, tbody {
 				tr {
 					box-shadow: none;
+					background:#f00;
 
 					&.selected {
 						td:first-child {
@@ -95,6 +96,21 @@
 
 		&-check {
 			float: left;
+		}
+
+		&-items {
+			tr {
+				&.selected {
+					background:@blue-light;
+					color:@brand-info-dark;
+					&:hover {
+						background:@brand-primary-medium-light;
+					}
+					&:focus {
+						outline: 1px dotted #66afe9;
+					}
+				}
+			}
 		}
 	}
 }
