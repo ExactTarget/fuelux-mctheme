@@ -16,7 +16,7 @@ View [demos of the Marketing Cloud Theme](http://exacttarget.github.com/fuelux-m
 
 ## Quick start
 1. Install [Fuel UX](https://getfuelux.com).
-2. Use a single css tag ***after Bootstrap and Fuel UX styles*** from your bower components folder.
+2. Use a single css tag ***after Bootstrap and Fuel UX styles***:
 
 	```
     <link href="http://www.fuelcdn.com/fuelux-mctheme/1.1.0/css/fuelux-mctheme.min.css" rel="stylesheet" type="text/css"/>
