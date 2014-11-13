@@ -1,5 +1,7 @@
 # Marketing Cloud Theme
 
+The Marketing Cloud Theme is a single stylesheet that should be included after [Fuel UX](https://getfuelux.com) and Bootstrap.
+
 This theme enables a first-class user experience for your applications that seamlessly fits into the [Salesforce ExactTarget Marketing Cloud](http://www.exacttarget.com/) platform and strives to offer visual parity with the previously released, [Internet Marketing Hub Theme](https://github.com/ExactTarget/fuelux-imhtheme) with support for [Fuel UX 3](http://exacttarget.github.io/fuelux/) and [Bootstrap 3](http://getbootstrap.com/).
 
 ## Table of contents
@@ -15,44 +17,28 @@ This theme enables a first-class user experience for your applications that seam
 View [demos of the Marketing Cloud Theme](http://exacttarget.github.com/fuelux-mctheme).
 
 ## Quick start
-1. Install with [Bower](https://github.com/bower/bower). This will also install compatible versions of Bootstrap and Fuel UX:
-
-    ```
-    bower install fuelux-mctheme
-    ```
-2. Link to the [complete Bootstrap CSS](http://www.bootstrapcdn.com/) and the complete [Fuel UX CSS](https://github.com/ExactTarget/fuelux#quick-start). Then, use a single css tag ***after Bootstrap and Fuel UX styles*** from your bower components folder.
+1. Install [Fuel UX](https://getfuelux.com).
+2. Use a single css tag ***after Bootstrap and Fuel UX styles***:
 
 	```
-    <!-- <link href="BOOTSTRAP-CSS" rel="stylesheet" type="text/css"/> -->
-    <!-- <link href="FUELUX-CSS" rel="stylesheet" type="text/css"/> -->
     <link href="http://www.fuelcdn.com/fuelux-mctheme/1.1.0/css/fuelux-mctheme.min.css" rel="stylesheet" type="text/css"/>
     ```
-3. Add markup from the [Bootstrap documentation](http://getbootstrap.com/) or the [Fuel UX documentation](http://exacttarget.github.io/fuelux/).
+3. [Use Fuel UX as normal](http://exacttarget.github.io/fuelux/).
 
 ### Download
-The Marketing Cloud Theme can be obtained one of three ways:
+The Marketing Cloud Theme can be obtained through:
 
-1. **Best way:** Install with a dependency manager:
-    
-   Using [Bower](https://github.com/bower/bower):
-
-   ```
-   bower install fuelux-mctheme
-   ```
-   Update with `bower update fuelux-mctheme`.
-
-   This ensures you get all the [dependencies](#dependencies).
-
-2. **Another good way:** Clone the Git repository:
+1. [CDN](http://www.fuelcdn.com/fuelux-mctheme/1.1.0/css/fuelux-mctheme.min.css)
+1. [Zip](http://www.fuelcdn.com/fuelux-mctheme/1.1.0/fuelux.zip)
+2. Clone git repo:
    ```
    git clone https://github.com/ExactTarget/fuelux-mctheme/
    ```
+1. Dependency manager:
+   ```
+   bower install fuelux-mctheme
+   ```
 
-   Cloning the repository ensures you can apply future updates to FuelUX easily, but requires to you manage its [dependencies](#dependencies) on your own.
-
-3. **Also an option:** Download a .zip archive of the [latest release](http://www.fuelcdn.com/fuelux-mctheme/1.1.0/fuelux.zip)  or request files from [the Fuel CDN](http://www.fuelcdn.com/fuelux-mctheme/1.1.0/).
-
-   *Note: Using the Marketing Cloud Theme in this way can make updating to future releases difficult. This approach is not recommended.*
 
 
 ### Dependencies
