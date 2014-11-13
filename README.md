@@ -1,5 +1,7 @@
 # Marketing Cloud Theme
 
+The Marketing Cloud Theme is a single stylesheet that should be included after [Fuel UX](https://getfuelux.com) and Bootstrap.
+
 This theme enables a first-class user experience for your applications that seamlessly fits into the [Salesforce ExactTarget Marketing Cloud](http://www.exacttarget.com/) platform and strives to offer visual parity with the previously released, [Internet Marketing Hub Theme](https://github.com/ExactTarget/fuelux-imhtheme) with support for [Fuel UX 3](http://exacttarget.github.io/fuelux/) and [Bootstrap 3](http://getbootstrap.com/).
 
 ## Table of contents
