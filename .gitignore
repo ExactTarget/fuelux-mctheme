@@ -11,3 +11,7 @@ validation-status.json
 
 # Editors / IDEs
 .idea
+
+#Dist files
+
+dist/**
