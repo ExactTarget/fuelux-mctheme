@@ -1,159 +1,150 @@
-.repeater[data-viewtype="list"] {
-	.repeater-list {
-		.table {
-			border: none;
+.repeater-list {
+	.table {
+		border: none;
 
-			thead, tbody {
-				tr {
-					box-shadow: none;
+		tr {
+			box-shadow: none;
 
-					&.selected {
-						td:first-child {
-							padding-left: 30px;
-						}
-					}
+			&.selected {
+				&:focus {
+					outline: 1px dotted #66afe9;
+				}
 
-					th {
-						background: #f4f6f7;
-						background-image: -webkit-linear-gradient(top, #f0f2f4, #f8f9f9);
-						background-image: linear-gradient(to bottom, #f0f2f4, #f8f9f9);
-						border-left: 1px solid transparent;
-						border-right: none;
-
-						&:first-child {
-							border-left: none;
-
-							.repeater-list-heading {
-								border-left: none;
-							}
-						}
-
-						&.sortable {
-							&:hover {
-								background: #e1eaed;
-								background-image: -webkit-linear-gradient(top, #deedf4, #e4eef3);
-								background-image: linear-gradient(to bottom, #deedf4, #e4eef3);
-							}
-
-							.glyphicon {
-								display: block;
-								height: 0;
-								margin-top: 5px;
-								width: 0;
-
-								&:before {
-									display: none;
-								}
-							}
-
-							&.sorted, &.sorted:hover {
-								background: #d6e2e6;
-								background-image: -webkit-linear-gradient(top, #deedf4, #e4eef3);
-								background-image: linear-gradient(to bottom, #deedf4, #e4eef3);
-
-								.glyphicon {
-									&.glyphicon-chevron {
-										&-down {
-											border-width: 5px 5px 0 5px;
-											border-color: transparent;
-											border-style: solid;
-										}
-
-										&-up {
-											border-width: 0 5px 5px 5px;
-											border-color: transparent;
-											border-style: solid;
-										}
-									}
-								}
-							}
-						}
-
-						.repeater-list-heading {
-							text-align: left;
-							background: #f4f6f7;
-							background-image: -webkit-linear-gradient(top, #f0f2f4, #f8f9f9);
-							background-image: linear-gradient(to bottom, #f0f2f4, #f8f9f9);
-							border-left: 1px solid #D6D6D6;
-							border-right: none;
-							padding-left: 10px;
-
-							&.sortable {
-								&:hover {
-									background: #e1eaed;
-									background-image: -webkit-linear-gradient(top, #deedf4, #e4eef3);
-									background-image: linear-gradient(to bottom, #deedf4, #e4eef3);
-								}
-
-								.glyphicon {
-									display: block;
-									height: 0;
-									margin-top: 5px;
-									width: 0;
-
-									&:before {
-										display: none;
-									}
-								}
-							}
-
-							&.sorted,
-							&.sorted:hover {
-								background: #d6e2e6;
-								background-image: -webkit-linear-gradient(top, #deedf4, #e4eef3);
-								background-image: linear-gradient(to bottom, #deedf4, #e4eef3);
-
-								.glyphicon {
-									&.glyphicon-chevron {
-										&-down {
-											border-width: 5px 5px 0 5px;
-											border-color: #45514f transparent transparent transparent;
-											border-style: solid;
-										}
-
-										&-up {
-											border-width: 0 5px 5px 5px;
-											border-color: transparent transparent #45514f transparent;
-											border-style: solid;
-										}
-									}
-								}
-							}
-						}
-					}
-
+				&:hover {
 					td {
-						text-align: left;
-						padding-left: 10px;
-						border-bottom: 1px dotted #ccc;
+						background: @brand-primary-medium-light;
+					}
+				}
+
+				td {
+					background: @blue-light;
+					color: @brand-info-dark;
+				}
+
+				td:first-child {
+					padding-left: 30px;
+				}
+			}
+
+			th {
+				background: #f4f6f7;
+				background-image: -webkit-linear-gradient(top, #f0f2f4, #f8f9f9);
+				background-image: linear-gradient(to bottom, #f0f2f4, #f8f9f9);
+				border-left: 1px solid transparent;
+				border-right: none;
+
+				&:first-child {
+					border-left: none;
+
+					.repeater-list-heading {
 						border-left: none;
-						border-right: none;
-					}
-
-					&:focus {
-						outline: 1px dotted #66afe9;
 					}
 				}
-			}
-		}
 
-		&-check {
-			float: left;
-		}
-
-		&-items {
-			tr {
-				&.selected {
-					background:@blue-light;
-					color:@brand-info-dark;
+				&.sortable {
 					&:hover {
-						background:@brand-primary-medium-light;
+						background: #e1eaed;
+						background-image: -webkit-linear-gradient(top, #deedf4, #e4eef3);
+						background-image: linear-gradient(to bottom, #deedf4, #e4eef3);
 					}
-					&:focus {
-						outline: 1px dotted #66afe9;
+
+					.glyphicon {
+						display: block;
+						height: 0;
+						margin-top: 5px;
+						width: 0;
+
+						&:before {
+							display: none;
+						}
+					}
+
+					&.sorted, &.sorted:hover {
+						background: #d6e2e6;
+						background-image: -webkit-linear-gradient(top, #deedf4, #e4eef3);
+						background-image: linear-gradient(to bottom, #deedf4, #e4eef3);
+
+						.glyphicon.glyphicon-chevron {
+							&-down {
+								border-width: 5px 5px 0 5px;
+								border-color: transparent;
+								border-style: solid;
+							}
+
+							&-up {
+								border-width: 0 5px 5px 5px;
+								border-color: transparent;
+								border-style: solid;
+							}
+						}
+					}
+				}
+
+				.repeater-list-heading {
+					text-align: left;
+					background: #f4f6f7;
+					background-image: -webkit-linear-gradient(top, #f0f2f4, #f8f9f9);
+					background-image: linear-gradient(to bottom, #f0f2f4, #f8f9f9);
+					border-left: 1px solid #D6D6D6;
+					border-right: none;
+					padding-left: 10px;
+
+					&.sortable {
+						&:hover {
+							background: #e1eaed;
+							background-image: -webkit-linear-gradient(top, #deedf4, #e4eef3);
+							background-image: linear-gradient(to bottom, #deedf4, #e4eef3);
+						}
+
+						.glyphicon {
+							display: block;
+							height: 0;
+							margin-top: 5px;
+							width: 0;
+
+							&:before {
+								display: none;
+							}
+						}
+					}
+
+					&.sorted, &.sorted:hover {
+						background: #d6e2e6;
+						background-image: -webkit-linear-gradient(top, #deedf4, #e4eef3);
+						background-image: linear-gradient(to bottom, #deedf4, #e4eef3);
+
+						.glyphicon.glyphicon-chevron {
+							&-down {
+								border-width: 5px 5px 0 5px;
+								border-color: #45514f transparent transparent transparent;
+								border-style: solid;
+							}
+
+							&-up {
+								border-width: 0 5px 5px 5px;
+								border-color: transparent transparent #45514f transparent;
+								border-style: solid;
+							}
+						}
 					}
 				}
 			}
+
+			td {
+				text-align: left;
+				padding-left: 10px;
+				border-bottom: 1px dotted #ccc;
+				border-left: none;
+				border-right: none;
+			}
+
+			&:focus {
+				outline: 1px dotted #66afe9;
+			}
 		}
+	}
+
+	&-check {
+		float: left;
 	}
 }
