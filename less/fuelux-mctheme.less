@@ -1,37 +1,62 @@
 // Core variables and mixins
-@import "variables.less";
-@import "mixins.less";
+@import "bootstrap-override/variables.less";
+@import "bootstrap-override/mixins.less";
 
 // Core CSS
-@import "type.less";
-@import "buttons.less";
+@import "bootstrap-override/type.less";
+@import "bootstrap-override/buttons.less";
 @import "icons.less";
-@import "forms.less";
-@import "tables.less";
-@import "label.less";
+@import "bootstrap-override/forms.less";
+@import "bootstrap-override/tables.less";
+@import "bootstrap-override/label.less";
 
 // Components
-@import "progress-bars.less";
-@import "alerts.less";
-@import "close.less";
+@import "bootstrap-override/progress-bars.less";
+@import "bootstrap-override/alerts.less";
+@import "bootstrap-override/close.less";
 @import "help.less";
-@import "dropdowns.less";
-@import "button-groups.less";
-@import "input-groups.less";
-@import "navs.less";
-@import "navbar.less";
-@import "badges.less";
-@import "list-group.less";
-@import "panels.less";
-@import "pagination.less";
-@import "breadcrumb.less";
-@import "well.less";
+@import "bootstrap-override/dropdowns.less";
+@import "bootstrap-override/button-groups.less";
+@import "bootstrap-override/input-groups.less";
+@import "bootstrap-override/navs.less";
+@import "bootstrap-override/navbar.less";
+@import "bootstrap-override/badges.less";
+@import "bootstrap-override/list-group.less";
+@import "bootstrap-override/panels.less";
+@import "bootstrap-override/pagination.less";
+@import "bootstrap-override/breadcrumb.less";
+@import "bootstrap-override/well.less";
 
 // Components w/ JavaScript
-@import "modals.less";
-@import "tooltip.less";
-@import "popovers.less";
-@import "carousel.less";
+@import "bootstrap-override/modals.less";
+@import "bootstrap-override/tooltip.less";
+@import "bootstrap-override/popovers.less";
+@import "bootstrap-override/carousel.less";
 
 // Fuel UX Controls
-@import "fuelux/fuelux.less";
+.fuelux {
+	// Core variables, mixins, and icons
+	@import "fuelux-override/variables.less";
+	@import "fuelux-override/mixins.less";
+
+	// Fuel UX controls
+	@import "fuelux-override/checkbox.less";
+	@import "fuelux-override/combobox.less";
+	@import "fuelux-override/datepicker.less";
+	//@import "infinite-scroll.less";
+	@import "fuelux-override/loader.less";
+	//@import "misc.less";
+	@import "fuelux-override/pillbox.less";
+	@import "fuelux-override/placard.less";
+	@import "fuelux-override/radio.less";
+	@import "fuelux-override/repeater.less";
+	@import "fuelux-override/repeater-list.less";
+	@import "fuelux-override/repeater-thumbnail.less";
+	@import "fuelux-override/spinbox.less";
+	@import "fuelux-override/scheduler.less";
+	@import "fuelux-override/search.less";
+	@import "fuelux-override/selectlist.less";
+	@import "fuelux-override/tree.less";
+	@import "fuelux-override/wizard.less";
+
+}
