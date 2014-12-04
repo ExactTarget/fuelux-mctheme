@@ -2,6 +2,9 @@
 /*global module:false*/
 module.exports = function (grunt) {
 
+	// use --no-livereload to disable livereload. Helpful to 'serve' multiple projects
+	var isLivereloadEnabled = (typeof grunt.option('livereload') !== 'undefined') ? grunt.option('livereload') : true;
+
 	// Project configuration.
 	grunt.initConfig({
 		// Metadata
@@ -54,13 +57,15 @@ module.exports = function (grunt) {
 			server: {
 				options: {
 					hostname: '*',
-					port: 8000
+					port: 8000,
+					useAvailablePort: true	// don't be greedy with your ports
 				}
 			},
 			testServer: {
 				options: {
 					hostname: '*',
-					port: 9000		// allows main server to be run simultaneously
+					port: 9000,		// allows main server to be run simultaneously
+					useAvailablePort: true	// don't be greedy with your ports
 				}
 			}
 		},
@@ -124,7 +129,7 @@ module.exports = function (grunt) {
 			full: {
 				files: ['less/**'],
 				options: {
-					livereload: true,
+					livereload: isLivereloadEnabled,
 				},
 				tasks: ['distcss']
 			}
