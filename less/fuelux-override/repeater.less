@@ -3,11 +3,17 @@
 		margin-top: 2px;
 	}
 
-	&-footer, &-header {
+	&-header {
 		background: #f0f2f3;
 		box-shadow: 0px 0px 0px 1px #fff inset;
-		min-height: 46px;
 		padding: 10px;
+	}
+
+	&-footer {
+		background: #f0f2f3;
+		box-shadow: 0px 0px 0px 1px #fff inset;
+		padding: 8px 10px 8px 10px;
+		min-height: 0;
 	}
 
 	&-itemization {
@@ -24,6 +30,11 @@
 	&-pagination {
 		font-size: 12px;
 		margin-top: 2px;
+
+		.repeater-primaryPaging {
+			width: 52px;
+		}
+
 
 		.repeater-next, .repeater-prev {
 			background: #f0f5f8;

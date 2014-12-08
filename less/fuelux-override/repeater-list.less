@@ -81,13 +81,16 @@
 				}
 
 				.repeater-list-heading {
-					text-align: left;
 					background: #f4f6f7;
 					background-image: -webkit-linear-gradient(top, #f0f2f4, #f8f9f9);
 					background-image: linear-gradient(to bottom, #f0f2f4, #f8f9f9);
 					border-left: 1px solid #D6D6D6;
 					border-right: none;
 					padding-left: 10px;
+
+					&:last-child {
+						text-align: left;
+					}
 
 					&.sortable {
 						&:hover {
