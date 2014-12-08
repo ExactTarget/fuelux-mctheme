@@ -1,14 +1,11 @@
-// * {
-// 	outline: 1px solid red;
-// }
-
 .tree {
 	border-color: #ddd;
 	padding: 10px 0;
 
-	// * {
-	// 	outline: 1px solid red;
-	// }
+	// do not hide overflow, make parent element overflow: auto
+	// so that the scrollbars are in the right place
+	overflow-x: visible;
+	overflow-y: visible;
 
 	button:focus .tree-label {
 		color: inherit;
@@ -63,7 +60,7 @@
 
 	.tree-selected > .tree-branch-header,
 	.tree-item.tree-selected {
-		background: @blue-light;
+		background: @blue-slate;
 	}
 
 	// text and icon alignment - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -152,7 +149,7 @@
 			display: inline-block;
 
 			&:before {
-				color: @blue-light;
+				color: @blue-slate;
 			}
 		}
 	}
