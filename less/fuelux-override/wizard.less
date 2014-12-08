@@ -19,6 +19,10 @@
 			border: none;
 			box-shadow: none;
 			color: #2168a7;
+			&:hover,
+			&:focus {
+				color: @link-hover-color;
+			}
 		}
 	}
 
@@ -86,6 +90,12 @@
 
 				.chevron:after {
 					border-color: transparent transparent transparent #f3f4f5;
+				}
+
+				&:hover {
+					.chevron:after {
+						border-color: transparent transparent transparent #e7eff8;
+					}
 				}
 			}
 
