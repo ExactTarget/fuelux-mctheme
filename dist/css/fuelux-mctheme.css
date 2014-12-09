@@ -4184,4 +4184,8 @@ a.list-group-item-danger.active:focus {
   right: 2px;
   top: -24px;
 }
+html,
+body {
+  font-size: 400%;
+}
 /*# sourceMappingURL=fuelux-mctheme.css.map */

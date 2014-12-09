@@ -3,7 +3,7 @@
 module.exports = function (grunt) {
 
 	// use --no-livereload to disable livereload. Helpful to 'serve' multiple projects
-	var isLivereloadEnabled = (typeof grunt.option('livereload') !== 'undefined') ? grunt.option('livereload') : true;
+	var isLivereloadEnabled = (typeof grunt.option('livereload') !== 'undefined') ? grunt.option('livereload') : 35730;
 
 	// Project configuration.
 	grunt.initConfig({
