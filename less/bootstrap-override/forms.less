@@ -163,7 +163,7 @@ output {
 		cursor: not-allowed;
 		background-color: @input-bg-disabled;
 		opacity: 1; // iOS fix for unreadable disabled content
-		color: #555;
+		color: @gray33;
 	}
 
 	// Reset height for `textarea`s
@@ -179,9 +179,9 @@ output {
 	font-size: 11px; //11pt;
 	font-weight: normal;
 	line-height: 1;
-	color: #555;
+	color: @gray33;
 	text-align: center;
-	background-color: #eee;
+	background-color: @gray93;
 	border: 1px solid #ccc;
 	border-radius: 4px;
 }
@@ -439,7 +439,7 @@ input[type="checkbox"] {
 
 	.form-control{
 		.placeholder(@state-danger-text);
-		background-color: @gray-lighter;
+		background-color: @gray93;
 		display: inline;
 		position: absolute;
 	}
@@ -499,7 +499,7 @@ input[type="checkbox"] {
 	margin-bottom: 10px;
 	color: #666;
 	span{
-		color: #333;
+		color: @gray20;
 	}
 }
 
