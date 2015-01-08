@@ -1,4 +1,6 @@
 //panel with tables
+@import "../fuelux-override/mixins";
+@import "../fuelux-override/variables";
 .panel {
 	.table {
 		border: 0;
@@ -21,7 +23,7 @@
 }
 
 .panel-footer {
-	padding: 10px;
+	.footer-with-inputs();
 	.box-shadow(inset 0 0 2px #fff);
 }
 
