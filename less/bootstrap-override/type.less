@@ -18,11 +18,30 @@ body{
 	}
 }
 
-.title-header-page, .page-header { font-size: @font-size-h1; }
-
 .title-table { font-size: @font-size-h2; }
 
 .title-form { font-size: @font-size-h3; }
+
+// Page header
+// -------------------------
+.page-header {
+	font-size: @font-size-h1;
+	margin-top: 10px;
+	border-bottom: none;
+	margin-bottom: 0;
+
+	h1 {
+		line-height: 30px;	// matches create button height
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	// create button, etc.
+	& > :last-child {
+		text-align: right;
+	}
+
+}
 
 p {
 	color: @gray20;
