@@ -243,15 +243,17 @@
 
 }
 
-
 // Link buttons
 // -------------------------
 
 // Make a button look and behave like a link
 .btn-link {
+	border:0;
 	color: @link-color;
 	cursor: pointer;
 	border-radius: 0;
+	outline: 0 !important;
+	padding: 0;
 	.box-shadow(none);
 
 	&,
@@ -356,4 +358,3 @@ input[type="button"] {
 	}
 
 }
-
