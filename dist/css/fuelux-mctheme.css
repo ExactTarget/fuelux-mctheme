@@ -1,19 +1,18 @@
 /*!
- * Marketing Cloud Theme v1.2.0 
+ * Marketing Cloud Theme v1.3.0 
  * Copyright 2015 ExactTarget
  * Licensed under MIT (https://github.com/ExactTarget/fuelux-mctheme/blob/master/COPYING)
  */
 
 body {
   font-family: Arial, sans-serif;
-  color: #333333;
+  color: #222222;
   font-size: 11px;
   line-height: 1.4;
 }
 .title-form,
 .title-header-page,
 .title-table {
-  color: #333333;
   line-height: 1.4;
 }
 .title-form small,
@@ -48,7 +47,6 @@ body {
   text-align: right;
 }
 p {
-  color: #333333;
   font-size: 11px;
 }
 p.support-text {
@@ -74,7 +72,7 @@ h3,
 }
 h4,
 .h4 {
-  font-size: 14px;
+  font-size: 12px;
 }
 h5,
 .h5 {
@@ -112,13 +110,25 @@ h6,
   font-size: 10px;
 }
 .text-lg {
-  font-size: 12px;
+  font-size: 24px;
+}
+.text-xl {
+  font-size: 32px;
+}
+.text-xxl {
+  font-size: 44px;
 }
 .text-dimmed {
-  color: #666666;
+  color: #4b4b4b;
 }
 .text-muted {
-  color: #999999 !important;
+  color: #757575 !important;
+}
+.text-primary {
+  color: #2075c0 !important;
+}
+.text-warning {
+  color: #986000 !important;
 }
 .btn {
   display: inline-block;
@@ -818,7 +828,7 @@ legend {
   margin-bottom: 15px;
   font-size: 16.5px;
   line-height: inherit;
-  color: #333333;
+  color: #222222;
   border: 0;
   border-bottom: 1px solid #e5e5e5;
 }
@@ -854,7 +864,7 @@ output {
   padding-top: 3px;
   font-size: 11px;
   line-height: 1.4;
-  color: #333333;
+  color: #222222;
 }
 .form-control {
   display: block;
@@ -863,7 +873,7 @@ output {
   padding: 4px 5px;
   font-size: 11px;
   line-height: 1.4;
-  color: #333333;
+  color: #222222;
   background-color: #ffffff;
   background-image: none;
   border: 1px solid #cccccc;
@@ -1260,9 +1270,6 @@ select[multiple].input-md {
   margin-top: 5px;
   margin-bottom: 10px;
   color: #666;
-}
-.help-block span {
-  color: #333333;
 }
 @media (min-width: 768px) {
   .form-inline .form-group {
@@ -1988,7 +1995,6 @@ table th[class*="col-"] {
   color: #2168A7;
 }
 .alert {
-  color: #333333;
   font-size: 12px;
   border: 1px solid #999;
   padding: 6px 21px 6px 34px;
@@ -2112,7 +2118,6 @@ table th[class*="col-"] {
   padding-left: 20px;
 }
 .btn-dropdown {
-  color: #333333;
   text-align: left;
   border: 1px solid #bbb;
   padding: 4px 7px 4px 7px;
@@ -2695,7 +2700,7 @@ a.list-group-item-danger.active:focus {
   border-color: #dddddd;
 }
 .panel-default > .panel-heading {
-  color: #333333;
+  color: #222222;
   background-color: #f0f2f3;
   border-color: #dddddd;
   line-height: 1.4;
@@ -2707,7 +2712,7 @@ a.list-group-item-danger.active:focus {
 }
 .panel-default > .panel-heading .badge {
   color: #f0f2f3;
-  background-color: #333333;
+  background-color: #222222;
 }
 .panel-default > .panel-footer + .panel-collapse > .panel-body {
   border-bottom-color: #dddddd;
@@ -2990,7 +2995,6 @@ a.list-group-item-danger.active:focus {
 }
 .modal .modal-title {
   font-size: 16px;
-  color: #333333;
   line-height: 1.2;
 }
 .modal .modal-header,
@@ -3039,7 +3043,6 @@ a.list-group-item-danger.active:focus {
 }
 .tooltip .tooltip-inner {
   background: transparent !important;
-  color: #333333;
 }
 .tooltip.left {
   background-image: -webkit-linear-gradient(left, #f2f0b9 0%, #fcfbda 100%);
@@ -3142,13 +3145,13 @@ a.list-group-item-danger.active:focus {
   border-radius: 0;
   content: " ";
   padding: 0;
-  background: transparent url("../img/spritesheet.png") no-repeat -1px -1px;
+  background: transparent url("../img/spritesheet.png") no-repeat -2px -1px;
 }
 .fuelux .checkbox-custom:hover:before {
   background: transparent url("../img/spritesheet.png") no-repeat -17px -1px;
 }
 .fuelux .checkbox-custom:hover.checked:before {
-  background: transparent url("../img/spritesheet.png") no-repeat -33px -1px;
+  background: transparent url("../img/spritesheet.png") no-repeat -34px -1px;
 }
 .fuelux .checkbox-custom.checked:before {
   content: " ";
@@ -3430,7 +3433,6 @@ a.list-group-item-danger.active:focus {
 }
 .fuelux .datepicker-wheels-footer .datepicker-wheels-back {
   box-shadow: none;
-  color: #333333;
   line-height: 17px;
 }
 .fuelux .datepicker-wheels-footer .datepicker-wheels-select {
@@ -3441,7 +3443,6 @@ a.list-group-item-danger.active:focus {
 .fuelux .datepicker-wheels-month .header,
 .fuelux .datepicker-wheels-year .header {
   background: #eeeeee;
-  color: #333333;
   font-size: 12px;
   font-weight: bold;
   line-height: 27px;
@@ -3466,7 +3467,6 @@ a.list-group-item-danger.active:focus {
 .fuelux .datepicker-wheels-month ul li.selected button:hover,
 .fuelux .datepicker-wheels-year ul li.selected button:hover {
   background-color: #d9eaf5;
-  color: #333333;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .fuelux .datepicker .dropdown-toggle .glyphicon-calendar,
@@ -3490,11 +3490,7 @@ a.list-group-item-danger.active:focus {
   background: #e5e5e5;
   border: none;
   box-shadow: none;
-  color: #333333;
   padding: 4px 16px 4px 4px;
-}
-.fuelux .pillbox > .pill-group > .pill.btn-default {
-  color: #333333;
 }
 .fuelux .pillbox > .pill-group > .pill .glyphicon-close:before {
   background: #fff;
@@ -3696,7 +3692,6 @@ a.list-group-item-danger.active:focus {
   border-radius: 4px;
 }
 .fuelux .repeater-title {
-  color: #333333;
   font-size: 14px;
   line-height: 25px;
 }
@@ -3988,7 +3983,6 @@ a.list-group-item-danger.active:focus {
 .fuelux .selectlist .btn.dropdown-toggle {
   background: linear-gradient(#ffffff, #eeeeee);
   border: 1px solid #bbb;
-  color: #333333;
 }
 .fuelux .selectlist .btn.dropdown-toggle .caret {
   color: #656565;
@@ -4016,8 +4010,8 @@ a.list-group-item-danger.active:focus {
   top: -1px;
   left: -1px;
   background: transparent url("../img/spritesheet.png") no-repeat -176px 0;
-  width: 13px;
-  height: 13px;
+  width: 15px;
+  height: 14px;
 }
 .fuelux .tree.tree-folder-select .icon-caret {
   top: 0;
@@ -4034,7 +4028,7 @@ a.list-group-item-danger.active:focus {
   margin-right: 4px;
   background: transparent url("../img/spritesheet.png") no-repeat -96px -2px;
   height: 12px;
-  width: 16px;
+  width: 17px;
 }
 .fuelux .tree.tree-folder-select .tree-branch.tree-selected > .tree-branch-header .tree-branch-name:hover,
 .fuelux .tree .tree-branch.tree-selected > .tree-branch-header .tree-branch-name,
