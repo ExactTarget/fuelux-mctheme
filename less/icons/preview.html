@@ -159,7 +159,7 @@
 			/* grunticon Stylesheet Loader | https://github.com/filamentgroup/grunticon | (c) 2012 Scott Jehl, Filament Group, Inc. | MIT license. */
 window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.createElementNS||!t.document.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect||!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1")||window.opera&&-1===navigator.userAgent.indexOf("Chrome")||-1!==navigator.userAgent.indexOf("Series40")),o=function(o){var a=t.document.createElement("link"),r=t.document.getElementsByTagName("script")[0];a.rel="stylesheet",a.href=e[o&&n?0:o?1:2],a.media="only x",r.parentNode.insertBefore(a,r),setTimeout(function(){a.media="all"})},a=new t.Image;a.onerror=function(){o(!1)},a.onload=function(){o(1===a.width&&1===a.height)},a.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="}};
 
-			grunticon(["icons.data.svg.css", "icons.data.png.css", "icons.fallback.css"]);
+			grunticon(["icons-svg.less", "icons.data.png.css", "icons.fallback.css"]);
 		</script>
 		<noscript><link href="icons.fallback.css" rel="stylesheet"></noscript>
 
@@ -462,6 +462,25 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 		
 			
 
+	        <li title="chevron-left-hover">
+	            <div class="icon-box" id="icon-box-chevron-left-hover">
+	            	<div class="fuelux-icon fuelux-icon-chevron-left-hover" ></div>
+	            </div>
+	            <h2>chevron-left-hover</h2>
+	            <button onclick="showPopover('snippet-chevron-left-hover')">Show Snippet</button>
+	            <br/>
+	            <button onclick="invertBackground('icon-box-chevron-left-hover')">Invert Background</button>
+	            <div class="snippet-popover" id="snippet-chevron-left-hover">
+	                <pre><code>&lt;span class=&quot;fuelux-icon-chevron-left-hover&quot;&gt;&lt;/span&gt;</code></pre>
+	                <button onclick="hidePopover()">Close</button>
+	            </div>
+	        </li>
+
+
+			
+		
+			
+
 	        <li title="chevron-left">
 	            <div class="icon-box" id="icon-box-chevron-left">
 	            	<div class="fuelux-icon fuelux-icon-chevron-left" ></div>
@@ -472,6 +491,25 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 	            <button onclick="invertBackground('icon-box-chevron-left')">Invert Background</button>
 	            <div class="snippet-popover" id="snippet-chevron-left">
 	                <pre><code>&lt;span class=&quot;fuelux-icon-chevron-left&quot;&gt;&lt;/span&gt;</code></pre>
+	                <button onclick="hidePopover()">Close</button>
+	            </div>
+	        </li>
+
+
+			
+		
+			
+
+	        <li title="chevron-right-hover">
+	            <div class="icon-box" id="icon-box-chevron-right-hover">
+	            	<div class="fuelux-icon fuelux-icon-chevron-right-hover" ></div>
+	            </div>
+	            <h2>chevron-right-hover</h2>
+	            <button onclick="showPopover('snippet-chevron-right-hover')">Show Snippet</button>
+	            <br/>
+	            <button onclick="invertBackground('icon-box-chevron-right-hover')">Invert Background</button>
+	            <div class="snippet-popover" id="snippet-chevron-right-hover">
+	                <pre><code>&lt;span class=&quot;fuelux-icon-chevron-right-hover&quot;&gt;&lt;/span&gt;</code></pre>
 	                <button onclick="hidePopover()">Close</button>
 	            </div>
 	        </li>
@@ -529,6 +567,44 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 	            <button onclick="invertBackground('icon-box-close-content-block')">Invert Background</button>
 	            <div class="snippet-popover" id="snippet-close-content-block">
 	                <pre><code>&lt;span class=&quot;fuelux-icon-close-content-block&quot;&gt;&lt;/span&gt;</code></pre>
+	                <button onclick="hidePopover()">Close</button>
+	            </div>
+	        </li>
+
+
+			
+		
+			
+
+	        <li title="copy-hover">
+	            <div class="icon-box" id="icon-box-copy-hover">
+	            	<div class="fuelux-icon fuelux-icon-copy-hover" ></div>
+	            </div>
+	            <h2>copy-hover</h2>
+	            <button onclick="showPopover('snippet-copy-hover')">Show Snippet</button>
+	            <br/>
+	            <button onclick="invertBackground('icon-box-copy-hover')">Invert Background</button>
+	            <div class="snippet-popover" id="snippet-copy-hover">
+	                <pre><code>&lt;span class=&quot;fuelux-icon-copy-hover&quot;&gt;&lt;/span&gt;</code></pre>
+	                <button onclick="hidePopover()">Close</button>
+	            </div>
+	        </li>
+
+
+			
+		
+			
+
+	        <li title="copy">
+	            <div class="icon-box" id="icon-box-copy">
+	            	<div class="fuelux-icon fuelux-icon-copy" ></div>
+	            </div>
+	            <h2>copy</h2>
+	            <button onclick="showPopover('snippet-copy')">Show Snippet</button>
+	            <br/>
+	            <button onclick="invertBackground('icon-box-copy')">Invert Background</button>
+	            <div class="snippet-popover" id="snippet-copy">
+	                <pre><code>&lt;span class=&quot;fuelux-icon-copy&quot;&gt;&lt;/span&gt;</code></pre>
 	                <button onclick="hidePopover()">Close</button>
 	            </div>
 	        </li>
