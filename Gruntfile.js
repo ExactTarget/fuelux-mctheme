@@ -73,6 +73,51 @@ module.exports = function (grunt) {
 		// Micro libraries via http://microjs.com/
 			'docs.zip': 'https://github.com/twbs/bootstrap/archive/master.zip'
 		},
+		grunticon: {
+			dist: {
+				files: [{
+					expand: true,
+					cwd: 'img/svgs-min',
+					src: ['*.svg', '*.png'],
+					dest: "examples/icons"
+				}],
+				options: {
+
+					// CSS filenames
+					datasvgcss: "mctheme.svg.css",
+					datapngcss: "mctheme.png.css",
+					urlpngcss: "mctheme.css",
+
+					// preview HTML filename
+					previewhtml: "preview.html",
+
+					// grunticon loader code snippet filename
+					loadersnippet: "grunticon.loader.js",
+
+					// folder name (within dest) for png output
+					pngfolder: "png",
+
+					// prefix for CSS classnames
+					cssprefix: ".fuelux-",
+
+					defaultWidth: "128px",
+					defaultHeight: "128px",
+
+					// define vars that can be used in filenames if desirable, like foo.colors-primary-secondary.svg
+					colors: {
+						primary: "red",
+						secondary: "#666"
+					},
+
+					// css file path prefix - this defaults to "/" and will be placed before the "dest" path when stylesheets are loaded.
+					// This allows root-relative referencing of the CSS. If you don't want a prefix path, set to to ""
+					cssbasepath: "/",
+					template: "examples/icons/default-css.hbs",
+					previewTemplate: "examples/icons/preview-custom.hbs"
+
+				}
+			}
+		},
 		less: {
 			'fuelux-mctheme': {
 				options: {
@@ -111,6 +156,16 @@ module.exports = function (grunt) {
 				]
 			}
 		},
+		svgmin: {
+			dist: {
+				files: [{
+					expand: true,
+					cwd: 'img/src/svgs',
+					src: ['*.svg'],
+					dest: 'img/svgs-min'
+				}]
+			}
+		},
 		usebanner: {
 			dist: {
 				options: {
@@ -129,7 +184,7 @@ module.exports = function (grunt) {
 			full: {
 				files: ['less/**'],
 				options: {
-					livereload: isLivereloadEnabled,
+					livereload: isLivereloadEnabled
 				},
 				tasks: ['distcss']
 			}
@@ -142,6 +197,9 @@ module.exports = function (grunt) {
 	/* -------------
 	 BUILD
 	 ------------- */
+
+	// Icon creation task
+	grunt.registerTask('iconify', ['svgmin', 'grunticon']);
 
 	// CSS distribution task
 	grunt.registerTask('distcss', ['less:fuelux-mctheme', 'replace:imgpaths', 'less:minify', 'usebanner']);

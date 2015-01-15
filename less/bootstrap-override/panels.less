@@ -1,4 +1,6 @@
 //panel with tables
+@import "../fuelux-override/mixins";
+@import "../fuelux-override/variables";
 .panel {
 	.table {
 		border: 0;
@@ -11,17 +13,19 @@
 
 .panel-heading {
 	background-color: #f0f2f3;
-	line-height: @line-height-base;
 	padding: 10px;
 	border-bottom: 1px solid transparent;
 	.box-shadow(inset 0 0 2px #fff);
+
 	.panel-title {
 		font-size: 14px;
+		line-height: 21px;	// to center align with right-floated buttons
 	}
+	
 }
 
 .panel-footer {
-	padding: 10px;
+	.footer-with-inputs();
 	.box-shadow(inset 0 0 2px #fff);
 }
 

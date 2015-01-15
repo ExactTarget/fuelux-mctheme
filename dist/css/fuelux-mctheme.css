@@ -1,25 +1,9 @@
 /*!
  * Marketing Cloud Theme v1.2.0 
- * Copyright 2014 ExactTarget
+ * Copyright 2015 ExactTarget
  * Licensed under MIT (https://github.com/ExactTarget/fuelux-mctheme/blob/master/COPYING)
  */
 
-.clearfix,
-.form-horizontal .form-group {
-  *zoom: 1;
-}
-.clearfix:before,
-.clearfix:after,
-.form-horizontal .form-group:before,
-.form-horizontal .form-group:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-.clearfix:after,
-.form-horizontal .form-group:after {
-  clear: both;
-}
 body {
   font-family: Arial, sans-serif;
   color: #333333;
@@ -43,15 +27,25 @@ body {
   color: #777777;
   font-size: 65%;
 }
-.title-header-page,
-.page-header {
-  font-size: 20px;
-}
 .title-table {
   font-size: 15px;
 }
 .title-form {
   font-size: 14px;
+}
+.page-header {
+  font-size: 20px;
+  margin-top: 10px;
+  border-bottom: none;
+  margin-bottom: 0;
+}
+.page-header h1 {
+  line-height: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.page-header > :last-child {
+  text-align: right;
 }
 p {
   color: #333333;
@@ -64,7 +58,7 @@ p.hint-text {
   color: #999999;
 }
 p.disabled-text {
-  color: #aaaaaa;
+  color: #ababab;
 }
 h1,
 .h1 {
@@ -716,9 +710,12 @@ fieldset[disabled] .btn-danger.active {
   color: #fff;
 }
 .btn-link {
+  border: 0;
   color: #4e8abe;
   cursor: pointer;
   border-radius: 0;
+  outline: 0 !important;
+  padding: 0;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
@@ -915,7 +912,7 @@ fieldset[disabled] .form-control,
   cursor: not-allowed;
   background-color: #eeeeee;
   opacity: 1;
-  color: #555;
+  color: #555555;
 }
 textarea.form-control {
   height: auto;
@@ -925,9 +922,9 @@ textarea.form-control {
   font-size: 11px;
   font-weight: normal;
   line-height: 1;
-  color: #555;
+  color: #555555;
   text-align: center;
-  background-color: #eee;
+  background-color: #eeeeee;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
@@ -1265,7 +1262,7 @@ select[multiple].input-md {
   color: #666;
 }
 .help-block span {
-  color: #333;
+  color: #333333;
 }
 @media (min-width: 768px) {
   .form-inline .form-group {
@@ -1675,6 +1672,22 @@ table th[class*="col-"] {
 .label {
   padding: .3em .6em .2em;
 }
+.clearfix,
+.form-horizontal .form-group {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after,
+.form-horizontal .form-group:before,
+.form-horizontal .form-group:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after,
+.form-horizontal .form-group:after {
+  clear: both;
+}
 .padding-xs {
   padding: 5px;
 }
@@ -1975,7 +1988,7 @@ table th[class*="col-"] {
   color: #2168A7;
 }
 .alert {
-  color: #333;
+  color: #333333;
   font-size: 12px;
   border: 1px solid #999;
   padding: 6px 21px 6px 34px;
@@ -2090,8 +2103,16 @@ table th[class*="col-"] {
     background-size: 240px auto;
   }
 }
+.container {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.container-fluid {
+  padding-right: 20px;
+  padding-left: 20px;
+}
 .btn-dropdown {
-  color: #333;
+  color: #333333;
   text-align: left;
   border: 1px solid #bbb;
   padding: 4px 7px 4px 7px;
@@ -2105,7 +2126,7 @@ table th[class*="col-"] {
 .btn-dropdown:active,
 .btn-dropdown.active,
 .btn-dropdown:focus {
-  background: #eee;
+  background: #eeeeee;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2);
 }
@@ -2304,7 +2325,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
-  color: #555;
+  color: #555555;
   background-color: #eef9fe;
   background: -webkit-linear-gradient(#eef9fe, #ffffff);
   background: -moz-linear-gradient(#eef9fe, #ffffff);
@@ -2384,7 +2405,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
-  color: #555;
+  color: #555555;
   background-color: #b9dff1;
 }
 .nav-pills .open > a,
@@ -2636,6 +2657,15 @@ a.list-group-item-danger.active:focus {
   background-color: #e64141;
   border-color: #e64141;
 }
+.footer-with-inputs {
+  padding: 8px 10px 8px 10px;
+}
+.footer-with-inputs > span {
+  line-height: 21px;
+}
+.column-header {
+  padding: 6px 10px;
+}
 .panel .table {
   border: 0;
 }
@@ -2644,7 +2674,6 @@ a.list-group-item-danger.active:focus {
 }
 .panel-heading {
   background-color: #f0f2f3;
-  line-height: 1.4;
   padding: 10px;
   border-bottom: 1px solid transparent;
   -webkit-box-shadow: inset 0 0 2px #ffffff;
@@ -2652,11 +2681,15 @@ a.list-group-item-danger.active:focus {
 }
 .panel-heading .panel-title {
   font-size: 14px;
+  line-height: 21px;
 }
 .panel-footer {
-  padding: 10px;
+  padding: 8px 10px 8px 10px;
   -webkit-box-shadow: inset 0 0 2px #ffffff;
   box-shadow: inset 0 0 2px #ffffff;
+}
+.panel-footer > span {
+  line-height: 21px;
 }
 .panel-default {
   border-color: #dddddd;
@@ -2885,7 +2918,7 @@ a.list-group-item-danger.active:focus {
 .pagination > li.active > a,
 .pagination > li.active > a:hover,
 .pagination > li.active > a:focus {
-  color: #555;
+  color: #555555;
   background-color: #b9dff1;
   border-color: #b9dff1;
 }
@@ -2941,6 +2974,9 @@ a.list-group-item-danger.active:focus {
   }
 }
 .well {
+  background: #f4f4f4;
+  border-color: #cccccc;
+  box-shadow: 0 0 0 1px #ffffff inset;
   padding: 15px 10px;
 }
 .well-lg {
@@ -3003,7 +3039,7 @@ a.list-group-item-danger.active:focus {
 }
 .tooltip .tooltip-inner {
   background: transparent !important;
-  color: #333;
+  color: #333333;
 }
 .tooltip.left {
   background-image: -webkit-linear-gradient(left, #f2f0b9 0%, #fcfbda 100%);
@@ -3236,7 +3272,7 @@ a.list-group-item-danger.active:focus {
   background-image: none;
 }
 .fuelux .datepicker-calendar {
-  background: #eee;
+  background: #eeeeee;
   border-radius: 3px;
   min-height: 223px;
   padding: 5px 5px 10px;
@@ -3389,22 +3425,23 @@ a.list-group-item-danger.active:focus {
   width: 224px;
 }
 .fuelux .datepicker-wheels-footer {
-  background: #eee;
+  background: #eeeeee;
   height: 28px;
 }
 .fuelux .datepicker-wheels-footer .datepicker-wheels-back {
   box-shadow: none;
-  color: #333;
+  color: #333333;
   line-height: 17px;
 }
 .fuelux .datepicker-wheels-footer .datepicker-wheels-select {
+  color: #4e8abe;
   box-shadow: none;
   line-height: 17px;
 }
 .fuelux .datepicker-wheels-month .header,
 .fuelux .datepicker-wheels-year .header {
-  background: #eee;
-  color: #333;
+  background: #eeeeee;
+  color: #333333;
   font-size: 12px;
   font-weight: bold;
   line-height: 27px;
@@ -3413,21 +3450,23 @@ a.list-group-item-danger.active:focus {
 .fuelux .datepicker-wheels-year ul {
   height: 167px;
 }
-.fuelux .datepicker-wheels-month ul li.selected button,
-.fuelux .datepicker-wheels-year ul li.selected button,
-.fuelux .datepicker-wheels-month ul li.selected button:hover,
-.fuelux .datepicker-wheels-year ul li.selected button:hover {
-  background: #86c6e4;
-}
 .fuelux .datepicker-wheels-month ul li button,
 .fuelux .datepicker-wheels-year ul li button {
-  color: #555;
+  outline: none;
+  color: #555555;
   font-size: 10px;
   line-height: 20px;
 }
 .fuelux .datepicker-wheels-month ul li button:hover,
 .fuelux .datepicker-wheels-year ul li button:hover {
-  background: #dfeef5;
+  background-color: #b9dff1;
+}
+.fuelux .datepicker-wheels-month ul li.selected button,
+.fuelux .datepicker-wheels-year ul li.selected button,
+.fuelux .datepicker-wheels-month ul li.selected button:hover,
+.fuelux .datepicker-wheels-year ul li.selected button:hover {
+  background-color: #d9eaf5;
+  color: #333333;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .fuelux .datepicker .dropdown-toggle .glyphicon-calendar,
@@ -3439,7 +3478,7 @@ a.list-group-item-danger.active:focus {
   }
 }
 .fuelux .loader {
-  color: #468ac5;
+  color: #4e8abe;
 }
 .fuelux .pillbox {
   border: 1px solid #dddddd;
@@ -3451,11 +3490,11 @@ a.list-group-item-danger.active:focus {
   background: #e5e5e5;
   border: none;
   box-shadow: none;
-  color: #333;
+  color: #333333;
   padding: 4px 16px 4px 4px;
 }
 .fuelux .pillbox > .pill-group > .pill.btn-default {
-  color: #333;
+  color: #333333;
 }
 .fuelux .pillbox > .pill-group > .pill .glyphicon-close:before {
   background: #fff;
@@ -3493,9 +3532,11 @@ a.list-group-item-danger.active:focus {
   height: 17px;
 }
 .fuelux .pillbox .pillbox-more {
+  color: #4e8abe;
   line-height: 15px;
 }
 .fuelux .placard-cancel {
+  color: #4e8abe;
   font-size: 10px;
 }
 .fuelux .placard .placard-field[disabled] {
@@ -3504,6 +3545,9 @@ a.list-group-item-danger.active:focus {
 }
 .fuelux .placard .placard-field.glass[disabled] {
   background: none;
+}
+.fuelux .placard-popup {
+  background-color: #d9eaf5;
 }
 .fuelux .radio-custom {
   font-size: 12px;
@@ -3572,6 +3616,9 @@ a.list-group-item-danger.active:focus {
   box-shadow: 0px 0px 0px 1px #fff inset;
   padding: 8px 10px 8px 10px;
   min-height: 0;
+}
+.fuelux .repeater-footer > span {
+  line-height: 21px;
 }
 .fuelux .repeater-itemization {
   font-size: 12px;
@@ -3649,7 +3696,7 @@ a.list-group-item-danger.active:focus {
   border-radius: 4px;
 }
 .fuelux .repeater-title {
-  color: #333;
+  color: #333333;
   font-size: 14px;
   line-height: 25px;
 }
@@ -3686,6 +3733,7 @@ a.list-group-item-danger.active:focus {
   background-image: linear-gradient(to bottom, #f0f2f4, #f8f9f9);
   border-left: 1px solid transparent;
   border-right: none;
+  padding: 6px 10px;
 }
 .fuelux .repeater-list .table tr th:first-child {
   border-left: none;
@@ -3729,9 +3777,10 @@ a.list-group-item-danger.active:focus {
   background: #f4f6f7;
   background-image: -webkit-linear-gradient(top, #f0f2f4, #f8f9f9);
   background-image: linear-gradient(to bottom, #f0f2f4, #f8f9f9);
-  border-left: 1px solid #D6D6D6;
+  border-left: 0;
   border-right: none;
   padding-left: 10px;
+  padding: 6px 10px;
 }
 .fuelux .repeater-list .table tr th .repeater-list-heading:last-child {
   text-align: left;
@@ -3755,6 +3804,7 @@ a.list-group-item-danger.active:focus {
   background: #d6e2e6;
   background-image: -webkit-linear-gradient(top, #deedf4, #e4eef3);
   background-image: linear-gradient(to bottom, #deedf4, #e4eef3);
+  border-right: 1px solid #D6D6D6;
 }
 .fuelux .repeater-list .table tr th .repeater-list-heading.sorted .glyphicon.glyphicon-chevron-down,
 .fuelux .repeater-list .table tr th .repeater-list-heading.sorted:hover .glyphicon.glyphicon-chevron-down {
@@ -3938,7 +3988,7 @@ a.list-group-item-danger.active:focus {
 .fuelux .selectlist .btn.dropdown-toggle {
   background: linear-gradient(#ffffff, #eeeeee);
   border: 1px solid #bbb;
-  color: #333;
+  color: #333333;
 }
 .fuelux .selectlist .btn.dropdown-toggle .caret {
   color: #656565;
@@ -3949,6 +3999,8 @@ a.list-group-item-danger.active:focus {
 .fuelux .tree {
   border-color: #dddddd;
   padding: 10px 0;
+  overflow-x: visible;
+  overflow-y: visible;
 }
 .fuelux .tree button:focus .tree-label {
   color: inherit;
@@ -4129,10 +4181,10 @@ a.list-group-item-danger.active:focus {
   z-index: 5;
 }
 .fuelux .wizard .steps li.active {
-  color: #5390c4;
+  color: #4e8abe;
 }
 .fuelux .wizard .steps li.active .badge {
-  background: #5390c4;
+  background: #4e8abe;
 }
 .fuelux .wizard .steps li.active .chevron:before {
   border-color: transparent transparent transparent #fff;

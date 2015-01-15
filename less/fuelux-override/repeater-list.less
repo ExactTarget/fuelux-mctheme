@@ -12,12 +12,12 @@
 
 				&:hover {
 					td {
-						background: @brand-primary-medium-light;
+						background: @blue-sky;
 					}
 				}
 
 				td {
-					background: @blue-light;
+					background: @blue-slate;
 					color: @brand-info-dark;
 				}
 
@@ -32,6 +32,7 @@
 				background-image: linear-gradient(to bottom, #f0f2f4, #f8f9f9);
 				border-left: 1px solid transparent;
 				border-right: none;
+				.column-header();
 
 				&:first-child {
 					border-left: none;
@@ -84,9 +85,10 @@
 					background: #f4f6f7;
 					background-image: -webkit-linear-gradient(top, #f0f2f4, #f8f9f9);
 					background-image: linear-gradient(to bottom, #f0f2f4, #f8f9f9);
-					border-left: 1px solid #D6D6D6;
+					border-left: 0;
 					border-right: none;
 					padding-left: 10px;
+					.column-header();
 
 					&:last-child {
 						text-align: left;
@@ -115,6 +117,7 @@
 						background: #d6e2e6;
 						background-image: -webkit-linear-gradient(top, #deedf4, #e4eef3);
 						background-image: linear-gradient(to bottom, #deedf4, #e4eef3);
+						border-right:  1px solid #D6D6D6;
 
 						.glyphicon.glyphicon-chevron {
 							&-down {

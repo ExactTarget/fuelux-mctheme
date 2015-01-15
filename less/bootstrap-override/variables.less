@@ -1,29 +1,4 @@
-@gray-darker:            lighten(#000, 13.5%); // #222
-@gray-dark:              lighten(#000, 20%);   // #333
-@gray:                   lighten(#000, 33.5%); // #555
-@gray-light-medium:      #666;
-@gray-light:             lighten(#000, 46.7%); // #777
-@gray-lighter-medium-1:  #999;
-@gray-lighter-medium-2:  #aaa;
-@gray-lighter:           lighten(#000, 93.5%); // #eee
-
-@brand-primary-medium:       #4E8ABE;
-@brand-primary-medium-light: #B9DFF1;
-@brand-primary-light:        #DFEEF5;
-@brand-success-dark:         #51A62B;
-@brand-success-medium:       #8BD06D;
-@brand-success-light:        #E9FCDE;
-@brand-info-dark:            #385B6B;
-@brand-info-medium:          #4E8ABE;
-@brand-info-light:           #DFEEF5;
-@brand-warning-dark:         #f7841d;
-@brand-warning-medium:       #FFB55E;
-@brand-warning-light:        #FFF1E1;
-@brand-danger-dark:          #e64141;
-@brand-danger-medium:        #EE6767;
-@brand-danger-light:         #FCECED;
-
-@blue-light: #d9eaf5;
+@import "../colors.less";
 
 //== Scaffolding
 //
@@ -32,7 +7,7 @@
 //** Background color for `<body>`.
 @body-bg:               #fff;
 //** Global text color on `<body>`.
-@text-color:            @gray-dark;
+@text-color:            @gray20;
 //** Global textual link color.
 @link-color:            @brand-primary-medium;
 //** Link hover color set via `darken()` function.
@@ -149,7 +124,7 @@
 @btn-danger-bg:                  @brand-danger-dark;
 
 
-@btn-link-disabled-color:        @gray-light;
+@btn-link-disabled-color:        @gray47;
 
 
 //== Forms
@@ -159,10 +134,10 @@
 //** `<input>` background color
 @input-bg:                       #fff;
 //** `<input disabled>` background color
-@input-bg-disabled:              @gray-lighter;
+@input-bg-disabled:              @gray93;
 
 //** Text color for `<input>`s
-@input-color:                    @gray-dark;
+@input-color:                    @gray20;
 //** `<input>` border color
 @input-border:                   #ccc;
 //** `<input>` border radius
@@ -171,7 +146,7 @@
 @input-border-focus:             #66afe9;
 
 //** Placeholder text color
-@input-color-placeholder:        @gray-lighter-medium-1;
+@input-color-placeholder:        @gray60;
 
 //** Default `.form-control` height
 @input-height-base:              21px;//(@line-height-computed + (@padding-base-vertical * 2) + 2);
@@ -182,11 +157,11 @@
 
 @input-height-medium:            47px;
 
-@legend-color:                   @gray-dark;
+@legend-color:                   @gray20;
 @legend-border-color:            #e5e5e5;
 
 //** Background color for textual input addons
-@input-group-addon-bg:           @gray-lighter;
+@input-group-addon-bg:           @gray93;
 //** Border color for textual input addons
 @input-group-addon-border-color: @input-border;
 
@@ -256,6 +231,8 @@
 //
 //## Define your custom responsive grid.
 
+@grid-outer-padding: 20px; // use for row containers
+
 //** Number of columns in the grid.
 @grid-columns:              12;
 //** Padding between columns. Gets divided in half for the left and right.
@@ -288,7 +265,7 @@
 @table-border-color:            #ddd;
 
 //Nav bars
-@nav-link-hover-bg: @brand-primary-medium-light;
+@nav-link-hover-bg: @blue-sky;
 
 //Progress bars
 //
@@ -322,7 +299,7 @@
 @panel-inner-border:          #ddd;
 @panel-footer-bg:             #f0f2f3;
 
-@panel-default-text:          @gray-dark;
+@panel-default-text:          @gray20;
 @panel-default-border:        #ddd;
 @panel-default-heading-bg:    #f0f2f3;
 
@@ -345,6 +322,11 @@
 @panel-danger-text:           @state-danger-text;
 @panel-danger-border:         @state-danger-border;
 @panel-danger-heading-bg:     @state-danger-bg;
+
+//Wells
+@well-background: #f4f4f4;
+@well-border-color: #ccc;
+@well-box-shadow: 0 0 0 1px #fff inset;
 
 // Navbar gradient
 
