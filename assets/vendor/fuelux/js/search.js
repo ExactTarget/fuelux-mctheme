@@ -82,7 +82,7 @@
 
 		action: function () {
 			var val = this.$input.val();
-			var inputEmptyOrUnchanged = val === '' || val === this.activeSearch;
+			var inputEmptyOrUnchanged = (val === '' || val === this.activeSearch);
 
 			if (this.activeSearch && inputEmptyOrUnchanged) {
 				this.clear();
@@ -104,15 +104,32 @@
 		},
 
 		keypressed: function (e) {
-			var val, inputPresentAndUnchanged;
+			var remove = 'glyphicon-remove';
+			var search = 'glyphicon-search';
+			var val;
 
 			if (e.which === 13) {
 				e.preventDefault();
 				this.action();
-			} else {
+			}
+			else if (e.which === 9) {
+				e.preventDefault();
+			}
+			else {
 				val = this.$input.val();
-				inputPresentAndUnchanged = val && (val === this.activeSearch);
-				this.$icon.attr('class', inputPresentAndUnchanged ? 'glyphicon glyphicon-remove' : 'glyphicon glyphicon-search');
+
+				if(val!==this.activeSearch || !val){
+					this.$icon.removeClass(remove).addClass(search);
+					if(val) {
+						this.$element.removeClass('searched');
+					}
+					else if (this.options.clearOnEmpty){
+						this.clear();
+					}
+				}
+				else{
+					this.$icon.removeClass(search).addClass(remove);
+				}
 			}
 		},
 
@@ -149,7 +166,9 @@
 		return ( methodReturn === undefined ) ? $set : methodReturn;
 	};
 
-	$.fn.search.defaults = {};
+	$.fn.search.defaults = {
+		clearOnEmpty: false
+	};
 
 	$.fn.search.Constructor = Search;
 

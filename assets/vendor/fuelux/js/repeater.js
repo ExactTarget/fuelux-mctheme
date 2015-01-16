@@ -8,17 +8,17 @@
 
 // -- BEGIN UMD WRAPPER PREFACE --
 
-// For more information on UMD visit: 
+// For more information on UMD visit:
 // https://github.com/umdjs/umd/blob/master/jqueryPlugin.js
 
 (function (factory) {
-    if (typeof define === 'function' && define.amd) {
-        // if AMD loader is available, register as an anonymous module.
-         define(['jquery', 'fuelux/combobox', 'fuelux/infinite-scroll', 'fuelux/search', 'fuelux/selectlist'], factory);
-    } else {
-        // OR use browser globals if AMD is not present
-        factory(jQuery);
-    }
+	if (typeof define === 'function' && define.amd) {
+		// if AMD loader is available, register as an anonymous module.
+		 define(['jquery', 'fuelux/combobox', 'fuelux/infinite-scroll', 'fuelux/search', 'fuelux/selectlist'], factory);
+	} else {
+		// OR use browser globals if AMD is not present
+		factory(jQuery);
+	}
 }(function ($) {
 // -- END UMD WRAPPER PREFACE --
 
@@ -30,7 +30,7 @@
 
 	var Repeater = function (element, options) {
 		var self = this;
-		var currentView;
+		var $btn, currentView;
 
 		this.$element = $(element);
 
@@ -62,21 +62,41 @@
 		this.options = $.extend({}, $.fn.repeater.defaults, options);
 		this.pageIncrement = 0;	// store direction navigated
 		this.resizeTimeout = {};
-		this.staticHeight = (this.options.staticHeight===-1) ? this.$element.attr('data-staticheight') : this.options.staticHeight;
+		this.storedDataSourceOpts = null;
+		this.viewOptions = {};
+		this.viewType = null;
 
 		this.$filters.selectlist();
 		this.$pageSize.selectlist();
 		this.$primaryPaging.find('.combobox').combobox();
 		this.$search.search();
 
-		this.$filters.on('changed.fu.selectlist', $.proxy(this.render, this, { clearInfinite: true, pageIncrement: null }));
+		this.$filters.on('changed.fu.selectlist', function(e, value){
+			self.$element.trigger('filtered.fu.repeater', value);
+			self.render({ clearInfinite: true, pageIncrement: null });
+		});
 		this.$nextBtn.on('click.fu.repeater', $.proxy(this.next, this));
-		this.$pageSize.on('changed.fu.selectlist', $.proxy(this.render, this, { pageIncrement: null }));
+		this.$pageSize.on('changed.fu.selectlist', function(e, value){
+			self.$element.trigger('pageSizeChanged.fu.repeater', value);
+			self.render({ pageIncrement: null });
+		});
 		this.$prevBtn.on('click.fu.repeater', $.proxy(this.previous, this));
-		this.$primaryPaging.find('.combobox').on('changed.fu.combobox', function(evt, data){ self.pageInputChange(data.text); });
-		this.$search.on('searched.fu.search cleared.fu.search', $.proxy(this.render, this, { clearInfinite: true, pageIncrement: null }));
-		this.$secondaryPaging.on('blur.fu.repeater', function(){ self.pageInputChange(self.$secondaryPaging.val()); });
-		this.$secondaryPaging.on('change.fu.repeater', function(){ self.pageInputChange(self.$secondaryPaging.val()); });
+		this.$primaryPaging.find('.combobox').on('changed.fu.combobox', function(evt, data){
+			self.$element.trigger('pageChanged.fu.repeater', [data.text, data]);
+			self.pageInputChange(data.text);
+		});
+		this.$search.on('searched.fu.search cleared.fu.search', function(e, value){
+			self.$element.trigger('searchChanged.fu.repeater', value);
+			self.render({ clearInfinite: true, pageIncrement: null });
+		});
+		this.$secondaryPaging.on('blur.fu.repeater', function(e){
+			self.pageInputChange(self.$secondaryPaging.val());
+		});
+		this.$secondaryPaging.on('keyup', function(e){
+			if(e.keyCode===13){
+				self.pageInputChange(self.$secondaryPaging.val());
+			}
+		});
 		this.$views.find('input').on('change.fu.repeater', $.proxy(this.viewChanged, this));
 
 		// ID needed since event is bound to instance
@@ -90,9 +110,15 @@
 
 		this.$loader.loader();
 		this.$loader.loader('pause');
-		currentView = (this.options.defaultView!==-1) ? this.options.defaultView : this.$views.find('label.active input').val();
+		if(this.options.defaultView!==-1){
+			currentView = this.options.defaultView;
+		}else{
+			$btn = this.$views.find('label.active input');
+			currentView = ($btn.length>0) ? $btn.val() : 'list';
+		}
+		this.setViewOptions(currentView);
 
-		this.initViews(function(){
+		this.initViewTypes(function(){
 			self.resize();
 			self.$element.trigger('resized.fu.repeater');
 			self.render({ changeView: currentView });
@@ -124,10 +150,17 @@
 			options = options || {};
 
 			if(!options.preserve){
+				//Just trash everything because preserve is false
 				this.$canvas.empty();
 			}else if(!this.infiniteScrollingEnabled || options.clearInfinite){
+				//Preserve clear only if infiniteScrolling is disabled or if specifically told to do so
 				scan(this.$canvas);
 			}
+			//otherwise don't clear because infiniteScrolling is enabled
+		},
+
+		clearPreservedDataSourceOptions: function(){
+			this.storedDataSourceOpts = null;
 		},
 
 		destroy: function() {
@@ -136,7 +169,7 @@
 			this.$element.find('input').each(function() {
 				$(this).attr('value', $(this).val());
 			});
-			
+
 			// empty elements to return to original markup
 			this.$canvas.empty();
 			markup = this.$element[0].outerHTML;
@@ -157,16 +190,17 @@
 		},
 
 		getDataOptions: function(options, callback){
+			var dataSourceOptions = {};
 			var opts = {};
 			var val, viewDataOpts;
 
 			options = options || {};
 
-			opts.filter = this.$filters.selectlist('selectedItem');
+			opts.filter = (this.$filters.length>0) ? this.$filters.selectlist('selectedItem') : { text: 'All', value: 'all' };
 			opts.view = this.currentView;
 
 			if(!this.infiniteScrollingEnabled){
-				opts.pageSize = parseInt(this.$pageSize.selectlist('selectedItem').value, 10);
+				opts.pageSize = (this.$pageSize.length>0) ? parseInt(this.$pageSize.selectlist('selectedItem').value, 10) : 25;
 			}
 			if(options.pageIncrement!==undefined){
 				if(options.pageIncrement===null){
@@ -177,19 +211,29 @@
 			}
 			opts.pageIndex = this.currentPage;
 
-			val = this.$search.find('input').val();
+			val = (this.$search.length>0) ? this.$search.find('input').val() : '';
 			if(val!==''){
 				opts.search = val;
 			}
 
-			viewDataOpts = $.fn.repeater.views[this.currentView] || {};
+			if(options.dataSourceOptions){
+				dataSourceOptions = options.dataSourceOptions;
+				if(options.preserveDataSourceOptions){
+					this.storedDataSourceOpts = (this.storedDataSourceOpts) ? $.extend(this.storedDataSourceOpts, dataSourceOptions) : dataSourceOptions;
+				}
+			}
+			if(this.storedDataSourceOpts){
+				dataSourceOptions = $.extend(this.storedDataSourceOpts, dataSourceOptions);
+			}
+
+			viewDataOpts = $.fn.repeater.viewTypes[this.viewType] || {};
 			viewDataOpts = viewDataOpts.dataOptions;
 			if(viewDataOpts){
 				viewDataOpts.call(this, opts, function(obj){
-					callback(obj);
+					callback($.extend(obj, dataSourceOptions));
 				});
 			}else{
-				callback(opts);
+				callback($.extend(opts, dataSourceOptions));
 			}
 		},
 
@@ -255,22 +299,22 @@
 			}
 		},
 
-		initViews: function(callback){
-			var views = [];
-			var i, viewsLength;
+		initViewTypes: function(callback){
+			var viewTypes = [];
+			var i, viewTypesLength;
 
 			var init = function(index){
 				var next = function(){
 					index++;
-					if(index<viewsLength){
+					if(index<viewTypesLength){
 						init(index);
 					}else{
 						callback();
 					}
 				};
 
-				if(views[index].initialize){
-					views[index].initialize.call(this, {}, function(){
+				if(viewTypes[index].initialize){
+					viewTypes[index].initialize.call(this, {}, function(){
 						next();
 					});
 				}else{
@@ -278,11 +322,11 @@
 				}
 			};
 
-			for(i in $.fn.repeater.views){
-				views.push($.fn.repeater.views[i]);
+			for(i in $.fn.repeater.viewTypes){
+				viewTypes.push($.fn.repeater.viewTypes[i]);
 			}
-			viewsLength = views.length;
-			if(viewsLength>0){
+			viewTypesLength = viewTypes.length;
+			if(viewTypesLength>0){
 				init(0);
 			}else{
 				callback();
@@ -295,11 +339,12 @@
 			this.$start.html(data.start || '');
 		},
 
-		next: function(){
+		next: function(e){
 			var d = 'disabled';
 			this.$nextBtn.attr(d, d);
 			this.$prevBtn.attr(d, d);
 			this.pageIncrement = 1;
+			this.$element.trigger('nextClicked.fu.repeater');
 			this.render({ pageIncrement: this.pageIncrement });
 		},
 
@@ -309,6 +354,7 @@
 				this.lastPageInput = val;
 				val = parseInt(val, 10) - 1;
 				pageInc = val - this.currentPage;
+				this.$element.trigger('pageChanged.fu.repeater', val);
 				this.render({ pageIncrement: pageInc });
 			}
 		},
@@ -325,7 +371,7 @@
 			this.$primaryPaging.removeClass(act);
 			this.$secondaryPaging.removeClass(act);
 
-			if(pages<=this.options.dropPagingCap){
+			if(pages<=this.viewOptions.dropPagingCap){
 				this.$primaryPaging.addClass(act);
 				dropMenu = this.$primaryPaging.find('.dropdown-menu');
 				dropMenu.empty();
@@ -383,44 +429,56 @@
 			this.$nextBtn.attr(d, d);
 			this.$prevBtn.attr(d, d);
 			this.pageIncrement = -1;
+			this.$element.trigger('previousClicked.fu.repeater');
 			this.render({ pageIncrement: this.pageIncrement });
 		},
 
 		render: function(options){
 			var self = this;
 			var viewChanged = false;
-			var viewObj = $.fn.repeater.views[self.currentView] || {};
+			var viewTypeObj = $.fn.repeater.viewTypes[self.viewType] || {};
 			var prevView;
 
 			var start = function(){
+				var next = function(){
+					if(!self.infiniteScrollingEnabled || (self.infiniteScrollingEnabled && viewChanged)){
+						self.$loader.show().loader('play');
+					}
+					self.getDataOptions(options, function(opts){
+						self.viewOptions.dataSource(opts, function(data){
+							var renderer = viewTypeObj.renderer;
+							if(self.infiniteScrollingEnabled){
+								self.infiniteScrollingCallback({});
+							}else{
+								self.itemization(data);
+								self.pagination(data);
+							}
+							if(renderer){
+								self.runRenderer(self.$canvas, renderer, data, function(){
+									if(self.infiniteScrollingEnabled){
+										if(viewChanged || options.clearInfinite){
+											self.initInfiniteScrolling();
+										}
+										self.infiniteScrollPaging(data, options);
+									}
+									self.$loader.hide().loader('pause');
+									self.$element.trigger('loaded.fu.repeater');
+								});
+							}
+						});
+					});
+				};
+
 				options.preserve = (options.preserve!==undefined) ? options.preserve : !viewChanged;
 				self.clear(options);
-				if(!self.infiniteScrollingEnabled || (self.infiniteScrollingEnabled && viewChanged)){
-					self.$loader.show().loader('play');
-				}
-				self.getDataOptions(options, function(opts){
-					self.options.dataSource(opts, function(data){
-						var renderer = viewObj.renderer;
-						if(self.infiniteScrollingEnabled){
-							self.infiniteScrollingCallback({});
-						}else{
-							self.itemization(data);
-							self.pagination(data);
-						}
-						if(renderer){
-							self.runRenderer(self.$canvas, renderer, data, function(){
-								if(self.infiniteScrollingEnabled){
-									if(viewChanged || options.clearInfinite){
-										self.initInfiniteScrolling();
-									}
-									self.infiniteScrollPaging(data, options);
-								}
-								self.$loader.hide().loader('pause');
-								self.$element.trigger('loaded.fu.repeater');
-							});
-						}
+				if(!viewChanged && viewTypeObj.cleared){
+					viewTypeObj.cleared.call(self, {}, function(){
+						next();
 					});
-				});
+				}else{
+					next();
+				}
+
 			};
 
 			options = options || {};
@@ -428,14 +486,20 @@
 			if(options.changeView && this.currentView!==options.changeView){
 				prevView = this.currentView;
 				this.currentView = options.changeView;
+				this.viewType = this.currentView.split('.')[0];
+				this.setViewOptions(this.currentView);
 				this.$element.attr('data-currentview', this.currentView);
+				this.$element.attr('data-viewtype', this.viewType);
 				viewChanged = true;
+
+				this.$element.trigger('viewChanged.fu.repeater', this.currentView);
+
 				if(this.infiniteScrollingEnabled){
 					self.infiniteScrolling(false);
 				}
-				viewObj = $.fn.repeater.views[self.currentView] || {};
-				if(viewObj.selected){
-					viewObj.selected.call(this, { prevView: prevView }, function(){
+				viewTypeObj = $.fn.repeater.viewTypes[self.viewType] || {};
+				if(viewTypeObj.selected){
+					viewTypeObj.selected.call(this, { prevView: prevView }, function(){
 						start();
 					});
 				}else{
@@ -447,11 +511,15 @@
 		},
 
 		resize: function(){
-			var staticHeight = this.staticHeight;
-			var viewObj = $.fn.repeater.views[this.currentView] || {};
+			var staticHeight = (this.viewOptions.staticHeight===-1) ? this.$element.attr('data-staticheight') : this.viewOptions.staticHeight;
+			var viewTypeObj = {};
 			var height, viewportMargins;
 
-			if(staticHeight!==undefined){
+			if(this.viewType){
+				viewTypeObj = $.fn.repeater.viewTypes[this.viewType] || {};
+			}
+
+			if(staticHeight!==undefined && staticHeight!==false && staticHeight!=='false'){
 				this.$canvas.addClass('scrolling');
 				viewportMargins = {
 					bottom: this.$viewport.css('margin-bottom'),
@@ -467,8 +535,8 @@
 				this.$canvas.removeClass('scrolling');
 			}
 
-			if(viewObj.resize){
-				viewObj.resize.call(this, {
+			if(viewTypeObj.resize){
+				viewTypeObj.resize.call(this, {
 					height: this.$element.outerHeight(),
 					width: this.$element.outerWidth()
 				}, function(){});
@@ -594,9 +662,23 @@
 			loopSubset(0);
 		},
 
+		setViewOptions: function(curView){
+			var opts = {};
+			var viewName = curView.split('.')[1];
+
+			if(viewName && this.options.views){
+				opts = this.options.views[viewName] || this.options.views[curView] || {};
+			}else{
+				opts = {};
+			}
+
+			this.viewOptions = $.extend({}, this.options, opts);
+		},
+
 		viewChanged: function(e){
 			var $selected = $(e.target);
-			this.render({ changeView: $selected.val(), pageIncrement: null });
+			var val = $selected.val();
+			this.render({ changeView: val, pageIncrement: null });
 		}
 	};
 
@@ -622,22 +704,26 @@
 		dataSource: function(options, callback){},
 		defaultView: -1,	//should be a string value. -1 means it will grab the active view from the view controls
 		dropPagingCap: 10,
-		staticHeight: -1	//normally true or false. -1 means it will look for data-staticheight on the element
+		staticHeight: -1,	//normally true or false. -1 means it will look for data-staticheight on the element
+		views: null	//can be set to an object to configure multiple views of the same type
 	};
 
 	//views object contains keyed list of view plugins, each an object with following optional parameters:
 		//{
-			//initialize: function(){},
-			//selected: function(){},
+			//cleared: function(helpers, callback){},
+			//dataOptions: function(helpers, callback){},
+			//initialize: function(helpers, callback){},
+			//selected: function(helpers, callback){},
+			//resize: function(helpers, callback){},
 			//renderer: {}
 		//}
 			//renderer object contains following optional parameters:
 				//{
-					//before: function(helpers){},
-					//after: function(helpers){},
-					//complete: function(helpers){},
+					//before: function(helpers, callback){},
+					//after: function(helpers, callback){},
+					//complete: function(helpers, callback){},
 					//repeat: 'parameter.subparameter.etc',
-					//render: function(helpers){},
+					//render: function(helpers, callback){},
 					//nested: [ *array of renderer objects* ]
 				//}
 
@@ -649,7 +735,8 @@
 						//item: str or jQuery object, (only there if rendered function returned item)
 						//subset: {}, (only there if repeat was set. subset of data being repeated on)
 					//}
-	$.fn.repeater.views = {};
+
+	$.fn.repeater.viewTypes = {};
 
 	$.fn.repeater.Constructor = Repeater;
 

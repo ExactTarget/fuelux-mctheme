@@ -1,17 +1,35 @@
 {
+  "name": "fuelux",
+  "description": "Extending Bootstrap with additional lightweight JavaScript controls.",
+  "version": "3.5.0",
+  "keywords": [
+    "application",
+    "bootstrap",
+    "controls",
+    "css",
+    "exacttarget",
+    "front-end",
+    "fuelux",
+    "fuel ux",
+    "js",
+    "salesforce",
+    "user interface",
+    "web"
+  ],
+  "homepage": "http://getfuelux.com",
   "dependencies": {
-    "jquery-1.11.0": "jquery#1.11.0",
-    "requirejs": "~2.1.11",
-    "bootstrap": "~3.2.0",
-    "moment": "2.7.0"
+    "jquery": "latest",
+    "requirejs": "2.x",
+    "bootstrap": "3.x",
+    "moment": "2.x"
   },
   "devDependencies": {
     "jquery": null,
     "jquery-1.9.1": "jquery#1.9.1",
     "qunit": "~1.14.0",
-    "requirejs-text": "~2.0.10",
-    "underscore": "~1.6.0",
-    "blanket": "1.1.5"
+    "requirejs-text": "2.x",
+    "underscore": "1.x",
+    "blanket": "1.x"
   },
   "ignore": [
     "**/.*",
@@ -30,20 +48,6 @@
     "Procfile",
     "test"
   ],
-  "keywords": [
-    "application",
-    "bootstrap",
-    "controls",
-    "css",
-    "exacttarget",
-    "front-end",
-    "fuelux",
-    "fuel ux",
-    "js",
-    "salesforce",
-    "user interface",
-    "web"
-  ],
   "license": "BSD-3-Clause",
   "main": [
     "dist/css/fuelux.css",
@@ -53,17 +57,14 @@
     "dist/fonts/fuelux.ttf",
     "dist/fonts/fuelux.woff"
   ],
-  "name": "fuelux",
-  "homepage": "https://github.com/ExactTarget/fuelux",
-  "version": "3.0.2",
-  "_release": "3.0.2",
+  "_release": "3.5.0",
   "_resolution": {
     "type": "version",
-    "tag": "3.0.2",
-    "commit": "2bea5cb289e94f57349d2cecf3531289309379d2"
+    "tag": "3.5.0",
+    "commit": "08b788217db06ea36a72c7a99979f1b0ee0c7627"
   },
   "_source": "git://github.com/ExactTarget/fuelux.git",
-  "_target": "~3.0.2",
+  "_target": "~3.5.0",
   "_originalSource": "fuelux",
   "_direct": true
 }
