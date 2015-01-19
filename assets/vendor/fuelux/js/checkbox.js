@@ -50,6 +50,7 @@
 
 		// handle events
 		this.$element.on('change.fu.checkbox', $.proxy( this.itemchecked, this ));
+		this.$label.on('click', $.proxy(this.toggle, this));//make repeated label clicks work
 
 		// set default state
 		this.setState();
@@ -92,6 +93,7 @@
 		check: function () {
 			this.state.checked = true;
 			this.$element.prop('checked', true);
+			this.$element.attr('checked','checked');
 			this._setCheckedClass();
 			this.$element.trigger( 'checked.fu.checkbox' );
 		},
@@ -99,6 +101,7 @@
 		uncheck: function () {
 			this.state.checked = false;
 			this.$element.prop('checked', false);
+			this.$element.removeAttr('checked');
 			this._resetClasses();
 			this.$element.trigger( 'unchecked.fu.checkbox' );
 		},
@@ -107,10 +110,20 @@
 			return this.state.checked;
 		},
 
-		toggle: function() {
-			this.state.checked = !this.state.checked;
+		toggle: function(e) {
+			//keep event from firing twice in Chrome
+			if (!e || (e.target === e.originalEvent.target)) {
+				this.state.checked = !this.state.checked;
 
-			this._toggleCheckedState();
+				this._toggleCheckedState();
+
+				if(Boolean(e)){
+					//stop bubbling, otherwise event fires twice in Firefox.
+					e.preventDefault();
+					//make change event still fire (prevented by preventDefault to avoid firefox bug, see preceeding line)
+					this.$element.trigger('change', e);
+				}
+			}
 		},
 
 		toggleContainer: function(){

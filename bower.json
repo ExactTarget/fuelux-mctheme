@@ -45,5 +45,8 @@
     "fuelux-mctheme.min.css"
   ],
   "name": "fuelux-mctheme",
-  "version": "3.0.0"
+  "version": "3.0.0",
+  "resolutions": {
+    "fuelux": "~3.5.0"
+  }
 }

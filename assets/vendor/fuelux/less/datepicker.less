@@ -35,26 +35,31 @@
 			}
 
 			td {
-				button {
+				b, button {
 					color: #231f20;
 					display: inline-block;
+					font-weight: normal;
 					height: 30px;
 					text-decoration: none;
 					width: 30px;
+				}
+
+				b {
+					line-height: 30px;
 				}
 
 				span {
 					display: block;
 
 					&:hover {
-						background: #b7e3f8;
+						background: @selectableHover;
 						text-decoration: none;
 					}
 				}
 
 				&.current-day {
-					button {
-						border: 1px solid #1d75bb;
+					b, button {
+						border: 1px solid #333;
 					}
 				}
 
@@ -63,13 +68,13 @@
 				}
 
 				&.past {
-					button {
+					b, button {
 						color: #8d8787;
 					}
 				}
 
 				&.restricted {
-					button {
+					b, button {
 						cursor: no-drop;
 						position: relative;
 
@@ -92,20 +97,27 @@
 
 				&.selected {
 					span {
-						background: #1d75bb;
+						background: @selected;
 
 						&:hover {
-							background: #0f5f9f;
+							background: @selectedHover;
 						}
-
 					}
 
-					button {
-						color: #fff;
+					b, button {
+						color: #8d8787;
 					}
 
 					&.current-day {
 						box-shadow: 0 0 0 1px #fff offset;
+
+						span {
+							&:hover {
+								b, button {
+									border-color: #0f5f9f;
+								}
+							}
+						}
 					}
 				}
 			}
@@ -346,6 +358,12 @@
 			.header {
 				border-radius: 0 4px 0 0;
 			}
+		}
+	}
+
+	input {
+		&::-ms-clear {
+			display:none;
 		}
 	}
 }
