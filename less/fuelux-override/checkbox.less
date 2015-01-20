@@ -2,42 +2,125 @@
 	font-size: 12px;
 	line-height: 20px;
 
+	// .fuelux-icon;
+	// .fuelux-icon-checkbox;
+		
+	input[type="checkbox"] {
+		height: 1px;
+		width: 1px;
+
+	}
+
 	&:before {
-		border: none;
+		.fuelux-icon;
+		.fuelux-icon-checkbox;
+		width: 15px;
+		height: 15px;
+		-webkit-appearance: inherit;
+
+
+		border: 0px solid transparent;
 		border-radius: 0;
-		content: " ";
-		padding: 0;
-		.sprite(-1px, -1px);
+
+		// content: " ";
+		// width: 14px;
+		// height: 14px;
+		// .sprite(-1px, -1px);
+		// display: none;
+
 	}
 
 	&:hover {
-		&:before {
-			.sprite(-17px, -1px);
+			
+		// .fuelux-icon-checkbox-hover;
+
+		input[type="checkbox"] {
+			height: 1px;
+			width: 1px;
+
 		}
 
+		&:before {
+			.fuelux-icon;
+			.fuelux-icon-checkbox-hover;
+			width: 15px;
+			height: 15px;
+
+			-webkit-appearance: inherit;
+
+
+			border: 0px solid transparent;
+			border-radius: 0;
+		}
+
+
 		&.checked {
+
+			input[type="checkbox"] {
+				height: 1px;
+				width: 1px;
+
+			}
+
 			&:before {
-				.sprite(-33px, -1px);
+				background: none;
+				border: none;
+
+
+				.fuelux-icon;
+				.fuelux-icon-checkbox-checked-hover;
+				width: 15px;
+				height: 15px;
+
+				-webkit-appearance: inherit;
+
+
+				border: 0px solid transparent;
+				border-radius: 0;
+
+				// display: none;
+				// .sprite(-33px, -1px);
 			}
 		}
 	}
 
 	&.checked {
+		// .fuelux-icon-checkbox-checked;
+		input[type="checkbox"] {
+			height: 1px;
+			width: 1px;
+
+		}
+
 		&:before {
-			content: " ";
-			.sprite(-49px, -1px);
+			background: none;
+			border: none;
+			.fuelux-icon;
+			.fuelux-icon-checkbox-checked;
+
+			width: 15px;
+			height: 15px;
+
+			-webkit-appearance: inherit;
+
+
+			border: 0px solid transparent;
+			border-radius: 0;
+
+			content: "";
+
 		}
 	}
 
 	&.disabled {
 		&:before {
 			opacity: 1;
-			.sprite(-65px, -1px);
+			// .sprite(-65px, -1px);
 		}
 
 		&.checked {
 			&:before {
-				.sprite(-81px, -1px);
+				// .sprite(-81px, -1px);
 			}
 		}
 	}
@@ -57,6 +140,6 @@
 	.checkbox-custom.disabled:before,
 	.checkbox-custom.disabled.checked:before
 	{
-		.sprite2x();
+		// .sprite2x();
 	}
 }

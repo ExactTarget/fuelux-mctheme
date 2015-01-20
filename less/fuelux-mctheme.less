@@ -1,9 +1,17 @@
+
+
 @import "variables.less";
 @import "mixins.less";
 @import "colors.less";
 @import "icons.less";
 @import "utility.less";
 @import "help.less";
+
+
+@import "/public/vendor/bootstrap/less/bootstrap.less";
+@import "/public/vendor/fuelux/less/fuelux.less";
+
+
 
 // Bootstrap variables and mixins
 @import "bootstrap-override/variables.less";
@@ -41,10 +49,10 @@
 
 
 // Fuel UX Controls
-	@import "fuelux-override/variables.less";
-	@import "fuelux-override/mixins.less";
 .fuelux {
 	// Core variables, mixins, and icons
+	@import "fuelux-override/variables.less";
+	@import "fuelux-override/mixins.less";
 
 	// Fuel UX controls
 	@import "fuelux-override/checkbox.less";
@@ -67,4 +75,5 @@
 	@import "fuelux-override/wizard.less";
 
 }
+
 
