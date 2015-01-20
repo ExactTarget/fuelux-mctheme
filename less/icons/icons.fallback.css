@@ -46,6 +46,12 @@
 
 .fuelux-icon-email { background-image: url('png/email.png'); background-repeat: no-repeat; }
 
+.fuelux-icon-folder-close-hover { background-image: url('png/folder-close-hover.png'); background-repeat: no-repeat; }
+
+.fuelux-icon-folder-close { background-image: url('png/folder-close.png'); background-repeat: no-repeat; }
+
+.fuelux-icon-folder-open-hover { background-image: url('png/folder-open-hover.png'); background-repeat: no-repeat; }
+
 .fuelux-icon-folder-open { background-image: url('png/folder-open.png'); background-repeat: no-repeat; }
 
 .fuelux-icon-folder { background-image: url('png/folder.png'); background-repeat: no-repeat; }
