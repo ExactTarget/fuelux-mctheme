@@ -16,6 +16,18 @@ module.exports = function (grunt) {
 		pkg: grunt.file.readJSON('package.json'),
 
 		// Tasks configuration
+		bump: {
+			options: {
+				files: [ 'bower.json', 'package.json' ],
+				updateConfigs: [ 'pkg' ],
+				commit: false,
+				createTag: false,
+				tagName: '%VERSION%',
+				tagMessage: '%VERSION%',
+				push: false,
+				gitDescribeOptions: '--tags --always --abbrev=1 --dirty=-d'
+			}
+		},
 		clean: {
 			dist: ['dist/**'],
 			zipsrc: ['dist/fuelux-mctheme']
@@ -142,6 +154,14 @@ module.exports = function (grunt) {
 			}
 		},
 		replace: {
+			readme: {
+				src: ['DETAILS.md', 'README.md'],
+				overwrite: true,                 // overwrite matched source files
+				replacements: [{
+					from: /fuelux-mctheme\/\d\.\d\.\d/g,
+					to: "fuelux-mctheme/<%= pkg.version %>"
+				}]
+			},
 			imgpaths: {
 				overwrite: true,
 				replacements:[
@@ -212,6 +232,13 @@ module.exports = function (grunt) {
 
 	//The default build task
 	grunt.registerTask('default', ['dist']);
+
+
+	/* -------------
+		RELEASE
+	------------- */
+	// Run `grunt bump` first.
+	grunt.registerTask('release', 'Update readme, build "dist"', ['dist', 'replace:readme']);
 
 	/* -------------
 			SERVE
