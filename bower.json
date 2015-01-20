@@ -1,13 +1,13 @@
 {
   "dependencies": {
-    "jquery": ">= 1.9.0",
+    "jquery": "latest",
     "requirejs": "2.x",
     "bootstrap": "3.x",
     "moment": "2.x",
     "fuelux": "3.x"
   },
   "devDependencies": {
-    "jquery": ">= 1.9.0",
+    "jquery": "latest",
     "holderjs": "2.x"
   },
   "ignore": [
