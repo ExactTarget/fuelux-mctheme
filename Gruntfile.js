@@ -263,7 +263,7 @@ module.exports = function (grunt) {
 		grunt.task.run(['bump-only:' + versionReleaseType, 'dist', 'replace:readme']);
 	});
 
-	grunt.registerTask('gitrelease', ['shell:pullMaster', 'shell:pullRelease', 'release', 'shell:mergeRelease','shell:commitRelease','shell:tagRelease']);
+	grunt.registerTask('gitrelease', ['shell:pullMaster', 'shell:pullRelease', 'shell:mergeRelease', 'release','shell:commitRelease','shell:tagRelease']);
 
 	/* -------------
 			SERVE

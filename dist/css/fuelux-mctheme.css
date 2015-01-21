@@ -3982,6 +3982,9 @@ a.list-group-item-danger.active:focus {
 .fuelux .selectlist .btn.dropdown-toggle .selected-label {
   padding-right: 4px;
 }
+.fuelux .selectlist[data-resize="auto"] .selected-label {
+  padding-right: 10px;
+}
 .fuelux .tree {
   border-color: #dddddd;
   padding: 10px 0;
@@ -4020,7 +4023,7 @@ a.list-group-item-danger.active:focus {
   margin-right: 4px;
   background: transparent url("../img/spritesheet.png") no-repeat -96px -2px;
   height: 12px;
-  width: 17px;
+  width: 16px;
 }
 .fuelux .tree.tree-folder-select .tree-branch.tree-selected > .tree-branch-header .tree-branch-name:hover,
 .fuelux .tree .tree-branch.tree-selected > .tree-branch-header .tree-branch-name,
