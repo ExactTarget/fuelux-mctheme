@@ -1,8 +1,21 @@
+.transition(@duration:0.2s, @ease:ease-out) {
+	-webkit-transition: all @duration @ease;
+	-moz-transition: all @duration @ease;
+	-o-transition: all @duration @ease;
+	transition: all @duration @ease;
+}
+
+.transition-background-image(@duration:0.2s, @ease:ease-out) {
+	-webkit-transition: background-image @duration @ease;
+	-moz-transition: background-image @duration @ease;
+	-o-transition: background-image @duration @ease;
+	transition: background-image @duration @ease;
+
+}
 .footer-with-inputs {
 	padding: @footer-padding;
-
 	> span {
-		line-height: @footer-span-line-height; // vertical center text
+		line-height: @footer-span-line-height;
+		// vertical center text
 	}
-
 }

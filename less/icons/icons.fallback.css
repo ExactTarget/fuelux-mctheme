@@ -10,6 +10,8 @@
 
 .fuelux-icon-caret-right { background-image: url('png/caret-right.png'); background-repeat: no-repeat; }
 
+.fuelux-icon-checkbox-active { background-image: url('png/checkbox-active.png'); background-repeat: no-repeat; }
+
 .fuelux-icon-checkbox-checked-disabled { background-image: url('png/checkbox-checked-disabled.png'); background-repeat: no-repeat; }
 
 .fuelux-icon-checkbox-checked-hover { background-image: url('png/checkbox-checked-hover.png'); background-repeat: no-repeat; }
