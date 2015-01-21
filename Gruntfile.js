@@ -5,6 +5,9 @@ module.exports = function (grunt) {
 	// use --no-livereload to disable livereload. Helpful to 'serve' multiple projects
 	var isLivereloadEnabled = (typeof grunt.option('livereload') !== 'undefined') ? grunt.option('livereload') : true;
 
+	// release minor or patch version. Do major releases manually
+	var versionReleaseType = (typeof grunt.option('minor') !== 'undefined') ? 'minor':'patch';
+
 	// Project configuration.
 	grunt.initConfig({
 		// Metadata
@@ -176,6 +179,23 @@ module.exports = function (grunt) {
 				]
 			}
 		},
+		shell: {
+			pullMaster: {
+				command: 'git checkout master && git pull origin master'
+			},
+			pullRelease: {
+				command: 'git checkout 1.x && git pull origin 1.x'
+			},
+			mergeRelease: {
+				command: 'git merge master'
+			},
+			commitRelease: {
+				command: 'git add dist && git add *.md && git add *.json && git commit -m "release <%= pkg.version %>"'
+			},
+			tagRelease: {
+				command: 'git tag -a <%= pkg.version %> -m "v<%= pkg.version %>"'
+			}
+		},
 		svgmin: {
 			dist: {
 				files: [{
@@ -237,8 +257,13 @@ module.exports = function (grunt) {
 	/* -------------
 		RELEASE
 	------------- */
-	// Run `grunt bump` first.
-	grunt.registerTask('release', 'Update readme, build "dist"', ['dist', 'replace:readme']);
+	// Maintainers: Run prior to a release. Includes SauceLabs VM tests. 
+	// --minor will create a semver minor release, otherwise a patch release will be created
+	grunt.registerTask('release', 'Release a new version', function() {
+		grunt.task.run(['bump-only:' + versionReleaseType, 'dist', 'replace:readme']);
+	});
+
+	grunt.registerTask('gitrelease', ['shell:pullMaster', 'shell:pullRelease', 'release', 'shell:mergeRelease','shell:commitRelease','shell:tagRelease']);
 
 	/* -------------
 			SERVE
