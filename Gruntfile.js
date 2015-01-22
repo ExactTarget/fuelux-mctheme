@@ -11,13 +11,18 @@ module.exports = function (grunt) {
 	// Project configuration.
 	grunt.initConfig({
 		// Metadata
+		bannerRelease: '/*!\n' +
+		' * Marketing Cloud Theme v<%= pkg.version %> \n' +
+		' * Copyright <%= grunt.template.today("yyyy") %> <%= pkg.author.name %>\n' +
+		' * Licensed under <%= pkg.license.type %> (<%= pkg.license.url %>)\n' +
+		' */\n',
 		banner: '/*!\n' +
-			' * Marketing Cloud Theme v<%= pkg.version %> \n' +
-			' * Copyright <%= grunt.template.today("yyyy") %> <%= pkg.author.name %>\n' +
-			' * Licensed under <%= pkg.license.type %> (<%= pkg.license.url %>)\n' +
-			' */\n',
+		' * Marketing Cloud Theme EDGE - Built <%= grunt.template.today("yyyy/mm/dd, h:MM:ss TT") %> \n' +
+		' * Previous release: v<%= pkg.version %> \n' +
+		' * Copyright 2012-<%= grunt.template.today("yyyy") %> <%= pkg.author.name %>\n' +
+		' * Licensed under the <%= pkg.license.type %> license (<%= pkg.license.url %>)\n' +
+		' */\n',
 		pkg: grunt.file.readJSON('package.json'),
-
 		// Tasks configuration
 		bump: {
 			options: {
@@ -257,9 +262,10 @@ module.exports = function (grunt) {
 	/* -------------
 		RELEASE
 	------------- */
-	// Maintainers: Run prior to a release. Includes SauceLabs VM tests. 
+	// Maintainers: Run prior to a release. 
 	// --minor will create a semver minor release, otherwise a patch release will be created
-	grunt.registerTask('release', 'Release a new version', function() {
+	grunt.registerTask('release', 'Build a new version', function() {
+		grunt.config('banner', '<%= bannerRelease %>');
 		grunt.task.run(['bump-only:' + versionReleaseType, 'dist', 'replace:readme']);
 	});
 
