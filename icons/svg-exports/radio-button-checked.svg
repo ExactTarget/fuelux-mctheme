@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px"
+	 height="20px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
+<g id="radio-button-checked">
+	<g>
+		<rect id="le_wrappier_36_" style="fill:none;" width="20" height="20"/>
+		<g>
+			<g id="radio-button_2_">
+				<radialGradient id="SVGID_1_" cx="10" cy="19.917" r="19.8349" gradientUnits="userSpaceOnUse">
+					<stop  offset="0" style="stop-color:#E4E4E4"/>
+					<stop  offset="0.2" style="stop-color:#E4E4E4"/>
+					<stop  offset="0.3" style="stop-color:#E4E4E4"/>
+					<stop  offset="0.88" style="stop-color:#F9FBFD"/>
+					<stop  offset="1" style="stop-color:#FFFFFF"/>
+				</radialGradient>
+				<path style="fill:url(#SVGID_1_);" d="M0,10c0,5.523,4.477,10,10,10c5.52,0,10-4.477,10-10S15.52,0,10,0C4.477,0,0,4.477,0,10z"
+					/>
+				<g style="opacity:0.9;">
+					<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="9.9995" y1="0" x2="9.9995" y2="20.0005">
+						<stop  offset="0" style="stop-color:#FFFFFF"/>
+						<stop  offset="0.3752" style="stop-color:#EFEFEF"/>
+						<stop  offset="0.698" style="stop-color:#EFEFEF"/>
+						<stop  offset="1" style="stop-color:#FFFFFF"/>
+					</linearGradient>
+					<path style="fill:url(#SVGID_2_);" d="M10,0.125c5.445,0,9.875,4.43,9.875,9.875s-4.43,9.875-9.875,9.875
+						S0.125,15.445,0.125,10S4.555,0.125,10,0.125 M10,0C4.477,0,0,4.477,0,10s4.477,10,10,10c5.52,0,10-4.477,10-10S15.52,0,10,0
+						L10,0z"/>
+				</g>
+				<g style="opacity:0.9;">
+					<path style="fill:#AAAAAA;" d="M10,0.062c5.479,0,9.938,4.458,9.938,9.938S15.479,19.938,10,19.938S0.062,15.479,0.062,10
+						S4.521,0.062,10,0.062 M10,0C4.477,0,0,4.477,0,10s4.477,10,10,10c5.52,0,10-4.477,10-10S15.52,0,10,0L10,0z"/>
+				</g>
+			</g>
+			<g id="checked-indicator_8_">
+				<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="9.9985" y1="5.334" x2="9.9985" y2="14.6685">
+					<stop  offset="0" style="stop-color:#FFFFFF"/>
+					<stop  offset="0.0662" style="stop-color:#E0ECF6"/>
+					<stop  offset="0.1689" style="stop-color:#B7D3EB"/>
+					<stop  offset="0.2777" style="stop-color:#93BDE0"/>
+					<stop  offset="0.3918" style="stop-color:#76ABD8"/>
+					<stop  offset="0.513" style="stop-color:#609DD2"/>
+					<stop  offset="0.6444" style="stop-color:#5094CD"/>
+					<stop  offset="0.7938" style="stop-color:#478ECB"/>
+					<stop  offset="1" style="stop-color:#448CCA"/>
+				</linearGradient>
+				<path style="fill:url(#SVGID_3_);" d="M5.331,10c0,2.578,2.09,4.668,4.669,4.668c2.574,0,4.666-2.09,4.666-4.668
+					S12.574,5.334,10,5.334C7.421,5.334,5.331,7.422,5.331,10z"/>
+				<g style="opacity:0.9;">
+					<linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="9.9985" y1="5.334" x2="9.9985" y2="14.6685">
+						<stop  offset="0" style="stop-color:#A1C8E6"/>
+						<stop  offset="0.7883" style="stop-color:#336B9A"/>
+					</linearGradient>
+					<path style="fill:url(#SVGID_4_);" d="M10,5.392c2.541,0,4.607,2.067,4.607,4.608c0,2.542-2.066,4.609-4.607,4.609
+						c-2.542,0-4.611-2.067-4.611-4.609C5.389,7.459,7.458,5.392,10,5.392 M10,5.334c-2.579,0-4.669,2.088-4.669,4.666
+						s2.09,4.668,4.669,4.668c2.574,0,4.666-2.09,4.666-4.668S12.574,5.334,10,5.334L10,5.334z"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+<g id="Layer_1">
+</g>
+</svg>

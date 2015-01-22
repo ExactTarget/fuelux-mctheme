@@ -19,6 +19,62 @@ module.exports = function (grunt) {
 		pkg: grunt.file.readJSON('package.json'),
 
 		// Tasks configuration
+
+
+		'string-replace-in-icons': {
+			inline: {
+				files: {
+					"less/icons/icons-svg.less": "less/icons/icons-svg.less",
+				},
+				options: {
+					replacements: [
+						// place files inline example
+					// 	{
+					// 		pattern: '(\.-?[_a-zA-Z]+[_a-zA-Z0-9-]*\s*)\{',
+					// 		replacement: '.yo "$0"'
+					// 	}
+					// ,	
+					
+					{
+						pattern:  /\.fuelux-icon(-?[_a-zA-Z]+[_a-zA-Z0-9-]*)\s*/g,
+						replacement: '.fuelux-icon$1, .glyphicon$1 '
+					}
+					
+					,
+					{
+						pattern:  /(\.-?[_a-zA-Z]+[_a-zA-Z0-9-]*)-hover-focus\s*/g,
+						replacement: 'button:hover:focus > $1, $1-hover-focus, $1:hover:focus '
+					}
+
+
+					,
+					{
+						pattern:  /(\.-?[_a-zA-Z]+[_a-zA-Z0-9-]*)-active\s*/g,
+						replacement: 'button:active > $1, $1-active, $1:active '
+					}
+
+					,
+					{
+						pattern:  /(\.-?[_a-zA-Z]+[_a-zA-Z0-9-]*)-focus\s*/g,
+						replacement: 'button:focus > $1, $1-focus, $1:focus '
+					}
+
+					,
+					{
+						pattern:  /(\.-?[_a-zA-Z]+[_a-zA-Z0-9-]*)-hover\s*/g,
+						replacement: 'button:hover > $1, $1-hover, $1:hover '
+					}
+					// ,{
+					// 	pattern:  /(\.-?[_a-zA-Z]+[_a-zA-Z0-9-]*)-hover\s*\{/g,
+					// 	replacement: 'button:hover > $1, $1-hover {'
+					// }
+					]
+				}
+			}
+		},
+
+
+
 		bump: {
 			options: {
 				files: [ 'bower.json', 'package.json' ],
@@ -88,7 +144,27 @@ module.exports = function (grunt) {
 		// Micro libraries via http://microjs.com/
 			'docs.zip': 'https://github.com/twbs/bootstrap/archive/master.zip'
 		},
+
 		grunticon: {
+			myIcons: {
+				files: [ {
+					expand: true,
+					cwd: "icons/svg-exports",
+					src: [ '*.svg', '*.png' ],
+					dest: "less/icons"
+				} ],
+				options: {
+					"cssprefix": ".fuelux-icon-",
+					"datasvgcss": "icons-svg.less",
+					"defaultWidth": "20px",
+					"defaultHeight": "20px",
+					"previewTemplate": "icons/preview.hbs"
+				}
+			}
+		},
+
+
+		grunticonSuspect: {
 			dist: {
 				files: [{
 					expand: true,
@@ -250,9 +326,19 @@ module.exports = function (grunt) {
 	// Full distribution task
 	grunt.registerTask('dist', ['clean:dist', 'copy:img', 'distcss', 'distzip']);
 
-	//The default build task
+	// The default build task
 	grunt.registerTask('default', ['dist']);
 
+
+	// SVG Icon Making Tools
+	grunt.loadNpmTasks( 'grunt-grunticon' );
+
+
+	/* ----------------
+		Making Icons
+	---------------- */
+	grunt.registerTask( 'make-icons', [ 'grunticon:myIcons', 'string-replace-in-icons' ] );
+	grunt.registerTask( 'glyphify-icons', [ 'string-replace-in-icons' ] );
 
 	/* -------------
 		RELEASE
