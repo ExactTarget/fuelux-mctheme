@@ -5,26 +5,28 @@
 	 height="20px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
 <g id="checkbox-hover">
 	<g>
-		<rect id="le_wrappier_31_" style="fill:none;" width="20" height="20"/>
-		<g id="checkbox-2px-corner_17_">
-			<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="8.3315" y1="0" x2="8.3315" y2="16.6626">
-				<stop  offset="0" style="stop-color:#F2F6FB"/>
-				<stop  offset="0.48" style="stop-color:#F2F6FB"/>
-				<stop  offset="0.5" style="stop-color:#CDDFEC"/>
-				<stop  offset="0.7287" style="stop-color:#C4D8E8"/>
-				<stop  offset="1" style="stop-color:#C1D5E6"/>
-			</linearGradient>
-			<path style="fill:url(#SVGID_1_);" d="M0,13.662c0,1.65,1.35,3,3,3h10.664c1.65,0,3-1.35,3-3V3c0-1.65-1.35-3-3-3H3
-				C1.35,0,0,1.35,0,3V13.662z"/>
-			<g>
-				<path style="fill:#FFFFFF;" d="M13.664,1.25c0.965,0,1.75,0.785,1.75,1.75v10.662c0,0.965-0.785,1.75-1.75,1.75H3
-					c-0.965,0-1.75-0.785-1.75-1.75V3c0-0.965,0.785-1.75,1.75-1.75H13.664 M13.664,0H3C1.35,0,0,1.35,0,3v10.662c0,1.65,1.35,3,3,3
-					h10.664c1.65,0,3-1.35,3-3V3C16.664,1.35,15.314,0,13.664,0L13.664,0z"/>
-			</g>
-			<g>
-				<path style="fill:#6A8799;" d="M13.664,0.5c1.379,0,2.5,1.122,2.5,2.5v10.662c0,1.379-1.121,2.5-2.5,2.5H3
-					c-1.378,0-2.5-1.121-2.5-2.5V3c0-1.378,1.122-2.5,2.5-2.5H13.664 M13.664,0H3C1.35,0,0,1.35,0,3v10.662c0,1.65,1.35,3,3,3
-					h10.664c1.65,0,3-1.35,3-3V3C16.664,1.35,15.314,0,13.664,0L13.664,0z"/>
+		<rect id="le_wrappier_13_" style="fill:none;" width="20" height="20"/>
+		<g>
+			<g id="checkbox-2px-corner_2_">
+				<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="8.4995" y1="0" x2="8.4995" y2="17.0005">
+					<stop  offset="0" style="stop-color:#F2F6FB"/>
+					<stop  offset="0.48" style="stop-color:#F2F6FB"/>
+					<stop  offset="0.5" style="stop-color:#CDDFEC"/>
+					<stop  offset="0.7287" style="stop-color:#C4D8E8"/>
+					<stop  offset="1" style="stop-color:#C1D5E6"/>
+				</linearGradient>
+				<path style="fill:url(#SVGID_1_);" d="M0,14c0,1.65,1.35,3,3,3h11c1.65,0,3-1.35,3-3V3c0-1.65-1.35-3-3-3H3C1.35,0,0,1.35,0,3
+					V14z"/>
+				<g>
+					<path style="fill:#FFFFFF;" d="M14,1.25c0.965,0,1.75,0.785,1.75,1.75v11c0,0.965-0.785,1.75-1.75,1.75H3
+						c-0.965,0-1.75-0.785-1.75-1.75V3c0-0.965,0.785-1.75,1.75-1.75H14 M14,0H3C1.35,0,0,1.35,0,3v11c0,1.65,1.35,3,3,3h11
+						c1.65,0,3-1.35,3-3V3C17,1.35,15.65,0,14,0L14,0z"/>
+				</g>
+				<g>
+					<path style="fill:#6A8799;" d="M14,0.5c1.379,0,2.5,1.122,2.5,2.5v11c0,1.379-1.121,2.5-2.5,2.5H3c-1.378,0-2.5-1.121-2.5-2.5
+						V3c0-1.378,1.122-2.5,2.5-2.5H14 M14,0H3C1.35,0,0,1.35,0,3v11c0,1.65,1.35,3,3,3h11c1.65,0,3-1.35,3-3V3C17,1.35,15.65,0,14,0
+						L14,0z"/>
+				</g>
 			</g>
 		</g>
 	</g>
