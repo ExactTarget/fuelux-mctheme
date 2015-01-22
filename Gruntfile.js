@@ -5,6 +5,9 @@ module.exports = function (grunt) {
 	// use --no-livereload to disable livereload. Helpful to 'serve' multiple projects
 	var isLivereloadEnabled = (typeof grunt.option('livereload') !== 'undefined') ? grunt.option('livereload') : 35730;
 
+	// release minor or patch version. Do major releases manually
+	var versionReleaseType = (typeof grunt.option('minor') !== 'undefined') ? 'minor':'patch';
+
 	// Project configuration.
 	grunt.initConfig({
 		// Metadata
@@ -16,6 +19,18 @@ module.exports = function (grunt) {
 		pkg: grunt.file.readJSON('package.json'),
 
 		// Tasks configuration
+		bump: {
+			options: {
+				files: [ 'bower.json', 'package.json' ],
+				updateConfigs: [ 'pkg' ],
+				commit: false,
+				createTag: false,
+				tagName: '%VERSION%',
+				tagMessage: '%VERSION%',
+				push: false,
+				gitDescribeOptions: '--tags --always --abbrev=1 --dirty=-d'
+			}
+		},
 		clean: {
 			dist: ['dist/**'],
 			zipsrc: ['dist/fuelux-mctheme']
@@ -142,6 +157,14 @@ module.exports = function (grunt) {
 			}
 		},
 		replace: {
+			readme: {
+				src: ['DETAILS.md', 'README.md'],
+				overwrite: true,                 // overwrite matched source files
+				replacements: [{
+					from: /fuelux-mctheme\/\d\.\d\.\d/g,
+					to: "fuelux-mctheme/<%= pkg.version %>"
+				}]
+			},
 			imgpaths: {
 				overwrite: true,
 				replacements:[
@@ -154,6 +177,23 @@ module.exports = function (grunt) {
 					'dist/css/fuelux-mctheme.css',
 					'dist/css/fuelux-mctheme.css.map'
 				]
+			}
+		},
+		shell: {
+			pullMaster: {
+				command: 'git checkout master && git pull origin master'
+			},
+			pullRelease: {
+				command: 'git checkout 1.x && git pull origin 1.x'
+			},
+			mergeRelease: {
+				command: 'git merge master'
+			},
+			commitRelease: {
+				command: 'git add dist && git add *.md && git add *.json && git commit -m "release <%= pkg.version %>"'
+			},
+			tagRelease: {
+				command: 'git tag -a <%= pkg.version %> -m "v<%= pkg.version %>"'
 			}
 		},
 		svgmin: {
@@ -212,6 +252,18 @@ module.exports = function (grunt) {
 
 	//The default build task
 	grunt.registerTask('default', ['dist']);
+
+
+	/* -------------
+		RELEASE
+	------------- */
+	// Maintainers: Run prior to a release. Includes SauceLabs VM tests. 
+	// --minor will create a semver minor release, otherwise a patch release will be created
+	grunt.registerTask('release', 'Release a new version', function() {
+		grunt.task.run(['bump-only:' + versionReleaseType, 'dist', 'replace:readme']);
+	});
+
+	grunt.registerTask('gitrelease', ['shell:pullMaster', 'shell:pullRelease', 'shell:mergeRelease', 'release','shell:commitRelease','shell:tagRelease']);
 
 	/* -------------
 			SERVE

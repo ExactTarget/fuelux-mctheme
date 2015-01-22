@@ -3,7 +3,6 @@
 		&.dropdown-toggle {
 			background: linear-gradient(#FFFFFF, @gray93);
 			border: 1px solid #bbb;
-			color: @gray20;
 
 			.caret {
 				color: #656565;
@@ -13,5 +12,11 @@
 				padding-right: 4px;
 			}
 		}
+	}
+	&[data-resize="auto"] {
+		.selected-label {
+			padding-right: 10px;
+		}
+
 	}
 }
