@@ -22,6 +22,12 @@
 
 .fuelux-icon-checkbox-hover { background-image: url('png/checkbox-hover.png'); background-repeat: no-repeat; }
 
+.fuelux-icon-checkbox-intermediate-disabled { background-image: url('png/checkbox-intermediate-disabled.png'); background-repeat: no-repeat; }
+
+.fuelux-icon-checkbox-intermediate-hover { background-image: url('png/checkbox-intermediate-hover.png'); background-repeat: no-repeat; }
+
+.fuelux-icon-checkbox-intermediate { background-image: url('png/checkbox-intermediate.png'); background-repeat: no-repeat; }
+
 .fuelux-icon-checkbox { background-image: url('png/checkbox.png'); background-repeat: no-repeat; }
 
 .fuelux-icon-checked-indicator { background-image: url('png/checked-indicator.png'); background-repeat: no-repeat; }
