@@ -46,6 +46,10 @@
 
 .fuelux-icon-delete { background-image: url('png/delete.png'); background-repeat: no-repeat; }
 
+.fuelux-icon-download-hover { background-image: url('png/download-hover.png'); background-repeat: no-repeat; }
+
+.fuelux-icon-download { background-image: url('png/download.png'); background-repeat: no-repeat; }
+
 .fuelux-icon-email { background-image: url('png/email.png'); background-repeat: no-repeat; }
 
 .fuelux-icon-folder-close-hover { background-image: url('png/folder-close-hover.png'); background-repeat: no-repeat; }
@@ -90,9 +94,15 @@
 
 .fuelux-icon-radio-button { background-image: url('png/radio-button.png'); background-repeat: no-repeat; }
 
+.fuelux-icon-search-active { background-image: url('png/search-active.png'); background-repeat: no-repeat; }
+
 .fuelux-icon-search-deprecated-hover { background-image: url('png/search-deprecated-hover.png'); background-repeat: no-repeat; }
 
 .fuelux-icon-search-deprecated { background-image: url('png/search-deprecated.png'); background-repeat: no-repeat; }
+
+.fuelux-icon-search-focus { background-image: url('png/search-focus.png'); background-repeat: no-repeat; }
+
+.fuelux-icon-search-hover-focus { background-image: url('png/search-hover-focus.png'); background-repeat: no-repeat; }
 
 .fuelux-icon-search-hover { background-image: url('png/search-hover.png'); background-repeat: no-repeat; }
 
