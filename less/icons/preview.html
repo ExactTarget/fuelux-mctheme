@@ -156,8 +156,9 @@
     </style>
 
 		<script>
-			/* grunticon Stylesheet Loader | https://github.com/filamentgroup/grunticon | (c) 2012 Scott Jehl, Filament Group, Inc. | MIT license. */
-window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.createElementNS||!t.document.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect||!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1")||window.opera&&-1===navigator.userAgent.indexOf("Chrome")||-1!==navigator.userAgent.indexOf("Series40")),o=function(o){var a=t.document.createElement("link"),r=t.document.getElementsByTagName("script")[0];a.rel="stylesheet",a.href=e[o&&n?0:o?1:2],a.media="only x",r.parentNode.insertBefore(a,r),setTimeout(function(){a.media="all"})},a=new t.Image;a.onerror=function(){o(!1)},a.onload=function(){o(1===a.width&&1===a.height)},a.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="}};
+			/*! grunt-grunticon Stylesheet Loader - v2.0.0-beta.4 | https://github.com/filamentgroup/grunticon | (c) 2015 Scott Jehl, Filament Group, Inc. | MIT license. */
+
+(function(e){function t(t,n,r){"use strict";function a(){for(var e,n=0;c.length>n;n++)c[n].href&&c[n].href.indexOf(t)>-1&&(e=!0);e?o.media=r||"all":setTimeout(a)}var o=e.document.createElement("link"),i=n||e.document.getElementsByTagName("script")[0],c=e.document.styleSheets;return o.rel="stylesheet",o.href=t,o.media="only x",i.parentNode.insertBefore(o,i),a(),o}var n=function(r){"use strict";if(r&&3===r.length){var a=e.navigator,o=e.Image,i=!(!document.createElementNS||!document.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect||!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1")||e.opera&&-1===a.userAgent.indexOf("Chrome")||-1!==a.userAgent.indexOf("Series40")),c=new o;c.onerror=function(){n.method="png",t(r[2])},c.onload=function(){var e=1===c.width&&1===c.height,a=r[e&&i?0:e?1:2];n.method=e&&i?"svg":e?"datapng":"png",n.href=a,t(a)},c.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==",document.documentElement.className+=" grunticon"}};n.loadCSS=t,e.grunticon=n})(this);
 
 			grunticon(["icons-svg.less", "icons.data.png.css", "icons.fallback.css"]);
 		</script>
@@ -198,14 +199,14 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 
 	        <li title="calendar-hover">
 	            <div class="icon-box" id="icon-box-calendar-hover">
-	            	<div class="fuelux-icon fuelux-icon-calendar-hover" ></div>
+	            	<div class="fuelux-icon calendar-hover" ></div>
 	            </div>
 	            <h2>calendar-hover</h2>
 	            <button onclick="showPopover('snippet-calendar-hover')">Show Snippet</button>
 	            <br/>
 	            <button onclick="invertBackground('icon-box-calendar-hover')">Invert Background</button>
 	            <div class="snippet-popover" id="snippet-calendar-hover">
-	                <pre><code>&lt;span class=&quot;fuelux-icon-calendar-hover&quot;&gt;&lt;/span&gt;</code></pre>
+	                <pre><code>&lt;span class=&quot;calendar-hover&quot;&gt;&lt;/span&gt;</code></pre>
 	                <button onclick="hidePopover()">Close</button>
 	            </div>
 	        </li>
@@ -217,14 +218,14 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 
 	        <li title="calendar">
 	            <div class="icon-box" id="icon-box-calendar">
-	            	<div class="fuelux-icon fuelux-icon-calendar" ></div>
+	            	<div class="fuelux-icon calendar" ></div>
 	            </div>
 	            <h2>calendar</h2>
 	            <button onclick="showPopover('snippet-calendar')">Show Snippet</button>
 	            <br/>
 	            <button onclick="invertBackground('icon-box-calendar')">Invert Background</button>
 	            <div class="snippet-popover" id="snippet-calendar">
-	                <pre><code>&lt;span class=&quot;fuelux-icon-calendar&quot;&gt;&lt;/span&gt;</code></pre>
+	                <pre><code>&lt;span class=&quot;calendar&quot;&gt;&lt;/span&gt;</code></pre>
 	                <button onclick="hidePopover()">Close</button>
 	            </div>
 	        </li>
@@ -236,14 +237,14 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 
 	        <li title="caret-down-hover">
 	            <div class="icon-box" id="icon-box-caret-down-hover">
-	            	<div class="fuelux-icon fuelux-icon-caret-down-hover" ></div>
+	            	<div class="fuelux-icon caret-down-hover" ></div>
 	            </div>
 	            <h2>caret-down-hover</h2>
 	            <button onclick="showPopover('snippet-caret-down-hover')">Show Snippet</button>
 	            <br/>
 	            <button onclick="invertBackground('icon-box-caret-down-hover')">Invert Background</button>
 	            <div class="snippet-popover" id="snippet-caret-down-hover">
-	                <pre><code>&lt;span class=&quot;fuelux-icon-caret-down-hover&quot;&gt;&lt;/span&gt;</code></pre>
+	                <pre><code>&lt;span class=&quot;caret-down-hover&quot;&gt;&lt;/span&gt;</code></pre>
 	                <button onclick="hidePopover()">Close</button>
 	            </div>
 	        </li>
@@ -255,14 +256,14 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 
 	        <li title="caret-down">
 	            <div class="icon-box" id="icon-box-caret-down">
-	            	<div class="fuelux-icon fuelux-icon-caret-down" ></div>
+	            	<div class="fuelux-icon caret-down" ></div>
 	            </div>
 	            <h2>caret-down</h2>
 	            <button onclick="showPopover('snippet-caret-down')">Show Snippet</button>
 	            <br/>
 	            <button onclick="invertBackground('icon-box-caret-down')">Invert Background</button>
 	            <div class="snippet-popover" id="snippet-caret-down">
-	                <pre><code>&lt;span class=&quot;fuelux-icon-caret-down&quot;&gt;&lt;/span&gt;</code></pre>
+	                <pre><code>&lt;span class=&quot;caret-down&quot;&gt;&lt;/span&gt;</code></pre>
 	                <button onclick="hidePopover()">Close</button>
 	            </div>
 	        </li>
@@ -274,14 +275,14 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 
 	        <li title="caret-right-hover">
 	            <div class="icon-box" id="icon-box-caret-right-hover">
-	            	<div class="fuelux-icon fuelux-icon-caret-right-hover" ></div>
+	            	<div class="fuelux-icon caret-right-hover" ></div>
 	            </div>
 	            <h2>caret-right-hover</h2>
 	            <button onclick="showPopover('snippet-caret-right-hover')">Show Snippet</button>
 	            <br/>
 	            <button onclick="invertBackground('icon-box-caret-right-hover')">Invert Background</button>
 	            <div class="snippet-popover" id="snippet-caret-right-hover">
-	                <pre><code>&lt;span class=&quot;fuelux-icon-caret-right-hover&quot;&gt;&lt;/span&gt;</code></pre>
+	                <pre><code>&lt;span class=&quot;caret-right-hover&quot;&gt;&lt;/span&gt;</code></pre>
 	                <button onclick="hidePopover()">Close</button>
 	            </div>
 	        </li>
@@ -293,14 +294,14 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 
 	        <li title="caret-right">
 	            <div class="icon-box" id="icon-box-caret-right">
-	            	<div class="fuelux-icon fuelux-icon-caret-right" ></div>
+	            	<div class="fuelux-icon caret-right" ></div>
 	            </div>
 	            <h2>caret-right</h2>
 	            <button onclick="showPopover('snippet-caret-right')">Show Snippet</button>
 	            <br/>
 	            <button onclick="invertBackground('icon-box-caret-right')">Invert Background</button>
 	            <div class="snippet-popover" id="snippet-caret-right">
-	                <pre><code>&lt;span class=&quot;fuelux-icon-caret-right&quot;&gt;&lt;/span&gt;</code></pre>
+	                <pre><code>&lt;span class=&quot;caret-right&quot;&gt;&lt;/span&gt;</code></pre>
 	                <button onclick="hidePopover()">Close</button>
 	            </div>
 	        </li>
@@ -312,14 +313,14 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 
 	        <li title="checkbox-active">
 	            <div class="icon-box" id="icon-box-checkbox-active">
-	            	<div class="fuelux-icon fuelux-icon-checkbox-active" ></div>
+	            	<div class="fuelux-icon checkbox-active" ></div>
 	            </div>
 	            <h2>checkbox-active</h2>
 	            <button onclick="showPopover('snippet-checkbox-active')">Show Snippet</button>
 	            <br/>
 	            <button onclick="invertBackground('icon-box-checkbox-active')">Invert Background</button>
 	            <div class="snippet-popover" id="snippet-checkbox-active">
-	                <pre><code>&lt;span class=&quot;fuelux-icon-checkbox-active&quot;&gt;&lt;/span&gt;</code></pre>
+	                <pre><code>&lt;span class=&quot;checkbox-active&quot;&gt;&lt;/span&gt;</code></pre>
 	                <button onclick="hidePopover()">Close</button>
 	            </div>
 	        </li>
@@ -331,14 +332,14 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 
 	        <li title="checkbox-checked-disabled">
 	            <div class="icon-box" id="icon-box-checkbox-checked-disabled">
-	            	<div class="fuelux-icon fuelux-icon-checkbox-checked-disabled" ></div>
+	            	<div class="fuelux-icon checkbox-checked-disabled" ></div>
 	            </div>
 	            <h2>checkbox-checked-disabled</h2>
 	            <button onclick="showPopover('snippet-checkbox-checked-disabled')">Show Snippet</button>
 	            <br/>
 	            <button onclick="invertBackground('icon-box-checkbox-checked-disabled')">Invert Background</button>
 	            <div class="snippet-popover" id="snippet-checkbox-checked-disabled">
-	                <pre><code>&lt;span class=&quot;fuelux-icon-checkbox-checked-disabled&quot;&gt;&lt;/span&gt;</code></pre>
+	                <pre><code>&lt;span class=&quot;checkbox-checked-disabled&quot;&gt;&lt;/span&gt;</code></pre>
 	                <button onclick="hidePopover()">Close</button>
 	            </div>
 	        </li>
@@ -350,14 +351,14 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 
 	        <li title="checkbox-checked-hover">
 	            <div class="icon-box" id="icon-box-checkbox-checked-hover">
-	            	<div class="fuelux-icon fuelux-icon-checkbox-checked-hover" ></div>
+	            	<div class="fuelux-icon checkbox-checked-hover" ></div>
 	            </div>
 	            <h2>checkbox-checked-hover</h2>
 	            <button onclick="showPopover('snippet-checkbox-checked-hover')">Show Snippet</button>
 	            <br/>
 	            <button onclick="invertBackground('icon-box-checkbox-checked-hover')">Invert Background</button>
 	            <div class="snippet-popover" id="snippet-checkbox-checked-hover">
-	                <pre><code>&lt;span class=&quot;fuelux-icon-checkbox-checked-hover&quot;&gt;&lt;/span&gt;</code></pre>
+	                <pre><code>&lt;span class=&quot;checkbox-checked-hover&quot;&gt;&lt;/span&gt;</code></pre>
 	                <button onclick="hidePopover()">Close</button>
 	            </div>
 	        </li>
@@ -369,14 +370,14 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 
 	        <li title="checkbox-checked">
 	            <div class="icon-box" id="icon-box-checkbox-checked">
-	            	<div class="fuelux-icon fuelux-icon-checkbox-checked" ></div>
+	            	<div class="fuelux-icon checkbox-checked" ></div>
 	            </div>
 	            <h2>checkbox-checked</h2>
 	            <button onclick="showPopover('snippet-checkbox-checked')">Show Snippet</button>
 	            <br/>
 	            <button onclick="invertBackground('icon-box-checkbox-checked')">Invert Background</button>
 	            <div class="snippet-popover" id="snippet-checkbox-checked">
-	                <pre><code>&lt;span class=&quot;fuelux-icon-checkbox-checked&quot;&gt;&lt;/span&gt;</code></pre>
+	                <pre><code>&lt;span class=&quot;checkbox-checked&quot;&gt;&lt;/span&gt;</code></pre>
 	                <button onclick="hidePopover()">Close</button>
 	            </div>
 	        </li>
@@ -388,14 +389,14 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 
 	        <li title="checkbox-disabled">
 	            <div class="icon-box" id="icon-box-checkbox-disabled">
-	            	<div class="fuelux-icon fuelux-icon-checkbox-disabled" ></div>
+	            	<div class="fuelux-icon checkbox-disabled" ></div>
 	            </div>
 	            <h2>checkbox-disabled</h2>
 	            <button onclick="showPopover('snippet-checkbox-disabled')">Show Snippet</button>
 	            <br/>
 	            <button onclick="invertBackground('icon-box-checkbox-disabled')">Invert Background</button>
 	            <div class="snippet-popover" id="snippet-checkbox-disabled">
-	                <pre><code>&lt;span class=&quot;fuelux-icon-checkbox-disabled&quot;&gt;&lt;/span&gt;</code></pre>
+	                <pre><code>&lt;span class=&quot;checkbox-disabled&quot;&gt;&lt;/span&gt;</code></pre>
 	                <button onclick="hidePopover()">Close</button>
 	            </div>
 	        </li>
@@ -407,14 +408,14 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 
 	        <li title="checkbox-hover">
 	            <div class="icon-box" id="icon-box-checkbox-hover">
-	            	<div class="fuelux-icon fuelux-icon-checkbox-hover" ></div>
+	            	<div class="fuelux-icon checkbox-hover" ></div>
 	            </div>
 	            <h2>checkbox-hover</h2>
 	            <button onclick="showPopover('snippet-checkbox-hover')">Show Snippet</button>
 	            <br/>
 	            <button onclick="invertBackground('icon-box-checkbox-hover')">Invert Background</button>
 	            <div class="snippet-popover" id="snippet-checkbox-hover">
-	                <pre><code>&lt;span class=&quot;fuelux-icon-checkbox-hover&quot;&gt;&lt;/span&gt;</code></pre>
+	                <pre><code>&lt;span class=&quot;checkbox-hover&quot;&gt;&lt;/span&gt;</code></pre>
 	                <button onclick="hidePopover()">Close</button>
 	            </div>
 	        </li>
@@ -426,14 +427,14 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 
 	        <li title="checkbox-intermediate-disabled">
 	            <div class="icon-box" id="icon-box-checkbox-intermediate-disabled">
-	            	<div class="fuelux-icon fuelux-icon-checkbox-intermediate-disabled" ></div>
+	            	<div class="fuelux-icon checkbox-intermediate-disabled" ></div>
 	            </div>
 	            <h2>checkbox-intermediate-disabled</h2>
 	            <button onclick="showPopover('snippet-checkbox-intermediate-disabled')">Show Snippet</button>
 	            <br/>
 	            <button onclick="invertBackground('icon-box-checkbox-intermediate-disabled')">Invert Background</button>
 	            <div class="snippet-popover" id="snippet-checkbox-intermediate-disabled">
-	                <pre><code>&lt;span class=&quot;fuelux-icon-checkbox-intermediate-disabled&quot;&gt;&lt;/span&gt;</code></pre>
+	                <pre><code>&lt;span class=&quot;checkbox-intermediate-disabled&quot;&gt;&lt;/span&gt;</code></pre>
 	                <button onclick="hidePopover()">Close</button>
 	            </div>
 	        </li>
@@ -445,14 +446,14 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 
 	        <li title="checkbox-intermediate-hover">
 	            <div class="icon-box" id="icon-box-checkbox-intermediate-hover">
-	            	<div class="fuelux-icon fuelux-icon-checkbox-intermediate-hover" ></div>
+	            	<div class="fuelux-icon checkbox-intermediate-hover" ></div>
 	            </div>
 	            <h2>checkbox-intermediate-hover</h2>
 	            <button onclick="showPopover('snippet-checkbox-intermediate-hover')">Show Snippet</button>
 	            <br/>
 	            <button onclick="invertBackground('icon-box-checkbox-intermediate-hover')">Invert Background</button>
 	            <div class="snippet-popover" id="snippet-checkbox-intermediate-hover">
-	                <pre><code>&lt;span class=&quot;fuelux-icon-checkbox-intermediate-hover&quot;&gt;&lt;/span&gt;</code></pre>
+	                <pre><code>&lt;span class=&quot;checkbox-intermediate-hover&quot;&gt;&lt;/span&gt;</code></pre>
 	                <button onclick="hidePopover()">Close</button>
 	            </div>
 	        </li>
@@ -464,14 +465,14 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 
 	        <li title="checkbox-intermediate">
 	            <div class="icon-box" id="icon-box-checkbox-intermediate">
-	            	<div class="fuelux-icon fuelux-icon-checkbox-intermediate" ></div>
+	            	<div class="fuelux-icon checkbox-intermediate" ></div>
 	            </div>
 	            <h2>checkbox-intermediate</h2>
 	            <button onclick="showPopover('snippet-checkbox-intermediate')">Show Snippet</button>
 	            <br/>
 	            <button onclick="invertBackground('icon-box-checkbox-intermediate')">Invert Background</button>
 	            <div class="snippet-popover" id="snippet-checkbox-intermediate">
-	                <pre><code>&lt;span class=&quot;fuelux-icon-checkbox-intermediate&quot;&gt;&lt;/span&gt;</code></pre>
+	                <pre><code>&lt;span class=&quot;checkbox-intermediate&quot;&gt;&lt;/span&gt;</code></pre>
 	                <button onclick="hidePopover()">Close</button>
 	            </div>
 	        </li>
@@ -483,14 +484,14 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 
 	        <li title="checkbox">
 	            <div class="icon-box" id="icon-box-checkbox">
-	            	<div class="fuelux-icon fuelux-icon-checkbox" ></div>
+	            	<div class="fuelux-icon checkbox" ></div>
 	            </div>
 	            <h2>checkbox</h2>
 	            <button onclick="showPopover('snippet-checkbox')">Show Snippet</button>
 	            <br/>
 	            <button onclick="invertBackground('icon-box-checkbox')">Invert Background</button>
 	            <div class="snippet-popover" id="snippet-checkbox">
-	                <pre><code>&lt;span class=&quot;fuelux-icon-checkbox&quot;&gt;&lt;/span&gt;</code></pre>
+	                <pre><code>&lt;span class=&quot;checkbox&quot;&gt;&lt;/span&gt;</code></pre>
 	                <button onclick="hidePopover()">Close</button>
 	            </div>
 	        </li>
@@ -502,14 +503,14 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 
 	        <li title="checked-indicator">
 	            <div class="icon-box" id="icon-box-checked-indicator">
-	            	<div class="fuelux-icon fuelux-icon-checked-indicator" ></div>
+	            	<div class="fuelux-icon checked-indicator" ></div>
 	            </div>
 	            <h2>checked-indicator</h2>
 	            <button onclick="showPopover('snippet-checked-indicator')">Show Snippet</button>
 	            <br/>
 	            <button onclick="invertBackground('icon-box-checked-indicator')">Invert Background</button>
 	            <div class="snippet-popover" id="snippet-checked-indicator">
-	                <pre><code>&lt;span class=&quot;fuelux-icon-checked-indicator&quot;&gt;&lt;/span&gt;</code></pre>
+	                <pre><code>&lt;span class=&quot;checked-indicator&quot;&gt;&lt;/span&gt;</code></pre>
 	                <button onclick="hidePopover()">Close</button>
 	            </div>
 	        </li>
@@ -521,14 +522,14 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 
 	        <li title="chevron-down">
 	            <div class="icon-box" id="icon-box-chevron-down">
-	            	<div class="fuelux-icon fuelux-icon-chevron-down" ></div>
+	            	<div class="fuelux-icon chevron-down" ></div>
 	            </div>
 	            <h2>chevron-down</h2>
 	            <button onclick="showPopover('snippet-chevron-down')">Show Snippet</button>
 	            <br/>
 	            <button onclick="invertBackground('icon-box-chevron-down')">Invert Background</button>
 	            <div class="snippet-popover" id="snippet-chevron-down">
-	                <pre><code>&lt;span class=&quot;fuelux-icon-chevron-down&quot;&gt;&lt;/span&gt;</code></pre>
+	                <pre><code>&lt;span class=&quot;chevron-down&quot;&gt;&lt;/span&gt;</code></pre>
 	                <button onclick="hidePopover()">Close</button>
 	            </div>
 	        </li>
@@ -540,14 +541,14 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 
 	        <li title="chevron-left-hover">
 	            <div class="icon-box" id="icon-box-chevron-left-hover">
-	            	<div class="fuelux-icon fuelux-icon-chevron-left-hover" ></div>
+	            	<div class="fuelux-icon chevron-left-hover" ></div>
 	            </div>
 	            <h2>chevron-left-hover</h2>
 	            <button onclick="showPopover('snippet-chevron-left-hover')">Show Snippet</button>
 	            <br/>
 	            <button onclick="invertBackground('icon-box-chevron-left-hover')">Invert Background</button>
 	            <div class="snippet-popover" id="snippet-chevron-left-hover">
-	                <pre><code>&lt;span class=&quot;fuelux-icon-chevron-left-hover&quot;&gt;&lt;/span&gt;</code></pre>
+	                <pre><code>&lt;span class=&quot;chevron-left-hover&quot;&gt;&lt;/span&gt;</code></pre>
 	                <button onclick="hidePopover()">Close</button>
 	            </div>
 	        </li>
@@ -559,14 +560,14 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 
 	        <li title="chevron-left">
 	            <div class="icon-box" id="icon-box-chevron-left">
-	            	<div class="fuelux-icon fuelux-icon-chevron-left" ></div>
+	            	<div class="fuelux-icon chevron-left" ></div>
 	            </div>
 	            <h2>chevron-left</h2>
 	            <button onclick="showPopover('snippet-chevron-left')">Show Snippet</button>
 	            <br/>
 	            <button onclick="invertBackground('icon-box-chevron-left')">Invert Background</button>
 	            <div class="snippet-popover" id="snippet-chevron-left">
-	                <pre><code>&lt;span class=&quot;fuelux-icon-chevron-left&quot;&gt;&lt;/span&gt;</code></pre>
+	                <pre><code>&lt;span class=&quot;chevron-left&quot;&gt;&lt;/span&gt;</code></pre>
 	                <button onclick="hidePopover()">Close</button>
 	            </div>
 	        </li>
@@ -578,14 +579,14 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 
 	        <li title="chevron-right-hover">
 	            <div class="icon-box" id="icon-box-chevron-right-hover">
-	            	<div class="fuelux-icon fuelux-icon-chevron-right-hover" ></div>
+	            	<div class="fuelux-icon chevron-right-hover" ></div>
 	            </div>
 	            <h2>chevron-right-hover</h2>
 	            <button onclick="showPopover('snippet-chevron-right-hover')">Show Snippet</button>
 	            <br/>
 	            <button onclick="invertBackground('icon-box-chevron-right-hover')">Invert Background</button>
 	            <div class="snippet-popover" id="snippet-chevron-right-hover">
-	                <pre><code>&lt;span class=&quot;fuelux-icon-chevron-right-hover&quot;&gt;&lt;/span&gt;</code></pre>
+	                <pre><code>&lt;span class=&quot;chevron-right-hover&quot;&gt;&lt;/span&gt;</code></pre>
 	                <button onclick="hidePopover()">Close</button>
 	            </div>
 	        </li>
@@ -597,14 +598,14 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 
 	        <li title="chevron-right">
 	            <div class="icon-box" id="icon-box-chevron-right">
-	            	<div class="fuelux-icon fuelux-icon-chevron-right" ></div>
+	            	<div class="fuelux-icon chevron-right" ></div>
 	            </div>
 	            <h2>chevron-right</h2>
 	            <button onclick="showPopover('snippet-chevron-right')">Show Snippet</button>
 	            <br/>
 	            <button onclick="invertBackground('icon-box-chevron-right')">Invert Background</button>
 	            <div class="snippet-popover" id="snippet-chevron-right">
-	                <pre><code>&lt;span class=&quot;fuelux-icon-chevron-right&quot;&gt;&lt;/span&gt;</code></pre>
+	                <pre><code>&lt;span class=&quot;chevron-right&quot;&gt;&lt;/span&gt;</code></pre>
 	                <button onclick="hidePopover()">Close</button>
 	            </div>
 	        </li>
@@ -616,14 +617,14 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 
 	        <li title="chevron-up">
 	            <div class="icon-box" id="icon-box-chevron-up">
-	            	<div class="fuelux-icon fuelux-icon-chevron-up" ></div>
+	            	<div class="fuelux-icon chevron-up" ></div>
 	            </div>
 	            <h2>chevron-up</h2>
 	            <button onclick="showPopover('snippet-chevron-up')">Show Snippet</button>
 	            <br/>
 	            <button onclick="invertBackground('icon-box-chevron-up')">Invert Background</button>
 	            <div class="snippet-popover" id="snippet-chevron-up">
-	                <pre><code>&lt;span class=&quot;fuelux-icon-chevron-up&quot;&gt;&lt;/span&gt;</code></pre>
+	                <pre><code>&lt;span class=&quot;chevron-up&quot;&gt;&lt;/span&gt;</code></pre>
 	                <button onclick="hidePopover()">Close</button>
 	            </div>
 	        </li>
@@ -635,14 +636,14 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 
 	        <li title="close-content-block">
 	            <div class="icon-box" id="icon-box-close-content-block">
-	            	<div class="fuelux-icon fuelux-icon-close-content-block" ></div>
+	            	<div class="fuelux-icon close-content-block" ></div>
 	            </div>
 	            <h2>close-content-block</h2>
 	            <button onclick="showPopover('snippet-close-content-block')">Show Snippet</button>
 	            <br/>
 	            <button onclick="invertBackground('icon-box-close-content-block')">Invert Background</button>
 	            <div class="snippet-popover" id="snippet-close-content-block">
-	                <pre><code>&lt;span class=&quot;fuelux-icon-close-content-block&quot;&gt;&lt;/span&gt;</code></pre>
+	                <pre><code>&lt;span class=&quot;close-content-block&quot;&gt;&lt;/span&gt;</code></pre>
 	                <button onclick="hidePopover()">Close</button>
 	            </div>
 	        </li>
@@ -654,14 +655,14 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 
 	        <li title="copy-hover">
 	            <div class="icon-box" id="icon-box-copy-hover">
-	            	<div class="fuelux-icon fuelux-icon-copy-hover" ></div>
+	            	<div class="fuelux-icon copy-hover" ></div>
 	            </div>
 	            <h2>copy-hover</h2>
 	            <button onclick="showPopover('snippet-copy-hover')">Show Snippet</button>
 	            <br/>
 	            <button onclick="invertBackground('icon-box-copy-hover')">Invert Background</button>
 	            <div class="snippet-popover" id="snippet-copy-hover">
-	                <pre><code>&lt;span class=&quot;fuelux-icon-copy-hover&quot;&gt;&lt;/span&gt;</code></pre>
+	                <pre><code>&lt;span class=&quot;copy-hover&quot;&gt;&lt;/span&gt;</code></pre>
 	                <button onclick="hidePopover()">Close</button>
 	            </div>
 	        </li>
@@ -673,14 +674,14 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 
 	        <li title="copy">
 	            <div class="icon-box" id="icon-box-copy">
-	            	<div class="fuelux-icon fuelux-icon-copy" ></div>
+	            	<div class="fuelux-icon copy" ></div>
 	            </div>
 	            <h2>copy</h2>
 	            <button onclick="showPopover('snippet-copy')">Show Snippet</button>
 	            <br/>
 	            <button onclick="invertBackground('icon-box-copy')">Invert Background</button>
 	            <div class="snippet-popover" id="snippet-copy">
-	                <pre><code>&lt;span class=&quot;fuelux-icon-copy&quot;&gt;&lt;/span&gt;</code></pre>
+	                <pre><code>&lt;span class=&quot;copy&quot;&gt;&lt;/span&gt;</code></pre>
 	                <button onclick="hidePopover()">Close</button>
 	            </div>
 	        </li>
@@ -692,14 +693,14 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 
 	        <li title="delete">
 	            <div class="icon-box" id="icon-box-delete">
-	            	<div class="fuelux-icon fuelux-icon-delete" ></div>
+	            	<div class="fuelux-icon delete" ></div>
 	            </div>
 	            <h2>delete</h2>
 	            <button onclick="showPopover('snippet-delete')">Show Snippet</button>
 	            <br/>
 	            <button onclick="invertBackground('icon-box-delete')">Invert Background</button>
 	            <div class="snippet-popover" id="snippet-delete">
-	                <pre><code>&lt;span class=&quot;fuelux-icon-delete&quot;&gt;&lt;/span&gt;</code></pre>
+	                <pre><code>&lt;span class=&quot;delete&quot;&gt;&lt;/span&gt;</code></pre>
 	                <button onclick="hidePopover()">Close</button>
 	            </div>
 	        </li>
@@ -711,14 +712,14 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 
 	        <li title="download-hover">
 	            <div class="icon-box" id="icon-box-download-hover">
-	            	<div class="fuelux-icon fuelux-icon-download-hover" ></div>
+	            	<div class="fuelux-icon download-hover" ></div>
 	            </div>
 	            <h2>download-hover</h2>
 	            <button onclick="showPopover('snippet-download-hover')">Show Snippet</button>
 	            <br/>
 	            <button onclick="invertBackground('icon-box-download-hover')">Invert Background</button>
 	            <div class="snippet-popover" id="snippet-download-hover">
-	                <pre><code>&lt;span class=&quot;fuelux-icon-download-hover&quot;&gt;&lt;/span&gt;</code></pre>
+	                <pre><code>&lt;span class=&quot;download-hover&quot;&gt;&lt;/span&gt;</code></pre>
 	                <button onclick="hidePopover()">Close</button>
 	            </div>
 	        </li>
@@ -730,14 +731,14 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 
 	        <li title="download">
 	            <div class="icon-box" id="icon-box-download">
-	            	<div class="fuelux-icon fuelux-icon-download" ></div>
+	            	<div class="fuelux-icon download" ></div>
 	            </div>
 	            <h2>download</h2>
 	            <button onclick="showPopover('snippet-download')">Show Snippet</button>
 	            <br/>
 	            <button onclick="invertBackground('icon-box-download')">Invert Background</button>
 	            <div class="snippet-popover" id="snippet-download">
-	                <pre><code>&lt;span class=&quot;fuelux-icon-download&quot;&gt;&lt;/span&gt;</code></pre>
+	                <pre><code>&lt;span class=&quot;download&quot;&gt;&lt;/span&gt;</code></pre>
 	                <button onclick="hidePopover()">Close</button>
 	            </div>
 	        </li>
@@ -749,14 +750,14 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 
 	        <li title="email">
 	            <div class="icon-box" id="icon-box-email">
-	            	<div class="fuelux-icon fuelux-icon-email" ></div>
+	            	<div class="fuelux-icon email" ></div>
 	            </div>
 	            <h2>email</h2>
 	            <button onclick="showPopover('snippet-email')">Show Snippet</button>
 	            <br/>
 	            <button onclick="invertBackground('icon-box-email')">Invert Background</button>
 	            <div class="snippet-popover" id="snippet-email">
-	                <pre><code>&lt;span class=&quot;fuelux-icon-email&quot;&gt;&lt;/span&gt;</code></pre>
+	                <pre><code>&lt;span class=&quot;email&quot;&gt;&lt;/span&gt;</code></pre>
 	                <button onclick="hidePopover()">Close</button>
 	            </div>
 	        </li>
@@ -768,14 +769,14 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 
 	        <li title="folder-close-hover">
 	            <div class="icon-box" id="icon-box-folder-close-hover">
-	            	<div class="fuelux-icon fuelux-icon-folder-close-hover" ></div>
+	            	<div class="fuelux-icon folder-close-hover" ></div>
 	            </div>
 	            <h2>folder-close-hover</h2>
 	            <button onclick="showPopover('snippet-folder-close-hover')">Show Snippet</button>
 	            <br/>
 	            <button onclick="invertBackground('icon-box-folder-close-hover')">Invert Background</button>
 	            <div class="snippet-popover" id="snippet-folder-close-hover">
-	                <pre><code>&lt;span class=&quot;fuelux-icon-folder-close-hover&quot;&gt;&lt;/span&gt;</code></pre>
+	                <pre><code>&lt;span class=&quot;folder-close-hover&quot;&gt;&lt;/span&gt;</code></pre>
 	                <button onclick="hidePopover()">Close</button>
 	            </div>
 	        </li>
@@ -787,14 +788,14 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 
 	        <li title="folder-close">
 	            <div class="icon-box" id="icon-box-folder-close">
-	            	<div class="fuelux-icon fuelux-icon-folder-close" ></div>
+	            	<div class="fuelux-icon folder-close" ></div>
 	            </div>
 	            <h2>folder-close</h2>
 	            <button onclick="showPopover('snippet-folder-close')">Show Snippet</button>
 	            <br/>
 	            <button onclick="invertBackground('icon-box-folder-close')">Invert Background</button>
 	            <div class="snippet-popover" id="snippet-folder-close">
-	                <pre><code>&lt;span class=&quot;fuelux-icon-folder-close&quot;&gt;&lt;/span&gt;</code></pre>
+	                <pre><code>&lt;span class=&quot;folder-close&quot;&gt;&lt;/span&gt;</code></pre>
 	                <button onclick="hidePopover()">Close</button>
 	            </div>
 	        </li>
@@ -806,14 +807,14 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 
 	        <li title="folder-open-hover">
 	            <div class="icon-box" id="icon-box-folder-open-hover">
-	            	<div class="fuelux-icon fuelux-icon-folder-open-hover" ></div>
+	            	<div class="fuelux-icon folder-open-hover" ></div>
 	            </div>
 	            <h2>folder-open-hover</h2>
 	            <button onclick="showPopover('snippet-folder-open-hover')">Show Snippet</button>
 	            <br/>
 	            <button onclick="invertBackground('icon-box-folder-open-hover')">Invert Background</button>
 	            <div class="snippet-popover" id="snippet-folder-open-hover">
-	                <pre><code>&lt;span class=&quot;fuelux-icon-folder-open-hover&quot;&gt;&lt;/span&gt;</code></pre>
+	                <pre><code>&lt;span class=&quot;folder-open-hover&quot;&gt;&lt;/span&gt;</code></pre>
 	                <button onclick="hidePopover()">Close</button>
 	            </div>
 	        </li>
@@ -825,14 +826,14 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 
 	        <li title="folder-open">
 	            <div class="icon-box" id="icon-box-folder-open">
-	            	<div class="fuelux-icon fuelux-icon-folder-open" ></div>
+	            	<div class="fuelux-icon folder-open" ></div>
 	            </div>
 	            <h2>folder-open</h2>
 	            <button onclick="showPopover('snippet-folder-open')">Show Snippet</button>
 	            <br/>
 	            <button onclick="invertBackground('icon-box-folder-open')">Invert Background</button>
 	            <div class="snippet-popover" id="snippet-folder-open">
-	                <pre><code>&lt;span class=&quot;fuelux-icon-folder-open&quot;&gt;&lt;/span&gt;</code></pre>
+	                <pre><code>&lt;span class=&quot;folder-open&quot;&gt;&lt;/span&gt;</code></pre>
 	                <button onclick="hidePopover()">Close</button>
 	            </div>
 	        </li>
@@ -844,14 +845,14 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 
 	        <li title="gridview-columns-configure">
 	            <div class="icon-box" id="icon-box-gridview-columns-configure">
-	            	<div class="fuelux-icon fuelux-icon-gridview-columns-configure" ></div>
+	            	<div class="fuelux-icon gridview-columns-configure" ></div>
 	            </div>
 	            <h2>gridview-columns-configure</h2>
 	            <button onclick="showPopover('snippet-gridview-columns-configure')">Show Snippet</button>
 	            <br/>
 	            <button onclick="invertBackground('icon-box-gridview-columns-configure')">Invert Background</button>
 	            <div class="snippet-popover" id="snippet-gridview-columns-configure">
-	                <pre><code>&lt;span class=&quot;fuelux-icon-gridview-columns-configure&quot;&gt;&lt;/span&gt;</code></pre>
+	                <pre><code>&lt;span class=&quot;gridview-columns-configure&quot;&gt;&lt;/span&gt;</code></pre>
 	                <button onclick="hidePopover()">Close</button>
 	            </div>
 	        </li>
@@ -863,14 +864,14 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 
 	        <li title="gridview-columns">
 	            <div class="icon-box" id="icon-box-gridview-columns">
-	            	<div class="fuelux-icon fuelux-icon-gridview-columns" ></div>
+	            	<div class="fuelux-icon gridview-columns" ></div>
 	            </div>
 	            <h2>gridview-columns</h2>
 	            <button onclick="showPopover('snippet-gridview-columns')">Show Snippet</button>
 	            <br/>
 	            <button onclick="invertBackground('icon-box-gridview-columns')">Invert Background</button>
 	            <div class="snippet-popover" id="snippet-gridview-columns">
-	                <pre><code>&lt;span class=&quot;fuelux-icon-gridview-columns&quot;&gt;&lt;/span&gt;</code></pre>
+	                <pre><code>&lt;span class=&quot;gridview-columns&quot;&gt;&lt;/span&gt;</code></pre>
 	                <button onclick="hidePopover()">Close</button>
 	            </div>
 	        </li>
@@ -882,14 +883,14 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 
 	        <li title="gridview-list">
 	            <div class="icon-box" id="icon-box-gridview-list">
-	            	<div class="fuelux-icon fuelux-icon-gridview-list" ></div>
+	            	<div class="fuelux-icon gridview-list" ></div>
 	            </div>
 	            <h2>gridview-list</h2>
 	            <button onclick="showPopover('snippet-gridview-list')">Show Snippet</button>
 	            <br/>
 	            <button onclick="invertBackground('icon-box-gridview-list')">Invert Background</button>
 	            <div class="snippet-popover" id="snippet-gridview-list">
-	                <pre><code>&lt;span class=&quot;fuelux-icon-gridview-list&quot;&gt;&lt;/span&gt;</code></pre>
+	                <pre><code>&lt;span class=&quot;gridview-list&quot;&gt;&lt;/span&gt;</code></pre>
 	                <button onclick="hidePopover()">Close</button>
 	            </div>
 	        </li>
@@ -901,14 +902,14 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 
 	        <li title="gridview-paragraph">
 	            <div class="icon-box" id="icon-box-gridview-paragraph">
-	            	<div class="fuelux-icon fuelux-icon-gridview-paragraph" ></div>
+	            	<div class="fuelux-icon gridview-paragraph" ></div>
 	            </div>
 	            <h2>gridview-paragraph</h2>
 	            <button onclick="showPopover('snippet-gridview-paragraph')">Show Snippet</button>
 	            <br/>
 	            <button onclick="invertBackground('icon-box-gridview-paragraph')">Invert Background</button>
 	            <div class="snippet-popover" id="snippet-gridview-paragraph">
-	                <pre><code>&lt;span class=&quot;fuelux-icon-gridview-paragraph&quot;&gt;&lt;/span&gt;</code></pre>
+	                <pre><code>&lt;span class=&quot;gridview-paragraph&quot;&gt;&lt;/span&gt;</code></pre>
 	                <button onclick="hidePopover()">Close</button>
 	            </div>
 	        </li>
@@ -920,14 +921,14 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 
 	        <li title="gridview-thumbnail">
 	            <div class="icon-box" id="icon-box-gridview-thumbnail">
-	            	<div class="fuelux-icon fuelux-icon-gridview-thumbnail" ></div>
+	            	<div class="fuelux-icon gridview-thumbnail" ></div>
 	            </div>
 	            <h2>gridview-thumbnail</h2>
 	            <button onclick="showPopover('snippet-gridview-thumbnail')">Show Snippet</button>
 	            <br/>
 	            <button onclick="invertBackground('icon-box-gridview-thumbnail')">Invert Background</button>
 	            <div class="snippet-popover" id="snippet-gridview-thumbnail">
-	                <pre><code>&lt;span class=&quot;fuelux-icon-gridview-thumbnail&quot;&gt;&lt;/span&gt;</code></pre>
+	                <pre><code>&lt;span class=&quot;gridview-thumbnail&quot;&gt;&lt;/span&gt;</code></pre>
 	                <button onclick="hidePopover()">Close</button>
 	            </div>
 	        </li>
@@ -939,14 +940,14 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 
 	        <li title="pencil-hover">
 	            <div class="icon-box" id="icon-box-pencil-hover">
-	            	<div class="fuelux-icon fuelux-icon-pencil-hover" ></div>
+	            	<div class="fuelux-icon pencil-hover" ></div>
 	            </div>
 	            <h2>pencil-hover</h2>
 	            <button onclick="showPopover('snippet-pencil-hover')">Show Snippet</button>
 	            <br/>
 	            <button onclick="invertBackground('icon-box-pencil-hover')">Invert Background</button>
 	            <div class="snippet-popover" id="snippet-pencil-hover">
-	                <pre><code>&lt;span class=&quot;fuelux-icon-pencil-hover&quot;&gt;&lt;/span&gt;</code></pre>
+	                <pre><code>&lt;span class=&quot;pencil-hover&quot;&gt;&lt;/span&gt;</code></pre>
 	                <button onclick="hidePopover()">Close</button>
 	            </div>
 	        </li>
@@ -958,14 +959,14 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 
 	        <li title="pencil">
 	            <div class="icon-box" id="icon-box-pencil">
-	            	<div class="fuelux-icon fuelux-icon-pencil" ></div>
+	            	<div class="fuelux-icon pencil" ></div>
 	            </div>
 	            <h2>pencil</h2>
 	            <button onclick="showPopover('snippet-pencil')">Show Snippet</button>
 	            <br/>
 	            <button onclick="invertBackground('icon-box-pencil')">Invert Background</button>
 	            <div class="snippet-popover" id="snippet-pencil">
-	                <pre><code>&lt;span class=&quot;fuelux-icon-pencil&quot;&gt;&lt;/span&gt;</code></pre>
+	                <pre><code>&lt;span class=&quot;pencil&quot;&gt;&lt;/span&gt;</code></pre>
 	                <button onclick="hidePopover()">Close</button>
 	            </div>
 	        </li>
@@ -977,14 +978,14 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 
 	        <li title="plus-sign-disabled">
 	            <div class="icon-box" id="icon-box-plus-sign-disabled">
-	            	<div class="fuelux-icon fuelux-icon-plus-sign-disabled" ></div>
+	            	<div class="fuelux-icon plus-sign-disabled" ></div>
 	            </div>
 	            <h2>plus-sign-disabled</h2>
 	            <button onclick="showPopover('snippet-plus-sign-disabled')">Show Snippet</button>
 	            <br/>
 	            <button onclick="invertBackground('icon-box-plus-sign-disabled')">Invert Background</button>
 	            <div class="snippet-popover" id="snippet-plus-sign-disabled">
-	                <pre><code>&lt;span class=&quot;fuelux-icon-plus-sign-disabled&quot;&gt;&lt;/span&gt;</code></pre>
+	                <pre><code>&lt;span class=&quot;plus-sign-disabled&quot;&gt;&lt;/span&gt;</code></pre>
 	                <button onclick="hidePopover()">Close</button>
 	            </div>
 	        </li>
@@ -996,14 +997,14 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 
 	        <li title="plus-sign">
 	            <div class="icon-box" id="icon-box-plus-sign">
-	            	<div class="fuelux-icon fuelux-icon-plus-sign" ></div>
+	            	<div class="fuelux-icon plus-sign" ></div>
 	            </div>
 	            <h2>plus-sign</h2>
 	            <button onclick="showPopover('snippet-plus-sign')">Show Snippet</button>
 	            <br/>
 	            <button onclick="invertBackground('icon-box-plus-sign')">Invert Background</button>
 	            <div class="snippet-popover" id="snippet-plus-sign">
-	                <pre><code>&lt;span class=&quot;fuelux-icon-plus-sign&quot;&gt;&lt;/span&gt;</code></pre>
+	                <pre><code>&lt;span class=&quot;plus-sign&quot;&gt;&lt;/span&gt;</code></pre>
 	                <button onclick="hidePopover()">Close</button>
 	            </div>
 	        </li>
@@ -1015,14 +1016,14 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 
 	        <li title="radio-button-checked-disabled">
 	            <div class="icon-box" id="icon-box-radio-button-checked-disabled">
-	            	<div class="fuelux-icon fuelux-icon-radio-button-checked-disabled" ></div>
+	            	<div class="fuelux-icon radio-button-checked-disabled" ></div>
 	            </div>
 	            <h2>radio-button-checked-disabled</h2>
 	            <button onclick="showPopover('snippet-radio-button-checked-disabled')">Show Snippet</button>
 	            <br/>
 	            <button onclick="invertBackground('icon-box-radio-button-checked-disabled')">Invert Background</button>
 	            <div class="snippet-popover" id="snippet-radio-button-checked-disabled">
-	                <pre><code>&lt;span class=&quot;fuelux-icon-radio-button-checked-disabled&quot;&gt;&lt;/span&gt;</code></pre>
+	                <pre><code>&lt;span class=&quot;radio-button-checked-disabled&quot;&gt;&lt;/span&gt;</code></pre>
 	                <button onclick="hidePopover()">Close</button>
 	            </div>
 	        </li>
@@ -1034,14 +1035,14 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 
 	        <li title="radio-button-checked-hover">
 	            <div class="icon-box" id="icon-box-radio-button-checked-hover">
-	            	<div class="fuelux-icon fuelux-icon-radio-button-checked-hover" ></div>
+	            	<div class="fuelux-icon radio-button-checked-hover" ></div>
 	            </div>
 	            <h2>radio-button-checked-hover</h2>
 	            <button onclick="showPopover('snippet-radio-button-checked-hover')">Show Snippet</button>
 	            <br/>
 	            <button onclick="invertBackground('icon-box-radio-button-checked-hover')">Invert Background</button>
 	            <div class="snippet-popover" id="snippet-radio-button-checked-hover">
-	                <pre><code>&lt;span class=&quot;fuelux-icon-radio-button-checked-hover&quot;&gt;&lt;/span&gt;</code></pre>
+	                <pre><code>&lt;span class=&quot;radio-button-checked-hover&quot;&gt;&lt;/span&gt;</code></pre>
 	                <button onclick="hidePopover()">Close</button>
 	            </div>
 	        </li>
@@ -1053,14 +1054,14 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 
 	        <li title="radio-button-checked">
 	            <div class="icon-box" id="icon-box-radio-button-checked">
-	            	<div class="fuelux-icon fuelux-icon-radio-button-checked" ></div>
+	            	<div class="fuelux-icon radio-button-checked" ></div>
 	            </div>
 	            <h2>radio-button-checked</h2>
 	            <button onclick="showPopover('snippet-radio-button-checked')">Show Snippet</button>
 	            <br/>
 	            <button onclick="invertBackground('icon-box-radio-button-checked')">Invert Background</button>
 	            <div class="snippet-popover" id="snippet-radio-button-checked">
-	                <pre><code>&lt;span class=&quot;fuelux-icon-radio-button-checked&quot;&gt;&lt;/span&gt;</code></pre>
+	                <pre><code>&lt;span class=&quot;radio-button-checked&quot;&gt;&lt;/span&gt;</code></pre>
 	                <button onclick="hidePopover()">Close</button>
 	            </div>
 	        </li>
@@ -1072,14 +1073,14 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 
 	        <li title="radio-button-disabled">
 	            <div class="icon-box" id="icon-box-radio-button-disabled">
-	            	<div class="fuelux-icon fuelux-icon-radio-button-disabled" ></div>
+	            	<div class="fuelux-icon radio-button-disabled" ></div>
 	            </div>
 	            <h2>radio-button-disabled</h2>
 	            <button onclick="showPopover('snippet-radio-button-disabled')">Show Snippet</button>
 	            <br/>
 	            <button onclick="invertBackground('icon-box-radio-button-disabled')">Invert Background</button>
 	            <div class="snippet-popover" id="snippet-radio-button-disabled">
-	                <pre><code>&lt;span class=&quot;fuelux-icon-radio-button-disabled&quot;&gt;&lt;/span&gt;</code></pre>
+	                <pre><code>&lt;span class=&quot;radio-button-disabled&quot;&gt;&lt;/span&gt;</code></pre>
 	                <button onclick="hidePopover()">Close</button>
 	            </div>
 	        </li>
@@ -1091,14 +1092,14 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 
 	        <li title="radio-button-hover">
 	            <div class="icon-box" id="icon-box-radio-button-hover">
-	            	<div class="fuelux-icon fuelux-icon-radio-button-hover" ></div>
+	            	<div class="fuelux-icon radio-button-hover" ></div>
 	            </div>
 	            <h2>radio-button-hover</h2>
 	            <button onclick="showPopover('snippet-radio-button-hover')">Show Snippet</button>
 	            <br/>
 	            <button onclick="invertBackground('icon-box-radio-button-hover')">Invert Background</button>
 	            <div class="snippet-popover" id="snippet-radio-button-hover">
-	                <pre><code>&lt;span class=&quot;fuelux-icon-radio-button-hover&quot;&gt;&lt;/span&gt;</code></pre>
+	                <pre><code>&lt;span class=&quot;radio-button-hover&quot;&gt;&lt;/span&gt;</code></pre>
 	                <button onclick="hidePopover()">Close</button>
 	            </div>
 	        </li>
@@ -1110,14 +1111,14 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 
 	        <li title="radio-button">
 	            <div class="icon-box" id="icon-box-radio-button">
-	            	<div class="fuelux-icon fuelux-icon-radio-button" ></div>
+	            	<div class="fuelux-icon radio-button" ></div>
 	            </div>
 	            <h2>radio-button</h2>
 	            <button onclick="showPopover('snippet-radio-button')">Show Snippet</button>
 	            <br/>
 	            <button onclick="invertBackground('icon-box-radio-button')">Invert Background</button>
 	            <div class="snippet-popover" id="snippet-radio-button">
-	                <pre><code>&lt;span class=&quot;fuelux-icon-radio-button&quot;&gt;&lt;/span&gt;</code></pre>
+	                <pre><code>&lt;span class=&quot;radio-button&quot;&gt;&lt;/span&gt;</code></pre>
 	                <button onclick="hidePopover()">Close</button>
 	            </div>
 	        </li>
@@ -1129,14 +1130,14 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 
 	        <li title="search-active">
 	            <div class="icon-box" id="icon-box-search-active">
-	            	<div class="fuelux-icon fuelux-icon-search-active" ></div>
+	            	<div class="fuelux-icon search-active" ></div>
 	            </div>
 	            <h2>search-active</h2>
 	            <button onclick="showPopover('snippet-search-active')">Show Snippet</button>
 	            <br/>
 	            <button onclick="invertBackground('icon-box-search-active')">Invert Background</button>
 	            <div class="snippet-popover" id="snippet-search-active">
-	                <pre><code>&lt;span class=&quot;fuelux-icon-search-active&quot;&gt;&lt;/span&gt;</code></pre>
+	                <pre><code>&lt;span class=&quot;search-active&quot;&gt;&lt;/span&gt;</code></pre>
 	                <button onclick="hidePopover()">Close</button>
 	            </div>
 	        </li>
@@ -1148,14 +1149,14 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 
 	        <li title="search-deprecated-hover">
 	            <div class="icon-box" id="icon-box-search-deprecated-hover">
-	            	<div class="fuelux-icon fuelux-icon-search-deprecated-hover" ></div>
+	            	<div class="fuelux-icon search-deprecated-hover" ></div>
 	            </div>
 	            <h2>search-deprecated-hover</h2>
 	            <button onclick="showPopover('snippet-search-deprecated-hover')">Show Snippet</button>
 	            <br/>
 	            <button onclick="invertBackground('icon-box-search-deprecated-hover')">Invert Background</button>
 	            <div class="snippet-popover" id="snippet-search-deprecated-hover">
-	                <pre><code>&lt;span class=&quot;fuelux-icon-search-deprecated-hover&quot;&gt;&lt;/span&gt;</code></pre>
+	                <pre><code>&lt;span class=&quot;search-deprecated-hover&quot;&gt;&lt;/span&gt;</code></pre>
 	                <button onclick="hidePopover()">Close</button>
 	            </div>
 	        </li>
@@ -1167,14 +1168,14 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 
 	        <li title="search-deprecated">
 	            <div class="icon-box" id="icon-box-search-deprecated">
-	            	<div class="fuelux-icon fuelux-icon-search-deprecated" ></div>
+	            	<div class="fuelux-icon search-deprecated" ></div>
 	            </div>
 	            <h2>search-deprecated</h2>
 	            <button onclick="showPopover('snippet-search-deprecated')">Show Snippet</button>
 	            <br/>
 	            <button onclick="invertBackground('icon-box-search-deprecated')">Invert Background</button>
 	            <div class="snippet-popover" id="snippet-search-deprecated">
-	                <pre><code>&lt;span class=&quot;fuelux-icon-search-deprecated&quot;&gt;&lt;/span&gt;</code></pre>
+	                <pre><code>&lt;span class=&quot;search-deprecated&quot;&gt;&lt;/span&gt;</code></pre>
 	                <button onclick="hidePopover()">Close</button>
 	            </div>
 	        </li>
@@ -1184,16 +1185,16 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 		
 			
 
-	        <li title="search-hover-focus">
-	            <div class="icon-box" id="icon-box-search-hover-focus">
-	            	<div class="fuelux-icon fuelux-icon-search-hover-focus" ></div>
+	        <li title="search-focus">
+	            <div class="icon-box" id="icon-box-search-focus">
+	            	<div class="fuelux-icon search-focus" ></div>
 	            </div>
-	            <h2>search-hover-focus</h2>
-	            <button onclick="showPopover('snippet-search-hover-focus')">Show Snippet</button>
+	            <h2>search-focus</h2>
+	            <button onclick="showPopover('snippet-search-focus')">Show Snippet</button>
 	            <br/>
-	            <button onclick="invertBackground('icon-box-search-hover-focus')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-search-hover-focus">
-	                <pre><code>&lt;span class=&quot;fuelux-icon-search-hover-focus&quot;&gt;&lt;/span&gt;</code></pre>
+	            <button onclick="invertBackground('icon-box-search-focus')">Invert Background</button>
+	            <div class="snippet-popover" id="snippet-search-focus">
+	                <pre><code>&lt;span class=&quot;search-focus&quot;&gt;&lt;/span&gt;</code></pre>
 	                <button onclick="hidePopover()">Close</button>
 	            </div>
 	        </li>
@@ -1205,14 +1206,14 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 
 	        <li title="search-hover">
 	            <div class="icon-box" id="icon-box-search-hover">
-	            	<div class="fuelux-icon fuelux-icon-search-hover" ></div>
+	            	<div class="fuelux-icon search-hover" ></div>
 	            </div>
 	            <h2>search-hover</h2>
 	            <button onclick="showPopover('snippet-search-hover')">Show Snippet</button>
 	            <br/>
 	            <button onclick="invertBackground('icon-box-search-hover')">Invert Background</button>
 	            <div class="snippet-popover" id="snippet-search-hover">
-	                <pre><code>&lt;span class=&quot;fuelux-icon-search-hover&quot;&gt;&lt;/span&gt;</code></pre>
+	                <pre><code>&lt;span class=&quot;search-hover&quot;&gt;&lt;/span&gt;</code></pre>
 	                <button onclick="hidePopover()">Close</button>
 	            </div>
 	        </li>
@@ -1224,14 +1225,14 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 
 	        <li title="search">
 	            <div class="icon-box" id="icon-box-search">
-	            	<div class="fuelux-icon fuelux-icon-search" ></div>
+	            	<div class="fuelux-icon search" ></div>
 	            </div>
 	            <h2>search</h2>
 	            <button onclick="showPopover('snippet-search')">Show Snippet</button>
 	            <br/>
 	            <button onclick="invertBackground('icon-box-search')">Invert Background</button>
 	            <div class="snippet-popover" id="snippet-search">
-	                <pre><code>&lt;span class=&quot;fuelux-icon-search&quot;&gt;&lt;/span&gt;</code></pre>
+	                <pre><code>&lt;span class=&quot;search&quot;&gt;&lt;/span&gt;</code></pre>
 	                <button onclick="hidePopover()">Close</button>
 	            </div>
 	        </li>
@@ -1243,14 +1244,14 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 
 	        <li title="sort-by-alphabet">
 	            <div class="icon-box" id="icon-box-sort-by-alphabet">
-	            	<div class="fuelux-icon fuelux-icon-sort-by-alphabet" ></div>
+	            	<div class="fuelux-icon sort-by-alphabet" ></div>
 	            </div>
 	            <h2>sort-by-alphabet</h2>
 	            <button onclick="showPopover('snippet-sort-by-alphabet')">Show Snippet</button>
 	            <br/>
 	            <button onclick="invertBackground('icon-box-sort-by-alphabet')">Invert Background</button>
 	            <div class="snippet-popover" id="snippet-sort-by-alphabet">
-	                <pre><code>&lt;span class=&quot;fuelux-icon-sort-by-alphabet&quot;&gt;&lt;/span&gt;</code></pre>
+	                <pre><code>&lt;span class=&quot;sort-by-alphabet&quot;&gt;&lt;/span&gt;</code></pre>
 	                <button onclick="hidePopover()">Close</button>
 	            </div>
 	        </li>
@@ -1262,14 +1263,14 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 
 	        <li title="spyglass">
 	            <div class="icon-box" id="icon-box-spyglass">
-	            	<div class="fuelux-icon fuelux-icon-spyglass" ></div>
+	            	<div class="fuelux-icon spyglass" ></div>
 	            </div>
 	            <h2>spyglass</h2>
 	            <button onclick="showPopover('snippet-spyglass')">Show Snippet</button>
 	            <br/>
 	            <button onclick="invertBackground('icon-box-spyglass')">Invert Background</button>
 	            <div class="snippet-popover" id="snippet-spyglass">
-	                <pre><code>&lt;span class=&quot;fuelux-icon-spyglass&quot;&gt;&lt;/span&gt;</code></pre>
+	                <pre><code>&lt;span class=&quot;spyglass&quot;&gt;&lt;/span&gt;</code></pre>
 	                <button onclick="hidePopover()">Close</button>
 	            </div>
 	        </li>
@@ -1281,14 +1282,14 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 
 	        <li title="trash-hover">
 	            <div class="icon-box" id="icon-box-trash-hover">
-	            	<div class="fuelux-icon fuelux-icon-trash-hover" ></div>
+	            	<div class="fuelux-icon trash-hover" ></div>
 	            </div>
 	            <h2>trash-hover</h2>
 	            <button onclick="showPopover('snippet-trash-hover')">Show Snippet</button>
 	            <br/>
 	            <button onclick="invertBackground('icon-box-trash-hover')">Invert Background</button>
 	            <div class="snippet-popover" id="snippet-trash-hover">
-	                <pre><code>&lt;span class=&quot;fuelux-icon-trash-hover&quot;&gt;&lt;/span&gt;</code></pre>
+	                <pre><code>&lt;span class=&quot;trash-hover&quot;&gt;&lt;/span&gt;</code></pre>
 	                <button onclick="hidePopover()">Close</button>
 	            </div>
 	        </li>
@@ -1300,14 +1301,14 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 
 	        <li title="trash">
 	            <div class="icon-box" id="icon-box-trash">
-	            	<div class="fuelux-icon fuelux-icon-trash" ></div>
+	            	<div class="fuelux-icon trash" ></div>
 	            </div>
 	            <h2>trash</h2>
 	            <button onclick="showPopover('snippet-trash')">Show Snippet</button>
 	            <br/>
 	            <button onclick="invertBackground('icon-box-trash')">Invert Background</button>
 	            <div class="snippet-popover" id="snippet-trash">
-	                <pre><code>&lt;span class=&quot;fuelux-icon-trash&quot;&gt;&lt;/span&gt;</code></pre>
+	                <pre><code>&lt;span class=&quot;trash&quot;&gt;&lt;/span&gt;</code></pre>
 	                <button onclick="hidePopover()">Close</button>
 	            </div>
 	        </li>

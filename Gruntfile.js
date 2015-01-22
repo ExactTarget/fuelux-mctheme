@@ -21,7 +21,7 @@ module.exports = function (grunt) {
 		// Tasks configuration
 
 
-		'string-replace-in-icons': {
+		'string-replace': {
 			inline: {
 				files: {
 					"less/icons/icons-svg.less": "less/icons/icons-svg.less",
@@ -337,8 +337,8 @@ module.exports = function (grunt) {
 	/* ----------------
 		Making Icons
 	---------------- */
-	grunt.registerTask( 'make-icons', [ 'grunticon:myIcons', 'string-replace-in-icons' ] );
-	grunt.registerTask( 'glyphify-icons', [ 'string-replace-in-icons' ] );
+	grunt.registerTask( 'make-icons', [ 'grunticon:myIcons', 'string-replace' ] );
+	grunt.registerTask( 'glyphify-icons', [ 'string-replace' ] );
 
 	/* -------------
 		RELEASE
