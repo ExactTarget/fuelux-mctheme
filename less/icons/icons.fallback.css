@@ -14,6 +14,8 @@
 
 .fuelux-icon-checkbox-checked-disabled { background-image: url('png/checkbox-checked-disabled.png'); background-repeat: no-repeat; }
 
+.fuelux-icon-checkbox-checked-hover-active { background-image: url('png/checkbox-checked-hover-active.png'); background-repeat: no-repeat; }
+
 .fuelux-icon-checkbox-checked-hover { background-image: url('png/checkbox-checked-hover.png'); background-repeat: no-repeat; }
 
 .fuelux-icon-checkbox-checked { background-image: url('png/checkbox-checked.png'); background-repeat: no-repeat; }
@@ -50,6 +52,8 @@
 
 .fuelux-icon-copy { background-image: url('png/copy.png'); background-repeat: no-repeat; }
 
+.fuelux-icon-danger { background-image: url('png/danger.png'); background-repeat: no-repeat; }
+
 .fuelux-icon-delete { background-image: url('png/delete.png'); background-repeat: no-repeat; }
 
 .fuelux-icon-download-hover { background-image: url('png/download-hover.png'); background-repeat: no-repeat; }
@@ -78,6 +82,8 @@
 
 .fuelux-icon-gridview-thumbnail { background-image: url('png/gridview-thumbnail.png'); background-repeat: no-repeat; }
 
+.fuelux-icon-info { background-image: url('png/info.png'); background-repeat: no-repeat; }
+
 .fuelux-icon-nyt_exporter_info { background-image: url('png/nyt_exporter_info.png'); background-repeat: no-repeat; }
 
 .fuelux-icon-pencil-hover { background-image: url('png/pencil-hover.png'); background-repeat: no-repeat; }
@@ -88,7 +94,13 @@
 
 .fuelux-icon-plus-sign { background-image: url('png/plus-sign.png'); background-repeat: no-repeat; }
 
+.fuelux-icon-radio-button-active-hover { background-image: url('png/radio-button-active-hover.png'); background-repeat: no-repeat; }
+
+.fuelux-icon-radio-button-active { background-image: url('png/radio-button-active.png'); background-repeat: no-repeat; }
+
 .fuelux-icon-radio-button-checked-disabled { background-image: url('png/radio-button-checked-disabled.png'); background-repeat: no-repeat; }
+
+.fuelux-icon-radio-button-checked-hover-active { background-image: url('png/radio-button-checked-hover-active.png'); background-repeat: no-repeat; }
 
 .fuelux-icon-radio-button-checked-hover { background-image: url('png/radio-button-checked-hover.png'); background-repeat: no-repeat; }
 
@@ -118,7 +130,11 @@
 
 .fuelux-icon-spyglass { background-image: url('png/spyglass.png'); background-repeat: no-repeat; }
 
+.fuelux-icon-success { background-image: url('png/success.png'); background-repeat: no-repeat; }
+
 .fuelux-icon-trash-hover { background-image: url('png/trash-hover.png'); background-repeat: no-repeat; }
 
 .fuelux-icon-trash { background-image: url('png/trash.png'); background-repeat: no-repeat; }
+
+.fuelux-icon-warning { background-image: url('png/warning.png'); background-repeat: no-repeat; }
 

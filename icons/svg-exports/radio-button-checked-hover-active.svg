@@ -3,12 +3,12 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px"
 	 height="20px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
-<g id="radio-button-checked-hover">
+<g id="radio-button-checked-hover-active">
 	<g>
-		<rect id="le_wrappier_56_" style="fill:none;" width="20" height="20"/>
+		<rect id="le_wrappier_23_" style="fill:none;" width="20" height="20"/>
 		<g>
-			<g id="radio_x3D_button-hover_2_">
-				<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="9.9995" y1="0" x2="9.9995" y2="20.0005">
+			<g id="radio_x3D_button-hover_1_">
+				<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="10.0005" y1="20" x2="10.0005" y2="4.882812e-04">
 					<stop  offset="0" style="stop-color:#F2F6FB"/>
 					<stop  offset="0.48" style="stop-color:#F2F6FB"/>
 					<stop  offset="0.5" style="stop-color:#CDDFEC"/>
@@ -26,7 +26,7 @@
 						 M10,0C4.477,0,0,4.477,0,10s4.477,10,10,10c5.524,0,10-4.477,10-10S15.524,0,10,0L10,0z"/>
 				</g>
 			</g>
-			<g id="checked-indicator_10_">
+			<g id="checked-indicator_17_" style="opacity:0.4;">
 				
 					<circle style="fill:none;stroke:#6A8799;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" cx="10" cy="10" r="4.667"/>
 				

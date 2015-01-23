@@ -7,27 +7,21 @@
 	<g>
 		<rect id="le_wrappier_40_" style="fill:none;" width="20" height="20"/>
 		<g id="radio-button_4_">
-			<radialGradient id="SVGID_1_" cx="10" cy="19.917" r="19.8349" gradientUnits="userSpaceOnUse">
-				<stop  offset="0" style="stop-color:#E4E4E4"/>
-				<stop  offset="0.2" style="stop-color:#E4E4E4"/>
-				<stop  offset="0.3" style="stop-color:#E4E4E4"/>
-				<stop  offset="0.88" style="stop-color:#F9FBFD"/>
-				<stop  offset="1" style="stop-color:#FFFFFF"/>
-			</radialGradient>
+			<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="9.9995" y1="0" x2="9.9995" y2="20.0005">
+				<stop  offset="0" style="stop-color:#F5F5F5"/>
+				<stop  offset="0.49" style="stop-color:#F5F5F5"/>
+				<stop  offset="0.5" style="stop-color:#E4E4E4"/>
+				<stop  offset="1" style="stop-color:#E4E4E4"/>
+			</linearGradient>
 			<circle style="fill:url(#SVGID_1_);" cx="10" cy="10" r="10"/>
-			<g style="opacity:0.9;">
-				<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="9.9995" y1="0" x2="9.9995" y2="20.0005">
-					<stop  offset="0" style="stop-color:#FFFFFF"/>
-					<stop  offset="0.3752" style="stop-color:#EFEFEF"/>
-					<stop  offset="0.698" style="stop-color:#EFEFEF"/>
-					<stop  offset="1" style="stop-color:#FFFFFF"/>
-				</linearGradient>
-				<path style="fill:url(#SVGID_2_);" d="M10,0.125c5.445,0,9.875,4.43,9.875,9.875s-4.43,9.875-9.875,9.875S0.125,15.445,0.125,10
-					S4.555,0.125,10,0.125 M10,0C4.476,0,0,4.477,0,10s4.476,10,10,10c5.523,0,10-4.477,10-10S15.523,0,10,0L10,0z"/>
+			<g>
+				<path style="fill:#FFFFFF;" d="M10,1.25c4.825,0,8.75,3.925,8.75,8.75c0,4.825-3.925,8.75-8.75,8.75
+					c-4.825,0-8.75-3.925-8.75-8.75C1.25,5.175,5.175,1.25,10,1.25 M10,0C4.476,0,0,4.477,0,10s4.476,10,10,10
+					c5.523,0,10-4.477,10-10S15.523,0,10,0L10,0z"/>
 			</g>
-			<g style="opacity:0.7;">
-				<path style="fill:#AAAAAA;" d="M10,0.062c5.479,0,9.938,4.458,9.938,9.938S15.479,19.938,10,19.938S0.062,15.479,0.062,10
-					S4.521,0.062,10,0.062 M10,0C4.476,0,0,4.477,0,10s4.476,10,10,10c5.523,0,10-4.477,10-10S15.523,0,10,0L10,0z"/>
+			<g>
+				<path style="fill:#45494D;" d="M10,0.5c5.238,0,9.5,4.262,9.5,9.5s-4.262,9.5-9.5,9.5S0.5,15.238,0.5,10S4.762,0.5,10,0.5 M10,0
+					C4.476,0,0,4.477,0,10s4.476,10,10,10c5.523,0,10-4.477,10-10S15.523,0,10,0L10,0z"/>
 			</g>
 		</g>
 	</g>

@@ -337,7 +337,7 @@ module.exports = function (grunt) {
 	/* ----------------
 		Making Icons
 	---------------- */
-	grunt.registerTask( 'make-icons', [ 'grunticon:myIcons', 'string-replace' ] );
+	grunt.registerTask( 'make-icons', [ 'grunticon:myIcons', 'string-replace', 'dist' ] );
 	grunt.registerTask( 'glyphify-icons', [ 'string-replace' ] );
 
 	/* -------------

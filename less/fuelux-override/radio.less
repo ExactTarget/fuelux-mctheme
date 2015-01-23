@@ -1,79 +1,195 @@
+.radio-button-before() {
+
+	
+	input[type="radio"] {
+		height: 1px;
+		width: 1px;
+		visibility: hidden;
+	}
+	&:before {
+		background: none;
+		border-color: none;
+		.fuelux-icon;
+		.fuelux-icon-radio-button;
+		width: @radio-button-width;
+		height: @radio-button-height;
+		-webkit-appearance: inherit;
+		border: 0px solid transparent;
+		border-radius: 0;
+		content: "" !important;
+		padding: 0;
+	}
+
+	&:after {
+		background: initial;
+		border-radius: initial;
+		content: " ";
+		height: 0;
+		left: 0;
+		position: initial;
+		top: initial;
+		width: initial;
+		display: none;
+	}
+}
+
+
+
 .radio-custom {
 	font-size: 12px;
 	line-height: 20px;
 
-	&:after {
-		display: none;
-	}
+	padding-left: @form-elements-padding;
 
-	&:before {
-		border: none;
-		border-radius: 0;
-		content: " ";
-		height: 15px;
-		padding: 0;
-		.sprite(0, -16px);
-		top: 2px;
-		width: 15px;
-	}
+	.radio-button-before;
 
 	&:hover {
+		.radio-button-before;
 		&:before {
-			.sprite(-16px, -16px);
+			.fuelux-icon-radio-button-hover;
 		}
-
 		&.checked {
+			.radio-button-before;
 			&:before {
-				.sprite(-32px, -16px);
+				.fuelux-icon-radio-button-checked-hover;
+			}
+		}
+	}
+
+	&:active, &:focus {
+		.radio-button-before;
+		&:before {
+			.fuelux-icon-radio-button-active;
+		}
+		&.checked {
+			.radio-button-before;
+			&:before {
+				.fuelux-icon-radio-button-active;
 			}
 		}
 	}
 
 	&.checked {
+		.radio-button-before;
 		&:before {
-			content: " ";
-			.sprite(-48px, -16px);
+			.fuelux-icon-radio-button-checked;
 		}
 	}
-
 	&.disabled {
+		.radio-button-before;
 		&:before {
-			opacity: 1;
-			.sprite(-64px, -16px);
+			.fuelux-icon-radio-button-disabled;
+			// opacity: 1;
 		}
-
 		&.checked {
+			.radio-button-before;
 			&:before {
-				.sprite(-80px, -16px);
+				.fuelux-icon-radio-button-checked-disabled;
 			}
+
 		}
 	}
 
 	&.radio-inline {
-		&:before {
-			top: 2px;
-		}
+
+		@form-elements-padding: unit( ((@radio-button-width-value + (@radio-button-width-value / 5)) * 2), px );
+
+		padding-left: @form-elements-padding;
 
 		&.highlight {
-			&:before {
-				top: 6px;
-			}
+			padding-left: @form-elements-padding;
 		}
+		// &:before {
+		// 	position: initial;
+		// 	left: initial;
+		// 	top: initial;
+		// }
 
-		input {
-			position: absolute;
-		}
+		// input {
+		// 	position: initial;
+		// 	left: initial;
+		// 	top: initial;
+		// }
 	}
 }
 
-@media(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-	.radio-custom:before,
-	.radio-custom:hover:before,
-	.radio-custom.checked:before,
-	.radio-custom.checked:hover:before,
-	.radio-custom.disabled:before,
-	.radio-custom.disabled.checked:before
-	{
-		.sprite2x();
-	}
-}
+
+// .radio-button-custom {
+// 	font-size: 12px;
+// 	line-height: 20px;
+
+// 	&:after {
+// 		display: none;
+// 	}
+
+// 	&:before {
+// 		border: none;
+// 		border-radius: 0;
+// 		content: " ";
+// 		height: 15px;
+// 		padding: 0;
+// 		.sprite(0, -16px);
+// 		top: 2px;
+// 		width: 15px;
+// 	}
+
+// 	&:hover {
+// 		&:before {
+// 			.sprite(-16px, -16px);
+// 		}
+
+// 		&.checked {
+// 			&:before {
+// 				.sprite(-32px, -16px);
+// 			}
+// 		}
+// 	}
+
+// 	&.checked {
+// 		&:before {
+// 			content: " ";
+// 			.sprite(-48px, -16px);
+// 		}
+// 	}
+
+// 	&.disabled {
+// 		&:before {
+// 			opacity: 1;
+// 			.sprite(-64px, -16px);
+// 		}
+
+// 		&.checked {
+// 			&:before {
+// 				.sprite(-80px, -16px);
+// 			}
+// 		}
+// 	}
+
+// 	&.radio-button-inline {
+// 		&:before {
+// 			top: 2px;
+// 		}
+
+// 		&.highlight {
+// 			&:before {
+// 				top: 6px;
+// 			}
+// 		}
+
+// 		input {
+// 			position: absolute;
+// 		}
+// 	}
+// }
+
+// @media(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+// 	.radio-button-custom:before,
+// 	.radio-button-custom:hover:before,
+// 	.radio-button-custom.checked:before,
+// 	.radio-button-custom.checked:hover:before,
+// 	.radio-button-custom.disabled:before,
+// 	.radio-button-custom.disabled.checked:before
+// 	{
+// 		.sprite2x();
+// 	}
+// }
