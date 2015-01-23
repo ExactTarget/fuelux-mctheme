@@ -1,0 +1,72 @@
+.pillbox {
+	border: 1px solid @border-color;
+	&[data-readonly] {
+		> .pill-group > .pill {
+			padding: 4px;
+		}
+	}
+
+	> .pill-group{
+		> .pill {
+			background: @pillbox-pill-background;
+			border: none;
+			box-shadow: none;
+			padding: 4px 16px 4px 4px;
+
+			&.btn-default {
+
+			}
+
+			.glyphicon-close {
+				&:before{
+					background: #fff;
+					border-radius: 2px;
+					content: " ";
+					display: block;
+					height: 10px;
+					position: absolute;
+					top: -8px;
+					width: 10px;
+				}
+
+				&:after {
+					color: #999;
+					content: "\00d7";
+					display: block;
+					height: 10px;
+					position: absolute;
+					top: -11px;
+					width: 10px;
+				}
+
+				&:hover {
+					opacity: 1;
+
+					&:after {
+						color: #f13737;
+					}
+				}
+			}
+		}
+	}
+
+	.pillbox-input-wrap {
+		&.editing {
+			border: 1px solid @pillbox-pill-background;
+			margin: 2px;
+
+			input.pillbox-add-item {
+				height: 18px;
+			}
+		}
+
+		input.pillbox-add-item {
+			height: 17px;
+		}
+	}
+
+	.pillbox-more {
+		color: @blue-steel;
+		line-height: 15px;
+	}
+}

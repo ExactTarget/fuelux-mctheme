@@ -1,0 +1,28 @@
+.breadcrumb {
+	padding: 8px 15px;
+	margin-bottom: 20px;
+	list-style: none;
+	background-color: transparent;
+	border-radius: 0;
+	> li + li:before, > li:first-child:before {
+		.sprite(-210px, -0px);
+		content: '';
+		top: -2px;
+		position: relative;
+		margin: 0 2px;
+
+	}
+	> li:first-child:before {
+		padding: 1px 16px;
+		top: 0;
+	}
+	.active {
+		color: #000000;
+	}
+}
+
+@media(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+	> li + li:before, > li:first-child:before {
+		.sprite2x();
+	}
+}
