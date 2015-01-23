@@ -1717,10 +1717,13 @@ input[type="checkbox"] {
   font-weight: normal;
   cursor: pointer;
 }
-.radio-inline + .radio-inline,
 .checkbox-inline + .checkbox-inline {
   margin-top: 0;
   margin-left: 10px;
+}
+.radio-inline + .radio-inline {
+  margin-top: 0;
+  margin-left: 0px;
 }
 .checkbox-inline input[type="checkbox"] {
   position: static;
@@ -3607,7 +3610,7 @@ a.list-group-item-danger.active:focus {
 .fuelux .checkbox-custom {
   font-size: 12px;
   line-height: 20px;
-  padding-left: 18px;
+  padding-left: 20px;
 }
 .fuelux .checkbox-custom input[type="checkbox"] {
   height: 1px;
@@ -4178,7 +4181,7 @@ a.list-group-item-danger.active:focus {
 .fuelux .radio-custom {
   font-size: 12px;
   line-height: 20px;
-  padding-left: 18px;
+  padding-left: 20px;
 }
 .fuelux .radio-custom input[type="radio"] {
   height: 1px;
@@ -4200,7 +4203,8 @@ a.list-group-item-danger.active:focus {
   border: 0px solid transparent;
   border-radius: 0;
   content: "" !important;
-  padding: 0;
+  padding: 7.5px;
+  top: 2px;
 }
 .fuelux .radio-custom:after {
   background: initial;
@@ -4233,7 +4237,8 @@ a.list-group-item-danger.active:focus {
   border: 0px solid transparent;
   border-radius: 0;
   content: "" !important;
-  padding: 0;
+  padding: 7.5px;
+  top: 2px;
 }
 .fuelux .radio-custom:hover:after {
   background: initial;
@@ -4270,7 +4275,8 @@ a.list-group-item-danger.active:focus {
   border: 0px solid transparent;
   border-radius: 0;
   content: "" !important;
-  padding: 0;
+  padding: 7.5px;
+  top: 2px;
 }
 .fuelux .radio-custom:hover.checked:after {
   background: initial;
@@ -4310,7 +4316,8 @@ a.list-group-item-danger.active:focus {
   border: 0px solid transparent;
   border-radius: 0;
   content: "" !important;
-  padding: 0;
+  padding: 7.5px;
+  top: 2px;
 }
 .fuelux .radio-custom:active:after,
 .fuelux .radio-custom:focus:after {
@@ -4352,7 +4359,8 @@ a.list-group-item-danger.active:focus {
   border: 0px solid transparent;
   border-radius: 0;
   content: "" !important;
-  padding: 0;
+  padding: 7.5px;
+  top: 2px;
 }
 .fuelux .radio-custom:active.checked:after,
 .fuelux .radio-custom:focus.checked:after {
@@ -4392,7 +4400,8 @@ a.list-group-item-danger.active:focus {
   border: 0px solid transparent;
   border-radius: 0;
   content: "" !important;
-  padding: 0;
+  padding: 7.5px;
+  top: 2px;
 }
 .fuelux .radio-custom.checked:after {
   background: initial;
@@ -4429,7 +4438,8 @@ a.list-group-item-danger.active:focus {
   border: 0px solid transparent;
   border-radius: 0;
   content: "" !important;
-  padding: 0;
+  padding: 7.5px;
+  top: 2px;
 }
 .fuelux .radio-custom.disabled:after {
   background: initial;
@@ -4466,7 +4476,8 @@ a.list-group-item-danger.active:focus {
   border: 0px solid transparent;
   border-radius: 0;
   content: "" !important;
-  padding: 0;
+  padding: 7.5px;
+  top: 2px;
 }
 .fuelux .radio-custom.disabled.checked:after {
   background: initial;
@@ -4484,10 +4495,13 @@ a.list-group-item-danger.active:focus {
   background-repeat: no-repeat;
 }
 .fuelux .radio-custom.radio-inline {
-  padding-left: 36px;
+  padding-left: 30px;
 }
 .fuelux .radio-custom.radio-inline.highlight {
-  padding-left: 36px;
+  padding-left: 35px;
+}
+.fuelux .radio-custom.radio-inline.highlight:before {
+  top: 6px;
 }
 .fuelux .repeater .sidebar-toggle .glyphicon.glyphicon-play {
   left: -3px;

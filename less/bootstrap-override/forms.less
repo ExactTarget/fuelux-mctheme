@@ -288,10 +288,13 @@ input[type="checkbox"] {
 	font-weight: normal;
 	cursor: pointer;
 }
-.radio-inline + .radio-inline,
 .checkbox-inline + .checkbox-inline {
 	margin-top: 0;
-	margin-left: 10px; // space out consecutive inline controls
+	margin-left: 10px; // space out of consecutive inline controls
+}
+.radio-inline + .radio-inline  {
+	margin-top: 0;
+	margin-left: 0px; // undo bootstrap's spacing out of consecutive inline controls because our padding already does it.
 }
 
 .checkbox-inline {
