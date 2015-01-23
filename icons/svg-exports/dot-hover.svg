@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px"
+	 height="20px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
+<g id="dot-hover">
+	<g>
+		<rect id="le_wrappier_38_" y="0" style="fill:none;" width="20" height="20"/>
+		<g>
+			<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="9.9995" y1="7.5005" x2="9.9995" y2="12.5005">
+				<stop  offset="0" style="stop-color:#A0C7E7"/>
+				<stop  offset="0.9" style="stop-color:#448CCA"/>
+			</linearGradient>
+			<circle style="fill:url(#SVGID_1_);" cx="10" cy="10" r="2.5"/>
+			<g>
+				<path style="fill:#FFFFFF;" d="M10,8c1.103,0,2,0.897,2,2s-0.897,2-2,2c-1.103,0-2-0.896-2-2S8.897,8,10,8 M10,7.5
+					C8.62,7.5,7.5,8.62,7.5,10c0,1.38,1.12,2.5,2.5,2.5c1.381,0,2.5-1.119,2.5-2.5C12.5,8.62,11.381,7.5,10,7.5L10,7.5z"/>
+			</g>
+			<g>
+				<path style="fill:#6A8799;" d="M10,7.75c1.24,0,2.25,1.009,2.25,2.25s-1.01,2.25-2.25,2.25c-1.241,0-2.25-1.009-2.25-2.25
+					S8.759,7.75,10,7.75 M10,7.5C8.62,7.5,7.5,8.62,7.5,10c0,1.38,1.12,2.5,2.5,2.5c1.381,0,2.5-1.119,2.5-2.5
+					C12.5,8.62,11.381,7.5,10,7.5L10,7.5z"/>
+			</g>
+		</g>
+	</g>
+</g>
+<g id="Layer_1">
+</g>
+</svg>

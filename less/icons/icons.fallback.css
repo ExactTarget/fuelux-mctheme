@@ -56,6 +56,10 @@
 
 .fuelux-icon-delete { background-image: url('png/delete.png'); background-repeat: no-repeat; }
 
+.fuelux-icon-dot-hover { background-image: url('png/dot-hover.png'); background-repeat: no-repeat; }
+
+.fuelux-icon-dot { background-image: url('png/dot.png'); background-repeat: no-repeat; }
+
 .fuelux-icon-download-hover { background-image: url('png/download-hover.png'); background-repeat: no-repeat; }
 
 .fuelux-icon-download { background-image: url('png/download.png'); background-repeat: no-repeat; }
