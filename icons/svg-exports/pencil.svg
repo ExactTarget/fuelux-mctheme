@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px"
+	 height="20px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
+<g id="pencil">
+	<g>
+		<rect id="le_wrappier_72_" style="fill:none;" width="20" height="20"/>
+		<g>
+			<linearGradient id="tip_1_" gradientUnits="userSpaceOnUse" x1="0.167" y1="20" x2="3.7589" y2="16.4081">
+				<stop  offset="0" style="stop-color:#58595B"/>
+				<stop  offset="0.1696" style="stop-color:#5A5B5D"/>
+				<stop  offset="0.2307" style="stop-color:#616263"/>
+				<stop  offset="0.2743" style="stop-color:#6C6D6F"/>
+				<stop  offset="0.3095" style="stop-color:#7D7E7F"/>
+				<stop  offset="0.3397" style="stop-color:#939495"/>
+				<stop  offset="0.3664" style="stop-color:#AFAFAF"/>
+				<stop  offset="0.3899" style="stop-color:#CECECE"/>
+				<stop  offset="0.4" style="stop-color:#DEDEDD"/>
+				<stop  offset="0.995" style="stop-color:#DEDEDD"/>
+			</linearGradient>
+			<polygon id="tip_4_" style="fill-rule:evenodd;clip-rule:evenodd;fill:url(#tip_1_);" points="6.665,20 0,20 0,13.668 
+				0.332,13.367 6.667,19.699 			"/>
+			<linearGradient id="pencil_1_" gradientUnits="userSpaceOnUse" x1="5.4683" y1="8.6001" x2="11.8708" y2="15.0026">
+				<stop  offset="0" style="stop-color:#C6C5C5"/>
+				<stop  offset="0.1097" style="stop-color:#B5B4B4"/>
+				<stop  offset="0.262" style="stop-color:#A5A4A4"/>
+				<stop  offset="0.4323" style="stop-color:#9B9B9B"/>
+				<stop  offset="0.6549" style="stop-color:#989898"/>
+				<stop  offset="0.9512" style="stop-color:#989898"/>
+				<stop  offset="1" style="stop-color:#989898"/>
+			</linearGradient>
+			<polygon id="pencil_4_" style="fill-rule:evenodd;clip-rule:evenodd;fill:url(#pencil_1_);" points="6.596,19.926 16.732,9.668 
+				10.332,3.266 0.191,13.334 			"/>
+			<path id="pencil-outline_3_" style="fill:#989898;" d="M10.331,3.445l6.222,6.223L6.596,19.742l-6.224-6.406L10.331,3.445
+				 M10.332,3.266L0.191,13.334l6.404,6.592L16.732,9.668L10.332,3.266L10.332,3.266z"/>
+			<linearGradient id="erasor_1_" gradientUnits="userSpaceOnUse" x1="12.8984" y1="1.2334" x2="19.207" y2="7.542">
+				<stop  offset="0" style="stop-color:#C6C5C5"/>
+				<stop  offset="0.1097" style="stop-color:#B5B4B4"/>
+				<stop  offset="0.262" style="stop-color:#A5A4A4"/>
+				<stop  offset="0.4323" style="stop-color:#9B9B9B"/>
+				<stop  offset="0.6549" style="stop-color:#989898"/>
+				<stop  offset="0.9512" style="stop-color:#989898"/>
+				<stop  offset="1" style="stop-color:#989898"/>
+			</linearGradient>
+			<polygon id="erasor_3_" style="fill-rule:evenodd;clip-rule:evenodd;fill:url(#erasor_1_);" points="18.066,8.334 20,6.402 
+				13.598,0 11.665,1.932 			"/>
+			<path id="erasor-outline_3_" style="fill:#989898;" d="M13.598,0.182l6.22,6.221l-1.751,1.75l-6.219-6.221L13.598,0.182
+				 M13.598,0l-1.933,1.932l6.401,6.402L20,6.402L13.598,0L13.598,0z"/>
+		</g>
+	</g>
+</g>
+<g id="Layer_1">
+</g>
+</svg>

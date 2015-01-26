@@ -3,7 +3,7 @@
 module.exports = function (grunt) {
 
 	// use --no-livereload to disable livereload. Helpful to 'serve' multiple projects
-	var isLivereloadEnabled = (typeof grunt.option('livereload') !== 'undefined') ? grunt.option('livereload') : true;
+	var isLivereloadEnabled = (typeof grunt.option('livereload') !== 'undefined') ? grunt.option('livereload') : 35730;
 
 	// release minor or patch version. Do major releases manually
 	var versionReleaseType = (typeof grunt.option('minor') !== 'undefined') ? 'minor':'patch';
@@ -24,6 +24,64 @@ module.exports = function (grunt) {
 		' */\n',
 		pkg: grunt.file.readJSON('package.json'),
 		// Tasks configuration
+
+
+		'string-replace': {
+			inline: {
+				files: {
+					"less/icons/icons-svg.less": "less/icons/icons-svg.less",
+					"less/icons/icons-png.css": "less/icons/icons-png.css",
+					"less/icons/icons-png-fallback.css": "less/icons/icons-png-fallback.css"
+				},
+				options: {
+					replacements: [
+						// place files inline example
+					// 	{
+					// 		pattern: '(\.-?[_a-zA-Z]+[_a-zA-Z0-9-]*\s*)\{',
+					// 		replacement: '.yo "$0"'
+					// 	}
+					// ,	
+					
+					{
+						pattern:  /\.fuelux-icon(-?[_a-zA-Z]+[_a-zA-Z0-9-]*)\s*/g,
+						replacement: '.fuelux-icon$1, .glyphicon$1 '
+					}
+					
+					,
+					{
+						pattern:  /(\.-?[_a-zA-Z]+[_a-zA-Z0-9-]*)-hover-focus\s*/g,
+						replacement: 'button:hover:focus > $1, $1-hover-focus, $1:hover:focus '
+					}
+
+
+					,
+					{
+						pattern:  /(\.-?[_a-zA-Z]+[_a-zA-Z0-9-]*)-active\s*/g,
+						replacement: 'button:active > $1, $1-active, $1:active '
+					}
+
+					,
+					{
+						pattern:  /(\.-?[_a-zA-Z]+[_a-zA-Z0-9-]*)-focus\s*/g,
+						replacement: 'button:focus > $1, $1-focus, $1:focus '
+					}
+
+					,
+					{
+						pattern:  /(\.-?[_a-zA-Z]+[_a-zA-Z0-9-]*)-hover\s*/g,
+						replacement: 'button:hover > $1, $1-hover, $1:hover '
+					}
+					// ,{
+					// 	pattern:  /(\.-?[_a-zA-Z]+[_a-zA-Z0-9-]*)-hover\s*\{/g,
+					// 	replacement: 'button:hover > $1, $1-hover {'
+					// }
+					]
+				}
+			}
+		},
+
+
+
 		bump: {
 			options: {
 				files: [ 'bower.json', 'package.json' ],
@@ -93,7 +151,29 @@ module.exports = function (grunt) {
 		// Micro libraries via http://microjs.com/
 			'docs.zip': 'https://github.com/twbs/bootstrap/archive/master.zip'
 		},
+
 		grunticon: {
+			myIcons: {
+				files: [ {
+					expand: true,
+					cwd: "icons/svg-exports",
+					src: [ '*.svg', '*.png' ],
+					dest: "less/icons"
+				} ],
+				options: {
+					"cssprefix": ".fuelux-icon-",
+					"datasvgcss": "icons-svg.less",
+					"datapngcss": "icons-png.css",
+					"urlpngcss": "icons-png-fallback.css",
+					"defaultWidth": "20px",
+					"defaultHeight": "20px",
+					"previewTemplate": "icons/preview.hbs"
+				}
+			}
+		},
+
+
+		grunticonSuspect: {
 			dist: {
 				files: [{
 					expand: true,
@@ -253,11 +333,21 @@ module.exports = function (grunt) {
 	grunt.registerTask('distzip', ['copy:zipsrc', 'compress', 'clean:zipsrc']);
 
 	// Full distribution task
-	grunt.registerTask('dist', ['clean:dist', 'copy:img', 'distcss', 'distzip']);
+	grunt.registerTask('dist', ['clean:dist', 'make-icons', 'copy:img', 'distcss', 'distzip']);
 
-	//The default build task
+	// The default build task
 	grunt.registerTask('default', ['dist']);
 
+
+	// SVG Icon Making Tools
+	grunt.loadNpmTasks( 'grunt-grunticon' );
+
+
+	/* ----------------
+		Making Icons
+	---------------- */
+	grunt.registerTask( 'make-icons', [ 'grunticon:myIcons', 'string-replace'] );
+	grunt.registerTask( 'glyphify-icons', [ 'string-replace' ] );
 
 	/* -------------
 		RELEASE

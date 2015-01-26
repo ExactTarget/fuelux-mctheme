@@ -1,3 +1,18 @@
+@import "icons/icons-svg.less";
+
+
+.fuelux-icon, .glyphicon {
+	background-size: cover;
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	button:hover > & {
+	}
+	&:before {
+		content: "";
+	}
+}
+
 .mcthemeicon-breadcrumb {
 	width: 10px;
 	height: 12px;
@@ -10,3 +25,13 @@
 		.sprite2x();
 	}
 }
+
+
+// The columns configure icon has a little gear sticking out of it, making it need to be bigger than the other column type icons in a repeater toolbar, so that the columns box itself appears to be the same size. The marging-bottom is so that it aligns correctly, and it's container button is the same size as the rest of the buttons in the toolbar.
+.fuelux-icon.fuelux-icon-gridview-columns-configure {
+	width: 18px;
+	height: 18px;
+	margin-bottom: -5px;
+}
+
+

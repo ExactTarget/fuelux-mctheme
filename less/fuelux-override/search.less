@@ -11,11 +11,11 @@
 
 	&.searched .input-group-btn button {
 		&:hover .glyphicon {
-			.sprite(-171px, -35px);
+			// .sprite(-171px, -35px);
 		}
 
 		.glyphicon {
-			.sprite(-147px, -35px);
+			// .sprite(-147px, -35px);
 		}
 	}
 
@@ -37,19 +37,19 @@
 		button {
 			background: none;
 			border: none;
-			padding: 0 2px;
+			padding: 1px 2px;
 
 			&:hover {
 				.glyphicon {
-					.sprite(-123px, -35px);
+					// .sprite(-123px, -35px);
 				}
 			}
 
 			.glyphicon {
-				background: red;
-				height: 17px;
-				.sprite(-99px, -35px);
 				width: 17px;
+				height: 17px;
+				position: relative;
+				// top: 0.5px;
 
 				&:before {
 					display: none;
@@ -65,6 +65,6 @@
 	.search.searched .input-group-btn button .glyphicon,
 	.search.searched .input-group-btn button:hover .glyphicon,
 	{
-		.sprite2x();
+		// .sprite2x();
 	}
 }

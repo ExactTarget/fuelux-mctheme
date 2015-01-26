@@ -4,7 +4,7 @@
 			background: transparent;
 
 			.glyphicon-calendar {
-				.sprite(-112px, -17px);
+				// .sprite(-112px, -17px);
 			}
 		}
 	}
@@ -36,7 +36,7 @@
 			border-color: #ccc;
 
 			.glyphicon-calendar {
-				.sprite(-112px, -17px);
+				// .sprite(-112px, -17px);
 			}
 		}
 
@@ -46,13 +46,13 @@
 			opacity: 1;
 
 			.glyphicon-calendar {
-				.sprite(-128px, -17px);
+				// .sprite(-128px, -17px);
 			}
 		}
 
 		.glyphicon-calendar {
 			height: 15px;
-			.sprite(-96px, -17px);
+			// .sprite(-96px, -17px);
 			width: 15px;
 			top: 0;
 
@@ -131,8 +131,19 @@
 							color: #bbb;
 
 							&:before {
-								display: none;
+								border-top: 1px solid #a94442;
+								bottom: 0;
+								content: " ";
+								display: block;
+								left: 5px;
+								position: absolute;
+								right: 5px;
+								top: 50%;
 							}
+						}
+
+						b {
+							line-height: 15px;
 						}
 					}
 
@@ -323,6 +334,6 @@
 	.datepicker .dropdown-toggle[disabled] .glyphicon-calendar,
 	.datepicker:hover .dropdown-toggle .glyphicon-calendar,
 	{
-		.sprite2x();
+		// .sprite2x();
 	}
 }
