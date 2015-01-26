@@ -324,7 +324,7 @@ module.exports = function (grunt) {
 	grunt.registerTask('distzip', ['copy:zipsrc', 'compress', 'clean:zipsrc']);
 
 	// Full distribution task
-	grunt.registerTask('dist', ['clean:dist', 'copy:img', 'distcss', 'distzip']);
+	grunt.registerTask('dist', ['clean:dist', 'make-icons', 'copy:img', 'distcss', 'distzip']);
 
 	// The default build task
 	grunt.registerTask('default', ['dist']);
@@ -337,7 +337,7 @@ module.exports = function (grunt) {
 	/* ----------------
 		Making Icons
 	---------------- */
-	grunt.registerTask( 'make-icons', [ 'grunticon:myIcons', 'string-replace', 'dist' ] );
+	grunt.registerTask( 'make-icons', [ 'grunticon:myIcons', 'string-replace'] );
 	grunt.registerTask( 'glyphify-icons', [ 'string-replace' ] );
 
 	/* -------------
