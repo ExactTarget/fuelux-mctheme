@@ -100,3 +100,10 @@ You run the task "make-icons" itself:
 
 When the "make-icons" task is called, each of the .svg files is gathered together and described in a .less file, and then some regular expressions are performed on the .less file ot transform the rules to match our needs better.
 
+
+
+
+## Other Information
+
+- The JavaScript used to export individual .svg files from Illustrator was originally found at: https://github.com/mericson/illustrator-scripts
+- The Illustrator source art file was created with `-20px` in its name to allow for the eventuality that icons bigger than twenty pixels will be created. `¯\_(ツ)_/¯`
