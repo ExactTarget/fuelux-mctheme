@@ -25,6 +25,8 @@ module.exports = function (grunt) {
 			inline: {
 				files: {
 					"less/icons/icons-svg.less": "less/icons/icons-svg.less",
+					"less/icons/icons-png.css": "less/icons/icons-png.css",
+					"less/icons/icons-png-fallback.css": "less/icons/icons-png-fallback.css"
 				},
 				options: {
 					replacements: [
@@ -156,6 +158,8 @@ module.exports = function (grunt) {
 				options: {
 					"cssprefix": ".fuelux-icon-",
 					"datasvgcss": "icons-svg.less",
+					"datapngcss": "icons-png.css",
+					"urlpngcss": "icons-png-fallback.css",
 					"defaultWidth": "20px",
 					"defaultHeight": "20px",
 					"previewTemplate": "icons/preview.hbs"

@@ -1,1608 +1,340 @@
-<!doctype HTML>
-<html>
-	<head>
-		<title>Icons Preview!</title>
-		<meta charset="utf-8">
+<!DOCTYPE html>
+<html lang="en" class="glyphicon glyphicon-fuelux">
+<head>
+	<meta charset="utf-8">
+	<title>Fuel UX 3</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style type="text/css">@CHARSET "UTF-8";
-    * {
-        box-sizing: border-box;
-    }
-    body {
-        padding: 0;
-        margin: 0;
-        color: #666;
-        background: #fafafa;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 1em;
-        line-height: 1.4
-    }
+	<link href="../../bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="../../bower_components/fuelux/dist/css/fuelux.css" rel="stylesheet" type="text/css">
 
-    header {
-        display: block;
-        padding: 3em 3em 2em 3em;
-        background-color: #fff
-    }
+	<link href="../../dist/css/fuelux-mctheme.css" rel="stylesheet" type="text/css">
 
-    header p {
-        margin: 0 0 0 0;
-    }
+	<!--CLIENT-SIDE LESS COMPILATION FOR WATCHER-LESS DEV-->
+	<!--<link href="../../less/fuelux-mctheme.less" rel="stylesheet/less" type="text/css"/>-->
+	<!--<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.7.0/less.min.js"></script>-->
+	<!--<script type="text/javascript">if(window.console && window.console.clear){ window.console.clear(); }</script>-->
 
-    nav {
-        font-size: .7em;
-        display: block;
-        width: 100%;
-        margin: 0 0 2em 0
-    }
+	<link href="../../examples/fuelux/fuelux-examples.css" rel="stylesheet" type="text/css">
 
-    nav a {
-        display: inline-block;
-        text-decoration: none;
-        margin-left: 2em;
-        color: #0f7595;
-        white-space: nowrap
-    }
-
-    nav a:hover {
-        text-decoration: underline
-    }
-
-    nav a.current {
-        font-weight: bold;
-        text-decoration: underline;
-        color: #666
-    }
-
-    section {
-        border-top: 1px solid #eee;
-        padding: 2em 3em 0 3em
-    }
-
-    ul {
-        margin: 0;
-        padding: 0
-    }
-
-    .icon-boxes li {
-        display: inline-block;
-        background-color: #fff;
-        position: relative;
-        margin: 0 2em 2em 0;
-        vertical-align: top;
-        border: 1px solid #ccc;
-        padding: 1em 1em 1em 1em;
-        cursor: default
-    }
-
-    .icon-box {
-        margin: 0;
-        width: 144px;
-        height: 144px;
-        position: relative;
-        background: #ccc url(data:image/gif;base64,R0lGODlhDAAMAIAAAMzMzP///yH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4wLWMwNjEgNjQuMTQwOTQ5LCAyMDEwLzEyLzA3LTEwOjU3OjAxICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1LjEgV2luZG93cyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozQjk4OTI0MUY5NTIxMUUyQkJDMEI5NEFEM0Y1QTYwQyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozQjk4OTI0MkY5NTIxMUUyQkJDMEI5NEFEM0Y1QTYwQyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjNCOTg5MjNGRjk1MjExRTJCQkMwQjk0QUQzRjVBNjBDIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjNCOTg5MjQwRjk1MjExRTJCQkMwQjk0QUQzRjVBNjBDIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+Af/+/fz7+vn49/b19PPy8fDv7u3s6+rp6Ofm5eTj4uHg397d3Nva2djX1tXU09LR0M/OzczLysnIx8bFxMPCwcC/vr28u7q5uLe2tbSzsrGwr66trKuqqainpqWko6KhoJ+enZybmpmYl5aVlJOSkZCPjo2Mi4qJiIeGhYSDgoGAf359fHt6eXh3dnV0c3JxcG9ubWxramloZ2ZlZGNiYWBfXl1cW1pZWFdWVVRTUlFQT05NTEtKSUhHRkVEQ0JBQD8+PTw7Ojk4NzY1NDMyMTAvLi0sKyopKCcmJSQjIiEgHx4dHBsaGRgXFhUUExIREA8ODQwLCgkIBwYFBAMCAQAAIfkEAAAAAAAsAAAAAAwADAAAAhaEH6mHmmzcgzJAUG/NVGrfOZ8YLlABADs=) top left repeat;
-        border: 1px solid #ccc;
-        display: table-cell;
-        vertical-align: middle;
-        text-align: center
-    }
-    .icon-box.inverted {
-        background: black;
-    }
-
-    .icon {
-        display: inline;
-        display: inline-block
-    }
-
-    .snippet-popover {
-        position: absolute;
-        display: none;
-        opacity: 0;
-        bottom: 0;
-        left: 0;
-        background: white;
-        border: 1px solid #ccc;
-        padding: 16px;
-        z-index: 1;
-        transition: all .3s;
-    }
-    .snippet-popover.active {
-        display: block;
-        opacity: 1;
-    }
-
-    pre {
-        margin: 0;
-        margin-bottom: 20px;
-    }
-
-    h2 {
-        margin: 0;
-        padding: 5px 0;
-        font-size: 1em;
-        font-weight: normal;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-
-    h4 {
-        margin: 0;
-    }
-
-    footer {
-        display: block;
-        margin: 0;
-        padding: 0 3em 3em 3em
-    }
-
-    footer p {
-        margin: 0;
-        font-size: .7em
-    }
-
-    footer a {
-        color: #0f7595;
-        margin-left: 0
-    }
-
-.fuelux-icon {
-	display: inline-block;
-	background-size: cover;
-	width: 20px;
-	height: 20px;
-}
-
-    </style>
-
-		<script>
-			/*! grunt-grunticon Stylesheet Loader - v2.0.0-beta.4 | https://github.com/filamentgroup/grunticon | (c) 2015 Scott Jehl, Filament Group, Inc. | MIT license. */
-
-(function(e){function t(t,n,r){"use strict";function a(){for(var e,n=0;c.length>n;n++)c[n].href&&c[n].href.indexOf(t)>-1&&(e=!0);e?o.media=r||"all":setTimeout(a)}var o=e.document.createElement("link"),i=n||e.document.getElementsByTagName("script")[0],c=e.document.styleSheets;return o.rel="stylesheet",o.href=t,o.media="only x",i.parentNode.insertBefore(o,i),a(),o}var n=function(r){"use strict";if(r&&3===r.length){var a=e.navigator,o=e.Image,i=!(!document.createElementNS||!document.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect||!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1")||e.opera&&-1===a.userAgent.indexOf("Chrome")||-1!==a.userAgent.indexOf("Series40")),c=new o;c.onerror=function(){n.method="png",t(r[2])},c.onload=function(){var e=1===c.width&&1===c.height,a=r[e&&i?0:e?1:2];n.method=e&&i?"svg":e?"datapng":"png",n.href=a,t(a)},c.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==",document.documentElement.className+=" grunticon"}};n.loadCSS=t,e.grunticon=n})(this);
-
-			grunticon(["icons-svg.less", "icons.data.png.css", "icons.fallback.css"]);
-		</script>
-		<noscript><link href="icons.fallback.css" rel="stylesheet"></noscript>
-
-	</head>
-	<body>
-		
-    <h1 id="logo">Fuel UX Marketing Cloud Theme Icons</h1>
-    <h4>Files Generated:</h4>
-    <ol>
-        <li><a href="{config.cssFile}">{config.cssFile}</a></li>
-        <li><a href="{config.svg.sprite}">{config.svg.sprite}</a></li>
-    </ol>
-    <h4>Usage:</h4>
-    <ol>
-        <li>
-            Include the <a href="{config.cssFile}">CSS file</a> into your project.
-        </li>
-        <li>
-            Paste one of the snippets anywhere into your website.
-        </li>
-    </ol>
-</header>
-<section>
-    <nav>
-    	<button onclick="toggleMode()">Toggle PNG/SVG</button> (showing <span id="mode-view">SVG</span>)
-    	<br>
-    	<br>
-    	<input type="range" onchange="setSize(this.value)" min="1" max="200">
-	</nav>
-
-
-		<ul class="icon-boxes">
-
+	<script src="../../bower_components/requirejs/require.js"></script>
+	<script type="text/javascript">
+		(function () {
+			requirejs.config({
+				config: {
+					moment: {
+						noGlobal: true
+					}
+				},
+				paths: {
+					jquery: '../../bower_components/jquery/dist/jquery',
+					underscore: '../../bower_components/underscore/underscore',
+					bootstrap: '../../bower_components/bootstrap/dist/js/bootstrap',
+					//moment: '../../bower_components/moment/min/moment-with-langs',
+					fuelux: '../../bower_components/fuelux/dist/js/fuelux'
+				},
+				shim: {
+					'bootstrap': {
+						deps: ['jquery'],
+						exports: 'bootstrap'
+					}
+				}
+			});
+		})();
+		require(['jquery', 'main'], function($){ });
+	</script>
+</head>
+<body>
+	<div class="container" id="mainWrapper">
 		
 			
-
-	        <li title="calendar-hover">
-	            <div class="icon-box" id="icon-box-calendar-hover">
-	            	<div class="fuelux-icon calendar-hover" ></div>
-	            </div>
-	            <h2>calendar-hover</h2>
-	            <button onclick="showPopover('snippet-calendar-hover')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-calendar-hover')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-calendar-hover">
-	                <pre><code>&lt;span class=&quot;calendar-hover&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-calendar-hover:</code></pre><div class="glyphicon glyphicon-calendar-hover" style="width: 20px; height: 20px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="calendar">
-	            <div class="icon-box" id="icon-box-calendar">
-	            	<div class="fuelux-icon calendar" ></div>
-	            </div>
-	            <h2>calendar</h2>
-	            <button onclick="showPopover('snippet-calendar')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-calendar')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-calendar">
-	                <pre><code>&lt;span class=&quot;calendar&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-calendar:</code></pre><div class="glyphicon glyphicon-calendar" style="width: 20px; height: 20px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="caret-down-hover">
-	            <div class="icon-box" id="icon-box-caret-down-hover">
-	            	<div class="fuelux-icon caret-down-hover" ></div>
-	            </div>
-	            <h2>caret-down-hover</h2>
-	            <button onclick="showPopover('snippet-caret-down-hover')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-caret-down-hover')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-caret-down-hover">
-	                <pre><code>&lt;span class=&quot;caret-down-hover&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-caret-down-hover:</code></pre><div class="glyphicon glyphicon-caret-down-hover" style="width: 20px; height: 20px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="caret-down">
-	            <div class="icon-box" id="icon-box-caret-down">
-	            	<div class="fuelux-icon caret-down" ></div>
-	            </div>
-	            <h2>caret-down</h2>
-	            <button onclick="showPopover('snippet-caret-down')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-caret-down')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-caret-down">
-	                <pre><code>&lt;span class=&quot;caret-down&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-caret-down:</code></pre><div class="glyphicon glyphicon-caret-down" style="width: 20px; height: 20px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="caret-right-hover">
-	            <div class="icon-box" id="icon-box-caret-right-hover">
-	            	<div class="fuelux-icon caret-right-hover" ></div>
-	            </div>
-	            <h2>caret-right-hover</h2>
-	            <button onclick="showPopover('snippet-caret-right-hover')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-caret-right-hover')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-caret-right-hover">
-	                <pre><code>&lt;span class=&quot;caret-right-hover&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-caret-right-hover:</code></pre><div class="glyphicon glyphicon-caret-right-hover" style="width: 20px; height: 20px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="caret-right">
-	            <div class="icon-box" id="icon-box-caret-right">
-	            	<div class="fuelux-icon caret-right" ></div>
-	            </div>
-	            <h2>caret-right</h2>
-	            <button onclick="showPopover('snippet-caret-right')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-caret-right')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-caret-right">
-	                <pre><code>&lt;span class=&quot;caret-right&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-caret-right:</code></pre><div class="glyphicon glyphicon-caret-right" style="width: 20px; height: 20px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="checkbox-active-hover">
-	            <div class="icon-box" id="icon-box-checkbox-active-hover">
-	            	<div class="fuelux-icon checkbox-active-hover" ></div>
-	            </div>
-	            <h2>checkbox-active-hover</h2>
-	            <button onclick="showPopover('snippet-checkbox-active-hover')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-checkbox-active-hover')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-checkbox-active-hover">
-	                <pre><code>&lt;span class=&quot;checkbox-active-hover&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-checkbox-active-hover:</code></pre><div class="glyphicon glyphicon-checkbox-active-hover" style="width: 20px; height: 20px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="checkbox-active">
-	            <div class="icon-box" id="icon-box-checkbox-active">
-	            	<div class="fuelux-icon checkbox-active" ></div>
-	            </div>
-	            <h2>checkbox-active</h2>
-	            <button onclick="showPopover('snippet-checkbox-active')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-checkbox-active')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-checkbox-active">
-	                <pre><code>&lt;span class=&quot;checkbox-active&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-checkbox-active:</code></pre><div class="glyphicon glyphicon-checkbox-active" style="width: 20px; height: 20px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="checkbox-checked-disabled">
-	            <div class="icon-box" id="icon-box-checkbox-checked-disabled">
-	            	<div class="fuelux-icon checkbox-checked-disabled" ></div>
-	            </div>
-	            <h2>checkbox-checked-disabled</h2>
-	            <button onclick="showPopover('snippet-checkbox-checked-disabled')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-checkbox-checked-disabled')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-checkbox-checked-disabled">
-	                <pre><code>&lt;span class=&quot;checkbox-checked-disabled&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-checkbox-checked-disabled:</code></pre><div class="glyphicon glyphicon-checkbox-checked-disabled" style="width: 20px; height: 20px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="checkbox-checked-hover-active">
-	            <div class="icon-box" id="icon-box-checkbox-checked-hover-active">
-	            	<div class="fuelux-icon checkbox-checked-hover-active" ></div>
-	            </div>
-	            <h2>checkbox-checked-hover-active</h2>
-	            <button onclick="showPopover('snippet-checkbox-checked-hover-active')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-checkbox-checked-hover-active')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-checkbox-checked-hover-active">
-	                <pre><code>&lt;span class=&quot;checkbox-checked-hover-active&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-checkbox-checked-hover-active:</code></pre><div class="glyphicon glyphicon-checkbox-checked-hover-active" style="width: 20px; height: 20px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="checkbox-checked-hover">
-	            <div class="icon-box" id="icon-box-checkbox-checked-hover">
-	            	<div class="fuelux-icon checkbox-checked-hover" ></div>
-	            </div>
-	            <h2>checkbox-checked-hover</h2>
-	            <button onclick="showPopover('snippet-checkbox-checked-hover')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-checkbox-checked-hover')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-checkbox-checked-hover">
-	                <pre><code>&lt;span class=&quot;checkbox-checked-hover&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-checkbox-checked-hover:</code></pre><div class="glyphicon glyphicon-checkbox-checked-hover" style="width: 20px; height: 20px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="checkbox-checked">
-	            <div class="icon-box" id="icon-box-checkbox-checked">
-	            	<div class="fuelux-icon checkbox-checked" ></div>
-	            </div>
-	            <h2>checkbox-checked</h2>
-	            <button onclick="showPopover('snippet-checkbox-checked')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-checkbox-checked')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-checkbox-checked">
-	                <pre><code>&lt;span class=&quot;checkbox-checked&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-checkbox-checked:</code></pre><div class="glyphicon glyphicon-checkbox-checked" style="width: 20px; height: 20px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="checkbox-disabled">
-	            <div class="icon-box" id="icon-box-checkbox-disabled">
-	            	<div class="fuelux-icon checkbox-disabled" ></div>
-	            </div>
-	            <h2>checkbox-disabled</h2>
-	            <button onclick="showPopover('snippet-checkbox-disabled')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-checkbox-disabled')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-checkbox-disabled">
-	                <pre><code>&lt;span class=&quot;checkbox-disabled&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-checkbox-disabled:</code></pre><div class="glyphicon glyphicon-checkbox-disabled" style="width: 20px; height: 20px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="checkbox-hover">
-	            <div class="icon-box" id="icon-box-checkbox-hover">
-	            	<div class="fuelux-icon checkbox-hover" ></div>
-	            </div>
-	            <h2>checkbox-hover</h2>
-	            <button onclick="showPopover('snippet-checkbox-hover')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-checkbox-hover')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-checkbox-hover">
-	                <pre><code>&lt;span class=&quot;checkbox-hover&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-checkbox-hover:</code></pre><div class="glyphicon glyphicon-checkbox-hover" style="width: 20px; height: 20px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="checkbox-intermediate-disabled">
-	            <div class="icon-box" id="icon-box-checkbox-intermediate-disabled">
-	            	<div class="fuelux-icon checkbox-intermediate-disabled" ></div>
-	            </div>
-	            <h2>checkbox-intermediate-disabled</h2>
-	            <button onclick="showPopover('snippet-checkbox-intermediate-disabled')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-checkbox-intermediate-disabled')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-checkbox-intermediate-disabled">
-	                <pre><code>&lt;span class=&quot;checkbox-intermediate-disabled&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-checkbox-intermediate-disabled:</code></pre><div class="glyphicon glyphicon-checkbox-intermediate-disabled" style="width: 20px; height: 20px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="checkbox-intermediate-hover">
-	            <div class="icon-box" id="icon-box-checkbox-intermediate-hover">
-	            	<div class="fuelux-icon checkbox-intermediate-hover" ></div>
-	            </div>
-	            <h2>checkbox-intermediate-hover</h2>
-	            <button onclick="showPopover('snippet-checkbox-intermediate-hover')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-checkbox-intermediate-hover')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-checkbox-intermediate-hover">
-	                <pre><code>&lt;span class=&quot;checkbox-intermediate-hover&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-checkbox-intermediate-hover:</code></pre><div class="glyphicon glyphicon-checkbox-intermediate-hover" style="width: 20px; height: 20px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="checkbox-intermediate">
-	            <div class="icon-box" id="icon-box-checkbox-intermediate">
-	            	<div class="fuelux-icon checkbox-intermediate" ></div>
-	            </div>
-	            <h2>checkbox-intermediate</h2>
-	            <button onclick="showPopover('snippet-checkbox-intermediate')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-checkbox-intermediate')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-checkbox-intermediate">
-	                <pre><code>&lt;span class=&quot;checkbox-intermediate&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-checkbox-intermediate:</code></pre><div class="glyphicon glyphicon-checkbox-intermediate" style="width: 20px; height: 20px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="checkbox">
-	            <div class="icon-box" id="icon-box-checkbox">
-	            	<div class="fuelux-icon checkbox" ></div>
-	            </div>
-	            <h2>checkbox</h2>
-	            <button onclick="showPopover('snippet-checkbox')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-checkbox')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-checkbox">
-	                <pre><code>&lt;span class=&quot;checkbox&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-checkbox:</code></pre><div class="glyphicon glyphicon-checkbox" style="width: 20px; height: 20px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="checked-indicator">
-	            <div class="icon-box" id="icon-box-checked-indicator">
-	            	<div class="fuelux-icon checked-indicator" ></div>
-	            </div>
-	            <h2>checked-indicator</h2>
-	            <button onclick="showPopover('snippet-checked-indicator')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-checked-indicator')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-checked-indicator">
-	                <pre><code>&lt;span class=&quot;checked-indicator&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-checked-indicator:</code></pre><div class="glyphicon glyphicon-checked-indicator" style="width: 20.349px; height: 20px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="chevron-down">
-	            <div class="icon-box" id="icon-box-chevron-down">
-	            	<div class="fuelux-icon chevron-down" ></div>
-	            </div>
-	            <h2>chevron-down</h2>
-	            <button onclick="showPopover('snippet-chevron-down')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-chevron-down')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-chevron-down">
-	                <pre><code>&lt;span class=&quot;chevron-down&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-chevron-down:</code></pre><div class="glyphicon glyphicon-chevron-down" style="width: 19.999px; height: 20px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="chevron-left-hover">
-	            <div class="icon-box" id="icon-box-chevron-left-hover">
-	            	<div class="fuelux-icon chevron-left-hover" ></div>
-	            </div>
-	            <h2>chevron-left-hover</h2>
-	            <button onclick="showPopover('snippet-chevron-left-hover')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-chevron-left-hover')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-chevron-left-hover">
-	                <pre><code>&lt;span class=&quot;chevron-left-hover&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-chevron-left-hover:</code></pre><div class="glyphicon glyphicon-chevron-left-hover" style="width: 20px; height: 20.001px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="chevron-left">
-	            <div class="icon-box" id="icon-box-chevron-left">
-	            	<div class="fuelux-icon chevron-left" ></div>
-	            </div>
-	            <h2>chevron-left</h2>
-	            <button onclick="showPopover('snippet-chevron-left')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-chevron-left')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-chevron-left">
-	                <pre><code>&lt;span class=&quot;chevron-left&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-chevron-left:</code></pre><div class="glyphicon glyphicon-chevron-left" style="width: 20px; height: 20px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="chevron-right-hover">
-	            <div class="icon-box" id="icon-box-chevron-right-hover">
-	            	<div class="fuelux-icon chevron-right-hover" ></div>
-	            </div>
-	            <h2>chevron-right-hover</h2>
-	            <button onclick="showPopover('snippet-chevron-right-hover')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-chevron-right-hover')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-chevron-right-hover">
-	                <pre><code>&lt;span class=&quot;chevron-right-hover&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-chevron-right-hover:</code></pre><div class="glyphicon glyphicon-chevron-right-hover" style="width: 20px; height: 20px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="chevron-right">
-	            <div class="icon-box" id="icon-box-chevron-right">
-	            	<div class="fuelux-icon chevron-right" ></div>
-	            </div>
-	            <h2>chevron-right</h2>
-	            <button onclick="showPopover('snippet-chevron-right')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-chevron-right')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-chevron-right">
-	                <pre><code>&lt;span class=&quot;chevron-right&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-chevron-right:</code></pre><div class="glyphicon glyphicon-chevron-right" style="width: 20px; height: 20px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="chevron-up">
-	            <div class="icon-box" id="icon-box-chevron-up">
-	            	<div class="fuelux-icon chevron-up" ></div>
-	            </div>
-	            <h2>chevron-up</h2>
-	            <button onclick="showPopover('snippet-chevron-up')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-chevron-up')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-chevron-up">
-	                <pre><code>&lt;span class=&quot;chevron-up&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-chevron-up:</code></pre><div class="glyphicon glyphicon-chevron-up" style="width: 20.001px; height: 20px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="close-content-block">
-	            <div class="icon-box" id="icon-box-close-content-block">
-	            	<div class="fuelux-icon close-content-block" ></div>
-	            </div>
-	            <h2>close-content-block</h2>
-	            <button onclick="showPopover('snippet-close-content-block')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-close-content-block')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-close-content-block">
-	                <pre><code>&lt;span class=&quot;close-content-block&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-close-content-block:</code></pre><div class="glyphicon glyphicon-close-content-block" style="width: 20px; height: 20px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="copy-hover">
-	            <div class="icon-box" id="icon-box-copy-hover">
-	            	<div class="fuelux-icon copy-hover" ></div>
-	            </div>
-	            <h2>copy-hover</h2>
-	            <button onclick="showPopover('snippet-copy-hover')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-copy-hover')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-copy-hover">
-	                <pre><code>&lt;span class=&quot;copy-hover&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-copy-hover:</code></pre><div class="glyphicon glyphicon-copy-hover" style="width: 20px; height: 20px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="copy">
-	            <div class="icon-box" id="icon-box-copy">
-	            	<div class="fuelux-icon copy" ></div>
-	            </div>
-	            <h2>copy</h2>
-	            <button onclick="showPopover('snippet-copy')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-copy')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-copy">
-	                <pre><code>&lt;span class=&quot;copy&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-copy:</code></pre><div class="glyphicon glyphicon-copy" style="width: 20px; height: 20px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="danger">
-	            <div class="icon-box" id="icon-box-danger">
-	            	<div class="fuelux-icon danger" ></div>
-	            </div>
-	            <h2>danger</h2>
-	            <button onclick="showPopover('snippet-danger')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-danger')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-danger">
-	                <pre><code>&lt;span class=&quot;danger&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-danger:</code></pre><div class="glyphicon glyphicon-danger" style="width: 20px; height: 20px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="delete">
-	            <div class="icon-box" id="icon-box-delete">
-	            	<div class="fuelux-icon delete" ></div>
-	            </div>
-	            <h2>delete</h2>
-	            <button onclick="showPopover('snippet-delete')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-delete')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-delete">
-	                <pre><code>&lt;span class=&quot;delete&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-delete:</code></pre><div class="glyphicon glyphicon-delete" style="width: 20px; height: 20px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="dot-hover">
-	            <div class="icon-box" id="icon-box-dot-hover">
-	            	<div class="fuelux-icon dot-hover" ></div>
-	            </div>
-	            <h2>dot-hover</h2>
-	            <button onclick="showPopover('snippet-dot-hover')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-dot-hover')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-dot-hover">
-	                <pre><code>&lt;span class=&quot;dot-hover&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-dot-hover:</code></pre><div class="glyphicon glyphicon-dot-hover" style="width: 20px; height: 20px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="dot">
-	            <div class="icon-box" id="icon-box-dot">
-	            	<div class="fuelux-icon dot" ></div>
-	            </div>
-	            <h2>dot</h2>
-	            <button onclick="showPopover('snippet-dot')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-dot')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-dot">
-	                <pre><code>&lt;span class=&quot;dot&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-dot:</code></pre><div class="glyphicon glyphicon-dot" style="width: 20px; height: 20px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="download-hover">
-	            <div class="icon-box" id="icon-box-download-hover">
-	            	<div class="fuelux-icon download-hover" ></div>
-	            </div>
-	            <h2>download-hover</h2>
-	            <button onclick="showPopover('snippet-download-hover')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-download-hover')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-download-hover">
-	                <pre><code>&lt;span class=&quot;download-hover&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-download-hover:</code></pre><div class="glyphicon glyphicon-download-hover" style="width: 20px; height: 20px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="download">
-	            <div class="icon-box" id="icon-box-download">
-	            	<div class="fuelux-icon download" ></div>
-	            </div>
-	            <h2>download</h2>
-	            <button onclick="showPopover('snippet-download')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-download')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-download">
-	                <pre><code>&lt;span class=&quot;download&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-download:</code></pre><div class="glyphicon glyphicon-download" style="width: 20px; height: 20px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="email-hover">
-	            <div class="icon-box" id="icon-box-email-hover">
-	            	<div class="fuelux-icon email-hover" ></div>
-	            </div>
-	            <h2>email-hover</h2>
-	            <button onclick="showPopover('snippet-email-hover')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-email-hover')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-email-hover">
-	                <pre><code>&lt;span class=&quot;email-hover&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-email-hover:</code></pre><div class="glyphicon glyphicon-email-hover" style="width: 20px; height: 20px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="email">
-	            <div class="icon-box" id="icon-box-email">
-	            	<div class="fuelux-icon email" ></div>
-	            </div>
-	            <h2>email</h2>
-	            <button onclick="showPopover('snippet-email')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-email')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-email">
-	                <pre><code>&lt;span class=&quot;email&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-email:</code></pre><div class="glyphicon glyphicon-email" style="width: 20px; height: 20px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="folder-close-hover">
-	            <div class="icon-box" id="icon-box-folder-close-hover">
-	            	<div class="fuelux-icon folder-close-hover" ></div>
-	            </div>
-	            <h2>folder-close-hover</h2>
-	            <button onclick="showPopover('snippet-folder-close-hover')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-folder-close-hover')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-folder-close-hover">
-	                <pre><code>&lt;span class=&quot;folder-close-hover&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-folder-close-hover:</code></pre><div class="glyphicon glyphicon-folder-close-hover" style="width: 20px; height: 20px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="folder-close">
-	            <div class="icon-box" id="icon-box-folder-close">
-	            	<div class="fuelux-icon folder-close" ></div>
-	            </div>
-	            <h2>folder-close</h2>
-	            <button onclick="showPopover('snippet-folder-close')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-folder-close')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-folder-close">
-	                <pre><code>&lt;span class=&quot;folder-close&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-folder-close:</code></pre><div class="glyphicon glyphicon-folder-close" style="width: 20px; height: 20px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="folder-open-hover">
-	            <div class="icon-box" id="icon-box-folder-open-hover">
-	            	<div class="fuelux-icon folder-open-hover" ></div>
-	            </div>
-	            <h2>folder-open-hover</h2>
-	            <button onclick="showPopover('snippet-folder-open-hover')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-folder-open-hover')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-folder-open-hover">
-	                <pre><code>&lt;span class=&quot;folder-open-hover&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-folder-open-hover:</code></pre><div class="glyphicon glyphicon-folder-open-hover" style="width: 20px; height: 20px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="folder-open">
-	            <div class="icon-box" id="icon-box-folder-open">
-	            	<div class="fuelux-icon folder-open" ></div>
-	            </div>
-	            <h2>folder-open</h2>
-	            <button onclick="showPopover('snippet-folder-open')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-folder-open')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-folder-open">
-	                <pre><code>&lt;span class=&quot;folder-open&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-folder-open:</code></pre><div class="glyphicon glyphicon-folder-open" style="width: 20px; height: 20px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="gridview-columns-configure">
-	            <div class="icon-box" id="icon-box-gridview-columns-configure">
-	            	<div class="fuelux-icon gridview-columns-configure" ></div>
-	            </div>
-	            <h2>gridview-columns-configure</h2>
-	            <button onclick="showPopover('snippet-gridview-columns-configure')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-gridview-columns-configure')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-gridview-columns-configure">
-	                <pre><code>&lt;span class=&quot;gridview-columns-configure&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-gridview-columns-configure:</code></pre><div class="glyphicon glyphicon-gridview-columns-configure" style="width: 20px; height: 20px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="gridview-columns">
-	            <div class="icon-box" id="icon-box-gridview-columns">
-	            	<div class="fuelux-icon gridview-columns" ></div>
-	            </div>
-	            <h2>gridview-columns</h2>
-	            <button onclick="showPopover('snippet-gridview-columns')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-gridview-columns')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-gridview-columns">
-	                <pre><code>&lt;span class=&quot;gridview-columns&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-gridview-columns:</code></pre><div class="glyphicon glyphicon-gridview-columns" style="width: 20px; height: 20px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="gridview-list">
-	            <div class="icon-box" id="icon-box-gridview-list">
-	            	<div class="fuelux-icon gridview-list" ></div>
-	            </div>
-	            <h2>gridview-list</h2>
-	            <button onclick="showPopover('snippet-gridview-list')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-gridview-list')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-gridview-list">
-	                <pre><code>&lt;span class=&quot;gridview-list&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-gridview-list:</code></pre><div class="glyphicon glyphicon-gridview-list" style="width: 20.078px; height: 20px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="gridview-paragraph">
-	            <div class="icon-box" id="icon-box-gridview-paragraph">
-	            	<div class="fuelux-icon gridview-paragraph" ></div>
-	            </div>
-	            <h2>gridview-paragraph</h2>
-	            <button onclick="showPopover('snippet-gridview-paragraph')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-gridview-paragraph')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-gridview-paragraph">
-	                <pre><code>&lt;span class=&quot;gridview-paragraph&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-gridview-paragraph:</code></pre><div class="glyphicon glyphicon-gridview-paragraph" style="width: 20px; height: 20px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="gridview-thumbnail">
-	            <div class="icon-box" id="icon-box-gridview-thumbnail">
-	            	<div class="fuelux-icon gridview-thumbnail" ></div>
-	            </div>
-	            <h2>gridview-thumbnail</h2>
-	            <button onclick="showPopover('snippet-gridview-thumbnail')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-gridview-thumbnail')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-gridview-thumbnail">
-	                <pre><code>&lt;span class=&quot;gridview-thumbnail&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-gridview-thumbnail:</code></pre><div class="glyphicon glyphicon-gridview-thumbnail" style="width: 20px; height: 20px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="info">
-	            <div class="icon-box" id="icon-box-info">
-	            	<div class="fuelux-icon info" ></div>
-	            </div>
-	            <h2>info</h2>
-	            <button onclick="showPopover('snippet-info')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-info')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-info">
-	                <pre><code>&lt;span class=&quot;info&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-info:</code></pre><div class="glyphicon glyphicon-info" style="width: 20px; height: 20.001px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="pencil-hover">
-	            <div class="icon-box" id="icon-box-pencil-hover">
-	            	<div class="fuelux-icon pencil-hover" ></div>
-	            </div>
-	            <h2>pencil-hover</h2>
-	            <button onclick="showPopover('snippet-pencil-hover')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-pencil-hover')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-pencil-hover">
-	                <pre><code>&lt;span class=&quot;pencil-hover&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-pencil-hover:</code></pre><div class="glyphicon glyphicon-pencil-hover" style="width: 20px; height: 20px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="pencil">
-	            <div class="icon-box" id="icon-box-pencil">
-	            	<div class="fuelux-icon pencil" ></div>
-	            </div>
-	            <h2>pencil</h2>
-	            <button onclick="showPopover('snippet-pencil')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-pencil')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-pencil">
-	                <pre><code>&lt;span class=&quot;pencil&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-pencil:</code></pre><div class="glyphicon glyphicon-pencil" style="width: 20px; height: 20px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="plus-sign-disabled">
-	            <div class="icon-box" id="icon-box-plus-sign-disabled">
-	            	<div class="fuelux-icon plus-sign-disabled" ></div>
-	            </div>
-	            <h2>plus-sign-disabled</h2>
-	            <button onclick="showPopover('snippet-plus-sign-disabled')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-plus-sign-disabled')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-plus-sign-disabled">
-	                <pre><code>&lt;span class=&quot;plus-sign-disabled&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-plus-sign-disabled:</code></pre><div class="glyphicon glyphicon-plus-sign-disabled" style="width: 20px; height: 20px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="plus-sign">
-	            <div class="icon-box" id="icon-box-plus-sign">
-	            	<div class="fuelux-icon plus-sign" ></div>
-	            </div>
-	            <h2>plus-sign</h2>
-	            <button onclick="showPopover('snippet-plus-sign')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-plus-sign')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-plus-sign">
-	                <pre><code>&lt;span class=&quot;plus-sign&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-plus-sign:</code></pre><div class="glyphicon glyphicon-plus-sign" style="width: 20px; height: 20px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="radio-button-active-hover">
-	            <div class="icon-box" id="icon-box-radio-button-active-hover">
-	            	<div class="fuelux-icon radio-button-active-hover" ></div>
-	            </div>
-	            <h2>radio-button-active-hover</h2>
-	            <button onclick="showPopover('snippet-radio-button-active-hover')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-radio-button-active-hover')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-radio-button-active-hover">
-	                <pre><code>&lt;span class=&quot;radio-button-active-hover&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-radio-button-active-hover:</code></pre><div class="glyphicon glyphicon-radio-button-active-hover" style="width: 20px; height: 20px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="radio-button-active">
-	            <div class="icon-box" id="icon-box-radio-button-active">
-	            	<div class="fuelux-icon radio-button-active" ></div>
-	            </div>
-	            <h2>radio-button-active</h2>
-	            <button onclick="showPopover('snippet-radio-button-active')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-radio-button-active')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-radio-button-active">
-	                <pre><code>&lt;span class=&quot;radio-button-active&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-radio-button-active:</code></pre><div class="glyphicon glyphicon-radio-button-active" style="width: 20px; height: 20px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="radio-button-checked-disabled">
-	            <div class="icon-box" id="icon-box-radio-button-checked-disabled">
-	            	<div class="fuelux-icon radio-button-checked-disabled" ></div>
-	            </div>
-	            <h2>radio-button-checked-disabled</h2>
-	            <button onclick="showPopover('snippet-radio-button-checked-disabled')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-radio-button-checked-disabled')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-radio-button-checked-disabled">
-	                <pre><code>&lt;span class=&quot;radio-button-checked-disabled&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-radio-button-checked-disabled:</code></pre><div class="glyphicon glyphicon-radio-button-checked-disabled" style="width: 20px; height: 20px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="radio-button-checked-hover-active">
-	            <div class="icon-box" id="icon-box-radio-button-checked-hover-active">
-	            	<div class="fuelux-icon radio-button-checked-hover-active" ></div>
-	            </div>
-	            <h2>radio-button-checked-hover-active</h2>
-	            <button onclick="showPopover('snippet-radio-button-checked-hover-active')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-radio-button-checked-hover-active')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-radio-button-checked-hover-active">
-	                <pre><code>&lt;span class=&quot;radio-button-checked-hover-active&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-radio-button-checked-hover-active:</code></pre><div class="glyphicon glyphicon-radio-button-checked-hover-active" style="width: 20px; height: 20px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="radio-button-checked-hover">
-	            <div class="icon-box" id="icon-box-radio-button-checked-hover">
-	            	<div class="fuelux-icon radio-button-checked-hover" ></div>
-	            </div>
-	            <h2>radio-button-checked-hover</h2>
-	            <button onclick="showPopover('snippet-radio-button-checked-hover')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-radio-button-checked-hover')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-radio-button-checked-hover">
-	                <pre><code>&lt;span class=&quot;radio-button-checked-hover&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-radio-button-checked-hover:</code></pre><div class="glyphicon glyphicon-radio-button-checked-hover" style="width: 20px; height: 20px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="radio-button-checked">
-	            <div class="icon-box" id="icon-box-radio-button-checked">
-	            	<div class="fuelux-icon radio-button-checked" ></div>
-	            </div>
-	            <h2>radio-button-checked</h2>
-	            <button onclick="showPopover('snippet-radio-button-checked')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-radio-button-checked')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-radio-button-checked">
-	                <pre><code>&lt;span class=&quot;radio-button-checked&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-radio-button-checked:</code></pre><div class="glyphicon glyphicon-radio-button-checked" style="width: 20px; height: 20px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="radio-button-disabled">
-	            <div class="icon-box" id="icon-box-radio-button-disabled">
-	            	<div class="fuelux-icon radio-button-disabled" ></div>
-	            </div>
-	            <h2>radio-button-disabled</h2>
-	            <button onclick="showPopover('snippet-radio-button-disabled')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-radio-button-disabled')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-radio-button-disabled">
-	                <pre><code>&lt;span class=&quot;radio-button-disabled&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-radio-button-disabled:</code></pre><div class="glyphicon glyphicon-radio-button-disabled" style="width: 20px; height: 20px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="radio-button-hover">
-	            <div class="icon-box" id="icon-box-radio-button-hover">
-	            	<div class="fuelux-icon radio-button-hover" ></div>
-	            </div>
-	            <h2>radio-button-hover</h2>
-	            <button onclick="showPopover('snippet-radio-button-hover')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-radio-button-hover')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-radio-button-hover">
-	                <pre><code>&lt;span class=&quot;radio-button-hover&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-radio-button-hover:</code></pre><div class="glyphicon glyphicon-radio-button-hover" style="width: 20px; height: 20px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="radio-button">
-	            <div class="icon-box" id="icon-box-radio-button">
-	            	<div class="fuelux-icon radio-button" ></div>
-	            </div>
-	            <h2>radio-button</h2>
-	            <button onclick="showPopover('snippet-radio-button')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-radio-button')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-radio-button">
-	                <pre><code>&lt;span class=&quot;radio-button&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-radio-button:</code></pre><div class="glyphicon glyphicon-radio-button" style="width: 20px; height: 20px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="search-active-hover">
-	            <div class="icon-box" id="icon-box-search-active-hover">
-	            	<div class="fuelux-icon search-active-hover" ></div>
-	            </div>
-	            <h2>search-active-hover</h2>
-	            <button onclick="showPopover('snippet-search-active-hover')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-search-active-hover')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-search-active-hover">
-	                <pre><code>&lt;span class=&quot;search-active-hover&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-search-active-hover:</code></pre><div class="glyphicon glyphicon-search-active-hover" style="width: 20px; height: 20px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="search-active">
-	            <div class="icon-box" id="icon-box-search-active">
-	            	<div class="fuelux-icon search-active" ></div>
-	            </div>
-	            <h2>search-active</h2>
-	            <button onclick="showPopover('snippet-search-active')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-search-active')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-search-active">
-	                <pre><code>&lt;span class=&quot;search-active&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-search-active:</code></pre><div class="glyphicon glyphicon-search-active" style="width: 20px; height: 20px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="search-deprecated-hover">
-	            <div class="icon-box" id="icon-box-search-deprecated-hover">
-	            	<div class="fuelux-icon search-deprecated-hover" ></div>
-	            </div>
-	            <h2>search-deprecated-hover</h2>
-	            <button onclick="showPopover('snippet-search-deprecated-hover')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-search-deprecated-hover')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-search-deprecated-hover">
-	                <pre><code>&lt;span class=&quot;search-deprecated-hover&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-search-deprecated-hover:</code></pre><div class="glyphicon glyphicon-search-deprecated-hover" style="width: 20px; height: 20px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="search-deprecated">
-	            <div class="icon-box" id="icon-box-search-deprecated">
-	            	<div class="fuelux-icon search-deprecated" ></div>
-	            </div>
-	            <h2>search-deprecated</h2>
-	            <button onclick="showPopover('snippet-search-deprecated')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-search-deprecated')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-search-deprecated">
-	                <pre><code>&lt;span class=&quot;search-deprecated&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-search-deprecated:</code></pre><div class="glyphicon glyphicon-search-deprecated" style="width: 20px; height: 20px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="search-focus">
-	            <div class="icon-box" id="icon-box-search-focus">
-	            	<div class="fuelux-icon search-focus" ></div>
-	            </div>
-	            <h2>search-focus</h2>
-	            <button onclick="showPopover('snippet-search-focus')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-search-focus')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-search-focus">
-	                <pre><code>&lt;span class=&quot;search-focus&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-search-focus:</code></pre><div class="glyphicon glyphicon-search-focus" style="width: 20px; height: 20px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="search-hover">
-	            <div class="icon-box" id="icon-box-search-hover">
-	            	<div class="fuelux-icon search-hover" ></div>
-	            </div>
-	            <h2>search-hover</h2>
-	            <button onclick="showPopover('snippet-search-hover')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-search-hover')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-search-hover">
-	                <pre><code>&lt;span class=&quot;search-hover&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-search-hover:</code></pre><div class="glyphicon glyphicon-search-hover" style="width: 20px; height: 20px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="search">
-	            <div class="icon-box" id="icon-box-search">
-	            	<div class="fuelux-icon search" ></div>
-	            </div>
-	            <h2>search</h2>
-	            <button onclick="showPopover('snippet-search')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-search')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-search">
-	                <pre><code>&lt;span class=&quot;search&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-search:</code></pre><div class="glyphicon glyphicon-search" style="width: 20px; height: 20px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="sort-by-alphabet">
-	            <div class="icon-box" id="icon-box-sort-by-alphabet">
-	            	<div class="fuelux-icon sort-by-alphabet" ></div>
-	            </div>
-	            <h2>sort-by-alphabet</h2>
-	            <button onclick="showPopover('snippet-sort-by-alphabet')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-sort-by-alphabet')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-sort-by-alphabet">
-	                <pre><code>&lt;span class=&quot;sort-by-alphabet&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-sort-by-alphabet:</code></pre><div class="glyphicon glyphicon-sort-by-alphabet" style="width: 20px; height: 20px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="spyglass">
-	            <div class="icon-box" id="icon-box-spyglass">
-	            	<div class="fuelux-icon spyglass" ></div>
-	            </div>
-	            <h2>spyglass</h2>
-	            <button onclick="showPopover('snippet-spyglass')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-spyglass')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-spyglass">
-	                <pre><code>&lt;span class=&quot;spyglass&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-spyglass:</code></pre><div class="glyphicon glyphicon-spyglass" style="width: 20px; height: 20px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="success">
-	            <div class="icon-box" id="icon-box-success">
-	            	<div class="fuelux-icon success" ></div>
-	            </div>
-	            <h2>success</h2>
-	            <button onclick="showPopover('snippet-success')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-success')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-success">
-	                <pre><code>&lt;span class=&quot;success&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-success:</code></pre><div class="glyphicon glyphicon-success" style="width: 20px; height: 20px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="trash-hover">
-	            <div class="icon-box" id="icon-box-trash-hover">
-	            	<div class="fuelux-icon trash-hover" ></div>
-	            </div>
-	            <h2>trash-hover</h2>
-	            <button onclick="showPopover('snippet-trash-hover')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-trash-hover')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-trash-hover">
-	                <pre><code>&lt;span class=&quot;trash-hover&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-trash-hover:</code></pre><div class="glyphicon glyphicon-trash-hover" style="width: 20px; height: 20px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="trash">
-	            <div class="icon-box" id="icon-box-trash">
-	            	<div class="fuelux-icon trash" ></div>
-	            </div>
-	            <h2>trash</h2>
-	            <button onclick="showPopover('snippet-trash')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-trash')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-trash">
-	                <pre><code>&lt;span class=&quot;trash&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-trash:</code></pre><div class="glyphicon glyphicon-trash" style="width: 20px; height: 20.001px;" ></div><hr/>
 			
 		
 			
-
-	        <li title="warning">
-	            <div class="icon-box" id="icon-box-warning">
-	            	<div class="fuelux-icon warning" ></div>
-	            </div>
-	            <h2>warning</h2>
-	            <button onclick="showPopover('snippet-warning')">Show Snippet</button>
-	            <br/>
-	            <button onclick="invertBackground('icon-box-warning')">Invert Background</button>
-	            <div class="snippet-popover" id="snippet-warning">
-	                <pre><code>&lt;span class=&quot;warning&quot;&gt;&lt;/span&gt;</code></pre>
-	                <button onclick="hidePopover()">Close</button>
-	            </div>
-	        </li>
-
-
+			<pre><code>.fuelux-icon-warning:</code></pre><div class="glyphicon glyphicon-warning" style="width: 20px; height: 20px;" ></div><hr/>
 			
 		
-
-		</ul>
-
-	</section>
-
-
-
-
-<script type="text/javascript">
-
-    var openSnippet;
-    var modeView = document.getElementById("mode-view");
-    var icons = document.querySelectorAll(".fuelux-icon");
-
-    function setSize (fontSize) {
-        for (var i = 0; i < icons.length; i++) {
-            icons[i].style.width = (parseInt(fontSize) + 10) + 'px';
-            icons[i].style.height = (parseInt(fontSize) + 10) + 'px';
-        }
-    }
-
-    function showPopover(id) {
-    	console.log("id", id);
-        openSnippet = document.getElementById(id);
-
-        openSnippet.classList.add("active");
-    }
-    function hidePopover() {
-
-        openSnippet.classList.remove("active");
-    }
-    function invertBackground(id) {
-        var elem = document.getElementById(id);
-        elem.classList.toggle("inverted");
-    }
-    function toggleMode() {
-        document.body.classList.toggle("no-svg") ?
-            modeView.innerHTML = "PNG" :
-            modeView.innerHTML = "SVG";
-    }
-</script>
+	</div>
 </body>
 </html>
