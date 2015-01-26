@@ -5,25 +5,18 @@
 	 height="20px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
 <g id="radio-button-active-hover">
 	<g>
-		<rect id="le_wrappier_21_" style="fill:none;" width="20" height="20"/>
+		<rect id="le_wrappier_36_" style="fill:none;" width="20" height="20"/>
 		<g id="radio-button-hover_2_">
-			<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="10.0005" y1="20" x2="10.0005" y2="4.882812e-04">
+			<radialGradient id="SVGID_1_" cx="10" cy="19.875" r="19.8754" gradientUnits="userSpaceOnUse">
 				<stop  offset="0" style="stop-color:#F2F6FB"/>
-				<stop  offset="0.48" style="stop-color:#F2F6FB"/>
-				<stop  offset="0.5" style="stop-color:#CDDFEC"/>
-				<stop  offset="0.7287" style="stop-color:#C4D8E8"/>
 				<stop  offset="1" style="stop-color:#C1D5E6"/>
-			</linearGradient>
+			</radialGradient>
 			<circle style="fill:url(#SVGID_1_);" cx="10" cy="10" r="10"/>
-			<g>
-				<path style="fill:#FFFFFF;" d="M10,1.25c4.825,0,8.75,3.925,8.75,8.75c0,4.825-3.925,8.75-8.75,8.75
-					c-4.825,0-8.75-3.925-8.75-8.75C1.25,5.175,5.175,1.25,10,1.25 M10,0C4.479,0,0,4.477,0,10s4.479,10,10,10
-					c5.523,0,10-4.477,10-10S15.523,0,10,0L10,0z"/>
-			</g>
-			<g>
-				<path style="fill:#6A8799;" d="M10,0.5c5.238,0,9.5,4.262,9.5,9.5s-4.262,9.5-9.5,9.5S0.5,15.238,0.5,10S4.762,0.5,10,0.5 M10,0
-					C4.479,0,0,4.477,0,10s4.479,10,10,10c5.523,0,10-4.477,10-10S15.523,0,10,0L10,0z"/>
-			</g>
+			<path style="fill:#FFFFFF;" d="M10,1.25c4.825,0,8.75,3.925,8.75,8.75c0,4.825-3.925,8.75-8.75,8.75
+				c-4.825,0-8.75-3.925-8.75-8.75C1.25,5.175,5.175,1.25,10,1.25 M10,0C4.479,0,0,4.477,0,10s4.479,10,10,10
+				c5.523,0,10-4.477,10-10S15.523,0,10,0L10,0z"/>
+			<path style="fill:#6A8799;" d="M10,0.5c5.238,0,9.5,4.262,9.5,9.5s-4.262,9.5-9.5,9.5S0.5,15.238,0.5,10S4.762,0.5,10,0.5 M10,0
+				C4.479,0,0,4.477,0,10s4.479,10,10,10c5.523,0,10-4.477,10-10S15.523,0,10,0L10,0z"/>
 		</g>
 	</g>
 </g>

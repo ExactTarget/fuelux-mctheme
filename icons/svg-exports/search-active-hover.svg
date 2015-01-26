@@ -3,9 +3,9 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px"
 	 height="20px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
-<g id="search-active">
+<g id="search-active-hover">
 	<g>
-		<g id="button-2px-corner_93_">
+		<g id="button-2px-corner_3_">
 			<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="10.0005" y1="20" x2="10.0005" y2="4.882812e-04">
 				<stop  offset="0" style="stop-color:#F1F8FF"/>
 				<stop  offset="0.9" style="stop-color:#A1C8E6"/>
@@ -23,7 +23,7 @@
 			</g>
 		</g>
 		<g>
-			<g id="spyglass-form_18_">
+			<g id="spyglass-form_1_">
 				<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="2.5151" y1="10" x2="17.4854" y2="10">
 					<stop  offset="0" style="stop-color:#FFFFFF"/>
 					<stop  offset="0.9" style="stop-color:#D7E5EF"/>

@@ -5,11 +5,11 @@
 	 height="20px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
 <g id="download">
 	<g>
-		<rect id="le_wrappier_7_" style="fill:none;" width="20" height="20"/>
+		<rect id="le_wrappier_35_" style="fill:none;" width="20" height="20"/>
 		<g>
 			<polygon style="fill:#999999;" points="17.328,14.656 17.328,17.328 2.656,17.328 2.656,14.656 0,14.656 0,20 20,20 20,14.656 
 							"/>
-			<g id="down-arrow_9_">
+			<g id="down-arrow_8_">
 				<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="10.0005" y1="0.5" x2="10.0005" y2="15.3013">
 					<stop  offset="0" style="stop-color:#CCCCCC"/>
 					<stop  offset="0.9" style="stop-color:#999999"/>
