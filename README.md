@@ -65,6 +65,15 @@ fuelux-mctheme/
 
 Have a bug or a feature request? Please first review the [open issues](https://github.com/ExactTarget/fuelux-mctheme/issues), then search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/ExactTarget/fuelux-mctheme/issues/new). The issue may be a bug in Bootstrap or Fuel UX. If you think it is, please post in the respective repository.
 
+## Edge servers
+
+A build of master is available at `https://fuelux-mctheme.herokuapp.com/dist/css/fuelux-mctheme.css`. 
+
+_These files should never be used in production and may not have been fully tested._
+
+To create your own edge server, setup a github web hook on Heroku for this repository and put the app into development mode with `heroku config:set NPM_CONFIG_PRODUCTION=false`.
+
+
 ##Philosophy and authors
 
 ### The Fuel UX Philosophy
