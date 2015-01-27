@@ -69,7 +69,7 @@ Assuming you are exporting every icon, the options you wish to select are:
 - You may also wish to make sure "Ignore Warnings" is checked. The script can create several warnings that end up being meaningless, and each one of them must be dismissed manually. Subjecting yourself to this particularly obnoxious quirk of the script may well fall under the Geneva Conventions.
 
 
-![MultiExporter-v2 Dialog Box Example](icons/scripts/MultiExporter-v2-dialog-box-example.png "MultiExporter-v2 Dialog Box Example")
+![MultiExporter-v2 Dialog Box Example](scripts/icons/scripts/MultiExporter-v2-dialog-box-example.png "MultiExporter-v2 Dialog Box Example")
 
 
 
