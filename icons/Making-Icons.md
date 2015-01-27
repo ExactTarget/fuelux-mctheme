@@ -81,6 +81,16 @@ Just make sure to have the items you wish to export selected. ;)
 
 
 
+### If you see a warning about "nyt_exporter_info"
+
+You might see a warning that a layer named "nyt_exporter_info" failed to export --- this can safely be ignored.
+
+The script stores its meta-data in this layer and mistakenly tries to export it sometimes. 
+
+Do not hit "retry", your export probably worked just fine.
+
+
+
 ## Creating the CSS rules 
 
 In the `fuelux-mctheme` project there is a `Gruntfile.js` which is used to create the SVG icons from the .svg files that live in the `icons/svg-exports/` directory.
