@@ -315,6 +315,6 @@ module.exports = function (grunt) {
 	/* -------------
 			SERVE
 		------------- */
-	grunt.registerTask('serve', ['dist', 'connect:server', 'watch:full']);
-
+	grunt.registerTask('serve', ['connect:server', 'watch:full']);
+	grunt.registerTask('dist-serve', ['dist', 'connect:server', 'watch:full']);
 };
