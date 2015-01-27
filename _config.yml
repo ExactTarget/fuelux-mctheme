@@ -4,17 +4,17 @@ exclude:          [".editorconfig", ".gitignore", "bower.json", "composer.json",
 #port:             9001
 url:              http://exacttarget.github.io/fuelux-mctheme
 # local dev
-#url:              http://localhost:4000/
+#url:              http://localhost:4000
 
 # Custom vars
-current_version:  1.0.0
+current_version:  1.3.4
 repo:             https://github.com/ExactTarget/fuelux-mctheme
 
 cdn:
-  css:            //www.fuelcdn.com/fuelux/3.0.2/css/fuelux.min.css
+  css:            //www.fuelcdn.com/fuelux/3.5.1/css/fuelux.min.css
 
 mctheme:
-  css:            //www.fuelcdn.com/fuelux-mctheme/1.0.0/css/fuelux-mctheme.min.css
+  css:            //www.fuelcdn.com/fuelux-mctheme/1.3.4/css/fuelux-mctheme.min.css
 
 bootstrap:
   css:            //maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css

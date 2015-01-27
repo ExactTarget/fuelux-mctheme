@@ -1,0 +1,102 @@
+//previous and next arrow
+//should be wrapped in <span>
+.pagination-previous{
+	display: block;
+	height: 0;
+	width: 0;
+	border-top: 4px solid transparent;
+	border-bottom: 4px solid transparent;
+	border-right: 4px solid #5f97b7;
+}
+.pagination-next{
+	display: block;
+	height: 0;
+	width: 0;
+	border-top: 4px solid transparent;
+	border-bottom: 4px solid transparent;
+	border-left: 4px solid #5f97b7;
+}
+
+//previous and next button
+//
+.pagination-btn {
+	#gradient > .gradient-bg(#fff, #DAE5ED);
+	.box-shadow(inset 0 0 2px rgba(255,255,255,0.75));
+	border: 1px solid #b5c6d2;
+	border-radius: 3px;
+	&:active {
+		#gradient > .gradient-bg(#fff, #DAE5ED);
+	}
+	//to make arrow in the center
+	.pagination-previous,
+	.pagination-next {
+		margin-left: 2px;
+	}
+}
+.pagination {
+	margin: 0;
+	> li {
+		> a {
+			height: 21px;
+			line-height: 1;
+			padding: 5px 10px;
+			color: #5f97b7;
+			&:hover,
+			&:focus {
+				color: #5f97b7;
+				background-color: #ddeef4;
+			}
+
+			//adjust arrow position
+			&.pagination-btn {
+				 padding-top: 6px;
+			}
+		}
+		//adjust border, to make pagination button fit in the group
+		&:first-child > a {
+			&.pagination-btn {
+				border-top-right-radius: 0;
+				border-bottom-right-radius: 0;
+			}
+		}
+		&:last-child > a {
+			&.pagination-btn {
+				border-top-left-radius: 0;
+				border-bottom-left-radius: 0;
+			}
+		}
+
+		&.active > a {
+			&,
+			&:hover,
+			&:focus {
+				color: @gray33;
+				background-color: @blue-sky;
+				border-color: @blue-sky;
+			}
+		}
+
+		&.disabled > a {
+			&.pagination-btn{
+				#gradient > .gradient-bg(#fff, #e3e8eb);
+				.pagination-previous {
+					border-right-color: #b8ced7;
+				}
+				.pagination-next {
+					border-left-color: #b8ced7;
+				}
+			}
+		}
+	}
+
+	&.pagination-lg {
+		> li > a {
+			font-size: 12px;
+			height: 26px;
+			padding-top: 7px;
+			&.pagination-btn {
+				padding-top: 8px;
+			}
+		}
+	}
+}
