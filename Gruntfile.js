@@ -43,26 +43,32 @@ module.exports = function (grunt) {
 					,
 					{
 						pattern:  /(\.-?[_a-zA-Z]+[_a-zA-Z0-9-]*)-hover-focus\s*/g,
-						replacement: 'button:hover:focus > $1, $1-hover-focus, $1:hover:focus '
+						replacement: '$1-hover-focus, $1:hover:focus, button:hover:focus > $1 '
 					}
 
 
 					,
 					{
 						pattern:  /(\.-?[_a-zA-Z]+[_a-zA-Z0-9-]*)-active\s*/g,
-						replacement: 'button:active > $1, $1-active, $1:active '
+						replacement: '$1-active, $1:active, button:active > $1 '
 					}
 
 					,
 					{
 						pattern:  /(\.-?[_a-zA-Z]+[_a-zA-Z0-9-]*)-focus\s*/g,
-						replacement: 'button:focus > $1, $1-focus, $1:focus '
+						replacement: '$1-focus, $1:focus, button:focus > $1 '
 					}
 
 					,
 					{
 						pattern:  /(\.-?[_a-zA-Z]+[_a-zA-Z0-9-]*)-hover\s*/g,
-						replacement: 'button:hover > $1, $1-hover, $1:hover '
+						replacement: '$1-hover, $1:hover, button:hover > $1 '
+					}
+
+					,
+					{
+						pattern:  /\}/g,
+						replacement: '.fuelux-icon; } '
 					}
 					]
 				}
@@ -291,6 +297,7 @@ module.exports = function (grunt) {
 		Making Icons
 	---------------- */
 	grunt.registerTask( 'make-icons', [ 'grunticon:makeSvgIcons', 'string-replace'] );
+	grunt.registerTask( 'make-icons-base', [ 'grunticon:makeSvgIcons'] );
 	grunt.registerTask( 'glyphify-icons', [ 'string-replace' ] );
 
 	/* -------------
