@@ -25,7 +25,7 @@ module.exports = function (grunt) {
 		pkg: grunt.file.readJSON('package.json'),
 		// Tasks configuration
 
-
+		// add comments abou the regex-foo
 		'string-replace': {
 			inline: {
 				files: {
@@ -35,13 +35,6 @@ module.exports = function (grunt) {
 				},
 				options: {
 					replacements: [
-						// place files inline example
-					// 	{
-					// 		pattern: '(\.-?[_a-zA-Z]+[_a-zA-Z0-9-]*\s*)\{',
-					// 		replacement: '.yo "$0"'
-					// 	}
-					// ,	
-					
 					{
 						pattern:  /\.fuelux-icon(-?[_a-zA-Z]+[_a-zA-Z0-9-]*)\s*/g,
 						replacement: '.fuelux-icon$1, .glyphicon$1 '
@@ -71,10 +64,6 @@ module.exports = function (grunt) {
 						pattern:  /(\.-?[_a-zA-Z]+[_a-zA-Z0-9-]*)-hover\s*/g,
 						replacement: 'button:hover > $1, $1-hover, $1:hover '
 					}
-					// ,{
-					// 	pattern:  /(\.-?[_a-zA-Z]+[_a-zA-Z0-9-]*)-hover\s*\{/g,
-					// 	replacement: 'button:hover > $1, $1-hover {'
-					// }
 					]
 				}
 			}
@@ -153,7 +142,7 @@ module.exports = function (grunt) {
 		},
 
 		grunticon: {
-			myIcons: {
+			makeSvgIcons: {
 				files: [ {
 					expand: true,
 					cwd: "icons/svg-exports",
@@ -173,51 +162,6 @@ module.exports = function (grunt) {
 		},
 
 
-		grunticonSuspect: {
-			dist: {
-				files: [{
-					expand: true,
-					cwd: 'img/svgs-min',
-					src: ['*.svg', '*.png'],
-					dest: "examples/icons"
-				}],
-				options: {
-
-					// CSS filenames
-					datasvgcss: "mctheme.svg.css",
-					datapngcss: "mctheme.png.css",
-					urlpngcss: "mctheme.css",
-
-					// preview HTML filename
-					previewhtml: "preview.html",
-
-					// grunticon loader code snippet filename
-					loadersnippet: "grunticon.loader.js",
-
-					// folder name (within dest) for png output
-					pngfolder: "png",
-
-					// prefix for CSS classnames
-					cssprefix: ".fuelux-",
-
-					defaultWidth: "128px",
-					defaultHeight: "128px",
-
-					// define vars that can be used in filenames if desirable, like foo.colors-primary-secondary.svg
-					colors: {
-						primary: "red",
-						secondary: "#666"
-					},
-
-					// css file path prefix - this defaults to "/" and will be placed before the "dest" path when stylesheets are loaded.
-					// This allows root-relative referencing of the CSS. If you don't want a prefix path, set to to ""
-					cssbasepath: "/",
-					template: "examples/icons/default-css.hbs",
-					previewTemplate: "examples/icons/preview-custom.hbs"
-
-				}
-			}
-		},
 		less: {
 			'fuelux-mctheme': {
 				options: {
@@ -346,7 +290,7 @@ module.exports = function (grunt) {
 	/* ----------------
 		Making Icons
 	---------------- */
-	grunt.registerTask( 'make-icons', [ 'grunticon:myIcons', 'string-replace'] );
+	grunt.registerTask( 'make-icons', [ 'grunticon:makeSvgIcons', 'string-replace'] );
 	grunt.registerTask( 'glyphify-icons', [ 'string-replace' ] );
 
 	/* -------------
