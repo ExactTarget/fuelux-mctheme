@@ -15,7 +15,7 @@ It should also be noted that, as of release 1.4, not *every* icon required by th
 - Edit the included `fuelux-mctheme-icons-20px.ai` file
 - Run the provided `MultiExporter-v2.jsx` script from within Illustrator to export .svg files
 - Create the CSS rules for the icons by running a Grunt task in the terminal: `$ grunt serve --force`
-- See it in the browser: http://localhost:8001
+- See it in the browser: http://localhost:8000
 
 
 
