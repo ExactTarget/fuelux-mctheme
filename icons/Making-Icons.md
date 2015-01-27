@@ -68,6 +68,11 @@ Assuming you are exporting every icon, the options you wish to select are:
 - Export Format: "SVG". Also make sure the following checkboxes are checked: "Embed Imagery", "Trim Edges", "Skip Default Names"
 - You may also wish to make sure "Ignore Warnings" is checked. The script can create several warnings that end up being meaningless, and each one of them must be dismissed manually. Subjecting yourself to this particularly obnoxious quirk of the script may well fall under the Geneva Conventions.
 
+
+![MultiExporter-v2 Dialog Box Example](icons/scripts/MultiExporter-v2-dialog-box-example.png "MultiExporter-v2 Dialog Box Example")
+
+
+
 Once you've got the settings correct, click the "Export" button and go get yourself a cup of coffee --- it's going to be a while before it's done.
 
 
