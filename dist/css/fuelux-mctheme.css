@@ -1,16 +1,10 @@
 /*!
- * Marketing Cloud Theme EDGE - Built 2015/01/27, 5:46:13 PM 
+ * Marketing Cloud Theme EDGE - Built 2015/01/27, 5:53:27 PM 
  * Previous release: v1.3.4 
  * Copyright 2012-2015 ExactTarget
  * Licensed under the MIT license (https://github.com/ExactTarget/fuelux-mctheme/blob/master/COPYING)
  */
 
-.footer-with-inputs {
-  padding: 8px 10px 8px 10px;
-}
-.footer-with-inputs > span {
-  line-height: 21px;
-}
 .fuelux-icon {
   background-size: cover;
   display: inline-block;
@@ -19,6 +13,12 @@
 }
 .fuelux-icon:before {
   content: "";
+}
+.footer-with-inputs {
+  padding: 8px 10px 8px 10px;
+}
+.footer-with-inputs > span {
+  line-height: 21px;
 }
 .fuelux-icon-calendar-hover,
 .fuelux-icon-calendar:hover,
