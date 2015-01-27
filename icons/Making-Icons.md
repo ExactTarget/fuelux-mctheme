@@ -63,7 +63,7 @@ Once you've chosen the script you will presented with a dialog box presenting yo
 Assuming you are exporting every icon, the options you wish to select are:
 
 - Export Artboards: "All artboards (except those beginning with - )"
-- Export Layers: "All layers as individudal images (except those beginning with - )"
+- Export Layers: "All layers as individual images (except those beginning with - )"
 - Output directory: <choose the path to `icons/svg-exports/` in your `fuelux-mctheme` project>
 - Export Format: "SVG". Also make sure the following checkboxes are checked: "Embed Imagery", "Trim Edges", "Skip Default Names"
 - You may also wish to make sure "Ignore Warnings" is checked. The script can create several warnings that end up being meaningless, and each one of them must be dismissed manually. Subjecting yourself to this particularly obnoxious quirk of the script may well fall under the Geneva Conventions.
