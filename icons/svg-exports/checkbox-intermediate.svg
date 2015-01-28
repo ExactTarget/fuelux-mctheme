@@ -28,21 +28,11 @@
 				</g>
 			</g>
 			<g id="intermediate-indicator_6_">
-				
-					<rect x="3.658" y="7.619" style="fill:none;stroke:#45494D;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" width="9.684" height="1.763"/>
-				
-					<rect x="3.658" y="7.619" style="fill:none;stroke:#FFFFFF;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" width="9.684" height="1.763"/>
-				<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="11.7832" y1="11.2568" x2="5.2157" y2="5.7461">
-					<stop  offset="0" style="stop-color:#66A2D7"/>
-					<stop  offset="1" style="stop-color:#517FA5"/>
-				</linearGradient>
-				
-					<rect x="3.658" y="7.619" style="opacity:0.6;fill:none;stroke:url(#SVGID_2_);stroke-width:0.0219;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" width="9.684" height="1.763"/>
-				<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="8.2085" y1="10.1538" x2="8.4127" y2="8.996">
+				<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="8.2085" y1="10.1538" x2="8.4127" y2="8.996">
 					<stop  offset="0" style="stop-color:#336B9A"/>
 					<stop  offset="1" style="stop-color:#448CCA"/>
 				</linearGradient>
-				<rect x="3.658" y="7.619" style="fill:url(#SVGID_3_);" width="9.684" height="1.763"/>
+				<rect x="3.658" y="7.619" style="fill:url(#SVGID_2_);" width="9.684" height="1.763"/>
 			</g>
 		</g>
 	</g>

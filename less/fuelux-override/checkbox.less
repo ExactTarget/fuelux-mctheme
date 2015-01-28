@@ -1,3 +1,7 @@
+.checkbox-element-sizes() {
+	width: @checkbox-width;
+	height: @checkbox-height;
+}
 .checkbox-before() {
 	
 	input[type="checkbox"] {
@@ -10,8 +14,7 @@
 		border-color: none;
 		.fuelux-icon;
 		.fuelux-icon-checkbox;
-		width: @checkbox-width;
-		height: @checkbox-height;
+		.checkbox-element-sizes;
 		-webkit-appearance: inherit;
 		border: 0px solid transparent;
 		border-radius: 0;
@@ -32,11 +35,13 @@
 		.checkbox-before;
 		&:before {
 			.fuelux-icon-checkbox-hover;
+			.checkbox-element-sizes;
 		}
 		&.checked {
 			.checkbox-before;
 			&:before {
 				.fuelux-icon-checkbox-checked-hover;
+				.checkbox-element-sizes;
 			}
 		}
 	}
@@ -45,11 +50,13 @@
 		.checkbox-before;
 		&:before {
 			.fuelux-icon-checkbox-active;
+			.checkbox-element-sizes;
 		}
 		&.checked {
 			.checkbox-before;
 			&:before {
 				.fuelux-icon-checkbox-active;
+				.checkbox-element-sizes;
 			}
 		}
 	}
@@ -58,17 +65,20 @@
 		.checkbox-before;
 		&:before {
 			.fuelux-icon-checkbox-checked;
+			.checkbox-element-sizes;
 		}
 	}
 	&.disabled {
 		.checkbox-before;
 		&:before {
 			.fuelux-icon-checkbox-disabled;
+			.checkbox-element-sizes;
 		}
 		&.checked {
 			.checkbox-before;
 			&:before {
 				.fuelux-icon-checkbox-checked-disabled;
+				.checkbox-element-sizes;
 			}
 
 		}

@@ -1,3 +1,8 @@
+.radio-button-element-sizes() {
+	width: @radio-button-width;
+	height: @radio-button-height;
+}
+
 .radio-button-before() {
 	
 	input[type="radio"] {
@@ -10,8 +15,7 @@
 		border-color: none;
 		.fuelux-icon;
 		.fuelux-icon-radio-button;
-		width: @radio-button-width;
-		height: @radio-button-height;
+		.radio-button-element-sizes;
 		-webkit-appearance: inherit;
 		border: 0px solid transparent;
 		border-radius: 0;
@@ -47,11 +51,13 @@
 		.radio-button-before;
 		&:before {
 			.fuelux-icon-radio-button-hover;
+			.radio-button-element-sizes;
 		}
 		&.checked {
 			.radio-button-before;
 			&:before {
 				.fuelux-icon-radio-button-checked-hover;
+				.radio-button-element-sizes;
 			}
 		}
 	}
@@ -60,11 +66,13 @@
 		.radio-button-before;
 		&:before {
 			.fuelux-icon-radio-button-active;
+			.radio-button-element-sizes;
 		}
 		&.checked {
 			.radio-button-before;
 			&:before {
 				.fuelux-icon-radio-button-active;
+				.radio-button-element-sizes;
 			}
 		}
 	}
@@ -73,17 +81,20 @@
 		.radio-button-before;
 		&:before {
 			.fuelux-icon-radio-button-checked;
+			.radio-button-element-sizes;
 		}
 	}
 	&.disabled {
 		.radio-button-before;
 		&:before {
 			.fuelux-icon-radio-button-disabled;
+			.radio-button-element-sizes;
 		}
 		&.checked {
 			.radio-button-before;
 			&:before {
 				.fuelux-icon-radio-button-checked-disabled;
+				.radio-button-element-sizes;
 			}
 
 		}
