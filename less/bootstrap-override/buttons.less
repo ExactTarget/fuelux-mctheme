@@ -68,6 +68,11 @@
 	//padding + border = 5px
 	padding: 4px 10px;
 	border: 1px solid @btn-default-border;
+	.button-size(4px; 10px; @font-size-base; @border-radius-base);
+	.repeater-views & {
+		.button-size(3px; 5px; @font-size-base; @border-radius-base);
+	}
+
 	.button-variant(@btn-default-color;
 									@btn-default-bg-start; @btn-default-bg-end;
 									@btn-default-bg-hover-start; @btn-default-bg-hover-end;

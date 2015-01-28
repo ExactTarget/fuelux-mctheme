@@ -1,8 +1,8 @@
 .fuelux-icon {
 	background-size: cover;
 	display: inline-block;
-	width: 14px;
-	height: 14px;
+	width: 16px;
+	height: 16px;
 	button:hover > & {
 	}
 	&:before {
@@ -15,11 +15,20 @@
 	}
 
 	.btn-sm & {
-		width: 11px;
-		height: 11px;
+		width: 13px;
+		height: 13px;
 	}
 
 }
+
+
+// Button sizes
+.button-size-all-paddings(@padding-top; @padding-right; @padding-bottom; @padding-left; @font-size; @border-radius) {
+	padding: @padding-top @padding-right @padding-bottom @padding-left;
+	font-size: @font-size;
+	border-radius: @border-radius;
+}
+
 
 
 .transition(@duration:0.2s, @ease:ease-out) {
