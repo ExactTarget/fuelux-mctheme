@@ -1,11 +1,13 @@
+.tree-caret-sizes() {
+	width: @tree-caret-size;
+	height: @tree-caret-size;
+}
 .tree-caret() {
-
 	background: none;
 	border-color: none;
 	.fuelux-icon;
 	.fuelux-icon-caret-right;
-	width: @tree-caret-size;
-	height: @tree-caret-size;
+	.tree-caret-sizes;
 	-webkit-appearance: inherit;
 	border: 0px solid transparent;
 	border-radius: 0;
@@ -58,6 +60,7 @@
 
 	.tree-branch-header > .tree-branch-name:hover > .icon-caret {
 		.fuelux-icon-caret-right-hover;
+		.tree-caret-sizes;
 	}
 
 	.icon-folder {
@@ -114,6 +117,8 @@
 		margin-right: 4px;
 		.fuelux-icon;
 		.fuelux-icon-dot;
+		left: 3px;
+		top: 3px;
 	}
 
 	.icon-item:before {
@@ -146,6 +151,12 @@
 		// background-position: -128px -1px; // entity dot selected
 		.tree-caret;
 		.fuelux-icon-checked-indicator;
+		left: 4px;
+		top: 1px;
+		width: 10px;
+		height: 10px;
+		margin-right: 10px;
+		margin-top: 6px;
 	}
 
 
@@ -155,11 +166,14 @@
 
 		& > .tree-branch-header .icon-caret {
 			.fuelux-icon-caret-down;
+			.tree-caret-sizes;
 			left: 0;
 			transform: none;
 		}
 
 		& > .tree-branch-header .icon-caret:hover {
+			.fuelux-icon-caret-down-hover;
+			.tree-caret-sizes;
 		}
 	}
 

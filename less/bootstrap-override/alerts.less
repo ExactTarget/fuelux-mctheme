@@ -6,7 +6,11 @@
 //
 // Adjust close button's positioning.
 
-
+.alert-icon-size() {
+	width: 21px;
+	height: 21px;
+	margin-bottom: -1px;
+}
 .alert-before() {
 
 
@@ -17,8 +21,7 @@
 		position: absolute;
 		left: 4px;
 		top: 4px;
-		width: 20px;
-		height: 20px;
+		.alert-icon-size;
 	}
 }
 
@@ -90,6 +93,7 @@
 		border-color: #B8D8A5;
 		&:before {
 			.fuelux-icon-success;
+			.alert-icon-size;
 		}
 
 	}
@@ -98,6 +102,7 @@
 		border-color: #F8D8B3;
 		&:before {
 			.fuelux-icon-warning;
+			.alert-icon-size;
 		}
 
 	}
@@ -106,6 +111,7 @@
 		border-color: #EDBFBF;
 		&:before {
 			.fuelux-icon-danger;
+			.alert-icon-size;
 		}
 
 	}
@@ -114,6 +120,7 @@
 		border-color: #BED5E8;
 		&:before {
 			.fuelux-icon-info;
+			.alert-icon-size;
 		}
 
 	}
