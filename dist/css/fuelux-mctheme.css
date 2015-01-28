@@ -7404,6 +7404,11 @@ a.list-group-item-danger.active:focus {
   height: 17px;
   position: relative;
 }
+.fuelux .search .input-group-btn button .glyphicon.glyphicon-remove {
+  height: 13px;
+  width: 13px;
+  margin-right: 2px;
+}
 .fuelux .selectlist .btn.dropdown-toggle {
   background: linear-gradient(#ffffff, #eeeeee);
   border: 1px solid #bbb;
