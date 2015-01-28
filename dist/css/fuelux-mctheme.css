@@ -1,5 +1,5 @@
 /*!
- * Marketing Cloud Theme EDGE - Built 2015/01/28, 3:51:53 PM 
+ * Marketing Cloud Theme EDGE - Built 2015/01/28, 3:58:55 PM 
  * Previous release: v1.3.4 
  * Copyright 2012-2015 ExactTarget
  * Licensed under the MIT license (https://github.com/ExactTarget/fuelux-mctheme/blob/master/COPYING)
@@ -7724,7 +7724,7 @@ a.list-group-item-danger.active:focus {
   width: 13px;
   height: 13px;
 }
-.fuelux .tree .tree-open > .tree-branch-header .icon-caret:hover {
+.fuelux .tree .tree-open > .tree-branch-header > .tree-branch-name:hover > .icon-caret {
   background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2220px%22%20%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22caret-down-hover%22%3E%20%3Cg%3E%20%20%3Cg%20id%3D%22button-2px-corner_101_%22%3E%20%20%20%20%20%20%20%3ClinearGradient%20id%3D%22SVGID_1_%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%22-841%22%20y1%3D%22-830.9995%22%20x2%3D%22-820.9995%22%20y2%3D%22-830.9995%22%20gradientTransform%3D%22matrix%280%201%20-1%200%20-821%20841%29%22%3E%20%20%20%20%3Cstop%20%20offset%3D%220%22%20style%3D%22stop-color%3A%23A0C7E7%22%2F%3E%20%20%20%20%3Cstop%20%20offset%3D%220.9%22%20style%3D%22stop-color%3A%23448CCA%22%2F%3E%20%20%20%3C%2FlinearGradient%3E%20%20%20%3Cpath%20style%3D%22fill%3Aurl%28%23SVGID_1_%29%3B%22%20d%3D%22M3%2C0C1.35%2C0%2C0%2C1.35%2C0%2C3v14c0%2C1.65%2C1.35%2C3%2C3%2C3h14c1.65%2C0%2C3-1.35%2C3-3V3c0-1.65-1.35-3-3-3H3z%20%20%20%20%22%2F%3E%20%20%20%3Cg%3E%20%20%20%20%3ClinearGradient%20id%3D%22SVGID_2_%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%2210.0005%22%20y1%3D%2220%22%20x2%3D%2210.0005%22%20y2%3D%224.882812e-04%22%3E%20%20%20%20%20%3Cstop%20%20offset%3D%220%22%20style%3D%22stop-color%3A%23A0C7E7%22%2F%3E%20%20%20%20%20%3Cstop%20%20offset%3D%220.9%22%20style%3D%22stop-color%3A%23448CCA%22%2F%3E%20%20%20%20%3C%2FlinearGradient%3E%20%20%20%20%3Cpath%20style%3D%22fill%3Aurl%28%23SVGID_2_%29%3B%22%20d%3D%22M17%2C1.25c0.965%2C0%2C1.75%2C0.785%2C1.75%2C1.75v14c0%2C0.965-0.785%2C1.75-1.75%2C1.75H3%20%20%20%20%20c-0.965%2C0-1.75-0.785-1.75-1.75V3c0-0.965%2C0.785-1.75%2C1.75-1.75H17%20M17%2C0H3C1.35%2C0%2C0%2C1.35%2C0%2C3v14c0%2C1.65%2C1.35%2C3%2C3%2C3h14%20%20%20%20%20c1.65%2C0%2C3-1.35%2C3-3V3C20%2C1.35%2C18.65%2C0%2C17%2C0L17%2C0z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%20%3Cg%20style%3D%22opacity%3A0.7%3B%22%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%2345494D%3B%22%20d%3D%22M17%2C0.5c1.379%2C0%2C2.5%2C1.122%2C2.5%2C2.5v14c0%2C1.379-1.121%2C2.5-2.5%2C2.5H3c-1.378%2C0-2.5-1.121-2.5-2.5V3%20%20%20%20%20c0-1.378%2C1.122-2.5%2C2.5-2.5H17%20M17%2C0H3C1.35%2C0%2C0%2C1.35%2C0%2C3v14c0%2C1.65%2C1.35%2C3%2C3%2C3h14c1.65%2C0%2C3-1.35%2C3-3V3C20%2C1.35%2C18.65%2C0%2C17%2C0%20%20%20%20%20L17%2C0z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%20%3Cg%20id%3D%22chevron_25_%22%3E%20%20%20%3Cpath%20style%3D%22fill%3A%23FFFFFF%3Benable-background%3Anew%20%20%20%20%3B%22%20d%3D%22M10.281%2C9.166c-0.155%2C0.156-0.405%2C0.156-0.56%2C0L7.051%2C6.44%20%20%20%20c-0.154-0.157-0.406-0.157-0.559%2C0L4.895%2C8.068c-0.152%2C0.156-0.152%2C0.414%2C0%2C0.57l2.672%2C2.725%20%20%20%20c0.152%2C0.156%2C0.406%2C0.415%2C0.559%2C0.569l1.596%2C1.628c0.155%2C0.156%2C0.405%2C0.156%2C0.56%2C0l1.594-1.628%20%20%20%20c0.152-0.154%2C0.406-0.413%2C0.559-0.569l2.672-2.725c0.152-0.156%2C0.152-0.414%2C0-0.57L13.51%2C6.44c-0.154-0.157-0.404-0.157-0.559%2C0%20%20%20%20L10.281%2C9.166z%22%2F%3E%20%20%20%3ClinearGradient%20id%3D%22SVGID_3_%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%2210%22%20y1%3D%226.1973%22%20x2%3D%2210%22%20y2%3D%2213.8032%22%3E%20%20%20%20%3Cstop%20%20offset%3D%220%22%20style%3D%22stop-color%3A%23FFFFFF%22%2F%3E%20%20%20%20%3Cstop%20%20offset%3D%220.9%22%20style%3D%22stop-color%3A%23D7E5EF%22%2F%3E%20%20%20%3C%2FlinearGradient%3E%20%20%20%3Cpath%20style%3D%22fill%3Aurl%28%23SVGID_3_%29%3B%22%20d%3D%22M13.23%2C6.322c0.102%2C0%2C0.202%2C0.04%2C0.279%2C0.118l1.596%2C1.628c0.152%2C0.156%2C0.152%2C0.414%2C0%2C0.57%20%20%20%20l-2.672%2C2.725c-0.152%2C0.156-0.406%2C0.415-0.559%2C0.569l-1.594%2C1.628c-0.078%2C0.078-0.179%2C0.117-0.28%2C0.117%20%20%20%20c-0.102%2C0-0.203-0.039-0.28-0.117l-1.596-1.628c-0.152-0.154-0.406-0.413-0.559-0.569L4.895%2C8.639%20%20%20%20c-0.152-0.156-0.152-0.414%2C0-0.57L6.492%2C6.44c0.076-0.079%2C0.177-0.118%2C0.278-0.118c0.102%2C0%2C0.203%2C0.04%2C0.28%2C0.118l2.67%2C2.726%20%20%20%20c0.077%2C0.078%2C0.179%2C0.117%2C0.28%2C0.117c0.101%2C0%2C0.202-0.039%2C0.28-0.117l2.67-2.726C13.028%2C6.362%2C13.129%2C6.322%2C13.23%2C6.322%20%20%20%20%20M13.23%2C6.197c-0.14%2C0-0.271%2C0.056-0.368%2C0.156l-2.671%2C2.726c-0.051%2C0.051-0.119%2C0.08-0.19%2C0.08c-0.072%2C0-0.14-0.028-0.191-0.08%20%20%20%20L7.14%2C6.353c-0.099-0.1-0.229-0.156-0.37-0.156c-0.14%2C0-0.271%2C0.056-0.368%2C0.156L4.805%2C7.981c-0.2%2C0.206-0.2%2C0.54%2C0%2C0.745%20%20%20%20l2.672%2C2.725c0.152%2C0.156%2C0.407%2C0.415%2C0.559%2C0.569l1.595%2C1.628c0.099%2C0.1%2C0.23%2C0.154%2C0.37%2C0.154c0.139%2C0%2C0.27-0.055%2C0.369-0.154%20%20%20%20l1.594-1.628c0.152-0.154%2C0.407-0.413%2C0.56-0.57l2.671-2.724c0.201-0.206%2C0.201-0.54%2C0.001-0.745l-1.597-1.628%20%20%20%20C13.501%2C6.253%2C13.37%2C6.197%2C13.23%2C6.197L13.23%2C6.197z%22%2F%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
@@ -7734,14 +7734,14 @@ a.list-group-item-danger.active:focus {
   width: 14px;
   height: 14px;
 }
-.fuelux .tree .tree-open > .tree-branch-header .icon-caret:hover:before {
+.fuelux .tree .tree-open > .tree-branch-header > .tree-branch-name:hover > .icon-caret:before {
   content: "";
 }
-.btn-lg .fuelux .tree .tree-open > .tree-branch-header .icon-caret:hover {
+.btn-lg .fuelux .tree .tree-open > .tree-branch-header > .tree-branch-name:hover > .icon-caret {
   width: 20px;
   height: 20px;
 }
-.btn-sm .fuelux .tree .tree-open > .tree-branch-header .icon-caret:hover {
+.btn-sm .fuelux .tree .tree-open > .tree-branch-header > .tree-branch-name:hover > .icon-caret {
   width: 13px;
   height: 13px;
 }
