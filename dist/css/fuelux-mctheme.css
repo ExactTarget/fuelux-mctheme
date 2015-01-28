@@ -1,5 +1,5 @@
 /*!
- * Marketing Cloud Theme EDGE - Built 2015/01/28, 4:20:37 PM 
+ * Marketing Cloud Theme EDGE - Built 2015/01/28, 4:30:54 PM 
  * Previous release: v1.3.4 
  * Copyright 2012-2015 ExactTarget
  * Licensed under the MIT license (https://github.com/ExactTarget/fuelux-mctheme/blob/master/COPYING)
@@ -2603,9 +2603,8 @@ fieldset[disabled] .btn {
   margin-left: 2px;
 }
 .btn-default {
-  padding: 4px 10px;
   border: 1px solid #b5c6d2;
-  padding: 3px 5px;
+  padding: 4px 10px;
   font-size: 11px;
   border-radius: 3px;
   color: #4e8abe;
@@ -2617,6 +2616,11 @@ fieldset[disabled] .btn {
   background-repeat: no-repeat;
   -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+}
+.repeater-views .btn-default {
+  padding: 3px 5px;
+  font-size: 11px;
+  border-radius: 3px;
 }
 .btn-default:hover {
   color: #4e8abe;
