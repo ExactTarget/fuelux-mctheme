@@ -120,6 +120,10 @@
 
 .fuelux-icon-radio-button, .glyphicon-radio-button { background-image: url('png/radio-button.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
+.fuelux-icon-remove-hover, .fuelux-icon-remove:hover, button:hover > .fuelux-icon-remove , .glyphicon-remove-hover, .glyphicon-remove:hover, button:hover > .glyphicon-remove { background-image: url('png/remove-hover.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-remove, .glyphicon-remove { background-image: url('png/remove.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
 .fuelux-icon-search-active, .fuelux-icon-search:active, button:active > .fuelux-icon-search -hover, .glyphicon-search-active, .glyphicon-search:active, button:active > .glyphicon-search -hover { background-image: url('png/search-active-hover.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
 .fuelux-icon-search-active, .fuelux-icon-search:active, button:active > .fuelux-icon-search , .glyphicon-search-active, .glyphicon-search:active, button:active > .glyphicon-search { background-image: url('png/search-active.png'); background-repeat: no-repeat; .fuelux-icon; } 
