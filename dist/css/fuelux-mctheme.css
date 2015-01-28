@@ -1,5 +1,5 @@
 /*!
- * Marketing Cloud Theme EDGE - Built 2015/01/28, 3:30:38 PM 
+ * Marketing Cloud Theme EDGE - Built 2015/01/28, 3:40:54 PM 
  * Previous release: v1.3.4 
  * Copyright 2012-2015 ExactTarget
  * Licensed under the MIT license (https://github.com/ExactTarget/fuelux-mctheme/blob/master/COPYING)
@@ -7375,6 +7375,11 @@ a.list-group-item-danger.active:focus {
   width: 17px;
   height: 17px;
   position: relative;
+}
+.fuelux .search .input-group-btn button .glyphicon.glyphicon-remove {
+  height: 13px;
+  width: 13px;
+  margin-right: 2px;
 }
 .fuelux .selectlist .btn.dropdown-toggle {
   background: linear-gradient(#ffffff, #eeeeee);
