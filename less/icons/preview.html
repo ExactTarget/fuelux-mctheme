@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en" class="glyphicon glyphicon-fuelux">
+<head>
+	<meta charset="utf-8">
+	<title>Fuel UX 3</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href="../../bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="../../bower_components/fuelux/dist/css/fuelux.css" rel="stylesheet" type="text/css">
+
+	<link href="../../dist/css/fuelux-mctheme.css" rel="stylesheet" type="text/css">
+
+	<!--CLIENT-SIDE LESS COMPILATION FOR WATCHER-LESS DEV-->
+	<!--<link href="../../less/fuelux-mctheme.less" rel="stylesheet/less" type="text/css"/>-->
+	<!--<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.7.0/less.min.js"></script>-->
+	<!--<script type="text/javascript">if(window.console && window.console.clear){ window.console.clear(); }</script>-->
+
+	<link href="../../examples/fuelux/fuelux-examples.css" rel="stylesheet" type="text/css">
+
+	<script src="../../bower_components/requirejs/require.js"></script>
+	<script type="text/javascript">
+		(function () {
+			requirejs.config({
+				config: {
+					moment: {
+						noGlobal: true
+					}
+				},
+				paths: {
+					jquery: '../../bower_components/jquery/dist/jquery',
+					underscore: '../../bower_components/underscore/underscore',
+					bootstrap: '../../bower_components/bootstrap/dist/js/bootstrap',
+					//moment: '../../bower_components/moment/min/moment-with-langs',
+					fuelux: '../../bower_components/fuelux/dist/js/fuelux'
+				},
+				shim: {
+					'bootstrap': {
+						deps: ['jquery'],
+						exports: 'bootstrap'
+					}
+				}
+			});
+		})();
+		require(['jquery', 'main'], function($){ });
+	</script>
+</head>
+<body>
+	<div class="container" id="mainWrapper">
+		
+			
+			<pre><code>.fuelux-icon-calendar-hover:</code></pre><div class="glyphicon glyphicon-calendar-hover" style="width: 20px; height: 20px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-calendar:</code></pre><div class="glyphicon glyphicon-calendar" style="width: 20px; height: 20px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-caret-down-hover:</code></pre><div class="glyphicon glyphicon-caret-down-hover" style="width: 20px; height: 20px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-caret-down:</code></pre><div class="glyphicon glyphicon-caret-down" style="width: 20px; height: 20px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-caret-right-hover:</code></pre><div class="glyphicon glyphicon-caret-right-hover" style="width: 20px; height: 20px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-caret-right:</code></pre><div class="glyphicon glyphicon-caret-right" style="width: 20px; height: 20px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-checkbox-active-hover:</code></pre><div class="glyphicon glyphicon-checkbox-active-hover" style="width: 20px; height: 20px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-checkbox-active:</code></pre><div class="glyphicon glyphicon-checkbox-active" style="width: 20px; height: 20px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-checkbox-checked-disabled:</code></pre><div class="glyphicon glyphicon-checkbox-checked-disabled" style="width: 20px; height: 20px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-checkbox-checked-hover-active:</code></pre><div class="glyphicon glyphicon-checkbox-checked-hover-active" style="width: 20px; height: 20px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-checkbox-checked-hover:</code></pre><div class="glyphicon glyphicon-checkbox-checked-hover" style="width: 20px; height: 20px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-checkbox-checked:</code></pre><div class="glyphicon glyphicon-checkbox-checked" style="width: 20px; height: 20px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-checkbox-disabled:</code></pre><div class="glyphicon glyphicon-checkbox-disabled" style="width: 20px; height: 20px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-checkbox-hover:</code></pre><div class="glyphicon glyphicon-checkbox-hover" style="width: 20px; height: 20px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-checkbox-intermediate-disabled:</code></pre><div class="glyphicon glyphicon-checkbox-intermediate-disabled" style="width: 20px; height: 20px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-checkbox-intermediate-hover:</code></pre><div class="glyphicon glyphicon-checkbox-intermediate-hover" style="width: 20px; height: 20px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-checkbox-intermediate:</code></pre><div class="glyphicon glyphicon-checkbox-intermediate" style="width: 20px; height: 20px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-checkbox:</code></pre><div class="glyphicon glyphicon-checkbox" style="width: 20px; height: 20px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-checked-indicator:</code></pre><div class="glyphicon glyphicon-checked-indicator" style="width: 20.349px; height: 20px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-chevron-down:</code></pre><div class="glyphicon glyphicon-chevron-down" style="width: 19.999px; height: 20px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-chevron-left-hover:</code></pre><div class="glyphicon glyphicon-chevron-left-hover" style="width: 20px; height: 20.001px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-chevron-left:</code></pre><div class="glyphicon glyphicon-chevron-left" style="width: 20px; height: 20px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-chevron-right-hover:</code></pre><div class="glyphicon glyphicon-chevron-right-hover" style="width: 20px; height: 20px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-chevron-right:</code></pre><div class="glyphicon glyphicon-chevron-right" style="width: 20px; height: 20px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-chevron-up:</code></pre><div class="glyphicon glyphicon-chevron-up" style="width: 20.001px; height: 20px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-close-content-block:</code></pre><div class="glyphicon glyphicon-close-content-block" style="width: 20px; height: 20px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-copy-hover:</code></pre><div class="glyphicon glyphicon-copy-hover" style="width: 20px; height: 20px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-copy:</code></pre><div class="glyphicon glyphicon-copy" style="width: 20px; height: 20px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-danger:</code></pre><div class="glyphicon glyphicon-danger" style="width: 20px; height: 20px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-delete:</code></pre><div class="glyphicon glyphicon-delete" style="width: 20px; height: 20px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-dot-hover:</code></pre><div class="glyphicon glyphicon-dot-hover" style="width: 20px; height: 20px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-dot:</code></pre><div class="glyphicon glyphicon-dot" style="width: 20px; height: 20px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-download-hover:</code></pre><div class="glyphicon glyphicon-download-hover" style="width: 20px; height: 20px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-download:</code></pre><div class="glyphicon glyphicon-download" style="width: 20px; height: 20px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-email-hover:</code></pre><div class="glyphicon glyphicon-email-hover" style="width: 20px; height: 20px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-email:</code></pre><div class="glyphicon glyphicon-email" style="width: 20px; height: 20px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-folder-close-hover:</code></pre><div class="glyphicon glyphicon-folder-close-hover" style="width: 20px; height: 20px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-folder-close:</code></pre><div class="glyphicon glyphicon-folder-close" style="width: 20px; height: 20px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-folder-open-hover:</code></pre><div class="glyphicon glyphicon-folder-open-hover" style="width: 20px; height: 20px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-folder-open:</code></pre><div class="glyphicon glyphicon-folder-open" style="width: 20px; height: 20px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-gridview-columns-configure:</code></pre><div class="glyphicon glyphicon-gridview-columns-configure" style="width: 20px; height: 20px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-gridview-columns:</code></pre><div class="glyphicon glyphicon-gridview-columns" style="width: 20px; height: 20px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-gridview-list:</code></pre><div class="glyphicon glyphicon-gridview-list" style="width: 20.078px; height: 20px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-gridview-paragraph:</code></pre><div class="glyphicon glyphicon-gridview-paragraph" style="width: 20px; height: 20px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-gridview-thumbnail:</code></pre><div class="glyphicon glyphicon-gridview-thumbnail" style="width: 20px; height: 20px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-info:</code></pre><div class="glyphicon glyphicon-info" style="width: 20px; height: 20.001px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-pencil-hover:</code></pre><div class="glyphicon glyphicon-pencil-hover" style="width: 20px; height: 20px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-pencil:</code></pre><div class="glyphicon glyphicon-pencil" style="width: 20px; height: 20px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-plus-sign-disabled:</code></pre><div class="glyphicon glyphicon-plus-sign-disabled" style="width: 20px; height: 20px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-plus-sign:</code></pre><div class="glyphicon glyphicon-plus-sign" style="width: 20px; height: 20px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-radio-button-active-hover:</code></pre><div class="glyphicon glyphicon-radio-button-active-hover" style="width: 20px; height: 20px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-radio-button-active:</code></pre><div class="glyphicon glyphicon-radio-button-active" style="width: 20px; height: 20px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-radio-button-checked-disabled:</code></pre><div class="glyphicon glyphicon-radio-button-checked-disabled" style="width: 20px; height: 20px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-radio-button-checked-hover-active:</code></pre><div class="glyphicon glyphicon-radio-button-checked-hover-active" style="width: 20px; height: 20px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-radio-button-checked-hover:</code></pre><div class="glyphicon glyphicon-radio-button-checked-hover" style="width: 20px; height: 20px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-radio-button-checked:</code></pre><div class="glyphicon glyphicon-radio-button-checked" style="width: 20px; height: 20px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-radio-button-disabled:</code></pre><div class="glyphicon glyphicon-radio-button-disabled" style="width: 20px; height: 20px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-radio-button-hover:</code></pre><div class="glyphicon glyphicon-radio-button-hover" style="width: 20px; height: 20px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-radio-button:</code></pre><div class="glyphicon glyphicon-radio-button" style="width: 20px; height: 20px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-search-active-hover:</code></pre><div class="glyphicon glyphicon-search-active-hover" style="width: 20px; height: 20px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-search-active:</code></pre><div class="glyphicon glyphicon-search-active" style="width: 20px; height: 20px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-search-deprecated-hover:</code></pre><div class="glyphicon glyphicon-search-deprecated-hover" style="width: 20px; height: 20px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-search-deprecated:</code></pre><div class="glyphicon glyphicon-search-deprecated" style="width: 20px; height: 20px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-search-focus:</code></pre><div class="glyphicon glyphicon-search-focus" style="width: 20px; height: 20px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-search-hover:</code></pre><div class="glyphicon glyphicon-search-hover" style="width: 20px; height: 20px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-search:</code></pre><div class="glyphicon glyphicon-search" style="width: 20px; height: 20px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-sort-by-alphabet:</code></pre><div class="glyphicon glyphicon-sort-by-alphabet" style="width: 20px; height: 20px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-spyglass:</code></pre><div class="glyphicon glyphicon-spyglass" style="width: 20px; height: 20px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-success:</code></pre><div class="glyphicon glyphicon-success" style="width: 20px; height: 20px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-trash-hover:</code></pre><div class="glyphicon glyphicon-trash-hover" style="width: 20px; height: 20px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-trash:</code></pre><div class="glyphicon glyphicon-trash" style="width: 20px; height: 20.001px;" ></div><hr/>
+			
+		
+			
+			<pre><code>.fuelux-icon-warning:</code></pre><div class="glyphicon glyphicon-warning" style="width: 20px; height: 20px;" ></div><hr/>
+			
+		
+	</div>
+</body>
+</html>

@@ -1,17 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="fuelux">
 <head>
 	<meta charset="utf-8">
-	<title>Bootstrap CSS (MC Theme)</title>
+	<title>Fuel UX 3</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link href="../../bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css">
-	<link href="../../dist/css/fuelux-mctheme.css" rel="stylesheet" type="text/css"/>
-	<link href="bootstrap-css-examples.css" rel="stylesheet" type="text/css"/>
 
-	<script src="../../bower_components/jquery/dist/jquery.js"></script>
-	<script src="../../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+	<link href="../../dist/css/fuelux-mctheme.css" rel="stylesheet" type="text/css">
 
+	<!--CLIENT-SIDE LESS COMPILATION FOR WATCHER-LESS DEV-->
+	<!--<link href="../../less/fuelux-mctheme.less" rel="stylesheet/less" type="text/css"/>-->
+	<!--<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.7.0/less.min.js"></script>-->
+	<!--<script type="text/javascript">if(window.console && window.console.clear){ window.console.clear(); }</script>-->
+
+	<link href="bootstrap-css-examples.css" rel="stylesheet" type="text/css">
+
+	<script src="../../bower_components/requirejs/require.js"></script>
+	<script type="text/javascript">
+		(function () {
+			requirejs.config({
+				config: {
+					moment: {
+						noGlobal: true
+					}
+				},
+				paths: {
+					jquery: '../../bower_components/jquery/dist/jquery',
+					underscore: '../../bower_components/underscore/underscore',
+					bootstrap: '../../bower_components/bootstrap/dist/js/bootstrap',
+					//moment: '../../bower_components/moment/min/moment-with-langs',
+					fuelux: '../../bower_components/fuelux/dist/js/fuelux'
+				},
+				shim: {
+					'bootstrap': {
+						deps: ['jquery'],
+						exports: 'bootstrap'
+					}
+				}
+			});
+		})();
+		require(['jquery', 'main'], function($){ });
+	</script>
 </head>
 <body>
 

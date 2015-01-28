@@ -3,7 +3,7 @@
 module.exports = function (grunt) {
 
 	// use --no-livereload to disable livereload. Helpful to 'serve' multiple projects
-	var isLivereloadEnabled = (typeof grunt.option('livereload') !== 'undefined') ? grunt.option('livereload') : true;
+	var isLivereloadEnabled = (typeof grunt.option('livereload') !== 'undefined') ? grunt.option('livereload') : 35730;
 
 	// release minor or patch version. Do major releases manually
 	var versionReleaseType = (typeof grunt.option('minor') !== 'undefined') ? 'minor':'patch';
@@ -24,6 +24,59 @@ module.exports = function (grunt) {
 		' */\n',
 		pkg: grunt.file.readJSON('package.json'),
 		// Tasks configuration
+
+		// add comments abou the regex-foo
+		'string-replace': {
+			inline: {
+				files: {
+					"less/icons/icons-svg.less": "less/icons/icons-svg.less",
+					"less/icons/icons-png.css": "less/icons/icons-png.css",
+					"less/icons/icons-png-fallback.css": "less/icons/icons-png-fallback.css"
+				},
+				options: {
+					replacements: [
+					{
+						pattern:  /\.fuelux-icon(-?[_a-zA-Z]+[_a-zA-Z0-9-]*)\s*/g,
+						replacement: '.fuelux-icon$1, .glyphicon$1 '
+					}
+					
+					,
+					{
+						pattern:  /(\.-?[_a-zA-Z]+[_a-zA-Z0-9-]*)-hover-focus\s*/g,
+						replacement: '$1-hover-focus, $1:hover:focus, button:hover:focus > $1 '
+					}
+
+
+					,
+					{
+						pattern:  /(\.-?[_a-zA-Z]+[_a-zA-Z0-9-]*)-active\s*/g,
+						replacement: '$1-active, $1:active, button:active > $1 '
+					}
+
+					,
+					{
+						pattern:  /(\.-?[_a-zA-Z]+[_a-zA-Z0-9-]*)-focus\s*/g,
+						replacement: '$1-focus, $1:focus, button:focus > $1 '
+					}
+
+					,
+					{
+						pattern:  /(\.-?[_a-zA-Z]+[_a-zA-Z0-9-]*)-hover\s*/g,
+						replacement: '$1-hover, $1:hover, button:hover > $1 '
+					}
+
+					,
+					{
+						pattern:  /\}/g,
+						replacement: '.fuelux-icon; } '
+					}
+					]
+				}
+			}
+		},
+
+
+
 		bump: {
 			options: {
 				files: [ 'bower.json', 'package.json' ],
@@ -93,51 +146,28 @@ module.exports = function (grunt) {
 		// Micro libraries via http://microjs.com/
 			'docs.zip': 'https://github.com/twbs/bootstrap/archive/master.zip'
 		},
+
 		grunticon: {
-			dist: {
-				files: [{
+			makeSvgIcons: {
+				files: [ {
 					expand: true,
-					cwd: 'img/svgs-min',
-					src: ['*.svg', '*.png'],
-					dest: "examples/icons"
-				}],
+					cwd: "icons/svg-exports",
+					src: [ '*.svg', '*.png' ],
+					dest: "less/icons"
+				} ],
 				options: {
-
-					// CSS filenames
-					datasvgcss: "mctheme.svg.css",
-					datapngcss: "mctheme.png.css",
-					urlpngcss: "mctheme.css",
-
-					// preview HTML filename
-					previewhtml: "preview.html",
-
-					// grunticon loader code snippet filename
-					loadersnippet: "grunticon.loader.js",
-
-					// folder name (within dest) for png output
-					pngfolder: "png",
-
-					// prefix for CSS classnames
-					cssprefix: ".fuelux-",
-
-					defaultWidth: "128px",
-					defaultHeight: "128px",
-
-					// define vars that can be used in filenames if desirable, like foo.colors-primary-secondary.svg
-					colors: {
-						primary: "red",
-						secondary: "#666"
-					},
-
-					// css file path prefix - this defaults to "/" and will be placed before the "dest" path when stylesheets are loaded.
-					// This allows root-relative referencing of the CSS. If you don't want a prefix path, set to to ""
-					cssbasepath: "/",
-					template: "examples/icons/default-css.hbs",
-					previewTemplate: "examples/icons/preview-custom.hbs"
-
+					"cssprefix": ".fuelux-icon-",
+					"datasvgcss": "icons-svg.less",
+					"datapngcss": "icons-png.css",
+					"urlpngcss": "icons-png-fallback.css",
+					"defaultWidth": "20px",
+					"defaultHeight": "20px",
+					"previewTemplate": "icons/preview.hbs"
 				}
 			}
 		},
+
+
 		less: {
 			'fuelux-mctheme': {
 				options: {
@@ -253,11 +283,22 @@ module.exports = function (grunt) {
 	grunt.registerTask('distzip', ['copy:zipsrc', 'compress', 'clean:zipsrc']);
 
 	// Full distribution task
-	grunt.registerTask('dist', ['clean:dist', 'copy:img', 'distcss', 'distzip']);
+	grunt.registerTask('dist', ['clean:dist', 'make-icons', 'copy:img', 'distcss', 'distzip']);
 
-	//The default build task
+	// The default build task
 	grunt.registerTask('default', ['dist']);
 
+
+	// SVG Icon Making Tools
+	grunt.loadNpmTasks( 'grunt-grunticon' );
+
+
+	/* ----------------
+		Making Icons
+	---------------- */
+	grunt.registerTask( 'make-icons', [ 'grunticon:makeSvgIcons', 'string-replace'] );
+	grunt.registerTask( 'make-icons-base', [ 'grunticon:makeSvgIcons'] );
+	grunt.registerTask( 'glyphify-icons', [ 'string-replace' ] );
 
 	/* -------------
 		RELEASE
@@ -274,6 +315,6 @@ module.exports = function (grunt) {
 	/* -------------
 			SERVE
 		------------- */
-	grunt.registerTask('serve', ['dist', 'connect:server', 'watch:full']);
-
+	grunt.registerTask('serve', ['connect:server', 'watch:full']);
+	grunt.registerTask('dist-serve', ['dist', 'connect:server', 'watch:full']);
 };

@@ -37,7 +37,7 @@ label {
 	font-weight: bold;
 }
 
-// Remove ms-clear from all inputs. 
+// Remove ms-clear from all inputs.
 input {
 	&::-ms-clear {
 		display:none;
@@ -288,10 +288,13 @@ input[type="checkbox"] {
 	font-weight: normal;
 	cursor: pointer;
 }
-.radio-inline + .radio-inline,
 .checkbox-inline + .checkbox-inline {
 	margin-top: 0;
-	margin-left: 10px; // space out consecutive inline controls
+	margin-left: 10px; // space out of consecutive inline controls
+}
+.radio-inline + .radio-inline  {
+	margin-top: 0;
+	margin-left: 0px; // undo bootstrap's spacing out of consecutive inline controls because our padding already does it.
 }
 
 .checkbox-inline {
@@ -391,6 +394,13 @@ input[type="checkbox"] {
 	.form-control {
 		padding-right: (@input-height-base * 1.25);
 	}
+
+	label {
+		// additional specificity required
+		& ~ .form-control-feedback {
+			top: 19.5px; // magic number calculated in bs variable (@line-height-computed + 5)
+		}
+	}
 }
 // Feedback icon (requires .glyphicon classes)
 .form-control-feedback {
@@ -404,6 +414,7 @@ input[type="checkbox"] {
 	line-height: @input-height-base;
 	text-align: center;
 }
+
 .input-lg + .form-control-feedback {
 	width: @input-height-large;
 	height: @input-height-large;
