@@ -1,3 +1,10 @@
+/*!
+ * Marketing Cloud Theme EDGE - Built 2015/01/29, 2:35:42 PM 
+ * Previous release: v1.3.4 
+ * Copyright 2012-2015 ExactTarget
+ * Licensed under the MIT license (https://github.com/ExactTarget/fuelux-mctheme/blob/master/COPYING)
+ */
+
 .fuelux-icon {
   background-size: cover;
   display: inline-block;
@@ -1231,7 +1238,7 @@ button:hover > .glyphicon-email:before {
 }
 .fuelux-icon-gridview-list,
 .glyphicon-gridview-list {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2220.078px%22%20height%3D%2220px%22%20viewBox%3D%220%200%2020.078%2020%22%20style%3D%22enable-background%3Anew%200%200%2020.078%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22gridview-list%22%3E%20%3Crect%20id%3D%22le_wrappier_90_%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%3Cg%3E%20%20%3Cg%20id%3D%22button-2px-corner_81_%22%3E%20%20%20%3Cpath%20style%3D%22fill%3A%234E8ABE%3B%22%20d%3D%22M0.078%2C1.523c0%2C0.009%2C0.007%2C0.016%2C0.016%2C0.016h19.969c0.009%2C0%2C0.016-0.007%2C0.016-0.016V0.016%20%20%20%20C20.078%2C0.007%2C20.071%2C0%2C20.062%2C0H0.094C0.085%2C0%2C0.078%2C0.007%2C0.078%2C0.016V1.523z%22%2F%3E%20%20%3C%2Fg%3E%20%20%3Cg%20id%3D%22button-2px-corner_79_%22%3E%20%20%20%3Cpath%20style%3D%22fill%3A%234E8ABE%3B%22%20d%3D%22M0.078%2C19.984C0.078%2C19.993%2C0.085%2C20%2C0.094%2C20h19.969c0.009%2C0%2C0.016-0.007%2C0.016-0.016v-1.508%20%20%20%20c0-0.009-0.007-0.016-0.016-0.016H0.094c-0.009%2C0-0.016%2C0.007-0.016%2C0.016V19.984z%22%2F%3E%20%20%3C%2Fg%3E%20%20%3Cg%20id%3D%22button-2px-corner_76_%22%3E%20%20%20%3Cpath%20style%3D%22fill%3A%234E8ABE%3B%22%20d%3D%22M0.078%2C6.139c0%2C0.009%2C0.007%2C0.016%2C0.016%2C0.016h19.969c0.009%2C0%2C0.016-0.007%2C0.016-0.016V4.633%20%20%20%20c0-0.009-0.007-0.016-0.016-0.016H0.094c-0.009%2C0-0.016%2C0.007-0.016%2C0.016V6.139z%22%2F%3E%20%20%3C%2Fg%3E%20%20%3Cg%20id%3D%22button-2px-corner_74_%22%3E%20%20%20%3Cpath%20style%3D%22fill%3A%234E8ABE%3B%22%20d%3D%22M0.078%2C10.754c0%2C0.009%2C0.007%2C0.016%2C0.016%2C0.016h19.969c0.009%2C0%2C0.016-0.007%2C0.016-0.016V9.246%20%20%20%20c0-0.009-0.007-0.016-0.016-0.016H0.094c-0.009%2C0-0.016%2C0.007-0.016%2C0.016V10.754z%22%2F%3E%20%20%3C%2Fg%3E%20%20%3Cg%20id%3D%22button-2px-corner_72_%22%3E%20%20%20%3Cpath%20style%3D%22fill%3A%234E8ABE%3B%22%20d%3D%22M0.078%2C15.369c0%2C0.009%2C0.007%2C0.016%2C0.016%2C0.016h19.969c0.009%2C0%2C0.016-0.007%2C0.016-0.016v-1.506%20%20%20%20c0-0.009-0.007-0.016-0.016-0.016H0.094c-0.009%2C0-0.016%2C0.007-0.016%2C0.016V15.369z%22%2F%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2220px%22%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22gridview-list%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_90_%22%20x%3D%220%22%20y%3D%220%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cg%3E%20%20%20%3Cg%20id%3D%22button-2px-corner_81_%22%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%234E8ABE%3B%22%20d%3D%22M0%2C1.524C0%2C1.533%2C0.006%2C1.54%2C0.015%2C1.54h19.969C19.994%2C1.54%2C20%2C1.533%2C20%2C1.524V0.016%20%20%20%20%20C20%2C0.006%2C19.994%2C0%2C19.984%2C0H0.015C0.006%2C0%2C0%2C0.006%2C0%2C0.016V1.524z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%20%3Cg%20id%3D%22button-2px-corner_79_%22%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%234E8ABE%3B%22%20d%3D%22M0%2C19.984C0%2C19.994%2C0.006%2C20%2C0.015%2C20h19.969C19.994%2C20%2C20%2C19.994%2C20%2C19.984v-1.508%20%20%20%20%20c0-0.01-0.006-0.016-0.016-0.016H0.015C0.006%2C18.461%2C0%2C18.467%2C0%2C18.477V19.984z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%20%3Cg%20id%3D%22button-2px-corner_76_%22%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%234E8ABE%3B%22%20d%3D%22M0%2C6.139c0%2C0.01%2C0.007%2C0.017%2C0.016%2C0.017h19.969c0.01%2C0%2C0.016-0.007%2C0.016-0.017V4.633%20%20%20%20%20c0-0.009-0.006-0.016-0.016-0.016H0.015C0.006%2C4.618%2C0%2C4.625%2C0%2C4.633V6.139z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%20%3Cg%20id%3D%22button-2px-corner_74_%22%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%234E8ABE%3B%22%20d%3D%22M0%2C10.754c0%2C0.01%2C0.007%2C0.016%2C0.016%2C0.016h19.969c0.01%2C0%2C0.016-0.006%2C0.016-0.016V9.247%20%20%20%20%20c0-0.01-0.006-0.016-0.016-0.016H0.015C0.006%2C9.231%2C0%2C9.237%2C0%2C9.247V10.754z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%20%3Cg%20id%3D%22button-2px-corner_72_%22%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%234E8ABE%3B%22%20d%3D%22M0%2C15.369c0%2C0.01%2C0.007%2C0.016%2C0.016%2C0.016h19.969c0.01%2C0%2C0.016-0.006%2C0.016-0.016v-1.506%20%20%20%20%20c0-0.01-0.006-0.016-0.016-0.016H0.015C0.006%2C13.848%2C0%2C13.854%2C0%2C13.863V15.369z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1_1_%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -2614,6 +2621,10 @@ fieldset[disabled] .btn {
   padding: 3px 5px;
   font-size: 11px;
   border-radius: 3px;
+}
+.repeater-views .btn-default .glyphicon {
+  width: 11px;
+  height: 11px;
 }
 .btn-default:hover {
   color: #4e8abe;
@@ -7413,7 +7424,7 @@ a.list-group-item-danger.active:focus {
 .fuelux .selectlist .btn.dropdown-toggle {
   background: linear-gradient(#ffffff, #eeeeee);
   border: 1px solid #bbb;
-  padding: 7px 10px 6px 10px;
+  padding: 4px 5px 4px 5px;
 }
 .fuelux .selectlist .btn.dropdown-toggle .caret {
   color: #656565;
