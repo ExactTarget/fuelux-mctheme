@@ -6,7 +6,7 @@
 <g id="checkbox-intermediate-disabled">
 	<g>
 		<rect id="le_wrappier_3_" style="fill:none;" width="20" height="20"/>
-		<g style="opacity:0.4;">
+		<g>
 			<g id="checkbox-2px-corner_1_">
 				<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="8.4995" y1="0" x2="8.4995" y2="17.0005">
 					<stop  offset="0" style="stop-color:#F5F5F5"/>
@@ -17,8 +17,8 @@
 				<path style="fill:url(#SVGID_1_);" d="M0,14c0,1.65,1.35,3,3,3h11c1.65,0,3-1.35,3-3V3c0-1.65-1.35-3-3-3H3C1.35,0,0,1.35,0,3
 					V14z"/>
 				<g>
-					<path style="fill:#FFFFFF;" d="M14,1.25c0.965,0,1.75,0.785,1.75,1.75v11c0,0.965-0.785,1.75-1.75,1.75H3
-						c-0.965,0-1.75-0.785-1.75-1.75V3c0-0.965,0.785-1.75,1.75-1.75H14 M14,0H3C1.35,0,0,1.35,0,3v11c0,1.65,1.35,3,3,3h11
+					<path style="fill:#FFFFFF;" d="M14,1.75c0.689,0,1.25,0.561,1.25,1.25v11c0,0.689-0.561,1.25-1.25,1.25H3
+						c-0.689,0-1.25-0.561-1.25-1.25V3c0-0.678,0.572-1.25,1.25-1.25H14 M14,0H3C1.35,0,0,1.35,0,3v11c0,1.65,1.35,3,3,3h11
 						c1.65,0,3-1.35,3-3V3C17,1.35,15.65,0,14,0L14,0z"/>
 				</g>
 				<g>
