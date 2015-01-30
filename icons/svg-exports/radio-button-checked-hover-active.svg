@@ -22,23 +22,21 @@
 						C4.477,0,0,4.477,0,10c0,5.523,4.477,10,10,10c5.523,0,10-4.477,10-10C20,4.477,15.523,0,10,0L10,0z"/>
 				</g>
 			</g>
-			<g id="checked-indicator_10_">
-				
-					<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="-1963.8994" y1="268.2773" x2="-1970.7946" y2="262.4916" gradientTransform="matrix(-0.9455 -0.3256 0.3256 -0.9455 -1936.5627 -379.0893)">
+			<g id="checked-indicator_4_">
+				<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="13.4258" y1="12.8848" x2="6.5314" y2="7.0997">
 					<stop  offset="0" style="stop-color:#66A2D7"/>
 					<stop  offset="1" style="stop-color:#517FA5"/>
 				</linearGradient>
 				
-					<circle style="opacity:0.6;fill:none;stroke:url(#SVGID_2_);stroke-width:0.0219;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" cx="10.001" cy="10.49" r="4.489"/>
+					<circle style="opacity:0.6;fill:none;stroke:url(#SVGID_2_);stroke-width:0.0219;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" cx="9.978" cy="9.991" r="4.489"/>
 				
-					<radialGradient id="SVGID_3_" cx="-2006.1021" cy="275.9629" r="6.7833" gradientTransform="matrix(-0.9095 -0.3132 0.3131 -0.9094 -1901.3574 -364.2202)" gradientUnits="userSpaceOnUse">
-					<stop  offset="0.0031" style="stop-color:#DAE8F2"/>
+					<radialGradient id="SVGID_3_" cx="49.8818" cy="15.0713" r="8.0199" gradientTransform="matrix(0.9619 0 0 0.9618 -37.9194 -2.48)" gradientUnits="userSpaceOnUse">
 					<stop  offset="0.1212" style="stop-color:#8DB9DD"/>
 					<stop  offset="0.5126" style="stop-color:#5C9BD0"/>
 					<stop  offset="0.6719" style="stop-color:#448CCA"/>
 					<stop  offset="1" style="stop-color:#336B9A"/>
 				</radialGradient>
-				<circle style="fill:url(#SVGID_3_);" cx="10.001" cy="10.49" r="4.489"/>
+				<circle style="fill:url(#SVGID_3_);" cx="9.978" cy="9.991" r="4.489"/>
 			</g>
 		</g>
 	</g>
