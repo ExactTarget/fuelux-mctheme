@@ -1,10 +1,15 @@
 .tree-caret-sizes() {
 	width: @tree-caret-size;
 	height: @tree-caret-size;
+	top: 2px;
+	left: -6px;
+
 }
 .tree-caret() {
 	background: none;
 	border-color: none;
+	top: 0px;
+	left: 0px;
 	.fuelux-icon;
 	.fuelux-icon-caret-right;
 	.tree-caret-sizes;
@@ -15,8 +20,6 @@
 	padding: 0;
 	padding-left: 0;
 	padding-right: 0;
-	top: 0px;
-	left: 0px;
 	background-position-x: 0px;
 	background-position-y: 0px;
 }
@@ -47,11 +50,10 @@
 	// ICONS - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 	.icon-caret {
 		.tree-caret;
+		.tree-caret-sizes;
 	}
 
 	&.tree-folder-select .icon-caret {
-		top: 0;
-		left: 0;
 	}
 
 	.icon-caret:before, &.tree-folder-select .tree-branch-header .icon-caret:before {
@@ -64,9 +66,14 @@
 	}
 
 	.icon-folder {
-		margin-right: 4px;
-		left: 3px;
 		.fuelux-icon;
+		margin-right: 4px;
+		margin-top: -1px;
+		width: 14px;
+		height: 14px;
+		top: 3px;
+		left: -1px;
+
 	}
 
 	// SELECTED - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -106,6 +113,8 @@
 		color: @brand-primary-medium;
 		.icon-item {
 			.fuelux-icon-dot-hover;
+			width: 13px;
+			height: 13px;
 		}
 	}
 
@@ -117,8 +126,11 @@
 		margin-right: 4px;
 		.fuelux-icon;
 		.fuelux-icon-dot;
-		left: 3px;
+		left: -3px;
 		top: 3px;
+		width: 13px;
+		height: 13px;
+		margin-right: 3px;
 	}
 
 	.icon-item:before {
@@ -167,7 +179,6 @@
 		& > .tree-branch-header .icon-caret {
 			.fuelux-icon-caret-down;
 			.tree-caret-sizes;
-			left: 0;
 			transform: none;
 		}
 

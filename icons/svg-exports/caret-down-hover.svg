@@ -7,25 +7,23 @@
 	<g>
 		<g id="button-2px-corner_101_">
 			
-				<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-841" y1="-830.9995" x2="-820.9995" y2="-830.9995" gradientTransform="matrix(0 1 -1 0 -821 841)">
+				<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-841.0005" y1="-830.9995" x2="-821" y2="-830.9995" gradientTransform="matrix(0 1 -1 0 -821 841)">
 				<stop  offset="0" style="stop-color:#A0C7E7"/>
 				<stop  offset="0.9" style="stop-color:#448CCA"/>
 			</linearGradient>
 			<path style="fill:url(#SVGID_1_);" d="M3,0C1.35,0,0,1.35,0,3v14c0,1.65,1.35,3,3,3h14c1.65,0,3-1.35,3-3V3c0-1.65-1.35-3-3-3H3z
 				"/>
-			<g>
+			<g style="opacity:0.7;">
 				<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="10.0005" y1="20" x2="10.0005" y2="4.882812e-04">
 					<stop  offset="0" style="stop-color:#A0C7E7"/>
 					<stop  offset="0.9" style="stop-color:#448CCA"/>
 				</linearGradient>
-				<path style="fill:url(#SVGID_2_);" d="M17,1.25c0.965,0,1.75,0.785,1.75,1.75v14c0,0.965-0.785,1.75-1.75,1.75H3
-					c-0.965,0-1.75-0.785-1.75-1.75V3c0-0.965,0.785-1.75,1.75-1.75H17 M17,0H3C1.35,0,0,1.35,0,3v14c0,1.65,1.35,3,3,3h14
-					c1.65,0,3-1.35,3-3V3C20,1.35,18.65,0,17,0L17,0z"/>
+				<path style="fill:url(#SVGID_2_);" d="M17,2c0.542,0,1,0.458,1,1v14c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3
+					c0-0.542,0.458-1,1-1H17 M17,0H3C1.35,0,0,1.35,0,3v14c0,1.65,1.35,3,3,3h14c1.65,0,3-1.35,3-3V3C20,1.35,18.65,0,17,0L17,0z"/>
 			</g>
 			<g style="opacity:0.7;">
-				<path style="fill:#45494D;" d="M17,0.5c1.379,0,2.5,1.122,2.5,2.5v14c0,1.379-1.121,2.5-2.5,2.5H3c-1.378,0-2.5-1.121-2.5-2.5V3
-					c0-1.378,1.122-2.5,2.5-2.5H17 M17,0H3C1.35,0,0,1.35,0,3v14c0,1.65,1.35,3,3,3h14c1.65,0,3-1.35,3-3V3C20,1.35,18.65,0,17,0
-					L17,0z"/>
+				<path style="fill:#45494D;" d="M17,1c1.103,0,2,0.897,2,2v14c0,1.103-0.897,2-2,2H3c-1.103,0-2-0.897-2-2V3c0-1.103,0.897-2,2-2
+					H17 M17,0H3C1.35,0,0,1.35,0,3v14c0,1.65,1.35,3,3,3h14c1.65,0,3-1.35,3-3V3C20,1.35,18.65,0,17,0L17,0z"/>
 			</g>
 		</g>
 		<g id="chevron_25_">

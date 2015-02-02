@@ -13,29 +13,30 @@
 					<stop  offset="1" style="stop-color:#C1D5E6"/>
 				</radialGradient>
 				<circle style="fill:url(#SVGID_1_);" cx="10" cy="10" r="10"/>
-				<path style="fill:#FFFFFF;" d="M10,1.25c4.825,0,8.75,3.925,8.75,8.75s-3.925,8.75-8.75,8.75c-4.825,0-8.75-3.925-8.75-8.75
-					S5.175,1.25,10,1.25 M10,0C4.477,0,0,4.477,0,10c0,5.523,4.477,10,10,10c5.523,0,10-4.477,10-10C20,4.477,15.523,0,10,0L10,0z"
-					/>
-				<path style="fill:#6A8799;" d="M10,0.5c5.238,0,9.5,4.262,9.5,9.5c0,5.238-4.262,9.5-9.5,9.5c-5.239,0-9.5-4.262-9.5-9.5
-					C0.5,4.762,4.762,0.5,10,0.5 M10,0C4.477,0,0,4.477,0,10c0,5.523,4.477,10,10,10c5.523,0,10-4.477,10-10C20,4.477,15.523,0,10,0
-					L10,0z"/>
+				<g style="opacity:0.8;">
+					<path style="fill:#FFFFFF;" d="M10,2c4.411,0,8,3.589,8,8c0,4.411-3.589,8-8,8c-4.412,0-8-3.589-8-8C2,5.589,5.589,2,10,2
+						 M10,0C4.477,0,0,4.477,0,10c0,5.523,4.477,10,10,10c5.523,0,10-4.477,10-10C20,4.477,15.523,0,10,0L10,0z"/>
+				</g>
+				<g style="opacity:0.7;">
+					<path style="fill:#3A668C;" d="M10,1c4.962,0,9,4.038,9,9s-4.037,9-9,9c-4.963,0-9-4.037-9-9S5.038,1,10,1 M10,0
+						C4.477,0,0,4.477,0,10c0,5.523,4.477,10,10,10c5.523,0,10-4.477,10-10C20,4.477,15.523,0,10,0L10,0z"/>
+				</g>
 			</g>
-			<g id="checked-indicator_18_">
-				
-					<circle style="fill:none;stroke:#6A8799;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" cx="9.999" cy="10" r="4.667"/>
-				
-					<circle style="fill:none;stroke:#FFFFFF;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" cx="9.999" cy="10" r="4.667"/>
-				<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="13.583" y1="13.0078" x2="6.417" y2="6.9949">
+			<g id="checked-indicator_4_">
+				<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="13.4482" y1="12.8916" x2="6.5546" y2="7.1071">
 					<stop  offset="0" style="stop-color:#66A2D7"/>
 					<stop  offset="1" style="stop-color:#517FA5"/>
 				</linearGradient>
 				
-					<circle style="opacity:0.6;fill:none;stroke:url(#SVGID_2_);stroke-width:0.0219;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" cx="9.999" cy="10" r="4.667"/>
-				<radialGradient id="SVGID_3_" cx="10.126" cy="14.249" r="9.1285" gradientUnits="userSpaceOnUse">
-					<stop  offset="0" style="stop-color:#448CCA"/>
+					<circle style="opacity:0.6;fill:none;stroke:url(#SVGID_2_);stroke-width:0.0219;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" cx="10.001" cy="9.999" r="4.489"/>
+				
+					<radialGradient id="SVGID_3_" cx="49.9062" cy="15.0791" r="8.0199" gradientTransform="matrix(0.9619 0 0 0.9618 -37.9194 -2.48)" gradientUnits="userSpaceOnUse">
+					<stop  offset="0.1212" style="stop-color:#8DB9DD"/>
+					<stop  offset="0.5126" style="stop-color:#5C9BD0"/>
+					<stop  offset="0.6719" style="stop-color:#448CCA"/>
 					<stop  offset="1" style="stop-color:#336B9A"/>
 				</radialGradient>
-				<circle style="fill:url(#SVGID_3_);" cx="9.999" cy="10" r="4.667"/>
+				<circle style="fill:url(#SVGID_3_);" cx="10.001" cy="9.999" r="4.489"/>
 			</g>
 		</g>
 	</g>

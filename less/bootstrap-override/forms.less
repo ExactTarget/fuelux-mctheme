@@ -438,12 +438,30 @@ input[type="checkbox"] {
 // Feedback states
 .has-success {
 	.form-control-validation(@state-success-text; @state-success-text; @state-success-bg);
+	background-image: none;
+	.glyphicon.form-control-feedback:before {
+		content: "\e013";
+		//  above is a checkmark, which should be fine.
+		// below is an "X" which is stupid.
+		// content: "\e014";
+	}
 }
 .has-warning {
 	.form-control-validation(@state-warning-text; @state-warning-text; @state-warning-bg);
+	background-image: none;
+	.glyphicon.form-control-feedback:before {
+		content: "\e107";
+	}
 }
 .has-error {
 	.form-control-validation(@state-danger-text; @state-danger-text; @state-danger-bg);
+	background-image: none;
+	.glyphicon.form-control-feedback{
+		background-image: none;
+		&:before {
+			content: "\e014";
+		}
+	}
 }
 .has-incomplete {
 
