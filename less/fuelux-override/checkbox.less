@@ -1,62 +1,92 @@
+.checkbox-element-sizes() {
+	width: @checkbox-width;
+	height: @checkbox-height;
+}
+.checkbox-before() {
+	
+	input[type="checkbox"] {
+		height: 1px;
+		width: 1px;
+		visibility: hidden;
+	}
+	&:before {
+		background: none;
+		border-color: none;
+		.fuelux-icon;
+		.fuelux-icon-checkbox;
+		.checkbox-element-sizes;
+		-webkit-appearance: inherit;
+		border: 0px solid transparent;
+		border-radius: 0;
+		content: "" !important;
+		padding: 0;
+	}
+}
+
 .checkbox-custom {
 	font-size: 12px;
 	line-height: 20px;
 
-	&:before {
-		border: none;
-		border-radius: 0;
-		content: " ";
-		padding: 0;
-		.sprite(-2px, -1px);
-	}
+	padding-left: @checkbox-padding-left;
+
+	.checkbox-before;
 
 	&:hover {
+		.checkbox-before;
 		&:before {
-			.sprite(-17px, -1px);
+			.fuelux-icon-checkbox-hover;
+			.checkbox-element-sizes;
 		}
-
 		&.checked {
+			.checkbox-before;
 			&:before {
-				.sprite(-34px, -1px);
+				.fuelux-icon-checkbox-checked-hover;
+				.checkbox-element-sizes;
+			}
+		}
+	}
+
+	&:active, &:focus {
+		.checkbox-before;
+		&:before {
+			.fuelux-icon-checkbox-active;
+			.checkbox-element-sizes;
+		}
+		&.checked {
+			.checkbox-before;
+			&:before {
+				.fuelux-icon-checkbox-active;
+				.checkbox-element-sizes;
 			}
 		}
 	}
 
 	&.checked {
+		.checkbox-before;
 		&:before {
-			content: " ";
-			.sprite(-49px, -1px);
+			.fuelux-icon-checkbox-checked;
+			.checkbox-element-sizes;
 		}
 	}
-
 	&.disabled {
+		.checkbox-before;
 		&:before {
-			opacity: 1;
-			.sprite(-65px, -1px);
+			.fuelux-icon-checkbox-disabled;
+			.checkbox-element-sizes;
 		}
-
 		&.checked {
+			.checkbox-before;
 			&:before {
-				.sprite(-81px, -1px);
+				.fuelux-icon-checkbox-checked-disabled;
+				.checkbox-element-sizes;
 			}
+
 		}
 	}
-	
+
 	&.checkbox-inline {
 		input {
 			position: absolute;
 		}
-	}
-}
-
-@media(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-	.checkbox-custom:before,
-	.checkbox-custom:hover:before,
-	.checkbox-custom.checked:before,
-	.checkbox-custom.checked:hover:before,
-	.checkbox-custom.disabled:before,
-	.checkbox-custom.disabled.checked:before
-	{
-		.sprite2x();
 	}
 }
