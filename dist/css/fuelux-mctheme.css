@@ -1,5 +1,5 @@
 /*!
- * Marketing Cloud Theme EDGE - Built 2015/02/02, 4:07:17 PM 
+ * Marketing Cloud Theme EDGE - Built 2015/02/03, 4:42:26 PM 
  * Previous release: v1.3.4 
  * Copyright 2012-2015 ExactTarget
  * Licensed under the MIT license (https://github.com/ExactTarget/fuelux-mctheme/blob/master/COPYING)
@@ -214,12 +214,12 @@ button:hover > .glyphicon-caret-right:before {
   width: 13px;
   height: 13px;
 }
-.fuelux-icon-checkbox-active,
-.fuelux-icon-checkbox:active,
-button:active > .fuelux-icon-checkbox -hover,
-.glyphicon-checkbox-active,
-.glyphicon-checkbox:active,
-button:active > .glyphicon-checkbox -hover {
+.fuelux-icon-checkbox-active-hover,
+.fuelux-icon-checkbox:active:hover,
+button:active:hover > .fuelux-icon-checkbox,
+.glyphicon-checkbox-active-hover,
+.glyphicon-checkbox:active:hover,
+button:active:hover > .glyphicon-checkbox {
   background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2220px%22%20%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22checkbox-active-hover%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_7_%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cg%3E%20%20%20%3Cg%20id%3D%22checkbox-2px-corner_2_%22%3E%20%20%20%20%3ClinearGradient%20id%3D%22SVGID_1_%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%228.5005%22%20y1%3D%2217%22%20x2%3D%228.5005%22%20y2%3D%224.882812e-04%22%3E%20%20%20%20%20%3Cstop%20%20offset%3D%220%22%20style%3D%22stop-color%3A%23F2F6FB%22%2F%3E%20%20%20%20%20%3Cstop%20%20offset%3D%220.48%22%20style%3D%22stop-color%3A%23F2F6FB%22%2F%3E%20%20%20%20%20%3Cstop%20%20offset%3D%220.5%22%20style%3D%22stop-color%3A%23CDDFEC%22%2F%3E%20%20%20%20%20%3Cstop%20%20offset%3D%220.7287%22%20style%3D%22stop-color%3A%23C4D8E8%22%2F%3E%20%20%20%20%20%3Cstop%20%20offset%3D%221%22%20style%3D%22stop-color%3A%23C1D5E6%22%2F%3E%20%20%20%20%3C%2FlinearGradient%3E%20%20%20%20%3Cpath%20style%3D%22fill%3Aurl%28%23SVGID_1_%29%3B%22%20d%3D%22M0%2C14c0%2C1.65%2C1.35%2C3%2C3%2C3h11c1.65%2C0%2C3-1.35%2C3-3V3c0-1.65-1.35-3-3-3H3C1.35%2C0%2C0%2C1.35%2C0%2C3%20%20%20%20%20V14z%22%2F%3E%20%20%20%20%3Cg%20style%3D%22opacity%3A0.8%3B%22%3E%20%20%20%20%20%3Cpath%20style%3D%22fill%3A%23FFFFFF%3B%22%20d%3D%22M14%2C2c0.542%2C0%2C1%2C0.458%2C1%2C1v11c0%2C0.542-0.458%2C1-1%2C1H3c-0.542%2C0-1-0.458-1-1V3%20%20%20%20%20%20c0-0.542%2C0.458-1%2C1-1H14%20M14%2C0H3C1.35%2C0%2C0%2C1.35%2C0%2C3v11c0%2C1.65%2C1.35%2C3%2C3%2C3h11c1.65%2C0%2C3-1.35%2C3-3V3C17%2C1.35%2C15.65%2C0%2C14%2C0L14%2C0z%22%20%20%20%20%20%20%2F%3E%20%20%20%20%3C%2Fg%3E%20%20%20%20%3Cg%20style%3D%22opacity%3A0.7%3B%22%3E%20%20%20%20%20%3Cpath%20style%3D%22fill%3A%2362798C%3B%22%20d%3D%22M14%2C1c1.103%2C0%2C2%2C0.897%2C2%2C2v11c0%2C1.103-0.897%2C2-2%2C2H3c-1.103%2C0-2-0.897-2-2V3%20%20%20%20%20%20c0-1.103%2C0.897-2%2C2-2H14%20M14%2C0H3C1.35%2C0%2C0%2C1.35%2C0%2C3v11c0%2C1.65%2C1.35%2C3%2C3%2C3h11c1.65%2C0%2C3-1.35%2C3-3V3C17%2C1.35%2C15.65%2C0%2C14%2C0L14%2C0z%22%20%20%20%20%20%20%2F%3E%20%20%20%20%3C%2Fg%3E%20%20%20%3C%2Fg%3E%20%20%20%3Cg%20id%3D%22checked-indicator_9_%22%20style%3D%22opacity%3A0.3%3B%22%3E%20%20%20%20%20%20%20%20%20%3Cpath%20style%3D%22opacity%3A0.8%3Bfill%3Anone%3Bstroke%3A%23FFFFFF%3Bstroke-width%3A2%3Bstroke-linecap%3Around%3Bstroke-linejoin%3Around%3Bstroke-miterlimit%3A10%3B%22%20d%3D%22%20%20%20%20%20M8.486%2C9.297c0%2C0%2C0.024-0.269-0.279-0.565C7.9%2C8.441%2C5.546%2C6.178%2C5.546%2C6.178C4.656%2C5.325%2C4.634%2C5.349%2C3.8%2C6.212L3.108%2C6.924%20%20%20%20%20C2.263%2C7.801%2C2.406%2C7.951%2C3.139%2C8.663l1.775%2C1.703C5.4%2C10.833%2C6.202%2C11.6%2C6.69%2C12.068l0.888%2C0.852%20%20%20%20%20c0.884%2C0.854%2C0.884%2C0.852%2C1.742-0.031l0.854-0.885c0.473-0.484%2C1.239-1.279%2C1.712-1.766l5.61-5.796%20%20%20%20%20c0.854-0.883%2C0.854-0.883-0.032-1.736l-0.61-0.585c-0.847-0.817-0.886-0.857-1.743%2C0.034L9.5%2C7.947c0%2C0-0.578%2C0.596-0.75%2C0.777%20%20%20%20%20C8.574%2C8.905%2C8.486%2C9.297%2C8.486%2C9.297z%22%2F%3E%20%20%20%20%20%20%20%20%20%3ClinearGradient%20id%3D%22SVGID_2_%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%2224.0566%22%20y1%3D%221122.6816%22%20x2%3D%2224.586%22%20y2%3D%221119.6792%22%20gradientTransform%3D%22matrix%280.6947%20-0.7193%200.7205%200.6934%20-812.1848%20-751.2178%29%22%3E%20%20%20%20%20%3Cstop%20%20offset%3D%220%22%20style%3D%22stop-color%3A%23336B9A%22%2F%3E%20%20%20%20%20%3Cstop%20%20offset%3D%221%22%20style%3D%22stop-color%3A%23448CCA%22%2F%3E%20%20%20%20%3C%2FlinearGradient%3E%20%20%20%20%3Cpath%20style%3D%22fill%3Aurl%28%23SVGID_2_%29%3B%22%20d%3D%22M8.486%2C9.297c0%2C0%2C0.024-0.269-0.279-0.565C7.9%2C8.441%2C5.546%2C6.178%2C5.546%2C6.178%20%20%20%20%20C4.656%2C5.325%2C4.634%2C5.349%2C3.8%2C6.212L3.108%2C6.924C2.263%2C7.801%2C2.406%2C7.951%2C3.139%2C8.663l1.775%2C1.703%20%20%20%20%20C5.4%2C10.833%2C6.202%2C11.6%2C6.69%2C12.068l0.888%2C0.852c0.884%2C0.854%2C0.884%2C0.852%2C1.742-0.031l0.854-0.885%20%20%20%20%20c0.473-0.484%2C1.239-1.279%2C1.712-1.766l5.61-5.796c0.854-0.883%2C0.854-0.883-0.032-1.736l-0.61-0.585%20%20%20%20%20c-0.847-0.817-0.886-0.857-1.743%2C0.034L9.5%2C7.947c0%2C0-0.578%2C0.596-0.75%2C0.777C8.574%2C8.905%2C8.486%2C9.297%2C8.486%2C9.297z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
@@ -227,29 +227,29 @@ button:active > .glyphicon-checkbox -hover {
   width: 16px;
   height: 16px;
 }
-.fuelux-icon-checkbox-active:before,
-.fuelux-icon-checkbox:active:before,
-button:active > .fuelux-icon-checkbox -hover:before,
-.glyphicon-checkbox-active:before,
-.glyphicon-checkbox:active:before,
-button:active > .glyphicon-checkbox -hover:before {
+.fuelux-icon-checkbox-active-hover:before,
+.fuelux-icon-checkbox:active:hover:before,
+button:active:hover > .fuelux-icon-checkbox:before,
+.glyphicon-checkbox-active-hover:before,
+.glyphicon-checkbox:active:hover:before,
+button:active:hover > .glyphicon-checkbox:before {
   content: "";
 }
-.btn-lg .fuelux-icon-checkbox-active,
-.btn-lg .fuelux-icon-checkbox:active,
-.btn-lg button:active > .fuelux-icon-checkbox -hover,
-.btn-lg .glyphicon-checkbox-active,
-.btn-lg .glyphicon-checkbox:active,
-.btn-lg button:active > .glyphicon-checkbox -hover {
+.btn-lg .fuelux-icon-checkbox-active-hover,
+.btn-lg .fuelux-icon-checkbox:active:hover,
+.btn-lg button:active:hover > .fuelux-icon-checkbox,
+.btn-lg .glyphicon-checkbox-active-hover,
+.btn-lg .glyphicon-checkbox:active:hover,
+.btn-lg button:active:hover > .glyphicon-checkbox {
   width: 20px;
   height: 20px;
 }
-.btn-sm .fuelux-icon-checkbox-active,
-.btn-sm .fuelux-icon-checkbox:active,
-.btn-sm button:active > .fuelux-icon-checkbox -hover,
-.btn-sm .glyphicon-checkbox-active,
-.btn-sm .glyphicon-checkbox:active,
-.btn-sm button:active > .glyphicon-checkbox -hover {
+.btn-sm .fuelux-icon-checkbox-active-hover,
+.btn-sm .fuelux-icon-checkbox:active:hover,
+.btn-sm button:active:hover > .fuelux-icon-checkbox,
+.btn-sm .glyphicon-checkbox-active-hover,
+.btn-sm .glyphicon-checkbox:active:hover,
+.btn-sm button:active:hover > .glyphicon-checkbox {
   width: 13px;
   height: 13px;
 }
@@ -315,24 +315,12 @@ button:active > .glyphicon-checkbox:before {
   width: 13px;
   height: 13px;
 }
-.fuelux-icon-checkbox-checked-hover,
-.fuelux-icon-checkbox-checked:hover,
-button:hover > .fuelux-icon-checkbox-checked -active,
-.fuelux-icon-checkbox-checked-hover,
-.fuelux-icon-checkbox-checked:hover,
-button:hover > .fuelux-icon-checkbox-checked :active,
-button:active > .fuelux-icon-checkbox-checked-hover,
-.fuelux-icon-checkbox-checked:hover,
-button:hover > .fuelux-icon-checkbox-checked,
-.glyphicon-checkbox-checked-hover,
-.glyphicon-checkbox-checked:hover,
-button:hover > .glyphicon-checkbox-checked -active,
-.glyphicon-checkbox-checked-hover,
-.glyphicon-checkbox-checked:hover,
-button:hover > .glyphicon-checkbox-checked :active,
-button:active > .glyphicon-checkbox-checked-hover,
-.glyphicon-checkbox-checked:hover,
-button:hover > .glyphicon-checkbox-checked {
+.fuelux-icon-checkbox-checked-hover-active,
+.fuelux-icon-checkbox:checked:active:hover,
+button:active:hover > .fuelux-icon-checkbox:checked,
+.glyphicon-checkbox-checked-hover-active,
+.glyphicon-checkbox:checked:active:hover,
+button:active:hover > .glyphicon-checkbox:checked {
   background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2220px%22%20%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22checkbox-checked-hover-active%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_5_%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cg%3E%20%20%20%3Cg%20id%3D%22checkbox-2px-corner_16_%22%3E%20%20%20%20%3ClinearGradient%20id%3D%22SVGID_1_%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%228.5005%22%20y1%3D%2217%22%20x2%3D%228.5005%22%20y2%3D%224.882812e-04%22%3E%20%20%20%20%20%3Cstop%20%20offset%3D%220%22%20style%3D%22stop-color%3A%23F2F6FB%22%2F%3E%20%20%20%20%20%3Cstop%20%20offset%3D%220.48%22%20style%3D%22stop-color%3A%23F2F6FB%22%2F%3E%20%20%20%20%20%3Cstop%20%20offset%3D%220.5%22%20style%3D%22stop-color%3A%23CDDFEC%22%2F%3E%20%20%20%20%20%3Cstop%20%20offset%3D%220.7287%22%20style%3D%22stop-color%3A%23C4D8E8%22%2F%3E%20%20%20%20%20%3Cstop%20%20offset%3D%221%22%20style%3D%22stop-color%3A%23C1D5E6%22%2F%3E%20%20%20%20%3C%2FlinearGradient%3E%20%20%20%20%3Cpath%20style%3D%22fill%3Aurl%28%23SVGID_1_%29%3B%22%20d%3D%22M0%2C14c0%2C1.65%2C1.35%2C3%2C3%2C3h11c1.65%2C0%2C3-1.35%2C3-3V3c0-1.65-1.35-3-3-3H3C1.35%2C0%2C0%2C1.35%2C0%2C3%20%20%20%20%20V14z%22%2F%3E%20%20%20%20%3Cg%20style%3D%22opacity%3A0.8%3B%22%3E%20%20%20%20%20%3Cpath%20style%3D%22fill%3A%23FFFFFF%3B%22%20d%3D%22M14%2C2c0.542%2C0%2C1%2C0.458%2C1%2C1v11c0%2C0.542-0.458%2C1-1%2C1H3c-0.542%2C0-1-0.458-1-1V3%20%20%20%20%20%20c0-0.542%2C0.458-1%2C1-1H14%20M14%2C0H3C1.35%2C0%2C0%2C1.35%2C0%2C3v11c0%2C1.65%2C1.35%2C3%2C3%2C3h11c1.65%2C0%2C3-1.35%2C3-3V3C17%2C1.35%2C15.65%2C0%2C14%2C0L14%2C0z%22%20%20%20%20%20%20%2F%3E%20%20%20%20%3C%2Fg%3E%20%20%20%20%3Cg%20style%3D%22opacity%3A0.7%3B%22%3E%20%20%20%20%20%3Cpath%20style%3D%22fill%3A%2362798C%3B%22%20d%3D%22M14%2C1c1.103%2C0%2C2%2C0.897%2C2%2C2v11c0%2C1.103-0.897%2C2-2%2C2H3c-1.103%2C0-2-0.897-2-2V3%20%20%20%20%20%20c0-1.103%2C0.897-2%2C2-2H14%20M14%2C0H3C1.35%2C0%2C0%2C1.35%2C0%2C3v11c0%2C1.65%2C1.35%2C3%2C3%2C3h11c1.65%2C0%2C3-1.35%2C3-3V3C17%2C1.35%2C15.65%2C0%2C14%2C0L14%2C0z%22%20%20%20%20%20%20%2F%3E%20%20%20%20%3C%2Fg%3E%20%20%20%3C%2Fg%3E%20%20%20%3Cg%20id%3D%22checked-indicator_12_%22%3E%20%20%20%20%20%20%20%20%20%3Cpath%20style%3D%22opacity%3A0.8%3Bfill%3Anone%3Bstroke%3A%23FFFFFF%3Bstroke-width%3A2%3Bstroke-linecap%3Around%3Bstroke-linejoin%3Around%3Bstroke-miterlimit%3A10%3B%22%20d%3D%22%20%20%20%20%20M8.486%2C9.297c0%2C0%2C0.024-0.27-0.279-0.565C7.9%2C8.442%2C5.546%2C6.178%2C5.546%2C6.178C4.656%2C5.325%2C4.634%2C5.349%2C3.8%2C6.212L3.108%2C6.925%20%20%20%20%20C2.263%2C7.801%2C2.406%2C7.951%2C3.139%2C8.663l1.775%2C1.703C5.4%2C10.833%2C6.202%2C11.6%2C6.69%2C12.068l0.888%2C0.852%20%20%20%20%20c0.884%2C0.854%2C0.884%2C0.852%2C1.742-0.031l0.854-0.885c0.473-0.484%2C1.239-1.279%2C1.712-1.766l5.61-5.796%20%20%20%20%20c0.854-0.883%2C0.854-0.884-0.032-1.736l-0.61-0.585c-0.847-0.817-0.886-0.857-1.743%2C0.033L9.5%2C7.948c0%2C0-0.578%2C0.595-0.75%2C0.776%20%20%20%20%20C8.574%2C8.905%2C8.486%2C9.297%2C8.486%2C9.297z%22%2F%3E%20%20%20%20%20%20%20%20%20%3ClinearGradient%20id%3D%22SVGID_2_%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%2224.0566%22%20y1%3D%221122.6816%22%20x2%3D%2224.586%22%20y2%3D%221119.6792%22%20gradientTransform%3D%22matrix%280.6947%20-0.7193%200.7205%200.6934%20-812.1848%20-751.2178%29%22%3E%20%20%20%20%20%3Cstop%20%20offset%3D%220%22%20style%3D%22stop-color%3A%23336B9A%22%2F%3E%20%20%20%20%20%3Cstop%20%20offset%3D%221%22%20style%3D%22stop-color%3A%23448CCA%22%2F%3E%20%20%20%20%3C%2FlinearGradient%3E%20%20%20%20%3Cpath%20style%3D%22fill%3Aurl%28%23SVGID_2_%29%3B%22%20d%3D%22M8.486%2C9.297c0%2C0%2C0.024-0.27-0.279-0.565C7.9%2C8.442%2C5.546%2C6.178%2C5.546%2C6.178%20%20%20%20%20C4.656%2C5.325%2C4.634%2C5.349%2C3.8%2C6.212L3.108%2C6.925C2.263%2C7.801%2C2.406%2C7.951%2C3.139%2C8.663l1.775%2C1.703%20%20%20%20%20C5.4%2C10.833%2C6.202%2C11.6%2C6.69%2C12.068l0.888%2C0.852c0.884%2C0.854%2C0.884%2C0.852%2C1.742-0.031l0.854-0.885%20%20%20%20%20c0.473-0.484%2C1.239-1.279%2C1.712-1.766l5.61-5.796c0.854-0.883%2C0.854-0.884-0.032-1.736l-0.61-0.585%20%20%20%20%20c-0.847-0.817-0.886-0.857-1.743%2C0.033L9.5%2C7.948c0%2C0-0.578%2C0.595-0.75%2C0.776C8.574%2C8.905%2C8.486%2C9.297%2C8.486%2C9.297z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
@@ -340,65 +328,29 @@ button:hover > .glyphicon-checkbox-checked {
   width: 16px;
   height: 16px;
 }
-.fuelux-icon-checkbox-checked-hover:before,
-.fuelux-icon-checkbox-checked:hover:before,
-button:hover > .fuelux-icon-checkbox-checked -active:before,
-.fuelux-icon-checkbox-checked-hover:before,
-.fuelux-icon-checkbox-checked:hover:before,
-button:hover > .fuelux-icon-checkbox-checked :active:before,
-button:active > .fuelux-icon-checkbox-checked-hover:before,
-.fuelux-icon-checkbox-checked:hover:before,
-button:hover > .fuelux-icon-checkbox-checked:before,
-.glyphicon-checkbox-checked-hover:before,
-.glyphicon-checkbox-checked:hover:before,
-button:hover > .glyphicon-checkbox-checked -active:before,
-.glyphicon-checkbox-checked-hover:before,
-.glyphicon-checkbox-checked:hover:before,
-button:hover > .glyphicon-checkbox-checked :active:before,
-button:active > .glyphicon-checkbox-checked-hover:before,
-.glyphicon-checkbox-checked:hover:before,
-button:hover > .glyphicon-checkbox-checked:before {
+.fuelux-icon-checkbox-checked-hover-active:before,
+.fuelux-icon-checkbox:checked:active:hover:before,
+button:active:hover > .fuelux-icon-checkbox:checked:before,
+.glyphicon-checkbox-checked-hover-active:before,
+.glyphicon-checkbox:checked:active:hover:before,
+button:active:hover > .glyphicon-checkbox:checked:before {
   content: "";
 }
-.btn-lg .fuelux-icon-checkbox-checked-hover,
-.btn-lg .fuelux-icon-checkbox-checked:hover,
-.btn-lg button:hover > .fuelux-icon-checkbox-checked -active,
-.btn-lg .fuelux-icon-checkbox-checked-hover,
-.btn-lg .fuelux-icon-checkbox-checked:hover,
-.btn-lg button:hover > .fuelux-icon-checkbox-checked :active,
-.btn-lg button:active > .fuelux-icon-checkbox-checked-hover,
-.btn-lg .fuelux-icon-checkbox-checked:hover,
-.btn-lg button:hover > .fuelux-icon-checkbox-checked,
-.btn-lg .glyphicon-checkbox-checked-hover,
-.btn-lg .glyphicon-checkbox-checked:hover,
-.btn-lg button:hover > .glyphicon-checkbox-checked -active,
-.btn-lg .glyphicon-checkbox-checked-hover,
-.btn-lg .glyphicon-checkbox-checked:hover,
-.btn-lg button:hover > .glyphicon-checkbox-checked :active,
-.btn-lg button:active > .glyphicon-checkbox-checked-hover,
-.btn-lg .glyphicon-checkbox-checked:hover,
-.btn-lg button:hover > .glyphicon-checkbox-checked {
+.btn-lg .fuelux-icon-checkbox-checked-hover-active,
+.btn-lg .fuelux-icon-checkbox:checked:active:hover,
+.btn-lg button:active:hover > .fuelux-icon-checkbox:checked,
+.btn-lg .glyphicon-checkbox-checked-hover-active,
+.btn-lg .glyphicon-checkbox:checked:active:hover,
+.btn-lg button:active:hover > .glyphicon-checkbox:checked {
   width: 20px;
   height: 20px;
 }
-.btn-sm .fuelux-icon-checkbox-checked-hover,
-.btn-sm .fuelux-icon-checkbox-checked:hover,
-.btn-sm button:hover > .fuelux-icon-checkbox-checked -active,
-.btn-sm .fuelux-icon-checkbox-checked-hover,
-.btn-sm .fuelux-icon-checkbox-checked:hover,
-.btn-sm button:hover > .fuelux-icon-checkbox-checked :active,
-.btn-sm button:active > .fuelux-icon-checkbox-checked-hover,
-.btn-sm .fuelux-icon-checkbox-checked:hover,
-.btn-sm button:hover > .fuelux-icon-checkbox-checked,
-.btn-sm .glyphicon-checkbox-checked-hover,
-.btn-sm .glyphicon-checkbox-checked:hover,
-.btn-sm button:hover > .glyphicon-checkbox-checked -active,
-.btn-sm .glyphicon-checkbox-checked-hover,
-.btn-sm .glyphicon-checkbox-checked:hover,
-.btn-sm button:hover > .glyphicon-checkbox-checked :active,
-.btn-sm button:active > .glyphicon-checkbox-checked-hover,
-.btn-sm .glyphicon-checkbox-checked:hover,
-.btn-sm button:hover > .glyphicon-checkbox-checked {
+.btn-sm .fuelux-icon-checkbox-checked-hover-active,
+.btn-sm .fuelux-icon-checkbox:checked:active:hover,
+.btn-sm button:active:hover > .fuelux-icon-checkbox:checked,
+.btn-sm .glyphicon-checkbox-checked-hover-active,
+.btn-sm .glyphicon-checkbox:checked:active:hover,
+.btn-sm button:active:hover > .glyphicon-checkbox:checked {
   width: 13px;
   height: 13px;
 }
@@ -829,7 +781,7 @@ button:hover > .glyphicon-chevron-right:before {
 }
 .fuelux-icon-close-content-block,
 .glyphicon-close-content-block {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2220px%22%20%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22close-content-block%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_41_%22%20x%3D%22-1190%22%20y%3D%2261.999%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cpath%20id%3D%22x-glyph_1_%22%20style%3D%22fill%3A%234E8ABE%3B%22%20d%3D%22M-1170.022%2C67.921l-4.028%2C4.027c-0.027%2C0.027-0.027%2C0.074%2C0%2C0.104l4.028%2C4.027%20%20%20c0.027%2C0.029%2C0.027%2C0.074%2C0%2C0.102l-5.797%2C5.799c-0.028%2C0.027-0.073%2C0.027-0.103%2C0l-4.027-4.031c-0.026-0.027-0.074-0.027-0.104%2C0%20%20%20l-4.027%2C4.031c-0.025%2C0.027-0.073%2C0.027-0.101%2C0l-5.797-5.799c-0.03-0.027-0.03-0.072%2C0-0.102l4.028-4.027%20%20%20c0.027-0.029%2C0.027-0.076%2C0-0.104l-4.028-4.027c-0.03-0.027-0.03-0.074%2C0-0.102l5.797-5.797c0.027-0.031%2C0.075-0.031%2C0.101%2C0%20%20%20l4.027%2C4.027c0.029%2C0.027%2C0.077%2C0.027%2C0.104%2C0l4.027-4.027c0.029-0.031%2C0.074-0.031%2C0.103%2C0l5.797%2C5.797%20%20%20C-1169.995%2C67.847-1169.995%2C67.894-1170.022%2C67.921z%22%2F%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2220px%22%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20enable-background%3D%22new%200%200%2020%2020%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22close-content-block%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_41_%22%20fill%3D%22none%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cpath%20id%3D%22x-glyph_1_%22%20fill%3D%22%234E8ABE%22%20d%3D%22M19.979%2C5.922L15.95%2C9.949c-0.027%2C0.026-0.027%2C0.073%2C0%2C0.104l4.028%2C4.027%20%20%20c0.026%2C0.028%2C0.026%2C0.073%2C0%2C0.103l-5.797%2C5.799c-0.028%2C0.026-0.073%2C0.026-0.104%2C0l-4.027-4.031c-0.025-0.027-0.073-0.027-0.104%2C0%20%20%20L5.92%2C19.981c-0.024%2C0.026-0.072%2C0.026-0.101%2C0l-5.797-5.799c-0.03-0.027-0.03-0.072%2C0-0.103l4.027-4.027%20%20%20c0.027-0.028%2C0.027-0.075%2C0-0.104L0.022%2C5.922c-0.03-0.026-0.03-0.073%2C0-0.103l5.797-5.797c0.027-0.03%2C0.075-0.03%2C0.101%2C0%20%20%20L9.947%2C4.05c0.029%2C0.027%2C0.077%2C0.027%2C0.104%2C0l4.027-4.027c0.029-0.03%2C0.074-0.03%2C0.104%2C0l5.797%2C5.797%20%20%20C20.005%2C5.849%2C20.005%2C5.896%2C19.979%2C5.922z%22%2F%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1_1_%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -937,7 +889,7 @@ button:hover > .glyphicon-copy:before {
 }
 .fuelux-icon-delete,
 .glyphicon-delete {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2220px%22%20%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22delete%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_81_%22%20x%3D%22-1190%22%20y%3D%2262%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cpath%20id%3D%22delete_1_%22%20style%3D%22fill%3A%234E8ABE%3B%22%20d%3D%22M-1179.998%2C62.062c-5.489%2C0-9.939%2C4.449-9.939%2C9.938s4.45%2C9.938%2C9.939%2C9.938%20%20%20c5.488%2C0%2C9.937-4.449%2C9.937-9.938S-1174.51%2C62.062-1179.998%2C62.062z%20M-1173.988%2C69.543l-2.428%2C2.426%20%20%20c-0.016%2C0.018-0.016%2C0.047%2C0%2C0.062l2.428%2C2.426c0.016%2C0.018%2C0.016%2C0.045%2C0%2C0.062l-3.494%2C3.492c-0.015%2C0.016-0.042%2C0.016-0.06%2C0%20%20%20l-2.426-2.428c-0.018-0.018-0.045-0.018-0.062%2C0l-2.425%2C2.428c-0.018%2C0.016-0.045%2C0.016-0.062%2C0l-3.491-3.492%20%20%20c-0.018-0.018-0.018-0.045%2C0-0.062l2.426-2.426c0.016-0.016%2C0.016-0.045%2C0-0.062l-2.426-2.426c-0.018-0.016-0.018-0.043%2C0-0.061%20%20%20l3.491-3.49c0.017-0.02%2C0.044-0.02%2C0.062%2C0l2.425%2C2.426c0.018%2C0.016%2C0.045%2C0.016%2C0.062%2C0l2.426-2.426%20%20%20c0.018-0.02%2C0.045-0.02%2C0.06%2C0l3.494%2C3.49C-1173.973%2C69.5-1173.973%2C69.527-1173.988%2C69.543z%22%2F%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2220px%22%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20enable-background%3D%22new%200%200%2020%2020%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22delete%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_81_%22%20fill%3D%22none%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cpath%20id%3D%22delete_1_%22%20fill%3D%22%234E8ABE%22%20d%3D%22M10.002%2C0.062c-5.489%2C0-9.939%2C4.448-9.939%2C9.938s4.45%2C9.938%2C9.939%2C9.938%20%20%20c5.488%2C0%2C9.938-4.448%2C9.938-9.938S15.49%2C0.062%2C10.002%2C0.062z%20M16.012%2C7.543l-2.428%2C2.426c-0.016%2C0.018-0.016%2C0.047%2C0%2C0.062%20%20%20l2.428%2C2.426c0.016%2C0.018%2C0.016%2C0.045%2C0%2C0.062l-3.494%2C3.491c-0.015%2C0.017-0.041%2C0.017-0.06%2C0l-2.426-2.428%20%20%20c-0.018-0.019-0.045-0.019-0.062%2C0l-2.425%2C2.428c-0.018%2C0.017-0.045%2C0.017-0.062%2C0L3.992%2C12.52c-0.018-0.019-0.018-0.045%2C0-0.062%20%20%20l2.426-2.426c0.016-0.016%2C0.016-0.045%2C0-0.062L3.992%2C7.543c-0.018-0.016-0.018-0.043%2C0-0.061l3.491-3.49%20%20%20c0.017-0.02%2C0.044-0.02%2C0.062%2C0L9.97%2C6.418c0.018%2C0.016%2C0.045%2C0.016%2C0.062%2C0l2.426-2.426c0.018-0.02%2C0.045-0.02%2C0.06%2C0l3.494%2C3.49%20%20%20C16.027%2C7.5%2C16.027%2C7.527%2C16.012%2C7.543z%22%2F%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1_1_%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -1392,7 +1344,7 @@ button:hover > .glyphicon-pencil:before {
 }
 .fuelux-icon-plus-sign-disabled,
 .glyphicon-plus-sign-disabled {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2220px%22%20%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22plus-sign-disabled%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_65_%22%20x%3D%22-1190%22%20y%3D%2262%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cpath%20id%3D%22plus-sign_15_%22%20style%3D%22opacity%3A0.4%3Bfill%3A%234E8ABE%3B%22%20d%3D%22M-1170.4%2C70h-7.6v-7.6c0-0.221-0.18-0.4-0.402-0.4h-3.199%20%20%20c-0.219%2C0-0.398%2C0.18-0.398%2C0.4V70h-7.602c-0.219%2C0-0.398%2C0.18-0.398%2C0.4v3.201c0%2C0.219%2C0.18%2C0.398%2C0.398%2C0.398h7.602v7.602%20%20%20c0%2C0.219%2C0.18%2C0.398%2C0.398%2C0.398h3.199c0.223%2C0%2C0.402-0.18%2C0.402-0.398V74h7.6c0.221%2C0%2C0.4-0.18%2C0.4-0.398V70.4%20%20%20C-1170%2C70.18-1170.18%2C70-1170.4%2C70z%22%2F%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2220px%22%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20enable-background%3D%22new%200%200%2020%2020%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22plus-sign-disabled%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_65_%22%20x%3D%220.5%22%20y%3D%220.5%22%20fill%3D%22none%22%20width%3D%2219%22%20height%3D%2219%22%2F%3E%20%20%3Cpath%20id%3D%22plus-sign_15_%22%20opacity%3D%220.4%22%20fill%3D%22%234E8ABE%22%20enable-background%3D%22new%20%20%20%20%22%20d%3D%22M19.119%2C8.1H11.9V0.88%20%20%20c0-0.209-0.171-0.38-0.383-0.38H8.479c-0.208%2C0-0.378%2C0.171-0.378%2C0.38V8.1H0.879c-0.208%2C0-0.378%2C0.17-0.378%2C0.38v3.041%20%20%20c0%2C0.208%2C0.171%2C0.378%2C0.378%2C0.378h7.222v7.222c0%2C0.208%2C0.171%2C0.378%2C0.378%2C0.378h3.039c0.213%2C0%2C0.383-0.172%2C0.383-0.378V11.9h7.219%20%20%20c0.21%2C0%2C0.381-0.171%2C0.381-0.379V8.48C19.5%2C8.271%2C19.329%2C8.1%2C19.119%2C8.1z%22%2F%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1_1_%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -1415,7 +1367,7 @@ button:hover > .glyphicon-pencil:before {
 }
 .fuelux-icon-plus-sign,
 .glyphicon-plus-sign {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2220px%22%20%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22plus-sign%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_28_%22%20x%3D%22-1190%22%20y%3D%2262%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cpath%20id%3D%22plus-sign_5_%22%20style%3D%22fill%3A%234E8ABE%3B%22%20d%3D%22M-1170.4%2C70h-7.6v-7.6c0-0.221-0.18-0.4-0.402-0.4h-3.199%20%20%20c-0.219%2C0-0.398%2C0.18-0.398%2C0.4V70h-7.602c-0.219%2C0-0.398%2C0.18-0.398%2C0.4v3.201c0%2C0.219%2C0.18%2C0.398%2C0.398%2C0.398h7.602v7.602%20%20%20c0%2C0.219%2C0.18%2C0.398%2C0.398%2C0.398h3.199c0.223%2C0%2C0.402-0.18%2C0.402-0.398V74h7.6c0.221%2C0%2C0.4-0.18%2C0.4-0.398V70.4%20%20%20C-1170%2C70.18-1170.18%2C70-1170.4%2C70z%22%2F%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2220px%22%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20enable-background%3D%22new%200%200%2020%2020%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22plus-sign%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_28_%22%20x%3D%220.5%22%20y%3D%220.5%22%20fill%3D%22none%22%20width%3D%2219%22%20height%3D%2219%22%2F%3E%20%20%3Cpath%20id%3D%22plus-sign_5_%22%20fill%3D%22%234E8ABE%22%20d%3D%22M19.119%2C8.1H11.9V0.88c0-0.209-0.171-0.38-0.383-0.38H8.479%20%20%20c-0.208%2C0-0.378%2C0.171-0.378%2C0.38V8.1H0.879c-0.208%2C0-0.378%2C0.17-0.378%2C0.38v3.041c0%2C0.208%2C0.171%2C0.378%2C0.378%2C0.378h7.222v7.222%20%20%20c0%2C0.208%2C0.171%2C0.378%2C0.378%2C0.378h3.039c0.213%2C0%2C0.383-0.172%2C0.383-0.378V11.9h7.219c0.21%2C0%2C0.381-0.171%2C0.381-0.379V8.48%20%20%20C19.5%2C8.271%2C19.329%2C8.1%2C19.119%2C8.1z%22%2F%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1_1_%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -1436,12 +1388,12 @@ button:hover > .glyphicon-pencil:before {
   width: 13px;
   height: 13px;
 }
-.fuelux-icon-radio-button-active,
-.fuelux-icon-radio-button:active,
-button:active > .fuelux-icon-radio-button -hover,
-.glyphicon-radio-button-active,
-.glyphicon-radio-button:active,
-button:active > .glyphicon-radio-button -hover {
+.fuelux-icon-radio-button-active-hover,
+.fuelux-icon-radio-button:active:hover,
+button:active:hover > .fuelux-icon-radio-button,
+.glyphicon-radio-button-active-hover,
+.glyphicon-radio-button:active:hover,
+button:active:hover > .glyphicon-radio-button {
   background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2220px%22%20%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22radio-button-active-hover%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_36_%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cg%20id%3D%22radio-button-hover_2_%22%3E%20%20%20%3CradialGradient%20id%3D%22SVGID_1_%22%20cx%3D%2210%22%20cy%3D%2219.875%22%20r%3D%2219.8754%22%20gradientUnits%3D%22userSpaceOnUse%22%3E%20%20%20%20%3Cstop%20%20offset%3D%220%22%20style%3D%22stop-color%3A%23F2F6FB%22%2F%3E%20%20%20%20%3Cstop%20%20offset%3D%221%22%20style%3D%22stop-color%3A%23C1D5E6%22%2F%3E%20%20%20%3C%2FradialGradient%3E%20%20%20%3Ccircle%20style%3D%22fill%3Aurl%28%23SVGID_1_%29%3B%22%20cx%3D%2210%22%20cy%3D%2210%22%20r%3D%2210%22%2F%3E%20%20%20%3Cg%20style%3D%22opacity%3A0.8%3B%22%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%23FFFFFF%3B%22%20d%3D%22M10%2C2c4.411%2C0%2C8%2C3.589%2C8%2C8s-3.589%2C8-8%2C8s-8-3.589-8-8S5.589%2C2%2C10%2C2%20M10%2C0C4.479%2C0%2C0%2C4.477%2C0%2C10%20%20%20%20%20s4.479%2C10%2C10%2C10c5.523%2C0%2C10-4.477%2C10-10S15.523%2C0%2C10%2C0L10%2C0z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%20%3Cg%20style%3D%22opacity%3A0.7%3B%22%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%233A668C%3B%22%20d%3D%22M10%2C1c4.963%2C0%2C9%2C4.038%2C9%2C9c0%2C4.963-4.037%2C9-9%2C9s-9-4.037-9-9C1%2C5.038%2C5.037%2C1%2C10%2C1%20M10%2C0%20%20%20%20%20C4.479%2C0%2C0%2C4.477%2C0%2C10s4.479%2C10%2C10%2C10c5.523%2C0%2C10-4.477%2C10-10S15.523%2C0%2C10%2C0L10%2C0z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
@@ -1449,29 +1401,29 @@ button:active > .glyphicon-radio-button -hover {
   width: 16px;
   height: 16px;
 }
-.fuelux-icon-radio-button-active:before,
-.fuelux-icon-radio-button:active:before,
-button:active > .fuelux-icon-radio-button -hover:before,
-.glyphicon-radio-button-active:before,
-.glyphicon-radio-button:active:before,
-button:active > .glyphicon-radio-button -hover:before {
+.fuelux-icon-radio-button-active-hover:before,
+.fuelux-icon-radio-button:active:hover:before,
+button:active:hover > .fuelux-icon-radio-button:before,
+.glyphicon-radio-button-active-hover:before,
+.glyphicon-radio-button:active:hover:before,
+button:active:hover > .glyphicon-radio-button:before {
   content: "";
 }
-.btn-lg .fuelux-icon-radio-button-active,
-.btn-lg .fuelux-icon-radio-button:active,
-.btn-lg button:active > .fuelux-icon-radio-button -hover,
-.btn-lg .glyphicon-radio-button-active,
-.btn-lg .glyphicon-radio-button:active,
-.btn-lg button:active > .glyphicon-radio-button -hover {
+.btn-lg .fuelux-icon-radio-button-active-hover,
+.btn-lg .fuelux-icon-radio-button:active:hover,
+.btn-lg button:active:hover > .fuelux-icon-radio-button,
+.btn-lg .glyphicon-radio-button-active-hover,
+.btn-lg .glyphicon-radio-button:active:hover,
+.btn-lg button:active:hover > .glyphicon-radio-button {
   width: 20px;
   height: 20px;
 }
-.btn-sm .fuelux-icon-radio-button-active,
-.btn-sm .fuelux-icon-radio-button:active,
-.btn-sm button:active > .fuelux-icon-radio-button -hover,
-.btn-sm .glyphicon-radio-button-active,
-.btn-sm .glyphicon-radio-button:active,
-.btn-sm button:active > .glyphicon-radio-button -hover {
+.btn-sm .fuelux-icon-radio-button-active-hover,
+.btn-sm .fuelux-icon-radio-button:active:hover,
+.btn-sm button:active:hover > .fuelux-icon-radio-button,
+.btn-sm .glyphicon-radio-button-active-hover,
+.btn-sm .glyphicon-radio-button:active:hover,
+.btn-sm button:active:hover > .glyphicon-radio-button {
   width: 13px;
   height: 13px;
 }
@@ -1537,24 +1489,12 @@ button:active > .glyphicon-radio-button:before {
   width: 13px;
   height: 13px;
 }
-.fuelux-icon-radio-button-checked-hover,
-.fuelux-icon-radio-button-checked:hover,
-button:hover > .fuelux-icon-radio-button-checked -active,
-.fuelux-icon-radio-button-checked-hover,
-.fuelux-icon-radio-button-checked:hover,
-button:hover > .fuelux-icon-radio-button-checked :active,
-button:active > .fuelux-icon-radio-button-checked-hover,
-.fuelux-icon-radio-button-checked:hover,
-button:hover > .fuelux-icon-radio-button-checked,
-.glyphicon-radio-button-checked-hover,
-.glyphicon-radio-button-checked:hover,
-button:hover > .glyphicon-radio-button-checked -active,
-.glyphicon-radio-button-checked-hover,
-.glyphicon-radio-button-checked:hover,
-button:hover > .glyphicon-radio-button-checked :active,
-button:active > .glyphicon-radio-button-checked-hover,
-.glyphicon-radio-button-checked:hover,
-button:hover > .glyphicon-radio-button-checked {
+.fuelux-icon-radio-button-checked-hover-active,
+.fuelux-icon-radio-button:checked:active:hover,
+button:active:hover > .fuelux-icon-radio-button:checked,
+.glyphicon-radio-button-checked-hover-active,
+.glyphicon-radio-button:checked:active:hover,
+button:active:hover > .glyphicon-radio-button:checked {
   background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2220px%22%20%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22radio-button-checked-hover-active%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_54_%22%20y%3D%220%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cg%3E%20%20%20%3Cg%20id%3D%22radio_x3D_button-hover_1_%22%3E%20%20%20%20%3CradialGradient%20id%3D%22SVGID_1_%22%20cx%3D%229.9175%22%20cy%3D%2219.833%22%20r%3D%2219.6693%22%20gradientUnits%3D%22userSpaceOnUse%22%3E%20%20%20%20%20%3Cstop%20%20offset%3D%220%22%20style%3D%22stop-color%3A%23F2F6FB%22%2F%3E%20%20%20%20%20%3Cstop%20%20offset%3D%221%22%20style%3D%22stop-color%3A%23C1D5E6%22%2F%3E%20%20%20%20%3C%2FradialGradient%3E%20%20%20%20%3Ccircle%20style%3D%22fill%3Aurl%28%23SVGID_1_%29%3B%22%20cx%3D%2210%22%20cy%3D%2210%22%20r%3D%2210%22%2F%3E%20%20%20%20%3Cg%20style%3D%22opacity%3A0.8%3B%22%3E%20%20%20%20%20%3Cpath%20style%3D%22fill%3A%23FFFFFF%3B%22%20d%3D%22M10%2C2c4.411%2C0%2C8%2C3.589%2C8%2C8c0%2C4.411-3.589%2C8-8%2C8c-4.412%2C0-8-3.589-8-8C2%2C5.589%2C5.589%2C2%2C10%2C2%20%20%20%20%20%20%20M10%2C0C4.477%2C0%2C0%2C4.477%2C0%2C10c0%2C5.523%2C4.477%2C10%2C10%2C10c5.523%2C0%2C10-4.477%2C10-10C20%2C4.477%2C15.523%2C0%2C10%2C0L10%2C0z%22%2F%3E%20%20%20%20%3C%2Fg%3E%20%20%20%20%3Cg%20style%3D%22opacity%3A0.7%3B%22%3E%20%20%20%20%20%3Cpath%20style%3D%22fill%3A%233A668C%3B%22%20d%3D%22M10%2C1c4.962%2C0%2C9%2C4.038%2C9%2C9s-4.037%2C9-9%2C9c-4.963%2C0-9-4.037-9-9S5.038%2C1%2C10%2C1%20M10%2C0%20%20%20%20%20%20C4.477%2C0%2C0%2C4.477%2C0%2C10c0%2C5.523%2C4.477%2C10%2C10%2C10c5.523%2C0%2C10-4.477%2C10-10C20%2C4.477%2C15.523%2C0%2C10%2C0L10%2C0z%22%2F%3E%20%20%20%20%3C%2Fg%3E%20%20%20%3C%2Fg%3E%20%20%20%3Cg%20id%3D%22checked-indicator_4_%22%3E%20%20%20%20%3ClinearGradient%20id%3D%22SVGID_2_%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%2213.4482%22%20y1%3D%2212.8916%22%20x2%3D%226.5546%22%20y2%3D%227.1071%22%3E%20%20%20%20%20%3Cstop%20%20offset%3D%220%22%20style%3D%22stop-color%3A%2366A2D7%22%2F%3E%20%20%20%20%20%3Cstop%20%20offset%3D%221%22%20style%3D%22stop-color%3A%23517FA5%22%2F%3E%20%20%20%20%3C%2FlinearGradient%3E%20%20%20%20%20%20%20%20%20%3Ccircle%20style%3D%22opacity%3A0.6%3Bfill%3Anone%3Bstroke%3Aurl%28%23SVGID_2_%29%3Bstroke-width%3A0.0219%3Bstroke-linecap%3Around%3Bstroke-linejoin%3Around%3Bstroke-miterlimit%3A10%3B%22%20cx%3D%2210.001%22%20cy%3D%229.999%22%20r%3D%224.489%22%2F%3E%20%20%20%20%20%20%20%20%20%3CradialGradient%20id%3D%22SVGID_3_%22%20cx%3D%2249.9062%22%20cy%3D%2215.0791%22%20r%3D%228.0199%22%20gradientTransform%3D%22matrix%280.9619%200%200%200.9618%20-37.9194%20-2.48%29%22%20gradientUnits%3D%22userSpaceOnUse%22%3E%20%20%20%20%20%3Cstop%20%20offset%3D%220.1212%22%20style%3D%22stop-color%3A%238DB9DD%22%2F%3E%20%20%20%20%20%3Cstop%20%20offset%3D%220.5126%22%20style%3D%22stop-color%3A%235C9BD0%22%2F%3E%20%20%20%20%20%3Cstop%20%20offset%3D%220.6719%22%20style%3D%22stop-color%3A%23448CCA%22%2F%3E%20%20%20%20%20%3Cstop%20%20offset%3D%221%22%20style%3D%22stop-color%3A%23336B9A%22%2F%3E%20%20%20%20%3C%2FradialGradient%3E%20%20%20%20%3Ccircle%20style%3D%22fill%3Aurl%28%23SVGID_3_%29%3B%22%20cx%3D%2210.001%22%20cy%3D%229.999%22%20r%3D%224.489%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
@@ -1562,65 +1502,29 @@ button:hover > .glyphicon-radio-button-checked {
   width: 16px;
   height: 16px;
 }
-.fuelux-icon-radio-button-checked-hover:before,
-.fuelux-icon-radio-button-checked:hover:before,
-button:hover > .fuelux-icon-radio-button-checked -active:before,
-.fuelux-icon-radio-button-checked-hover:before,
-.fuelux-icon-radio-button-checked:hover:before,
-button:hover > .fuelux-icon-radio-button-checked :active:before,
-button:active > .fuelux-icon-radio-button-checked-hover:before,
-.fuelux-icon-radio-button-checked:hover:before,
-button:hover > .fuelux-icon-radio-button-checked:before,
-.glyphicon-radio-button-checked-hover:before,
-.glyphicon-radio-button-checked:hover:before,
-button:hover > .glyphicon-radio-button-checked -active:before,
-.glyphicon-radio-button-checked-hover:before,
-.glyphicon-radio-button-checked:hover:before,
-button:hover > .glyphicon-radio-button-checked :active:before,
-button:active > .glyphicon-radio-button-checked-hover:before,
-.glyphicon-radio-button-checked:hover:before,
-button:hover > .glyphicon-radio-button-checked:before {
+.fuelux-icon-radio-button-checked-hover-active:before,
+.fuelux-icon-radio-button:checked:active:hover:before,
+button:active:hover > .fuelux-icon-radio-button:checked:before,
+.glyphicon-radio-button-checked-hover-active:before,
+.glyphicon-radio-button:checked:active:hover:before,
+button:active:hover > .glyphicon-radio-button:checked:before {
   content: "";
 }
-.btn-lg .fuelux-icon-radio-button-checked-hover,
-.btn-lg .fuelux-icon-radio-button-checked:hover,
-.btn-lg button:hover > .fuelux-icon-radio-button-checked -active,
-.btn-lg .fuelux-icon-radio-button-checked-hover,
-.btn-lg .fuelux-icon-radio-button-checked:hover,
-.btn-lg button:hover > .fuelux-icon-radio-button-checked :active,
-.btn-lg button:active > .fuelux-icon-radio-button-checked-hover,
-.btn-lg .fuelux-icon-radio-button-checked:hover,
-.btn-lg button:hover > .fuelux-icon-radio-button-checked,
-.btn-lg .glyphicon-radio-button-checked-hover,
-.btn-lg .glyphicon-radio-button-checked:hover,
-.btn-lg button:hover > .glyphicon-radio-button-checked -active,
-.btn-lg .glyphicon-radio-button-checked-hover,
-.btn-lg .glyphicon-radio-button-checked:hover,
-.btn-lg button:hover > .glyphicon-radio-button-checked :active,
-.btn-lg button:active > .glyphicon-radio-button-checked-hover,
-.btn-lg .glyphicon-radio-button-checked:hover,
-.btn-lg button:hover > .glyphicon-radio-button-checked {
+.btn-lg .fuelux-icon-radio-button-checked-hover-active,
+.btn-lg .fuelux-icon-radio-button:checked:active:hover,
+.btn-lg button:active:hover > .fuelux-icon-radio-button:checked,
+.btn-lg .glyphicon-radio-button-checked-hover-active,
+.btn-lg .glyphicon-radio-button:checked:active:hover,
+.btn-lg button:active:hover > .glyphicon-radio-button:checked {
   width: 20px;
   height: 20px;
 }
-.btn-sm .fuelux-icon-radio-button-checked-hover,
-.btn-sm .fuelux-icon-radio-button-checked:hover,
-.btn-sm button:hover > .fuelux-icon-radio-button-checked -active,
-.btn-sm .fuelux-icon-radio-button-checked-hover,
-.btn-sm .fuelux-icon-radio-button-checked:hover,
-.btn-sm button:hover > .fuelux-icon-radio-button-checked :active,
-.btn-sm button:active > .fuelux-icon-radio-button-checked-hover,
-.btn-sm .fuelux-icon-radio-button-checked:hover,
-.btn-sm button:hover > .fuelux-icon-radio-button-checked,
-.btn-sm .glyphicon-radio-button-checked-hover,
-.btn-sm .glyphicon-radio-button-checked:hover,
-.btn-sm button:hover > .glyphicon-radio-button-checked -active,
-.btn-sm .glyphicon-radio-button-checked-hover,
-.btn-sm .glyphicon-radio-button-checked:hover,
-.btn-sm button:hover > .glyphicon-radio-button-checked :active,
-.btn-sm button:active > .glyphicon-radio-button-checked-hover,
-.btn-sm .glyphicon-radio-button-checked:hover,
-.btn-sm button:hover > .glyphicon-radio-button-checked {
+.btn-sm .fuelux-icon-radio-button-checked-hover-active,
+.btn-sm .fuelux-icon-radio-button:checked:active:hover,
+.btn-sm button:active:hover > .fuelux-icon-radio-button:checked,
+.btn-sm .glyphicon-radio-button-checked-hover-active,
+.btn-sm .glyphicon-radio-button:checked:active:hover,
+.btn-sm button:active:hover > .glyphicon-radio-button:checked {
   width: 13px;
   height: 13px;
 }
@@ -1833,12 +1737,12 @@ button:hover > .glyphicon-remove:before {
   width: 13px;
   height: 13px;
 }
-.fuelux-icon-search-active,
-.fuelux-icon-search:active,
-button:active > .fuelux-icon-search -hover,
-.glyphicon-search-active,
-.glyphicon-search:active,
-button:active > .glyphicon-search -hover {
+.fuelux-icon-search-active-hover,
+.fuelux-icon-search:active:hover,
+button:active:hover > .fuelux-icon-search,
+.glyphicon-search-active-hover,
+.glyphicon-search:active:hover,
+button:active:hover > .glyphicon-search {
   background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2220px%22%20%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22search-active-hover%22%3E%20%3Cg%3E%20%20%3Cg%20id%3D%22button-2px-corner_3_%22%3E%20%20%20%3ClinearGradient%20id%3D%22SVGID_1_%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%2210.0005%22%20y1%3D%2220%22%20x2%3D%2210.0005%22%20y2%3D%224.882812e-04%22%3E%20%20%20%20%3Cstop%20%20offset%3D%220%22%20style%3D%22stop-color%3A%23F1F8FF%22%2F%3E%20%20%20%20%3Cstop%20%20offset%3D%220.9%22%20style%3D%22stop-color%3A%23A1C8E6%22%2F%3E%20%20%20%3C%2FlinearGradient%3E%20%20%20%3Cpath%20style%3D%22fill%3Aurl%28%23SVGID_1_%29%3B%22%20d%3D%22M0%2C17c0%2C1.65%2C1.35%2C3%2C3%2C3h14c1.65%2C0%2C3-1.35%2C3-3V3c0-1.65-1.35-3-3-3H3C1.35%2C0%2C0%2C1.35%2C0%2C3V17%20%20%20%20z%22%2F%3E%20%20%20%3Cg%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%23FFFFFF%3B%22%20d%3D%22M17%2C1c1.103%2C0%2C2%2C0.897%2C2%2C2v14c0%2C1.103-0.897%2C2-2%2C2H3c-1.103%2C0-2-0.897-2-2V3c0-1.103%2C0.897-2%2C2-2%20%20%20%20%20H17%20M17%2C0H3C1.35%2C0%2C0%2C1.35%2C0%2C3v14c0%2C1.65%2C1.35%2C3%2C3%2C3h14c1.65%2C0%2C3-1.35%2C3-3V3C20%2C1.35%2C18.65%2C0%2C17%2C0L17%2C0z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%20%3Cg%20style%3D%22opacity%3A0.8%3B%22%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%236A8799%3B%22%20d%3D%22M17%2C0.5c1.379%2C0%2C2.5%2C1.122%2C2.5%2C2.5v14c0%2C1.379-1.121%2C2.5-2.5%2C2.5H3c-1.378%2C0-2.5-1.121-2.5-2.5V3%20%20%20%20%20c0-1.378%2C1.122-2.5%2C2.5-2.5H17%20M17%2C0H3C1.35%2C0%2C0%2C1.35%2C0%2C3v14c0%2C1.65%2C1.35%2C3%2C3%2C3h14c1.65%2C0%2C3-1.35%2C3-3V3C20%2C1.35%2C18.65%2C0%2C17%2C0%20%20%20%20%20L17%2C0z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%20%3Cg%3E%20%20%20%3Cg%20id%3D%22spyglass-form_1_%22%3E%20%20%20%20%3ClinearGradient%20id%3D%22SVGID_2_%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%222.5151%22%20y1%3D%2210%22%20x2%3D%2217.4854%22%20y2%3D%2210%22%3E%20%20%20%20%20%3Cstop%20%20offset%3D%220%22%20style%3D%22stop-color%3A%23FFFFFF%22%2F%3E%20%20%20%20%20%3Cstop%20%20offset%3D%220.9%22%20style%3D%22stop-color%3A%23D7E5EF%22%2F%3E%20%20%20%20%3C%2FlinearGradient%3E%20%20%20%20%3Cpath%20style%3D%22fill%3Aurl%28%23SVGID_2_%29%3B%22%20d%3D%22M11.333%2C3.073c1.446%2C0%2C2.894%2C0.552%2C3.997%2C1.655c2.208%2C2.206%2C2.207%2C5.785%2C0%2C7.992%20%20%20%20%20c-1.1%2C1.1-2.538%2C1.646-3.979%2C1.646c-1.029%2C0-2.06-0.279-2.967-0.835l-3.261%2C3.257l-0.012-0.014%20%20%20%20%20c-0.124%2C0.103-0.284%2C0.152-0.463%2C0.152c-0.346%2C0-0.76-0.185-1.105-0.528c-0.523-0.523-0.677-1.206-0.379-1.565l-0.012-0.014%20%20%20%20%20l3.296-3.295C5.209%2C9.363%2C5.49%2C6.572%2C7.335%2C4.729C8.439%2C3.625%2C9.886%2C3.073%2C11.333%2C3.073%20M11.332%2C13.111%20%20%20%20%20c1.124%2C0%2C2.249-0.427%2C3.105-1.281c1.713-1.717%2C1.713-4.498%2C0-6.209c-0.856-0.855-1.981-1.283-3.105-1.283%20%20%20%20%20S9.084%2C4.766%2C8.229%2C5.621c-1.713%2C1.711-1.713%2C4.492%2C0%2C6.209C9.084%2C12.685%2C10.208%2C13.111%2C11.332%2C13.111%20M11.333%2C2.573%20%20%20%20%20c-1.644%2C0-3.189%2C0.64-4.352%2C1.802c-1.859%2C1.857-2.307%2C4.709-1.148%2C7.058l-3.034%2C3.033c-0.055%2C0.055-0.094%2C0.119-0.118%2C0.188%20%20%20%20%20c-0.343%2C0.577-0.143%2C1.446%2C0.509%2C2.098c0.431%2C0.429%2C0.963%2C0.675%2C1.459%2C0.675c0.245%2C0%2C0.469-0.062%2C0.657-0.178%20%20%20%20%20c0.064-0.023%2C0.123-0.059%2C0.171-0.107l2.991-2.987c0.886%2C0.467%2C1.875%2C0.712%2C2.883%2C0.712c1.638%2C0%2C3.177-0.637%2C4.332-1.792%20%20%20%20%20c1.162-1.162%2C1.802-2.707%2C1.802-4.35c0.001-1.644-0.64-3.188-1.802-4.349C14.521%2C3.213%2C12.977%2C2.573%2C11.333%2C2.573L11.333%2C2.573z%20%20%20%20%20%20M11.332%2C12.611c-1.041%2C0-2.017-0.402-2.75-1.135c-1.516-1.52-1.517-3.987%2C0-5.501c0.733-0.733%2C1.709-1.137%2C2.75-1.137%20%20%20%20%20c1.041%2C0%2C2.019%2C0.404%2C2.752%2C1.137c1.516%2C1.515%2C1.516%2C3.982%2C0%2C5.502C13.351%2C12.208%2C12.373%2C12.611%2C11.332%2C12.611L11.332%2C12.611z%22%20%20%20%20%20%2F%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%234E8ABE%3B%22%20d%3D%22M15.33%2C4.729c-2.207-2.207-5.787-2.207-7.995%2C0C5.49%2C6.572%2C5.209%2C9.363%2C6.448%2C11.524%20%20%20%20%20l-3.296%2C3.295l0.012%2C0.014c-0.298%2C0.359-0.145%2C1.042%2C0.379%2C1.565c0.525%2C0.522%2C1.208%2C0.676%2C1.569%2C0.376l0.012%2C0.014l3.261-3.257%20%20%20%20%20c2.178%2C1.334%2C5.061%2C1.074%2C6.946-0.811C17.537%2C10.514%2C17.538%2C6.935%2C15.33%2C4.729z%20M8.229%2C11.83c-1.713-1.717-1.713-4.498%2C0-6.209%20%20%20%20%20c1.71-1.711%2C4.496-1.711%2C6.209%2C0s1.713%2C4.492%2C0%2C6.209C12.725%2C13.539%2C9.939%2C13.539%2C8.229%2C11.83z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%20%3Cg%20style%3D%22display%3Anone%3B%22%3E%20%20%20%20%3Cdefs%3E%20%20%20%20%20%3Cpath%20id%3D%22SVGID_3_%22%20d%3D%22M8.389%2C10.377l0.007%2C0.21c0.002%2C0.032-0.025%2C0.056-0.056%2C0.06c-0.016%2C0-0.031-0.005-0.042-0.018%20%20%20%20%20%20l-0.029-0.027l-0.051-0.047L8.389%2C10.377z%22%2F%3E%20%20%20%20%3C%2Fdefs%3E%20%20%20%20%3CclipPath%20id%3D%22SVGID_4_%22%20style%3D%22display%3Ainline%3B%22%3E%20%20%20%20%20%3Cuse%20xlink%3Ahref%3D%22%23SVGID_3_%22%20%20style%3D%22overflow%3Avisible%3B%22%2F%3E%20%20%20%20%3C%2FclipPath%3E%20%20%20%20%3Cg%20style%3D%22display%3Ainline%3Bclip-path%3Aurl%28%23SVGID_4_%29%3B%22%3E%20%20%20%20%20%20%20%20%20%20%20%3Cimage%20style%3D%22overflow%3Avisible%3B%22%20width%3D%221%22%20height%3D%221%22%20xlink%3Ahref%3D%22data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAACXBIWXMAAAsSAAALEgHS3X78AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYAACgAADAAAFAAHbiZPSAAAAAElFTkSuQmCC%22%20transform%3D%22matrix%281%200%200%201%208%2010%29%22%3E%20%20%20%20%20%3C%2Fimage%3E%20%20%20%20%3C%2Fg%3E%20%20%20%3C%2Fg%3E%20%20%20%20%20%20%20%3Cimage%20style%3D%22overflow%3Avisible%3Bopacity%3A0.5%3B%22%20width%3D%225%22%20height%3D%226%22%20xlink%3Ahref%3D%22data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAAAUAAAAGCAYAAAAL%2B1RLAAAACXBIWXMAAAsSAAALEgHS3X78AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAEBJREFUeNpiZACC%2F%2F%2F%2F2wIpcyDmAfFZgALeQPofEDMxQAELEDMDsSmIw8jI2MAAldVHFoAJMjOgASZ0VSAAEGAAt2AJyEtx3zQAAAAASUVORK5CYII%3D%22%20transform%3D%22matrix%281%200%200%201%208%205%29%22%3E%20%20%20%3C%2Fimage%3E%20%20%20%3Cg%20style%3D%22display%3Anone%3B%22%3E%20%20%20%20%3Cdefs%3E%20%20%20%20%20%3Cpath%20id%3D%22SVGID_5_%22%20d%3D%22M12.191%2C5.525l0.059%2C0.035l0.033%2C0.021c0.026%2C0.018%2C0.035%2C0.053%2C0.019%2C0.08%20%20%20%20%20%20c-0.009%2C0.012-0.022%2C0.021-0.04%2C0.025l-0.2%2C0.042L12.191%2C5.525z%22%2F%3E%20%20%20%20%3C%2Fdefs%3E%20%20%20%20%3CclipPath%20id%3D%22SVGID_6_%22%20style%3D%22display%3Ainline%3B%22%3E%20%20%20%20%20%3Cuse%20xlink%3Ahref%3D%22%23SVGID_5_%22%20%20style%3D%22overflow%3Avisible%3B%22%2F%3E%20%20%20%20%3C%2FclipPath%3E%20%20%20%20%3Cg%20style%3D%22display%3Ainline%3Bclip-path%3Aurl%28%23SVGID_6_%29%3B%22%3E%20%20%20%20%20%20%20%20%20%20%20%3Cimage%20style%3D%22overflow%3Avisible%3B%22%20width%3D%221%22%20height%3D%221%22%20xlink%3Ahref%3D%22data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAACXBIWXMAAAsSAAALEgHS3X78AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYAACgAADAAAFAAHbiZPSAAAAAElFTkSuQmCC%22%20transform%3D%22matrix%281%200%200%201%2012%205%29%22%3E%20%20%20%20%20%3C%2Fimage%3E%20%20%20%20%3C%2Fg%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
@@ -1846,29 +1750,29 @@ button:active > .glyphicon-search -hover {
   width: 16px;
   height: 16px;
 }
-.fuelux-icon-search-active:before,
-.fuelux-icon-search:active:before,
-button:active > .fuelux-icon-search -hover:before,
-.glyphicon-search-active:before,
-.glyphicon-search:active:before,
-button:active > .glyphicon-search -hover:before {
+.fuelux-icon-search-active-hover:before,
+.fuelux-icon-search:active:hover:before,
+button:active:hover > .fuelux-icon-search:before,
+.glyphicon-search-active-hover:before,
+.glyphicon-search:active:hover:before,
+button:active:hover > .glyphicon-search:before {
   content: "";
 }
-.btn-lg .fuelux-icon-search-active,
-.btn-lg .fuelux-icon-search:active,
-.btn-lg button:active > .fuelux-icon-search -hover,
-.btn-lg .glyphicon-search-active,
-.btn-lg .glyphicon-search:active,
-.btn-lg button:active > .glyphicon-search -hover {
+.btn-lg .fuelux-icon-search-active-hover,
+.btn-lg .fuelux-icon-search:active:hover,
+.btn-lg button:active:hover > .fuelux-icon-search,
+.btn-lg .glyphicon-search-active-hover,
+.btn-lg .glyphicon-search:active:hover,
+.btn-lg button:active:hover > .glyphicon-search {
   width: 20px;
   height: 20px;
 }
-.btn-sm .fuelux-icon-search-active,
-.btn-sm .fuelux-icon-search:active,
-.btn-sm button:active > .fuelux-icon-search -hover,
-.btn-sm .glyphicon-search-active,
-.btn-sm .glyphicon-search:active,
-.btn-sm button:active > .glyphicon-search -hover {
+.btn-sm .fuelux-icon-search-active-hover,
+.btn-sm .fuelux-icon-search:active:hover,
+.btn-sm button:active:hover > .fuelux-icon-search,
+.btn-sm .glyphicon-search-active-hover,
+.btn-sm .glyphicon-search:active:hover,
+.btn-sm button:active:hover > .glyphicon-search {
   width: 13px;
   height: 13px;
 }
@@ -2037,7 +1941,7 @@ button:hover > .glyphicon-search:before {
 }
 .fuelux-icon-sort-by-alphabet,
 .glyphicon-sort-by-alphabet {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2220px%22%20%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22sort-by-alphabet%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_45_%22%20x%3D%22-1190%22%20y%3D%2262%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cg%20id%3D%22down-arrow_5_%22%3E%20%20%20%3Cpath%20style%3D%22fill%3A%234E8ABE%3B%22%20d%3D%22M-1184.043%2C75.938c-0.009%2C0-0.016-0.007-0.016-0.016v-13.82c0-0.009-0.007-0.016-0.016-0.016%20%20%20%20h-3.146c-0.009%2C0-0.016%2C0.007-0.016%2C0.016v13.82c0%2C0.009-0.007%2C0.016-0.016%2C0.016h-2.583c-0.009%2C0-0.012%2C0.006-0.007%2C0.013%20%20%20%20l4.186%2C5.953c0.005%2C0.007%2C0.013%2C0.007%2C0.018%2C0l4.183-5.953c0.005-0.007%2C0.002-0.013-0.007-0.013H-1184.043z%22%2F%3E%20%20%3C%2Fg%3E%20%20%3Cpath%20id%3D%22a-glyph_1_%22%20style%3D%22fill%3A%234E8ABE%3B%22%20d%3D%22M-1173.709%2C62l3.583%2C7.379h-2.16l-0.666-1.455h-3.615l-0.604%2C1.455h-2.127%20%20%20l3.26-7.379H-1173.709z%20M-1173.541%2C66.635l-1.306-2.873l-1.188%2C2.873H-1173.541z%22%2F%3E%20%20%3Cpath%20id%3D%22z-glyph_1_%22%20style%3D%22fill%3A%234E8ABE%3B%22%20d%3D%22M-1170.797%2C74.623l-4.398%2C6.025h4.398V82h-7.832l4.434-6.027h-4.128v-1.35%20%20%20H-1170.797z%22%2F%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2220px%22%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20enable-background%3D%22new%200%200%2020%2020%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22sort-by-alphabet%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_45_%22%20fill%3D%22none%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cg%20id%3D%22down-arrow_5_%22%3E%20%20%20%3Cpath%20fill%3D%22%234E8ABE%22%20d%3D%22M5.957%2C13.938c-0.009%2C0-0.016-0.006-0.016-0.016V0.102c0-0.009-0.007-0.016-0.016-0.016H2.779%20%20%20%20c-0.009%2C0-0.016%2C0.007-0.016%2C0.016v13.82c0%2C0.01-0.007%2C0.016-0.016%2C0.016H0.164c-0.009%2C0-0.012%2C0.006-0.007%2C0.014l4.186%2C5.953%20%20%20%20c0.005%2C0.007%2C0.013%2C0.007%2C0.018%2C0l4.183-5.953c0.005-0.008%2C0.002-0.014-0.007-0.014H5.957z%22%2F%3E%20%20%3C%2Fg%3E%20%20%3Cpath%20id%3D%22a-glyph_1_%22%20fill%3D%22%234E8ABE%22%20d%3D%22M16.291%2C0l3.583%2C7.379h-2.16l-0.666-1.455h-3.614l-0.604%2C1.455h-2.127L13.962%2C0H16.291z%20%20%20%20M16.459%2C4.635l-1.307-2.873l-1.188%2C2.873H16.459z%22%2F%3E%20%20%3Cpath%20id%3D%22z-glyph_1_%22%20fill%3D%22%234E8ABE%22%20d%3D%22M19.203%2C12.623l-4.398%2C6.025h4.398V20h-7.832l4.434-6.027h-4.128v-1.35H19.203z%22%2F%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1_1_%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -5453,11 +5357,13 @@ a.list-group-item-danger.active:focus {
   margin: -1px -1px 0;
   padding: 4px 8px;
 }
+.fuelux {
+  /* TODO use fuelux variables for numbers bellow if possible */
+}
 .fuelux .column-header {
   padding: 6px 10px;
 }
 .fuelux .checkbox-custom {
-  font-size: 12px;
   line-height: 20px;
   padding-left: 20px;
 }
@@ -5615,7 +5521,6 @@ a.list-group-item-danger.active:focus {
   height: 13px;
 }
 .fuelux .checkbox-custom:hover.checked:before {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2220px%22%20%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22checkbox-checked-hover-active%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_5_%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cg%3E%20%20%20%3Cg%20id%3D%22checkbox-2px-corner_16_%22%3E%20%20%20%20%3ClinearGradient%20id%3D%22SVGID_1_%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%228.5005%22%20y1%3D%2217%22%20x2%3D%228.5005%22%20y2%3D%224.882812e-04%22%3E%20%20%20%20%20%3Cstop%20%20offset%3D%220%22%20style%3D%22stop-color%3A%23F2F6FB%22%2F%3E%20%20%20%20%20%3Cstop%20%20offset%3D%220.48%22%20style%3D%22stop-color%3A%23F2F6FB%22%2F%3E%20%20%20%20%20%3Cstop%20%20offset%3D%220.5%22%20style%3D%22stop-color%3A%23CDDFEC%22%2F%3E%20%20%20%20%20%3Cstop%20%20offset%3D%220.7287%22%20style%3D%22stop-color%3A%23C4D8E8%22%2F%3E%20%20%20%20%20%3Cstop%20%20offset%3D%221%22%20style%3D%22stop-color%3A%23C1D5E6%22%2F%3E%20%20%20%20%3C%2FlinearGradient%3E%20%20%20%20%3Cpath%20style%3D%22fill%3Aurl%28%23SVGID_1_%29%3B%22%20d%3D%22M0%2C14c0%2C1.65%2C1.35%2C3%2C3%2C3h11c1.65%2C0%2C3-1.35%2C3-3V3c0-1.65-1.35-3-3-3H3C1.35%2C0%2C0%2C1.35%2C0%2C3%20%20%20%20%20V14z%22%2F%3E%20%20%20%20%3Cg%20style%3D%22opacity%3A0.8%3B%22%3E%20%20%20%20%20%3Cpath%20style%3D%22fill%3A%23FFFFFF%3B%22%20d%3D%22M14%2C2c0.542%2C0%2C1%2C0.458%2C1%2C1v11c0%2C0.542-0.458%2C1-1%2C1H3c-0.542%2C0-1-0.458-1-1V3%20%20%20%20%20%20c0-0.542%2C0.458-1%2C1-1H14%20M14%2C0H3C1.35%2C0%2C0%2C1.35%2C0%2C3v11c0%2C1.65%2C1.35%2C3%2C3%2C3h11c1.65%2C0%2C3-1.35%2C3-3V3C17%2C1.35%2C15.65%2C0%2C14%2C0L14%2C0z%22%20%20%20%20%20%20%2F%3E%20%20%20%20%3C%2Fg%3E%20%20%20%20%3Cg%20style%3D%22opacity%3A0.7%3B%22%3E%20%20%20%20%20%3Cpath%20style%3D%22fill%3A%2362798C%3B%22%20d%3D%22M14%2C1c1.103%2C0%2C2%2C0.897%2C2%2C2v11c0%2C1.103-0.897%2C2-2%2C2H3c-1.103%2C0-2-0.897-2-2V3%20%20%20%20%20%20c0-1.103%2C0.897-2%2C2-2H14%20M14%2C0H3C1.35%2C0%2C0%2C1.35%2C0%2C3v11c0%2C1.65%2C1.35%2C3%2C3%2C3h11c1.65%2C0%2C3-1.35%2C3-3V3C17%2C1.35%2C15.65%2C0%2C14%2C0L14%2C0z%22%20%20%20%20%20%20%2F%3E%20%20%20%20%3C%2Fg%3E%20%20%20%3C%2Fg%3E%20%20%20%3Cg%20id%3D%22checked-indicator_12_%22%3E%20%20%20%20%20%20%20%20%20%3Cpath%20style%3D%22opacity%3A0.8%3Bfill%3Anone%3Bstroke%3A%23FFFFFF%3Bstroke-width%3A2%3Bstroke-linecap%3Around%3Bstroke-linejoin%3Around%3Bstroke-miterlimit%3A10%3B%22%20d%3D%22%20%20%20%20%20M8.486%2C9.297c0%2C0%2C0.024-0.27-0.279-0.565C7.9%2C8.442%2C5.546%2C6.178%2C5.546%2C6.178C4.656%2C5.325%2C4.634%2C5.349%2C3.8%2C6.212L3.108%2C6.925%20%20%20%20%20C2.263%2C7.801%2C2.406%2C7.951%2C3.139%2C8.663l1.775%2C1.703C5.4%2C10.833%2C6.202%2C11.6%2C6.69%2C12.068l0.888%2C0.852%20%20%20%20%20c0.884%2C0.854%2C0.884%2C0.852%2C1.742-0.031l0.854-0.885c0.473-0.484%2C1.239-1.279%2C1.712-1.766l5.61-5.796%20%20%20%20%20c0.854-0.883%2C0.854-0.884-0.032-1.736l-0.61-0.585c-0.847-0.817-0.886-0.857-1.743%2C0.033L9.5%2C7.948c0%2C0-0.578%2C0.595-0.75%2C0.776%20%20%20%20%20C8.574%2C8.905%2C8.486%2C9.297%2C8.486%2C9.297z%22%2F%3E%20%20%20%20%20%20%20%20%20%3ClinearGradient%20id%3D%22SVGID_2_%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%2224.0566%22%20y1%3D%221122.6816%22%20x2%3D%2224.586%22%20y2%3D%221119.6792%22%20gradientTransform%3D%22matrix%280.6947%20-0.7193%200.7205%200.6934%20-812.1848%20-751.2178%29%22%3E%20%20%20%20%20%3Cstop%20%20offset%3D%220%22%20style%3D%22stop-color%3A%23336B9A%22%2F%3E%20%20%20%20%20%3Cstop%20%20offset%3D%221%22%20style%3D%22stop-color%3A%23448CCA%22%2F%3E%20%20%20%20%3C%2FlinearGradient%3E%20%20%20%20%3Cpath%20style%3D%22fill%3Aurl%28%23SVGID_2_%29%3B%22%20d%3D%22M8.486%2C9.297c0%2C0%2C0.024-0.27-0.279-0.565C7.9%2C8.442%2C5.546%2C6.178%2C5.546%2C6.178%20%20%20%20%20C4.656%2C5.325%2C4.634%2C5.349%2C3.8%2C6.212L3.108%2C6.925C2.263%2C7.801%2C2.406%2C7.951%2C3.139%2C8.663l1.775%2C1.703%20%20%20%20%20C5.4%2C10.833%2C6.202%2C11.6%2C6.69%2C12.068l0.888%2C0.852c0.884%2C0.854%2C0.884%2C0.852%2C1.742-0.031l0.854-0.885%20%20%20%20%20c0.473-0.484%2C1.239-1.279%2C1.712-1.766l5.61-5.796c0.854-0.883%2C0.854-0.884-0.032-1.736l-0.61-0.585%20%20%20%20%20c-0.847-0.817-0.886-0.857-1.743%2C0.033L9.5%2C7.948c0%2C0-0.578%2C0.595-0.75%2C0.776C8.574%2C8.905%2C8.486%2C9.297%2C8.486%2C9.297z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2220px%22%20%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22checkbox-checked-hover%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_13_%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cg%3E%20%20%20%3Cg%20id%3D%22checkbox-2px-corner_21_%22%3E%20%20%20%20%3ClinearGradient%20id%3D%22SVGID_1_%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%228.4995%22%20y1%3D%220%22%20x2%3D%228.4995%22%20y2%3D%2217.0005%22%3E%20%20%20%20%20%3Cstop%20%20offset%3D%220%22%20style%3D%22stop-color%3A%23F2F6FB%22%2F%3E%20%20%20%20%20%3Cstop%20%20offset%3D%220.48%22%20style%3D%22stop-color%3A%23F2F6FB%22%2F%3E%20%20%20%20%20%3Cstop%20%20offset%3D%220.5%22%20style%3D%22stop-color%3A%23CDDFEC%22%2F%3E%20%20%20%20%20%3Cstop%20%20offset%3D%220.7287%22%20style%3D%22stop-color%3A%23C4D8E8%22%2F%3E%20%20%20%20%20%3Cstop%20%20offset%3D%221%22%20style%3D%22stop-color%3A%23C1D5E6%22%2F%3E%20%20%20%20%3C%2FlinearGradient%3E%20%20%20%20%3Cpath%20style%3D%22fill%3Aurl%28%23SVGID_1_%29%3B%22%20d%3D%22M0%2C14c0%2C1.65%2C1.35%2C3%2C3%2C3h11c1.65%2C0%2C3-1.35%2C3-3V3c0-1.65-1.35-3-3-3H3C1.35%2C0%2C0%2C1.35%2C0%2C3%20%20%20%20%20V14z%22%2F%3E%20%20%20%20%3Cg%20style%3D%22opacity%3A0.8%3B%22%3E%20%20%20%20%20%3Cpath%20style%3D%22fill%3A%23FFFFFF%3B%22%20d%3D%22M14%2C2c0.542%2C0%2C1%2C0.458%2C1%2C1v11c0%2C0.542-0.458%2C1-1%2C1H3c-0.542%2C0-1-0.458-1-1V3%20%20%20%20%20%20c0-0.542%2C0.458-1%2C1-1H14%20M14%2C0H3C1.35%2C0%2C0%2C1.35%2C0%2C3v11c0%2C1.65%2C1.35%2C3%2C3%2C3h11c1.65%2C0%2C3-1.35%2C3-3V3C17%2C1.35%2C15.65%2C0%2C14%2C0L14%2C0z%22%20%20%20%20%20%20%2F%3E%20%20%20%20%3C%2Fg%3E%20%20%20%20%3Cg%20style%3D%22opacity%3A0.7%3B%22%3E%20%20%20%20%20%3Cpath%20style%3D%22fill%3A%2362798C%3B%22%20d%3D%22M14%2C1c1.103%2C0%2C2%2C0.897%2C2%2C2v11c0%2C1.103-0.897%2C2-2%2C2H3c-1.103%2C0-2-0.897-2-2V3%20%20%20%20%20%20c0-1.103%2C0.897-2%2C2-2H14%20M14%2C0H3C1.35%2C0%2C0%2C1.35%2C0%2C3v11c0%2C1.65%2C1.35%2C3%2C3%2C3h11c1.65%2C0%2C3-1.35%2C3-3V3C17%2C1.35%2C15.65%2C0%2C14%2C0L14%2C0z%22%20%20%20%20%20%20%2F%3E%20%20%20%20%3C%2Fg%3E%20%20%20%3C%2Fg%3E%20%20%20%3Cg%20id%3D%22checked-indicator_17_%22%3E%20%20%20%20%20%20%20%20%20%3Cpath%20style%3D%22opacity%3A0.8%3Bfill%3Anone%3Bstroke%3A%23FFFFFF%3Bstroke-width%3A2%3Bstroke-linecap%3Around%3Bstroke-linejoin%3Around%3Bstroke-miterlimit%3A10%3B%22%20d%3D%22%20%20%20%20%20M8.486%2C9.297c0%2C0%2C0.024-0.27-0.279-0.565C7.9%2C8.442%2C5.546%2C6.178%2C5.546%2C6.178C4.656%2C5.325%2C4.634%2C5.349%2C3.8%2C6.212L3.108%2C6.925%20%20%20%20%20C2.263%2C7.801%2C2.406%2C7.951%2C3.139%2C8.663l1.775%2C1.703C5.4%2C10.833%2C6.202%2C11.6%2C6.69%2C12.068l0.888%2C0.852%20%20%20%20%20c0.884%2C0.854%2C0.884%2C0.852%2C1.742-0.031l0.854-0.885c0.473-0.484%2C1.239-1.279%2C1.712-1.766l5.61-5.796%20%20%20%20%20c0.854-0.882%2C0.854-0.884-0.032-1.737l-0.61-0.584c-0.847-0.817-0.886-0.857-1.743%2C0.033L9.5%2C7.948c0%2C0-0.578%2C0.594-0.75%2C0.775%20%20%20%20%20C8.574%2C8.904%2C8.486%2C9.297%2C8.486%2C9.297z%22%2F%3E%20%20%20%20%20%20%20%20%20%3ClinearGradient%20id%3D%22SVGID_2_%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%2224.0566%22%20y1%3D%221122.6816%22%20x2%3D%2224.586%22%20y2%3D%221119.6792%22%20gradientTransform%3D%22matrix%280.6947%20-0.7193%200.7205%200.6934%20-812.1848%20-751.2178%29%22%3E%20%20%20%20%20%3Cstop%20%20offset%3D%220%22%20style%3D%22stop-color%3A%23336B9A%22%2F%3E%20%20%20%20%20%3Cstop%20%20offset%3D%221%22%20style%3D%22stop-color%3A%23448CCA%22%2F%3E%20%20%20%20%3C%2FlinearGradient%3E%20%20%20%20%3Cpath%20style%3D%22fill%3Aurl%28%23SVGID_2_%29%3B%22%20d%3D%22M8.486%2C9.297c0%2C0%2C0.024-0.27-0.279-0.565C7.9%2C8.442%2C5.546%2C6.178%2C5.546%2C6.178%20%20%20%20%20C4.656%2C5.325%2C4.634%2C5.349%2C3.8%2C6.212L3.108%2C6.925C2.263%2C7.801%2C2.406%2C7.951%2C3.139%2C8.663l1.775%2C1.703%20%20%20%20%20C5.4%2C10.833%2C6.202%2C11.6%2C6.69%2C12.068l0.888%2C0.852c0.884%2C0.854%2C0.884%2C0.852%2C1.742-0.031l0.854-0.885%20%20%20%20%20c0.473-0.484%2C1.239-1.279%2C1.712-1.766l5.61-5.796c0.854-0.882%2C0.854-0.884-0.032-1.737l-0.61-0.584%20%20%20%20%20c-0.847-0.817-0.886-0.857-1.743%2C0.033L9.5%2C7.948c0%2C0-0.578%2C0.594-0.75%2C0.775C8.574%2C8.904%2C8.486%2C9.297%2C8.486%2C9.297z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
@@ -5624,17 +5529,6 @@ a.list-group-item-danger.active:focus {
   height: 16px;
   width: 15px;
   height: 15px;
-}
-.fuelux .checkbox-custom:hover.checked:before:before {
-  content: "";
-}
-.btn-lg .fuelux .checkbox-custom:hover.checked:before {
-  width: 20px;
-  height: 20px;
-}
-.btn-sm .fuelux .checkbox-custom:hover.checked:before {
-  width: 13px;
-  height: 13px;
 }
 .fuelux .checkbox-custom:hover.checked:before:before {
   content: "";
@@ -5701,7 +5595,6 @@ a.list-group-item-danger.active:focus {
 }
 .fuelux .checkbox-custom:active:before,
 .fuelux .checkbox-custom:focus:before {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2220px%22%20%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22checkbox-active-hover%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_7_%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cg%3E%20%20%20%3Cg%20id%3D%22checkbox-2px-corner_2_%22%3E%20%20%20%20%3ClinearGradient%20id%3D%22SVGID_1_%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%228.5005%22%20y1%3D%2217%22%20x2%3D%228.5005%22%20y2%3D%224.882812e-04%22%3E%20%20%20%20%20%3Cstop%20%20offset%3D%220%22%20style%3D%22stop-color%3A%23F2F6FB%22%2F%3E%20%20%20%20%20%3Cstop%20%20offset%3D%220.48%22%20style%3D%22stop-color%3A%23F2F6FB%22%2F%3E%20%20%20%20%20%3Cstop%20%20offset%3D%220.5%22%20style%3D%22stop-color%3A%23CDDFEC%22%2F%3E%20%20%20%20%20%3Cstop%20%20offset%3D%220.7287%22%20style%3D%22stop-color%3A%23C4D8E8%22%2F%3E%20%20%20%20%20%3Cstop%20%20offset%3D%221%22%20style%3D%22stop-color%3A%23C1D5E6%22%2F%3E%20%20%20%20%3C%2FlinearGradient%3E%20%20%20%20%3Cpath%20style%3D%22fill%3Aurl%28%23SVGID_1_%29%3B%22%20d%3D%22M0%2C14c0%2C1.65%2C1.35%2C3%2C3%2C3h11c1.65%2C0%2C3-1.35%2C3-3V3c0-1.65-1.35-3-3-3H3C1.35%2C0%2C0%2C1.35%2C0%2C3%20%20%20%20%20V14z%22%2F%3E%20%20%20%20%3Cg%20style%3D%22opacity%3A0.8%3B%22%3E%20%20%20%20%20%3Cpath%20style%3D%22fill%3A%23FFFFFF%3B%22%20d%3D%22M14%2C2c0.542%2C0%2C1%2C0.458%2C1%2C1v11c0%2C0.542-0.458%2C1-1%2C1H3c-0.542%2C0-1-0.458-1-1V3%20%20%20%20%20%20c0-0.542%2C0.458-1%2C1-1H14%20M14%2C0H3C1.35%2C0%2C0%2C1.35%2C0%2C3v11c0%2C1.65%2C1.35%2C3%2C3%2C3h11c1.65%2C0%2C3-1.35%2C3-3V3C17%2C1.35%2C15.65%2C0%2C14%2C0L14%2C0z%22%20%20%20%20%20%20%2F%3E%20%20%20%20%3C%2Fg%3E%20%20%20%20%3Cg%20style%3D%22opacity%3A0.7%3B%22%3E%20%20%20%20%20%3Cpath%20style%3D%22fill%3A%2362798C%3B%22%20d%3D%22M14%2C1c1.103%2C0%2C2%2C0.897%2C2%2C2v11c0%2C1.103-0.897%2C2-2%2C2H3c-1.103%2C0-2-0.897-2-2V3%20%20%20%20%20%20c0-1.103%2C0.897-2%2C2-2H14%20M14%2C0H3C1.35%2C0%2C0%2C1.35%2C0%2C3v11c0%2C1.65%2C1.35%2C3%2C3%2C3h11c1.65%2C0%2C3-1.35%2C3-3V3C17%2C1.35%2C15.65%2C0%2C14%2C0L14%2C0z%22%20%20%20%20%20%20%2F%3E%20%20%20%20%3C%2Fg%3E%20%20%20%3C%2Fg%3E%20%20%20%3Cg%20id%3D%22checked-indicator_9_%22%20style%3D%22opacity%3A0.3%3B%22%3E%20%20%20%20%20%20%20%20%20%3Cpath%20style%3D%22opacity%3A0.8%3Bfill%3Anone%3Bstroke%3A%23FFFFFF%3Bstroke-width%3A2%3Bstroke-linecap%3Around%3Bstroke-linejoin%3Around%3Bstroke-miterlimit%3A10%3B%22%20d%3D%22%20%20%20%20%20M8.486%2C9.297c0%2C0%2C0.024-0.269-0.279-0.565C7.9%2C8.441%2C5.546%2C6.178%2C5.546%2C6.178C4.656%2C5.325%2C4.634%2C5.349%2C3.8%2C6.212L3.108%2C6.924%20%20%20%20%20C2.263%2C7.801%2C2.406%2C7.951%2C3.139%2C8.663l1.775%2C1.703C5.4%2C10.833%2C6.202%2C11.6%2C6.69%2C12.068l0.888%2C0.852%20%20%20%20%20c0.884%2C0.854%2C0.884%2C0.852%2C1.742-0.031l0.854-0.885c0.473-0.484%2C1.239-1.279%2C1.712-1.766l5.61-5.796%20%20%20%20%20c0.854-0.883%2C0.854-0.883-0.032-1.736l-0.61-0.585c-0.847-0.817-0.886-0.857-1.743%2C0.034L9.5%2C7.947c0%2C0-0.578%2C0.596-0.75%2C0.777%20%20%20%20%20C8.574%2C8.905%2C8.486%2C9.297%2C8.486%2C9.297z%22%2F%3E%20%20%20%20%20%20%20%20%20%3ClinearGradient%20id%3D%22SVGID_2_%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%2224.0566%22%20y1%3D%221122.6816%22%20x2%3D%2224.586%22%20y2%3D%221119.6792%22%20gradientTransform%3D%22matrix%280.6947%20-0.7193%200.7205%200.6934%20-812.1848%20-751.2178%29%22%3E%20%20%20%20%20%3Cstop%20%20offset%3D%220%22%20style%3D%22stop-color%3A%23336B9A%22%2F%3E%20%20%20%20%20%3Cstop%20%20offset%3D%221%22%20style%3D%22stop-color%3A%23448CCA%22%2F%3E%20%20%20%20%3C%2FlinearGradient%3E%20%20%20%20%3Cpath%20style%3D%22fill%3Aurl%28%23SVGID_2_%29%3B%22%20d%3D%22M8.486%2C9.297c0%2C0%2C0.024-0.269-0.279-0.565C7.9%2C8.441%2C5.546%2C6.178%2C5.546%2C6.178%20%20%20%20%20C4.656%2C5.325%2C4.634%2C5.349%2C3.8%2C6.212L3.108%2C6.924C2.263%2C7.801%2C2.406%2C7.951%2C3.139%2C8.663l1.775%2C1.703%20%20%20%20%20C5.4%2C10.833%2C6.202%2C11.6%2C6.69%2C12.068l0.888%2C0.852c0.884%2C0.854%2C0.884%2C0.852%2C1.742-0.031l0.854-0.885%20%20%20%20%20c0.473-0.484%2C1.239-1.279%2C1.712-1.766l5.61-5.796c0.854-0.883%2C0.854-0.883-0.032-1.736l-0.61-0.585%20%20%20%20%20c-0.847-0.817-0.886-0.857-1.743%2C0.034L9.5%2C7.947c0%2C0-0.578%2C0.596-0.75%2C0.777C8.574%2C8.905%2C8.486%2C9.297%2C8.486%2C9.297z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2220px%22%20%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22checkbox-active%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_102_%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cg%3E%20%20%20%3Cg%20id%3D%22checkbox-2px-corner_28_%22%3E%20%20%20%20%3ClinearGradient%20id%3D%22SVGID_1_%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%228.4995%22%20y1%3D%220%22%20x2%3D%228.4995%22%20y2%3D%2217.0005%22%3E%20%20%20%20%20%3Cstop%20%20offset%3D%220%22%20style%3D%22stop-color%3A%23F2F6FB%22%2F%3E%20%20%20%20%20%3Cstop%20%20offset%3D%220.48%22%20style%3D%22stop-color%3A%23F2F6FB%22%2F%3E%20%20%20%20%20%3Cstop%20%20offset%3D%220.5%22%20style%3D%22stop-color%3A%23CDDFEC%22%2F%3E%20%20%20%20%20%3Cstop%20%20offset%3D%220.7287%22%20style%3D%22stop-color%3A%23C4D8E8%22%2F%3E%20%20%20%20%20%3Cstop%20%20offset%3D%221%22%20style%3D%22stop-color%3A%23C1D5E6%22%2F%3E%20%20%20%20%3C%2FlinearGradient%3E%20%20%20%20%3Cpath%20style%3D%22fill%3Aurl%28%23SVGID_1_%29%3B%22%20d%3D%22M0%2C14c0%2C1.65%2C1.35%2C3%2C3%2C3h11c1.65%2C0%2C3-1.35%2C3-3V3c0-1.65-1.35-3-3-3H3C1.35%2C0%2C0%2C1.35%2C0%2C3%20%20%20%20%20V14z%22%2F%3E%20%20%20%20%3Cg%20style%3D%22opacity%3A0.8%3B%22%3E%20%20%20%20%20%3Cpath%20style%3D%22fill%3A%23FFFFFF%3B%22%20d%3D%22M14%2C2c0.542%2C0%2C1%2C0.458%2C1%2C1v11c0%2C0.542-0.458%2C1-1%2C1H3c-0.542%2C0-1-0.458-1-1V3%20%20%20%20%20%20c0-0.542%2C0.458-1%2C1-1H14%20M14%2C0H3C1.35%2C0%2C0%2C1.35%2C0%2C3v11c0%2C1.65%2C1.35%2C3%2C3%2C3h11c1.65%2C0%2C3-1.35%2C3-3V3C17%2C1.35%2C15.65%2C0%2C14%2C0L14%2C0z%22%20%20%20%20%20%20%2F%3E%20%20%20%20%3C%2Fg%3E%20%20%20%20%3Cg%20style%3D%22opacity%3A0.7%3B%22%3E%20%20%20%20%20%3Cpath%20style%3D%22fill%3A%2362798C%3B%22%20d%3D%22M14%2C1c1.103%2C0%2C2%2C0.897%2C2%2C2v11c0%2C1.103-0.897%2C2-2%2C2H3c-1.103%2C0-2-0.897-2-2V3%20%20%20%20%20%20c0-1.103%2C0.897-2%2C2-2H14%20M14%2C0H3C1.35%2C0%2C0%2C1.35%2C0%2C3v11c0%2C1.65%2C1.35%2C3%2C3%2C3h11c1.65%2C0%2C3-1.35%2C3-3V3C17%2C1.35%2C15.65%2C0%2C14%2C0L14%2C0z%22%20%20%20%20%20%20%2F%3E%20%20%20%20%3C%2Fg%3E%20%20%20%3C%2Fg%3E%20%20%20%3Cg%20id%3D%22checked-indicator_31_%22%20style%3D%22opacity%3A0.3%3B%22%3E%20%20%20%20%20%20%20%20%20%3Cpath%20style%3D%22opacity%3A0.8%3Bfill%3Anone%3Bstroke%3A%23FFFFFF%3Bstroke-width%3A2%3Bstroke-linecap%3Around%3Bstroke-linejoin%3Around%3Bstroke-miterlimit%3A10%3B%22%20d%3D%22%20%20%20%20%20M8.486%2C9.297c0%2C0%2C0.024-0.269-0.279-0.565C7.9%2C8.441%2C5.546%2C6.178%2C5.546%2C6.178C4.656%2C5.325%2C4.634%2C5.349%2C3.8%2C6.212L3.108%2C6.924%20%20%20%20%20C2.263%2C7.801%2C2.406%2C7.951%2C3.139%2C8.663l1.775%2C1.703C5.4%2C10.833%2C6.202%2C11.6%2C6.69%2C12.068l0.888%2C0.852%20%20%20%20%20c0.884%2C0.854%2C0.884%2C0.852%2C1.742-0.031l0.854-0.885c0.473-0.484%2C1.239-1.279%2C1.712-1.766l5.61-5.796%20%20%20%20%20c0.854-0.883%2C0.854-0.883-0.032-1.736l-0.61-0.585c-0.847-0.817-0.886-0.857-1.743%2C0.034L9.5%2C7.947c0%2C0-0.578%2C0.596-0.75%2C0.777%20%20%20%20%20C8.574%2C8.905%2C8.486%2C9.297%2C8.486%2C9.297z%22%2F%3E%20%20%20%20%20%20%20%20%20%3ClinearGradient%20id%3D%22SVGID_2_%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%2224.0566%22%20y1%3D%221122.6816%22%20x2%3D%2224.586%22%20y2%3D%221119.6792%22%20gradientTransform%3D%22matrix%280.6947%20-0.7193%200.7205%200.6934%20-812.1848%20-751.2178%29%22%3E%20%20%20%20%20%3Cstop%20%20offset%3D%220%22%20style%3D%22stop-color%3A%23336B9A%22%2F%3E%20%20%20%20%20%3Cstop%20%20offset%3D%221%22%20style%3D%22stop-color%3A%23448CCA%22%2F%3E%20%20%20%20%3C%2FlinearGradient%3E%20%20%20%20%3Cpath%20style%3D%22fill%3Aurl%28%23SVGID_2_%29%3B%22%20d%3D%22M8.486%2C9.297c0%2C0%2C0.024-0.269-0.279-0.565C7.9%2C8.441%2C5.546%2C6.178%2C5.546%2C6.178%20%20%20%20%20C4.656%2C5.325%2C4.634%2C5.349%2C3.8%2C6.212L3.108%2C6.924C2.263%2C7.801%2C2.406%2C7.951%2C3.139%2C8.663l1.775%2C1.703%20%20%20%20%20C5.4%2C10.833%2C6.202%2C11.6%2C6.69%2C12.068l0.888%2C0.852c0.884%2C0.854%2C0.884%2C0.852%2C1.742-0.031l0.854-0.885%20%20%20%20%20c0.473-0.484%2C1.239-1.279%2C1.712-1.766l5.61-5.796c0.854-0.883%2C0.854-0.883-0.032-1.736l-0.61-0.585%20%20%20%20%20c-0.847-0.817-0.886-0.857-1.743%2C0.034L9.5%2C7.947c0%2C0-0.578%2C0.596-0.75%2C0.777C8.574%2C8.905%2C8.486%2C9.297%2C8.486%2C9.297z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
@@ -5710,20 +5603,6 @@ a.list-group-item-danger.active:focus {
   height: 16px;
   width: 15px;
   height: 15px;
-}
-.fuelux .checkbox-custom:active:before:before,
-.fuelux .checkbox-custom:focus:before:before {
-  content: "";
-}
-.btn-lg .fuelux .checkbox-custom:active:before,
-.btn-lg .fuelux .checkbox-custom:focus:before {
-  width: 20px;
-  height: 20px;
-}
-.btn-sm .fuelux .checkbox-custom:active:before,
-.btn-sm .fuelux .checkbox-custom:focus:before {
-  width: 13px;
-  height: 13px;
 }
 .fuelux .checkbox-custom:active:before:before,
 .fuelux .checkbox-custom:focus:before:before {
@@ -5793,7 +5672,6 @@ a.list-group-item-danger.active:focus {
 }
 .fuelux .checkbox-custom:active.checked:before,
 .fuelux .checkbox-custom:focus.checked:before {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2220px%22%20%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22checkbox-active-hover%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_7_%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cg%3E%20%20%20%3Cg%20id%3D%22checkbox-2px-corner_2_%22%3E%20%20%20%20%3ClinearGradient%20id%3D%22SVGID_1_%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%228.5005%22%20y1%3D%2217%22%20x2%3D%228.5005%22%20y2%3D%224.882812e-04%22%3E%20%20%20%20%20%3Cstop%20%20offset%3D%220%22%20style%3D%22stop-color%3A%23F2F6FB%22%2F%3E%20%20%20%20%20%3Cstop%20%20offset%3D%220.48%22%20style%3D%22stop-color%3A%23F2F6FB%22%2F%3E%20%20%20%20%20%3Cstop%20%20offset%3D%220.5%22%20style%3D%22stop-color%3A%23CDDFEC%22%2F%3E%20%20%20%20%20%3Cstop%20%20offset%3D%220.7287%22%20style%3D%22stop-color%3A%23C4D8E8%22%2F%3E%20%20%20%20%20%3Cstop%20%20offset%3D%221%22%20style%3D%22stop-color%3A%23C1D5E6%22%2F%3E%20%20%20%20%3C%2FlinearGradient%3E%20%20%20%20%3Cpath%20style%3D%22fill%3Aurl%28%23SVGID_1_%29%3B%22%20d%3D%22M0%2C14c0%2C1.65%2C1.35%2C3%2C3%2C3h11c1.65%2C0%2C3-1.35%2C3-3V3c0-1.65-1.35-3-3-3H3C1.35%2C0%2C0%2C1.35%2C0%2C3%20%20%20%20%20V14z%22%2F%3E%20%20%20%20%3Cg%20style%3D%22opacity%3A0.8%3B%22%3E%20%20%20%20%20%3Cpath%20style%3D%22fill%3A%23FFFFFF%3B%22%20d%3D%22M14%2C2c0.542%2C0%2C1%2C0.458%2C1%2C1v11c0%2C0.542-0.458%2C1-1%2C1H3c-0.542%2C0-1-0.458-1-1V3%20%20%20%20%20%20c0-0.542%2C0.458-1%2C1-1H14%20M14%2C0H3C1.35%2C0%2C0%2C1.35%2C0%2C3v11c0%2C1.65%2C1.35%2C3%2C3%2C3h11c1.65%2C0%2C3-1.35%2C3-3V3C17%2C1.35%2C15.65%2C0%2C14%2C0L14%2C0z%22%20%20%20%20%20%20%2F%3E%20%20%20%20%3C%2Fg%3E%20%20%20%20%3Cg%20style%3D%22opacity%3A0.7%3B%22%3E%20%20%20%20%20%3Cpath%20style%3D%22fill%3A%2362798C%3B%22%20d%3D%22M14%2C1c1.103%2C0%2C2%2C0.897%2C2%2C2v11c0%2C1.103-0.897%2C2-2%2C2H3c-1.103%2C0-2-0.897-2-2V3%20%20%20%20%20%20c0-1.103%2C0.897-2%2C2-2H14%20M14%2C0H3C1.35%2C0%2C0%2C1.35%2C0%2C3v11c0%2C1.65%2C1.35%2C3%2C3%2C3h11c1.65%2C0%2C3-1.35%2C3-3V3C17%2C1.35%2C15.65%2C0%2C14%2C0L14%2C0z%22%20%20%20%20%20%20%2F%3E%20%20%20%20%3C%2Fg%3E%20%20%20%3C%2Fg%3E%20%20%20%3Cg%20id%3D%22checked-indicator_9_%22%20style%3D%22opacity%3A0.3%3B%22%3E%20%20%20%20%20%20%20%20%20%3Cpath%20style%3D%22opacity%3A0.8%3Bfill%3Anone%3Bstroke%3A%23FFFFFF%3Bstroke-width%3A2%3Bstroke-linecap%3Around%3Bstroke-linejoin%3Around%3Bstroke-miterlimit%3A10%3B%22%20d%3D%22%20%20%20%20%20M8.486%2C9.297c0%2C0%2C0.024-0.269-0.279-0.565C7.9%2C8.441%2C5.546%2C6.178%2C5.546%2C6.178C4.656%2C5.325%2C4.634%2C5.349%2C3.8%2C6.212L3.108%2C6.924%20%20%20%20%20C2.263%2C7.801%2C2.406%2C7.951%2C3.139%2C8.663l1.775%2C1.703C5.4%2C10.833%2C6.202%2C11.6%2C6.69%2C12.068l0.888%2C0.852%20%20%20%20%20c0.884%2C0.854%2C0.884%2C0.852%2C1.742-0.031l0.854-0.885c0.473-0.484%2C1.239-1.279%2C1.712-1.766l5.61-5.796%20%20%20%20%20c0.854-0.883%2C0.854-0.883-0.032-1.736l-0.61-0.585c-0.847-0.817-0.886-0.857-1.743%2C0.034L9.5%2C7.947c0%2C0-0.578%2C0.596-0.75%2C0.777%20%20%20%20%20C8.574%2C8.905%2C8.486%2C9.297%2C8.486%2C9.297z%22%2F%3E%20%20%20%20%20%20%20%20%20%3ClinearGradient%20id%3D%22SVGID_2_%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%2224.0566%22%20y1%3D%221122.6816%22%20x2%3D%2224.586%22%20y2%3D%221119.6792%22%20gradientTransform%3D%22matrix%280.6947%20-0.7193%200.7205%200.6934%20-812.1848%20-751.2178%29%22%3E%20%20%20%20%20%3Cstop%20%20offset%3D%220%22%20style%3D%22stop-color%3A%23336B9A%22%2F%3E%20%20%20%20%20%3Cstop%20%20offset%3D%221%22%20style%3D%22stop-color%3A%23448CCA%22%2F%3E%20%20%20%20%3C%2FlinearGradient%3E%20%20%20%20%3Cpath%20style%3D%22fill%3Aurl%28%23SVGID_2_%29%3B%22%20d%3D%22M8.486%2C9.297c0%2C0%2C0.024-0.269-0.279-0.565C7.9%2C8.441%2C5.546%2C6.178%2C5.546%2C6.178%20%20%20%20%20C4.656%2C5.325%2C4.634%2C5.349%2C3.8%2C6.212L3.108%2C6.924C2.263%2C7.801%2C2.406%2C7.951%2C3.139%2C8.663l1.775%2C1.703%20%20%20%20%20C5.4%2C10.833%2C6.202%2C11.6%2C6.69%2C12.068l0.888%2C0.852c0.884%2C0.854%2C0.884%2C0.852%2C1.742-0.031l0.854-0.885%20%20%20%20%20c0.473-0.484%2C1.239-1.279%2C1.712-1.766l5.61-5.796c0.854-0.883%2C0.854-0.883-0.032-1.736l-0.61-0.585%20%20%20%20%20c-0.847-0.817-0.886-0.857-1.743%2C0.034L9.5%2C7.947c0%2C0-0.578%2C0.596-0.75%2C0.777C8.574%2C8.905%2C8.486%2C9.297%2C8.486%2C9.297z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2220px%22%20%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22checkbox-active%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_102_%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cg%3E%20%20%20%3Cg%20id%3D%22checkbox-2px-corner_28_%22%3E%20%20%20%20%3ClinearGradient%20id%3D%22SVGID_1_%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%228.4995%22%20y1%3D%220%22%20x2%3D%228.4995%22%20y2%3D%2217.0005%22%3E%20%20%20%20%20%3Cstop%20%20offset%3D%220%22%20style%3D%22stop-color%3A%23F2F6FB%22%2F%3E%20%20%20%20%20%3Cstop%20%20offset%3D%220.48%22%20style%3D%22stop-color%3A%23F2F6FB%22%2F%3E%20%20%20%20%20%3Cstop%20%20offset%3D%220.5%22%20style%3D%22stop-color%3A%23CDDFEC%22%2F%3E%20%20%20%20%20%3Cstop%20%20offset%3D%220.7287%22%20style%3D%22stop-color%3A%23C4D8E8%22%2F%3E%20%20%20%20%20%3Cstop%20%20offset%3D%221%22%20style%3D%22stop-color%3A%23C1D5E6%22%2F%3E%20%20%20%20%3C%2FlinearGradient%3E%20%20%20%20%3Cpath%20style%3D%22fill%3Aurl%28%23SVGID_1_%29%3B%22%20d%3D%22M0%2C14c0%2C1.65%2C1.35%2C3%2C3%2C3h11c1.65%2C0%2C3-1.35%2C3-3V3c0-1.65-1.35-3-3-3H3C1.35%2C0%2C0%2C1.35%2C0%2C3%20%20%20%20%20V14z%22%2F%3E%20%20%20%20%3Cg%20style%3D%22opacity%3A0.8%3B%22%3E%20%20%20%20%20%3Cpath%20style%3D%22fill%3A%23FFFFFF%3B%22%20d%3D%22M14%2C2c0.542%2C0%2C1%2C0.458%2C1%2C1v11c0%2C0.542-0.458%2C1-1%2C1H3c-0.542%2C0-1-0.458-1-1V3%20%20%20%20%20%20c0-0.542%2C0.458-1%2C1-1H14%20M14%2C0H3C1.35%2C0%2C0%2C1.35%2C0%2C3v11c0%2C1.65%2C1.35%2C3%2C3%2C3h11c1.65%2C0%2C3-1.35%2C3-3V3C17%2C1.35%2C15.65%2C0%2C14%2C0L14%2C0z%22%20%20%20%20%20%20%2F%3E%20%20%20%20%3C%2Fg%3E%20%20%20%20%3Cg%20style%3D%22opacity%3A0.7%3B%22%3E%20%20%20%20%20%3Cpath%20style%3D%22fill%3A%2362798C%3B%22%20d%3D%22M14%2C1c1.103%2C0%2C2%2C0.897%2C2%2C2v11c0%2C1.103-0.897%2C2-2%2C2H3c-1.103%2C0-2-0.897-2-2V3%20%20%20%20%20%20c0-1.103%2C0.897-2%2C2-2H14%20M14%2C0H3C1.35%2C0%2C0%2C1.35%2C0%2C3v11c0%2C1.65%2C1.35%2C3%2C3%2C3h11c1.65%2C0%2C3-1.35%2C3-3V3C17%2C1.35%2C15.65%2C0%2C14%2C0L14%2C0z%22%20%20%20%20%20%20%2F%3E%20%20%20%20%3C%2Fg%3E%20%20%20%3C%2Fg%3E%20%20%20%3Cg%20id%3D%22checked-indicator_31_%22%20style%3D%22opacity%3A0.3%3B%22%3E%20%20%20%20%20%20%20%20%20%3Cpath%20style%3D%22opacity%3A0.8%3Bfill%3Anone%3Bstroke%3A%23FFFFFF%3Bstroke-width%3A2%3Bstroke-linecap%3Around%3Bstroke-linejoin%3Around%3Bstroke-miterlimit%3A10%3B%22%20d%3D%22%20%20%20%20%20M8.486%2C9.297c0%2C0%2C0.024-0.269-0.279-0.565C7.9%2C8.441%2C5.546%2C6.178%2C5.546%2C6.178C4.656%2C5.325%2C4.634%2C5.349%2C3.8%2C6.212L3.108%2C6.924%20%20%20%20%20C2.263%2C7.801%2C2.406%2C7.951%2C3.139%2C8.663l1.775%2C1.703C5.4%2C10.833%2C6.202%2C11.6%2C6.69%2C12.068l0.888%2C0.852%20%20%20%20%20c0.884%2C0.854%2C0.884%2C0.852%2C1.742-0.031l0.854-0.885c0.473-0.484%2C1.239-1.279%2C1.712-1.766l5.61-5.796%20%20%20%20%20c0.854-0.883%2C0.854-0.883-0.032-1.736l-0.61-0.585c-0.847-0.817-0.886-0.857-1.743%2C0.034L9.5%2C7.947c0%2C0-0.578%2C0.596-0.75%2C0.777%20%20%20%20%20C8.574%2C8.905%2C8.486%2C9.297%2C8.486%2C9.297z%22%2F%3E%20%20%20%20%20%20%20%20%20%3ClinearGradient%20id%3D%22SVGID_2_%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%2224.0566%22%20y1%3D%221122.6816%22%20x2%3D%2224.586%22%20y2%3D%221119.6792%22%20gradientTransform%3D%22matrix%280.6947%20-0.7193%200.7205%200.6934%20-812.1848%20-751.2178%29%22%3E%20%20%20%20%20%3Cstop%20%20offset%3D%220%22%20style%3D%22stop-color%3A%23336B9A%22%2F%3E%20%20%20%20%20%3Cstop%20%20offset%3D%221%22%20style%3D%22stop-color%3A%23448CCA%22%2F%3E%20%20%20%20%3C%2FlinearGradient%3E%20%20%20%20%3Cpath%20style%3D%22fill%3Aurl%28%23SVGID_2_%29%3B%22%20d%3D%22M8.486%2C9.297c0%2C0%2C0.024-0.269-0.279-0.565C7.9%2C8.441%2C5.546%2C6.178%2C5.546%2C6.178%20%20%20%20%20C4.656%2C5.325%2C4.634%2C5.349%2C3.8%2C6.212L3.108%2C6.924C2.263%2C7.801%2C2.406%2C7.951%2C3.139%2C8.663l1.775%2C1.703%20%20%20%20%20C5.4%2C10.833%2C6.202%2C11.6%2C6.69%2C12.068l0.888%2C0.852c0.884%2C0.854%2C0.884%2C0.852%2C1.742-0.031l0.854-0.885%20%20%20%20%20c0.473-0.484%2C1.239-1.279%2C1.712-1.766l5.61-5.796c0.854-0.883%2C0.854-0.883-0.032-1.736l-0.61-0.585%20%20%20%20%20c-0.847-0.817-0.886-0.857-1.743%2C0.034L9.5%2C7.947c0%2C0-0.578%2C0.596-0.75%2C0.777C8.574%2C8.905%2C8.486%2C9.297%2C8.486%2C9.297z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
@@ -5802,20 +5680,6 @@ a.list-group-item-danger.active:focus {
   height: 16px;
   width: 15px;
   height: 15px;
-}
-.fuelux .checkbox-custom:active.checked:before:before,
-.fuelux .checkbox-custom:focus.checked:before:before {
-  content: "";
-}
-.btn-lg .fuelux .checkbox-custom:active.checked:before,
-.btn-lg .fuelux .checkbox-custom:focus.checked:before {
-  width: 20px;
-  height: 20px;
-}
-.btn-sm .fuelux .checkbox-custom:active.checked:before,
-.btn-sm .fuelux .checkbox-custom:focus.checked:before {
-  width: 13px;
-  height: 13px;
 }
 .fuelux .checkbox-custom:active.checked:before:before,
 .fuelux .checkbox-custom:focus.checked:before:before {
@@ -6060,6 +5924,9 @@ a.list-group-item-danger.active:focus {
 }
 .fuelux .combobox.disabled .form-control {
   color: #cfcfcf;
+}
+.fuelux .datepicker {
+  background: #fff;
 }
 .fuelux .datepicker:hover .dropdown-toggle {
   background: transparent;
@@ -6392,7 +6259,6 @@ a.list-group-item-danger.active:focus {
   background-color: #d9eaf5;
 }
 .fuelux .radio-custom {
-  font-size: 12px;
   line-height: 20px;
   padding-left: 20px;
 }
@@ -6586,7 +6452,6 @@ a.list-group-item-danger.active:focus {
   display: none;
 }
 .fuelux .radio-custom:hover.checked:before {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2220px%22%20%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22radio-button-checked-hover-active%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_54_%22%20y%3D%220%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cg%3E%20%20%20%3Cg%20id%3D%22radio_x3D_button-hover_1_%22%3E%20%20%20%20%3CradialGradient%20id%3D%22SVGID_1_%22%20cx%3D%229.9175%22%20cy%3D%2219.833%22%20r%3D%2219.6693%22%20gradientUnits%3D%22userSpaceOnUse%22%3E%20%20%20%20%20%3Cstop%20%20offset%3D%220%22%20style%3D%22stop-color%3A%23F2F6FB%22%2F%3E%20%20%20%20%20%3Cstop%20%20offset%3D%221%22%20style%3D%22stop-color%3A%23C1D5E6%22%2F%3E%20%20%20%20%3C%2FradialGradient%3E%20%20%20%20%3Ccircle%20style%3D%22fill%3Aurl%28%23SVGID_1_%29%3B%22%20cx%3D%2210%22%20cy%3D%2210%22%20r%3D%2210%22%2F%3E%20%20%20%20%3Cg%20style%3D%22opacity%3A0.8%3B%22%3E%20%20%20%20%20%3Cpath%20style%3D%22fill%3A%23FFFFFF%3B%22%20d%3D%22M10%2C2c4.411%2C0%2C8%2C3.589%2C8%2C8c0%2C4.411-3.589%2C8-8%2C8c-4.412%2C0-8-3.589-8-8C2%2C5.589%2C5.589%2C2%2C10%2C2%20%20%20%20%20%20%20M10%2C0C4.477%2C0%2C0%2C4.477%2C0%2C10c0%2C5.523%2C4.477%2C10%2C10%2C10c5.523%2C0%2C10-4.477%2C10-10C20%2C4.477%2C15.523%2C0%2C10%2C0L10%2C0z%22%2F%3E%20%20%20%20%3C%2Fg%3E%20%20%20%20%3Cg%20style%3D%22opacity%3A0.7%3B%22%3E%20%20%20%20%20%3Cpath%20style%3D%22fill%3A%233A668C%3B%22%20d%3D%22M10%2C1c4.962%2C0%2C9%2C4.038%2C9%2C9s-4.037%2C9-9%2C9c-4.963%2C0-9-4.037-9-9S5.038%2C1%2C10%2C1%20M10%2C0%20%20%20%20%20%20C4.477%2C0%2C0%2C4.477%2C0%2C10c0%2C5.523%2C4.477%2C10%2C10%2C10c5.523%2C0%2C10-4.477%2C10-10C20%2C4.477%2C15.523%2C0%2C10%2C0L10%2C0z%22%2F%3E%20%20%20%20%3C%2Fg%3E%20%20%20%3C%2Fg%3E%20%20%20%3Cg%20id%3D%22checked-indicator_4_%22%3E%20%20%20%20%3ClinearGradient%20id%3D%22SVGID_2_%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%2213.4482%22%20y1%3D%2212.8916%22%20x2%3D%226.5546%22%20y2%3D%227.1071%22%3E%20%20%20%20%20%3Cstop%20%20offset%3D%220%22%20style%3D%22stop-color%3A%2366A2D7%22%2F%3E%20%20%20%20%20%3Cstop%20%20offset%3D%221%22%20style%3D%22stop-color%3A%23517FA5%22%2F%3E%20%20%20%20%3C%2FlinearGradient%3E%20%20%20%20%20%20%20%20%20%3Ccircle%20style%3D%22opacity%3A0.6%3Bfill%3Anone%3Bstroke%3Aurl%28%23SVGID_2_%29%3Bstroke-width%3A0.0219%3Bstroke-linecap%3Around%3Bstroke-linejoin%3Around%3Bstroke-miterlimit%3A10%3B%22%20cx%3D%2210.001%22%20cy%3D%229.999%22%20r%3D%224.489%22%2F%3E%20%20%20%20%20%20%20%20%20%3CradialGradient%20id%3D%22SVGID_3_%22%20cx%3D%2249.9062%22%20cy%3D%2215.0791%22%20r%3D%228.0199%22%20gradientTransform%3D%22matrix%280.9619%200%200%200.9618%20-37.9194%20-2.48%29%22%20gradientUnits%3D%22userSpaceOnUse%22%3E%20%20%20%20%20%3Cstop%20%20offset%3D%220.1212%22%20style%3D%22stop-color%3A%238DB9DD%22%2F%3E%20%20%20%20%20%3Cstop%20%20offset%3D%220.5126%22%20style%3D%22stop-color%3A%235C9BD0%22%2F%3E%20%20%20%20%20%3Cstop%20%20offset%3D%220.6719%22%20style%3D%22stop-color%3A%23448CCA%22%2F%3E%20%20%20%20%20%3Cstop%20%20offset%3D%221%22%20style%3D%22stop-color%3A%23336B9A%22%2F%3E%20%20%20%20%3C%2FradialGradient%3E%20%20%20%20%3Ccircle%20style%3D%22fill%3Aurl%28%23SVGID_3_%29%3B%22%20cx%3D%2210.001%22%20cy%3D%229.999%22%20r%3D%224.489%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2220px%22%20%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22radio-button-checked-hover%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_31_%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cg%3E%20%20%20%3Cg%20id%3D%22radio_x3D_button-hover_7_%22%3E%20%20%20%20%3CradialGradient%20id%3D%22SVGID_1_%22%20cx%3D%2210.334%22%20cy%3D%220.667%22%20r%3D%2219.167%22%20gradientUnits%3D%22userSpaceOnUse%22%3E%20%20%20%20%20%3Cstop%20%20offset%3D%220%22%20style%3D%22stop-color%3A%23F2F6FB%22%2F%3E%20%20%20%20%20%3Cstop%20%20offset%3D%221%22%20style%3D%22stop-color%3A%23C1D5E6%22%2F%3E%20%20%20%20%3C%2FradialGradient%3E%20%20%20%20%3Ccircle%20style%3D%22fill%3Aurl%28%23SVGID_1_%29%3B%22%20cx%3D%2210%22%20cy%3D%2210%22%20r%3D%2210%22%2F%3E%20%20%20%20%3Cg%20style%3D%22opacity%3A0.8%3B%22%3E%20%20%20%20%20%3Cpath%20style%3D%22fill%3A%23FFFFFF%3B%22%20d%3D%22M10%2C2c4.411%2C0%2C8%2C3.589%2C8%2C8s-3.589%2C8-8%2C8c-4.412%2C0-8-3.589-8-8S5.589%2C2%2C10%2C2%20M10%2C0%20%20%20%20%20%20C4.477%2C0%2C0%2C4.477%2C0%2C10s4.477%2C10%2C10%2C10c5.523%2C0%2C10-4.477%2C10-10S15.523%2C0%2C10%2C0L10%2C0z%22%2F%3E%20%20%20%20%3C%2Fg%3E%20%20%20%20%3Cg%20style%3D%22opacity%3A0.7%3B%22%3E%20%20%20%20%20%3Cpath%20style%3D%22fill%3A%233A668C%3B%22%20d%3D%22M10%2C1c4.962%2C0%2C9%2C4.038%2C9%2C9c0%2C4.963-4.037%2C9-9%2C9c-4.963%2C0-9-4.037-9-9C1%2C5.038%2C5.038%2C1%2C10%2C1%20%20%20%20%20%20%20M10%2C0C4.477%2C0%2C0%2C4.477%2C0%2C10s4.477%2C10%2C10%2C10c5.523%2C0%2C10-4.477%2C10-10S15.523%2C0%2C10%2C0L10%2C0z%22%2F%3E%20%20%20%20%3C%2Fg%3E%20%20%20%3C%2Fg%3E%20%20%20%3Cg%20id%3D%22checked-indicator_6_%22%3E%20%20%20%20%3ClinearGradient%20id%3D%22SVGID_2_%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%2213.4473%22%20y1%3D%2212.8926%22%20x2%3D%226.5521%22%20y2%3D%227.1069%22%3E%20%20%20%20%20%3Cstop%20%20offset%3D%220%22%20style%3D%22stop-color%3A%2366A2D7%22%2F%3E%20%20%20%20%20%3Cstop%20%20offset%3D%221%22%20style%3D%22stop-color%3A%23517FA5%22%2F%3E%20%20%20%20%3C%2FlinearGradient%3E%20%20%20%20%20%20%20%20%20%3Ccircle%20style%3D%22opacity%3A0.6%3Bfill%3Anone%3Bstroke%3Aurl%28%23SVGID_2_%29%3Bstroke-width%3A0.0219%3Bstroke-linecap%3Around%3Bstroke-linejoin%3Around%3Bstroke-miterlimit%3A10%3B%22%20cx%3D%2210%22%20cy%3D%229.999%22%20r%3D%224.489%22%2F%3E%20%20%20%20%20%20%20%20%20%3CradialGradient%20id%3D%22SVGID_3_%22%20cx%3D%2249.8486%22%20cy%3D%2210.2539%22%20r%3D%227.2507%22%20gradientTransform%3D%22matrix%280.9619%200%200%200.9618%20-37.9194%20-2.48%29%22%20gradientUnits%3D%22userSpaceOnUse%22%3E%20%20%20%20%20%3Cstop%20%20offset%3D%220.1212%22%20style%3D%22stop-color%3A%238DB9DD%22%2F%3E%20%20%20%20%20%3Cstop%20%20offset%3D%220.5126%22%20style%3D%22stop-color%3A%235C9BD0%22%2F%3E%20%20%20%20%20%3Cstop%20%20offset%3D%220.6719%22%20style%3D%22stop-color%3A%23448CCA%22%2F%3E%20%20%20%20%20%3Cstop%20%20offset%3D%221%22%20style%3D%22stop-color%3A%23336B9A%22%2F%3E%20%20%20%20%3C%2FradialGradient%3E%20%20%20%20%3Ccircle%20style%3D%22fill%3Aurl%28%23SVGID_3_%29%3B%22%20cx%3D%2210%22%20cy%3D%229.999%22%20r%3D%224.489%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
@@ -6595,17 +6460,6 @@ a.list-group-item-danger.active:focus {
   height: 16px;
   width: 15px;
   height: 15px;
-}
-.fuelux .radio-custom:hover.checked:before:before {
-  content: "";
-}
-.btn-lg .fuelux .radio-custom:hover.checked:before {
-  width: 20px;
-  height: 20px;
-}
-.btn-sm .fuelux .radio-custom:hover.checked:before {
-  width: 13px;
-  height: 13px;
 }
 .fuelux .radio-custom:hover.checked:before:before {
   content: "";
@@ -6685,7 +6539,6 @@ a.list-group-item-danger.active:focus {
 }
 .fuelux .radio-custom:active:before,
 .fuelux .radio-custom:focus:before {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2220px%22%20%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22radio-button-active-hover%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_36_%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cg%20id%3D%22radio-button-hover_2_%22%3E%20%20%20%3CradialGradient%20id%3D%22SVGID_1_%22%20cx%3D%2210%22%20cy%3D%2219.875%22%20r%3D%2219.8754%22%20gradientUnits%3D%22userSpaceOnUse%22%3E%20%20%20%20%3Cstop%20%20offset%3D%220%22%20style%3D%22stop-color%3A%23F2F6FB%22%2F%3E%20%20%20%20%3Cstop%20%20offset%3D%221%22%20style%3D%22stop-color%3A%23C1D5E6%22%2F%3E%20%20%20%3C%2FradialGradient%3E%20%20%20%3Ccircle%20style%3D%22fill%3Aurl%28%23SVGID_1_%29%3B%22%20cx%3D%2210%22%20cy%3D%2210%22%20r%3D%2210%22%2F%3E%20%20%20%3Cg%20style%3D%22opacity%3A0.8%3B%22%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%23FFFFFF%3B%22%20d%3D%22M10%2C2c4.411%2C0%2C8%2C3.589%2C8%2C8s-3.589%2C8-8%2C8s-8-3.589-8-8S5.589%2C2%2C10%2C2%20M10%2C0C4.479%2C0%2C0%2C4.477%2C0%2C10%20%20%20%20%20s4.479%2C10%2C10%2C10c5.523%2C0%2C10-4.477%2C10-10S15.523%2C0%2C10%2C0L10%2C0z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%20%3Cg%20style%3D%22opacity%3A0.7%3B%22%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%233A668C%3B%22%20d%3D%22M10%2C1c4.963%2C0%2C9%2C4.038%2C9%2C9c0%2C4.963-4.037%2C9-9%2C9s-9-4.037-9-9C1%2C5.038%2C5.037%2C1%2C10%2C1%20M10%2C0%20%20%20%20%20C4.479%2C0%2C0%2C4.477%2C0%2C10s4.479%2C10%2C10%2C10c5.523%2C0%2C10-4.477%2C10-10S15.523%2C0%2C10%2C0L10%2C0z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2220px%22%20%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22radio-button-active%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_63_%22%20y%3D%220%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cg%20id%3D%22radio-button-hover_7_%22%3E%20%20%20%3CradialGradient%20id%3D%22SVGID_1_%22%20cx%3D%2210.25%22%20cy%3D%2219.75%22%20r%3D%2219.6254%22%20gradientUnits%3D%22userSpaceOnUse%22%3E%20%20%20%20%3Cstop%20%20offset%3D%220%22%20style%3D%22stop-color%3A%23F2F6FB%22%2F%3E%20%20%20%20%3Cstop%20%20offset%3D%221%22%20style%3D%22stop-color%3A%23C1D5E6%22%2F%3E%20%20%20%3C%2FradialGradient%3E%20%20%20%3Ccircle%20style%3D%22fill%3Aurl%28%23SVGID_1_%29%3B%22%20cx%3D%2210%22%20cy%3D%2210%22%20r%3D%2210%22%2F%3E%20%20%20%3Cg%20style%3D%22opacity%3A0.8%3B%22%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%23FFFFFF%3B%22%20d%3D%22M10%2C2c4.411%2C0%2C8%2C3.589%2C8%2C8c0%2C4.411-3.589%2C8-8%2C8s-8-3.589-8-8C2%2C5.589%2C5.589%2C2%2C10%2C2%20M10%2C0%20%20%20%20%20C4.479%2C0%2C0%2C4.477%2C0%2C10c0%2C5.523%2C4.479%2C10%2C10%2C10c5.523%2C0%2C10-4.477%2C10-10C20%2C4.477%2C15.523%2C0%2C10%2C0L10%2C0z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%20%3Cg%20style%3D%22opacity%3A0.7%3B%22%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%233A668C%3B%22%20d%3D%22M10%2C1c4.963%2C0%2C9%2C4.038%2C9%2C9s-4.037%2C9-9%2C9s-9-4.037-9-9S5.037%2C1%2C10%2C1%20M10%2C0C4.479%2C0%2C0%2C4.477%2C0%2C10%20%20%20%20%20c0%2C5.523%2C4.479%2C10%2C10%2C10c5.523%2C0%2C10-4.477%2C10-10C20%2C4.477%2C15.523%2C0%2C10%2C0L10%2C0z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
@@ -6694,20 +6547,6 @@ a.list-group-item-danger.active:focus {
   height: 16px;
   width: 15px;
   height: 15px;
-}
-.fuelux .radio-custom:active:before:before,
-.fuelux .radio-custom:focus:before:before {
-  content: "";
-}
-.btn-lg .fuelux .radio-custom:active:before,
-.btn-lg .fuelux .radio-custom:focus:before {
-  width: 20px;
-  height: 20px;
-}
-.btn-sm .fuelux .radio-custom:active:before,
-.btn-sm .fuelux .radio-custom:focus:before {
-  width: 13px;
-  height: 13px;
 }
 .fuelux .radio-custom:active:before:before,
 .fuelux .radio-custom:focus:before:before {
@@ -6790,7 +6629,6 @@ a.list-group-item-danger.active:focus {
 }
 .fuelux .radio-custom:active.checked:before,
 .fuelux .radio-custom:focus.checked:before {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2220px%22%20%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22radio-button-active-hover%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_36_%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cg%20id%3D%22radio-button-hover_2_%22%3E%20%20%20%3CradialGradient%20id%3D%22SVGID_1_%22%20cx%3D%2210%22%20cy%3D%2219.875%22%20r%3D%2219.8754%22%20gradientUnits%3D%22userSpaceOnUse%22%3E%20%20%20%20%3Cstop%20%20offset%3D%220%22%20style%3D%22stop-color%3A%23F2F6FB%22%2F%3E%20%20%20%20%3Cstop%20%20offset%3D%221%22%20style%3D%22stop-color%3A%23C1D5E6%22%2F%3E%20%20%20%3C%2FradialGradient%3E%20%20%20%3Ccircle%20style%3D%22fill%3Aurl%28%23SVGID_1_%29%3B%22%20cx%3D%2210%22%20cy%3D%2210%22%20r%3D%2210%22%2F%3E%20%20%20%3Cg%20style%3D%22opacity%3A0.8%3B%22%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%23FFFFFF%3B%22%20d%3D%22M10%2C2c4.411%2C0%2C8%2C3.589%2C8%2C8s-3.589%2C8-8%2C8s-8-3.589-8-8S5.589%2C2%2C10%2C2%20M10%2C0C4.479%2C0%2C0%2C4.477%2C0%2C10%20%20%20%20%20s4.479%2C10%2C10%2C10c5.523%2C0%2C10-4.477%2C10-10S15.523%2C0%2C10%2C0L10%2C0z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%20%3Cg%20style%3D%22opacity%3A0.7%3B%22%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%233A668C%3B%22%20d%3D%22M10%2C1c4.963%2C0%2C9%2C4.038%2C9%2C9c0%2C4.963-4.037%2C9-9%2C9s-9-4.037-9-9C1%2C5.038%2C5.037%2C1%2C10%2C1%20M10%2C0%20%20%20%20%20C4.479%2C0%2C0%2C4.477%2C0%2C10s4.479%2C10%2C10%2C10c5.523%2C0%2C10-4.477%2C10-10S15.523%2C0%2C10%2C0L10%2C0z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2220px%22%20%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22radio-button-active%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_63_%22%20y%3D%220%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cg%20id%3D%22radio-button-hover_7_%22%3E%20%20%20%3CradialGradient%20id%3D%22SVGID_1_%22%20cx%3D%2210.25%22%20cy%3D%2219.75%22%20r%3D%2219.6254%22%20gradientUnits%3D%22userSpaceOnUse%22%3E%20%20%20%20%3Cstop%20%20offset%3D%220%22%20style%3D%22stop-color%3A%23F2F6FB%22%2F%3E%20%20%20%20%3Cstop%20%20offset%3D%221%22%20style%3D%22stop-color%3A%23C1D5E6%22%2F%3E%20%20%20%3C%2FradialGradient%3E%20%20%20%3Ccircle%20style%3D%22fill%3Aurl%28%23SVGID_1_%29%3B%22%20cx%3D%2210%22%20cy%3D%2210%22%20r%3D%2210%22%2F%3E%20%20%20%3Cg%20style%3D%22opacity%3A0.8%3B%22%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%23FFFFFF%3B%22%20d%3D%22M10%2C2c4.411%2C0%2C8%2C3.589%2C8%2C8c0%2C4.411-3.589%2C8-8%2C8s-8-3.589-8-8C2%2C5.589%2C5.589%2C2%2C10%2C2%20M10%2C0%20%20%20%20%20C4.479%2C0%2C0%2C4.477%2C0%2C10c0%2C5.523%2C4.479%2C10%2C10%2C10c5.523%2C0%2C10-4.477%2C10-10C20%2C4.477%2C15.523%2C0%2C10%2C0L10%2C0z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%20%3Cg%20style%3D%22opacity%3A0.7%3B%22%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%233A668C%3B%22%20d%3D%22M10%2C1c4.963%2C0%2C9%2C4.038%2C9%2C9s-4.037%2C9-9%2C9s-9-4.037-9-9S5.037%2C1%2C10%2C1%20M10%2C0C4.479%2C0%2C0%2C4.477%2C0%2C10%20%20%20%20%20c0%2C5.523%2C4.479%2C10%2C10%2C10c5.523%2C0%2C10-4.477%2C10-10C20%2C4.477%2C15.523%2C0%2C10%2C0L10%2C0z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
@@ -6799,20 +6637,6 @@ a.list-group-item-danger.active:focus {
   height: 16px;
   width: 15px;
   height: 15px;
-}
-.fuelux .radio-custom:active.checked:before:before,
-.fuelux .radio-custom:focus.checked:before:before {
-  content: "";
-}
-.btn-lg .fuelux .radio-custom:active.checked:before,
-.btn-lg .fuelux .radio-custom:focus.checked:before {
-  width: 20px;
-  height: 20px;
-}
-.btn-sm .fuelux .radio-custom:active.checked:before,
-.btn-sm .fuelux .radio-custom:focus.checked:before {
-  width: 13px;
-  height: 13px;
 }
 .fuelux .radio-custom:active.checked:before:before,
 .fuelux .radio-custom:focus.checked:before:before {
@@ -7446,17 +7270,17 @@ a.list-group-item-danger.active:focus {
 .fuelux .selectlist .btn.dropdown-toggle {
   background: linear-gradient(#ffffff, #eeeeee);
   border: 1px solid #bbb;
-  padding: 4px 5px 4px 5px;
+  padding: 4px 5px;
+  /* TODO figure out why the less compiler in mctheme doesn't like this math */
+  /* padding-right: 2 * @mctheme-selectlist-horizontal-padding + @mctheme-selectlist-caret-width; */
+  padding-right: 14px;
 }
 .fuelux .selectlist .btn.dropdown-toggle .caret {
   color: #656565;
+  right: 5px;
 }
 .fuelux .selectlist .btn.dropdown-toggle .selected-label {
-  padding-right: 4px;
   color: #656565;
-}
-.fuelux .selectlist[data-resize="auto"] .btn.dropdown-toggle .selected-label {
-  padding-right: 10px;
 }
 .fuelux .tree {
   border-color: #dddddd;

@@ -40,12 +40,29 @@ module.exports = function (grunt) {
 						replacement: '.fuelux-icon$1, .glyphicon$1 '
 					}
 					
+					// ,
+					// {
+					// 	pattern:  /(\.-?[_a-zA-Z]+[_a-zA-Z0-9-]*)-hover-focus\s*/g,
+					// 	replacement: '$1-hover-focus, $1:hover:focus, button:hover:focus > $1 '
+					// }
+
 					,
 					{
-						pattern:  /(\.-?[_a-zA-Z]+[_a-zA-Z0-9-]*)-hover-focus\s*/g,
-						replacement: '$1-hover-focus, $1:hover:focus, button:hover:focus > $1 '
+						pattern:  /(\.-?[_a-zA-Z]+[_a-zA-Z0-9-]*)-checked-hover-active\s*/g,
+						replacement: '$1-TOBECHECKEDHOVERACTIVE '
 					}
 
+					,
+					{
+						pattern:  /(\.-?[_a-zA-Z]+[_a-zA-Z0-9-]*)-active-hover\s*/g,
+						replacement: '$1-TOBEACTIVEHOVER '
+					}
+
+					,
+					{
+						pattern:  /(\.-?[_a-zA-Z]+[_a-zA-Z0-9-]*)-hover\s*/g,
+						replacement: '$1-hover, $1:hover, button:hover > $1 '
+					}
 
 					,
 					{
@@ -59,10 +76,17 @@ module.exports = function (grunt) {
 						replacement: '$1-focus, $1:focus, button:focus > $1 '
 					}
 
+
 					,
 					{
-						pattern:  /(\.-?[_a-zA-Z]+[_a-zA-Z0-9-]*)-hover\s*/g,
-						replacement: '$1-hover, $1:hover, button:hover > $1 '
+						pattern:  /(\.-?[_a-zA-Z]+[_a-zA-Z0-9-]*)-TOBEACTIVEHOVER\s*/g,
+						replacement: '$1-active-hover, $1:active:hover, button:active:hover > $1 '
+					}
+
+					,
+					{
+						pattern:  /(\.-?[_a-zA-Z]+[_a-zA-Z0-9-]*)-TOBECHECKEDHOVERACTIVE\s*/g,
+						replacement: '$1-checked-hover-active, $1:checked:active:hover, button:active:hover > $1:checked '
 					}
 
 					,
@@ -162,7 +186,8 @@ module.exports = function (grunt) {
 					"urlpngcss": "icons-png-fallback.css",
 					"defaultWidth": "20px",
 					"defaultHeight": "20px",
-					"previewTemplate": "icons/preview.hbs"
+					"previewTemplate": "icons/preview-custom.hbs",
+					".previewhtml": ""
 				}
 			}
 		},
