@@ -10,13 +10,13 @@
 
 .fuelux-icon-caret-right, .glyphicon-caret-right { background-image: url('png/caret-right.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
-.fuelux-icon-checkbox-active, .fuelux-icon-checkbox:active, button:active > .fuelux-icon-checkbox -hover, .glyphicon-checkbox-active, .glyphicon-checkbox:active, button:active > .glyphicon-checkbox -hover { background-image: url('png/checkbox-active-hover.png'); background-repeat: no-repeat; .fuelux-icon; } 
+.fuelux-icon-checkbox-active-hover, .fuelux-icon-checkbox:active:hover, button:active:hover > .fuelux-icon-checkbox , .glyphicon-checkbox-active-hover, .glyphicon-checkbox:active:hover, button:active:hover > .glyphicon-checkbox { background-image: url('png/checkbox-active-hover.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
 .fuelux-icon-checkbox-active, .fuelux-icon-checkbox:active, button:active > .fuelux-icon-checkbox , .glyphicon-checkbox-active, .glyphicon-checkbox:active, button:active > .glyphicon-checkbox { background-image: url('png/checkbox-active.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
 .fuelux-icon-checkbox-checked-disabled, .glyphicon-checkbox-checked-disabled { background-image: url('png/checkbox-checked-disabled.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
-.fuelux-icon-checkbox-checked-hover, .fuelux-icon-checkbox-checked:hover, button:hover > .fuelux-icon-checkbox-checked -active, .fuelux-icon-checkbox-checked-hover, .fuelux-icon-checkbox-checked:hover, button:hover > .fuelux-icon-checkbox-checked :active, button:active > .fuelux-icon-checkbox-checked-hover, .fuelux-icon-checkbox-checked:hover, button:hover > .fuelux-icon-checkbox-checked , .glyphicon-checkbox-checked-hover, .glyphicon-checkbox-checked:hover, button:hover > .glyphicon-checkbox-checked -active, .glyphicon-checkbox-checked-hover, .glyphicon-checkbox-checked:hover, button:hover > .glyphicon-checkbox-checked :active, button:active > .glyphicon-checkbox-checked-hover, .glyphicon-checkbox-checked:hover, button:hover > .glyphicon-checkbox-checked { background-image: url('png/checkbox-checked-hover-active.png'); background-repeat: no-repeat; .fuelux-icon; } 
+.fuelux-icon-checkbox-checked-hover-active, .fuelux-icon-checkbox:checked:active:hover, button:active:hover > .fuelux-icon-checkbox:checked , .glyphicon-checkbox-checked-hover-active, .glyphicon-checkbox:checked:active:hover, button:active:hover > .glyphicon-checkbox:checked { background-image: url('png/checkbox-checked-hover-active.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
 .fuelux-icon-checkbox-checked-hover, .fuelux-icon-checkbox-checked:hover, button:hover > .fuelux-icon-checkbox-checked , .glyphicon-checkbox-checked-hover, .glyphicon-checkbox-checked:hover, button:hover > .glyphicon-checkbox-checked { background-image: url('png/checkbox-checked-hover.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
@@ -102,13 +102,13 @@
 
 .fuelux-icon-plus-sign, .glyphicon-plus-sign { background-image: url('png/plus-sign.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
-.fuelux-icon-radio-button-active, .fuelux-icon-radio-button:active, button:active > .fuelux-icon-radio-button -hover, .glyphicon-radio-button-active, .glyphicon-radio-button:active, button:active > .glyphicon-radio-button -hover { background-image: url('png/radio-button-active-hover.png'); background-repeat: no-repeat; .fuelux-icon; } 
+.fuelux-icon-radio-button-active-hover, .fuelux-icon-radio-button:active:hover, button:active:hover > .fuelux-icon-radio-button , .glyphicon-radio-button-active-hover, .glyphicon-radio-button:active:hover, button:active:hover > .glyphicon-radio-button { background-image: url('png/radio-button-active-hover.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
 .fuelux-icon-radio-button-active, .fuelux-icon-radio-button:active, button:active > .fuelux-icon-radio-button , .glyphicon-radio-button-active, .glyphicon-radio-button:active, button:active > .glyphicon-radio-button { background-image: url('png/radio-button-active.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
 .fuelux-icon-radio-button-checked-disabled, .glyphicon-radio-button-checked-disabled { background-image: url('png/radio-button-checked-disabled.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
-.fuelux-icon-radio-button-checked-hover, .fuelux-icon-radio-button-checked:hover, button:hover > .fuelux-icon-radio-button-checked -active, .fuelux-icon-radio-button-checked-hover, .fuelux-icon-radio-button-checked:hover, button:hover > .fuelux-icon-radio-button-checked :active, button:active > .fuelux-icon-radio-button-checked-hover, .fuelux-icon-radio-button-checked:hover, button:hover > .fuelux-icon-radio-button-checked , .glyphicon-radio-button-checked-hover, .glyphicon-radio-button-checked:hover, button:hover > .glyphicon-radio-button-checked -active, .glyphicon-radio-button-checked-hover, .glyphicon-radio-button-checked:hover, button:hover > .glyphicon-radio-button-checked :active, button:active > .glyphicon-radio-button-checked-hover, .glyphicon-radio-button-checked:hover, button:hover > .glyphicon-radio-button-checked { background-image: url('png/radio-button-checked-hover-active.png'); background-repeat: no-repeat; .fuelux-icon; } 
+.fuelux-icon-radio-button-checked-hover-active, .fuelux-icon-radio-button:checked:active:hover, button:active:hover > .fuelux-icon-radio-button:checked , .glyphicon-radio-button-checked-hover-active, .glyphicon-radio-button:checked:active:hover, button:active:hover > .glyphicon-radio-button:checked { background-image: url('png/radio-button-checked-hover-active.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
 .fuelux-icon-radio-button-checked-hover, .fuelux-icon-radio-button-checked:hover, button:hover > .fuelux-icon-radio-button-checked , .glyphicon-radio-button-checked-hover, .glyphicon-radio-button-checked:hover, button:hover > .glyphicon-radio-button-checked { background-image: url('png/radio-button-checked-hover.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
@@ -124,7 +124,7 @@
 
 .fuelux-icon-remove, .glyphicon-remove { background-image: url('png/remove.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
-.fuelux-icon-search-active, .fuelux-icon-search:active, button:active > .fuelux-icon-search -hover, .glyphicon-search-active, .glyphicon-search:active, button:active > .glyphicon-search -hover { background-image: url('png/search-active-hover.png'); background-repeat: no-repeat; .fuelux-icon; } 
+.fuelux-icon-search-active-hover, .fuelux-icon-search:active:hover, button:active:hover > .fuelux-icon-search , .glyphicon-search-active-hover, .glyphicon-search:active:hover, button:active:hover > .glyphicon-search { background-image: url('png/search-active-hover.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
 .fuelux-icon-search-active, .fuelux-icon-search:active, button:active > .fuelux-icon-search , .glyphicon-search-active, .glyphicon-search:active, button:active > .glyphicon-search { background-image: url('png/search-active.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
@@ -134,7 +134,7 @@
 
 .fuelux-icon-search-focus, .fuelux-icon-search:focus, button:focus > .fuelux-icon-search , .glyphicon-search-focus, .glyphicon-search:focus, button:focus > .glyphicon-search { background-image: url('png/search-focus.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
-.fuelux-icon-search-hover, .fuelux-icon-search:hover, button:hover > .fuelux-icon-search -focus, .fuelux-icon-search-hover, .fuelux-icon-search:hover, button:hover > .fuelux-icon-search :focus, button:focus > .fuelux-icon-search-hover, .fuelux-icon-search:hover, button:hover > .fuelux-icon-search , .fuelux-icon-search:hover:focus, button:hover:focus > .fuelux-icon-search , .glyphicon-search-hover, .glyphicon-search:hover, button:hover > .glyphicon-search -focus, .glyphicon-search-hover, .glyphicon-search:hover, button:hover > .glyphicon-search :focus, button:focus > .glyphicon-search-hover, .glyphicon-search:hover, button:hover > .glyphicon-search , .glyphicon-search:hover:focus, button:hover:focus > .glyphicon-search { background-image: url('png/search-hover-focus.png'); background-repeat: no-repeat; .fuelux-icon; } 
+.fuelux-icon-search-hover, .fuelux-icon-search:hover, button:hover > .fuelux-icon-search -focus, .glyphicon-search-hover, .glyphicon-search:hover, button:hover > .glyphicon-search -focus { background-image: url('png/search-hover-focus.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
 .fuelux-icon-search-hover, .fuelux-icon-search:hover, button:hover > .fuelux-icon-search , .glyphicon-search-hover, .glyphicon-search:hover, button:hover > .glyphicon-search { background-image: url('png/search-hover.png'); background-repeat: no-repeat; .fuelux-icon; } 
 

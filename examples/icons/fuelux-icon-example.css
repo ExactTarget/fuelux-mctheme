@@ -12,5 +12,6 @@
 }
 
 .fuelux-icon {
-	margin: 10px auto;
+	width: 100px !important;
+	height: 100px !important;
 }
