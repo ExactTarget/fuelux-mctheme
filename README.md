@@ -39,7 +39,33 @@ The Marketing Cloud Theme can be obtained through:
    bower install fuelux-mctheme
    ```
 
+### Contributing
+To work on the Marketing Cloud theme:
 
+1. Clone git repo:
+   ```
+   git clone https://github.com/ExactTarget/fuelux-mctheme/
+   ```
+1. Run npm install:
+  ```
+  npm install
+  ```
+1. Run bower install:
+  ```
+  bower install
+  ```
+1. Start up the server:
+  ```
+  grunt serve
+  ```
+1. View output in browser [http://localhost:8000](http://localhost:8000)
+
+If you have changes you would like to contribute, please:
+
+1. Fork the repo
+1. Make a new branch
+1. Do your work
+1. When ready, issue a pull request
 
 ### Dependencies
 The Marketing Cloud Theme is dependent upon [Fuel UX 3](http://github.com/ExactTarget/fuelux/), [Bootstrap 3](https://github.com/twbs/bootstrap) and [jQuery](https://github.com/jquery/jquery). If you installed by cloning the repo or by downloading a .zip archive, you'll also want to grab these things, as it just won't work without them.
@@ -67,7 +93,7 @@ Have a bug or a feature request? Please first review the [open issues](https://g
 
 ## Edge servers
 
-A build of master is available at `https://fuelux-mctheme.herokuapp.com/dist/css/fuelux-mctheme.css`. 
+A build of master is available at `https://fuelux-mctheme.herokuapp.com/dist/css/fuelux-mctheme.css`.
 
 _These files should never be used in production and may not have been fully tested._
 

@@ -33,40 +33,95 @@ module.exports = function (grunt) {
 					"less/icons/icons-png.css": "less/icons/icons-png.css",
 					"less/icons/icons-png-fallback.css": "less/icons/icons-png-fallback.css"
 				},
+
+				// we have to go through and massage the .less file that gruntion makes
+				// 
+				// as it is created it only supports .fuelux-icon- prefixen, and we need it to support .glyphicon- also, so that the theme can override bootstrap and fuelux fefaults
+				// 
 				options: {
 					replacements: [
 					{
+						// so, first we add .glyphicon as a prefix in addition to .fuelux-icon
 						pattern:  /\.fuelux-icon(-?[_a-zA-Z]+[_a-zA-Z0-9-]*)\s*/g,
 						replacement: '.fuelux-icon$1, .glyphicon$1 '
 					}
-					
-					,
-					{
-						pattern:  /(\.-?[_a-zA-Z]+[_a-zA-Z0-9-]*)-hover-focus\s*/g,
-						replacement: '$1-hover-focus, $1:hover:focus, button:hover:focus > $1 '
-					}
-
 
 					,
 					{
-						pattern:  /(\.-?[_a-zA-Z]+[_a-zA-Z0-9-]*)-active\s*/g,
-						replacement: '$1-active, $1:active, button:active > $1 '
-					}
-
-					,
-					{
-						pattern:  /(\.-?[_a-zA-Z]+[_a-zA-Z0-9-]*)-focus\s*/g,
-						replacement: '$1-focus, $1:focus, button:focus > $1 '
+						// we need to temporarily change -checked-hover-active into something else that we will tweek later.
+						// 
+						// if we were to do this replacement "for real" right now,there are replacements soon that would ruin it (same if reversed)
+						// 
+						// so, we replace it with TOBECHECKEDHOVERACTIVE and then the replacements looking for -checked or -hover or -active will leave it alone.
+						pattern:  /(\.-?[_a-zA-Z]+[_a-zA-Z0-9-]*)-checked-hover-active\s*/g,
+						replacement: '$1-TOBECHECKEDHOVERACTIVE '
 					}
 
 					,
 					{
+						// we need to temporarily change -active-hover into something else that we will tweek later.
+						// 
+						// if we were to do this replacement "for real" right now,there are replacements soon that would ruin it (same if reversed)
+						// 
+						// so, we replace it with TOBEACTIVEHOVER and then the replacements looking for -hover or -active will leave it alone.
+						pattern:  /(\.-?[_a-zA-Z]+[_a-zA-Z0-9-]*)-active-hover\s*/g,
+						replacement: '$1-TOBEACTIVEHOVER '
+					}
+
+					,
+					{
+						// Replace (pattern) dash hover with (itself), (pattern):hover, 
+						// and (itself as a direct decendant of a button that is being hovered)
+						// 
+						// The first one means that, say, .fuelux-icon-checkbox-hover as a 
+						// classname will render the proper icon...
+						// 
+						// ...but so will .fuelux-icon-checkbox:hover ...
+						// 
+						// ...which gets us *automatic hover states for all icons which follow 
+						// the proper naming convention*.
+						// 
+						// The last one tells the icons to show the hover state if they are 
+						// inside a button that is itself being hovered. Search is a good 
+						// example of where this happens.
 						pattern:  /(\.-?[_a-zA-Z]+[_a-zA-Z0-9-]*)-hover\s*/g,
 						replacement: '$1-hover, $1:hover, button:hover > $1 '
 					}
 
 					,
 					{
+						// Follows the same patterns, and reasoning, for -hover, above.
+						pattern:  /(\.-?[_a-zA-Z]+[_a-zA-Z0-9-]*)-active\s*/g,
+						replacement: '$1-active, $1:active, button:active > $1 '
+					}
+
+					,
+					{
+						// Follows the same patterns, and reasoning, for -hover, above.
+						pattern:  /(\.-?[_a-zA-Z]+[_a-zA-Z0-9-]*)-focus\s*/g,
+						replacement: '$1-focus, $1:focus, button:focus > $1 '
+					}
+
+
+					,
+					{
+						// Here we go ahead and safely affect the change on TOBEACTIVEHOVER, now that 
+						// the other replacements have happened.
+						pattern:  /(\.-?[_a-zA-Z]+[_a-zA-Z0-9-]*)-TOBEACTIVEHOVER\s*/g,
+						replacement: '$1-active-hover, $1:active:hover, button:active:hover > $1 '
+					}
+
+					,
+					{
+						// Safe to do this now, too.
+						pattern:  /(\.-?[_a-zA-Z]+[_a-zA-Z0-9-]*)-TOBECHECKEDHOVERACTIVE\s*/g,
+						replacement: '$1-checked-hover-active, $1:checked:active:hover, button:active:hover > $1:checked '
+					}
+
+					,
+					{
+						// Add a .fuelux-icon mixin to all the icons, so taht they catch the 
+						// inherited rules of height, width, background-size, and so forth.
 						pattern:  /\}/g,
 						replacement: '.fuelux-icon; } '
 					}
@@ -162,7 +217,8 @@ module.exports = function (grunt) {
 					"urlpngcss": "icons-png-fallback.css",
 					"defaultWidth": "20px",
 					"defaultHeight": "20px",
-					"previewTemplate": "icons/preview.hbs"
+					"previewTemplate": "icons/preview-custom.hbs",
+					".previewhtml": ""
 				}
 			}
 		},
