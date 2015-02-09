@@ -11,3 +11,10 @@ validation-status.json
 
 # Editors / IDEs
 .idea
+
+
+
+
+# Temp file created in the LESS build
+less/fuelux-override-no-namespace.less
+
