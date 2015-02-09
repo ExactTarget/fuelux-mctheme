@@ -1,5 +1,5 @@
 /*!
- * Marketing Cloud Theme EDGE - Built 2015/02/09, 1:48:24 PM 
+ * Marketing Cloud Theme EDGE - Built 2015/02/03, 4:42:26 PM 
  * Previous release: v1.3.4 
  * Copyright 2012-2015 ExactTarget
  * Licensed under the MIT license (https://github.com/ExactTarget/fuelux-mctheme/blob/master/COPYING)
@@ -4160,7 +4160,6 @@ table th[class*="col-"] {
 }
 .alert {
   font-size: 12px;
-  color: #222;
   border: 1px solid #999;
   padding: 6px 21px 6px 34px;
   position: relative;
@@ -4211,7 +4210,7 @@ table th[class*="col-"] {
   cursor: pointer;
 }
 .alert small {
-  color: #4b4b4b;
+  color: #666;
   font-size: 11px;
   font-weight: normal;
 }
@@ -5360,40 +5359,6 @@ a.list-group-item-danger.active:focus {
 }
 .fuelux {
   /* TODO use fuelux variables for numbers bellow if possible */
-  /*# sourceMappingURL=fuelux-mctheme.css.map */
-}
-.fuelux .form-horizontal .form-group {
-  *zoom: 1;
-}
-.fuelux .form-horizontal .form-group:before,
-.fuelux .form-horizontal .form-group:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-.fuelux .form-horizontal .form-group:after {
-  clear: both;
-}
-.fuelux .form-horizontal .form-group-sm .form-control {
-  height: 21px;
-  padding: 4px 8px;
-  font-size: 10px;
-  line-height: 1.5;
-  border-radius: 3px;
-}
-.fuelux .form-horizontal .form-group-lg .form-control {
-  height: 90px;
-  padding: 8px 10px;
-  font-size: 16px;
-  line-height: 1.33;
-  border-radius: 4px;
-}
-.fuelux .form-horizontal .form-group-md .form-control {
-  height: 47px;
-  padding: 12px 6px;
-  font-size: 13px;
-  line-height: 1.4;
-  border-radius: 3px;
 }
 .fuelux .column-header {
   padding: 6px 10px;
@@ -5427,22 +5392,22 @@ a.list-group-item-danger.active:focus {
 .fuelux .checkbox-custom:before:before {
   content: "";
 }
-.fuelux .btn-lg .checkbox-custom:before {
+.btn-lg .fuelux .checkbox-custom:before {
   width: 20px;
   height: 20px;
 }
-.fuelux .btn-sm .checkbox-custom:before {
+.btn-sm .fuelux .checkbox-custom:before {
   width: 13px;
   height: 13px;
 }
 .fuelux .checkbox-custom:before:before {
   content: "";
 }
-.fuelux .btn-lg .checkbox-custom:before {
+.btn-lg .fuelux .checkbox-custom:before {
   width: 20px;
   height: 20px;
 }
-.fuelux .btn-sm .checkbox-custom:before {
+.btn-sm .fuelux .checkbox-custom:before {
   width: 13px;
   height: 13px;
 }
@@ -5471,22 +5436,22 @@ a.list-group-item-danger.active:focus {
 .fuelux .checkbox-custom:hover:before:before {
   content: "";
 }
-.fuelux .btn-lg .checkbox-custom:hover:before {
+.btn-lg .fuelux .checkbox-custom:hover:before {
   width: 20px;
   height: 20px;
 }
-.fuelux .btn-sm .checkbox-custom:hover:before {
+.btn-sm .fuelux .checkbox-custom:hover:before {
   width: 13px;
   height: 13px;
 }
 .fuelux .checkbox-custom:hover:before:before {
   content: "";
 }
-.fuelux .btn-lg .checkbox-custom:hover:before {
+.btn-lg .fuelux .checkbox-custom:hover:before {
   width: 20px;
   height: 20px;
 }
-.fuelux .btn-sm .checkbox-custom:hover:before {
+.btn-sm .fuelux .checkbox-custom:hover:before {
   width: 13px;
   height: 13px;
 }
@@ -5503,11 +5468,11 @@ a.list-group-item-danger.active:focus {
 .fuelux .checkbox-custom:hover:before:before {
   content: "";
 }
-.fuelux .btn-lg .checkbox-custom:hover:before {
+.btn-lg .fuelux .checkbox-custom:hover:before {
   width: 20px;
   height: 20px;
 }
-.fuelux .btn-sm .checkbox-custom:hover:before {
+.btn-sm .fuelux .checkbox-custom:hover:before {
   width: 13px;
   height: 13px;
 }
@@ -5536,22 +5501,22 @@ a.list-group-item-danger.active:focus {
 .fuelux .checkbox-custom:hover.checked:before:before {
   content: "";
 }
-.fuelux .btn-lg .checkbox-custom:hover.checked:before {
+.btn-lg .fuelux .checkbox-custom:hover.checked:before {
   width: 20px;
   height: 20px;
 }
-.fuelux .btn-sm .checkbox-custom:hover.checked:before {
+.btn-sm .fuelux .checkbox-custom:hover.checked:before {
   width: 13px;
   height: 13px;
 }
 .fuelux .checkbox-custom:hover.checked:before:before {
   content: "";
 }
-.fuelux .btn-lg .checkbox-custom:hover.checked:before {
+.btn-lg .fuelux .checkbox-custom:hover.checked:before {
   width: 20px;
   height: 20px;
 }
-.fuelux .btn-sm .checkbox-custom:hover.checked:before {
+.btn-sm .fuelux .checkbox-custom:hover.checked:before {
   width: 13px;
   height: 13px;
 }
@@ -5568,11 +5533,11 @@ a.list-group-item-danger.active:focus {
 .fuelux .checkbox-custom:hover.checked:before:before {
   content: "";
 }
-.fuelux .btn-lg .checkbox-custom:hover.checked:before {
+.btn-lg .fuelux .checkbox-custom:hover.checked:before {
   width: 20px;
   height: 20px;
 }
-.fuelux .btn-sm .checkbox-custom:hover.checked:before {
+.btn-sm .fuelux .checkbox-custom:hover.checked:before {
   width: 13px;
   height: 13px;
 }
@@ -5604,13 +5569,13 @@ a.list-group-item-danger.active:focus {
 .fuelux .checkbox-custom:focus:before:before {
   content: "";
 }
-.fuelux .btn-lg .checkbox-custom:active:before,
-.fuelux .btn-lg .checkbox-custom:focus:before {
+.btn-lg .fuelux .checkbox-custom:active:before,
+.btn-lg .fuelux .checkbox-custom:focus:before {
   width: 20px;
   height: 20px;
 }
-.fuelux .btn-sm .checkbox-custom:active:before,
-.fuelux .btn-sm .checkbox-custom:focus:before {
+.btn-sm .fuelux .checkbox-custom:active:before,
+.btn-sm .fuelux .checkbox-custom:focus:before {
   width: 13px;
   height: 13px;
 }
@@ -5618,13 +5583,13 @@ a.list-group-item-danger.active:focus {
 .fuelux .checkbox-custom:focus:before:before {
   content: "";
 }
-.fuelux .btn-lg .checkbox-custom:active:before,
-.fuelux .btn-lg .checkbox-custom:focus:before {
+.btn-lg .fuelux .checkbox-custom:active:before,
+.btn-lg .fuelux .checkbox-custom:focus:before {
   width: 20px;
   height: 20px;
 }
-.fuelux .btn-sm .checkbox-custom:active:before,
-.fuelux .btn-sm .checkbox-custom:focus:before {
+.btn-sm .fuelux .checkbox-custom:active:before,
+.btn-sm .fuelux .checkbox-custom:focus:before {
   width: 13px;
   height: 13px;
 }
@@ -5643,13 +5608,13 @@ a.list-group-item-danger.active:focus {
 .fuelux .checkbox-custom:focus:before:before {
   content: "";
 }
-.fuelux .btn-lg .checkbox-custom:active:before,
-.fuelux .btn-lg .checkbox-custom:focus:before {
+.btn-lg .fuelux .checkbox-custom:active:before,
+.btn-lg .fuelux .checkbox-custom:focus:before {
   width: 20px;
   height: 20px;
 }
-.fuelux .btn-sm .checkbox-custom:active:before,
-.fuelux .btn-sm .checkbox-custom:focus:before {
+.btn-sm .fuelux .checkbox-custom:active:before,
+.btn-sm .fuelux .checkbox-custom:focus:before {
   width: 13px;
   height: 13px;
 }
@@ -5681,13 +5646,13 @@ a.list-group-item-danger.active:focus {
 .fuelux .checkbox-custom:focus.checked:before:before {
   content: "";
 }
-.fuelux .btn-lg .checkbox-custom:active.checked:before,
-.fuelux .btn-lg .checkbox-custom:focus.checked:before {
+.btn-lg .fuelux .checkbox-custom:active.checked:before,
+.btn-lg .fuelux .checkbox-custom:focus.checked:before {
   width: 20px;
   height: 20px;
 }
-.fuelux .btn-sm .checkbox-custom:active.checked:before,
-.fuelux .btn-sm .checkbox-custom:focus.checked:before {
+.btn-sm .fuelux .checkbox-custom:active.checked:before,
+.btn-sm .fuelux .checkbox-custom:focus.checked:before {
   width: 13px;
   height: 13px;
 }
@@ -5695,13 +5660,13 @@ a.list-group-item-danger.active:focus {
 .fuelux .checkbox-custom:focus.checked:before:before {
   content: "";
 }
-.fuelux .btn-lg .checkbox-custom:active.checked:before,
-.fuelux .btn-lg .checkbox-custom:focus.checked:before {
+.btn-lg .fuelux .checkbox-custom:active.checked:before,
+.btn-lg .fuelux .checkbox-custom:focus.checked:before {
   width: 20px;
   height: 20px;
 }
-.fuelux .btn-sm .checkbox-custom:active.checked:before,
-.fuelux .btn-sm .checkbox-custom:focus.checked:before {
+.btn-sm .fuelux .checkbox-custom:active.checked:before,
+.btn-sm .fuelux .checkbox-custom:focus.checked:before {
   width: 13px;
   height: 13px;
 }
@@ -5720,13 +5685,13 @@ a.list-group-item-danger.active:focus {
 .fuelux .checkbox-custom:focus.checked:before:before {
   content: "";
 }
-.fuelux .btn-lg .checkbox-custom:active.checked:before,
-.fuelux .btn-lg .checkbox-custom:focus.checked:before {
+.btn-lg .fuelux .checkbox-custom:active.checked:before,
+.btn-lg .fuelux .checkbox-custom:focus.checked:before {
   width: 20px;
   height: 20px;
 }
-.fuelux .btn-sm .checkbox-custom:active.checked:before,
-.fuelux .btn-sm .checkbox-custom:focus.checked:before {
+.btn-sm .fuelux .checkbox-custom:active.checked:before,
+.btn-sm .fuelux .checkbox-custom:focus.checked:before {
   width: 13px;
   height: 13px;
 }
@@ -5755,22 +5720,22 @@ a.list-group-item-danger.active:focus {
 .fuelux .checkbox-custom.checked:before:before {
   content: "";
 }
-.fuelux .btn-lg .checkbox-custom.checked:before {
+.btn-lg .fuelux .checkbox-custom.checked:before {
   width: 20px;
   height: 20px;
 }
-.fuelux .btn-sm .checkbox-custom.checked:before {
+.btn-sm .fuelux .checkbox-custom.checked:before {
   width: 13px;
   height: 13px;
 }
 .fuelux .checkbox-custom.checked:before:before {
   content: "";
 }
-.fuelux .btn-lg .checkbox-custom.checked:before {
+.btn-lg .fuelux .checkbox-custom.checked:before {
   width: 20px;
   height: 20px;
 }
-.fuelux .btn-sm .checkbox-custom.checked:before {
+.btn-sm .fuelux .checkbox-custom.checked:before {
   width: 13px;
   height: 13px;
 }
@@ -5787,11 +5752,11 @@ a.list-group-item-danger.active:focus {
 .fuelux .checkbox-custom.checked:before:before {
   content: "";
 }
-.fuelux .btn-lg .checkbox-custom.checked:before {
+.btn-lg .fuelux .checkbox-custom.checked:before {
   width: 20px;
   height: 20px;
 }
-.fuelux .btn-sm .checkbox-custom.checked:before {
+.btn-sm .fuelux .checkbox-custom.checked:before {
   width: 13px;
   height: 13px;
 }
@@ -5820,22 +5785,22 @@ a.list-group-item-danger.active:focus {
 .fuelux .checkbox-custom.disabled:before:before {
   content: "";
 }
-.fuelux .btn-lg .checkbox-custom.disabled:before {
+.btn-lg .fuelux .checkbox-custom.disabled:before {
   width: 20px;
   height: 20px;
 }
-.fuelux .btn-sm .checkbox-custom.disabled:before {
+.btn-sm .fuelux .checkbox-custom.disabled:before {
   width: 13px;
   height: 13px;
 }
 .fuelux .checkbox-custom.disabled:before:before {
   content: "";
 }
-.fuelux .btn-lg .checkbox-custom.disabled:before {
+.btn-lg .fuelux .checkbox-custom.disabled:before {
   width: 20px;
   height: 20px;
 }
-.fuelux .btn-sm .checkbox-custom.disabled:before {
+.btn-sm .fuelux .checkbox-custom.disabled:before {
   width: 13px;
   height: 13px;
 }
@@ -5852,11 +5817,11 @@ a.list-group-item-danger.active:focus {
 .fuelux .checkbox-custom.disabled:before:before {
   content: "";
 }
-.fuelux .btn-lg .checkbox-custom.disabled:before {
+.btn-lg .fuelux .checkbox-custom.disabled:before {
   width: 20px;
   height: 20px;
 }
-.fuelux .btn-sm .checkbox-custom.disabled:before {
+.btn-sm .fuelux .checkbox-custom.disabled:before {
   width: 13px;
   height: 13px;
 }
@@ -5885,22 +5850,22 @@ a.list-group-item-danger.active:focus {
 .fuelux .checkbox-custom.disabled.checked:before:before {
   content: "";
 }
-.fuelux .btn-lg .checkbox-custom.disabled.checked:before {
+.btn-lg .fuelux .checkbox-custom.disabled.checked:before {
   width: 20px;
   height: 20px;
 }
-.fuelux .btn-sm .checkbox-custom.disabled.checked:before {
+.btn-sm .fuelux .checkbox-custom.disabled.checked:before {
   width: 13px;
   height: 13px;
 }
 .fuelux .checkbox-custom.disabled.checked:before:before {
   content: "";
 }
-.fuelux .btn-lg .checkbox-custom.disabled.checked:before {
+.btn-lg .fuelux .checkbox-custom.disabled.checked:before {
   width: 20px;
   height: 20px;
 }
-.fuelux .btn-sm .checkbox-custom.disabled.checked:before {
+.btn-sm .fuelux .checkbox-custom.disabled.checked:before {
   width: 13px;
   height: 13px;
 }
@@ -5917,11 +5882,11 @@ a.list-group-item-danger.active:focus {
 .fuelux .checkbox-custom.disabled.checked:before:before {
   content: "";
 }
-.fuelux .btn-lg .checkbox-custom.disabled.checked:before {
+.btn-lg .fuelux .checkbox-custom.disabled.checked:before {
   width: 20px;
   height: 20px;
 }
-.fuelux .btn-sm .checkbox-custom.disabled.checked:before {
+.btn-sm .fuelux .checkbox-custom.disabled.checked:before {
   width: 13px;
   height: 13px;
 }
@@ -6323,22 +6288,22 @@ a.list-group-item-danger.active:focus {
 .fuelux .radio-custom:before:before {
   content: "";
 }
-.fuelux .btn-lg .radio-custom:before {
+.btn-lg .fuelux .radio-custom:before {
   width: 20px;
   height: 20px;
 }
-.fuelux .btn-sm .radio-custom:before {
+.btn-sm .fuelux .radio-custom:before {
   width: 13px;
   height: 13px;
 }
 .fuelux .radio-custom:before:before {
   content: "";
 }
-.fuelux .btn-lg .radio-custom:before {
+.btn-lg .fuelux .radio-custom:before {
   width: 20px;
   height: 20px;
 }
-.fuelux .btn-sm .radio-custom:before {
+.btn-sm .fuelux .radio-custom:before {
   width: 13px;
   height: 13px;
 }
@@ -6379,22 +6344,22 @@ a.list-group-item-danger.active:focus {
 .fuelux .radio-custom:hover:before:before {
   content: "";
 }
-.fuelux .btn-lg .radio-custom:hover:before {
+.btn-lg .fuelux .radio-custom:hover:before {
   width: 20px;
   height: 20px;
 }
-.fuelux .btn-sm .radio-custom:hover:before {
+.btn-sm .fuelux .radio-custom:hover:before {
   width: 13px;
   height: 13px;
 }
 .fuelux .radio-custom:hover:before:before {
   content: "";
 }
-.fuelux .btn-lg .radio-custom:hover:before {
+.btn-lg .fuelux .radio-custom:hover:before {
   width: 20px;
   height: 20px;
 }
-.fuelux .btn-sm .radio-custom:hover:before {
+.btn-sm .fuelux .radio-custom:hover:before {
   width: 13px;
   height: 13px;
 }
@@ -6422,11 +6387,11 @@ a.list-group-item-danger.active:focus {
 .fuelux .radio-custom:hover:before:before {
   content: "";
 }
-.fuelux .btn-lg .radio-custom:hover:before {
+.btn-lg .fuelux .radio-custom:hover:before {
   width: 20px;
   height: 20px;
 }
-.fuelux .btn-sm .radio-custom:hover:before {
+.btn-sm .fuelux .radio-custom:hover:before {
   width: 13px;
   height: 13px;
 }
@@ -6456,22 +6421,22 @@ a.list-group-item-danger.active:focus {
 .fuelux .radio-custom:hover.checked:before:before {
   content: "";
 }
-.fuelux .btn-lg .radio-custom:hover.checked:before {
+.btn-lg .fuelux .radio-custom:hover.checked:before {
   width: 20px;
   height: 20px;
 }
-.fuelux .btn-sm .radio-custom:hover.checked:before {
+.btn-sm .fuelux .radio-custom:hover.checked:before {
   width: 13px;
   height: 13px;
 }
 .fuelux .radio-custom:hover.checked:before:before {
   content: "";
 }
-.fuelux .btn-lg .radio-custom:hover.checked:before {
+.btn-lg .fuelux .radio-custom:hover.checked:before {
   width: 20px;
   height: 20px;
 }
-.fuelux .btn-sm .radio-custom:hover.checked:before {
+.btn-sm .fuelux .radio-custom:hover.checked:before {
   width: 13px;
   height: 13px;
 }
@@ -6499,11 +6464,11 @@ a.list-group-item-danger.active:focus {
 .fuelux .radio-custom:hover.checked:before:before {
   content: "";
 }
-.fuelux .btn-lg .radio-custom:hover.checked:before {
+.btn-lg .fuelux .radio-custom:hover.checked:before {
   width: 20px;
   height: 20px;
 }
-.fuelux .btn-sm .radio-custom:hover.checked:before {
+.btn-sm .fuelux .radio-custom:hover.checked:before {
   width: 13px;
   height: 13px;
 }
@@ -6536,13 +6501,13 @@ a.list-group-item-danger.active:focus {
 .fuelux .radio-custom:focus:before:before {
   content: "";
 }
-.fuelux .btn-lg .radio-custom:active:before,
-.fuelux .btn-lg .radio-custom:focus:before {
+.btn-lg .fuelux .radio-custom:active:before,
+.btn-lg .fuelux .radio-custom:focus:before {
   width: 20px;
   height: 20px;
 }
-.fuelux .btn-sm .radio-custom:active:before,
-.fuelux .btn-sm .radio-custom:focus:before {
+.btn-sm .fuelux .radio-custom:active:before,
+.btn-sm .fuelux .radio-custom:focus:before {
   width: 13px;
   height: 13px;
 }
@@ -6550,13 +6515,13 @@ a.list-group-item-danger.active:focus {
 .fuelux .radio-custom:focus:before:before {
   content: "";
 }
-.fuelux .btn-lg .radio-custom:active:before,
-.fuelux .btn-lg .radio-custom:focus:before {
+.btn-lg .fuelux .radio-custom:active:before,
+.btn-lg .fuelux .radio-custom:focus:before {
   width: 20px;
   height: 20px;
 }
-.fuelux .btn-sm .radio-custom:active:before,
-.fuelux .btn-sm .radio-custom:focus:before {
+.btn-sm .fuelux .radio-custom:active:before,
+.btn-sm .fuelux .radio-custom:focus:before {
   width: 13px;
   height: 13px;
 }
@@ -6587,13 +6552,13 @@ a.list-group-item-danger.active:focus {
 .fuelux .radio-custom:focus:before:before {
   content: "";
 }
-.fuelux .btn-lg .radio-custom:active:before,
-.fuelux .btn-lg .radio-custom:focus:before {
+.btn-lg .fuelux .radio-custom:active:before,
+.btn-lg .fuelux .radio-custom:focus:before {
   width: 20px;
   height: 20px;
 }
-.fuelux .btn-sm .radio-custom:active:before,
-.fuelux .btn-sm .radio-custom:focus:before {
+.btn-sm .fuelux .radio-custom:active:before,
+.btn-sm .fuelux .radio-custom:focus:before {
   width: 13px;
   height: 13px;
 }
@@ -6626,13 +6591,13 @@ a.list-group-item-danger.active:focus {
 .fuelux .radio-custom:focus.checked:before:before {
   content: "";
 }
-.fuelux .btn-lg .radio-custom:active.checked:before,
-.fuelux .btn-lg .radio-custom:focus.checked:before {
+.btn-lg .fuelux .radio-custom:active.checked:before,
+.btn-lg .fuelux .radio-custom:focus.checked:before {
   width: 20px;
   height: 20px;
 }
-.fuelux .btn-sm .radio-custom:active.checked:before,
-.fuelux .btn-sm .radio-custom:focus.checked:before {
+.btn-sm .fuelux .radio-custom:active.checked:before,
+.btn-sm .fuelux .radio-custom:focus.checked:before {
   width: 13px;
   height: 13px;
 }
@@ -6640,13 +6605,13 @@ a.list-group-item-danger.active:focus {
 .fuelux .radio-custom:focus.checked:before:before {
   content: "";
 }
-.fuelux .btn-lg .radio-custom:active.checked:before,
-.fuelux .btn-lg .radio-custom:focus.checked:before {
+.btn-lg .fuelux .radio-custom:active.checked:before,
+.btn-lg .fuelux .radio-custom:focus.checked:before {
   width: 20px;
   height: 20px;
 }
-.fuelux .btn-sm .radio-custom:active.checked:before,
-.fuelux .btn-sm .radio-custom:focus.checked:before {
+.btn-sm .fuelux .radio-custom:active.checked:before,
+.btn-sm .fuelux .radio-custom:focus.checked:before {
   width: 13px;
   height: 13px;
 }
@@ -6677,13 +6642,13 @@ a.list-group-item-danger.active:focus {
 .fuelux .radio-custom:focus.checked:before:before {
   content: "";
 }
-.fuelux .btn-lg .radio-custom:active.checked:before,
-.fuelux .btn-lg .radio-custom:focus.checked:before {
+.btn-lg .fuelux .radio-custom:active.checked:before,
+.btn-lg .fuelux .radio-custom:focus.checked:before {
   width: 20px;
   height: 20px;
 }
-.fuelux .btn-sm .radio-custom:active.checked:before,
-.fuelux .btn-sm .radio-custom:focus.checked:before {
+.btn-sm .fuelux .radio-custom:active.checked:before,
+.btn-sm .fuelux .radio-custom:focus.checked:before {
   width: 13px;
   height: 13px;
 }
@@ -6713,22 +6678,22 @@ a.list-group-item-danger.active:focus {
 .fuelux .radio-custom.checked:before:before {
   content: "";
 }
-.fuelux .btn-lg .radio-custom.checked:before {
+.btn-lg .fuelux .radio-custom.checked:before {
   width: 20px;
   height: 20px;
 }
-.fuelux .btn-sm .radio-custom.checked:before {
+.btn-sm .fuelux .radio-custom.checked:before {
   width: 13px;
   height: 13px;
 }
 .fuelux .radio-custom.checked:before:before {
   content: "";
 }
-.fuelux .btn-lg .radio-custom.checked:before {
+.btn-lg .fuelux .radio-custom.checked:before {
   width: 20px;
   height: 20px;
 }
-.fuelux .btn-sm .radio-custom.checked:before {
+.btn-sm .fuelux .radio-custom.checked:before {
   width: 13px;
   height: 13px;
 }
@@ -6756,11 +6721,11 @@ a.list-group-item-danger.active:focus {
 .fuelux .radio-custom.checked:before:before {
   content: "";
 }
-.fuelux .btn-lg .radio-custom.checked:before {
+.btn-lg .fuelux .radio-custom.checked:before {
   width: 20px;
   height: 20px;
 }
-.fuelux .btn-sm .radio-custom.checked:before {
+.btn-sm .fuelux .radio-custom.checked:before {
   width: 13px;
   height: 13px;
 }
@@ -6790,22 +6755,22 @@ a.list-group-item-danger.active:focus {
 .fuelux .radio-custom.disabled:before:before {
   content: "";
 }
-.fuelux .btn-lg .radio-custom.disabled:before {
+.btn-lg .fuelux .radio-custom.disabled:before {
   width: 20px;
   height: 20px;
 }
-.fuelux .btn-sm .radio-custom.disabled:before {
+.btn-sm .fuelux .radio-custom.disabled:before {
   width: 13px;
   height: 13px;
 }
 .fuelux .radio-custom.disabled:before:before {
   content: "";
 }
-.fuelux .btn-lg .radio-custom.disabled:before {
+.btn-lg .fuelux .radio-custom.disabled:before {
   width: 20px;
   height: 20px;
 }
-.fuelux .btn-sm .radio-custom.disabled:before {
+.btn-sm .fuelux .radio-custom.disabled:before {
   width: 13px;
   height: 13px;
 }
@@ -6833,11 +6798,11 @@ a.list-group-item-danger.active:focus {
 .fuelux .radio-custom.disabled:before:before {
   content: "";
 }
-.fuelux .btn-lg .radio-custom.disabled:before {
+.btn-lg .fuelux .radio-custom.disabled:before {
   width: 20px;
   height: 20px;
 }
-.fuelux .btn-sm .radio-custom.disabled:before {
+.btn-sm .fuelux .radio-custom.disabled:before {
   width: 13px;
   height: 13px;
 }
@@ -6867,22 +6832,22 @@ a.list-group-item-danger.active:focus {
 .fuelux .radio-custom.disabled.checked:before:before {
   content: "";
 }
-.fuelux .btn-lg .radio-custom.disabled.checked:before {
+.btn-lg .fuelux .radio-custom.disabled.checked:before {
   width: 20px;
   height: 20px;
 }
-.fuelux .btn-sm .radio-custom.disabled.checked:before {
+.btn-sm .fuelux .radio-custom.disabled.checked:before {
   width: 13px;
   height: 13px;
 }
 .fuelux .radio-custom.disabled.checked:before:before {
   content: "";
 }
-.fuelux .btn-lg .radio-custom.disabled.checked:before {
+.btn-lg .fuelux .radio-custom.disabled.checked:before {
   width: 20px;
   height: 20px;
 }
-.fuelux .btn-sm .radio-custom.disabled.checked:before {
+.btn-sm .fuelux .radio-custom.disabled.checked:before {
   width: 13px;
   height: 13px;
 }
@@ -6910,11 +6875,11 @@ a.list-group-item-danger.active:focus {
 .fuelux .radio-custom.disabled.checked:before:before {
   content: "";
 }
-.fuelux .btn-lg .radio-custom.disabled.checked:before {
+.btn-lg .fuelux .radio-custom.disabled.checked:before {
   width: 20px;
   height: 20px;
 }
-.fuelux .btn-sm .radio-custom.disabled.checked:before {
+.btn-sm .fuelux .radio-custom.disabled.checked:before {
   width: 13px;
   height: 13px;
 }
@@ -7020,9 +6985,6 @@ a.list-group-item-danger.active:focus {
 .fuelux .repeater-pagination .repeater-primaryPaging {
   background: #fff;
   border-radius: 4px;
-}
-.fuelux .repeater-pagination .repeater-secondaryPaging {
-  width: 37px;
 }
 .fuelux .repeater-search {
   margin-top: 2px;
@@ -7181,7 +7143,6 @@ a.list-group-item-danger.active:focus {
 .fuelux .spinbox {
   border: solid 1px #bbbbbb;
   border-radius: 4px;
-  background: #fff;
 }
 .fuelux .spinbox .form-control {
   border: none;
@@ -7365,22 +7326,22 @@ a.list-group-item-danger.active:focus {
 .fuelux .tree .icon-caret:before {
   content: "";
 }
-.fuelux .btn-lg .tree .icon-caret {
+.btn-lg .fuelux .tree .icon-caret {
   width: 20px;
   height: 20px;
 }
-.fuelux .btn-sm .tree .icon-caret {
+.btn-sm .fuelux .tree .icon-caret {
   width: 13px;
   height: 13px;
 }
 .fuelux .tree .icon-caret:before {
   content: "";
 }
-.fuelux .btn-lg .tree .icon-caret {
+.btn-lg .fuelux .tree .icon-caret {
   width: 20px;
   height: 20px;
 }
-.fuelux .btn-sm .tree .icon-caret {
+.btn-sm .fuelux .tree .icon-caret {
   width: 13px;
   height: 13px;
 }
@@ -7403,11 +7364,11 @@ a.list-group-item-danger.active:focus {
 .fuelux .tree .tree-branch-header > .tree-branch-name:hover > .icon-caret:before {
   content: "";
 }
-.fuelux .btn-lg .tree .tree-branch-header > .tree-branch-name:hover > .icon-caret {
+.btn-lg .fuelux .tree .tree-branch-header > .tree-branch-name:hover > .icon-caret {
   width: 20px;
   height: 20px;
 }
-.fuelux .btn-sm .tree .tree-branch-header > .tree-branch-name:hover > .icon-caret {
+.btn-sm .fuelux .tree .tree-branch-header > .tree-branch-name:hover > .icon-caret {
   width: 13px;
   height: 13px;
 }
@@ -7426,11 +7387,11 @@ a.list-group-item-danger.active:focus {
 .fuelux .tree .icon-folder:before {
   content: "";
 }
-.fuelux .btn-lg .tree .icon-folder {
+.btn-lg .fuelux .tree .icon-folder {
   width: 20px;
   height: 20px;
 }
-.fuelux .btn-sm .tree .icon-folder {
+.btn-sm .fuelux .tree .icon-folder {
   width: 13px;
   height: 13px;
 }
@@ -7480,13 +7441,13 @@ a.list-group-item-danger.active:focus {
 .fuelux .tree .tree-item-name:hover .tree-label .icon-item:before {
   content: "";
 }
-.fuelux .btn-lg .tree .tree-item-name:hover .icon-item,
-.fuelux .btn-lg .tree .tree-item-name:hover .tree-label .icon-item {
+.btn-lg .fuelux .tree .tree-item-name:hover .icon-item,
+.btn-lg .fuelux .tree .tree-item-name:hover .tree-label .icon-item {
   width: 20px;
   height: 20px;
 }
-.fuelux .btn-sm .tree .tree-item-name:hover .icon-item,
-.fuelux .btn-sm .tree .tree-item-name:hover .tree-label .icon-item {
+.btn-sm .fuelux .tree .tree-item-name:hover .icon-item,
+.btn-sm .fuelux .tree .tree-item-name:hover .tree-label .icon-item {
   width: 13px;
   height: 13px;
 }
@@ -7510,22 +7471,22 @@ a.list-group-item-danger.active:focus {
 .fuelux .tree .icon-item:before {
   content: "";
 }
-.fuelux .btn-lg .tree .icon-item {
+.btn-lg .fuelux .tree .icon-item {
   width: 20px;
   height: 20px;
 }
-.fuelux .btn-sm .tree .icon-item {
+.btn-sm .fuelux .tree .icon-item {
   width: 13px;
   height: 13px;
 }
 .fuelux .tree .icon-item:before {
   content: "";
 }
-.fuelux .btn-lg .tree .icon-item {
+.btn-lg .fuelux .tree .icon-item {
   width: 20px;
   height: 20px;
 }
-.fuelux .btn-sm .tree .icon-item {
+.btn-sm .fuelux .tree .icon-item {
   width: 13px;
   height: 13px;
 }
@@ -7579,33 +7540,33 @@ a.list-group-item-danger.active:focus {
 .fuelux .tree .tree-item.tree-selected .icon-item:before {
   content: "";
 }
-.fuelux .btn-lg .tree .tree-item.tree-selected .icon-item {
+.btn-lg .fuelux .tree .tree-item.tree-selected .icon-item {
   width: 20px;
   height: 20px;
 }
-.fuelux .btn-sm .tree .tree-item.tree-selected .icon-item {
+.btn-sm .fuelux .tree .tree-item.tree-selected .icon-item {
   width: 13px;
   height: 13px;
 }
 .fuelux .tree .tree-item.tree-selected .icon-item:before {
   content: "";
 }
-.fuelux .btn-lg .tree .tree-item.tree-selected .icon-item {
+.btn-lg .fuelux .tree .tree-item.tree-selected .icon-item {
   width: 20px;
   height: 20px;
 }
-.fuelux .btn-sm .tree .tree-item.tree-selected .icon-item {
+.btn-sm .fuelux .tree .tree-item.tree-selected .icon-item {
   width: 13px;
   height: 13px;
 }
 .fuelux .tree .tree-item.tree-selected .icon-item:before {
   content: "";
 }
-.fuelux .btn-lg .tree .tree-item.tree-selected .icon-item {
+.btn-lg .fuelux .tree .tree-item.tree-selected .icon-item {
   width: 20px;
   height: 20px;
 }
-.fuelux .btn-sm .tree .tree-item.tree-selected .icon-item {
+.btn-sm .fuelux .tree .tree-item.tree-selected .icon-item {
   width: 13px;
   height: 13px;
 }
@@ -7625,11 +7586,11 @@ a.list-group-item-danger.active:focus {
 .fuelux .tree .tree-open > .tree-branch-header .icon-caret:before {
   content: "";
 }
-.fuelux .btn-lg .tree .tree-open > .tree-branch-header .icon-caret {
+.btn-lg .fuelux .tree .tree-open > .tree-branch-header .icon-caret {
   width: 20px;
   height: 20px;
 }
-.fuelux .btn-sm .tree .tree-open > .tree-branch-header .icon-caret {
+.btn-sm .fuelux .tree .tree-open > .tree-branch-header .icon-caret {
   width: 13px;
   height: 13px;
 }
@@ -7648,11 +7609,11 @@ a.list-group-item-danger.active:focus {
 .fuelux .tree .tree-open > .tree-branch-header > .tree-branch-name:hover > .icon-caret:before {
   content: "";
 }
-.fuelux .btn-lg .tree .tree-open > .tree-branch-header > .tree-branch-name:hover > .icon-caret {
+.btn-lg .fuelux .tree .tree-open > .tree-branch-header > .tree-branch-name:hover > .icon-caret {
   width: 20px;
   height: 20px;
 }
-.fuelux .btn-sm .tree .tree-open > .tree-branch-header > .tree-branch-name:hover > .icon-caret {
+.btn-sm .fuelux .tree .tree-open > .tree-branch-header > .tree-branch-name:hover > .icon-caret {
   width: 13px;
   height: 13px;
 }
