@@ -225,6 +225,15 @@ module.exports = function (grunt) {
 
 
 		less: {
+			'fuelux-override': {
+				options: {
+					strictMath: true,
+					sourceMap: false
+				},
+				files: {
+					'less/fuelux-override-no-namespace.less': 'less/fuelux-override.less'
+				}
+			},
 			'fuelux-mctheme': {
 				options: {
 					strictMath: true,
@@ -234,6 +243,7 @@ module.exports = function (grunt) {
 					sourceMapFilename: 'dist/css/<%= pkg.name %>.css.map'
 				},
 				files: {
+					'less/fuelux-override-no-namespace.less': 'less/fuelux-override.less', // Pre-process the fuelux overrides without a .fuelux namespace wrapper, the file that gets created is included by less/fuelux-mctheme.less
 					'dist/css/fuelux-mctheme.css': 'less/fuelux-mctheme.less'
 				}
 			},
@@ -311,9 +321,10 @@ module.exports = function (grunt) {
 				}
 			}
 		},
+
 		watch: {
 			full: {
-				files: ['less/**'],
+				files: ['Gruntfile.js', 'examples/**','less/**'],
 				options: {
 					livereload: isLivereloadEnabled
 				},
@@ -332,8 +343,22 @@ module.exports = function (grunt) {
 	// Icon creation task
 	grunt.registerTask('iconify', ['svgmin', 'grunticon']);
 
+
+	// Temporary LESS file deletion task
+	grunt.registerTask('delete-temp-less-file', 'Delete the temporary LESS file created during the build process', function() {
+		var options = {
+			force: true
+		};
+		grunt.file.delete('less/fuelux-mctheme-no-namespace.less', options);
+	});
+
+
+
 	// CSS distribution task
-	grunt.registerTask('distcss', ['less:fuelux-mctheme', 'replace:imgpaths', 'less:minify', 'usebanner']);
+	grunt.registerTask('distcss', ['less:fuelux-mctheme', 'delete-temp-less-file', 'replace:imgpaths', 'less:minify', 'usebanner']);
+
+
+
 
 	// ZIP distribution task
 	grunt.registerTask('distzip', ['copy:zipsrc', 'compress', 'clean:zipsrc']);
