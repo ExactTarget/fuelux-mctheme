@@ -343,14 +343,14 @@ module.exports = function (grunt) {
 		},
 		watch: {
 			full: {
-				files: ['Gruntfile.js', 'examples/**','less/**'],
+				files: ['Gruntfile.js', 'examples/**','less/**', '!less/fuelux-override-no-namespace.less'],
 				options: {
 					livereload: isLivereloadEnabled
 				},
 				tasks: ['distcss']
 			},
 			dev: {
-				files: ['less/**'],
+				files: ['less/**', '!less/fuelux-override-no-namespace.less'],
 				options: {
 					livereload: isLivereloadEnabled
 				},
