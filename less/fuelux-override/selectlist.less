@@ -9,10 +9,7 @@
 			background: linear-gradient(#FFFFFF, @gray93);
 			border: 1px solid #bbb;
 			padding: @mctheme-selectlist-vertical-padding @mctheme-selectlist-horizontal-padding;
-			/* TODO figure out why the less compiler in mctheme doesn't like this math */
-			/* padding-right: 2 * @mctheme-selectlist-horizontal-padding + @mctheme-selectlist-caret-width; */
-			padding-right: 14px;
-
+			padding-right: unit((2 * @mctheme-selectlist-horizontal-padding + @mctheme-selectlist-caret-width), px);
 			.caret {
 				color: #656565;
 				right: @mctheme-selectlist-horizontal-padding;
