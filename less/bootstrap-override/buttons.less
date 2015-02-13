@@ -241,10 +241,10 @@
 // Danger and error appear as red
 .btn-danger {
 	.button-variant(@btn-danger-color;
-									lighten(@btn-danger-bg, 18%); @btn-danger-bg;
-									lighten(@btn-danger-bg, 20%); lighten(@btn-danger-bg, 5%);
-									darken(@btn-danger-bg, 10%); darken(@btn-danger-bg, 2%);
-									lighten(@btn-danger-bg, 30%); lighten(@btn-danger-bg, 40%));
+									@brand-danger-medium; @brand-danger-dark;
+									lighten(@brand-danger-medium, 5%); lighten(@brand-danger-dark, 5%);
+									darken(@brand-danger-medium, 10%); darken(@brand-danger-dark, 2%);
+									lighten(@brand-danger-medium, 30%); lighten(@brand-danger-dark, 40%));
 
 	&.dropdown-toggle .caret {
 		color: #fff;
