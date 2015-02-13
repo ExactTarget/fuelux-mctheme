@@ -1,1 +1,1 @@
-web: node www/server.js
+web: grunt dist && node www/server.js
