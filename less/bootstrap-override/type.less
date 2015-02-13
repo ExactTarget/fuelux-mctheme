@@ -5,6 +5,16 @@ body{
 	line-height: @line-height-base;
 }
 
+a {
+	color: @text-primary;
+
+	&:hover, &:active {
+		text-decoration: underline;
+		color: @text-primary;
+		// color: lighten(@text-primary, 10%);
+	}
+}
+
 .title-form, .title-header-page, .title-table {
 	line-height: @line-height-base;
 

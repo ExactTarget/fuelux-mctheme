@@ -17,47 +17,6 @@
 	<script src="../../bower_components/jquery/dist/jquery.js" type="text/javascript"></script>
 	<script src="../../bower_components/bootstrap/dist/js/bootstrap.js" type="text/javascript"></script>
 
-<style type="text/css">
-		.active a {
-			font-weight: bold;
-		}
-	</style>
-	<script type="text/javascript">
-		$(function () {
-			// Tooltip and popover demos
-			$('.tooltip-demo').tooltip({
-				selector: '[data-toggle="tooltip"]',
-				container: 'body'
-			});
-			$('.popover-demo').popover({
-				selector: '[data-toggle="popover"]',
-				container: 'body'
-			});
-
-			// Demos within modals
-			$('.tooltip-test').tooltip();
-			$('.popover-test').popover();
-
-			// Popover button demo
-			$('.popover-button [data-toggle="popover"]').popover();
-
-			// Button state demo
-			$('button[data-loading-text]:first').click(function () {
-				var btn = $(this);
-				btn.button('loading');
-				setTimeout(function () {
-					btn.button('reset');
-				}, 3000);
-			});
-
-
-			$(".nav a").on("click", function () {
-				$(".nav").find(".active").removeClass("active");
-				$(this).parent().addClass("active");
-			});
-		});
-	</script>
-
 </head>
 <body>
 
