@@ -27,43 +27,6 @@
 			font-weight: bold;
 		}
 	</style>
-	<script type="text/javascript">
-		$(function () {
-			// Tooltip and popover demos
-			$('.tooltip-demo').tooltip({
-				selector: '[data-toggle="tooltip"]',
-				container: 'body'
-			});
-			$('.popover-demo').popover({
-				selector: '[data-toggle="popover"]',
-				container: 'body'
-			});
-
-			// Demos within modals
-			$('.tooltip-test').tooltip();
-			$('.popover-test').popover();
-
-			// Popover button demo
-			$('.popover-button [data-toggle="popover"]').popover();
-
-			// Button state demo
-			$('button[data-loading-text]:first').click(function () {
-				var btn = $(this);
-				btn.button('loading');
-				setTimeout(function () {
-					btn.button('reset');
-				}, 3000);
-			});
-
-
-			$(".nav a").on("click", function () {
-				$(".nav").find(".active").removeClass("active");
-				$(this).parent().addClass("active");
-			});
-		});
-	</script>
-
-
 
 	<script src="../../bower_components/requirejs/require.js"></script>
 	<script type="text/javascript">
@@ -89,7 +52,46 @@
 				}
 			});
 		})();
-		require(['jquery', 'main'], function($){ });
+		require(['jquery', 'main'], function($){
+				// Tooltip and popover demos
+				$('.tooltip-demo').tooltip({
+					selector: '[data-toggle="tooltip"]',
+					container: 'body'
+				});
+				$('.popover-demo').popover({
+					selector: '[data-toggle="popover"]',
+					container: 'body'
+				});
+
+				// Demos within modals
+				$('.tooltip-test').tooltip();
+				$('.popover-test').popover();
+
+				// Popover button demo
+				$('.popover-button [data-toggle="popover"]').popover();
+
+				// Button state demo
+				$('button[data-loading-text]:first').click(function () {
+					var btn = $(this);
+					btn.button('loading');
+					setTimeout(function () {
+						btn.button('reset');
+					}, 3000);
+				});
+
+
+				$(".nav a").on("click", function () {
+					$(".nav").find(".active").removeClass("active");
+					$(this).parent().addClass("active");
+				});
+
+				//programmatically injecting this is so much easier than writing the html by hand 376 times...
+				$('h1[id], h2[id], h3[id], h4[id], h5[id], h6[id], dt[id]').each(function(i){
+					console.log($(this));
+					$(this).prepend(['<a class="header-anchor" href="#', this.id, '"><span class="glyphicon glyphicon-link"></span></a>'].join(''));
+				});
+
+		 });
 	</script>
 </head>
 <body>
@@ -4445,19 +4447,6 @@
 			</div>
 		</div>
 	</div>
-
-
-<script>
-
-	$(function() {
-		//programmatically injecting this is so much easier than writing the html by hand 376 times...
-		$('h1[id], h2[id], h3[id], h4[id], h5[id], h6[id], dt[id]').each(function(i){
-			console.log($(this));
-			$(this).prepend(['<a class="header-anchor" href="#', this.id, '"><span class="glyphicon glyphicon-link"></span></a>'].join(''));
-		});
-	};
-</script>
-
 
 </body>
 </html>
