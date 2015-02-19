@@ -4,7 +4,7 @@
 	padding: 0;
 
 	&.bottom > .arrow {
-		border-bottom-color: #9dc9f1;
+		border-bottom-color: lighten(@blue-steel, 5%);
 
 		&:after {
 			display: none;
@@ -41,9 +41,9 @@
 	}
 
 	&-title {
-		background-color: #7fb9ec;
-		background-image: -webkit-linear-gradient(top, #9dc9f1, #60a8e7);
-		background-image: linear-gradient(to bottom, #9dc9f1, #60a8e7);
+		background-color: @blue-steel;
+		background-image: -webkit-linear-gradient(top, lighten(@blue-steel, 5%), @blue-steel);
+		background-image: linear-gradient(to bottom, lighten(@blue-steel, 5%), @blue-steel);
 		border-bottom: 0;
 		color: #fff;
 		font-size: 12px;
