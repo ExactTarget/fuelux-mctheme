@@ -1,7 +1,8 @@
 /*!
- * Marketing Cloud Theme v1.4.0 
- * Copyright 2015 ExactTarget
- * Licensed under MIT (https://github.com/ExactTarget/fuelux-mctheme/blob/master/COPYING)
+ * Marketing Cloud Theme EDGE - Built 2015/03/03, 5:16:15 PM 
+ * Previous release: v1.4.0 
+ * Copyright 2012-2015 ExactTarget
+ * Licensed under the MIT license (https://github.com/ExactTarget/fuelux-mctheme/blob/master/COPYING)
  */
 
 .fuelux-icon {
@@ -5262,7 +5263,7 @@ a.list-group-item-danger.active:focus {
   padding: 0;
 }
 .tooltip .tooltip-inner {
-  background: transparent !important;
+  background: transparent;
   color: #000000;
 }
 .tooltip.left {
@@ -5311,6 +5312,31 @@ a.list-group-item-danger.active:focus {
 .tooltip.bottom .tooltip-arrow {
   border-bottom-color: #fcfbda;
   top: -5px;
+}
+.has-error + .tooltip,
+.has-error .tooltip {
+  background: linear-gradient(#ee6767, #e64141);
+}
+.has-error + .tooltip .tooltip-inner,
+.has-error .tooltip .tooltip-inner {
+  color: #fff;
+  font-size: 11px;
+}
+.has-error + .tooltip.top .tooltip-arrow,
+.has-error .tooltip.top .tooltip-arrow {
+  border-top-color: #EE5457;
+}
+.has-error + .tooltip.right .tooltip-arrow,
+.has-error .tooltip.right .tooltip-arrow {
+  border-right-color: #EE5457;
+}
+.has-error + .tooltip.bottom .tooltip-arrow,
+.has-error .tooltip.bottom .tooltip-arrow {
+  border-bottom-color: #EE5457;
+}
+.has-error + .tooltip.left .tooltip-arrow,
+.has-error .tooltip.left .tooltip-arrow {
+  border-left-color: #EE5457;
 }
 .popover {
   background: #f6f6f6;
