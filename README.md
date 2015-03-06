@@ -78,14 +78,12 @@ The Marketing Cloud Theme is dependent upon [Fuel UX 3](http://github.com/ExactT
 A download of FuelUX provides the following directories and files, which are grouped according to file type:
 ```
 fuelux-mctheme/
-├── css/
-│   ├── fuelux-mctheme.css
-│   ├── fuelux-mctheme.min.css
-└── img/
-    ├── spritesheet.png
-    └── spritesheet-2x.png
+└── css/
+    ├── fuelux-mctheme.css
+    └── fuelux-mctheme.min.css
 
 ```
+SVGs of theme icons are base64-encoded into the CSS files above.
 
 ## Bugs and feature requests
 
