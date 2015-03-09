@@ -2,20 +2,24 @@
 @import (reference) "variables.less";
 @import (reference) "mixins.less";
 @import (reference) "colors.less";
-@import (reference) "icons.less";
 @import (reference) "utility.less";
 @import (reference) "help.less";
 
 
 @import (reference) "bootstrap-override.less";
 
+@import "icons.less";
 
 // Override Fuel UX Core variables, mixins
 @import "fuelux-override/variables.less";
 @import "fuelux-override/mixins.less";
 
 // Fuel UX controls
-@import "fuelux-override/checkbox.less";
+@import "fuelux-override/forms.less"; // forms.less contains code shared between form elements.
+@import "fuelux-override/checkbox.less"; // Checkbox styles that will be deprecated.
+@import "fuelux-override/checkbox-no-js.less"; // Checkbox styles that are not dependant upon custom javascript controls.
+@import "fuelux-override/radio.less"; // Radio styles that will be deprecated.
+@import "fuelux-override/radio-no-js.less";  // Radio styles that are not dependant upon custom javascript controls.
 @import "fuelux-override/combobox.less";
 @import "fuelux-override/datepicker.less";
 //@import "infinite-scroll.less";
@@ -23,7 +27,6 @@
 //@import "misc.less";
 @import "fuelux-override/pillbox.less";
 @import "fuelux-override/placard.less";
-@import "fuelux-override/radio.less";
 @import "fuelux-override/repeater.less";
 @import "fuelux-override/repeater-list.less";
 @import "fuelux-override/repeater-thumbnail.less";

@@ -1,0 +1,83 @@
+.radio, .radio-inline {
+	
+	input[type="radio"]:not(.sr-only) {
+
+		& ~ label {
+			&:before {
+				border-radius: 8px;
+				z-index: 1;
+				background: none;
+				border-color: none;
+				.fuelux-icon;
+				.fuelux-icon-radio-button;
+				.radio-button-element-sizes;
+				-webkit-appearance: inherit;
+				border: 0px solid transparent;
+				border-radius: 0;
+				content: "" !important;
+				padding: unit((@radio-button-width-value / 2), px);
+				top: 2px;
+			}
+		}
+
+		&:hover {
+
+			& ~ label {
+				&:before {
+					.fuelux-icon-radio-button-hover;
+					.radio-button-element-sizes;
+				}
+			}
+		}
+
+		&:checked {
+			& ~ label {
+				&:before {
+					.fuelux-icon-radio-button-checked;
+					.radio-button-element-sizes;
+				}
+			}
+		}
+
+		&:checked:hover {
+			& ~ label {
+				&:before {
+					.fuelux-icon-radio-button-checked-hover;
+					.radio-button-element-sizes;
+				}
+			}
+		}
+
+
+
+
+		/* for keyboard tabbing */
+		&:hover ~ label, &:active ~ label, &:focus ~ label {
+		
+			&:before {
+				outline-color: transparent;
+				outline-offset: 0;
+				outline-style: none;
+				outline-width: 0;
+			}
+
+		}
+		/* for keyboard tabbing */
+		&:active:hover ~ label, &:focus:hover ~ label, &:focus:hover ~ label, &:checked:hover ~ label {
+			&:before {
+				outline-color: none;
+				outline-offset: 0;
+				outline-style: none;
+				outline-width: 0;
+				cursor: default;
+			}
+
+			&, &:hover {
+				color: @text-color;
+				cursor: default;
+			}
+		}
+
+	}
+}
+

@@ -218,7 +218,31 @@ module.exports = function (grunt) {
 
 
 		less: {
-			'fuelux-mctheme': {
+			pre: {
+				options: {
+					strictMath: true,
+					sourceMap: true,
+					outputSourceFiles: true,
+					sourceMapURL: '<%= pkg.name %>-fuelux-mctheme-no-namespace.css.map',
+					sourceMapFilename: 'dist/css/<%= pkg.name %>-fuelux-mctheme-no-namespace.css.map'
+				},
+				files: {
+					'less/fuelux-mctheme-no-namespace.less': 'less/fuelux-mctheme.less'
+				}
+			},
+			dev: {
+				options: {
+					strictMath: true,
+					sourceMap: true,
+					outputSourceFiles: true,
+					sourceMapURL: '<%= pkg.name %>-dev.css.map',
+					sourceMapFilename: 'dist/css/<%= pkg.name %>-dev.css.map'
+				},
+				files: {
+					'dist/css/fuelux-mctheme-dev.css': 'less/fuelux-mctheme-namespace.less'
+				}
+			},
+			dist: {
 				options: {
 					strictMath: true,
 					sourceMap: true,
@@ -227,32 +251,21 @@ module.exports = function (grunt) {
 					sourceMapFilename: 'dist/css/<%= pkg.name %>.css.map'
 				},
 				files: {
-					'less/fuelux-override-no-namespace.less': 'less/fuelux-override.less', // Pre-process the fuelux overrides without a .fuelux namespace wrapper, the file that gets created is included by less/fuelux-mctheme.less
-					'dist/css/fuelux-mctheme.css': 'less/fuelux-mctheme.less'
+					'dist/css/fuelux-mctheme.css': 'less/fuelux-mctheme-namespace.less'
 				}
 			},
-			'fuelux-mctheme-dev': {
-				options: {
-					strictMath: true,
-					sourceMap: true,
-					outputSourceFiles: true,
-					sourceMapURL: '<%= pkg.name %>.css.map',
-					sourceMapFilename: 'dist-dev/css/<%= pkg.name %>.css.map'
-				},
-				files: {
-					'less/fuelux-override-no-namespace.less': 'less/fuelux-override.less', // Pre-process the fuelux overrides without a .fuelux namespace wrapper, the file that gets created is included by less/fuelux-mctheme.less
-					'dist-dev/css/fuelux-mctheme.css': 'less/fuelux-mctheme.less'
-				}
-			},
+
 			minify: {
 				options: {
 					cleancss: true,
+					compress: true,
 					report: 'min'
 				},
 				files: {
-					'dist/css/fuelux-mctheme.min.css': 'dist/css/fuelux-mctheme.css'
+					'dist/css/<%= pkg.name %>.min.css': 'dist/css/<%= pkg.name %>.css'
 				}
 			}
+
 		},
 		replace: {
 			readme: {
@@ -343,7 +356,7 @@ module.exports = function (grunt) {
 				tasks: ['distcss']
 			},
 			dev: {
-				files: ['less/**', '!less/fuelux-override-no-namespace.less'],
+				files: ['Gruntfile.js', 'less/**', 'index.html', 'index-dev.html', '*-dev.html', 'dev.html', '!less/fuelux-mctheme-no-namespace.less'],
 				options: {
 					livereload: isLivereloadEnabled
 				},
@@ -373,10 +386,10 @@ module.exports = function (grunt) {
 
 
 	// CSS distribution task
-	grunt.registerTask('distcss', ['less:fuelux-mctheme', 'delete-temp-less-file', 'replace:imgpaths', 'less:minify', 'usebanner']);
+	grunt.registerTask('distcss', 'Compile LESS into the dist CSS', ['less:pre', 'less:dist', 'delete-temp-less-file', 'replace:imgpaths', 'less:minify', 'usebanner']);
 
 	// CSS dev distribution task
-	grunt.registerTask('distcssdev', ['less:fuelux-mctheme-dev', 'delete-temp-less-file', 'replace:imgpathsdev']);
+	grunt.registerTask('distcssdev', 'Compile LESS into the dev CSS', ['less:pre', 'less:dev', 'delete-temp-less-file']);
 
 	// ZIP distribution task
 	grunt.registerTask('distzip', ['copy:zipsrc', 'compress', 'clean:zipsrc']);

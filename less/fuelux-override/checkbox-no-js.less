@@ -1,0 +1,90 @@
+.checkbox-element-sizes() {
+	width: @checkbox-width;
+	height: @checkbox-height;
+}
+
+
+.checkbox, .checkbox-inline {
+	
+	input[type="checkbox"]:not(.sr-only) {
+		& ~ label {
+			&:before {
+				border-radius: 4px;
+				z-index: 1;
+
+				background: none;
+				border-color: none;
+				.fuelux-icon;
+				.fuelux-icon-checkbox;
+				.checkbox-element-sizes;
+				-webkit-appearance: inherit;
+				border: 0px solid transparent;
+				border-radius: 0;
+				content: "" !important;
+				padding: 0;
+				position: relative;
+				top: 2px;
+			}
+		}
+
+		&:hover {
+			& ~ label {
+				&:before {
+					.fuelux-icon-checkbox-hover;
+					.checkbox-element-sizes;
+				}
+			}
+		}
+		&:checked {
+			& ~ label {
+				&:before {
+					background: none;
+					border-color: none;
+					-webkit-appearance: inherit;
+					border: 0px solid transparent;
+					border-radius: 0;
+					content: "" !important;
+					padding: 0;
+					.fuelux-icon-checkbox-checked;
+					.checkbox-element-sizes;
+				}
+			}
+		}
+		&:checked:hover {
+			& ~ label {
+				&:before {
+					background: none;
+					border-color: none;
+					-webkit-appearance: inherit;
+					border: 0px solid transparent;
+					border-radius: 0;
+					content: "" !important;
+					padding: 0;
+					.fuelux-icon-checkbox-checked-hover;
+					.checkbox-element-sizes;
+				}
+			}
+		}
+	}
+
+	&.hightlight {
+		& + .checkbox-inline.highlight {
+			margin-left: -14px;
+			&.checkbox-custom {
+				margin-left: 0px;
+			}
+		}
+	}
+}
+
+.checkbox {
+
+	&.highlight {
+		input:not(.sr-only) {
+			& ~ label {
+				left: -4px;
+			}
+		}
+	}
+
+}
