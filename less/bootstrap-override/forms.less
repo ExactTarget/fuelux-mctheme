@@ -294,6 +294,10 @@ input[type="checkbox"] {
 }
 .radio-inline + .radio-inline  {
 	margin-top: 0;
+	// margin-left: 0px; // undo bootstrap's spacing out of consecutive inline controls because our padding already does it.
+}
+.radio-custom.radio-inline + .radio-custom.radio-inline  {
+	margin-top: 0;
 	margin-left: 0px; // undo bootstrap's spacing out of consecutive inline controls because our padding already does it.
 }
 
