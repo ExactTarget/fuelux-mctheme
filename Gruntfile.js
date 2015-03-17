@@ -381,7 +381,7 @@ module.exports = function (grunt) {
 		var options = {
 			force: true
 		};
-		grunt.file.delete('less/fuelux-override-no-namespace.less', options);
+		grunt.file.delete('less/fuelux-mctheme-no-namespace.less', options);
 	});
 
 
