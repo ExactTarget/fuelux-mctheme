@@ -1,14 +1,13 @@
 
 .tree-caret-sizes() {
-	width: @tree-caret-size;
-	height: @tree-caret-size;
-	top: 2px;
+	width: 1px;//this fixes weird FF/Chrome issues
+	height: 7px;//this fixes weird FF/Chrome issues
+	top: 3px;
 
 }
 .tree-caret() {
 	background: none;
 	border-color: none;
-	top: 0px;
 	left: 0px;
 	.fuelux-icon;
 	.fuelux-icon-caret-right;
@@ -17,11 +16,9 @@
 	border: 0px solid transparent;
 	border-radius: 0;
 	content: "" !important;
-	padding: 0;
-	padding-left: 0;
-	padding-right: 0;
-	background-position-x: 0px;
-	background-position-y: 0px;
+	padding: 12px 0 0;//has to be here instead of .tree-caret-sizes() because otherwise folder selection in FF messes up
+	background-position: 0px;
+	box-sizing: border-box;
 }
 
 
@@ -124,7 +121,6 @@
 	}
 
 	.icon-item {
-		margin-right: 4px;
 		margin-right: 4px;
 		.fuelux-icon;
 		.fuelux-icon-dot;
