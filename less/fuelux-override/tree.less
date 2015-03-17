@@ -3,7 +3,6 @@
 	width: 1px;//this fixes weird FF/Chrome issues
 	height: 7px;//this fixes weird FF/Chrome issues
 	top: 3px;
-	left: -6px;
 
 }
 .tree-caret() {
@@ -32,27 +31,27 @@
 	overflow-x: visible;
 	overflow-y: visible;
 
-	button:focus .tree-label {
-		color: inherit;
-	}
+	// button:focus .tree-label {
+	// 	color: inherit;
+	// }
 
 	.tree-label {
 		line-height: 24px;
 	}
 
 	li {
-		margin-top: 0;
-		margin-bottom: 0;
-		margin: 0 5px;
+		margin: 2px 5px 2px 5px;
 	}
 
 	// ICONS - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 	.icon-caret {
 		.tree-caret;
 		.tree-caret-sizes;
+		left: -6px;
 	}
 
 	&.tree-folder-select .icon-caret {
+		left: -3px;
 	}
 
 	.icon-caret:before, &.tree-folder-select .tree-branch-header .icon-caret:before {
@@ -80,13 +79,13 @@
 	.tree-branch.tree-selected > .tree-branch-header .tree-branch-name,
 	&.tree-folder-select .tree-branch.tree-selected > .tree-branch-header .tree-branch-name,
 	.tree-item.tree-selected > .tree-item-name {
-		background: transparent;
-		color: #385b6b;
+		background: @blue-slate;
+		color: @gray-slate;
 	}
 
 	.tree-selected > .tree-branch-header,
 	.tree-item.tree-selected {
-		background: @blue-slate;
+		// background: @blue-slate;
 	}
 
 	// text and icon alignment - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -102,8 +101,8 @@
 
 	.tree-item-name, .tree-branch-name {
 		line-height: 16px;
-		padding: 0px 0 0px 2px;
-		background: transparent;
+		padding: 0px 5px 0px 5px;
+		// background: transparent;
 	}
 
 	.tree-item-name:hover,
@@ -129,7 +128,6 @@
 		top: 3px;
 		width: 13px;
 		height: 13px;
-		margin-right:4px;
 	}
 
 	.icon-item:before {
@@ -146,7 +144,7 @@
 	.tree-branch {
 
 		.tree-branch-children {
-			margin-left: 18px;
+			margin-left: 17px;
 		}
 	}
 

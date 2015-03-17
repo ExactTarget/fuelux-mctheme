@@ -33,3 +33,7 @@
 #myPlacard1, #myPlacard2, #myPlacard3 {
 	width: 300px;
 }
+
+.thin-box .tree {
+	overflow: auto;
+}
