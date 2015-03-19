@@ -1,22 +1,23 @@
+/* TODO use fuelux variables for numbers bellow if possible */
+@mctheme-selectlist-vertical-padding: 4px;
+@mctheme-selectlist-horizontal-padding: 5px;
+@mctheme-selectlist-caret-width: 4px;
+
 .selectlist {
 	.btn {
 		&.dropdown-toggle {
 			background: linear-gradient(#FFFFFF, @gray93);
 			border: 1px solid #bbb;
-
+			padding: @mctheme-selectlist-vertical-padding @mctheme-selectlist-horizontal-padding;
+			padding-right: unit((2 * @mctheme-selectlist-horizontal-padding + @mctheme-selectlist-caret-width), px);
 			.caret {
 				color: #656565;
+				right: @mctheme-selectlist-horizontal-padding;
 			}
 
 			.selected-label {
-				padding-right: 4px;
+				color: #656565;
 			}
 		}
-	}
-	&[data-resize="auto"] {
-		.selected-label {
-			padding-right: 10px;
-		}
-
 	}
 }

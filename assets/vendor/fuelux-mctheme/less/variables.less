@@ -1,0 +1,28 @@
+// FORMS
+@form-elements-padding-value: 15;
+@form-elements-padding: unit(@form-elements-padding-value, px);
+
+
+// CHECKBOX
+@checkbox-width-value: 15;
+@checkbox-width: unit(@checkbox-width-value, px);
+@checkbox-height: unit( @checkbox-width-value, px );
+@checkbox-padding-left: unit( ((@checkbox-width-value + ((@checkbox-width-value / 3) * 1))), px );
+
+
+// RADIO
+@radio-button-width-value: @form-elements-padding-value;
+@radio-button-width: unit(@radio-button-width-value, px);
+@radio-button-height: unit( @radio-button-width-value, px );
+@radio-button-padding-left: unit( ((@radio-button-width-value + (@radio-button-width-value / 3))), px );
+
+
+//FOOTER
+@footer-padding: 8px 10px 8px 10px;
+@footer-span-line-height: 21px;
+
+
+// BUTTONS
+@button-box-shadow: 0px 2px 2px rgba(0,0,0,.15);
+// THE SHADOW ABOVE IS WAY TOO BIG. I THINK WE SHOULD GO WITH THIS:
+// @button-box-shadow: 0px 0.75px 0.75px rgba(0,0,0,.15);

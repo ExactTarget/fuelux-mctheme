@@ -1,0 +1,54 @@
+.fuelux-icon {
+	background-size: cover;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	button:hover > & {
+	}
+	&:before {
+		content: "";
+	}
+
+	.btn-lg & {
+		width: 20px;
+		height: 20px;
+	}
+
+	.btn-sm & {
+		width: 13px;
+		height: 13px;
+	}
+
+}
+
+
+// Button sizes
+.button-size-all-paddings(@padding-top; @padding-right; @padding-bottom; @padding-left; @font-size; @border-radius) {
+	padding: @padding-top @padding-right @padding-bottom @padding-left;
+	font-size: @font-size;
+	border-radius: @border-radius;
+}
+
+
+
+.transition(@duration:0.2s, @ease:ease-out) {
+	-webkit-transition: all @duration @ease;
+	-moz-transition: all @duration @ease;
+	-o-transition: all @duration @ease;
+	transition: all @duration @ease;
+}
+
+.transition-background-image(@duration:0.2s, @ease:ease-out) {
+	-webkit-transition: background-image @duration @ease;
+	-moz-transition: background-image @duration @ease;
+	-o-transition: background-image @duration @ease;
+	transition: background-image @duration @ease;
+
+}
+.footer-with-inputs {
+	padding: @footer-padding;
+	> span {
+		line-height: @footer-span-line-height;
+		// vertical center text
+	}
+}

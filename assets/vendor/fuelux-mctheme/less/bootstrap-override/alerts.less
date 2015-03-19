@@ -6,6 +6,27 @@
 //
 // Adjust close button's positioning.
 
+.alert-icon-size() {
+	width: 21px;
+	height: 21px;
+	margin-bottom: -1px;
+}
+.alert-before() {
+
+
+	&:before {
+		.fuelux-icon;
+		.fuelux-icon-warning;
+		content: '';
+		position: absolute;
+		left: 4px;
+		top: 4px;
+		.alert-icon-size;
+	}
+}
+
+
+
 .alert-dismissable, // The misspelled .alert-dismissable was deprecated in 3.2.0.//interesting!
 .alert-dismissible {
 
@@ -21,23 +42,13 @@
 }
 
 .alert {
-	font-size: 12px; //12pt;
+	font-size: 12px;
+	color: #222;
 	border: 1px solid #999;
 	padding: 6px 21px 6px 34px;
-	background-repeat: no-repeat;
-	background-position: 7px 7px;
 	position: relative;
 
-	//icons
-	&:before {
-		content: '';
-		position: absolute;
-		height: 20px;
-		left: 4px;
-		top: 4px;
-		width: 22px;
-		.sprite(-73px, -34px);
-	}
+	.alert-before;
 
 	strong {
 		font-weight: bold;
@@ -50,8 +61,8 @@
 	}
 
 	small {
-		color: #666;
-		font-size: 11px; //11pt;
+		color: #4b4b4b;
+		font-size: 11px;
 		font-weight: normal;
 	}
 
@@ -82,34 +93,37 @@
 		background-color: #E9FCDE;
 		border-color: #B8D8A5;
 		&:before {
-			background-position: -50px -34px;
+			.fuelux-icon-success;
+			.alert-icon-size;
 		}
+
 	}
 	&-warning {
 		background-color: #FFF1E1;
 		border-color: #F8D8B3;
 		&:before {
-			background-position: -73px -34px;
+			.fuelux-icon-warning;
+			.alert-icon-size;
 		}
+
 	}
 	&-danger {
 		background-color: #FCECED;
 		border-color: #EDBFBF;
 		&:before {
-			background-position: -2px -34px;
+			.fuelux-icon-danger;
+			.alert-icon-size;
 		}
+
 	}
 	&-info {
 		background-color: #E7F3FE;
 		border-color: #BED5E8;
 		&:before {
-			background-position: -26px -34px;
+			.fuelux-icon-info;
+			.alert-icon-size;
 		}
+
 	}
 }
 
-@media(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-	.alert:before {
-		.sprite2x();
-	}
-}

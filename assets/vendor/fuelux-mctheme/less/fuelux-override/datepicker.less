@@ -1,10 +1,11 @@
 .datepicker {
+	background: #fff;
+
 	&:hover {
 		.dropdown-toggle {
 			background: transparent;
 
 			.glyphicon-calendar {
-				.sprite(-112px, -17px);
 			}
 		}
 	}
@@ -36,7 +37,6 @@
 			border-color: #ccc;
 
 			.glyphicon-calendar {
-				.sprite(-112px, -17px);
 			}
 		}
 
@@ -46,13 +46,11 @@
 			opacity: 1;
 
 			.glyphicon-calendar {
-				.sprite(-128px, -17px);
 			}
 		}
 
 		.glyphicon-calendar {
 			height: 15px;
-			.sprite(-96px, -17px);
 			width: 15px;
 			top: 0;
 
@@ -114,25 +112,29 @@
 							background: #E6E6E6;
 							border: 1px solid #999;
 						}
-					}
 
-					&.past {
-						button {
-							background: #fff;
-							border: 1px solid #ddd;
-							color: #ddd;
+						&.selected, &.selected:hover {
+							button {
+								background: @blue-slate;
+								border: none;
+								-webkit-box-shadow: 1px 2px 2px 0 rgba(0, 0, 0, 0.1) inset;
+								box-shadow: 1px 2px 2px 0 rgba(0, 0, 0, 0.1) inset;
+							}
 						}
 					}
 
 					&.restricted {
-						button, button:hover {
-							background: #f3f3f3;
-							border: 1px solid #e4e4e4;
-							color: #bbb;
+						b {
+							line-height: 15px;
 
 							&:before {
-								display: none;
+								display:none;
 							}
+						}
+						b, b:hover, button, button:hover {
+							background: #fff;
+							border: 1px solid #ddd;
+							color: #ddd;
 						}
 					}
 
@@ -317,12 +319,3 @@
 	}
 }
 
-@media(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-	.datepicker .dropdown-toggle .glyphicon-calendar,
-	.datepicker .dropdown-toggle:hover .glyphicon-calendar,
-	.datepicker .dropdown-toggle[disabled] .glyphicon-calendar,
-	.datepicker:hover .dropdown-toggle .glyphicon-calendar,
-	{
-		.sprite2x();
-	}
-}

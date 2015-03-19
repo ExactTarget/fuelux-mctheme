@@ -14,7 +14,10 @@
     "**/.*",
     "_*",
     "*.yml",
+    "examples",
     "Gruntfile.js",
+    "icons",
+    "img/src",
     "index.css",
     "index.html",
     "index.js",
@@ -41,5 +44,5 @@
     "fuelux-mctheme.min.css"
   ],
   "name": "fuelux-mctheme",
-  "version": "1.3.4"
+  "version": "1.4.1"
 }
