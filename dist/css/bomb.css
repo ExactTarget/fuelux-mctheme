@@ -5920,6 +5920,9 @@ label.checkbox-inline:hover {
   width: 13px;
   height: 13px;
 }
+.checkbox-custom.checkbox-inline.highlight {
+  left: 0px;
+}
 .checkbox-custom.checkbox-inline input {
   position: absolute;
 }
@@ -6061,6 +6064,9 @@ label.checkbox-inline:hover {
 .btn-sm .checkbox-inline input[type="checkbox"]:not(.sr-only):checked:hover ~ label:before {
   width: 13px;
   height: 13px;
+}
+.checkbox.highlight input:not(.sr-only) ~ label {
+  left: 0px;
 }
 .radio-custom {
   line-height: 20px;
@@ -6989,30 +6995,26 @@ label.radio-custom.radio-inline.highlight:before,
   background: #E6E6E6;
   border: 1px solid #999;
 }
-.datepicker-calendar-days tbody td.past button {
-  background: #fff;
-  border: 1px solid #ddd;
-  color: #ddd;
-}
-.datepicker-calendar-days tbody td.restricted button,
-.datepicker-calendar-days tbody td.restricted button:hover {
-  background: #f3f3f3;
-  border: 1px solid #e4e4e4;
-  color: #bbb;
-}
-.datepicker-calendar-days tbody td.restricted button:before,
-.datepicker-calendar-days tbody td.restricted button:hover:before {
-  border-top: 1px solid #a94442;
-  bottom: 0;
-  content: " ";
-  display: block;
-  left: 5px;
-  position: absolute;
-  right: 5px;
-  top: 50%;
+.datepicker-calendar-days tbody td.current-day.selected button,
+.datepicker-calendar-days tbody td.current-day.selected:hover button {
+  background: #d9eaf5;
+  border: none;
+  -webkit-box-shadow: 1px 2px 2px 0 rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 1px 2px 2px 0 rgba(0, 0, 0, 0.1) inset;
 }
 .datepicker-calendar-days tbody td.restricted b {
   line-height: 15px;
+}
+.datepicker-calendar-days tbody td.restricted b:before {
+  display: none;
+}
+.datepicker-calendar-days tbody td.restricted b,
+.datepicker-calendar-days tbody td.restricted b:hover,
+.datepicker-calendar-days tbody td.restricted button,
+.datepicker-calendar-days tbody td.restricted button:hover {
+  background: #fff;
+  border: 1px solid #ddd;
+  color: #ddd;
 }
 .datepicker-calendar-days tbody td.selected button,
 .datepicker-calendar-days tbody td.selected button:hover {
@@ -7637,21 +7639,15 @@ label.radio-custom.radio-inline.highlight:before,
   overflow-x: visible;
   overflow-y: visible;
 }
-.tree button:focus .tree-label {
-  color: inherit;
-}
 .tree .tree-label {
   line-height: 24px;
 }
 .tree li {
-  margin-top: 0;
-  margin-bottom: 0;
-  margin: 0 5px;
+  margin: 2px 5px 2px 5px;
 }
 .tree .icon-caret {
   background: none;
   border-color: none;
-  top: 0px;
   left: 0px;
   background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2220px%22%20%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22caret-right%22%3E%20%3Cg%3E%20%20%3Cg%20id%3D%22button-2px-corner_1_%22%3E%20%20%20%3ClinearGradient%20id%3D%22SVGID_1_%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%229.9995%22%20y1%3D%220%22%20x2%3D%229.9995%22%20y2%3D%2220.0005%22%3E%20%20%20%20%3Cstop%20%20offset%3D%220%22%20style%3D%22stop-color%3A%23FFFFFF%22%2F%3E%20%20%20%20%3Cstop%20%20offset%3D%220.2499%22%20style%3D%22stop-color%3A%23FBFCFD%22%2F%3E%20%20%20%20%3Cstop%20%20offset%3D%220.5087%22%20style%3D%22stop-color%3A%23EEF4F8%22%2F%3E%20%20%20%20%3Cstop%20%20offset%3D%220.7709%22%20style%3D%22stop-color%3A%23DAE7F0%22%2F%3E%20%20%20%20%3Cstop%20%20offset%3D%220.8%22%20style%3D%22stop-color%3A%23D7E5EF%22%2F%3E%20%20%20%3C%2FlinearGradient%3E%20%20%20%3Cpath%20style%3D%22fill%3Aurl%28%23SVGID_1_%29%3B%22%20d%3D%22M0%2C17c0%2C1.65%2C1.35%2C3%2C3%2C3h14c1.65%2C0%2C3-1.35%2C3-3V3c0-1.65-1.35-3-3-3H3C1.35%2C0%2C0%2C1.35%2C0%2C3V17%20%20%20%20z%22%2F%3E%20%20%20%3Cg%20style%3D%22opacity%3A0.7%3B%22%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%23FFFFFF%3B%22%20d%3D%22M17%2C2c0.542%2C0%2C1%2C0.458%2C1%2C1v14c0%2C0.542-0.458%2C1-1%2C1H3c-0.542%2C0-1-0.458-1-1V3c0-0.542%2C0.458-1%2C1-1%20%20%20%20%20H17%20M17%2C0H3C1.35%2C0%2C0%2C1.35%2C0%2C3v14c0%2C1.65%2C1.35%2C3%2C3%2C3h14c1.65%2C0%2C3-1.35%2C3-3V3C20%2C1.35%2C18.65%2C0%2C17%2C0L17%2C0z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%20%3Cg%20style%3D%22opacity%3A0.7%3B%22%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%2345494D%3B%22%20d%3D%22M17%2C1c1.103%2C0%2C2%2C0.897%2C2%2C2v14c0%2C1.103-0.897%2C2-2%2C2H3c-1.103%2C0-2-0.897-2-2V3c0-1.103%2C0.897-2%2C2-2%20%20%20%20%20H17%20M17%2C0H3C1.35%2C0%2C0%2C1.35%2C0%2C3v14c0%2C1.65%2C1.35%2C3%2C3%2C3h14c1.65%2C0%2C3-1.35%2C3-3V3C20%2C1.35%2C18.65%2C0%2C17%2C0L17%2C0z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%20%3Cg%20id%3D%22chevron_6_%22%3E%20%20%20%3Cpath%20style%3D%22opacity%3A0.6%3Bfill%3A%2345494D%3Benable-background%3Anew%20%20%20%20%3B%22%20d%3D%22M9.936%2C9.719c0.156%2C0.155%2C0.156%2C0.406%2C0%2C0.561l-2.726%2C2.67%20%20%20%20c-0.158%2C0.154-0.158%2C0.406%2C0%2C0.559l1.628%2C1.598c0.156%2C0.152%2C0.414%2C0.152%2C0.57%2C0l2.725-2.672c0.156-0.152%2C0.415-0.406%2C0.569-0.559%20%20%20%20l1.628-1.596c0.156-0.154%2C0.156-0.405%2C0-0.561l-1.628-1.594c-0.154-0.152-0.413-0.406-0.569-0.559L9.408%2C4.895%20%20%20%20c-0.156-0.152-0.414-0.152-0.57%2C0L7.21%2C6.49c-0.158%2C0.154-0.158%2C0.404%2C0%2C0.559L9.936%2C9.719z%22%2F%3E%20%20%20%3ClinearGradient%20id%3D%22SVGID_2_%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%2210.77%22%20y1%3D%2215.3447%22%20x2%3D%2210.77%22%20y2%3D%224.6558%22%3E%20%20%20%20%3Cstop%20%20offset%3D%220%22%20style%3D%22stop-color%3A%23FFFFFF%22%2F%3E%20%20%20%20%3Cstop%20%20offset%3D%220.9%22%20style%3D%22stop-color%3A%23D7E5EF%22%2F%3E%20%20%20%3C%2FlinearGradient%3E%20%20%20%3Cpath%20style%3D%22fill%3Aurl%28%23SVGID_2_%29%3B%22%20d%3D%22M9.123%2C4.78c0.104%2C0%2C0.207%2C0.038%2C0.285%2C0.114l2.725%2C2.672%20%20%20%20c0.156%2C0.152%2C0.415%2C0.406%2C0.569%2C0.559l1.628%2C1.594c0.156%2C0.155%2C0.156%2C0.406%2C0%2C0.561l-1.628%2C1.596%20%20%20%20c-0.154%2C0.152-0.413%2C0.406-0.569%2C0.559l-2.725%2C2.672C9.33%2C15.182%2C9.227%2C15.22%2C9.123%2C15.22s-0.207-0.038-0.285-0.114L7.21%2C13.508%20%20%20%20c-0.158-0.152-0.158-0.404%2C0-0.559l2.726-2.67c0.156-0.154%2C0.156-0.405%2C0-0.561L7.21%2C7.049c-0.158-0.154-0.158-0.404%2C0-0.559%20%20%20%20l1.628-1.596C8.916%2C4.818%2C9.02%2C4.78%2C9.123%2C4.78%20M9.123%2C4.655c-0.141%2C0-0.273%2C0.053-0.373%2C0.15L7.123%2C6.401%20%20%20%20C7.022%2C6.499%2C6.967%2C6.63%2C6.967%2C6.77S7.022%2C7.04%2C7.123%2C7.138l2.726%2C2.67C9.899%2C9.859%2C9.928%2C9.927%2C9.928%2C10%20%20%20%20c0%2C0.072-0.028%2C0.14-0.08%2C0.19l-2.725%2C2.67c-0.101%2C0.099-0.156%2C0.23-0.156%2C0.37s0.056%2C0.271%2C0.156%2C0.367l1.627%2C1.597%20%20%20%20c0.099%2C0.098%2C0.231%2C0.15%2C0.373%2C0.15s0.273-0.053%2C0.373-0.149l2.725-2.673c0.156-0.151%2C0.415-0.406%2C0.569-0.559l1.628-1.595%20%20%20%20c0.1-0.099%2C0.154-0.229%2C0.154-0.369s-0.055-0.271-0.154-0.37L12.79%2C8.036c-0.154-0.152-0.413-0.406-0.57-0.559L9.496%2C4.805%20%20%20%20C9.396%2C4.708%2C9.264%2C4.655%2C9.123%2C4.655L9.123%2C4.655z%22%2F%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
@@ -7663,14 +7659,12 @@ label.radio-custom.radio-inline.highlight:before,
   border: 0px solid transparent;
   border-radius: 0;
   content: "" !important;
-  padding: 0;
-  padding-left: 0;
-  padding-right: 0;
-  background-position-x: 0px;
-  background-position-y: 0px;
-  width: 13px;
-  height: 13px;
-  top: 2px;
+  padding: 12px 0 0;
+  background-position: 0px;
+  box-sizing: border-box;
+  width: 1px;
+  height: 7px;
+  top: 3px;
   left: -6px;
 }
 .tree .icon-caret:before {
@@ -7694,6 +7688,9 @@ label.radio-custom.radio-inline.highlight:before,
 .btn-sm .tree .icon-caret {
   width: 13px;
   height: 13px;
+}
+.tree.tree-folder-select .icon-caret {
+  left: -3px;
 }
 .tree .icon-caret:before,
 .tree.tree-folder-select .tree-branch-header .icon-caret:before {
@@ -7706,10 +7703,9 @@ label.radio-custom.radio-inline.highlight:before,
   display: inline-block;
   width: 16px;
   height: 16px;
-  width: 13px;
-  height: 13px;
-  top: 2px;
-  left: -6px;
+  width: 1px;
+  height: 7px;
+  top: 3px;
 }
 .tree .tree-branch-header > .tree-branch-name:hover > .icon-caret:before {
   content: "";
@@ -7749,12 +7745,8 @@ label.radio-custom.radio-inline.highlight:before,
 .tree .tree-branch.tree-selected > .tree-branch-header .tree-branch-name,
 .tree.tree-folder-select .tree-branch.tree-selected > .tree-branch-header .tree-branch-name,
 .tree .tree-item.tree-selected > .tree-item-name {
-  background: transparent;
-  color: #385b6b;
-}
-.tree .tree-selected > .tree-branch-header,
-.tree .tree-item.tree-selected {
   background: #d9eaf5;
+  color: #385b6b;
 }
 .tree .tree-branch .tree-branch-header,
 .tree .tree-item {
@@ -7765,8 +7757,7 @@ label.radio-custom.radio-inline.highlight:before,
 .tree .tree-item-name,
 .tree .tree-branch-name {
   line-height: 16px;
-  padding: 0px 0 0px 2px;
-  background: transparent;
+  padding: 0px 5px 0px 5px;
 }
 .tree .tree-item-name:hover,
 .tree .tree-item-name:hover .tree-label {
@@ -7802,6 +7793,7 @@ label.radio-custom.radio-inline.highlight:before,
   font-size: 0px;
 }
 .tree .icon-item {
+  margin-right: 4px;
   background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2220px%22%20%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22dot%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_37_%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cg%3E%20%20%20%3ClinearGradient%20id%3D%22SVGID_1_%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%229.9995%22%20y1%3D%227.5%22%20x2%3D%229.9995%22%20y2%3D%2212.5005%22%3E%20%20%20%20%3Cstop%20%20offset%3D%220%22%20style%3D%22stop-color%3A%23E6E6E6%22%2F%3E%20%20%20%20%3Cstop%20%20offset%3D%221%22%20style%3D%22stop-color%3A%23B3B3B3%22%2F%3E%20%20%20%3C%2FlinearGradient%3E%20%20%20%3Ccircle%20style%3D%22fill%3Aurl%28%23SVGID_1_%29%3B%22%20cx%3D%2210%22%20cy%3D%2210%22%20r%3D%222.5%22%2F%3E%20%20%20%3Cg%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%23FFFFFF%3B%22%20d%3D%22M10%2C8c1.103%2C0%2C2%2C0.897%2C2%2C2c0%2C1.103-0.897%2C2-2%2C2s-2-0.897-2-2C8%2C8.897%2C8.897%2C8%2C10%2C8%20M10%2C7.5%20%20%20%20%20c-1.38%2C0-2.5%2C1.119-2.5%2C2.5s1.12%2C2.5%2C2.5%2C2.5c1.381%2C0%2C2.5-1.119%2C2.5-2.5S11.381%2C7.5%2C10%2C7.5L10%2C7.5z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%20%3Cg%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%2345494D%3B%22%20d%3D%22M10%2C7.75c1.24%2C0%2C2.25%2C1.009%2C2.25%2C2.25c0%2C1.24-1.01%2C2.25-2.25%2C2.25c-1.241%2C0-2.25-1.01-2.25-2.25%20%20%20%20%20C7.75%2C8.759%2C8.759%2C7.75%2C10%2C7.75%20M10%2C7.5c-1.38%2C0-2.5%2C1.119-2.5%2C2.5s1.12%2C2.5%2C2.5%2C2.5c1.381%2C0%2C2.5-1.119%2C2.5-2.5%20%20%20%20%20S11.381%2C7.5%2C10%2C7.5L10%2C7.5z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
@@ -7812,7 +7804,6 @@ label.radio-custom.radio-inline.highlight:before,
   top: 3px;
   width: 13px;
   height: 13px;
-  margin-right: 4px;
 }
 .tree .icon-item:before {
   content: "";
@@ -7846,7 +7837,7 @@ label.radio-custom.radio-inline.highlight:before,
   line-height: 16px;
 }
 .tree .tree-branch .tree-branch-children {
-  margin-left: 18px;
+  margin-left: 17px;
 }
 .tree .tree-branch-header:hover .tree-label {
   color: #4e8abe;
@@ -7854,20 +7845,17 @@ label.radio-custom.radio-inline.highlight:before,
 .tree .tree-item.tree-selected .icon-item {
   background: none;
   border-color: none;
-  top: 0px;
   background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2220px%22%20%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22caret-right%22%3E%20%3Cg%3E%20%20%3Cg%20id%3D%22button-2px-corner_1_%22%3E%20%20%20%3ClinearGradient%20id%3D%22SVGID_1_%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%229.9995%22%20y1%3D%220%22%20x2%3D%229.9995%22%20y2%3D%2220.0005%22%3E%20%20%20%20%3Cstop%20%20offset%3D%220%22%20style%3D%22stop-color%3A%23FFFFFF%22%2F%3E%20%20%20%20%3Cstop%20%20offset%3D%220.2499%22%20style%3D%22stop-color%3A%23FBFCFD%22%2F%3E%20%20%20%20%3Cstop%20%20offset%3D%220.5087%22%20style%3D%22stop-color%3A%23EEF4F8%22%2F%3E%20%20%20%20%3Cstop%20%20offset%3D%220.7709%22%20style%3D%22stop-color%3A%23DAE7F0%22%2F%3E%20%20%20%20%3Cstop%20%20offset%3D%220.8%22%20style%3D%22stop-color%3A%23D7E5EF%22%2F%3E%20%20%20%3C%2FlinearGradient%3E%20%20%20%3Cpath%20style%3D%22fill%3Aurl%28%23SVGID_1_%29%3B%22%20d%3D%22M0%2C17c0%2C1.65%2C1.35%2C3%2C3%2C3h14c1.65%2C0%2C3-1.35%2C3-3V3c0-1.65-1.35-3-3-3H3C1.35%2C0%2C0%2C1.35%2C0%2C3V17%20%20%20%20z%22%2F%3E%20%20%20%3Cg%20style%3D%22opacity%3A0.7%3B%22%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%23FFFFFF%3B%22%20d%3D%22M17%2C2c0.542%2C0%2C1%2C0.458%2C1%2C1v14c0%2C0.542-0.458%2C1-1%2C1H3c-0.542%2C0-1-0.458-1-1V3c0-0.542%2C0.458-1%2C1-1%20%20%20%20%20H17%20M17%2C0H3C1.35%2C0%2C0%2C1.35%2C0%2C3v14c0%2C1.65%2C1.35%2C3%2C3%2C3h14c1.65%2C0%2C3-1.35%2C3-3V3C20%2C1.35%2C18.65%2C0%2C17%2C0L17%2C0z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%20%3Cg%20style%3D%22opacity%3A0.7%3B%22%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%2345494D%3B%22%20d%3D%22M17%2C1c1.103%2C0%2C2%2C0.897%2C2%2C2v14c0%2C1.103-0.897%2C2-2%2C2H3c-1.103%2C0-2-0.897-2-2V3c0-1.103%2C0.897-2%2C2-2%20%20%20%20%20H17%20M17%2C0H3C1.35%2C0%2C0%2C1.35%2C0%2C3v14c0%2C1.65%2C1.35%2C3%2C3%2C3h14c1.65%2C0%2C3-1.35%2C3-3V3C20%2C1.35%2C18.65%2C0%2C17%2C0L17%2C0z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%20%3Cg%20id%3D%22chevron_6_%22%3E%20%20%20%3Cpath%20style%3D%22opacity%3A0.6%3Bfill%3A%2345494D%3Benable-background%3Anew%20%20%20%20%3B%22%20d%3D%22M9.936%2C9.719c0.156%2C0.155%2C0.156%2C0.406%2C0%2C0.561l-2.726%2C2.67%20%20%20%20c-0.158%2C0.154-0.158%2C0.406%2C0%2C0.559l1.628%2C1.598c0.156%2C0.152%2C0.414%2C0.152%2C0.57%2C0l2.725-2.672c0.156-0.152%2C0.415-0.406%2C0.569-0.559%20%20%20%20l1.628-1.596c0.156-0.154%2C0.156-0.405%2C0-0.561l-1.628-1.594c-0.154-0.152-0.413-0.406-0.569-0.559L9.408%2C4.895%20%20%20%20c-0.156-0.152-0.414-0.152-0.57%2C0L7.21%2C6.49c-0.158%2C0.154-0.158%2C0.404%2C0%2C0.559L9.936%2C9.719z%22%2F%3E%20%20%20%3ClinearGradient%20id%3D%22SVGID_2_%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%2210.77%22%20y1%3D%2215.3447%22%20x2%3D%2210.77%22%20y2%3D%224.6558%22%3E%20%20%20%20%3Cstop%20%20offset%3D%220%22%20style%3D%22stop-color%3A%23FFFFFF%22%2F%3E%20%20%20%20%3Cstop%20%20offset%3D%220.9%22%20style%3D%22stop-color%3A%23D7E5EF%22%2F%3E%20%20%20%3C%2FlinearGradient%3E%20%20%20%3Cpath%20style%3D%22fill%3Aurl%28%23SVGID_2_%29%3B%22%20d%3D%22M9.123%2C4.78c0.104%2C0%2C0.207%2C0.038%2C0.285%2C0.114l2.725%2C2.672%20%20%20%20c0.156%2C0.152%2C0.415%2C0.406%2C0.569%2C0.559l1.628%2C1.594c0.156%2C0.155%2C0.156%2C0.406%2C0%2C0.561l-1.628%2C1.596%20%20%20%20c-0.154%2C0.152-0.413%2C0.406-0.569%2C0.559l-2.725%2C2.672C9.33%2C15.182%2C9.227%2C15.22%2C9.123%2C15.22s-0.207-0.038-0.285-0.114L7.21%2C13.508%20%20%20%20c-0.158-0.152-0.158-0.404%2C0-0.559l2.726-2.67c0.156-0.154%2C0.156-0.405%2C0-0.561L7.21%2C7.049c-0.158-0.154-0.158-0.404%2C0-0.559%20%20%20%20l1.628-1.596C8.916%2C4.818%2C9.02%2C4.78%2C9.123%2C4.78%20M9.123%2C4.655c-0.141%2C0-0.273%2C0.053-0.373%2C0.15L7.123%2C6.401%20%20%20%20C7.022%2C6.499%2C6.967%2C6.63%2C6.967%2C6.77S7.022%2C7.04%2C7.123%2C7.138l2.726%2C2.67C9.899%2C9.859%2C9.928%2C9.927%2C9.928%2C10%20%20%20%20c0%2C0.072-0.028%2C0.14-0.08%2C0.19l-2.725%2C2.67c-0.101%2C0.099-0.156%2C0.23-0.156%2C0.37s0.056%2C0.271%2C0.156%2C0.367l1.627%2C1.597%20%20%20%20c0.099%2C0.098%2C0.231%2C0.15%2C0.373%2C0.15s0.273-0.053%2C0.373-0.149l2.725-2.673c0.156-0.151%2C0.415-0.406%2C0.569-0.559l1.628-1.595%20%20%20%20c0.1-0.099%2C0.154-0.229%2C0.154-0.369s-0.055-0.271-0.154-0.37L12.79%2C8.036c-0.154-0.152-0.413-0.406-0.57-0.559L9.496%2C4.805%20%20%20%20C9.396%2C4.708%2C9.264%2C4.655%2C9.123%2C4.655L9.123%2C4.655z%22%2F%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
-  width: 13px;
-  height: 13px;
-  left: -6px;
+  width: 1px;
+  height: 7px;
+  top: 3px;
   -webkit-appearance: inherit;
   border: 0px solid transparent;
   border-radius: 0;
   content: "" !important;
-  padding: 0;
-  padding-left: 0;
-  padding-right: 0;
-  background-position-x: 0px;
-  background-position-y: 0px;
+  padding: 12px 0 0;
+  background-position: 0px;
+  box-sizing: border-box;
   background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2220px%22%20%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22checked-indicator%22%3E%20%3Crect%20id%3D%22le_wrappier_93_%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%3Cg%20id%3D%22checked-indicator_26_%22%3E%20%20%3Cpath%20style%3D%22fill%3Anone%3Bstroke%3A%23FFFFFF%3Bstroke-width%3A0.75%3Bstroke-linecap%3Around%3Bstroke-linejoin%3Around%3Bstroke-miterlimit%3A10%3B%22%20d%3D%22%20%20%20M8.221%2C10.333c0%2C0%2C0.028-0.311-0.321-0.651c-0.355-0.335-3.07-2.944-3.07-2.944c-1.027-0.983-1.053-0.957-2.015%2C0.04L2.017%2C7.599%20%20%20C1.042%2C8.608%2C1.206%2C8.781%2C2.052%2C9.602L4.1%2C11.562c0.561%2C0.541%2C1.485%2C1.424%2C2.049%2C1.963l1.024%2C0.981%20%20%20c1.021%2C0.983%2C1.021%2C0.979%2C2.009-0.036l0.985-1.02c0.545-0.558%2C1.429-1.474%2C1.975-2.035l6.473-6.679%20%20%20c0.985-1.017%2C0.985-1.018-0.036-2l-0.705-0.673c-0.977-0.942-1.021-0.988-2.011%2C0.038L9.39%2C8.777c0%2C0-0.667%2C0.686-0.864%2C0.895%20%20%20C8.322%2C9.881%2C8.221%2C10.333%2C8.221%2C10.333z%22%2F%3E%20%20%20%20%20%3ClinearGradient%20id%3D%22SVGID_1_%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%2230.1992%22%20y1%3D%221125.5635%22%20x2%3D%2216.0842%22%20y2%3D%221113.7196%22%20gradientTransform%3D%22matrix%280.6947%20-0.7193%200.7205%200.6934%20-812.1848%20-751.2178%29%22%3E%20%20%20%3Cstop%20%20offset%3D%220%22%20style%3D%22stop-color%3A%2366A2D7%22%2F%3E%20%20%20%3Cstop%20%20offset%3D%221%22%20style%3D%22stop-color%3A%23517FA5%22%2F%3E%20%20%3C%2FlinearGradient%3E%20%20%20%20%20%3Cpath%20style%3D%22opacity%3A0.6%3Bfill%3Anone%3Bstroke%3Aurl%28%23SVGID_1_%29%3Bstroke-width%3A0.0219%3Bstroke-linecap%3Around%3Bstroke-linejoin%3Around%3Bstroke-miterlimit%3A10%3B%22%20d%3D%22%20%20%20M8.221%2C10.333c0%2C0%2C0.028-0.311-0.321-0.651c-0.355-0.335-3.07-2.944-3.07-2.944c-1.027-0.983-1.053-0.957-2.015%2C0.04L2.017%2C7.599%20%20%20C1.042%2C8.608%2C1.206%2C8.781%2C2.052%2C9.602L4.1%2C11.562c0.561%2C0.541%2C1.485%2C1.424%2C2.049%2C1.963l1.024%2C0.981%20%20%20c1.021%2C0.983%2C1.021%2C0.979%2C2.009-0.036l0.985-1.02c0.545-0.558%2C1.429-1.474%2C1.975-2.035l6.473-6.679%20%20%20c0.985-1.017%2C0.985-1.018-0.036-2l-0.705-0.673c-0.977-0.942-1.021-0.988-2.011%2C0.038L9.39%2C8.777c0%2C0-0.667%2C0.686-0.864%2C0.895%20%20%20C8.322%2C9.881%2C8.221%2C10.333%2C8.221%2C10.333z%22%2F%3E%20%20%20%20%20%3ClinearGradient%20id%3D%22SVGID_2_%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%2223.5791%22%20y1%3D%221123.8184%22%20x2%3D%2224.1893%22%20y2%3D%221120.3579%22%20gradientTransform%3D%22matrix%280.6947%20-0.7193%200.7205%200.6934%20-812.1848%20-751.2178%29%22%3E%20%20%20%3Cstop%20%20offset%3D%220%22%20style%3D%22stop-color%3A%23336B9A%22%2F%3E%20%20%20%3Cstop%20%20offset%3D%221%22%20style%3D%22stop-color%3A%23448CCA%22%2F%3E%20%20%3C%2FlinearGradient%3E%20%20%3Cpath%20style%3D%22fill%3Aurl%28%23SVGID_2_%29%3B%22%20d%3D%22M8.221%2C10.333c0%2C0%2C0.028-0.311-0.321-0.651c-0.355-0.335-3.07-2.944-3.07-2.944%20%20%20c-1.027-0.983-1.053-0.957-2.015%2C0.04L2.017%2C7.599C1.042%2C8.608%2C1.206%2C8.781%2C2.052%2C9.602L4.1%2C11.562%20%20%20c0.561%2C0.541%2C1.485%2C1.424%2C2.049%2C1.963l1.024%2C0.981c1.021%2C0.983%2C1.021%2C0.979%2C2.009-0.036l0.985-1.02%20%20%20c0.545-0.558%2C1.429-1.474%2C1.975-2.035l6.473-6.679c0.985-1.017%2C0.985-1.018-0.036-2l-0.705-0.673%20%20%20c-0.977-0.942-1.021-0.988-2.011%2C0.038L9.39%2C8.777c0%2C0-0.667%2C0.686-0.864%2C0.895C8.322%2C9.881%2C8.221%2C10.333%2C8.221%2C10.333z%22%2F%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
@@ -7920,10 +7908,9 @@ label.radio-custom.radio-inline.highlight:before,
   display: inline-block;
   width: 16px;
   height: 16px;
-  width: 13px;
-  height: 13px;
-  top: 2px;
-  left: -6px;
+  width: 1px;
+  height: 7px;
+  top: 3px;
   transform: none;
 }
 .tree .tree-open > .tree-branch-header .icon-caret:before {
@@ -7944,10 +7931,9 @@ label.radio-custom.radio-inline.highlight:before,
   display: inline-block;
   width: 16px;
   height: 16px;
-  width: 13px;
-  height: 13px;
-  top: 2px;
-  left: -6px;
+  width: 1px;
+  height: 7px;
+  top: 3px;
 }
 .tree .tree-open > .tree-branch-header > .tree-branch-name:hover > .icon-caret:before {
   content: "";
