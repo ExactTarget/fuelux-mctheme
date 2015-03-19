@@ -3074,7 +3074,7 @@ input[type="checkbox"] {
   display: block;
   min-height: 15px;
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .radio label,
 .checkbox label {
@@ -5146,8 +5146,6 @@ a.list-group-item-danger.active:focus {
 .radio-inline,
 .checkbox-inline {
   padding-left: 0;
-  position: relative;
-  left: -4px;
   left: 0px;
 }
 .radio-inline.highlight,
@@ -5188,6 +5186,7 @@ label.radio-inline,
 label.checkbox-inline {
   cursor: pointer;
   font-weight: normal;
+  font-size: 12px;
 }
 .radio label:hover,
 .checkbox label:hover,
@@ -5209,13 +5208,13 @@ label.checkbox-inline:hover {
 .checkbox-inline input:not(.sr-only) ~ label {
   padding: 4px;
   border-radius: 4px;
-  background-color: pink;
+  position: relative;
+  left: -3px;
 }
 .radio input:not(.sr-only):checked ~ label,
 .checkbox input:not(.sr-only):checked ~ label,
 .radio-inline input:not(.sr-only):checked ~ label,
 .checkbox-inline input:not(.sr-only):checked ~ label {
-  background-color: yellow;
   opacity: 1;
   z-index: 0;
 }
@@ -5379,9 +5378,15 @@ label.checkbox-inline:hover {
   left: 4px;
   top: 7px;
 }
+.radio + .radio input:not(.sr-only) ~ label,
+.radio + .checkbox input:not(.sr-only) ~ label,
+.checkbox + .radio input:not(.sr-only) ~ label,
+.checkbox + .checkbox input:not(.sr-only) ~ label {
+  top: 1px;
+}
 .radio.highlight input:not(.sr-only) ~ label,
 .checkbox.highlight input:not(.sr-only) ~ label {
-  left: -4px;
+  left: -3px;
   position: relative;
 }
 .radio-inline,
@@ -5393,9 +5398,12 @@ label.checkbox-inline:hover {
   left: 0;
   top: 3px;
 }
+.checkbox.highlight label.checkbox-custom {
+  padding: 3px 4px 5px 24px;
+}
 .checkbox-custom {
   line-height: 20px;
-  padding-left: 24px;
+  padding-left: 20px;
 }
 .checkbox-custom input[type="checkbox"] {
   height: 1px;
@@ -5411,8 +5419,8 @@ label.checkbox-inline:hover {
   display: inline-block;
   width: 16px;
   height: 16px;
-  width: 18px;
-  height: 18px;
+  width: 15px;
+  height: 15px;
   -webkit-appearance: inherit;
   border: 0px solid transparent;
   border-radius: 0;
@@ -5441,6 +5449,9 @@ label.checkbox-inline:hover {
   width: 13px;
   height: 13px;
 }
+label.checkbox-custom {
+  margin-bottom: 5px;
+}
 .checkbox-custom:hover input[type="checkbox"] {
   height: 1px;
   width: 1px;
@@ -5455,8 +5466,8 @@ label.checkbox-inline:hover {
   display: inline-block;
   width: 16px;
   height: 16px;
-  width: 18px;
-  height: 18px;
+  width: 15px;
+  height: 15px;
   -webkit-appearance: inherit;
   border: 0px solid transparent;
   border-radius: 0;
@@ -5492,8 +5503,8 @@ label.checkbox-inline:hover {
   display: inline-block;
   width: 16px;
   height: 16px;
-  width: 18px;
-  height: 18px;
+  width: 15px;
+  height: 15px;
 }
 .checkbox-custom:hover:before:before {
   content: "";
@@ -5520,8 +5531,8 @@ label.checkbox-inline:hover {
   display: inline-block;
   width: 16px;
   height: 16px;
-  width: 18px;
-  height: 18px;
+  width: 15px;
+  height: 15px;
   -webkit-appearance: inherit;
   border: 0px solid transparent;
   border-radius: 0;
@@ -5557,8 +5568,8 @@ label.checkbox-inline:hover {
   display: inline-block;
   width: 16px;
   height: 16px;
-  width: 18px;
-  height: 18px;
+  width: 15px;
+  height: 15px;
 }
 .checkbox-custom:hover.checked:before:before {
   content: "";
@@ -5587,8 +5598,8 @@ label.checkbox-inline:hover {
   display: inline-block;
   width: 16px;
   height: 16px;
-  width: 18px;
-  height: 18px;
+  width: 15px;
+  height: 15px;
   -webkit-appearance: inherit;
   border: 0px solid transparent;
   border-radius: 0;
@@ -5631,8 +5642,8 @@ label.checkbox-inline:hover {
   display: inline-block;
   width: 16px;
   height: 16px;
-  width: 18px;
-  height: 18px;
+  width: 15px;
+  height: 15px;
 }
 .checkbox-custom:active:before:before,
 .checkbox-custom:focus:before:before {
@@ -5664,8 +5675,8 @@ label.checkbox-inline:hover {
   display: inline-block;
   width: 16px;
   height: 16px;
-  width: 18px;
-  height: 18px;
+  width: 15px;
+  height: 15px;
   -webkit-appearance: inherit;
   border: 0px solid transparent;
   border-radius: 0;
@@ -5708,8 +5719,8 @@ label.checkbox-inline:hover {
   display: inline-block;
   width: 16px;
   height: 16px;
-  width: 18px;
-  height: 18px;
+  width: 15px;
+  height: 15px;
 }
 .checkbox-custom:active.checked:before:before,
 .checkbox-custom:focus.checked:before:before {
@@ -5739,8 +5750,8 @@ label.checkbox-inline:hover {
   display: inline-block;
   width: 16px;
   height: 16px;
-  width: 18px;
-  height: 18px;
+  width: 15px;
+  height: 15px;
   -webkit-appearance: inherit;
   border: 0px solid transparent;
   border-radius: 0;
@@ -5776,8 +5787,8 @@ label.checkbox-inline:hover {
   display: inline-block;
   width: 16px;
   height: 16px;
-  width: 18px;
-  height: 18px;
+  width: 15px;
+  height: 15px;
 }
 .checkbox-custom.checked:before:before {
   content: "";
@@ -5804,8 +5815,8 @@ label.checkbox-inline:hover {
   display: inline-block;
   width: 16px;
   height: 16px;
-  width: 18px;
-  height: 18px;
+  width: 15px;
+  height: 15px;
   -webkit-appearance: inherit;
   border: 0px solid transparent;
   border-radius: 0;
@@ -5841,8 +5852,8 @@ label.checkbox-inline:hover {
   display: inline-block;
   width: 16px;
   height: 16px;
-  width: 18px;
-  height: 18px;
+  width: 15px;
+  height: 15px;
 }
 .checkbox-custom.disabled:before:before {
   content: "";
@@ -5869,8 +5880,8 @@ label.checkbox-inline:hover {
   display: inline-block;
   width: 16px;
   height: 16px;
-  width: 18px;
-  height: 18px;
+  width: 15px;
+  height: 15px;
   -webkit-appearance: inherit;
   border: 0px solid transparent;
   border-radius: 0;
@@ -5906,8 +5917,8 @@ label.checkbox-inline:hover {
   display: inline-block;
   width: 16px;
   height: 16px;
-  width: 18px;
-  height: 18px;
+  width: 15px;
+  height: 15px;
 }
 .checkbox-custom.disabled.checked:before:before {
   content: "";
@@ -5938,15 +5949,17 @@ label.checkbox-inline:hover {
   display: inline-block;
   width: 16px;
   height: 16px;
-  width: 18px;
-  height: 18px;
+  width: 15px;
+  height: 15px;
   -webkit-appearance: inherit;
   border: 0px solid transparent;
   border-radius: 0;
   content: "" !important;
   padding: 0;
   position: relative;
-  top: 2px;
+  margin-bottom: -4px;
+  margin-top: -1px;
+  margin-right: 1px;
 }
 .checkbox input[type="checkbox"]:not(.sr-only) ~ label:before:before,
 .checkbox-inline input[type="checkbox"]:not(.sr-only) ~ label:before:before {
@@ -5984,8 +5997,8 @@ label.checkbox-inline:hover {
   display: inline-block;
   width: 16px;
   height: 16px;
-  width: 18px;
-  height: 18px;
+  width: 15px;
+  height: 15px;
 }
 .checkbox input[type="checkbox"]:not(.sr-only):hover ~ label:before:before,
 .checkbox-inline input[type="checkbox"]:not(.sr-only):hover ~ label:before:before {
@@ -6016,8 +6029,10 @@ label.checkbox-inline:hover {
   display: inline-block;
   width: 16px;
   height: 16px;
-  width: 18px;
-  height: 18px;
+  width: 15px;
+  height: 15px;
+  margin-bottom: -4px;
+  margin-top: -1px;
 }
 .checkbox input[type="checkbox"]:not(.sr-only):checked ~ label:before:before,
 .checkbox-inline input[type="checkbox"]:not(.sr-only):checked ~ label:before:before {
@@ -6048,8 +6063,8 @@ label.checkbox-inline:hover {
   display: inline-block;
   width: 16px;
   height: 16px;
-  width: 18px;
-  height: 18px;
+  width: 15px;
+  height: 15px;
 }
 .checkbox input[type="checkbox"]:not(.sr-only):checked:hover ~ label:before:before,
 .checkbox-inline input[type="checkbox"]:not(.sr-only):checked:hover ~ label:before:before {
@@ -6065,8 +6080,12 @@ label.checkbox-inline:hover {
   width: 13px;
   height: 13px;
 }
-.checkbox.highlight input:not(.sr-only) ~ label {
-  left: 0px;
+.checkbox.highlight + .checkbox.highlight {
+  margin-top: 8px;
+}
+.checkbox.highlight + .checkbox.highlight label.checkbox-custom {
+  margin-top: -5px;
+  top: -3px;
 }
 .radio-custom {
   line-height: 20px;
@@ -6730,6 +6749,9 @@ label.radio-custom.radio-inline.highlight:before,
   content: "" !important;
   padding: 7.5px;
   top: 2px;
+  margin-right: 2px;
+  margin-top: -1px;
+  margin-bottom: -1px;
 }
 .radio input[type="radio"]:not(.sr-only) ~ label:before:before,
 .radio-inline input[type="radio"]:not(.sr-only) ~ label:before:before {
@@ -6877,6 +6899,21 @@ label.radio-custom.radio-inline.highlight:before,
 .radio-inline input[type="radio"]:not(.sr-only):checked:hover ~ label:hover {
   color: #222222;
   cursor: default;
+}
+.radio + .radio input:not(.sr-only) ~ label {
+  top: 0px;
+}
+.radio + .radio label.radio-custom {
+  margin-top: 5px;
+}
+.radio.highlight + .radio.highlight {
+  margin-top: -5px;
+}
+.radio.highlight input:not(.sr-only) ~ label {
+  left: -7px;
+}
+.radio-inline.highlight input:not(.sr-only) ~ label {
+  left: -3px;
 }
 .combobox {
   background: #fff;

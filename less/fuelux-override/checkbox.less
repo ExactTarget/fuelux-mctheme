@@ -23,12 +23,28 @@
 	}
 }
 
+
+.checkbox {
+
+	&.highlight {
+		& label.checkbox-custom {
+			padding: 3px 4px 5px 24px;
+		}
+	}
+}
+
+
+
 .checkbox-custom {
 	line-height: 20px;
 
 	padding-left: @checkbox-padding-left;
 
 	.checkbox-before;
+
+	label& {
+		margin-bottom: 5px;
+	}
 
 	&:hover {
 		.checkbox-before;

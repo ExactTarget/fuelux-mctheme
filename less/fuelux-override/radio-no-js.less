@@ -1,3 +1,9 @@
+.radio-no-js-button-element-sizes() {
+	width: @radio-no-js-button-width;
+	height: @radio-no-js-button-height;
+}
+
+
 .radio, .radio-inline {
 	
 	input[type="radio"]:not(.sr-only) {
@@ -10,13 +16,16 @@
 				border-color: none;
 				.fuelux-icon;
 				.fuelux-icon-radio-button;
-				.radio-button-element-sizes;
+				.radio-no-js-button-element-sizes;
 				-webkit-appearance: inherit;
 				border: 0px solid transparent;
 				border-radius: 0;
 				content: "" !important;
 				padding: unit((@radio-button-width-value / 2), px);
 				top: 2px;
+				margin-right: 2px;
+				margin-top: -1px;
+				margin-bottom: -1px;
 			}
 		}
 
@@ -25,7 +34,7 @@
 			& ~ label {
 				&:before {
 					.fuelux-icon-radio-button-hover;
-					.radio-button-element-sizes;
+					.radio-no-js-button-element-sizes;
 				}
 			}
 		}
@@ -34,7 +43,7 @@
 			& ~ label {
 				&:before {
 					.fuelux-icon-radio-button-checked;
-					.radio-button-element-sizes;
+					.radio-no-js-button-element-sizes;
 				}
 			}
 		}
@@ -43,7 +52,7 @@
 			& ~ label {
 				&:before {
 					.fuelux-icon-radio-button-checked-hover;
-					.radio-button-element-sizes;
+					.radio-no-js-button-element-sizes;
 				}
 			}
 		}
@@ -81,3 +90,33 @@
 	}
 }
 
+
+.radio {
+	& + & input:not(.sr-only) ~ label {
+		top: 0px;
+	}
+	& + & {
+		label.radio-custom {
+			margin-top: 5px;
+		}
+	}
+	&.highlight {
+		& + & {
+			margin-top: -5px;
+		}
+		input:not(.sr-only) {
+			& ~ label {
+				left: -7px;
+			}
+		}
+	}
+	&-inline {
+		&.highlight {
+			input:not(.sr-only) {
+				& ~ label {
+					left: -3px;
+				}
+			}
+		}
+	}
+}

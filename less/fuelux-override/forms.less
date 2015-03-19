@@ -5,11 +5,13 @@
 }
 
 .radio, .checkbox {
+	// outline: 1px solid limegreen;
+	// position: relative;
+	// left: -4px;
+	
 	&-inline {
 		padding-left: 0;
 		& {
-			position: relative;
-			left: -4px;
 			left: 0px;
 		}
 		&.highlight {
@@ -18,6 +20,7 @@
 			left: 0px;
 		}
 	}
+
 	// This handy trick allows us to make rules for .radio, .checkbox, .radio-inline, and, .checkbox-inline all at once.
 	&, &-inline {
 
@@ -31,6 +34,7 @@
 		label, .input-label, label& {
 			cursor: pointer;
 			font-weight: normal;
+			font-size: 12px;
 			.labelHover;
 		}
 
@@ -38,12 +42,13 @@
 
 				input:not(.sr-only) {
 				& ~ label {
+					// outline: 1px solid rgba(0,0,0,0.3);
 					padding: 4px;
 					border-radius: @baseBorderRadius;
-					background-color: pink;
+					position: relative;
+					left: -3px;
 				}
 				&:checked ~ label {
-					background-color:yellow;
 					opacity: 1;
 					z-index: 0;
 				}
@@ -171,11 +176,15 @@
 	}
 
 
+	& + & input:not(.sr-only) ~ label {
+		top: 1px;
+	}
+
 	&.highlight {
 		input:not(.sr-only) {
 			& ~ label {
 				// left: -8px;
-				left: -4px;
+				left: -3px;
 				position: relative;
 			}
 		}
@@ -192,6 +201,7 @@
 			top: 3px;
 		}
 	}
+
 
 
 }
