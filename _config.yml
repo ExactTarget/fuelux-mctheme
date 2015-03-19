@@ -11,7 +11,7 @@ current_version:  1
 repo:             https://github.com/ExactTarget/fuelux-mctheme
 
 cdn:
-  css:            //www.fuelcdn.com/fuelux/3.6.4/css/fuelux.min.css
+  css:            //www.fuelcdn.com/fuelux/3/css/fuelux.min.css
 
 mctheme:
   css:            //www.fuelcdn.com/fuelux-mctheme/1/css/fuelux-mctheme.min.css

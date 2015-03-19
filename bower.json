@@ -4,8 +4,8 @@
     "requirejs": "~2.1.11",
     "bootstrap": "3.x",
     "moment": "2.x",
-    "fuelux": "~3.6.4",
-    "fuelux-mctheme": "~1.4.1"
+    "fuelux": "3.x",
+    "fuelux-mctheme": "1.x"
   },
   "devDependencies": {
     "jquery": null,
@@ -46,8 +46,5 @@
     "fuelux-mctheme.min.css"
   ],
   "name": "fuelux-mctheme",
-  "version": "3.0.0",
-  "resolutions": {
-    "fuelux": "~3.6.4"
-  }
+  "version": "3.0.0"
 }
