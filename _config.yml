@@ -7,14 +7,14 @@ url:              http://exacttarget.github.io/fuelux-mctheme
 #url:              http://localhost:4000
 
 # Custom vars
-current_version:  1.4.1
+current_version:  1
 repo:             https://github.com/ExactTarget/fuelux-mctheme
 
 cdn:
   css:            //www.fuelcdn.com/fuelux/3.6.4/css/fuelux.min.css
 
 mctheme:
-  css:            //www.fuelcdn.com/fuelux-mctheme/1.4.1/css/fuelux-mctheme.min.css
+  css:            //www.fuelcdn.com/fuelux-mctheme/1/css/fuelux-mctheme.min.css
 
 bootstrap:
   css:            //maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css
