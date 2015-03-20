@@ -19,19 +19,14 @@
 
 	.modal-header {
 		background: #eaf0f3;
-		background: @element-title-background;
+		background: @element-title-bg;
 		border-radius: 5px 5px 0 0;
+		border-bottom-color: @element-border-color;
 	}
 
-@element-footer-background-gradient-start:  #E7EDF0;
-@element-footer-background-gradient-end: #FFFFFF;
-
 	.modal-footer {
-		background: -webkit-linear-gradient(@element-footer-background-gradient-start, @element-footer-background-gradient-end);
-		background: -moz-linear-gradient(@element-footer-background-gradient-start, @element-footer-background-gradient-end);
-		background: -o-linear-gradient(@element-footer-background-gradient-start, @element-footer-background-gradient-end);
-		background: linear-gradient(@element-footer-background-gradient-start, @element-footer-background-gradient-end);
-		border-top: 1px solid #E1E2E5;
+		#fuelux-gradient > .vertical(@element-footer-bg-gradient-start, @element-footer-bg-gradient-end);
+		border-top: 1px solid @element-border-color;
 		border-radius: 0 0 5px 5px;
 	}
 

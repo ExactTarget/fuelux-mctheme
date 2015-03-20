@@ -10,8 +10,8 @@
 @gray40:            lighten(#000, 40%); 		// #666
 @gray47:            lighten(#000, 46.7%);	// #777
 @gray60:            lighten(#000, 60%);	// #999
-@gray67:            lighten(#000, 67%);	// #aaa
-@gray93:            lighten(#000, 93.5%);	// @gray93
+@gray67:            lighten(#000, 67%);	// #AAA
+@gray93:            lighten(#000, 93.5%);	// @EEE
 
 // Not currently used
 @gray20:            lighten(#000, 20%);	// #333
@@ -67,10 +67,23 @@
 
 
 //
-// Elements
+// Generic Element Colours
 // --------------------------------------------------
 
-@element-title-background:   desaturate(lighten(#D9EAF5, 3%), 25%); // #E9F0F4
+@element-title-bg:                                  desaturate(lighten(@blue-slate, 3%), 25%); // #E9F0F4
+@element-border-color:                              desaturate(darken(@element-title-bg, 5%), 15%); // ???
+@element-footer-bg-gradient-start:                  @element-title-bg;
+@element-footer-bg-gradient-end:                    #FFFFFF;
+
+
+// 
+// Popovers
+// --------------------------------------------------
+@popover-bg:                                        #FFFFFF;
+@popover-title-bg:                                  @element-title-bg;
+@popover-border-color:                              darken(@element-border-color, 5%);
+
+
 
 
 // Tooltips
