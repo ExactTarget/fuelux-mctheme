@@ -43,7 +43,7 @@
 				input:not(.sr-only) {
 				& ~ label {
 					// outline: 1px solid rgba(0,0,0,0.3);
-					padding: 4px;
+					padding: 4px 4px 4px 24px;
 					border-radius: @baseBorderRadius;
 					position: relative;
 					left: -3px;
@@ -59,7 +59,8 @@
 
 				input:not(.sr-only) {
 				& ~ label {
-					padding: 4px;
+					// padding: 4px;
+					padding: 4px 4px 4px 24px;
 					border-radius: @baseBorderRadius;
 				}
 				&:checked ~ label {
@@ -108,6 +109,8 @@
 					z-index: 2;
 					content: "";
 					position: relative;
+					margin-right: -20px;
+					left: -20px;
 				}
 
 			}
