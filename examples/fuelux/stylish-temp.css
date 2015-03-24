@@ -1,0 +1,291 @@
+/*****************\
+      #222222
+\*****************/
+.fuelux .datepicker-calendar-days td b,
+.fuelux .datepicker-calendar-days td button, .fuelux .datepicker-calendar-footer .datepicker-today {
+  color: #222;
+}
+
+
+
+/*****************\
+      #444444
+\*****************/
+.text-dimmed, .alert small, .fuelux .datepicker-calendar-header .title, .fuelux .datepicker-wheels-footer .datepicker-wheels-back, .fuelux .datepicker-wheels-year .header, .fuelux .datepicker-wheels-month .header, .fuelux .datepicker-wheels-year .header {
+  color: #444;
+}
+  
+/*****************\
+      #555555
+\*****************/
+.bs-example-modal {
+  background: #555;
+}
+
+.fuelux .combobox .dropdown-toggle .caret {
+  color: #555;
+}
+    
+
+/*****************\
+      #666666
+\*****************/
+.fuelux .selectlist .btn.dropdown-toggle .selected-label, .fuelux .selectlist .btn.dropdown-toggle .caret {
+	color: #666;
+}
+    
+
+/*****************\
+      #777777
+\*****************/
+
+.text-muted, .dropdown-menu > li > a {
+    color: #777 !important;
+}
+
+
+/*****************\
+      #888888
+\*****************/
+
+table.datepicker-calendar-days, table {
+  border-color: #888888;
+}
+
+
+/*****************\
+      #999999
+\*****************/
+
+.fuelux .datepicker-calendar .datepicker-calendar-header {
+  background: #999;
+}
+      
+
+/*****************\
+      #AAAAAA
+\*****************/
+.btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default {
+   border-color: #AAA;
+}
+    
+    
+/*****************\
+      #BBBBBB
+\*****************/
+.pagination > li.disabled > a.pagination-btn .pagination-previous {
+  border-right-color: #BBB;
+}
+.pagination > li.disabled > a.pagination-btn .pagination-next {
+  border-left-color: #BBB;
+}    
+    
+    
+    
+    
+
+/*****************\
+      #CCCCCC
+\*****************/
+
+.fuelux .combobox, .dropdown-menu {
+    border: 1px solid #CCC;
+}
+
+.fuelux .datepicker-calendar-days thead, .fuelux .datepicker-wheels-month .header,
+.fuelux .datepicker-wheels-year .header {
+  border-bottom: 1px solid #ccc;
+}
+
+.fuelux .datepicker-calendar-footer, .fuelux .datepicker-wheels-footer {
+  border-top: 1px solid #ccc;
+}
+
+.fuelux .datepicker-wheels-year {
+  border-left: 1px solid #ccc;
+}
+
+button.dropdown-toggle.sr-only {
+  	background: #CCC;
+}
+
+/*****************\
+      #DDDDDD
+\*****************/
+.progress, .fuelux .datepicker-date, .fuelux .datepicker-calendar-days tbody td .datepicker-date, .fuelux b.datepicker-date, .fuelux .wizard {
+    border: 1px solid #DDD;
+}
+  
+.fuelux .wizard > .steps li .chevron {
+    border-left: 14px solid #DDD;
+}
+
+.fuelux .wizard > .actions {
+    border-left: 1px solid #DDD;
+}
+    
+.fuelux .wizard .step-content {
+    border-top: 1px solid #DDD;
+}
+
+
+/*****************\
+      #EEEEEE
+\*****************/
+
+.fuelux .datepicker-calendar-days td.last-month,
+.fuelux .datepicker-calendar-days td.next-month, .fuelux .datepicker-calendar-footer, .fuelux .wizard > .actions, .fuelux .pillbox > .pill-group > .pill, .dropdown-menu .divider, .nav .nav-divider, .navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+  background: #eee;
+}
+    
+legend, .modal-header {
+      border-bottom: 1px solid #EEE;
+}
+    
+.modal-footer, .modal .modal-footer {
+    border-top: 1px solid #eee;
+}
+    
+.fuelux .pillbox .pillbox-input-wrap.editing {
+     border: 1px solid #EEE;
+}
+
+.bs-example, .navbar-default, .navbar-default .navbar-collapse,
+.navbar-default .navbar-form, .nav-tabs > li.disabled > a, .nav-tabs > li.disabled > a:hover,
+.nav-tabs > li.disabled > a:focus {
+    border-color: #EEE;
+}
+
+
+/*****************\
+      #F5F5F5
+\*****************/
+.well, .fuelux .wizard > .steps.previous-disabled li.complete:hover, .fuelux .wizard > .steps li.complete, .fuelux .wizard .steps li, .fuelux .wizard .actions, .fuelux .wizard .steps, .nav-tabs > li > a, .popover, .btn-panel, .navbar-default, .table-striped > tbody > tr:nth-child(odd) > td,
+.table-striped > tbody > tr:nth-child(odd) > th, .table-striped > tbody > tr:nth-of-type(odd), .fuelux .repeater-header,
+.fuelux .repeater-footer, .fuelux .repeater-list table tbody td.sorted, .fuelux .repeater-list table thead > tr > th, .fuelux .repeater-list-heading, .fuelux .wizard, .bs-example-popover, .bs-example, .fuelux .wizard > .steps li.active, .fuelux .repeater-list .table tr th, .fuelux .repeater-list .table tr th .repeater-list-heading, .fuelux .repeater-pagination .repeater-next,
+.fuelux .repeater-pagination .repeater-prev   {
+	background: #F5F5F5;    
+}
+
+.fuelux .wizard .steps li.active .chevron:after {
+  border-color: #f5f5f5;
+}
+    
+.fuelux .wizard > .steps.previous-disabled li.complete:hover .chevron:before, .popover.left > .arrow:after {
+	border-left-color: #F5F5F5;
+}
+          
+.popover.left > .arrow:after {
+     border-right-color: #f5f5f5;
+}
+
+.popover.top > .arrow:after {
+     border-top-color: #f5f5f5;
+}
+          
+.fuelux .wizard > .steps li.complete .chevron:before, .fuelux .wizard > .steps li.active .chevron:before  {
+    border-left: 14px solid #f5f5f5;
+}
+
+
+/*****************\
+      #FFFFFF
+\*****************/
+.fuelux .datepicker-calendar .datepicker-calendar-header .next,
+.fuelux .datepicker-calendar .datepicker-calendar-header .prev {
+  background: #FFF;
+}
+
+
+
+/*****************\
+       GREENS
+\*****************/
+.btn-success, .btn-success:hover, .btn-success:active, .open > .dropdown-toggle.btn-success, .btn-success:visited, .panel-success > .panel-heading .badge {
+  color: #E2FAC7;
+}
+
+.btn-success .badge, .has-success .input-group-addon, .table > thead > tr > td.success,
+.table > tbody > tr > td.success,
+.table > tfoot > tr > td.success,
+.table > thead > tr > th.success,
+.table > tbody > tr > th.success,
+.table > tfoot > tr > th.success,
+.table > thead > tr.success > td,
+.table > tbody > tr.success > td,
+.table > tfoot > tr.success > td,
+.table > thead > tr.success > th,
+.table > tbody > tr.success > th,
+.table > tfoot > tr.success > th, .alert-success, .list-group-item-success, .panel-success > .panel-heading  {
+   background: #E2FAC7;
+}
+
+.fuelux .wizard .steps li.complete, .fuelux .wizard .steps li.complete .badge {
+  color: #51A62B;
+}
+
+.fuelux .wizard .steps li.complete .badge {
+  background: #51A62B;
+}
+            
+.btn-success, .btn-success.disabled,
+.btn-success[disabled],
+fieldset[disabled] .btn-success,
+.btn-success.disabled:hover,
+.btn-success[disabled]:hover,
+fieldset[disabled] .btn-success:hover,
+.btn-success.disabled:focus,
+.btn-success[disabled]:focus,
+fieldset[disabled] .btn-success:focus,
+.btn-success.disabled.focus,
+.btn-success[disabled].focus,
+fieldset[disabled] .btn-success.focus,
+.btn-success.disabled:active,
+.btn-success[disabled]:active,
+fieldset[disabled] .btn-success:active,
+.btn-success.disabled.active,
+.btn-success[disabled].active,
+fieldset[disabled] .btn-success.active, .label-success, .progress-bar-success {
+  background: #51A62B;
+}
+
+.btn-success .badge {
+  color: #51A62B;
+}
+        
+        
+        
+/*****************\
+      ORANGES
+\*****************/        
+
+.btn-warning, .btn-warning.disabled,
+.btn-warning[disabled],
+fieldset[disabled] .btn-warning,
+.btn-warning.disabled:hover,
+.btn-warning[disabled]:hover,
+fieldset[disabled] .btn-warning:hover,
+.btn-warning.disabled:focus,
+.btn-warning[disabled]:focus,
+fieldset[disabled] .btn-warning:focus,
+.btn-warning.disabled.focus,
+.btn-warning[disabled].focus,
+fieldset[disabled] .btn-warning.focus,
+.btn-warning.disabled:active,
+.btn-warning[disabled]:active,
+fieldset[disabled] .btn-warning:active,
+.btn-warning.disabled.active,
+.btn-warning[disabled].active,
+fieldset[disabled] .btn-warning.active, .label-warning, .progress-bar-warning {
+	background: #F7841D;
+}
+          
+.btn-warning .badge {
+  color: #F7841D;
+}
