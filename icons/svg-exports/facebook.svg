@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px"
-	 height="20px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="20px" height="20px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
 <g id="facebook">
 	<g>
-		<rect id="le_wrappier_34_" x="-1190" y="62" style="fill:none;" width="20" height="20"/>
+		<rect id="le_wrappier_34_" style="fill:none;" width="20" height="20"/>
 		<g>
 			<g id="box">
-				<path style="fill:#3B5998;" d="M-1170,79c0,1.65-1.35,3-3,3h-14c-1.65,0-3-1.35-3-3V65c0-1.65,1.35-3,3-3h14c1.65,0,3,1.35,3,3
-					V79z"/>
+				<path style="fill:#3B5998;" d="M20,17c0,1.65-1.35,3-3,3H3c-1.65,0-3-1.35-3-3V3c0-1.65,1.35-3,3-3h14c1.65,0,3,1.35,3,3V17z"/>
 			</g>
-			<path id="facebook-f" style="fill:#FFFFFF;" d="M-1175.037,68.179h1.757v-2.744h-2.386c-3.377,0-3.297,2.64-3.297,3.034v2.158
-				h-1.564v2.637h1.564V81.1h3.219v-7.836h2.161c0,0,0.201-1.266,0.297-2.648h-2.446v-1.803
-				C-1175.73,68.544-1175.381,68.179-1175.037,68.179z"/>
+			<path id="facebook-f" style="fill:#FFFFFF;" d="M14.963,6.18h1.757V3.436h-2.386c-3.377,0-3.297,2.64-3.297,3.033v2.158H9.473
+				v2.637h1.564V19.1h3.219v-7.836h2.161c0,0,0.201-1.266,0.297-2.647h-2.446V6.812C14.27,6.544,14.619,6.18,14.963,6.18z"/>
 		</g>
 	</g>
 </g>
-<g id="Layer_1">
+<g id="Layer_1_1_">
 </g>
 </svg>
