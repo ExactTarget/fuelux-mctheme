@@ -25,7 +25,7 @@
   },
   "scripts": {
     "main": "www/server.js",
-    "postinstall": "./node_modules/bower/bin/bower install"
+    "postinstall": "bower install"
   },
   "dependencies": {
     "connect": "3.x",
@@ -33,8 +33,6 @@
     "serve-static": "1.x"
   },
   "devDependencies": {
-    "bower": "1.x",
-    "connect": "3.x",
     "grunt": "0.x",
     "grunt-banner": "0.x",
     "grunt-bump": "0.x",
@@ -53,7 +51,6 @@
     "grunt-string-replace": "1.x",
     "grunt-zip": "0.x",
     "load-grunt-tasks": "0.x",
-    "serve-static": "1.x",
     "volo": "0.x"
   },
   "keywords": [
