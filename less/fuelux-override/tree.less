@@ -1,15 +1,13 @@
 
 .tree-caret-sizes() {
-	width: @tree-caret-size;
-	height: @tree-caret-size;
-	top: 2px;
-	left: -6px;
+	width: 1px;//this fixes weird FF/Chrome issues
+	height: 7px;//this fixes weird FF/Chrome issues
+	top: 3px;
 
 }
 .tree-caret() {
 	background: none;
 	border-color: none;
-	top: 0px;
 	left: 0px;
 	.fuelux-icon;
 	.fuelux-icon-caret-right;
@@ -18,11 +16,9 @@
 	border: 0px solid transparent;
 	border-radius: 0;
 	content: "" !important;
-	padding: 0;
-	padding-left: 0;
-	padding-right: 0;
-	background-position-x: 0px;
-	background-position-y: 0px;
+	padding: 12px 0 0;//has to be here instead of .tree-caret-sizes() because otherwise folder selection in FF messes up
+	background-position: 0px;
+	box-sizing: border-box;
 }
 
 
@@ -35,27 +31,27 @@
 	overflow-x: visible;
 	overflow-y: visible;
 
-	button:focus .tree-label {
-		color: inherit;
-	}
+	// button:focus .tree-label {
+	// 	color: inherit;
+	// }
 
 	.tree-label {
 		line-height: 24px;
 	}
 
 	li {
-		margin-top: 0;
-		margin-bottom: 0;
-		margin: 0 5px;
+		margin: 2px 5px 2px 5px;
 	}
 
 	// ICONS - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 	.icon-caret {
 		.tree-caret;
 		.tree-caret-sizes;
+		left: -6px;
 	}
 
 	&.tree-folder-select .icon-caret {
+		left: -3px;
 	}
 
 	.icon-caret:before, &.tree-folder-select .tree-branch-header .icon-caret:before {
@@ -83,13 +79,13 @@
 	.tree-branch.tree-selected > .tree-branch-header .tree-branch-name,
 	&.tree-folder-select .tree-branch.tree-selected > .tree-branch-header .tree-branch-name,
 	.tree-item.tree-selected > .tree-item-name {
-		background: transparent;
-		color: #385b6b;
+		background: @blue-slate;
+		color: @gray-slate;
 	}
 
 	.tree-selected > .tree-branch-header,
 	.tree-item.tree-selected {
-		background: @blue-slate;
+		// background: @blue-slate;
 	}
 
 	// text and icon alignment - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -105,8 +101,8 @@
 
 	.tree-item-name, .tree-branch-name {
 		line-height: 16px;
-		padding: 0px 0 0px 2px;
-		background: transparent;
+		padding: 0px 5px 0px 5px;
+		// background: transparent;
 	}
 
 	.tree-item-name:hover,
@@ -132,7 +128,6 @@
 		top: 3px;
 		width: 13px;
 		height: 13px;
-		margin-right:4px;
 	}
 
 	.icon-item:before {
@@ -149,7 +144,7 @@
 	.tree-branch {
 
 		.tree-branch-children {
-			margin-left: 18px;
+			margin-left: 17px;
 		}
 	}
 
@@ -167,9 +162,9 @@
 		.fuelux-icon-checked-indicator;
 		left: 0px;
 		top: 2px;
-		width: 10px;
-		height: 10px;
-		margin-right: 7px;
+		width: 12px;
+		height: 6px;
+		margin-right: 5px;
 		// margin-top: 6px;
 	}
 

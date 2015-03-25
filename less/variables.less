@@ -1,11 +1,12 @@
+// Border Radius
+@baseBorderRadius:      4px;
+@borderRadiusLarge:     6px;
+@borderRadiusSmall:     3px;
+
+
 // FORMS
 @form-elements-padding-value: 15;
 @form-elements-padding: unit(@form-elements-padding-value, px);
-
-
-// TREE
-@tree-caret-size-value: 13;
-@tree-caret-size: unit(@tree-caret-size-value, px);
 
 
 // CHECKBOX
@@ -14,12 +15,25 @@
 @checkbox-height: unit( @checkbox-width-value, px );
 @checkbox-padding-left: unit( ((@checkbox-width-value + ((@checkbox-width-value / 3) * 1))), px );
 
+// CHECKBOX NO JAVASCRIPT
+@checkbox-no-js-width-value: 15;
+@checkbox-no-js-width: unit(@checkbox-no-js-width-value, px);
+@checkbox-no-js-height: unit( @checkbox-no-js-width-value, px );
+@checkbox-no-js-padding-left: unit( ((@checkbox-no-js-width-value + ((@checkbox-no-js-width-value / 3) * 1))), px );
+
 
 // RADIO
 @radio-button-width-value: @form-elements-padding-value;
 @radio-button-width: unit(@radio-button-width-value, px);
 @radio-button-height: unit( @radio-button-width-value, px );
 @radio-button-padding-left: unit( ((@radio-button-width-value + (@radio-button-width-value / 3))), px );
+
+
+// RADIO NO JAVASCRIPT
+@radio-no-js-button-width-value: @form-elements-padding-value;
+@radio-no-js-button-width: unit(@radio-no-js-button-width-value, px);
+@radio-no-js-button-height: unit( @radio-no-js-button-width-value, px );
+@radio-no-js-button-padding-left: unit( ((@radio-no-js-button-width-value + (@radio-no-js-button-width-value / 3))), px );
 
 
 //FOOTER

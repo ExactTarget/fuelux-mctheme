@@ -6,7 +6,7 @@
 	padding: 0;
 
 	.tooltip-inner {
-		background: transparent !important;
+		background: transparent;
 		color: @tooltip-color;
 	}
 
@@ -21,7 +21,7 @@
 
 	&.right {
 		#gradient > .horizontal(#fcfbda, #f2f0b9);
-		
+
 		.tooltip-arrow {
 			border-right-color: #fcfbda;
 			left: -5px;
@@ -31,7 +31,7 @@
 	&.top {
 		#gradient > .vertical(#f2f0b9, #fcfbda);
 		padding: 0;
-		
+
 		.tooltip-arrow {
 			border-top-color: #fcfbda;
 			bottom: -5px;
@@ -42,7 +42,7 @@
 		box-shadow: 0 -3px 10px rgba(0, 0, 0, .4);
 		#gradient > .vertical(#fcfbda, #f2f0b9);
 		padding: 0;
-		
+
 		.tooltip-arrow {
 			border-bottom-color: #fcfbda;
 			top: -5px;
@@ -51,3 +51,38 @@
 
 }
 
+.has-error {
+	+ .tooltip, .tooltip{
+		background: linear-gradient(#EE6767,#E64141);
+
+		.tooltip-inner{
+			color: #fff;
+			font-size: 11px;
+		}
+
+
+		&.top {
+			.tooltip-arrow {
+				border-top-color: #EE5457;
+			}
+		}
+
+		&.right {
+			.tooltip-arrow {
+				border-right-color: #EE5457;
+			}
+		}
+
+		&.bottom {
+			.tooltip-arrow {
+				border-bottom-color: #EE5457;
+			}
+		}
+
+		&.left {
+			.tooltip-arrow {
+				border-left-color: #EE5457;
+			}
+		}
+	}
+}

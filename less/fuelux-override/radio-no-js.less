@@ -1,0 +1,122 @@
+.radio-no-js-button-element-sizes() {
+	width: @radio-no-js-button-width;
+	height: @radio-no-js-button-height;
+}
+
+
+.radio, .radio-inline {
+	
+	input[type="radio"]:not(.sr-only) {
+
+		& ~ label {
+			&:before {
+				border-radius: 8px;
+				z-index: 1;
+				background: none;
+				border-color: none;
+				.fuelux-icon;
+				.fuelux-icon-radio-button;
+				.radio-no-js-button-element-sizes;
+				-webkit-appearance: inherit;
+				border: 0px solid transparent;
+				border-radius: 0;
+				content: "" !important;
+				padding: unit((@radio-button-width-value / 2), px);
+				top: 2px;
+				// margin-right: 2px;
+				margin-top: -1px;
+				margin-bottom: -1px;
+			}
+		}
+
+		&:hover {
+
+			& ~ label {
+				&:before {
+					.fuelux-icon-radio-button-hover;
+					.radio-no-js-button-element-sizes;
+				}
+			}
+		}
+
+		&:checked {
+			& ~ label {
+				&:before {
+					.fuelux-icon-radio-button-checked;
+					.radio-no-js-button-element-sizes;
+				}
+			}
+		}
+
+		&:checked:hover {
+			& ~ label {
+				&:before {
+					.fuelux-icon-radio-button-checked-hover;
+					.radio-no-js-button-element-sizes;
+				}
+			}
+		}
+
+
+
+
+		/* for keyboard tabbing */
+		&:hover ~ label, &:active ~ label, &:focus ~ label {
+		
+			&:before {
+				outline-color: transparent;
+				outline-offset: 0;
+				outline-style: none;
+				outline-width: 0;
+			}
+
+		}
+		/* for keyboard tabbing */
+		&:active:hover ~ label, &:focus:hover ~ label, &:focus:hover ~ label, &:checked:hover ~ label {
+			&:before {
+				outline-color: none;
+				outline-offset: 0;
+				outline-style: none;
+				outline-width: 0;
+				cursor: default;
+			}
+
+			&, &:hover {
+				color: @text-color;
+				cursor: default;
+			}
+		}
+
+	}
+}
+
+
+.radio {
+	& + & input:not(.sr-only) ~ label {
+		top: 0px;
+	}
+	& + & {
+		label.radio-custom {
+			margin-top: 5px;
+		}
+	}
+	&.highlight {
+		& + & {
+			margin-top: -5px;
+		}
+		input:not(.sr-only) {
+			& ~ label {
+				left: -7px;
+			}
+		}
+	}
+	&-inline {
+		&.highlight {
+			input:not(.sr-only) {
+				& ~ label {
+					left: -3px;
+				}
+			}
+		}
+	}
+}

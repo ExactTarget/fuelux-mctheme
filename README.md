@@ -21,15 +21,15 @@ View [demos of the Marketing Cloud Theme](http://exacttarget.github.com/fuelux-m
 2. Use a single css tag ***after Bootstrap and Fuel UX styles***:
 
 	```
-    <link href="http://www.fuelcdn.com/fuelux-mctheme/1.3.4/css/fuelux-mctheme.min.css" rel="stylesheet" type="text/css"/>
+    <link href="http://www.fuelcdn.com/fuelux-mctheme/1.4.2/css/fuelux-mctheme.min.css" rel="stylesheet" type="text/css"/>
     ```
 3. [Use Fuel UX as normal](http://exacttarget.github.io/fuelux/).
 
 ### Download
 The Marketing Cloud Theme can be obtained through:
 
-1. [CDN](http://www.fuelcdn.com/fuelux-mctheme/1.3.4/css/fuelux-mctheme.min.css)
-1. [Zip](http://www.fuelcdn.com/fuelux-mctheme/1.3.4/fuelux.zip)
+1. [CDN](http://www.fuelcdn.com/fuelux-mctheme/1.4.2/css/fuelux-mctheme.min.css)
+1. [Zip](http://www.fuelcdn.com/fuelux-mctheme/1.4.2/fuelux.zip)
 2. Clone git repo:
    ```
    git clone https://github.com/ExactTarget/fuelux-mctheme/
@@ -78,14 +78,12 @@ The Marketing Cloud Theme is dependent upon [Fuel UX 3](http://github.com/ExactT
 A download of FuelUX provides the following directories and files, which are grouped according to file type:
 ```
 fuelux-mctheme/
-├── css/
-│   ├── fuelux-mctheme.css
-│   ├── fuelux-mctheme.min.css
-└── img/
-    ├── spritesheet.png
-    └── spritesheet-2x.png
+└── css/
+    ├── fuelux-mctheme.css
+    └── fuelux-mctheme.min.css
 
 ```
+SVGs of theme icons are base64-encoded into the CSS files above.
 
 ## Bugs and feature requests
 

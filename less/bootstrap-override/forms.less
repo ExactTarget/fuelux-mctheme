@@ -255,7 +255,8 @@ input[type="checkbox"] {
 	display: block;
 	min-height: @line-height-computed; // clear the floating input if there is no label text
 	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-bottom: 5px;
+	
 
 	label {
 		padding-left: 20px;
@@ -294,15 +295,19 @@ input[type="checkbox"] {
 }
 .radio-inline + .radio-inline  {
 	margin-top: 0;
+	// margin-left: 0px; // undo bootstrap's spacing out of consecutive inline controls because our padding already does it.
+}
+.radio-custom.radio-inline + .radio-custom.radio-inline  {
+	margin-top: 0;
 	margin-left: 0px; // undo bootstrap's spacing out of consecutive inline controls because our padding already does it.
 }
 
-.checkbox-inline {
-	input[type="checkbox"] {
-		position: static;
-		margin-right: 5px;
-	}
-}
+// .checkbox-inline {
+// 	input[type="checkbox"] {
+// 		position: static;
+// 		margin-right: 5px;
+// 	}
+// }
 
 .radio-inline {
 	input[type="radio"] {

@@ -52,3 +52,70 @@
 		// vertical center text
 	}
 }
+
+
+
+
+// ----------------
+// Effects (CSS3) Mixins
+// ----------------
+#fuelux-gradient {
+	// hex, rgb, and rgba values accepted!
+	.horizontal(...) {
+		// -webkit-gradient has it's own "special" syntax...pfff...
+		@props: ~`"@{arguments}".replace(/[\[\]]|\,\sX/g, '')`;
+		@wkProps: ~`
+			"@{props}"
+				.replace(/^(\#[a-f0-9]{3,6}|rgba?\(( *\d{1,3},?){3}( *[0-9\.]+)?\))( +\d{1,3}\%)?/i, 'from($1)')
+				.replace(/(\#[a-f0-9]{3,6}|rgba?\(( *\d{1,3},?){3}( *[0-9\.]+)?\))( +\d{1,3}\%)?$/i, 'to($1)')
+				.replace(/(\#[a-f0-9]{3,6}|rgba?\(( *\d{1,3},?){3}( *[0-9\.]+)?\)) +(\d{1,3}\%)/gi, 'color-stop($4, $1)')
+		`;
+
+		// for getting the microsoft-supported color string for filter
+		@cleanedArgs: `"@{arguments}".replace(/[\]\[\s]/g,'').split(/,(?=[#a-z])/).join("|")`;
+		@first: `@{cleanedArgs}.split('|').shift()`;
+		@last: `@{cleanedArgs}.split('|').pop()`;
+		@firstMsColor: `(function(e){if(e=="transparent")return"#00000000";if(e.indexOf("#")==0)return e;if(e.indexOf("rgb")>-1){var t=e.replace(/[rgba\(\) ]/g,"").split(","),n=function(e){return e.length==1?"0"+e:e},r=function(e,t,r){var i=function(e){var t=parseInt(e,10).toString(16);return n(t)};return""+i(e)+i(t)+i(r)},i=function(e){var t=Math.floor(255*parseFloat(e,10)).toString(16);return n(t)};t.length===3&&t.push("1");return"#"+i(t[3])+r(t[0],t[1],t[2])}})(@{first})`;
+		@lastMsColor: `(function(e){if(e=="transparent")return"#00000000";if(e.indexOf("#")==0)return e;if(e.indexOf("rgb")>-1){var t=e.replace(/[rgba\(\) ]/g,"").split(","),n=function(e){return e.length==1?"0"+e:e},r=function(e,t,r){var i=function(e){var t=parseInt(e,10).toString(16);return n(t)};return""+i(e)+i(t)+i(r)},i=function(e){var t=Math.floor(255*parseFloat(e,10)).toString(16);return n(t)};t.length===3&&t.push("1");return"#"+i(t[3])+r(t[0],t[1],t[2])}})(@{last})`;
+
+		background-image: -moz-linear-gradient(left, @props); // FF 3.6+
+		background-image: -webkit-gradient(linear, 0 0, 100% 0, @wkProps); // Safari 4+, Chrome 2+
+		background-image: -webkit-linear-gradient(left, @props); // Safari 5.1+, Chrome 10+
+		background-image: -o-linear-gradient(left, @props); // Opera 11.10
+		background-image: linear-gradient(to right, @props); // Standard, IE10
+		background-repeat: repeat-x;
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=@firstMsColor, endColorstr=@lastMsColor, GradientType=1);
+	}
+	// hex, rgb, and rgba values accepted!
+	.vertical(...) {
+		// -webkit-gradient has it's own "special" syntax...pfff...
+		@props: ~`"@{arguments}".replace(/[\[\]]|\,\sX/g, '')`;
+		@wkProps: ~`
+			"@{props}"
+				.replace(/^(\#[a-f0-9]{3,6}|rgba?\(( *\d{1,3},?){3}( *[0-9\.]+)?\))( +\d{1,3}\%)?/i, 'from($1)')
+				.replace(/(\#[a-f0-9]{3,6}|rgba?\(( *\d{1,3},?){3}( *[0-9\.]+)?\))( +\d{1,3}\%)?$/i, 'to($1)')
+				.replace(/(\#[a-f0-9]{3,6}|rgba?\(( *\d{1,3},?){3}( *[0-9\.]+)?\)) +(\d{1,3}\%)/gi, 'color-stop($4, $1)')
+		`;
+
+		// for getting the microsoft-supported color string for filter
+		@cleanedArgs: `"@{arguments}".replace(/[\]\[\s]/g,'').split(/,(?=[#a-z])/).join("|")`;
+		@first: `@{cleanedArgs}.split('|').shift()`;
+		@last: `@{cleanedArgs}.split('|').pop()`;
+		@firstMsColor: `(function(e){if(e=="transparent")return"#00000000";if(e.indexOf("#")==0)return e;if(e.indexOf("rgb")>-1){var t=e.replace(/[rgba\(\) ]/g,"").split(","),n=function(e){return e.length==1?"0"+e:e},r=function(e,t,r){var i=function(e){var t=parseInt(e,10).toString(16);return n(t)};return""+i(e)+i(t)+i(r)},i=function(e){var t=Math.floor(255*parseFloat(e,10)).toString(16);return n(t)};t.length===3&&t.push("1");return"#"+i(t[3])+r(t[0],t[1],t[2])}})(@{first})`;
+		@lastMsColor: `(function(e){if(e=="transparent")return"#00000000";if(e.indexOf("#")==0)return e;if(e.indexOf("rgb")>-1){var t=e.replace(/[rgba\(\) ]/g,"").split(","),n=function(e){return e.length==1?"0"+e:e},r=function(e,t,r){var i=function(e){var t=parseInt(e,10).toString(16);return n(t)};return""+i(e)+i(t)+i(r)},i=function(e){var t=Math.floor(255*parseFloat(e,10)).toString(16);return n(t)};t.length===3&&t.push("1");return"#"+i(t[3])+r(t[0],t[1],t[2])}})(@{last})`;
+
+		background-image: -moz-linear-gradient(top, @props); // FF 3.6+
+		background-image: -webkit-gradient(linear, 0 0, 0 100%, @wkProps); // Safari 4+, Chrome 2+
+		background-image: -webkit-linear-gradient(top, @props); // Safari 5.1+, Chrome 10+
+		background-image: -o-linear-gradient(top, @props); // Opera 11.10
+		background-image: linear-gradient(to bottom, @props); // Standard, IE10
+		background-repeat: repeat-x;
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=@firstMsColor, endColorstr=@lastMsColor, GradientType=0);
+	}
+
+	// this is to explicitly disable ie gradients. it seems that the filter gradient overrides the background-image
+	// even if the background-image overrides the native css gradients.
+	.disableMsGradient {
+		filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+	}
+}

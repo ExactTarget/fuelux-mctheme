@@ -19,7 +19,9 @@
 
 	.modal-header {
 		background: #eaf0f3;
+		background: @element-title-bg;
 		border-radius: 5px 5px 0 0;
+		border-bottom-color: @element-border-color;
 	}
 
 @modal-bg-gradient-dark:  #e7edf0;
@@ -27,7 +29,7 @@
 
 	.modal-footer {
 		background: -webkit-linear-gradient(@modal-bg-gradient-dark, @modal-bg-gradient-light);
-		background: -moz-linear-gradient(@modal-bg-gradient-dark, @modal-bg-gradient-light);
+		#fuelux-gradient > .vertical(@element-footer-bg-gradient-start, @element-footer-bg-gradient-end);
 		background: -o-linear-gradient(@modal-bg-gradient-dark, @modal-bg-gradient-light);
 		background: linear-gradient(@modal-bg-gradient-dark, @modal-bg-gradient-light);
 		border-top: 1px solid @modal-bottom-border;
