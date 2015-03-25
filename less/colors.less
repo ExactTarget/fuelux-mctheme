@@ -10,8 +10,8 @@
 @gray40:            lighten(#000, 40%); 		// #666
 @gray47:            lighten(#000, 46.7%);	// #777
 @gray60:            lighten(#000, 60%);	// #999
-@gray67:            lighten(#000, 67%);	// #aaa
-@gray93:            lighten(#000, 93.5%);	// @gray93
+@gray67:            lighten(#000, 67%);	// #AAA
+@gray93:            lighten(#000, 93.5%);	// @EEE
 
 // Not currently used
 @gray20:            lighten(#000, 20%);	// #333
@@ -29,7 +29,7 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 // BLUE SLATE a powdery, light blue for selected items
-@blue-slate:                 #d9eaf5;
+@blue-slate:                 #D9EAF5;
 
 // BLUE SKY - a light blue for hover of selected items.
 @blue-sky:                   #B9DFF1;
@@ -50,10 +50,6 @@
 @brand-success-medium:       #8BD06D;
 @brand-success-light:        #E9FCDE;
 
-// Tooltips
-@tooltip-color:               #000;
-
-
 // blue
 @brand-info-dark:            #385B6B;
 @brand-info-medium:          @blue-steel;
@@ -68,3 +64,29 @@
 @brand-danger-dark:          #e64141;
 @brand-danger-medium:        #EE6767;
 @brand-danger-light:         #FCECED;
+
+
+//
+// Generic Element Colours
+// --------------------------------------------------
+
+@element-title-bg:                                  desaturate(lighten(@blue-slate, 3%), 25%); // #E9F0F4
+@element-border-color:                              desaturate(darken(@element-title-bg, 5%), 15%); // ???
+@element-footer-bg-gradient-start:                  @element-title-bg;
+@element-footer-bg-gradient-end:                    #FFFFFF;
+
+
+// 
+// Popovers
+// --------------------------------------------------
+@popover-bg:                                        #FFFFFF;
+@popover-title-bg:                                  @element-title-bg;
+@popover-border-color:                              darken(@element-border-color, 5%);
+
+
+
+
+// Tooltips
+@tooltip-color:               #000;
+
+
