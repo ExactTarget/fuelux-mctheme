@@ -289,3 +289,12 @@ fieldset[disabled] .btn-warning.active, .label-warning, .progress-bar-warning {
 .btn-warning .badge {
   color: #F7841D;
 }
+
+
+/*****************\
+/***TRANSPARENT***\
+\*****************/
+
+.fuelux .wizard .steps li.active .chevron:after  {
+border-color: transparent;        
+}
