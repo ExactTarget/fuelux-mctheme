@@ -34,14 +34,9 @@
     "web"
   ],
   "main": [
-    "bootstrap-mctheme.css",
-    "bootstrap-mctheme.css.map",
-    "bootstrap-mctheme.min.css",
-    "fuelux-controls.css",
-    "fuelux-controls.min.css",
-    "fuelux-mctheme.css",
-    "fuelux-mctheme.css.map",
-    "fuelux-mctheme.min.css"
+    "dist/css/fuelux-mctheme.css",
+    "dist/css/fuelux-mctheme.css.map",
+    "dist/css/fuelux-mctheme.min.css"
   ],
   "name": "fuelux-mctheme",
   "version": "1.4.2"
