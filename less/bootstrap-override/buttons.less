@@ -82,9 +82,18 @@
 									@btn-default-bg-hover-start; @btn-default-bg-hover-end;
 									@btn-default-bg-press-start; @btn-default-bg-press-end;
 									@btn-default-bg-disabled-start; @btn-default-bg-disabled-end);
-	&:active,&.active,&:focus{
+	&:active,
+	&.active,
+	&.focus,
+	&:focus {
 		#gradient > .gradient-bg(@btn-default-bg-press-start, @btn-default-bg-press-end);
 		color: @btn-default-color;
+		border-color: @gray67;
+	}
+
+	&:hover,
+	.open > .dropdown-toggle& {
+		border-color: @gray67;
 	}
 
 	&.dropdown-toggle .caret {
@@ -186,10 +195,12 @@
 									@btn-secondary-bg-hover-start; @btn-secondary-bg-hover-end;
 									@btn-secondary-bg-press-start; @btn-secondary-bg-press-end;
 									@btn-secondary-bg-disabled-start; @btn-secondary-bg-disabled-end);
-	&:active,&.active,&:focus{
+	&:active, 
+	&.active, 
+	&:focus {
 		color: @btn-secondary-active-color;
-
 		#gradient > .gradient-bg(@btn-secondary-bg-press-start, @btn-secondary-bg-press-end);
+		border-color: @gray67;
 	}
 
 	&.dropdown-toggle .caret {

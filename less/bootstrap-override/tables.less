@@ -190,6 +190,12 @@ table {
 }
 
 
+.table-striped > tbody > tr:nth-child(odd) > td,
+.table-striped > tbody > tr:nth-child(odd) > th, 
+.table-striped > tbody > tr:nth-of-type(odd) {
+	background-color: @gray96;
+}
+
 // Table backgrounds
 //
 // Exact selectors below required to override `.table-striped` and prevent

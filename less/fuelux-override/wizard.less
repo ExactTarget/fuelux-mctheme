@@ -1,10 +1,13 @@
 .wizard {
 	position: relative;
+	border: 1px solid @gray87;
+	backgroun: @gray96;
 
 	.actions {
-		background: #f4f5f6;
+		background-color: @gray96;
 		background-image: -webkit-linear-gradient(top, #fafafa, #eeeff1);
 		background-image: linear-gradient(to bottom, #fafafa, #eeeff1);
+		border-left-color: @gray87;
 		float: none;
 		top: 0;
 
@@ -26,18 +29,22 @@
 		}
 	}
 
+	.step-content {
+		border-top-color: @gray87;
+	}
+
 	.steps {
-		background: #f4f5f6;
+		background-color: @gray96;
 		background-image: -webkit-linear-gradient(top, #fafafa, #eeeff1);
 		background-image: linear-gradient(to bottom, #fafafa, #eeeff1);
 		.clearfix();
 
 		li {
-			background: #f3f4f5;
+			background-color: @gray96;
 			box-shadow: 0px 0px 0px 1px #fff inset;
 
 			&:before {
-				background: #d4d4d4;
+				background-color: #d4d4d4;
 				bottom: -1px;
 				content: " ";
 				display: block;
@@ -50,7 +57,7 @@
 
 			&.active {
 				color: @blue-steel;
-				background-color: lighten(@blue-slate, 5%);
+				background-color: @blue-smoke;
 
 				.badge {
 					background: @blue-steel;
@@ -61,16 +68,17 @@
 				}
 
 				.chevron:after {
-					border-color: transparent transparent transparent lighten(@blue-slate, 5%);
+					border-color: transparent transparent transparent @blue-smoke;
 				}
 			}
 
 			&.complete {
-				color: #5fb21c;
+				color: @brand-success-dark;
+				background-color: @gray96;
 
 				.badge {
-					background: #5fb21c;
-					color: #5fb21c;
+					background: @brand-success-dark;
+					color: @brand-success-dark;
 					position: relative;
 
 					&:before {
@@ -90,12 +98,14 @@
 				}
 
 				.chevron:after {
-					border-color: transparent transparent transparent #f3f4f5;
+					border-color: transparent transparent transparent @gray96;
 				}
 
 				&:hover {
+					background-color: @blue-smoke;
+
 					.chevron:after {
-						border-color: transparent transparent transparent #e7eff8;
+						border-color: transparent transparent transparent @blue-smoke;
 					}
 				}
 			}
@@ -106,13 +116,15 @@
 			}
 
 			.chevron {
+				border-left-color: @gray87;
+
 				&:before {
 					border-color: transparent transparent transparent #fff;
 				}
 
 				&:after {
 					border: 24px solid transparent;
-					border-left: 14px solid #f3f4f5;
+					border-left: 14px solid @gray96;
 					border-right: 0;
 					content: "";
 					display: block;

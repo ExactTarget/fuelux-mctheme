@@ -87,9 +87,10 @@
 
 		&-days {
 			margin: 0;
+			border-color: @gray53;
 
 			thead {
-				border-bottom: none;
+				border-bottom: 1px solid @gray80;
 
 				th {
 					font-size: 11px;
@@ -106,6 +107,10 @@
 
 				td {
 					height: 24px;
+
+					b {
+						color: @gray13;
+					}
 
 					&.current-day {
 						button {
@@ -134,12 +139,13 @@
 						b, b:hover, button, button:hover {
 							background: #fff;
 							border: 1px solid #ddd;
-							color: #ddd;
+							color: @gray13;
 						}
 					}
 
 					&.selected {
 						button, button:hover {
+							color: @gray13;
 							background: @blue-slate;
 							border: none;
 							-webkit-box-shadow: 1px 2px 2px 0 rgba(0, 0, 0, 0.1) inset;
@@ -161,7 +167,7 @@
 
 					.datepicker-date {
 						background: #fff;
-						border: 1px solid #d3d3d3;
+						border: 1px solid @gray87;
 						color: @gray33;
 						font-size: 10px;
 						height: 22px;
@@ -177,6 +183,7 @@
 
 					&.last-month, &.next-month {
 						visibility: hidden;
+						background: @gray93;
 					}
 				}
 			}
@@ -184,14 +191,14 @@
 
 		//this had to be done due to other wonky rules overriding these styles
 		.datepicker-calendar-header {
-			background: #9f9f9f;
+			background: @gray60;
 			background-image: -webkit-linear-gradient(top, #b6b6b6, #949494);
 			background-image: linear-gradient(to bottom, #b6b6b6, #949494);
 			border-radius: 4px;
 			padding: 4px 6px;
 
 			.next, .prev {
-				background: #fefffe;
+				background: @gray96;
 				box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.25);
 				height: 12px;
 				margin: 4px 0 0;
@@ -251,17 +258,23 @@
 				line-height: 20px;
 
 				&:hover {
-					color: #4e8abe;
+					color: @gray27;
 				}
 			}
 		}
 
 		&-footer {
 			display: none;
+			background: @gray93;
+			border-top-color: @gray80;
+		}
+
+		.datepicker-today {
+			color: @gray13;
 		}
 
 		&-wrapper {
-			border: 1px solid #bbbbbb;
+			border: 1px solid @gray74;
 			width: 224px;
 		}
 	}
@@ -270,8 +283,10 @@
 		&-footer {
 			background: @gray93;
 			height: 28px;
+			border-top: 1px solid @gray80;
 
 			.datepicker-wheels-back {
+				color: @gray27;
 				box-shadow: none;
 				line-height: 17px;
 			}
@@ -285,10 +300,12 @@
 
 		&-month, &-year {
 			.header {
+				color: @gray27;
 				background: @gray93;
 				font-size: 12px;
 				font-weight: bold;
 				line-height: 27px;
+				border-bottom: 1px solid @gray80;
 			}
 
 			ul {
@@ -316,6 +333,11 @@
 				}
 			}
 		}
+
+		&-year {
+			border-left-color: @gray80;
+		}
+
 	}
 }
 
