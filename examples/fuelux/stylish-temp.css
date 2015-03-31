@@ -11,17 +11,23 @@
 /*****************\
       #444444
 \*****************/
-.text-dimmed, .alert small, .fuelux .datepicker-calendar-header .title, .fuelux .datepicker-wheels-footer .datepicker-wheels-back, .fuelux .datepicker-wheels-year .header, .fuelux .datepicker-wheels-month .header, .fuelux .datepicker-wheels-year .header {
+.text-dimmed, 
+.alert small, 
+.fuelux .datepicker-calendar-header .title, 
+.fuelux .datepicker-wheels-footer .datepicker-wheels-back, 
+.fuelux .datepicker-wheels-year .header, 
+.fuelux .datepicker-wheels-month .header, 
+.fuelux .datepicker-wheels-year .header {
   color: #444;
 }
   
 /*****************\
       #555555
 \*****************/
-.bs-example-modal {
+/*.bs-example-modal {
   background: #555;
 }
-
+*/
 .fuelux .combobox .dropdown-toggle .caret {
   color: #555;
 }
@@ -30,7 +36,8 @@
 /*****************\
       #666666
 \*****************/
-.fuelux .selectlist .btn.dropdown-toggle .selected-label, .fuelux .selectlist .btn.dropdown-toggle .caret {
+.fuelux .selectlist .btn.dropdown-toggle .selected-label, 
+.fuelux .selectlist .btn.dropdown-toggle .caret {
 	color: #666;
 }
     
@@ -39,7 +46,8 @@
       #777777
 \*****************/
 
-.text-muted, .dropdown-menu > li > a {
+.text-muted, 
+.dropdown-menu > li > a {
     color: #777 !important;
 }
 
@@ -48,9 +56,12 @@
       #888888
 \*****************/
 
-table.datepicker-calendar-days, table {
+table.datepicker-calendar-days, 
+table {
   border-color: #888888;
 }
+
+/* NOTE: TABLE BORDER COLOR ??? */
 
 
 /*****************\
@@ -65,7 +76,12 @@ table.datepicker-calendar-days, table {
 /*****************\
       #AAAAAA
 \*****************/
-.btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default {
+.btn-default:hover, 
+.btn-default:focus, 
+.btn-default.focus, 
+.btn-default:active, 
+.btn-default.active, 
+.open > .dropdown-toggle.btn-default {
    border-color: #AAA;
 }
     
@@ -92,12 +108,14 @@ table.datepicker-calendar-days, table {
     border: 1px solid #CCC;
 }
 
-.fuelux .datepicker-calendar-days thead, .fuelux .datepicker-wheels-month .header,
+.fuelux .datepicker-calendar-days thead, 
+.fuelux .datepicker-wheels-month .header,
 .fuelux .datepicker-wheels-year .header {
   border-bottom: 1px solid #ccc;
 }
 
-.fuelux .datepicker-calendar-footer, .fuelux .datepicker-wheels-footer {
+.fuelux .datepicker-calendar-footer, 
+.fuelux .datepicker-wheels-footer {
   border-top: 1px solid #ccc;
 }
 
@@ -108,11 +126,17 @@ table.datepicker-calendar-days, table {
 button.dropdown-toggle.sr-only {
   	background: #CCC;
 }
+/* NOTE: NOT SURE WHERE THIS IS USED? */
+
 
 /*****************\
       #DDDDDD
 \*****************/
-.progress, .fuelux .datepicker-date, .fuelux .datepicker-calendar-days tbody td .datepicker-date, .fuelux b.datepicker-date, .fuelux .wizard {
+.progress, 
+.fuelux .datepicker-date, 
+.fuelux .datepicker-calendar-days tbody td .datepicker-date, 
+.fuelux b.datepicker-date, 
+.fuelux .wizard {
     border: 1px solid #DDD;
 }
   
@@ -134,21 +158,32 @@ button.dropdown-toggle.sr-only {
 \*****************/
 
 .fuelux .datepicker-calendar-days td.last-month,
-.fuelux .datepicker-calendar-days td.next-month, .fuelux .datepicker-calendar-footer, .fuelux .wizard > .actions, .fuelux .pillbox > .pill-group > .pill, .dropdown-menu .divider, .nav .nav-divider, .navbar-default .navbar-nav > .active > a,
+.fuelux .datepicker-calendar-days td.next-month, 
+.fuelux .datepicker-calendar-footer, 
+.fuelux .wizard > .actions, 
+.fuelux .pillbox > .pill-group > .pill, 
+.dropdown-menu .divider, 
+.nav .nav-divider, 
+.navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
-  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
-  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
   background: #eee;
 }
+
+/* NOTE: SURE IF ALL THESE WERE CHANGED */
+
     
-legend, .modal-header {
+legend, 
+.modal-header {
       border-bottom: 1px solid #EEE;
 }
     
-.modal-footer, .modal .modal-footer {
+.modal-footer, 
+.modal .modal-footer {
     border-top: 1px solid #eee;
 }
     
@@ -156,21 +191,45 @@ legend, .modal-header {
      border: 1px solid #EEE;
 }
 
-.bs-example, .navbar-default, .navbar-default .navbar-collapse,
-.navbar-default .navbar-form, .nav-tabs > li.disabled > a, .nav-tabs > li.disabled > a:hover,
+.bs-example, 
+.navbar-default, 
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form, 
+.nav-tabs > li.disabled > a, 
+.nav-tabs > li.disabled > a:hover,
 .nav-tabs > li.disabled > a:focus {
-    border-color: #EEE;
+    border-color: #EEE; 
 }
 
 
 /*****************\
       #F5F5F5
 \*****************/
-.well, .fuelux .wizard > .steps.previous-disabled li.complete:hover, .fuelux .wizard > .steps li.complete, .fuelux .wizard .steps li, .fuelux .wizard .actions, .fuelux .wizard .steps, .nav-tabs > li > a, .popover, .btn-panel, .navbar-default, .table-striped > tbody > tr:nth-child(odd) > td,
-.table-striped > tbody > tr:nth-child(odd) > th, .table-striped > tbody > tr:nth-of-type(odd), .fuelux .repeater-header,
-.fuelux .repeater-footer, .fuelux .repeater-list table tbody td.sorted, .fuelux .repeater-list table thead > tr > th, .fuelux .repeater-list-heading, .fuelux .wizard, .bs-example-popover, .bs-example, .fuelux .wizard > .steps li.active, .fuelux .repeater-list .table tr th, .fuelux .repeater-list .table tr th .repeater-list-heading, .fuelux .repeater-pagination .repeater-next,
-.fuelux .repeater-pagination .repeater-prev   {
-	background: #F5F5F5;    
+.well, 
+.fuelux .wizard > .steps.previous-disabled li.complete:hover, /* NOTE: ???? */
+.fuelux .wizard > .steps li.complete, 
+.fuelux .wizard .steps li, 
+.fuelux .wizard .actions, 
+.fuelux .wizard .steps, 
+.nav-tabs > li > a, 
+.popover, 
+.btn-panel, 
+.navbar-default, 
+.table-striped > tbody > tr:nth-child(odd) > td,
+.table-striped > tbody > tr:nth-child(odd) > th, 
+.table-striped > tbody > tr:nth-of-type(odd), 
+.fuelux .repeater-header,
+.fuelux .repeater-footer, 
+.fuelux .repeater-list table tbody td.sorted, /* NOTE: changed to blue smoke */
+.fuelux .wizard, 
+.bs-example-popover, 
+.bs-example, 
+.fuelux .wizard > .steps li.active, /* NOTE: disregarding and keeping blue */
+.fuelux .repeater-list .table tr th, 
+.fuelux .repeater-list .table tr th .repeater-list-heading, 
+.fuelux .repeater-pagination .repeater-next,
+.fuelux .repeater-pagination .repeater-prev {
+	background: #F5F5F5;
 }
 
 .fuelux .wizard .steps li.active .chevron:after {
