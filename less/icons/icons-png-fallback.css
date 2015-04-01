@@ -10,6 +10,14 @@
 
 .fuelux-icon-caret-right, .glyphicon-caret-right { background-image: url('png/caret-right.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
+.fuelux-icon-channel-pin-blue, .glyphicon-channel-pin-blue { background-image: url('png/channel-pin-blue.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-channel-pin-green, .glyphicon-channel-pin-green { background-image: url('png/channel-pin-green.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-channel-pin-red, .glyphicon-channel-pin-red { background-image: url('png/channel-pin-red.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-channel-pin, .glyphicon-channel-pin { background-image: url('png/channel-pin.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
 .fuelux-icon-checkbox-active-hover, .fuelux-icon-checkbox:active:hover, button:active:hover > .fuelux-icon-checkbox , .glyphicon-checkbox-active-hover, .glyphicon-checkbox:active:hover, button:active:hover > .glyphicon-checkbox { background-image: url('png/checkbox-active-hover.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
 .fuelux-icon-checkbox-active, .fuelux-icon-checkbox:active, button:active > .fuelux-icon-checkbox , .glyphicon-checkbox-active, .glyphicon-checkbox:active, button:active > .glyphicon-checkbox { background-image: url('png/checkbox-active.png'); background-repeat: no-repeat; .fuelux-icon; } 
@@ -56,6 +64,10 @@
 
 .fuelux-icon-danger, .glyphicon-danger { background-image: url('png/danger.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
+.fuelux-icon-default-size-hover, .fuelux-icon-default-size:hover, button:hover > .fuelux-icon-default-size , .glyphicon-default-size-hover, .glyphicon-default-size:hover, button:hover > .glyphicon-default-size { background-image: url('png/default-size-hover.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-default-size, .glyphicon-default-size { background-image: url('png/default-size.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
 .fuelux-icon-delete, .glyphicon-delete { background-image: url('png/delete.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
 .fuelux-icon-dot-hover, .fuelux-icon-dot:hover, button:hover > .fuelux-icon-dot , .glyphicon-dot-hover, .glyphicon-dot:hover, button:hover > .glyphicon-dot { background-image: url('png/dot-hover.png'); background-repeat: no-repeat; .fuelux-icon; } 
@@ -70,6 +82,10 @@
 
 .fuelux-icon-email, .glyphicon-email { background-image: url('png/email.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
+.fuelux-icon-facebook-page, .glyphicon-facebook-page { background-image: url('png/facebook-page.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-facebook, .glyphicon-facebook { background-image: url('png/facebook.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
 .fuelux-icon-folder-close-hover, .fuelux-icon-folder-close:hover, button:hover > .fuelux-icon-folder-close , .glyphicon-folder-close-hover, .glyphicon-folder-close:hover, button:hover > .glyphicon-folder-close { background-image: url('png/folder-close-hover.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
 .fuelux-icon-folder-close, .glyphicon-folder-close { background-image: url('png/folder-close.png'); background-repeat: no-repeat; .fuelux-icon; } 
@@ -79,6 +95,10 @@
 .fuelux-icon-folder-open, .glyphicon-folder-open { background-image: url('png/folder-open.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
 .fuelux-icon-folder, .glyphicon-folder { background-image: url('png/folder.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-full-size-hover, .fuelux-icon-full-size:hover, button:hover > .fuelux-icon-full-size , .glyphicon-full-size-hover, .glyphicon-full-size:hover, button:hover > .glyphicon-full-size { background-image: url('png/full-size-hover.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-full-size, .glyphicon-full-size { background-image: url('png/full-size.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
 .fuelux-icon-gridview-columns-configure, .glyphicon-gridview-columns-configure { background-image: url('png/gridview-columns-configure.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
@@ -92,11 +112,25 @@
 
 .fuelux-icon-info, .glyphicon-info { background-image: url('png/info.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
+.fuelux-icon-message-type-in, .glyphicon-message-type-in { background-image: url('png/message-type-in.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-message-type-out, .glyphicon-message-type-out { background-image: url('png/message-type-out.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-mobile-push, .glyphicon-mobile-push { background-image: url('png/mobile-push.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-mobile-sms-deprecated, .glyphicon-mobile-sms-deprecated { background-image: url('png/mobile-sms-deprecated.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-mobile-sms, .glyphicon-mobile-sms { background-image: url('png/mobile-sms.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
 .fuelux-icon-nyt_exporter_info, .glyphicon-nyt_exporter_info { background-image: url('png/nyt_exporter_info.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
 .fuelux-icon-pencil-hover, .fuelux-icon-pencil:hover, button:hover > .fuelux-icon-pencil , .glyphicon-pencil-hover, .glyphicon-pencil:hover, button:hover > .glyphicon-pencil { background-image: url('png/pencil-hover.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
 .fuelux-icon-pencil, .glyphicon-pencil { background-image: url('png/pencil.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-people, .glyphicon-people { background-image: url('png/people.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-person, .glyphicon-person { background-image: url('png/person.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
 .fuelux-icon-plus-sign-disabled, .glyphicon-plus-sign-disabled { background-image: url('png/plus-sign-disabled.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
@@ -120,9 +154,17 @@
 
 .fuelux-icon-radio-button, .glyphicon-radio-button { background-image: url('png/radio-button.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
+.fuelux-icon-refresh-hover, .fuelux-icon-refresh:hover, button:hover > .fuelux-icon-refresh , .glyphicon-refresh-hover, .glyphicon-refresh:hover, button:hover > .glyphicon-refresh { background-image: url('png/refresh-hover.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-refresh, .glyphicon-refresh { background-image: url('png/refresh.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
 .fuelux-icon-remove-hover, .fuelux-icon-remove:hover, button:hover > .fuelux-icon-remove , .glyphicon-remove-hover, .glyphicon-remove:hover, button:hover > .glyphicon-remove { background-image: url('png/remove-hover.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
 .fuelux-icon-remove, .glyphicon-remove { background-image: url('png/remove.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-return-to-top-hover, .fuelux-icon-return-to-top:hover, button:hover > .fuelux-icon-return-to-top , .glyphicon-return-to-top-hover, .glyphicon-return-to-top:hover, button:hover > .glyphicon-return-to-top { background-image: url('png/return-to-top-hover.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-return-to-top, .glyphicon-return-to-top { background-image: url('png/return-to-top.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
 .fuelux-icon-search-active-hover, .fuelux-icon-search:active:hover, button:active:hover > .fuelux-icon-search , .glyphicon-search-active-hover, .glyphicon-search:active:hover, button:active:hover > .glyphicon-search { background-image: url('png/search-active-hover.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
@@ -146,9 +188,39 @@
 
 .fuelux-icon-success, .glyphicon-success { background-image: url('png/success.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
+.fuelux-icon-thumbs-down-blue, .glyphicon-thumbs-down-blue { background-image: url('png/thumbs-down-blue.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-thumbs-down-green, .glyphicon-thumbs-down-green { background-image: url('png/thumbs-down-green.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-thumbs-down-grey, .glyphicon-thumbs-down-grey { background-image: url('png/thumbs-down-grey.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-thumbs-down-orange, .glyphicon-thumbs-down-orange { background-image: url('png/thumbs-down-orange.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-thumbs-down-red, .glyphicon-thumbs-down-red { background-image: url('png/thumbs-down-red.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-thumbs-down-white, .glyphicon-thumbs-down-white { background-image: url('png/thumbs-down-white.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-thumbs-up-blue, .glyphicon-thumbs-up-blue { background-image: url('png/thumbs-up-blue.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-thumbs-up-green, .glyphicon-thumbs-up-green { background-image: url('png/thumbs-up-green.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-thumbs-up-grey, .glyphicon-thumbs-up-grey { background-image: url('png/thumbs-up-grey.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-thumbs-up-orange, .glyphicon-thumbs-up-orange { background-image: url('png/thumbs-up-orange.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-thumbs-up-red, .glyphicon-thumbs-up-red { background-image: url('png/thumbs-up-red.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-thumbs-up-white, .glyphicon-thumbs-up-white { background-image: url('png/thumbs-up-white.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
 .fuelux-icon-trash-hover, .fuelux-icon-trash:hover, button:hover > .fuelux-icon-trash , .glyphicon-trash-hover, .glyphicon-trash:hover, button:hover > .glyphicon-trash { background-image: url('png/trash-hover.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
 .fuelux-icon-trash, .glyphicon-trash { background-image: url('png/trash.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
+.fuelux-icon-twitter, .glyphicon-twitter { background-image: url('png/twitter.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
 .fuelux-icon-warning, .glyphicon-warning { background-image: url('png/warning.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-zoom-in, .glyphicon-zoom-in { background-image: url('png/zoom-in.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-zoom-out, .glyphicon-zoom-out { background-image: url('png/zoom-out.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
