@@ -1,0 +1,29 @@
+.fuelux-icon-list {
+	padding-left: 0;
+	list-style: none;
+}
+.fuelux-icon-list li {
+	float: left;
+	width: 12.5%;
+	height: 200px;
+	padding: 10px;
+	background-color: #f9f9f9;
+	border: 1px solid #fff;
+}
+/*
+.icon-wrapper {
+	min-width: 40%;
+	max-width: 90%;
+	min-height: 40%;
+	max-height: 90%;
+	width: 50%;
+	height: 50%;
+	margin: 0 auto;
+	outline: 1px solid limegreen;
+}*/
+.fuelux-icon-list li .fuelux-icon {
+	/*margin: 10px auto;*/
+	width: 80px !important;
+	height: 80px !important;
+	/*display: inline-block;*/
+}
