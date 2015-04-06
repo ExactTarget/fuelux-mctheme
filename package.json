@@ -49,7 +49,6 @@
     "grunt-string-replace": "1.x",
     "grunt-svgmin": "2.x",
     "grunt-text-replace": "0.x",
-    "grunt-uncss": "^0.4.1",
     "grunt-zip": "0.x",
     "load-grunt-tasks": "0.x",
     "volo": "0.x"
