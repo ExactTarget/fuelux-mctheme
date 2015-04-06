@@ -16,6 +16,9 @@ validation-status.json
 less/fuelux-override-no-namespace.less
 less/fuelux-mctheme-no-namespace.less
 
+# Temp file created in the LESS build
+less/icons/png/*.png
+
 
 # dev-specific fils related to serve-dev task
 examples/*/*-dev.html
