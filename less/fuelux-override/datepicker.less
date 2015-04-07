@@ -110,6 +110,11 @@
 					&.current-day {
 						button {
 							background: #E6E6E6;
+							// border: 1px solid #999;
+						}
+
+						span {
+							border-radius: 0px;
 							border: 1px solid #999;
 						}
 
@@ -119,6 +124,12 @@
 								border: none;
 								-webkit-box-shadow: 1px 2px 2px 0 rgba(0, 0, 0, 0.1) inset;
 								box-shadow: 1px 2px 2px 0 rgba(0, 0, 0, 0.1) inset;
+							}
+						}
+
+						&.selected:hover {
+							button {
+								background: @blue-slate;
 							}
 						}
 					}
@@ -140,10 +151,13 @@
 
 					&.selected {
 						button, button:hover {
-							background: @blue-slate;
+							background: @blue-sky;
 							border: none;
 							-webkit-box-shadow: 1px 2px 2px 0 rgba(0, 0, 0, 0.1) inset;
 							box-shadow: 1px 2px 2px 0 rgba(0, 0, 0, 0.1) inset;
+						}
+						button:hover {
+							background: @blue-slate;
 						}
 
 						span, span:hover {
