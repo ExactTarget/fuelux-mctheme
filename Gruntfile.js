@@ -206,18 +206,20 @@ module.exports = function (grunt) {
 
 
 		less: {
-			pre: {
-				options: {
-					strictMath: true,
-					sourceMap: true,
-					outputSourceFiles: true,
-					sourceMapURL: '<%= pkg.name %>-fuelux-mctheme-no-namespace.css.map',
-					sourceMapFilename: 'dist/css/<%= pkg.name %>-fuelux-mctheme-no-namespace.css.map'
-				},
-				files: {
-					'less/fuelux-mctheme-no-namespace.less': 'less/fuelux-mctheme.less'
-				}
-			},
+			// pre: {
+			// 	options: {
+			// 		strictMath: true,
+			// 		sourceMap: true,
+			// 		outputSourceFiles: true,
+			// 		sourceMapURL: '<%= pkg.name %>-fuelux-mctheme-no-namespace.css.map',
+			// 		sourceMapFilename: 'dist/css/<%= pkg.name %>-fuelux-mctheme-no-namespace.css.map'
+			// 	},
+			// 	files: {
+			// 		'less/fuelux-mctheme-no-namespace.less': 'less/fuelux-mctheme.less',
+			// 		'less/fuelux-override-no-namespace.less': 'less/fuelux-override.less',
+			// 		'dist/css/fuelux-mctheme-dev.css': 'less/fuelux-mctheme-namespace.less'
+			// 	}
+			// },
 			dev: {
 				options: {
 					strictMath: true,
@@ -228,6 +230,7 @@ module.exports = function (grunt) {
 				},
 				files: {
 					'less/fuelux-mctheme-no-namespace.less': 'less/fuelux-mctheme.less',
+					'less/fuelux-override-no-namespace.less': 'less/fuelux-override.less',
 					'dist/css/fuelux-mctheme-dev.css': 'less/fuelux-mctheme-namespace.less'
 				}
 			},
@@ -240,6 +243,8 @@ module.exports = function (grunt) {
 					sourceMapFilename: 'dist/css/<%= pkg.name %>.css.map'
 				},
 				files: {
+					'less/fuelux-mctheme-no-namespace.less': 'less/fuelux-mctheme.less',
+					'less/fuelux-override-no-namespace.less': 'less/fuelux-override.less',
 					'dist/css/fuelux-mctheme.css': 'less/fuelux-mctheme-namespace.less'
 				}
 			},
@@ -333,7 +338,7 @@ module.exports = function (grunt) {
 		},
 		watch: {
 			full: {
-				files: ['Gruntfile.js', 'examples/**', 'less/**', '!less/fuelux-override-no-namespace.less'],
+				files: ['Gruntfile.js', 'examples/**', 'less/**', '!less/fuelux-mctheme-no-namespace.less', '!less/fuelux-override-no-namespace.less'],
 				options: {
 					livereload: isLivereloadEnabled
 				},
@@ -368,14 +373,15 @@ module.exports = function (grunt) {
 			force: true
 		};
 		grunt.file.delete('less/fuelux-mctheme-no-namespace.less', options);
+		grunt.file.delete('less/fuelux-override-no-namespace.less', options);
 	});
 
 
 	// CSS distribution task
-	grunt.registerTask('distcss', 'Compile LESS into the dist CSS', ['less:pre', 'less:dist', 'delete-temp-less-file', 'replace:imgpaths', 'less:minify', 'usebanner']);
+	grunt.registerTask('distcss', 'Compile LESS into the dist CSS', ['less:dist', 'delete-temp-less-file', 'replace:imgpaths', 'less:minify', 'usebanner']);
 
 	// CSS dev distribution task
-	grunt.registerTask('distcssdev', 'Compile LESS into the dev CSS', ['less:pre', 'less:dev', 'delete-temp-less-file']);
+	grunt.registerTask('distcssdev', 'Compile LESS into the dev CSS', ['less:dev', 'delete-temp-less-file']);
 
 	// ZIP distribution task
 	grunt.registerTask('distzip', ['copy:zipsrc', 'compress', 'clean:zipsrc']);
