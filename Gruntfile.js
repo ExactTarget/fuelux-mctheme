@@ -206,20 +206,6 @@ module.exports = function (grunt) {
 
 
 		less: {
-			// pre: {
-			// 	options: {
-			// 		strictMath: true,
-			// 		sourceMap: true,
-			// 		outputSourceFiles: true,
-			// 		sourceMapURL: '<%= pkg.name %>-fuelux-mctheme-no-namespace.css.map',
-			// 		sourceMapFilename: 'dist/css/<%= pkg.name %>-fuelux-mctheme-no-namespace.css.map'
-			// 	},
-			// 	files: {
-			// 		'less/fuelux-mctheme-no-namespace.less': 'less/fuelux-mctheme.less',
-			// 		'less/fuelux-override-no-namespace.less': 'less/fuelux-override.less',
-			// 		'dist/css/fuelux-mctheme-dev.css': 'less/fuelux-mctheme-namespace.less'
-			// 	}
-			// },
 			dev: {
 				options: {
 					strictMath: true,
