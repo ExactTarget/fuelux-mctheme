@@ -108,6 +108,8 @@
 
 .fuelux-icon-gridview-paragraph, .glyphicon-gridview-paragraph { background-image: url('png/gridview-paragraph.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
+.fuelux-icon-gridview-performance, .glyphicon-gridview-performance { background-image: url('png/gridview-performance.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
 .fuelux-icon-gridview-thumbnail, .glyphicon-gridview-thumbnail { background-image: url('png/gridview-thumbnail.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
 .fuelux-icon-info, .glyphicon-info { background-image: url('png/info.png'); background-repeat: no-repeat; .fuelux-icon; } 
