@@ -46,9 +46,9 @@
     "grunt-curl": "2.x",
     "grunt-grunticon": "2.0.0-beta.5",
     "grunt-shell": "1.x",
+    "grunt-string-replace": "1.x",
     "grunt-svgmin": "2.x",
     "grunt-text-replace": "0.x",
-    "grunt-string-replace": "1.x",
     "grunt-zip": "0.x",
     "load-grunt-tasks": "0.x",
     "volo": "0.x"
