@@ -4,7 +4,30 @@
 	}
 }
 
-.radio, .checkbox {
+
+.fuelux label.radio:hover,
+.fuelux label.checkbox:hover,
+.fuelux label.radio-inline:hover,
+.fuelux label.checkbox-inline:hover,
+.fuelux .input-label.radio:hover,
+.fuelux .input-label.checkbox:hover,
+.fuelux .input-label.radio-inline:hover,
+.fuelux .input-label.checkbox-inline:hover {
+		.labelHover;
+}
+
+.fuelux label.radio,
+.fuelux label.checkbox,
+.fuelux label.radio-inline,
+.fuelux label.checkbox-inline {
+	cursor: pointer;
+	font-weight: normal;
+	font-size: 12px;
+	.labelHover;
+}
+
+
+.fuelux .radio, .fuelux .checkbox {
 	// outline: 1px solid limegreen;
 	// position: relative;
 	// left: -4px;
@@ -27,11 +50,11 @@
 		// Sometimes the wrapping containter is a div with .checkbox or .radio, and has a label within it.
 		// Sometimes the label itself is the wrapping container, and has .checkbox or .radio on it.
 		// The use of the amperstand "parent selector" here allows us to cover many scenarios at once, with terse, but elegant, code.
-		label&, .input-label&, & label, & .input-label {
+		& label, & .input-label {
 			.labelHover;
 		}
 		
-		label, .input-label, label& {
+		label, .input-label {
 			cursor: pointer;
 			font-weight: normal;
 			font-size: 12px;
@@ -178,11 +201,6 @@
 		}
 	}
 
-
-	& + & input:not(.sr-only) ~ label {
-		top: 1px;
-	}
-
 	&.highlight {
 		input:not(.sr-only) {
 			& ~ label {
@@ -207,4 +225,12 @@
 
 
 
+}
+
+
+.fuelux .radio + .radio input:not(.sr-only) ~ label,
+.fuelux .radio + .checkbox input:not(.sr-only) ~ label,
+.fuelux .checkbox + .radio input:not(.sr-only) ~ label,
+.fuelux .checkbox + .checkbox input:not(.sr-only) ~ label {
+	top: 1px;
 }
