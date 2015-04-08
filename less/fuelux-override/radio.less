@@ -39,7 +39,7 @@
 
 
 
-.radio-custom {
+.fuelux .radio-custom {
 	line-height: 20px;
 
 	padding-left: @radio-button-padding-left;
@@ -99,19 +99,20 @@
 		}
 	}
 
-	label&.radio-inline, &.radio-inline {
+}
 
-		@form-elements-padding: unit( ((@radio-button-width-value + ((@radio-button-width-value / 3) * 3))), px );
+.fuelux label.radio-custom.radio-inline, .radio-custom.radio-inline {
 
+	@form-elements-padding: unit( ((@radio-button-width-value + ((@radio-button-width-value / 3) * 3))), px );
+
+	padding-left: @form-elements-padding;
+
+
+	&.highlight {
+		@form-elements-padding: unit( ((@radio-button-width-value + ((@radio-button-width-value / 3) * 4))), px );
 		padding-left: @form-elements-padding;
-
-
-		&.highlight {
-			@form-elements-padding: unit( ((@radio-button-width-value + ((@radio-button-width-value / 3) * 4))), px );
-			padding-left: @form-elements-padding;
-			&:before {
-				top: 6px;
-			}
+		&:before {
+			top: 6px;
 		}
 	}
 }

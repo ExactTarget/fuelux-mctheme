@@ -4,7 +4,7 @@
 }
 
 
-.radio, .radio-inline {
+.fuelux .radio, .fuelux .radio-inline {
 	
 	input[type="radio"]:not(.sr-only) {
 
@@ -91,32 +91,26 @@
 }
 
 
-.radio {
-	& + & input:not(.sr-only) ~ label {
+.fuelux .radio {
+	& + .radio input:not(.sr-only) ~ label {
 		top: 0px;
 	}
-	& + & {
+	& + .radio {
 		label.radio-custom {
 			margin-top: 5px;
 		}
 	}
 	&.highlight {
-		& + & {
+		& + .radio.highlight {
 			margin-top: -5px;
 		}
-		input:not(.sr-only) {
-			& ~ label {
-				left: -7px;
-			}
+		input:not(.sr-only)  ~ label {
+			left: -7px;
 		}
 	}
-	&-inline {
-		&.highlight {
-			input:not(.sr-only) {
-				& ~ label {
-					left: -3px;
-				}
-			}
+	&-inline.highlight {
+		input:not(.sr-only) ~ label {
+			left: -3px;
 		}
 	}
 }

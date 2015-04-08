@@ -24,7 +24,7 @@
 }
 
 
-.checkbox {
+.fuelux .checkbox {
 
 	&.highlight {
 		& label.checkbox-custom {
@@ -35,16 +35,12 @@
 
 
 
-.checkbox-custom {
+.fuelux .checkbox-custom {
 	line-height: 20px;
 
 	padding-left: @checkbox-padding-left;
 
 	.checkbox-before;
-
-	label& {
-		margin-bottom: 5px;
-	}
 
 	&:hover {
 		.checkbox-before;
@@ -107,4 +103,8 @@
 			position: absolute;
 		}
 	}
+}
+
+.fuelux label.checkbox-custom {
+  margin-bottom: 5px;
 }
