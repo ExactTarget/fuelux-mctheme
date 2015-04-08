@@ -164,6 +164,10 @@
 
 .fuelux-icon-search-active, .fuelux-icon-search:active, button:active > .fuelux-icon-search , .glyphicon-search-active, .glyphicon-search:active, button:active > .glyphicon-search { background-image: url('png/search-active.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
+.fuelux-icon-search-deprecated-hover, .fuelux-icon-search-deprecated:hover, button:hover > .fuelux-icon-search-deprecated , .glyphicon-search-deprecated-hover, .glyphicon-search-deprecated:hover, button:hover > .glyphicon-search-deprecated { background-image: url('png/search-deprecated-hover.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-search-deprecated, .glyphicon-search-deprecated { background-image: url('png/search-deprecated.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
 .fuelux-icon-search-hover, .fuelux-icon-search:hover, button:hover > .fuelux-icon-search , .glyphicon-search-hover, .glyphicon-search:hover, button:hover > .glyphicon-search { background-image: url('png/search-hover.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
 .fuelux-icon-search, .glyphicon-search { background-image: url('png/search.png'); background-repeat: no-repeat; .fuelux-icon; } 
