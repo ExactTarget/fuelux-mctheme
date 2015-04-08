@@ -205,6 +205,7 @@ module.exports = function (grunt) {
 		},
 
 
+
 		less: {
 			dev: {
 				options: {
@@ -215,11 +216,7 @@ module.exports = function (grunt) {
 					sourceMapFilename: 'dist/css/<%= pkg.name %>-dev.css.map'
 				},
 				files: {
-					'dist/css/fuelux-mctheme-dev.css': 'less/fuelux-mctheme.less',
-					'dist/css/fuelux-override-dev.css': 'less/fuelux-override.less',
-					'less/fuelux-mctheme-no-namespace.less': 'less/fuelux-mctheme.less',
-					'less/fuelux-override-no-namespace.less': 'less/fuelux-override.less',
-					'dist/css/fuelux-mctheme-all-dev.css': 'less/fuelux-mctheme-namespace.less'
+					'dist/css/fuelux-mctheme-dev.css': 'less/fuelux-mctheme.less'
 				}
 			},
 			dist: {
@@ -231,9 +228,7 @@ module.exports = function (grunt) {
 					sourceMapFilename: 'dist/css/<%= pkg.name %>.css.map'
 				},
 				files: {
-					'less/fuelux-mctheme-no-namespace.less': 'less/fuelux-mctheme.less',
-					'less/fuelux-override-no-namespace.less': 'less/fuelux-override.less',
-					'dist/css/fuelux-mctheme.css': 'less/fuelux-mctheme-namespace.less'
+					'dist/css/fuelux-mctheme.css': 'less/fuelux-mctheme.less'
 				}
 			},
 
@@ -333,7 +328,7 @@ module.exports = function (grunt) {
 				tasks: ['distcss']
 			},
 			dev: {
-				files: ['Gruntfile.js', 'less/**', 'index.html', 'index-dev.html', '*-dev.html', 'dev.html', '!less/fuelux-mctheme-no-namespace.less'],
+				files: ['Gruntfile.js', 'less/**', 'index.html', 'index-dev.html', '*-dev.html', 'dev.html', '!less/fuelux-mctheme-no-namespace.less', '!less/fuelux-override-no-namespace.less'],
 				options: {
 					livereload: isLivereloadEnabled
 				},
