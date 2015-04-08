@@ -49,43 +49,6 @@
 					c2.178,1.334,5.061,1.074,6.946-0.811C17.537,10.514,17.538,6.935,15.33,4.729z M8.229,11.83c-1.713-1.717-1.713-4.498,0-6.209
 					c1.71-1.711,4.496-1.711,6.209,0s1.713,4.492,0,6.209C12.725,13.539,9.939,13.539,8.229,11.83z"/>
 			</g>
-			<g style="display:none;">
-				<defs>
-					<path id="SVGID_3_" d="M8.389,10.377l0.007,0.21c0.002,0.032-0.025,0.056-0.056,0.06c-0.016,0-0.031-0.005-0.042-0.018
-						l-0.029-0.027l-0.051-0.047L8.389,10.377z"/>
-				</defs>
-				<clipPath id="SVGID_4_" style="display:inline;">
-					<use xlink:href="#SVGID_3_"  style="overflow:visible;"/>
-				</clipPath>
-				<g style="display:inline;clip-path:url(#SVGID_4_);">
-					
-						<image style="overflow:visible;" width="1" height="1" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAACXBIWXMAAAsSAAALEgHS3X78AAAA
-GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYAACgAADAAAFAAHb
-iZPSAAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 8 10)">
-					</image>
-				</g>
-			</g>
-			
-				<image style="overflow:visible;" width="6" height="6" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAACXBIWXMAAAsSAAALEgHS3X78AAAA
-GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADhJREFUeNpiYICC////zwHib/+h
-ACZ4AIjnA/FPuAQQpwHxJRSVUNWpGIJQiakYglCJNGwSAAEGAMZ8TD0pwqYbAAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 7 5)">
-			</image>
-			<g style="display:none;">
-				<defs>
-					<path id="SVGID_5_" d="M12.191,5.525l0.059,0.035l0.033,0.021c0.026,0.018,0.035,0.053,0.019,0.08
-						c-0.009,0.012-0.022,0.021-0.04,0.025l-0.2,0.042L12.191,5.525z"/>
-				</defs>
-				<clipPath id="SVGID_6_" style="display:inline;">
-					<use xlink:href="#SVGID_5_"  style="overflow:visible;"/>
-				</clipPath>
-				<g style="display:inline;clip-path:url(#SVGID_6_);">
-					
-						<image style="overflow:visible;" width="1" height="1" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAACXBIWXMAAAsSAAALEgHS3X78AAAA
-GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYAACgAADAAAFAAHb
-iZPSAAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 12 5)">
-					</image>
-				</g>
-			</g>
 		</g>
 	</g>
 </g>

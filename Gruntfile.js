@@ -1,27 +1,26 @@
 /*jshint expr:true*/
 /*global module:false*/
 module.exports = function (grunt) {
-
 	// use --no-livereload to disable livereload. Helpful to 'serve' multiple projects
 	var isLivereloadEnabled = (typeof grunt.option('livereload') !== 'undefined') ? grunt.option('livereload') : 35730;
 
 	// release minor or patch version. Do major releases manually
-	var versionReleaseType = (typeof grunt.option('minor') !== 'undefined') ? 'minor':'patch';
+	var versionReleaseType = (typeof grunt.option('minor') !== 'undefined') ? 'minor' : 'patch';
 
 	// Project configuration.
 	grunt.initConfig({
 		// Metadata
 		bannerRelease: '/*!\n' +
-		' * Marketing Cloud Theme v<%= pkg.version %> \n' +
-		' * Copyright <%= grunt.template.today("yyyy") %> <%= pkg.author.name %>\n' +
-		' * Licensed under <%= pkg.license.type %> (<%= pkg.license.url %>)\n' +
-		' */\n',
+				' * Marketing Cloud Theme v<%= pkg.version %> \n' +
+				' * Copyright <%= grunt.template.today("yyyy") %> <%= pkg.author.name %>\n' +
+				' * Licensed under <%= pkg.license.type %> (<%= pkg.license.url %>)\n' +
+				' */\n',
 		banner: '/*!\n' +
-		' * Marketing Cloud Theme EDGE - Built <%= grunt.template.today("yyyy/mm/dd, h:MM:ss TT") %> \n' +
-		' * Previous release: v<%= pkg.version %> \n' +
-		' * Copyright 2012-<%= grunt.template.today("yyyy") %> <%= pkg.author.name %>\n' +
-		' * Licensed under the <%= pkg.license.type %> license (<%= pkg.license.url %>)\n' +
-		' */\n',
+				' * Marketing Cloud Theme EDGE - Built <%= grunt.template.today("yyyy/mm/dd, h:MM:ss TT") %> \n' +
+				' * Previous release: v<%= pkg.version %> \n' +
+				' * Copyright 2012-<%= grunt.template.today("yyyy") %> <%= pkg.author.name %>\n' +
+				' * Licensed under the <%= pkg.license.type %> license (<%= pkg.license.url %>)\n' +
+				' */\n',
 		pkg: grunt.file.readJSON('package.json'),
 		// Tasks configuration
 
@@ -39,92 +38,83 @@ module.exports = function (grunt) {
 				// as it is created it only supports .fuelux-icon- prefixen, and we need it to support .glyphicon- also, so that the theme can override bootstrap and fuelux fefaults
 				// 
 				options: {
-					replacements: [
-					{
+					replacements: [{
 						// so, first we add .glyphicon as a prefix in addition to .fuelux-icon
-						pattern:  /\.fuelux-icon(-?[_a-zA-Z]+[_a-zA-Z0-9-]*)\s*/g,
+						pattern: /\.fuelux-icon(-?[_a-zA-Z]+[_a-zA-Z0-9-]*)\s*/g,
 						replacement: '.fuelux-icon$1, .glyphicon$1 '
 					}
 
-					,
-					{
-						// we need to temporarily change -checked-hover-active into something else that we will tweek later.
-						// 
-						// if we were to do this replacement "for real" right now,there are replacements soon that would ruin it (same if reversed)
-						// 
-						// so, we replace it with TOBECHECKEDHOVERACTIVE and then the replacements looking for -checked or -hover or -active will leave it alone.
-						pattern:  /(\.-?[_a-zA-Z]+[_a-zA-Z0-9-]*)-checked-hover-active\s*/g,
-						replacement: '$1-TOBECHECKEDHOVERACTIVE '
-					}
+						, {
+							// we need to temporarily change -checked-hover-active into something else that we will tweek later.
+							// 
+							// if we were to do this replacement "for real" right now,there are replacements soon that would ruin it (same if reversed)
+							// 
+							// so, we replace it with TOBECHECKEDHOVERACTIVE and then the replacements looking for -checked or -hover or -active will leave it alone.
+							pattern: /(\.-?[_a-zA-Z]+[_a-zA-Z0-9-]*)-checked-hover-active\s*/g,
+							replacement: '$1-TOBECHECKEDHOVERACTIVE '
+						}
 
-					,
-					{
-						// we need to temporarily change -active-hover into something else that we will tweek later.
-						// 
-						// if we were to do this replacement "for real" right now,there are replacements soon that would ruin it (same if reversed)
-						// 
-						// so, we replace it with TOBEACTIVEHOVER and then the replacements looking for -hover or -active will leave it alone.
-						pattern:  /(\.-?[_a-zA-Z]+[_a-zA-Z0-9-]*)-active-hover\s*/g,
-						replacement: '$1-TOBEACTIVEHOVER '
-					}
+						, {
+							// we need to temporarily change -active-hover into something else that we will tweek later.
+							// 
+							// if we were to do this replacement "for real" right now,there are replacements soon that would ruin it (same if reversed)
+							// 
+							// so, we replace it with TOBEACTIVEHOVER and then the replacements looking for -hover or -active will leave it alone.
+							pattern: /(\.-?[_a-zA-Z]+[_a-zA-Z0-9-]*)-active-hover\s*/g,
+							replacement: '$1-TOBEACTIVEHOVER '
+						}
 
-					,
-					{
-						// Replace (pattern) dash hover with (itself), (pattern):hover, 
-						// and (itself as a direct decendant of a button that is being hovered)
-						// 
-						// The first one means that, say, .fuelux-icon-checkbox-hover as a 
-						// classname will render the proper icon...
-						// 
-						// ...but so will .fuelux-icon-checkbox:hover ...
-						// 
-						// ...which gets us *automatic hover states for all icons which follow 
-						// the proper naming convention*.
-						// 
-						// The last one tells the icons to show the hover state if they are 
-						// inside a button that is itself being hovered. Search is a good 
-						// example of where this happens.
-						pattern:  /(\.-?[_a-zA-Z]+[_a-zA-Z0-9-]*)-hover\s*/g,
-						replacement: '$1-hover, $1:hover, button:hover > $1 '
-					}
+						, {
+							// Replace (pattern) dash hover with (itself), (pattern):hover, 
+							// and (itself as a direct decendant of a button that is being hovered)
+							// 
+							// The first one means that, say, .fuelux-icon-checkbox-hover as a 
+							// classname will render the proper icon...
+							// 
+							// ...but so will .fuelux-icon-checkbox:hover ...
+							// 
+							// ...which gets us *automatic hover states for all icons which follow 
+							// the proper naming convention*.
+							// 
+							// The last one tells the icons to show the hover state if they are 
+							// inside a button that is itself being hovered. Search is a good 
+							// example of where this happens.
+							pattern: /(\.-?[_a-zA-Z]+[_a-zA-Z0-9-]*)-hover\s*/g,
+							replacement: '$1-hover, $1:hover, button:hover > $1 '
+						}
 
-					,
-					{
-						// Follows the same patterns, and reasoning, for -hover, above.
-						pattern:  /(\.-?[_a-zA-Z]+[_a-zA-Z0-9-]*)-active\s*/g,
-						replacement: '$1-active, $1:active, button:active > $1 '
-					}
+						, {
+							// Follows the same patterns, and reasoning, for -hover, above.
+							pattern: /(\.-?[_a-zA-Z]+[_a-zA-Z0-9-]*)-active\s*/g,
+							replacement: '$1-active, $1:active, button:active > $1 '
+						}
 
-					,
-					{
-						// Follows the same patterns, and reasoning, for -hover, above.
-						pattern:  /(\.-?[_a-zA-Z]+[_a-zA-Z0-9-]*)-focus\s*/g,
-						replacement: '$1-focus, $1:focus, button:focus > $1 '
-					}
+						, {
+							// Follows the same patterns, and reasoning, for -hover, above.
+							pattern: /(\.-?[_a-zA-Z]+[_a-zA-Z0-9-]*)-focus\s*/g,
+							replacement: '$1-focus, $1:focus, button:focus > $1 '
+						}
 
 
-					,
-					{
-						// Here we go ahead and safely affect the change on TOBEACTIVEHOVER, now that 
-						// the other replacements have happened.
-						pattern:  /(\.-?[_a-zA-Z]+[_a-zA-Z0-9-]*)-TOBEACTIVEHOVER\s*/g,
-						replacement: '$1-active-hover, $1:active:hover, button:active:hover > $1 '
-					}
+						, {
+							// Here we go ahead and safely affect the change on TOBEACTIVEHOVER, now that 
+							// the other replacements have happened.
+							pattern: /(\.-?[_a-zA-Z]+[_a-zA-Z0-9-]*)-TOBEACTIVEHOVER\s*/g,
+							replacement: '$1-active-hover, $1:active:hover, button:active:hover > $1 '
+						}
 
-					,
-					{
-						// Safe to do this now, too.
-						pattern:  /(\.-?[_a-zA-Z]+[_a-zA-Z0-9-]*)-TOBECHECKEDHOVERACTIVE\s*/g,
-						replacement: '$1-checked-hover-active, $1:checked:active:hover, button:active:hover > $1:checked '
-					}
+						, {
+							// Safe to do this now, too.
+							pattern: /(\.-?[_a-zA-Z]+[_a-zA-Z0-9-]*)-TOBECHECKEDHOVERACTIVE\s*/g,
+							replacement: '$1-checked-hover-active, $1:checked:active:hover, button:active:hover > $1:checked '
+						}
 
-					,
-					{
-						// Add a .fuelux-icon mixin to all the icons, so taht they catch the 
-						// inherited rules of height, width, background-size, and so forth.
-						pattern:  /\}/g,
-						replacement: '.fuelux-icon; } '
-					}
+						, {
+							// Add a .fuelux-icon mixin to all the icons, so taht they catch the 
+							// inherited rules of height, width, background-size, and so forth.
+							pattern: /\}/g,
+							replacement: '.fuelux-icon; } '
+						}
 					]
 				}
 			}
@@ -134,8 +124,8 @@ module.exports = function (grunt) {
 
 		bump: {
 			options: {
-				files: [ 'bower.json', 'package.json' ],
-				updateConfigs: [ 'pkg' ],
+				files: ['bower.json', 'package.json'],
+				updateConfigs: ['pkg'],
 				commit: false,
 				createTag: false,
 				tagName: '%VERSION%',
@@ -150,13 +140,11 @@ module.exports = function (grunt) {
 		},
 		compress: {
 			zip: {
-				files: [
-					{
-						cwd: 'dist/',
-						expand: true,
-						src: ['fuelux-mctheme/**']
-					}
-				],
+				files: [{
+					cwd: 'dist/',
+					expand: true,
+					src: ['fuelux-mctheme/**']
+				}],
 				options: {
 					archive: 'dist/fuelux-mctheme.zip',
 					mode: 'zip'
@@ -179,30 +167,30 @@ module.exports = function (grunt) {
 				options: {
 					hostname: '*',
 					port: process.env.PORT || 8000,
-					useAvailablePort: true	// don't be greedy with your ports
+					useAvailablePort: true// don't be greedy with your ports
 				}
 			},
 			testServer: {
 				options: {
 					hostname: '*',
-					port: 9000,		// allows main server to be run simultaneously
-					useAvailablePort: true	// don't be greedy with your ports
+					port: 9000,// allows main server to be run simultaneously
+					useAvailablePort: true// don't be greedy with your ports
 				}
 			}
 		},
 		curl: {
-		// Micro libraries via http://microjs.com/
+			// Micro libraries via http://microjs.com/
 			'docs.zip': 'https://github.com/twbs/bootstrap/archive/master.zip'
 		},
 
 		grunticon: {
 			makeSvgIcons: {
-				files: [ {
+				files: [{
 					expand: true,
-					cwd: "icons/svg-exports",
-					src: [ '*.svg', '*.png' ],
+					cwd: "icons/svg-optimized",
+					src: ['*.svg', '*.png'],
 					dest: "less/icons"
-				} ],
+				}],
 				options: {
 					"cssprefix": ".fuelux-icon-",
 					"datasvgcss": "icons-svg.less",
@@ -211,25 +199,13 @@ module.exports = function (grunt) {
 					"defaultWidth": "20px",
 					"defaultHeight": "20px",
 					"previewTemplate": "icons/preview-custom.hbs",
-					".previewhtml": ""
+					"previewhtml": "../../examples/icons/icons.html"
 				}
 			}
 		},
 
 
 		less: {
-			pre: {
-				options: {
-					strictMath: true,
-					sourceMap: true,
-					outputSourceFiles: true,
-					sourceMapURL: '<%= pkg.name %>-fuelux-mctheme-no-namespace.css.map',
-					sourceMapFilename: 'dist/css/<%= pkg.name %>-fuelux-mctheme-no-namespace.css.map'
-				},
-				files: {
-					'less/fuelux-mctheme-no-namespace.less': 'less/fuelux-mctheme.less'
-				}
-			},
 			dev: {
 				options: {
 					strictMath: true,
@@ -239,7 +215,11 @@ module.exports = function (grunt) {
 					sourceMapFilename: 'dist/css/<%= pkg.name %>-dev.css.map'
 				},
 				files: {
-					'dist/css/fuelux-mctheme-dev.css': 'less/fuelux-mctheme-namespace.less'
+					'dist/css/fuelux-mctheme-dev.css': 'less/fuelux-mctheme.less',
+					'dist/css/fuelux-override-dev.css': 'less/fuelux-override.less',
+					'less/fuelux-mctheme-no-namespace.less': 'less/fuelux-mctheme.less',
+					'less/fuelux-override-no-namespace.less': 'less/fuelux-override.less',
+					'dist/css/fuelux-mctheme-all-dev.css': 'less/fuelux-mctheme-namespace.less'
 				}
 			},
 			dist: {
@@ -251,6 +231,8 @@ module.exports = function (grunt) {
 					sourceMapFilename: 'dist/css/<%= pkg.name %>.css.map'
 				},
 				files: {
+					'less/fuelux-mctheme-no-namespace.less': 'less/fuelux-mctheme.less',
+					'less/fuelux-override-no-namespace.less': 'less/fuelux-override.less',
 					'dist/css/fuelux-mctheme.css': 'less/fuelux-mctheme-namespace.less'
 				}
 			},
@@ -265,12 +247,11 @@ module.exports = function (grunt) {
 					'dist/css/<%= pkg.name %>.min.css': 'dist/css/<%= pkg.name %>.css'
 				}
 			}
-
 		},
 		replace: {
 			readme: {
 				src: ['DETAILS.md', 'README.md'],
-				overwrite: true,                 // overwrite matched source files
+				overwrite: true,// overwrite matched source files
 				replacements: [{
 					from: /fuelux-mctheme\/\d\.\d\.\d/g,
 					to: "fuelux-mctheme/<%= pkg.version %>"
@@ -278,12 +259,10 @@ module.exports = function (grunt) {
 			},
 			imgpaths: {
 				overwrite: true,
-				replacements:[
-					{
-						from: "'../../img",
-						to: "'../img"
-					}
-				],
+				replacements: [{
+					from: "'../../img",
+					to: "'../img"
+				}],
 				src: [
 					'dist/css/fuelux-mctheme.css',
 					'dist/css/fuelux-mctheme.css.map'
@@ -291,12 +270,10 @@ module.exports = function (grunt) {
 			},
 			imgpathsdev: {
 				overwrite: true,
-				replacements:[
-					{
-						from: "'../../img",
-						to: "'../img"
-					}
-				],
+				replacements: [{
+					from: "'../../img",
+					to: "'../img"
+				}],
 				src: [
 					'dist-dev/css/fuelux-mctheme.css',
 					'dist-dev/css/fuelux-mctheme.css.map'
@@ -327,9 +304,9 @@ module.exports = function (grunt) {
 			dist: {
 				files: [{
 					expand: true,
-					cwd: 'img/src/svgs',
+					cwd: 'icons/svg-exports',
 					src: ['*.svg'],
-					dest: 'img/svgs-min'
+					dest: 'icons/svg-optimized'
 				}]
 			}
 		},
@@ -349,7 +326,7 @@ module.exports = function (grunt) {
 		},
 		watch: {
 			full: {
-				files: ['Gruntfile.js', 'examples/**','less/**', '!less/fuelux-override-no-namespace.less'],
+				files: ['Gruntfile.js', 'examples/**', 'less/**', '!less/fuelux-mctheme-no-namespace.less', '!less/fuelux-override-no-namespace.less'],
 				options: {
 					livereload: isLivereloadEnabled
 				},
@@ -366,7 +343,9 @@ module.exports = function (grunt) {
 	});
 
 	// Look ma! Load all grunt plugins in one line from package.json
-	require('load-grunt-tasks')(grunt, {scope: 'devDependencies'});
+	require('load-grunt-tasks')(grunt, {
+		scope: 'devDependencies'
+	});
 
 	/* -------------
 	 BUILD
@@ -377,19 +356,20 @@ module.exports = function (grunt) {
 
 
 	// Temporary LESS file deletion task
-	grunt.registerTask('delete-temp-less-file', 'Delete the temporary LESS file created during the build process', function() {
+	grunt.registerTask('delete-temp-less-file', 'Delete the temporary LESS file created during the build process', function () {
 		var options = {
 			force: true
 		};
 		grunt.file.delete('less/fuelux-mctheme-no-namespace.less', options);
+		grunt.file.delete('less/fuelux-override-no-namespace.less', options);
 	});
 
 
 	// CSS distribution task
-	grunt.registerTask('distcss', 'Compile LESS into the dist CSS', ['less:pre', 'less:dist', 'delete-temp-less-file', 'replace:imgpaths', 'less:minify', 'usebanner']);
+	grunt.registerTask('distcss', 'Compile LESS into the dist CSS', ['less:dist', 'delete-temp-less-file', 'replace:imgpaths', 'less:minify', 'usebanner']);
 
 	// CSS dev distribution task
-	grunt.registerTask('distcssdev', 'Compile LESS into the dev CSS', ['less:pre', 'less:dev', 'delete-temp-less-file']);
+	grunt.registerTask('distcssdev', 'Compile LESS into the dev CSS', ['less:dev', 'delete-temp-less-file']);
 
 	// ZIP distribution task
 	grunt.registerTask('distzip', ['copy:zipsrc', 'compress', 'clean:zipsrc']);
@@ -402,32 +382,32 @@ module.exports = function (grunt) {
 
 
 	// SVG Icon Making Tools
-	grunt.loadNpmTasks( 'grunt-grunticon' );
+	grunt.loadNpmTasks('grunt-grunticon');
 
 
 	/* ----------------
 		Making Icons
 	---------------- */
-	grunt.registerTask( 'make-icons', [ 'grunticon:makeSvgIcons', 'string-replace'] );
-	grunt.registerTask( 'make-icons-base', [ 'grunticon:makeSvgIcons'] );
-	grunt.registerTask( 'glyphify-icons', [ 'string-replace' ] );
+	grunt.registerTask('make-icons', ['svgmin', 'grunticon:makeSvgIcons', 'string-replace']);
+	grunt.registerTask('make-icons-base', ['grunticon:makeSvgIcons']);
+	grunt.registerTask('glyphify-icons', ['string-replace']);
 
 	/* -------------
 		RELEASE
 	------------- */
 	// Maintainers: Run prior to a release. 
 	// --minor will create a semver minor release, otherwise a patch release will be created
-	grunt.registerTask('release', 'Build a new version', function() {
+	grunt.registerTask('release', 'Build a new version', function () {
 		grunt.config('banner', '<%= bannerRelease %>');
 		grunt.task.run(['bump-only:' + versionReleaseType, 'dist', 'replace:readme']);
 	});
 
-	grunt.registerTask('gitrelease', ['shell:pullMaster', 'shell:pullRelease', 'shell:mergeRelease', 'release','shell:commitRelease','shell:tagRelease']);
+	grunt.registerTask('gitrelease', ['shell:pullMaster', 'shell:pullRelease', 'shell:mergeRelease', 'release', 'shell:commitRelease', 'shell:tagRelease']);
 
 	/* -------------
 			SERVE
 		------------- */
 	grunt.registerTask('serve', ['connect:server', 'watch:full']);
-	grunt.registerTask('servedev', ['distcssdev', 'connect:server', 'watch:dev', 'shell:syncDistWithMaster']); // This allows you to serve and watch files without overwriting the compiled css in the /dist/ directory.
+	grunt.registerTask('servedev', ['distcssdev', 'connect:server', 'watch:dev', 'shell:syncDistWithMaster']);// This allows you to serve and watch files without overwriting the compiled css in the /dist/ directory.
 	grunt.registerTask('dist-serve', ['dist', 'connect:server', 'watch:full']);
 };

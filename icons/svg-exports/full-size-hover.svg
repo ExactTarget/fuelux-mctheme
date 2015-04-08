@@ -32,7 +32,7 @@
 			v-0.828c0-0.275-0.225-0.5-0.5-0.5H5.938c-0.275,0-0.5-0.226-0.5-0.5v-3.957c0-0.275-0.225-0.5-0.5-0.5H4.125
 			c-0.275,0-0.5,0.225-0.5,0.5v2.949c0,0.274,0,0.725,0,1v1.836c0,0.275,0.225,0.5,0.5,0.5H5.946z"/>
 		
-			<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="5.5483" y1="14.4521" x2="16.6853" y2="3.3152" gradientTransform="matrix(0.9216 0.0784 0.0784 0.9216 -0.8934 0.8918)">
+			<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="5.5479" y1="14.4531" x2="16.6841" y2="3.3169" gradientTransform="matrix(0.9216 0.0784 0.0784 0.9216 -0.8922 0.8917)">
 			<stop  offset="0" style="stop-color:#FFFFFF"/>
 			<stop  offset="0.5" style="stop-color:#FFFFFF;stop-opacity:0.5"/>
 			<stop  offset="1" style="stop-color:#FFFFFF"/>
