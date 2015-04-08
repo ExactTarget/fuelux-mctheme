@@ -1,0 +1,13 @@
+#main-wrapper {
+	margin: 40px 3em;
+}
+.panel-footer {
+	min-height: 6rem;
+}
+
+.fuelux-icon {
+	/*margin: 10px auto;*/
+	width: 80px !important;
+	height: 80px !important;
+	/*display: inline-block;*/
+}

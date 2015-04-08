@@ -5,7 +5,7 @@
 	 height="20px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
 <g id="calendar-hover">
 	<g>
-		<rect id="le_wrappier_34_" style="fill:none;" width="20" height="20"/>
+		<rect id="le_wrappier_66_" style="fill:none;" width="20" height="20"/>
 		<g>
 			<g>
 				<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="9.9995" y1="0" x2="9.9995" y2="19.0005">
@@ -17,11 +17,8 @@
 				<path style="fill:url(#SVGID_1_);" d="M0,17c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V2c0-1.1-0.9-2-2-2H2C0.9,0,0,0.9,0,2V17z"/>
 			</g>
 			<g>
-				<path style="fill:#FFFFFF;" d="M1.25,16.096c0,0.688,0.562,1.25,1.25,1.25h15c0.688,0,1.25-0.562,1.25-1.25v-9.5
-					c0-0.688-0.562-1.25-1.25-1.25h-15c-0.688,0-1.25,0.562-1.25,1.25V16.096z"/>
-			</g>
-			<g>
-				<rect x="1.25" y="5.346" style="fill:#FFFFFF;" width="17.5" height="10"/>
+				<path style="fill:#FFFFFF;" d="M17.5,5.346h-15H1.25v1.25v8.75v0.75c0,0.688,0.562,1.25,1.25,1.25h15
+					c0.688,0,1.25-0.562,1.25-1.25v-0.75v-8.75v-1.25H17.5z"/>
 			</g>
 			<g>
 				<path style="fill:#C2DCF2;" d="M17.08,15.209c0,0.275-0.225,0.5-0.5,0.5H3.42c-0.275,0-0.5-0.225-0.5-0.5V7.133

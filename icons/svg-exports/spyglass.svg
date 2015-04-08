@@ -58,44 +58,6 @@ a+z19uihVmgNGLu3SaqvZmOWOMn58//Z" transform="matrix(1 0 0 1 -2 -2)">
 					c-2.448-2.453-2.448-6.432,0-8.881c2.446-2.447,6.43-2.447,8.879,0c2.447,2.449,2.447,6.428,0,8.881
 					C13.898,15.062,9.915,15.062,7.469,12.615z"/>
 			</g>
-			<g>
-				<defs>
-					<path id="SVGID_3_" d="M7.7,10.54l0.01,0.299c0.002,0.047-0.037,0.082-0.081,0.086c-0.022,0-0.044-0.008-0.061-0.023
-						L7.527,10.86l-0.072-0.068L7.7,10.54z"/>
-				</defs>
-				<clipPath id="SVGID_4_">
-					<use xlink:href="#SVGID_3_"  style="overflow:visible;"/>
-				</clipPath>
-				<g style="clip-path:url(#SVGID_4_);">
-					
-						<image style="overflow:visible;" width="1" height="2" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAIAAAAW4yFwAAAACXBIWXMAAAsSAAALEgHS3X78AAAA
-GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABNJREFUeNpi+P//PxMDAwNAgAEA
-Ef4DAKFQnrkAAAAASUVORK5CYII=" transform="matrix(1 0 0 1 7 10)">
-					</image>
-				</g>
-			</g>
-			
-				<image style="overflow:visible;" width="8" height="8" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAACXBIWXMAAAsSAAALEgHS3X78AAAA
-GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFZJREFUeNpiYICC////ZwPxMSD+
-+R8KQOIsUMkqIMUPxDxAzMaADoAKpgLxF2SdyJJVQPwUqyQQMAGxEhBLgTiMQIBNgQoDHsAEcxQ2
-3TAFu/GZABBgAFEINrPMQSoIAAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 6 3)">
-			</image>
-			<g>
-				<defs>
-					<path id="SVGID_5_" d="M13.135,3.597l0.084,0.051l0.048,0.031c0.038,0.023,0.051,0.075,0.027,0.114
-						c-0.015,0.018-0.034,0.031-0.057,0.037l-0.288,0.059L13.135,3.597z"/>
-				</defs>
-				<clipPath id="SVGID_6_">
-					<use xlink:href="#SVGID_5_"  style="overflow:visible;"/>
-				</clipPath>
-				<g style="clip-path:url(#SVGID_6_);">
-					
-						<image style="overflow:visible;" width="2" height="1" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAABCAYAAAD0In+KAAAACXBIWXMAAAsSAAALEgHS3X78AAAA
-GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYIACgAADAAAJAAE0
-lmO3AAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 12 3)">
-					</image>
-				</g>
-			</g>
 		</g>
 	</g>
 </g>

@@ -1,5 +1,5 @@
 <!doctype HTML>
-<html>
+<html class="fuelux">
 <head>
 	<title>Fuel UX 3 Icons</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,33 +8,36 @@
 	<link href="/bower_components/fuelux/dist/css/fuelux.css" rel="stylesheet" type="text/css">
 
 	<link href="/dist/css/fuelux-mctheme.css" rel="stylesheet" type="text/css">
-	<link href="/examples/icons/fuelux-icon-example.css" rel="stylesheet" type="text/css">
-<script>
-	{{{loaderText}}}
-	{{#with cssFiles}}
-	grunticon(["{{svg}}", "{{png}}", "{{fallback}}"]);
-	</script>
-		<noscript>
-			<link href="{{fallback}}" rel="stylesheet">
-		</noscript>
-	{{/with}}
+	<link href="/examples/icons/icons-examples.css" rel="stylesheet" type="text/css">
+
 </head>
 <body>
-<div class="container">
-	<div class="row">
-		<div class="col-md-12">
-			<ul class="fuelux-icon-list">
-				{{#each icons}}
+
+
+<div id="main-wrapper">
+	<div class="container">
+		{{#each rows}}
+			<div class="row">
+				{{#each rowicons}}
 					{{#with this}}
-						<li>
-							<div class="fuelux-icon fuelux-icon-{{name}}"></div>
-							<code>.fuelux-icon {{prefix}}{{name}}</code>
-						</li>
+						<div class="col-sm-2">
+							<div class="panel panel-default">
+								<div class="panel-body text-center">
+									<div class="fuelux-icon fuelux-icon-{{name}}"></div>
+								</div>
+								<div class="panel-footer">
+									<small>
+										<code>.fuelux-icon {{prefix}}{{name}}</code>
+									</small>
+								</div>
+							</div>
+						</div>
 					{{/with}}
 				{{/each}}
-			</ul>
-		</div>
+			</div>
+		{{/each}}
 	</div>
 </div>
+<script src="//localhost:35730/livereload.js"></script>
 </body>
 </html>
