@@ -391,7 +391,6 @@ module.exports = function (grunt) {
 	/* -------------
 			SERVE
 		------------- */
-	grunt.registerTask('serve', ['connect:server', 'watch:full']);
 	grunt.registerTask('servedev', ['distcssdev', 'connect:server', 'watch:dev', 'shell:syncDistWithMaster']);// This allows you to serve and watch files without overwriting the compiled css in the /dist/ directory.
-	grunt.registerTask('dist-serve', ['dist', 'connect:server', 'watch:full']);
+	grunt.registerTask('serve', ['dist', 'connect:server', 'watch:full']);
 };
