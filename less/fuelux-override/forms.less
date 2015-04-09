@@ -1,6 +1,8 @@
 .labelHover() {
 	&:hover {
-		color: @grayLight;
+		&:before {
+			box-shadow: none;
+		}
 	}
 }
 
@@ -28,10 +30,6 @@
 
 
 .fuelux .radio, .fuelux .checkbox {
-	// outline: 1px solid limegreen;
-	// position: relative;
-	// left: -4px;
-	
 	&-inline {
 		padding-left: 0;
 		& {
@@ -120,6 +118,7 @@
 					line-height: 1;
 					speak: none;
 					border: 1px solid @gray67;
+					box-shadow: none;
 					color: #fff;
 					font-size: 9px;
 					width: 14px;
@@ -147,10 +146,8 @@
 				cursor: pointer;
 				
 				&:before {
-					outline-color: transparent;
-					outline-offset: 0;
-					outline-style: none;
-					outline-width: 0;
+					outline: none;
+					box-shadow: none;
 				}
 
 				&, &:hover {
