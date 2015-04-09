@@ -34,6 +34,12 @@
 
 .fuelux-icon-checkbox-hover, .fuelux-icon-checkbox:hover, button:hover > .fuelux-icon-checkbox , .glyphicon-checkbox-hover, .glyphicon-checkbox:hover, button:hover > .glyphicon-checkbox { background-image: url('png/checkbox-hover.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
+.fuelux-icon-checkbox-indeterminate-disabled, .glyphicon-checkbox-indeterminate-disabled { background-image: url('png/checkbox-indeterminate-disabled.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-checkbox-indeterminate-hover, .fuelux-icon-checkbox-indeterminate:hover, button:hover > .fuelux-icon-checkbox-indeterminate , .glyphicon-checkbox-indeterminate-hover, .glyphicon-checkbox-indeterminate:hover, button:hover > .glyphicon-checkbox-indeterminate { background-image: url('png/checkbox-indeterminate-hover.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-checkbox-indeterminate, .glyphicon-checkbox-indeterminate { background-image: url('png/checkbox-indeterminate.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
 .fuelux-icon-checkbox-intermediate-disabled, .glyphicon-checkbox-intermediate-disabled { background-image: url('png/checkbox-intermediate-disabled.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
 .fuelux-icon-checkbox-intermediate-hover, .fuelux-icon-checkbox-intermediate:hover, button:hover > .fuelux-icon-checkbox-intermediate , .glyphicon-checkbox-intermediate-hover, .glyphicon-checkbox-intermediate:hover, button:hover > .glyphicon-checkbox-intermediate { background-image: url('png/checkbox-intermediate-hover.png'); background-repeat: no-repeat; .fuelux-icon; } 
@@ -163,10 +169,6 @@
 .fuelux-icon-search-active-hover, .fuelux-icon-search:active:hover, button:active:hover > .fuelux-icon-search , .glyphicon-search-active-hover, .glyphicon-search:active:hover, button:active:hover > .glyphicon-search { background-image: url('png/search-active-hover.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
 .fuelux-icon-search-active, .fuelux-icon-search:active, button:active > .fuelux-icon-search , .glyphicon-search-active, .glyphicon-search:active, button:active > .glyphicon-search { background-image: url('png/search-active.png'); background-repeat: no-repeat; .fuelux-icon; } 
-
-.fuelux-icon-search-deprecated-hover, .fuelux-icon-search-deprecated:hover, button:hover > .fuelux-icon-search-deprecated , .glyphicon-search-deprecated-hover, .glyphicon-search-deprecated:hover, button:hover > .glyphicon-search-deprecated { background-image: url('png/search-deprecated-hover.png'); background-repeat: no-repeat; .fuelux-icon; } 
-
-.fuelux-icon-search-deprecated, .glyphicon-search-deprecated { background-image: url('png/search-deprecated.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
 .fuelux-icon-search-hover, .fuelux-icon-search:hover, button:hover > .fuelux-icon-search , .glyphicon-search-hover, .glyphicon-search:hover, button:hover > .glyphicon-search { background-image: url('png/search-hover.png'); background-repeat: no-repeat; .fuelux-icon; } 
 

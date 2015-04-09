@@ -28,6 +28,9 @@ define(function(require) {
 		$cont.append(markup);
 	});
 
+	//CHECKBOX NO JS
+	$("#checkboxes-no-js-block-indeterminate").prop("indeterminate", true); 
+
 
 	//COMBOBOX
 	$('#btnComboboxGetSelectedItem').on('click', function () {

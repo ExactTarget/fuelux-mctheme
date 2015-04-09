@@ -28,7 +28,6 @@
 	.labelHover;
 }
 
-
 .fuelux .radio, .fuelux .checkbox {
 	&-inline {
 		padding-left: 0;
@@ -230,4 +229,25 @@
 .fuelux .checkbox + .radio input:not(.sr-only) ~ label,
 .fuelux .checkbox + .checkbox input:not(.sr-only) ~ label {
 	top: 1px;
+}
+
+// indeterminate checkboxes (dash)
+.fuelux .checkbox {
+	input[type="checkbox"] {
+		&:indeterminate:not(.sr-only) ~ label:before {
+			.fuelux-icon-checkbox-indeterminate;
+			.checkbox-element-sizes;
+		}
+
+		&:indeterminate:not(.sr-only) ~ label:hover:before {
+			.fuelux-icon-checkbox-indeterminate-hover;
+			.checkbox-element-sizes;
+		}
+
+		&:disabled:indeterminate:not(.sr-only) ~ label:before {
+			.fuelux-icon-checkbox-indeterminate-disabled;
+			.checkbox-element-sizes;
+		}
+
+	}
 }

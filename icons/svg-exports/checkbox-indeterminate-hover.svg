@@ -3,36 +3,43 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px"
 	 height="20px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
-<g id="checkbox-intermediate-disabled">
+<g id="checkbox-indeterminate-hover">
 	<g>
-		<rect id="le_wrappier_3_" style="fill:none;" width="20" height="20"/>
+		<rect id="le_wrappier_21_" style="fill:none;" width="20" height="20"/>
 		<g>
-			<g id="checkbox-2px-corner_1_">
+			<g id="checkbox-2px-corner_27_">
 				<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="8.4995" y1="0" x2="8.4995" y2="17.0005">
-					<stop  offset="0" style="stop-color:#F5F5F5"/>
-					<stop  offset="0.49" style="stop-color:#F5F5F5"/>
-					<stop  offset="0.5" style="stop-color:#E4E4E4"/>
-					<stop  offset="1" style="stop-color:#E4E4E4"/>
+					<stop  offset="0" style="stop-color:#F2F6FB"/>
+					<stop  offset="0.48" style="stop-color:#F2F6FB"/>
+					<stop  offset="0.5" style="stop-color:#CDDFEC"/>
+					<stop  offset="0.7287" style="stop-color:#C4D8E8"/>
+					<stop  offset="1" style="stop-color:#C1D5E6"/>
 				</linearGradient>
 				<path style="fill:url(#SVGID_1_);" d="M0,14c0,1.65,1.35,3,3,3h11c1.65,0,3-1.35,3-3V3c0-1.65-1.35-3-3-3H3C1.35,0,0,1.35,0,3
 					V14z"/>
-				<g style="opacity:0.7;">
+				<g style="opacity:0.8;">
 					<path style="fill:#FFFFFF;" d="M14,2c0.542,0,1,0.458,1,1v11c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3
 						c0-0.542,0.458-1,1-1H14 M14,0H3C1.35,0,0,1.35,0,3v11c0,1.65,1.35,3,3,3h11c1.65,0,3-1.35,3-3V3C17,1.35,15.65,0,14,0L14,0z"
 						/>
 				</g>
 				<g style="opacity:0.7;">
-					<path style="fill:#45494D;" d="M14,1c1.103,0,2,0.897,2,2v11c0,1.103-0.897,2-2,2H3c-1.103,0-2-0.897-2-2V3
+					<path style="fill:#62798C;" d="M14,1c1.103,0,2,0.897,2,2v11c0,1.103-0.897,2-2,2H3c-1.103,0-2-0.897-2-2V3
 						c0-1.103,0.897-2,2-2H14 M14,0H3C1.35,0,0,1.35,0,3v11c0,1.65,1.35,3,3,3h11c1.65,0,3-1.35,3-3V3C17,1.35,15.65,0,14,0L14,0z"
 						/>
 				</g>
 			</g>
-			<g id="intermediate-indicator_2_">
-				<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="8.2085" y1="10.1538" x2="8.4127" y2="8.996">
+			<g id="intermediate-indicator_8_">
+				<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="11.7842" y1="11.2559" x2="5.2174" y2="5.7457">
+					<stop  offset="0" style="stop-color:#66A2D7"/>
+					<stop  offset="1" style="stop-color:#517FA5"/>
+				</linearGradient>
+				
+					<rect x="3.658" y="7.619" style="opacity:0.6;fill:none;stroke:url(#SVGID_2_);stroke-width:0.0219;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" width="9.684" height="1.763"/>
+				<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="8.2085" y1="10.1538" x2="8.4127" y2="8.996">
 					<stop  offset="0" style="stop-color:#336B9A"/>
 					<stop  offset="1" style="stop-color:#448CCA"/>
 				</linearGradient>
-				<rect x="3.658" y="7.619" style="fill:url(#SVGID_2_);" width="9.684" height="1.763"/>
+				<rect x="3.658" y="7.619" style="fill:url(#SVGID_3_);" width="9.684" height="1.763"/>
 			</g>
 		</g>
 	</g>
