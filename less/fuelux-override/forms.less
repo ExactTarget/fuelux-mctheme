@@ -244,6 +244,13 @@
 			.checkbox-element-sizes;
 		}
 
+		&:active:indeterminate:not(.sr-only), &:focus:indeterminate:not(.sr-only) { 
+			& ~ label:before {
+				.fuelux-icon-checkbox-indeterminate-hover;
+				.checkbox-element-sizes;
+			}
+		}
+
 		&:disabled:indeterminate:not(.sr-only) ~ label:before {
 			.fuelux-icon-checkbox-indeterminate-disabled;
 			.checkbox-element-sizes;
