@@ -14,6 +14,7 @@ It should also be noted that, as of release 1.4, not *every* icon required by th
 
 - Edit the included `fuelux-mctheme-icons-20px.ai` file
 - Run the provided `MultiExporter-v2.jsx` script from within Illustrator to export .svg files
+- Make the icons from the .svg files by running `$ grunt make-icons`. (Make sure you've modified a certain helper .js file in your grunticon node_module... see below)
 - Create the CSS rules for the icons by running a Grunt task in the terminal: `$ grunt serve --force`
 - See it in the browser: http://localhost:8000
 
@@ -93,6 +94,44 @@ You might see a warning that a layer named "nyt_exporter_info" failed to export 
 The script stores its meta-data in this layer and mistakenly tries to export it sometimes. 
 
 Do not hit "retry", your export probably worked just fine.
+
+
+
+## Modifying Grunticon to generate an icon preview HTML file we can live with
+
+As it is, the Grunticon node module does not allow us to make enough changes to its preview.hbs file to arrive at a preview we consider good enough. 
+
+So we had to go in and modify some of Grunticon's code manually.
+
+The file in question is at: `node_modules/grunt-grunticon/lib/grunticon-helper.js`.
+
+The code you need to put into place is starts at about line 72, and you want this in there:
+
+```javascript
+
+		var prevData = {
+			loaderText: min,
+			embedText: embed,
+			cssFiles: cssFiles,
+			icons: icons,
+			rows: []
+		};
+
+
+		var step = 6,
+			i = 0,
+			L = prevData.icons.length;
+		for (; i < L; i += step) {
+			prevData.rows.push({
+				rowicons: prevData.icons.slice(i, i + step)
+			});
+		}
+		;
+```
+
+We added the `rows: []` line to the var sets and the for-loop that pushes sliced up icons data into the `rows` array.
+
+This allows us to generate a preview file that takes advantage of Bootstrap's grid system.
 
 
 
