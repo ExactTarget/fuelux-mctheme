@@ -359,7 +359,7 @@ module.exports = function (grunt) {
 	grunt.registerTask('distzip', ['copy:zipsrc', 'compress', 'clean:zipsrc']);
 
 	// Full distribution task
-	grunt.registerTask('dist', ['clean:dist', 'make-icons', 'distcss', 'distzip']);
+	grunt.registerTask('dist', ['clean:dist', 'distcss', 'distzip']);
 
 	// The default build task
 	grunt.registerTask('default', ['dist']);
