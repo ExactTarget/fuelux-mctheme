@@ -40,12 +40,6 @@
 
 .fuelux-icon-checkbox-indeterminate, .glyphicon-checkbox-indeterminate { background-image: url('png/checkbox-indeterminate.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
-.fuelux-icon-checkbox-intermediate-disabled, .glyphicon-checkbox-intermediate-disabled { background-image: url('png/checkbox-intermediate-disabled.png'); background-repeat: no-repeat; .fuelux-icon; } 
-
-.fuelux-icon-checkbox-intermediate-hover, .fuelux-icon-checkbox-intermediate:hover, button:hover > .fuelux-icon-checkbox-intermediate , .glyphicon-checkbox-intermediate-hover, .glyphicon-checkbox-intermediate:hover, button:hover > .glyphicon-checkbox-intermediate { background-image: url('png/checkbox-intermediate-hover.png'); background-repeat: no-repeat; .fuelux-icon; } 
-
-.fuelux-icon-checkbox-intermediate, .glyphicon-checkbox-intermediate { background-image: url('png/checkbox-intermediate.png'); background-repeat: no-repeat; .fuelux-icon; } 
-
 .fuelux-icon-checkbox, .glyphicon-checkbox { background-image: url('png/checkbox.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
 .fuelux-icon-checked-indicator, .glyphicon-checked-indicator { background-image: url('png/checked-indicator.png'); background-repeat: no-repeat; .fuelux-icon; } 
