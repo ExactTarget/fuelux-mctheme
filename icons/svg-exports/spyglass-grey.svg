@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px"
+	 height="20px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
+<g id="spyglass-grey">
+	<g>
+		<rect id="le_wrappier_124_" style="fill:none;" width="20" height="20"/>
+		<g>
+			<g id="spyglass-form_10_">
+				<g>
+					<defs>
+						<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="0" y="0.075" width="20" height="19.85">
+							<feFlood  style="flood-color:white;flood-opacity:1" result="back"/>
+							<feBlend  in="SourceGraphic" in2="back" mode="normal"/>
+						</filter>
+					</defs>
+					<mask maskUnits="userSpaceOnUse" x="0" y="0.075" width="20" height="19.85" id="SVGID_1_">
+						<g style="filter:url(#Adobe_OpacityMaskFilter);">
+							
+								<image style="overflow:visible;" width="24" height="24" xlink:href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAgEASABIAAD/7AARRHVja3kAAQAEAAAAHgAA/+4AIUFkb2JlAGTAAAAAAQMA
+EAMCAwYAAAGJAAABuAAAAsL/2wCEABALCwsMCxAMDBAXDw0PFxsUEBAUGx8XFxcXFx8eFxoaGhoX
+Hh4jJSclIx4vLzMzLy9AQEBAQEBAQEBAQEBAQEABEQ8PERMRFRISFRQRFBEUGhQWFhQaJhoaHBoa
+JjAjHh4eHiMwKy4nJycuKzU1MDA1NUBAP0BAQEBAQEBAQEBAQP/CABEIABgAGAMBIgACEQEDEQH/
+xAB1AAEAAwEAAAAAAAAAAAAAAAAABAUGAgEBAAAAAAAAAAAAAAAAAAAAABABAQACAgMAAAAAAAAA
+AAAABQQCBiADAAEUEQADAAICAgMBAQAAAAAAAAABAgMRBCESABNBIgUzFBIBAAAAAAAAAAAAAAAA
+AAAAIP/aAAwDAQACEQMRAAAAxOkg15aJQh8hVg//2gAIAQIAAQUA4f/aAAgBAwABBQDh/9oACAEB
+AAEFADYsbrKsNMK7mRi8y9Lr+RRo22C31HSVp0VpHURJuikniKyCeX//2gAIAQICBj8AH//aAAgB
+AwIGPwAf/9oACAEBAQY/AE13qNeZD0rZgWCTkjVo3VeWIVTgfPjaWzrUvec2D4LWedyzFRWktnXm
+Si4Doi8Hj2HB8X9n8ZsSHT3R7jAGEnQidHaqMlWAZSXGHQh8eVsyWMU16Vu8Dh0nrlNo54wVcyEy
+CRntjPlP9JeyWdnhutym0hw4sj5YN2DBj9jjPPPn6OtuZSm2ZO0mfAi4pFpS9ZH9qT7u4ByqqnYD
+I8jC9gIgNbe0YrRdjd2FowjOlivRYqnU8Nx9vr2wQ6xlrpE2F0hKZ15o4zxjVeRdSMAihbOBnxG3
+a+z19uihVmgNGLu3SaqvZmOWOMn58//Z" transform="matrix(1 0 0 1 -2 -2)">
+							</image>
+						</g>
+					</mask>
+					<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="0" y1="10" x2="20" y2="10">
+						<stop  offset="0" style="stop-color:#FFFFFF"/>
+						<stop  offset="0.9" style="stop-color:#D7E5EF"/>
+					</linearGradient>
+					<path style="mask:url(#SVGID_1_);fill:url(#SVGID_2_);" d="M11.908,0.09c2.068,0,4.137,0.789,5.715,2.366
+						c3.155,3.157,3.153,8.276,0,11.436c-1.572,1.571-3.63,2.353-5.688,2.353c-1.472,0-2.944-0.399-4.242-1.194l-4.661,4.661
+						l-0.017-0.02c-0.176,0.146-0.406,0.217-0.662,0.217c-0.494,0-1.086-0.264-1.58-0.757c-0.749-0.747-0.969-1.726-0.541-2.24
+						l-0.018-0.02l4.711-4.712C3.154,9.09,3.556,5.096,6.193,2.457C7.771,0.879,9.839,0.09,11.908,0.09 M11.907,14.451
+						c1.607,0,3.216-0.612,4.44-1.836c2.447-2.453,2.447-6.432,0-8.881c-1.225-1.223-2.833-1.835-4.44-1.835
+						c-1.608,0-3.215,0.612-4.438,1.835c-2.448,2.449-2.448,6.428,0,8.881C8.692,13.839,10.299,14.451,11.907,14.451 M11.908,0.075
+						c-2.164,0-4.197,0.842-5.726,2.371C4.901,3.727,4.109,5.353,3.891,7.147c-0.21,1.729,0.15,3.515,1.015,5.03l-4.703,4.704
+						c-0.006,0.006-0.006,0.015,0,0.021l0.009,0.009c-0.427,0.53-0.187,1.516,0.55,2.251c0.478,0.478,1.073,0.762,1.591,0.762
+						c0.26,0,0.487-0.072,0.66-0.211l0.007,0.008c0.002,0.004,0.007,0.006,0.011,0.006h0c0.004,0,0.008-0.002,0.011-0.005
+						l4.652-4.652c1.275,0.779,2.741,1.19,4.24,1.19c2.153,0,4.178-0.837,5.699-2.357c3.155-3.161,3.155-8.301,0-11.458
+						C16.104,0.917,14.071,0.075,11.908,0.075L11.908,0.075z M11.907,14.435c-1.675,0-3.247-0.649-4.427-1.83
+						c-2.44-2.445-2.44-6.419,0-8.859c1.18-1.181,2.752-1.831,4.427-1.831s3.248,0.65,4.43,1.831c2.438,2.44,2.438,6.415,0,8.859
+						C15.155,13.785,13.582,14.435,11.907,14.435L11.907,14.435z"/>
+				</g>
+				<path style="fill:#AAAAAA;" d="M17.623,2.457c-3.156-3.155-8.274-3.155-11.43,0C3.556,5.096,3.154,9.09,4.925,12.181
+					l-4.711,4.712l0.018,0.02c-0.428,0.515-0.208,1.493,0.541,2.24c0.75,0.749,1.726,0.969,2.242,0.54l0.017,0.02l4.661-4.661
+					c3.114,1.908,7.234,1.535,9.931-1.158C20.776,10.733,20.778,5.614,17.623,2.457z M7.469,12.615
+					c-2.448-2.453-2.448-6.432,0-8.881c2.446-2.447,6.43-2.447,8.879,0c2.447,2.449,2.447,6.428,0,8.881
+					C13.898,15.062,9.915,15.062,7.469,12.615z"/>
+			</g>
+		</g>
+	</g>
+</g>
+<g id="Layer_1">
+</g>
+</svg>
