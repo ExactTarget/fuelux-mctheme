@@ -7,7 +7,7 @@
 	<g>
 		<g id="button-2px-corner_101_">
 			
-				<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-841.0005" y1="-830.9995" x2="-821" y2="-830.9995" gradientTransform="matrix(0 1 -1 0 -821 841)">
+				<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-841" y1="-830.9995" x2="-820.9995" y2="-830.9995" gradientTransform="matrix(0 1 -1 0 -821 841)">
 				<stop  offset="0" style="stop-color:#A0C7E7"/>
 				<stop  offset="0.9" style="stop-color:#448CCA"/>
 			</linearGradient>

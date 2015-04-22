@@ -1,27 +1,27 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px"
-	 height="20px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="20px" height="20px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
 <g id="gridview-paragraph">
 	<g>
-		<rect id="le_wrappier_53_" style="fill:none;" width="20" height="20"/>
+		<rect id="le_wrappier_53_" x="0" fill="none" width="20" height="20"/>
 		<g>
 			<g id="button-2px-corner_65_">
-				<path style="fill:#4E8ABE;" d="M0,4.602C0,4.61,0.007,4.617,0.016,4.617h19.969C19.993,4.617,20,4.61,20,4.602V0.016
-					C20,0.007,19.993,0,19.984,0H0.016C0.007,0,0,0.007,0,0.016V4.602z"/>
+				<path fill="#4E8ABE" d="M0,4.602c0,0.01,0.007,0.017,0.016,0.017h19.969c0.01,0,0.016-0.007,0.016-0.017V0.016
+					C20,0.007,19.994,0,19.984,0H0.016C0.006,0,0,0.007,0,0.016V4.602z"/>
 			</g>
 			<g id="button-2px-corner_61_">
-				<path style="fill:#4E8ABE;" d="M0,19.984C0,19.993,0.007,20,0.016,20h19.969C19.993,20,20,19.993,20,19.984V15.4
-					c0-0.009-0.007-0.016-0.016-0.016H0.016C0.007,15.385,0,15.392,0,15.4V19.984z"/>
+				<path fill="#4E8ABE" d="M0,19.984C0,19.993,0.006,20,0.016,20h19.969C19.994,20,20,19.993,20,19.984V15.4
+					c0-0.01-0.006-0.017-0.016-0.017H0.016C0.006,15.384,0,15.391,0,15.4V19.984z"/>
 			</g>
 			<g id="button-2px-corner_59_">
-				<path style="fill:#4E8ABE;" d="M0,12.293c0,0.009,0.007,0.016,0.016,0.016h19.969c0.009,0,0.016-0.007,0.016-0.016V7.707
-					c0-0.009-0.007-0.016-0.016-0.016H0.016C0.007,7.691,0,7.698,0,7.707V12.293z"/>
+				<path fill="#4E8ABE" d="M0,12.293c0,0.009,0.007,0.016,0.016,0.016h19.969c0.01,0,0.016-0.007,0.016-0.016V7.707
+					c0-0.009-0.006-0.016-0.016-0.016H0.016C0.006,7.691,0,7.698,0,7.707V12.293z"/>
 			</g>
 		</g>
 	</g>
 </g>
-<g id="Layer_1">
+<g id="Layer_1_1_">
 </g>
 </svg>

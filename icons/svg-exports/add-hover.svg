@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px"
+	 height="20px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
+<g id="add-hover">
+	<g>
+		<g id="button-2px-corner_27_">
+			<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="9.9995" y1="0" x2="9.9995" y2="20.0005">
+				<stop  offset="0" style="stop-color:#A0C7E7"/>
+				<stop  offset="0.9" style="stop-color:#448CCA"/>
+			</linearGradient>
+			<path style="fill:url(#SVGID_1_);" d="M0,17c0,1.65,1.35,3,3,3h14c1.65,0,3-1.35,3-3V3c0-1.65-1.35-3-3-3H3C1.35,0,0,1.35,0,3V17
+				z"/>
+			<g style="opacity:0.7;">
+				<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="10.0005" y1="20" x2="10.0005" y2="4.882812e-04">
+					<stop  offset="0" style="stop-color:#A0C7E7"/>
+					<stop  offset="0.9" style="stop-color:#448CCA"/>
+				</linearGradient>
+				<path style="fill:url(#SVGID_2_);" d="M17,2c0.542,0,1,0.458,1,1v14c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3
+					c0-0.542,0.458-1,1-1H17 M17,0H3C1.35,0,0,1.35,0,3v14c0,1.65,1.35,3,3,3h14c1.65,0,3-1.35,3-3V3C20,1.35,18.65,0,17,0L17,0z"/>
+			</g>
+			<g style="opacity:0.7;">
+				<path style="fill:#45494D;" d="M17,1c1.103,0,2,0.897,2,2v14c0,1.103-0.897,2-2,2H3c-1.103,0-2-0.897-2-2V3c0-1.103,0.897-2,2-2
+					H17 M17,0H3C1.35,0,0,1.35,0,3v14c0,1.65,1.35,3,3,3h14c1.65,0,3-1.35,3-3V3C20,1.35,18.65,0,17,0L17,0z"/>
+			</g>
+		</g>
+		<path id="plus-sign_12_" style="fill:#FFFFFF;" d="M16.24,8.86h-4.939V3.92c0-0.144-0.118-0.26-0.262-0.26h-2.08
+			C8.817,3.66,8.7,3.776,8.7,3.92V8.86h-4.94C3.616,8.86,3.5,8.978,3.5,9.12v2.081c0,0.142,0.116,0.26,0.259,0.26H8.7V16.4
+			c0,0.144,0.118,0.26,0.259,0.26h2.08c0.144,0,0.262-0.116,0.262-0.26v-4.939h4.939c0.144,0,0.26-0.118,0.26-0.26V9.12
+			C16.5,8.978,16.384,8.86,16.24,8.86z"/>
+	</g>
+</g>
+<g id="Layer_1">
+</g>
+</svg>
