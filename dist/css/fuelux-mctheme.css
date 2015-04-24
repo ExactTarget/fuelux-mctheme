@@ -1,7 +1,8 @@
 /*!
- * Marketing Cloud Theme v1.4.3 
- * Copyright 2015 ExactTarget
- * Licensed under MIT (https://github.com/ExactTarget/fuelux-mctheme/blob/master/COPYING)
+ * Marketing Cloud Theme EDGE - Built 2015/04/24, 5:04:36 PM 
+ * Previous release: v1.4.3 
+ * Copyright 2012-2015 ExactTarget
+ * Licensed under the MIT license (https://github.com/ExactTarget/fuelux-mctheme/blob/master/COPYING)
  */
 
 .clearfix,
@@ -6750,26 +6751,26 @@ a.list-group-item-danger.active:focus {
   font-size: 14px;
   padding: 2px 4px 3px;
 }
-.fuelux .repeater-list .table {
+.fuelux .repeater[data-viewtype="list"] .repeater-canvas .repeater-list .table {
   border: none;
 }
-.fuelux .repeater-list .table tr {
+.fuelux .repeater[data-viewtype="list"] .repeater-canvas .repeater-list .table tr {
   box-shadow: none;
 }
-.fuelux .repeater-list .table tr.selected:focus {
+.fuelux .repeater[data-viewtype="list"] .repeater-canvas .repeater-list .table tr.selected:focus {
   outline: 1px dotted #66afe9;
 }
-.fuelux .repeater-list .table tr.selected:hover td {
+.fuelux .repeater[data-viewtype="list"] .repeater-canvas .repeater-list .table tr.selected:hover td {
   background: #b9dff1;
 }
-.fuelux .repeater-list .table tr.selected td {
+.fuelux .repeater[data-viewtype="list"] .repeater-canvas .repeater-list .table tr.selected td {
   background: #d9eaf5;
   color: #385b6b;
 }
-.fuelux .repeater-list .table tr.selected td:first-child {
+.fuelux .repeater[data-viewtype="list"] .repeater-canvas .repeater-list .table tr.selected td:first-child {
   padding-left: 30px;
 }
-.fuelux .repeater-list .table tr th {
+.fuelux .repeater[data-viewtype="list"] .repeater-canvas .repeater-list .table tr th {
   background: #f4f6f7;
   background-image: -webkit-linear-gradient(top, #f0f2f4, #f8f9f9);
   background-image: linear-gradient(to bottom, #f0f2f4, #f8f9f9);
@@ -6777,45 +6778,45 @@ a.list-group-item-danger.active:focus {
   border-right: none;
   padding: 6px 10px;
 }
-.fuelux .repeater-list .table tr th:first-child {
+.fuelux .repeater[data-viewtype="list"] .repeater-canvas .repeater-list .table tr th:first-child {
   border-left: none;
 }
-.fuelux .repeater-list .table tr th:first-child .repeater-list-heading {
+.fuelux .repeater[data-viewtype="list"] .repeater-canvas .repeater-list .table tr th:first-child .repeater-list-heading {
   border-left: none;
 }
-.fuelux .repeater-list .table tr th.sortable:hover {
+.fuelux .repeater[data-viewtype="list"] .repeater-canvas .repeater-list .table tr th.sortable:hover {
   background: #e1eaed;
   background-image: -webkit-linear-gradient(top, #deedf4, #e4eef3);
   background-image: linear-gradient(to bottom, #deedf4, #e4eef3);
 }
-.fuelux .repeater-list .table tr th.sortable .glyphicon {
+.fuelux .repeater[data-viewtype="list"] .repeater-canvas .repeater-list .table tr th.sortable .glyphicon {
   display: block;
   height: 0;
   margin-top: 5px;
   width: 0;
 }
-.fuelux .repeater-list .table tr th.sortable .glyphicon:before {
+.fuelux .repeater[data-viewtype="list"] .repeater-canvas .repeater-list .table tr th.sortable .glyphicon:before {
   display: none;
 }
-.fuelux .repeater-list .table tr th.sortable.sorted,
-.fuelux .repeater-list .table tr th.sortable.sorted:hover {
+.fuelux .repeater[data-viewtype="list"] .repeater-canvas .repeater-list .table tr th.sortable.sorted,
+.fuelux .repeater[data-viewtype="list"] .repeater-canvas .repeater-list .table tr th.sortable.sorted:hover {
   background: #d6e2e6;
   background-image: -webkit-linear-gradient(top, #deedf4, #e4eef3);
   background-image: linear-gradient(to bottom, #deedf4, #e4eef3);
 }
-.fuelux .repeater-list .table tr th.sortable.sorted .glyphicon.glyphicon-chevron-down,
-.fuelux .repeater-list .table tr th.sortable.sorted:hover .glyphicon.glyphicon-chevron-down {
+.fuelux .repeater[data-viewtype="list"] .repeater-canvas .repeater-list .table tr th.sortable.sorted .glyphicon.glyphicon-chevron-down,
+.fuelux .repeater[data-viewtype="list"] .repeater-canvas .repeater-list .table tr th.sortable.sorted:hover .glyphicon.glyphicon-chevron-down {
   border-width: 5px 5px 0 5px;
   border-color: transparent;
   border-style: solid;
 }
-.fuelux .repeater-list .table tr th.sortable.sorted .glyphicon.glyphicon-chevron-up,
-.fuelux .repeater-list .table tr th.sortable.sorted:hover .glyphicon.glyphicon-chevron-up {
+.fuelux .repeater[data-viewtype="list"] .repeater-canvas .repeater-list .table tr th.sortable.sorted .glyphicon.glyphicon-chevron-up,
+.fuelux .repeater[data-viewtype="list"] .repeater-canvas .repeater-list .table tr th.sortable.sorted:hover .glyphicon.glyphicon-chevron-up {
   border-width: 0 5px 5px 5px;
   border-color: transparent;
   border-style: solid;
 }
-.fuelux .repeater-list .table tr th .repeater-list-heading {
+.fuelux .repeater[data-viewtype="list"] .repeater-canvas .repeater-list .table tr th .repeater-list-heading {
   background: #f4f6f7;
   background-image: -webkit-linear-gradient(top, #f0f2f4, #f8f9f9);
   background-image: linear-gradient(to bottom, #f0f2f4, #f8f9f9);
@@ -6824,53 +6825,53 @@ a.list-group-item-danger.active:focus {
   padding-left: 10px;
   padding: 6px 10px;
 }
-.fuelux .repeater-list .table tr th .repeater-list-heading:last-child {
+.fuelux .repeater[data-viewtype="list"] .repeater-canvas .repeater-list .table tr th .repeater-list-heading:last-child {
   text-align: left;
 }
-.fuelux .repeater-list .table tr th .repeater-list-heading.sortable:hover {
+.fuelux .repeater[data-viewtype="list"] .repeater-canvas .repeater-list .table tr th .repeater-list-heading.sortable:hover {
   background: #e1eaed;
   background-image: -webkit-linear-gradient(top, #deedf4, #e4eef3);
   background-image: linear-gradient(to bottom, #deedf4, #e4eef3);
 }
-.fuelux .repeater-list .table tr th .repeater-list-heading.sortable .glyphicon {
+.fuelux .repeater[data-viewtype="list"] .repeater-canvas .repeater-list .table tr th .repeater-list-heading.sortable .glyphicon {
   display: block;
   height: 0;
   margin-top: 5px;
   width: 0;
 }
-.fuelux .repeater-list .table tr th .repeater-list-heading.sortable .glyphicon:before {
+.fuelux .repeater[data-viewtype="list"] .repeater-canvas .repeater-list .table tr th .repeater-list-heading.sortable .glyphicon:before {
   display: none;
 }
-.fuelux .repeater-list .table tr th .repeater-list-heading.sorted,
-.fuelux .repeater-list .table tr th .repeater-list-heading.sorted:hover {
+.fuelux .repeater[data-viewtype="list"] .repeater-canvas .repeater-list .table tr th .repeater-list-heading.sorted,
+.fuelux .repeater[data-viewtype="list"] .repeater-canvas .repeater-list .table tr th .repeater-list-heading.sorted:hover {
   background: #d6e2e6;
   background-image: -webkit-linear-gradient(top, #deedf4, #e4eef3);
   background-image: linear-gradient(to bottom, #deedf4, #e4eef3);
   border-right: 1px solid #D6D6D6;
 }
-.fuelux .repeater-list .table tr th .repeater-list-heading.sorted .glyphicon.glyphicon-chevron-down,
-.fuelux .repeater-list .table tr th .repeater-list-heading.sorted:hover .glyphicon.glyphicon-chevron-down {
+.fuelux .repeater[data-viewtype="list"] .repeater-canvas .repeater-list .table tr th .repeater-list-heading.sorted .glyphicon.glyphicon-chevron-down,
+.fuelux .repeater[data-viewtype="list"] .repeater-canvas .repeater-list .table tr th .repeater-list-heading.sorted:hover .glyphicon.glyphicon-chevron-down {
   border-width: 5px 5px 0 5px;
   border-color: #45514f transparent transparent transparent;
   border-style: solid;
 }
-.fuelux .repeater-list .table tr th .repeater-list-heading.sorted .glyphicon.glyphicon-chevron-up,
-.fuelux .repeater-list .table tr th .repeater-list-heading.sorted:hover .glyphicon.glyphicon-chevron-up {
+.fuelux .repeater[data-viewtype="list"] .repeater-canvas .repeater-list .table tr th .repeater-list-heading.sorted .glyphicon.glyphicon-chevron-up,
+.fuelux .repeater[data-viewtype="list"] .repeater-canvas .repeater-list .table tr th .repeater-list-heading.sorted:hover .glyphicon.glyphicon-chevron-up {
   border-width: 0 5px 5px 5px;
   border-color: transparent transparent #45514f transparent;
   border-style: solid;
 }
-.fuelux .repeater-list .table tr td {
+.fuelux .repeater[data-viewtype="list"] .repeater-canvas .repeater-list .table tr td {
   text-align: left;
   padding-left: 10px;
   border-bottom: 1px dotted #ccc;
   border-left: none;
   border-right: none;
 }
-.fuelux .repeater-list .table tr:focus {
+.fuelux .repeater[data-viewtype="list"] .repeater-canvas .repeater-list .table tr:focus {
   outline: 1px dotted #66afe9;
 }
-.fuelux .repeater-list-check {
+.fuelux .repeater[data-viewtype="list"] .repeater-canvas .repeater-list-check {
   float: left;
 }
 .fuelux .repeater-thumbnail-cont .thumbnail.selected {
