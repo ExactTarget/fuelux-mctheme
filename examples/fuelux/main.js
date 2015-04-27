@@ -654,6 +654,44 @@ define(function(require) {
 			step: 3
 		});
 	});
+
+
+	//WIZARD 2
+	$('#myWizard2').on('changed.fu.wizard', function(e, data) {
+		log('changed');
+		log(data);
+	});
+
+	$('#myWizard2').on('actionclicked.fu.wizard', function(e, data) {
+		log('action clicked');
+		log(data);
+	});
+	$('#myWizard2').on('stepclicked.fu.wizard', function(e, data) {
+		log('step ' + data.step + ' clicked');
+		if(data.step===1) {
+			// return e.preventDefault();
+		}
+	});
+	$('#myWizard2').on('finished', function(e, data) {
+		log('finished');
+	});
+
+	$('#btnWizard2Prev').on('click', function() {
+		$('#myWizard2').wizard('previous');
+	});
+	$('#btnWizard2Next').on('click', function() {
+		$('#myWizard2').wizard('next','foo');
+	});
+	$('#btnWizard2Step').on('click', function() {
+		var item = $('#myWizard2').wizard('selectedItem');
+		log(item.step);
+	});
+	$('#btnWizard2SetStep').on('click', function() {
+		$('#myWizard2').wizard('selectedItem', {
+			step: 3
+		});
+	});
+
 	var emailSetupSamplePane = '<div class="bg-warning alert">' +
 		'	<h4>Setup Message</h4>' +
 		'	<p>Soko radicchio bunya nuts gram dulse silver beet parsnip napa cabbage ' +
