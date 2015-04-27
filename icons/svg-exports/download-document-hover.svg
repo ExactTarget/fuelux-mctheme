@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px"
+	 height="20px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
+<g id="download-document-hover">
+	<g>
+		<rect id="le_wrappier_122_" style="fill:none;" width="20" height="20"/>
+		<g>
+			<g>
+				<g>
+					<path style="fill:#448CCA;" d="M1.802,19.75V0.25h10.884v5.089c0,0.138,0.112,0.25,0.25,0.25h5.263V19.75H1.802z"/>
+					<path style="fill:#6A8799;" d="M12.436,0.5v4.839c0,0.276,0.224,0.5,0.5,0.5h5.013V19.5H2.052v-19H12.436 M12.936,0H1.552v20
+						h16.896V5.339h-5.513V0L12.936,0z"/>
+				</g>
+				<g>
+					<polygon style="fill:#A1C8E6;" points="12.936,0 18.448,5.339 12.936,5.339 					"/>
+				</g>
+				
+					<line style="fill:none;stroke:#6A8799;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" x1="12.936" y1="0.374" x2="18.078" y2="5.339"/>
+			</g>
+			<g id="down-arrow_1_">
+				<polygon style="fill:#FFFFFF;" points="4.596,12.242 7.966,12.242 7.981,11.977 7.981,5.741 12.021,5.741 12.021,12.227 
+					12.286,12.242 15.405,12.242 10.002,17.653 				"/>
+				<path style="fill:#3A668C;" d="M11.771,5.991v5.985l0.016,0.516h0.5h2.516l-4.8,4.808l-4.804-4.808h2.518l0.516-0.016v-0.5
+					V5.991H11.771 M12.255,5.491H7.747c-0.009,0-0.016,0.007-0.016,0.016v6.47c0,0.009-0.007,0.016-0.016,0.016H4.008
+					c-0.009,0-0.011,0.005-0.004,0.011l5.987,5.993C9.994,17.999,9.998,18,10.002,18s0.008-0.001,0.011-0.004l5.984-5.993
+					c0.006-0.006,0.004-0.011-0.005-0.011h-3.706c-0.009,0-0.016-0.007-0.016-0.016v-6.47C12.271,5.498,12.264,5.491,12.255,5.491
+					L12.255,5.491z"/>
+			</g>
+		</g>
+	</g>
+</g>
+<g id="Layer_1">
+</g>
+</svg>

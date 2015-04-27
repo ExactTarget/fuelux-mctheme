@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px"
+	 height="20px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
+<g id="download-document">
+	<g>
+		<rect id="le_wrappier_91_" style="fill:none;" width="20" height="20"/>
+		<g>
+			<g>
+				<g>
+					<g>
+						<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="9.9995" y1="0.25" x2="9.9995" y2="19.7505">
+							<stop  offset="0" style="stop-color:#999999"/>
+							<stop  offset="1" style="stop-color:#8C8C8C"/>
+						</linearGradient>
+						<path style="fill:url(#SVGID_1_);" d="M1.957,19.75V0.25H12.63v5.089c0,0.138,0.112,0.25,0.25,0.25h5.162V19.75H1.957z"/>
+						<path style="fill:#45494D;" d="M12.38,0.5v4.839c0,0.276,0.224,0.5,0.5,0.5h4.912V19.5H2.207v-19H12.38 M12.88,0H1.707v20
+							h16.585V5.339H12.88V0L12.88,0z"/>
+					</g>
+					<g>
+						<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="15.5859" y1="0" x2="15.5859" y2="5.3389">
+							<stop  offset="0" style="stop-color:#D2D2D2"/>
+							<stop  offset="1" style="stop-color:#CCCCCC"/>
+						</linearGradient>
+						<polygon style="fill:url(#SVGID_2_);" points="12.88,0 18.292,5.339 12.88,5.339 						"/>
+					</g>
+					
+						<line style="fill:none;stroke:#4D4D4D;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" x1="12.88" y1="0.374" x2="17.93" y2="5.339"/>
+				</g>
+			</g>
+			<g id="down-arrow_2_">
+				<polygon style="fill:#FFFFFF;" points="4.596,12.242 7.965,12.242 7.98,11.977 7.98,5.741 12.021,5.741 12.021,12.227 
+					12.286,12.242 15.405,12.242 10.002,17.653 				"/>
+				<path style="fill:#45494D;" d="M11.771,5.991v5.985l0.016,0.516h0.5h2.516l-4.8,4.808l-4.804-4.808h2.517l0.516-0.016v-0.5
+					V5.991H11.771 M12.255,5.491H7.746c-0.009,0-0.016,0.007-0.016,0.016v6.47c0,0.009-0.007,0.016-0.016,0.016H4.008
+					c-0.009,0-0.011,0.005-0.004,0.011l5.987,5.993C9.994,17.999,9.998,18,10.002,18s0.008-0.001,0.011-0.004l5.984-5.993
+					c0.006-0.006,0.004-0.011-0.005-0.011h-3.706c-0.009,0-0.016-0.007-0.016-0.016v-6.47C12.271,5.498,12.264,5.491,12.255,5.491
+					L12.255,5.491z"/>
+			</g>
+		</g>
+	</g>
+</g>
+<g id="Layer_1">
+</g>
+</svg>

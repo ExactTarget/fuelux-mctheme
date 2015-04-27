@@ -11,3 +11,7 @@
 	height: 80px !important;
 	/*display: inline-block;*/
 }
+
+.panel-body.text-center {
+	background: url(./transparency-grid.png);
+}

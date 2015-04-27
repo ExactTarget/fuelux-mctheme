@@ -5,30 +5,30 @@
 	 height="20px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
 <g id="trash-hover">
 	<g>
-		<rect id="le_wrappier_30_" style="fill:none;" width="20" height="20"/>
+		<rect id="le_wrappier_152_" style="fill:none;" width="20" height="20"/>
 		<g>
 			
-				<linearGradient id="delete--main-container--hover_1_" gradientUnits="userSpaceOnUse" x1="2.1406" y1="11.7363" x2="17.9883" y2="11.7363">
+				<linearGradient id="delete--main-container--hover_2_" gradientUnits="userSpaceOnUse" x1="2.1406" y1="11.7363" x2="17.9883" y2="11.7363">
 				<stop  offset="0" style="stop-color:#448CCA"/>
 				<stop  offset="0.4798" style="stop-color:#66A2D7"/>
 				<stop  offset="1" style="stop-color:#448CCA"/>
 			</linearGradient>
-			<path id="delete--main-container--hover_2_" style="fill:url(#delete--main-container--hover_1_);" d="M17.988,4.117
+			<path id="delete--main-container--hover_1_" style="fill:url(#delete--main-container--hover_2_);" d="M17.988,4.117
 				c0.01-0.352-0.281-0.645-0.645-0.645c-4.854,0-9.705,0-14.557,0c-0.365,0-0.656,0.293-0.646,0.645
 				c0.143,4.922,0.283,9.846,0.426,14.767c0.01,0.354,0.299,0.682,0.643,0.721c4.555,0.527,9.158,0.527,13.711,0
 				c0.344-0.039,0.633-0.367,0.643-0.721C17.705,13.963,17.848,9.039,17.988,4.117z"/>
-			<path id="delete--vertical-bar-right--hover_2_" style="fill:#A0C7E7;" d="M15.203,7.051c-0.518-0.373-1.211-0.383-1.73-0.027
+			<path id="delete--vertical-bar-right--hover_1_" style="fill:#A0C7E7;" d="M15.203,7.051c-0.518-0.373-1.211-0.383-1.73-0.027
 				c0.012,3.393,0.045,6.758,0.109,10.124c0.354,0.264,0.816,0.305,1.191,0.105C14.898,13.762,15.051,10.32,15.203,7.051z"/>
-			<path id="delete--vertical-bar-center--hover_2_" style="fill:#A0C7E7;" d="M10.965,6.775c-0.578-0.408-1.348-0.408-1.928,0
+			<path id="delete--vertical-bar-center--hover_1_" style="fill:#A0C7E7;" d="M10.965,6.775c-0.578-0.408-1.348-0.408-1.928,0
 				c0.092,3.525,0.199,7.127,0.307,10.771c0.393,0.287,0.922,0.287,1.314,0C10.766,13.902,10.873,10.301,10.965,6.775z"/>
-			<path id="delete--vertical-bar-left--hover_2_" style="fill:#A0C7E7;" d="M6.531,6.898C6.01,6.543,5.318,6.555,4.801,6.926
+			<path id="delete--vertical-bar-left--hover_1_" style="fill:#A0C7E7;" d="M6.531,6.898C6.01,6.543,5.318,6.555,4.801,6.926
 				c0.152,3.271,0.305,6.713,0.428,10.202c0.375,0.199,0.838,0.16,1.191-0.105C6.484,13.656,6.518,10.293,6.531,6.898z"/>
-			<linearGradient id="delete--lid--hover_1_" gradientUnits="userSpaceOnUse" x1="0.9629" y1="2.2559" x2="19.0391" y2="2.2559">
+			<linearGradient id="delete--lid--hover_2_" gradientUnits="userSpaceOnUse" x1="0.9629" y1="2.2559" x2="19.0391" y2="2.2559">
 				<stop  offset="0" style="stop-color:#336B9A"/>
 				<stop  offset="0.4798" style="stop-color:#517FA5"/>
 				<stop  offset="1" style="stop-color:#336B9A"/>
 			</linearGradient>
-			<path id="delete--lid--hover_2_" style="fill:url(#delete--lid--hover_1_);" d="M15.377,1.438
+			<path id="delete--lid--hover_1_" style="fill:url(#delete--lid--hover_2_);" d="M15.377,1.438
 				c-0.209-0.004-0.381-0.188-0.381-0.414c0-0.184,0-0.367,0-0.551c0-0.223-0.172-0.412-0.379-0.418
 				c-3.035-0.072-6.07-0.074-9.104-0.002C5.305,0.06,5.133,0.247,5.133,0.472c0,0.184,0,0.369,0,0.553
 				c0,0.225-0.17,0.41-0.381,0.412C3.617,1.448,2.479,1.464,1.346,1.483C1.133,1.487,0.963,1.661,0.963,1.872v0.002

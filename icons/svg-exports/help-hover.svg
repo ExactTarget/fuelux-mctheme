@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px"
+	 height="20px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
+<g id="help-copy">
+	<g>
+		<g id="button-2px-corner_55_">
+			<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="9.9995" y1="0" x2="9.9995" y2="20.0005">
+				<stop  offset="0" style="stop-color:#A0C7E7"/>
+				<stop  offset="0.9" style="stop-color:#448CCA"/>
+			</linearGradient>
+			<path style="fill:url(#SVGID_1_);" d="M0,17c0,1.65,1.35,3,3,3h14c1.65,0,3-1.35,3-3V3c0-1.65-1.35-3-3-3H3C1.35,0,0,1.35,0,3V17
+				z"/>
+			<g style="opacity:0.7;">
+				<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="10.0005" y1="20" x2="10.0005" y2="4.882812e-04">
+					<stop  offset="0" style="stop-color:#A0C7E7"/>
+					<stop  offset="0.9" style="stop-color:#448CCA"/>
+				</linearGradient>
+				<path style="fill:url(#SVGID_2_);" d="M17,2c0.542,0,1,0.458,1,1v14c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3
+					c0-0.542,0.458-1,1-1H17 M17,0H3C1.35,0,0,1.35,0,3v14c0,1.65,1.35,3,3,3h14c1.65,0,3-1.35,3-3V3C20,1.35,18.65,0,17,0L17,0z"/>
+			</g>
+			<g style="opacity:0.7;">
+				<path style="fill:#45494D;" d="M17,1c1.103,0,2,0.897,2,2v14c0,1.103-0.897,2-2,2H3c-1.103,0-2-0.897-2-2V3c0-1.103,0.897-2,2-2
+					H17 M17,0H3C1.35,0,0,1.35,0,3v14c0,1.65,1.35,3,3,3h14c1.65,0,3-1.35,3-3V3C20,1.35,18.65,0,17,0L17,0z"/>
+			</g>
+		</g>
+		<g>
+			<path style="fill:#FFFFFF;" d="M8.812,12.8c0-1.729,0.18-2.485,1.836-3.655c0.702-0.486,1.116-1.044,1.116-1.782
+				c0-1.404-0.99-1.783-1.747-1.783c-1.62,0-1.854,1.225-1.944,2.071v0.018H5.535c0-3.133,2.359-4.213,4.321-4.213
+				c1.081,0,4.609,0.306,4.609,3.835c0,1.458-0.791,2.323-2.178,3.313c-0.774,0.558-1.099,0.901-1.099,2.197H8.812z M11.369,16.545
+				H8.74v-2.539h2.629V16.545z"/>
+		</g>
+	</g>
+</g>
+<g id="Layer_1">
+</g>
+</svg>

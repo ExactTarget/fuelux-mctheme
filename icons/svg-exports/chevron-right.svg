@@ -2,15 +2,15 @@
 <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px"
-	 height="20px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
+	 height="20.001px" viewBox="0 0 20 20.001" style="enable-background:new 0 0 20 20.001;" xml:space="preserve">
 <g id="chevron-right">
 	<g>
-		<rect id="le_wrappier_10_" y="0" style="fill:none;" width="20" height="20"/>
+		<rect id="le_wrappier_10_" style="fill:none;" width="20" height="20"/>
 		<g id="chevron_1_">
-			<path style="opacity:0.8;fill:#989898;" d="M8.404,9.462c0.297,0.295,0.297,0.779,0,1.072L3.18,15.652
+			<path style="opacity:0.8;fill:#AAAAAA;" d="M8.404,9.463c0.297,0.295,0.297,0.779,0,1.072L3.18,15.652
 				c-0.299,0.293-0.299,0.777,0,1.07l3.119,3.057c0.301,0.295,0.793,0.295,1.094,0l5.219-5.115c0.297-0.295,0.793-0.777,1.09-1.07
-				l3.117-3.059c0.301-0.293,0.301-0.777,0-1.072l-3.117-3.055c-0.297-0.295-0.793-0.779-1.09-1.072L7.393,0.22
-				c-0.301-0.293-0.793-0.293-1.094,0L3.18,3.277c-0.299,0.293-0.299,0.777,0,1.07L8.404,9.462z"/>
+				l3.117-3.059c0.301-0.293,0.301-0.777,0-1.072l-3.117-3.055c-0.297-0.295-0.793-0.779-1.09-1.072L7.393,0.221
+				c-0.301-0.293-0.793-0.293-1.094,0L3.18,3.277c-0.299,0.293-0.299,0.777,0,1.07L8.404,9.463z"/>
 		</g>
 	</g>
 </g>

@@ -2,19 +2,19 @@
 <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px"
-	 height="20px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
+	 height="20.001px" viewBox="0 0 20 20.001" style="enable-background:new 0 0 20 20.001;" xml:space="preserve">
 <g id="channel-pin-green">
 	<g>
 		<g>
-			<rect id="le_wrappier_46_" style="fill:none;" width="20" height="20"/>
-			<line style="fill:none;stroke:#666666;stroke-width:2;stroke-linecap:round;" x1="5.591" y1="19" x2="9.971" y2="5.928"/>
-			<radialGradient id="SVGID_1_" cx="10.0488" cy="2.9409" r="10.0355" gradientUnits="userSpaceOnUse">
+			<rect id="le_wrappier_46_" y="0.001" style="fill:none;" width="20" height="20"/>
+			<line style="fill:none;stroke:#666666;stroke-width:2;stroke-linecap:round;" x1="5.592" y1="19" x2="9.971" y2="5.929"/>
+			<radialGradient id="SVGID_1_" cx="10.0488" cy="2.9419" r="10.0355" gradientUnits="userSpaceOnUse">
 				<stop  offset="0" style="stop-color:#DAE8F2"/>
 				<stop  offset="0.1872" style="stop-color:#48AB4A"/>
 				<stop  offset="0.6959" style="stop-color:#29612A"/>
 				<stop  offset="1" style="stop-color:#153316"/>
 			</radialGradient>
-			<circle style="fill:url(#SVGID_1_);" cx="10" cy="6.454" r="6.455"/>
+			<circle style="fill:url(#SVGID_1_);" cx="10" cy="6.455" r="6.455"/>
 		</g>
 	</g>
 </g>
