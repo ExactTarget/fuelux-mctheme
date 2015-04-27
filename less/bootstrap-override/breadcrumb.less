@@ -1,28 +1,30 @@
+@import "icons/icons-svg.less";
+
 .breadcrumb {
 	padding: 8px 15px;
 	margin-bottom: 20px;
 	list-style: none;
 	background-color: transparent;
 	border-radius: 0;
-	> li + li:before, > li:first-child:before {
-		.sprite(-210px, -0px);
-		content: '';
-		top: -2px;
-		position: relative;
-		margin: 0 2px;
 
+	> li + li:before, > li:first-child:before {
+		.fuelux-icon;
+		.fuelux-icon-breadcrumb;
+		content: '';
+		margin: 0px 2px -3px 0px;
+		width: 5px;
+		background-size: 25px 19px;
 	}
+
 	> li:first-child:before {
-		padding: 1px 16px;
-		top: 0;
+		margin: 0px 7px -7px 0px;
+		background-size: 22px 22px;
+		height: 22px;
+		width: 22px;
 	}
+
 	.active {
 		color: #000000;
 	}
-}
 
-@media(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-	> li + li:before, > li:first-child:before {
-		.sprite2x();
-	}
 }
