@@ -1,7 +1,8 @@
 /*!
- * Marketing Cloud Theme v1.5.0 
- * Copyright 2015 ExactTarget
- * Licensed under MIT (https://github.com/ExactTarget/fuelux-mctheme/blob/master/COPYING)
+ * Marketing Cloud Theme EDGE - Built 2015/05/04, 2:21:12 PM 
+ * Previous release: v1.5.0 
+ * Copyright 2012-2015 ExactTarget
+ * Licensed under the MIT license (https://github.com/ExactTarget/fuelux-mctheme/blob/master/COPYING)
  */
 
 .clearfix,
@@ -5270,22 +5271,78 @@ a.list-group-item-danger.active:focus {
   padding: 5px 10px;
 }
 .collapse-dropdown .panel .panel-heading .glyphicon-play {
-  font-size: 10px;
   padding-right: 5px;
   padding-left: 7px;
   top: -1px;
   left: 0;
   border: 0;
   margin-right: 5px;
-  background: transparent url(../img/spritesheet.png) no-repeat -176px -16px;
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cg%3E%3ClinearGradient%20id%3D%22a%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%229.999%22%20x2%3D%229.999%22%20y2%3D%2220%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23fff%22%2F%3E%3Cstop%20offset%3D%22.25%22%20stop-color%3D%22%23FBFCFD%22%2F%3E%3Cstop%20offset%3D%22.509%22%20stop-color%3D%22%23EEF4F8%22%2F%3E%3Cstop%20offset%3D%22.771%22%20stop-color%3D%22%23DAE7F0%22%2F%3E%3Cstop%20offset%3D%22.8%22%20stop-color%3D%22%23D7E5EF%22%2F%3E%3C%2FlinearGradient%3E%3Cpath%20d%3D%22M0%2017c0%201.65%201.35%203%203%203h14c1.65%200%203-1.35%203-3V3c0-1.65-1.35-3-3-3H3C1.35%200%200%201.35%200%203v14z%22%20fill%3D%22url%28%23a%29%22%2F%3E%3Cpath%20d%3D%22M17%202c.542%200%201%20.458%201%201v14c0%20.542-.458%201-1%201H3c-.542%200-1-.458-1-1V3c0-.542.458-1%201-1h14m0-2H3C1.35%200%200%201.35%200%203v14c0%201.65%201.35%203%203%203h14c1.65%200%203-1.35%203-3V3c0-1.65-1.35-3-3-3z%22%20fill%3D%22%23fff%22%20opacity%3D%22.7%22%2F%3E%3Cpath%20d%3D%22M17%201c1.103%200%202%20.897%202%202v14c0%201.103-.897%202-2%202H3c-1.103%200-2-.897-2-2V3c0-1.103.897-2%202-2h14m0-1H3C1.35%200%200%201.35%200%203v14c0%201.65%201.35%203%203%203h14c1.65%200%203-1.35%203-3V3c0-1.65-1.35-3-3-3z%22%20fill%3D%22%2345494D%22%20opacity%3D%22.7%22%2F%3E%3C%2Fg%3E%3Cg%3E%3Cpath%20d%3D%22M10.28%209.166c-.154.156-.404.156-.56%200L7.05%206.44c-.153-.157-.405-.157-.558%200L4.895%208.068c-.152.156-.152.414%200%20.57l2.672%202.725c.152.156.406.415.56.57L9.72%2013.56c.155.156.405.156.56%200l1.594-1.628.56-.57%202.67-2.724c.153-.156.153-.414%200-.57L13.51%206.44c-.154-.157-.404-.157-.56%200l-2.67%202.726z%22%20fill%3D%22%23448CCA%22%20enable-background%3D%22new%22%2F%3E%3ClinearGradient%20id%3D%22b%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%2210.001%22%20y1%3D%2213.803%22%20x2%3D%2210.001%22%20y2%3D%226.198%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23fff%22%2F%3E%3Cstop%20offset%3D%22.9%22%20stop-color%3D%22%23D7E5EF%22%2F%3E%3C%2FlinearGradient%3E%3Cpath%20d%3D%22M13.23%206.322c.102%200%20.202.04.28.118l1.595%201.628c.152.156.152.414%200%20.57l-2.672%202.725c-.152.156-.406.415-.56.57L10.28%2013.56c-.078.078-.18.117-.28.117-.102%200-.203-.04-.28-.117l-1.596-1.628-.56-.57-2.67-2.723c-.15-.157-.15-.415%200-.57l1.598-1.63c.076-.08.177-.118.278-.118.102%200%20.203.04.28.118l2.67%202.726c.077.078.18.117.28.117.1%200%20.202-.04.28-.117l2.67-2.726c.078-.078.18-.118.28-.118m0-.125c-.14%200-.27.056-.368.156l-2.67%202.726c-.052.05-.12.08-.19.08-.073%200-.14-.03-.192-.08L7.14%206.352c-.1-.1-.23-.156-.37-.156-.14%200-.27.056-.368.156L4.805%207.98c-.2.207-.2.54%200%20.746l2.672%202.725c.152.157.407.416.56.57l1.594%201.628c.1.1.23.154.37.154.14%200%20.27-.055.37-.154l1.594-1.628.56-.57%202.67-2.724c.202-.206.202-.54.002-.745L13.6%206.354c-.1-.1-.23-.156-.37-.156z%22%20fill%3D%22url%28%23b%29%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
   width: 13px;
   height: 13px;
 }
 .collapse-dropdown .panel .panel-heading .glyphicon-play:before {
+  content: "";
+}
+.collapse-dropdown .panel .panel-heading .glyphicon-play:before {
+  content: "";
+}
+.collapse-dropdown .panel .panel-heading .glyphicon-play:before {
   display: none;
 }
+.collapse-dropdown .panel .panel-heading .glyphicon-play:hover,
+.collapse-dropdown .panel .panel-heading .glyphicon-play:focus {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cg%3E%3ClinearGradient%20id%3D%22a%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%22-841%22%20y1%3D%22-831%22%20x2%3D%22-821%22%20y2%3D%22-831%22%20gradientTransform%3D%22matrix%280%201%20-1%200%20-821%20841%29%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23A0C7E7%22%2F%3E%3Cstop%20offset%3D%22.9%22%20stop-color%3D%22%23448CCA%22%2F%3E%3C%2FlinearGradient%3E%3Cpath%20d%3D%22M3%200C1.35%200%200%201.35%200%203v14c0%201.65%201.35%203%203%203h14c1.65%200%203-1.35%203-3V3c0-1.65-1.35-3-3-3H3z%22%20fill%3D%22url%28%23a%29%22%2F%3E%3Cg%20opacity%3D%22.7%22%3E%3ClinearGradient%20id%3D%22b%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%2210.001%22%20y1%3D%2220%22%20x2%3D%2210.001%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23A0C7E7%22%2F%3E%3Cstop%20offset%3D%22.9%22%20stop-color%3D%22%23448CCA%22%2F%3E%3C%2FlinearGradient%3E%3Cpath%20d%3D%22M17%202c.542%200%201%20.458%201%201v14c0%20.542-.458%201-1%201H3c-.542%200-1-.458-1-1V3c0-.542.458-1%201-1h14m0-2H3C1.35%200%200%201.35%200%203v14c0%201.65%201.35%203%203%203h14c1.65%200%203-1.35%203-3V3c0-1.65-1.35-3-3-3z%22%20fill%3D%22url%28%23b%29%22%2F%3E%3C%2Fg%3E%3Cpath%20d%3D%22M17%201c1.103%200%202%20.897%202%202v14c0%201.103-.897%202-2%202H3c-1.103%200-2-.897-2-2V3c0-1.103.897-2%202-2h14m0-1H3C1.35%200%200%201.35%200%203v14c0%201.65%201.35%203%203%203h14c1.65%200%203-1.35%203-3V3c0-1.65-1.35-3-3-3z%22%20fill%3D%22%2345494D%22%20opacity%3D%22.7%22%2F%3E%3C%2Fg%3E%3Cg%3E%3Cpath%20d%3D%22M10.28%209.166c-.154.156-.404.156-.56%200L7.05%206.44c-.153-.157-.405-.157-.558%200L4.895%208.068c-.152.156-.152.414%200%20.57l2.672%202.725c.152.156.406.415.56.57L9.72%2013.56c.155.156.405.156.56%200l1.594-1.628.56-.57%202.67-2.724c.153-.156.153-.414%200-.57L13.51%206.44c-.154-.157-.404-.157-.56%200l-2.67%202.726z%22%20fill%3D%22%23fff%22%20enable-background%3D%22new%22%2F%3E%3ClinearGradient%20id%3D%22c%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%2210%22%20y1%3D%226.197%22%20x2%3D%2210%22%20y2%3D%2213.803%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23fff%22%2F%3E%3Cstop%20offset%3D%22.9%22%20stop-color%3D%22%23D7E5EF%22%2F%3E%3C%2FlinearGradient%3E%3Cpath%20d%3D%22M13.23%206.322c.102%200%20.202.04.28.118l1.595%201.628c.152.156.152.414%200%20.57l-2.672%202.725c-.152.156-.406.415-.56.57L10.28%2013.56c-.078.078-.18.117-.28.117-.102%200-.203-.04-.28-.117l-1.596-1.628-.56-.57-2.67-2.723c-.15-.157-.15-.415%200-.57l1.598-1.63c.076-.08.177-.118.278-.118.102%200%20.203.04.28.118l2.67%202.726c.077.078.18.117.28.117.1%200%20.202-.04.28-.117l2.67-2.726c.078-.078.18-.118.28-.118m0-.125c-.14%200-.27.056-.368.156l-2.67%202.726c-.052.05-.12.08-.19.08-.073%200-.14-.03-.192-.08L7.14%206.352c-.1-.1-.23-.156-.37-.156-.14%200-.27.056-.368.156L4.805%207.98c-.2.207-.2.54%200%20.746l2.672%202.725c.152.157.407.416.56.57l1.594%201.628c.1.1.23.154.37.154.14%200%20.27-.055.37-.154l1.594-1.628.56-.57%202.67-2.724c.202-.206.202-.54.002-.745L13.6%206.354c-.1-.1-.23-.156-.37-.156z%22%20fill%3D%22url%28%23c%29%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  width: 13px;
+  height: 13px;
+  outline: 0;
+}
+.collapse-dropdown .panel .panel-heading .glyphicon-play:hover:before,
+.collapse-dropdown .panel .panel-heading .glyphicon-play:focus:before {
+  content: "";
+}
 .collapse-dropdown .panel .panel-heading a.collapsed .glyphicon-play {
-  background: transparent url(../img/spritesheet.png) no-repeat -176px 0;
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cg%3E%3ClinearGradient%20id%3D%22a%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%229.999%22%20x2%3D%229.999%22%20y2%3D%2220%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23fff%22%2F%3E%3Cstop%20offset%3D%22.25%22%20stop-color%3D%22%23FBFCFD%22%2F%3E%3Cstop%20offset%3D%22.509%22%20stop-color%3D%22%23EEF4F8%22%2F%3E%3Cstop%20offset%3D%22.771%22%20stop-color%3D%22%23DAE7F0%22%2F%3E%3Cstop%20offset%3D%22.8%22%20stop-color%3D%22%23D7E5EF%22%2F%3E%3C%2FlinearGradient%3E%3Cpath%20d%3D%22M0%2017c0%201.65%201.35%203%203%203h14c1.65%200%203-1.35%203-3V3c0-1.65-1.35-3-3-3H3C1.35%200%200%201.35%200%203v14z%22%20fill%3D%22url%28%23a%29%22%2F%3E%3Cpath%20d%3D%22M17%202c.542%200%201%20.458%201%201v14c0%20.542-.458%201-1%201H3c-.542%200-1-.458-1-1V3c0-.542.458-1%201-1h14m0-2H3C1.35%200%200%201.35%200%203v14c0%201.65%201.35%203%203%203h14c1.65%200%203-1.35%203-3V3c0-1.65-1.35-3-3-3z%22%20fill%3D%22%23fff%22%20opacity%3D%22.7%22%2F%3E%3Cpath%20d%3D%22M17%201c1.103%200%202%20.897%202%202v14c0%201.103-.897%202-2%202H3c-1.103%200-2-.897-2-2V3c0-1.103.897-2%202-2h14m0-1H3C1.35%200%200%201.35%200%203v14c0%201.65%201.35%203%203%203h14c1.65%200%203-1.35%203-3V3c0-1.65-1.35-3-3-3z%22%20fill%3D%22%2345494D%22%20opacity%3D%22.7%22%2F%3E%3C%2Fg%3E%3Cg%3E%3Cpath%20d%3D%22M9.936%209.72c.156.154.156.405%200%20.56L7.21%2012.95c-.158.154-.158.406%200%20.56l1.628%201.597c.156.152.414.152.57%200l2.725-2.672c.156-.152.415-.406.57-.56l1.627-1.595c.156-.154.156-.405%200-.56l-1.628-1.595-.57-.56-2.724-2.67c-.156-.152-.414-.152-.57%200L7.21%206.49c-.158.154-.158.404%200%20.56l2.726%202.67z%22%20opacity%3D%22.6%22%20fill%3D%22%2345494D%22%20enable-background%3D%22new%22%2F%3E%3ClinearGradient%20id%3D%22b%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%2210.77%22%20y1%3D%2215.345%22%20x2%3D%2210.77%22%20y2%3D%224.656%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23fff%22%2F%3E%3Cstop%20offset%3D%22.9%22%20stop-color%3D%22%23D7E5EF%22%2F%3E%3C%2FlinearGradient%3E%3Cpath%20d%3D%22M9.123%204.78c.104%200%20.207.038.285.114l2.725%202.672c.156.152.415.406.57.56l1.627%201.593c.156.154.156.405%200%20.56l-1.628%201.596-.57.56-2.724%202.67c-.078.076-.18.114-.285.114s-.207-.038-.285-.114L7.21%2013.508c-.158-.152-.158-.404%200-.56l2.726-2.67c.156-.153.156-.404%200-.56L7.21%207.048c-.158-.153-.158-.403%200-.558l1.628-1.596c.078-.076.182-.114.285-.114m0-.125c-.14%200-.273.053-.373.15L7.123%206.4c-.1.1-.156.23-.156.37s.055.27.156.368l2.726%202.67c.05.05.078.12.078.192%200%20.072-.028.14-.08.19l-2.725%202.67c-.1.1-.156.23-.156.37s.056.27.156.367l1.627%201.597c.1.098.23.15.373.15s.273-.053.373-.15l2.725-2.672c.157-.15.416-.406.57-.56l1.628-1.594c.1-.1.154-.23.154-.37s-.055-.27-.154-.37L12.79%208.037l-.57-.56-2.724-2.67c-.1-.098-.232-.15-.373-.15z%22%20fill%3D%22url%28%23b%29%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  width: 13px;
+  height: 13px;
+  outline: 0;
+}
+.collapse-dropdown .panel .panel-heading a.collapsed .glyphicon-play:before {
+  content: "";
+}
+.collapse-dropdown .panel .panel-heading a.collapsed .glyphicon-play:before {
+  content: "";
+}
+.collapse-dropdown .panel .panel-heading a.collapsed .glyphicon-play:hover,
+.collapse-dropdown .panel .panel-heading a.collapsed .glyphicon-play:focus {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cg%3E%3ClinearGradient%20id%3D%22a%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%229.999%22%20x2%3D%229.999%22%20y2%3D%2220%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23A0C7E7%22%2F%3E%3Cstop%20offset%3D%22.9%22%20stop-color%3D%22%23448CCA%22%2F%3E%3C%2FlinearGradient%3E%3Cpath%20d%3D%22M0%2017c0%201.65%201.35%203%203%203h14c1.65%200%203-1.35%203-3V3c0-1.65-1.35-3-3-3H3C1.35%200%200%201.35%200%203v14z%22%20fill%3D%22url%28%23a%29%22%2F%3E%3Cg%20opacity%3D%22.7%22%3E%3ClinearGradient%20id%3D%22b%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%2210.001%22%20y1%3D%2220%22%20x2%3D%2210.001%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23A0C7E7%22%2F%3E%3Cstop%20offset%3D%22.9%22%20stop-color%3D%22%23448CCA%22%2F%3E%3C%2FlinearGradient%3E%3Cpath%20d%3D%22M17%202c.542%200%201%20.458%201%201v14c0%20.542-.458%201-1%201H3c-.542%200-1-.458-1-1V3c0-.542.458-1%201-1h14m0-2H3C1.35%200%200%201.35%200%203v14c0%201.65%201.35%203%203%203h14c1.65%200%203-1.35%203-3V3c0-1.65-1.35-3-3-3z%22%20fill%3D%22url%28%23b%29%22%2F%3E%3C%2Fg%3E%3Cpath%20d%3D%22M17%201c1.103%200%202%20.897%202%202v14c0%201.103-.897%202-2%202H3c-1.103%200-2-.897-2-2V3c0-1.103.897-2%202-2h14m0-1H3C1.35%200%200%201.35%200%203v14c0%201.65%201.35%203%203%203h14c1.65%200%203-1.35%203-3V3c0-1.65-1.35-3-3-3z%22%20fill%3D%22%2345494D%22%20opacity%3D%22.7%22%2F%3E%3C%2Fg%3E%3Cg%3E%3Cpath%20d%3D%22M9.936%209.72c.156.154.156.404%200%20.56L7.21%2012.95c-.158.153-.158.405%200%20.558l1.628%201.598c.156.152.414.152.57%200l2.725-2.672c.156-.152.415-.406.57-.56l1.627-1.595c.156-.156.156-.406%200-.56l-1.628-1.595-.57-.56-2.724-2.67c-.156-.153-.414-.153-.57%200L7.21%206.49c-.158.154-.158.404%200%20.558l2.726%202.67z%22%20fill%3D%22%23fff%22%20enable-background%3D%22new%22%2F%3E%3ClinearGradient%20id%3D%22c%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%2210.77%22%20y1%3D%2215.345%22%20x2%3D%2210.77%22%20y2%3D%224.656%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23fff%22%2F%3E%3Cstop%20offset%3D%22.9%22%20stop-color%3D%22%23D7E5EF%22%2F%3E%3C%2FlinearGradient%3E%3Cpath%20d%3D%22M9.123%204.78c.104%200%20.207.038.285.115l2.725%202.67.57.56L14.33%209.72c.156.154.156.404%200%20.56l-1.628%201.595-.57.56-2.724%202.67c-.078.077-.18.115-.285.115s-.207-.038-.285-.114L7.21%2013.508c-.158-.152-.158-.404%200-.56l2.726-2.67c.156-.154.156-.404%200-.56L7.21%207.05c-.158-.154-.158-.404%200-.558l1.628-1.595c.078-.077.182-.115.285-.115m0-.125c-.14%200-.273.054-.373.15L7.123%206.4c-.1.1-.156.23-.156.37%200%20.14.056.27.156.368l2.726%202.67c.05.052.08.12.08.19%200%20.073-.03.14-.08.192l-2.726%202.67c-.1.1-.156.23-.156.37s.056.27.156.367l1.627%201.597c.1.098.232.15.374.15s.273-.053.373-.15l2.725-2.672c.156-.15.415-.406.57-.56l1.627-1.594c.1-.1.153-.23.153-.37%200-.14-.055-.27-.154-.37l-1.63-1.592-.57-.56-2.724-2.67c-.1-.097-.232-.15-.373-.15z%22%20fill%3D%22url%28%23c%29%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  width: 13px;
+  height: 13px;
+  outline: 0;
+}
+.collapse-dropdown .panel .panel-heading a.collapsed .glyphicon-play:hover:before,
+.collapse-dropdown .panel .panel-heading a.collapsed .glyphicon-play:focus:before {
+  content: "";
 }
 .collapse-dropdown.panel-group .panel-heading + .panel-collapse > .panel-body {
   border: none;
