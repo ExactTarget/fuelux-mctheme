@@ -24,6 +24,10 @@ module.exports = function (grunt) {
 		pkg: grunt.file.readJSON('package.json'),
 		// Tasks configuration
 
+
+
+		// Copy svg-sources to svg-exports
+
 		// add comments abou the regex-foo
 		'string-replace': {
 			inline: {
@@ -151,7 +155,14 @@ module.exports = function (grunt) {
 				}
 			}
 		},
+
 		copy: {
+			svgSources: {
+				cwd: 'icons/svg-sources',
+				src: '**/*',
+				dest: 'icons/svg-exports',
+				expand: true
+			},
 			zipsrc: {
 				cwd: 'dist/',
 				dest: 'dist/fuelux-mctheme/',
@@ -372,7 +383,7 @@ module.exports = function (grunt) {
 	/* ----------------
 		Making Icons
 	---------------- */
-	grunt.registerTask('make-icons', ['svgmin', 'grunticon:makeSvgIcons', 'string-replace']);
+	grunt.registerTask('make-icons', ['copy:svgSources', 'svgmin', 'grunticon:makeSvgIcons', 'string-replace']);
 	grunt.registerTask('make-icons-base', ['grunticon:makeSvgIcons']);
 	grunt.registerTask('glyphify-icons', ['string-replace']);
 
