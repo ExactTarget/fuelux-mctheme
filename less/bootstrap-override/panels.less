@@ -61,23 +61,39 @@
 			border: none;
 			padding: 5px 10px;
 			.glyphicon-play {
-				font-size: 10px;
 				padding-right: 5px;
 				padding-left: 7px;
 				top: -1px;
 				left: 0;
 				border: 0;
 				margin-right: 5px;
-				background: transparent url(../img/spritesheet.png) no-repeat -176px -16px;
+				.fuelux-icon;
+				.fuelux-icon-caret-down;
 				width: 13px;
 				height: 13px;
 				&:before {
 					display: none;
 				}
+				&:hover, &:focus {
+					.fuelux-icon-caret-down-hover;
+					width: 13px;
+					height: 13px;
+					outline: 0;
+				}
 			}
 			a.collapsed {
 				.glyphicon-play {
-					background: transparent url(../img/spritesheet.png) no-repeat -176px 0;
+					.fuelux-icon;
+					.fuelux-icon-caret-right;
+					width: 13px;
+					height: 13px;
+					outline: 0;
+					&:hover, &:focus {
+						.fuelux-icon-caret-right-hover;
+						width: 13px;
+						height: 13px;
+						outline: 0;
+					}
 				}
 			}
 		}
