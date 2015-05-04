@@ -160,7 +160,7 @@ module.exports = function (grunt) {
 			svgSources: {
 				cwd: 'icons/svg-sources',
 				src: '**/*',
-				dest: 'icons/svg-exports',
+				dest: 'icons/svg-optimized',
 				expand: true
 			},
 			zipsrc: {
@@ -383,8 +383,8 @@ module.exports = function (grunt) {
 	/* ----------------
 		Making Icons
 	---------------- */
-	grunt.registerTask('make-icons', ['copy:svgSources', 'svgmin', 'grunticon:makeSvgIcons', 'string-replace']);
-	grunt.registerTask('make-icons-base', ['grunticon:makeSvgIcons']);
+	grunt.registerTask('make-icons', ['svgmin', 'copy:svgSources', 'grunticon:makeSvgIcons', 'string-replace']);
+	grunt.registerTask('make-icons-base', ['copy:svgSources','grunticon:makeSvgIcons']);
 	grunt.registerTask('glyphify-icons', ['string-replace']);
 
 	/* -------------
