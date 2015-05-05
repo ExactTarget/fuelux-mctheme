@@ -156,6 +156,10 @@
 
 .fuelux-icon-info, .glyphicon-info { background-image: url('png/info.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
+.fuelux-icon-loader, .glyphicon-loader { background-image: url('png/loader.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-loader_full, .glyphicon-loader_full { background-image: url('png/loader_full.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
 .fuelux-icon-message-type-in, .glyphicon-message-type-in { background-image: url('png/message-type-in.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
 .fuelux-icon-message-type-out, .glyphicon-message-type-out { background-image: url('png/message-type-out.png'); background-repeat: no-repeat; .fuelux-icon; } 
