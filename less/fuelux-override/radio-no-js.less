@@ -90,9 +90,8 @@
 	}
 }
 
-
 .fuelux .radio {
-	& + .radio input:not(.sr-only) ~ label {
+	& + .radio input[type="radio"]:not(.sr-only) ~ label {
 		top: 0px;
 	}
 	& + .radio {
@@ -104,12 +103,12 @@
 		& + .radio.highlight {
 			margin-top: -5px;
 		}
-		input:not(.sr-only)  ~ label {
+		input[type="radio"]:not(.sr-only)  ~ label {
 			left: -7px;
 		}
 	}
 	&-inline.highlight {
-		input:not(.sr-only) ~ label {
+		input[type="radio"]:not(.sr-only) ~ label {
 			left: -3px;
 		}
 	}
