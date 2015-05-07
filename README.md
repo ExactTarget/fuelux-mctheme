@@ -14,7 +14,7 @@ This theme enables a first-class user experience for your applications that seam
 
 ## Demos
 
-View [demos of the Marketing Cloud Theme](http://exacttarget.github.com/fuelux-mctheme).
+View [demos of the Marketing Cloud Theme](http://fuelux-mctheme.herokuapp.com).
 
 ## Quick start
 1. Install [Fuel UX](https://getfuelux.com).
