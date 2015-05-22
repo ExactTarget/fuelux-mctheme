@@ -1,5 +1,5 @@
 /*!
- * Marketing Cloud Theme v1.5.1 
+ * Marketing Cloud Theme v1.5.2 
  * Copyright 2015 ExactTarget
  * Licensed under MIT (https://github.com/ExactTarget/fuelux-mctheme/blob/master/COPYING)
  */
@@ -2650,7 +2650,7 @@ body {
   margin-top: 0;
   margin-bottom: 0;
 }
-.page-header > :last-child {
+.page-header > :last-of-type:not(:only-of-type) {
   text-align: right;
 }
 p {
@@ -2725,17 +2725,20 @@ h6,
 .text-xxl {
   font-size: 44px;
 }
+.text-danger {
+  color: #e00000;
+}
 .text-dimmed {
   color: #4b4b4b;
 }
 .text-muted {
-  color: #757575 !important;
+  color: #757575;
 }
 .text-primary {
-  color: #2075c0 !important;
+  color: #3074af;
 }
 .text-warning {
-  color: #986000 !important;
+  color: #986000;
 }
 .btn {
   display: inline-block;
