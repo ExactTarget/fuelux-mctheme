@@ -1,5 +1,8 @@
 @import "../colors.less";
 
+@menu-text-hover: #507587;
+
+
 //== Scaffolding
 //
 //## Settings for some of the most global styles.
@@ -86,7 +89,7 @@
 @btn-default-bg-press-end:       #DEEAF6;
 @btn-default-bg-disabled-start:  #FFF;
 @btn-default-bg-disabled-end:    #DAE5ED;
-@btn-default-border:             #B5C6D2;
+@btn-default-border:             @gray67;
 
 @btn-primary-color:              #fff;
 @btn-primary-bg-start:           #7FB9EC;
@@ -120,7 +123,7 @@
 @btn-warning-color:              @brand-warning-light;
 @btn-warning-bg:                 @brand-warning-dark;
 
-@btn-danger-color:               @brand-danger-light;
+@btn-danger-color:               @true-white;
 @btn-danger-bg:                  @brand-danger-dark;
 
 
@@ -137,7 +140,7 @@
 @input-bg-disabled:              @gray93;
 
 //** Text color for `<input>`s
-@input-color:                    @gray13;
+@input-color:                    @gray13;	// override BS with black
 //** `<input>` border color
 @input-border:                   #ccc;
 //** `<input>` border radius
@@ -158,7 +161,7 @@
 @input-height-medium:            47px;
 
 @legend-color:                   @gray13;
-@legend-border-color:            #e5e5e5;
+@legend-border-color:            @gray93;
 
 //** Background color for textual input addons
 @input-group-addon-bg:           @gray93;
@@ -182,10 +185,17 @@
 @state-warning-bg:               @brand-warning-light;
 @state-warning-border:           darken(spin(@state-warning-bg, -10), 5%);
 
-@state-danger-text:              @brand-danger-dark;
+@state-danger-text:              @gray13;
 @state-danger-bg:                @brand-danger-light;
 @state-danger-border:            darken(spin(@state-danger-bg, -10), 5%);
 
+// pills and labels
+@label-default-bg:               @gray47;
+@label-success-bg:               @brand-success-dark;
+@label-primary-bg:               @brand-primary-dark;
+@label-info-bg:                  @brand-info-dark;
+@label-warning-bg:               @brand-warning-dark;
+@label-danger-bg:                @brand-danger-dark;
 
 //== Media queries breakpoints
 //
@@ -299,7 +309,7 @@
 
 @panel-default-text:          @gray13;
 @panel-default-border:        #ddd;
-@panel-default-heading-bg:    #f0f2f3;
+@panel-default-heading-bg:    @gray96;
 
 @panel-primary-text:          #fff;
 @panel-primary-border:        @brand-primary-medium;
@@ -322,8 +332,8 @@
 @panel-danger-heading-bg:     @state-danger-bg;
 
 //Wells
-@well-background: #f4f4f4;
-@well-border-color: #ccc;
+@well-background: @gray96;
+@well-border-color: @gray80;
 @well-box-shadow: 0 0 0 1px #fff inset;
 
 // Navbar gradient

@@ -10,12 +10,24 @@
 
 	<link href="../../dist/css/fuelux-mctheme.css" rel="stylesheet" type="text/css">
 
+	<link href="bootstrap-css-examples.css" rel="stylesheet" type="text/css"/>
+	<link href="bootstrap-components-examples.css" rel="stylesheet" type="text/css"/>
+	<link href="bootstrap-javascript-examples.css" rel="stylesheet" type="text/css"/>
+	<link href="fuelux-examples.css" rel="stylesheet" type="text/css"/>
+	<link href="fuelux-icon-example.css" rel="stylesheet" type="text/css"/>
+	<!-- <link href="stylish-temp.css" rel="stylesheet" type="text/css"/> -->
+
+
 	<!--CLIENT-SIDE LESS COMPILATION FOR WATCHER-LESS DEV-->
 	<!--<link href="../../less/fuelux-mctheme.less" rel="stylesheet/less" type="text/css"/>-->
 	<!--<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.7.0/less.min.js"></script>-->
 	<!--<script type="text/javascript">if(window.console && window.console.clear){ window.console.clear(); }</script>-->
 
-	<link href="fuelux-examples.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+		.active a {
+			font-weight: bold;
+		}
+	</style>
 
 	<script src="../../bower_components/requirejs/require.js"></script>
 	<script type="text/javascript">
@@ -41,117 +53,52 @@
 				}
 			});
 		})();
-		require(['jquery', 'main'], function($){ });
+		require(['jquery', 'main'], function($){
+				// Tooltip and popover demos
+				$('.tooltip-demo').tooltip({
+					selector: '[data-toggle="tooltip"]',
+					container: 'body'
+				});
+				$('.popover-demo').popover({
+					selector: '[data-toggle="popover"]',
+					container: 'body'
+				});
+
+				// Demos within modals
+				$('.tooltip-test').tooltip();
+				$('.popover-test').popover();
+
+				// Popover button demo
+				$('.popover-button [data-toggle="popover"]').popover();
+
+				// Button state demo
+				$('button[data-loading-text]:first').click(function () {
+					var btn = $(this);
+					btn.button('loading');
+					setTimeout(function () {
+						btn.button('reset');
+					}, 3000);
+				});
+
+
+				$(".nav a").on("click", function () {
+					$(".nav").find(".active").removeClass("active");
+					$(this).parent().addClass("active");
+				});
+
+				//programmatically injecting this is so much easier than writing the html by hand 376 times...
+				$('h1[id], h2[id], h3[id], h4[id], h5[id], h6[id], dt[id]').each(function(i){
+					console.log($(this));
+					$(this).prepend(['<a class="header-anchor" href="#', this.id, '"><span class="glyphicon glyphicon-link"></span></a>'].join(''));
+				});
+
+		 });
 	</script>
 </head>
 <body>
 	<div class="container" id="mainWrapper">
-		<section id="checkboxes">
-			<h2>Checkboxes</h2>
-			<div class="thin-box">
 
-				<section id="checkboxes-block">
-					<div class="checkbox">
-						<label class="checkbox-custom" data-initialize="checkbox" id="myCustomCheckbox1">
-							<input class="sr-only" type="checkbox" value="">
-							<span class="checkbox-label">Custom checkbox unchecked on page load</span>
-						</label>
-					</div>
-					<div class="checkbox">
-						<label class="checkbox-custom" data-initialize="checkbox" id="myCustomCheckbox2">
-							<input checked="checked" class="checked sr-only" type="checkbox" value="">
-							<span class="checkbox-label">Custom checkbox checked on page load</span>
-						</label>
-					</div>
-					<div class="checkbox">
-						<label class="checkbox-custom" data-initialize="checkbox" id="myCustomCheckbox3">
-							<input class="sr-only" disabled="disabled" type="checkbox" value="">
-							<span class="checkbox-label">Custom checkbox disabled and unchecked on page load</span>
-						</label>
-					</div>
-					<div class="checkbox">
-						<label class="checkbox-custom" data-initialize="checkbox" id="myCustomCheckbox4">
-							<input checked="checked" class="checked sr-only" disabled="disabled" type="checkbox" value="">
-							<span class="checkbox-label">Custom checkbox disabled and checked on page load</span>
-						</label>
-					</div>
-				</section>
-
-
-				<section id="checkboxes-inline">
-					<label class="checkbox-custom checkbox-inline" data-initialize="checkbox" id="myCustomInlineCheckbox1">
-						<input checked="checked" class="checked sr-only" type="checkbox" value=""> <span class="checkbox-label">1, 2, buckle my shoe</span>
-					</label>
-					<label class="checkbox-custom checkbox-inline" data-initialize="checkbox" id="myCustomInlineCheckbox2">
-						<input class="sr-only" type="checkbox" value=""> <span class="checkbox-label">3, 4, shut the door</span>
-					</label>
-					<label class="checkbox-custom checkbox-inline" data-initialize="checkbox" id="myCustomInlineCheckbox3">
-						<input class="sr-only" disabled="disabled" type="checkbox" value=""> <span class="checkbox-label">5, 6, pick up sticks</span>
-					</label>
-					<label class="checkbox-custom checkbox-inline" data-initialize="checkbox" id="myCustomInlineCheckbox4">
-						<input checked="checked" class="checked sr-only" disabled="disabled" type="checkbox" value=""> <span class="checkbox-label">7, 8, lay them straight</span>
-					</label>
-				</section>
-
-				<section id="checkboxes-toggling">
-					<div class="checkbox">
-						<label class="checkbox-custom" data-initialize="checkbox" id="myCustomTogglingCheckbox1">
-							<input class="sr-only" data-toggle=".checkboxToggle" type="checkbox" value="">
-							<span class="checkbox-label">Custom checkbox toggles by class</span>
-						</label>
-					</div>
-					<div class="checkbox">
-						<label class="checkbox-custom" data-initialize="checkbox" id="myCustomTogglingCheckbox2">
-							<input class="sr-only" data-toggle="#checkboxToggle" type="checkbox" value="">
-							<span class="checkbox-label">Custom checkbox toggles by id</span>
-						</label>
-					</div>
-					<div aria-hidden="true" class="checkboxToggle alert alert-warning hide">This message's visibility toggles by class with a checkbox above.</div>
-					<div aria-hidden="true" class="checkboxToggle alert alert-success hide">This message's visibility toggles by class with a checkbox above.</div>
-					<div aria-hidden="true" class="alert alert-info hide" id="checkboxToggle">This message's visibility toggles by id with a checkbox above.</div>
-				</section>
-				<section id="checkboxes-highlighting-block">
-					<div class="checkbox highlight">
-						<label class="checkbox-custom highlight" data-initialize="checkbox" id="myCustomHighlightCheckbox1">
-							<input class="sr-only" type="checkbox" value="">
-							<span class="checkbox-label">Custom block-level highlight checkbox</span>
-						</label>
-					</div>
-					<div class="checkbox highlight">
-						<label class="checkbox-custom highlight" data-initialize="checkbox" id="myCustomHighlightCheckbox2">
-							<input class="sr-only" type="checkbox" value="">
-							<span class="checkbox-label">Custom block-level highlight checkbox</span>
-						</label>
-					</div>
-					<div class="checkbox highlight">
-						<label class="checkbox-custom highlight" data-initialize="checkbox" id="myCustomHighlightCheckbox3">
-							<input class="sr-only" type="checkbox" value="">
-							<span class="checkbox-label">Custom block-level highlight checkbox</span>
-						</label>
-					</div>
-					<div class="checkbox highlight">
-						<label class="checkbox-custom highlight" data-initialize="checkbox" id="myCustomHighlightCheckbox4">
-							<input class="sr-only" type="checkbox" value="">
-							<span class="checkbox-label">Custom block-level highlight checkbox</span>
-						</label>
-					</div>
-				</section>
-				<section id="checkboxes-highlighting-inline">
-					<label class="checkbox-custom checkbox-inline highlight" data-initialize="checkbox" id="myCustomHighlightCheckbox5">
-						<input class="sr-only" type="checkbox" value=""> <span class="checkbox-label">Custom inline highlight checkbox</span>
-					</label>
-					<label class="checkbox-custom checkbox-inline highlight" data-initialize="checkbox" id="myCustomHighlightCheckbox6">
-						<input class="sr-only" type="checkbox" value=""> <span class="checkbox-label">Custom inline highlight checkbox</span>
-					</label>
-				</section>
-			</div>
-			<div class="btn-panel">
-				<button type="button" class="btn btn-default" id="btnCheckboxToggle">toggle #myCustomCheckbox1</button>
-				<button type="button" class="btn btn-default" id="btnCheckboxDisable">disable #myCustomCheckbox1</button>
-				<button type="button" class="btn btn-default" id="btnCheckboxEnable">enable #myCustomCheckbox1</button>
-				<button type="button" class="btn btn-default" id="btnCheckboxDestroy">destroy and append #myCustomCheckbox1</button>
-			</div>
-		</section>
+		Old JS checkboxes removed.
 
 		<section id="checkboxes-no-js">
 			<h2>Checkboxes (no javascript)</h2>
@@ -2439,6 +2386,3211 @@
 			</section>
 
 		</section>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container" style="margin-top:10px;">
+<h1>Font</h1>
+<div class="panel panel-default" style="font-size:14px;">
+	<div class="panel-body">
+		<div class="small text-uppercase text-muted">Default</div>
+		<div class="sans">The quick brown foxs jumps over the lazy dog.  (Arial, sans-serif)</div>
+
+		<br>
+		<div class="small text-uppercase text-muted">Serif (.serif)</div>
+		<div class="serif">The quick brown foxs jumps over the lazy dog.  (Georgia, "Times New Roman", Times, serif)</div>
+
+		<br>
+		<div class="small text-uppercase text-muted">Monospace (.monospace)</div>
+		<div class="monospace">The quick brown foxs jumps over the lazy dog.  (Menlo, Monaco, Consolas, "Courier New", monospace)</div>
+	</div>
+</div>
+
+<h1 class="title-space">Font Size</h1>
+<div class="panel panel-default">
+	<div class="panel-body">
+		<div class="text-sm">.text-sm (10px)</div>
+		<div>default font size (11px)</div>
+		<div class="text-lg">.text-lg (24px)</div>
+		<div class="text-xl">.text-xl (32px)</div>
+		<div class="text-xxl">.text-xxl (44px)</div>
+
+		<div class="small text-uppercase text-muted" style="margin-top:10px;">Header Classes - equivalent to using h1, h2, h3, etc. tags (but without the additional margins)</div>
+		<div class="h1">.h1 (20px)</div>
+		<div class="h2">.h2 (15px)</div>
+		<div class="h3">.h3 (14px)</div>
+		<div class="h4">.h4 (12px)</div>
+		<div class="h5">.h5 (11px)</div>
+		<div class="h6">.h6 (10px)</div>
+	</div>
+</div>
+
+<h1 class="title-space">Font Color</h1>
+<div class="panel panel-default" style="font-size:14px;">
+	<div class="panel-body">
+		<div class="row">
+			<div class="col-xs-6">
+				<div class="padding-sm">
+					<div class="small text-uppercase text-muted">on white background</div>
+					<div>default font color (#222222)</div>
+					<div class="text-dimmed">.text-dimmed (#4b4b4b)</div>
+					<div class="text-muted">.text-muted (#757575)</div>
+					<div class="text-primary">.text-primary (#2075c0)</div>
+					<div class="text-success">.text-success (#3c763d)</div>
+					<div class="text-info">.text-info (#31708f)</div>
+					<div class="text-warning">.text-warning (#986000)</div>
+					<div class="text-danger">.text-danger (#a94442)</div>
+				</div>
+			</div>
+			<div class="col-xs-6">
+				<div class="padding-sm well" style="border-radius:5px;">
+					<div class="small text-uppercase text-muted">on gray background (within .well)</div>
+					<div>default font color (#222222)</div>
+					<div class="text-dimmed">.text-dimmed (#4b4b4b)</div>
+					<div class="text-muted">.text-muted (#757575)</div>
+					<div class="text-primary">.text-primary (#2075c0)</div>
+					<div class="text-success">.text-success (#3c763d)</div>
+					<div class="text-info">.text-info (#31708f)</div>
+					<div class="text-warning">.text-warning (#986000)</div>
+					<div class="text-danger">.text-danger (#a94442)</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<h1 class="title-space">Form Helpers</h1>
+<div class="panel panel-default text-lg">
+	<div class="panel-body">
+		<div class="section-heading">Section Heading (.section-heading)</div>
+		<div class="data-label">Label (.data-label)</div>
+		<div class="data-value">Value (.data-value)</div>
+		<div class="data-label margin-lg-top">Label (.data-label)</div>
+		<div class="data-value">Value (.data-value)</div>
+
+	</div>
+</div>
+
+<h1 class="title-space">Padding</h1>
+<div class="panel panel-default">
+	<div class="panel-body">
+		<div class="example-panel padding-xs text-center">
+			.padding-xs (5px)
+		</div>
+		<div class="example-panel padding-sm text-center">
+			.padding-sm (10px)
+		</div>
+		<div class="example-panel padding-md text-center">
+			padding-md (15px)
+		</div>
+		<div class="example-panel padding-lg text-center">
+			.padding-lg (20px)
+		</div>
+	</div>
+	<div class="panel-footer">
+		<div class="small text-muted text-uppercase">Padding On All Sides</div>
+	</div>
+</div>
+
+<div class="panel panel-default">
+	<div class="panel-body">
+		<div class="example-panel padding-xs-horizontal text-center">
+			.padding-xs-horizontal (5px)
+		</div>
+		<div class="example-panel padding-sm-horizontal text-center">
+			.padding-sm-horizontal (10px)
+		</div>
+		<div class="example-panel padding-md-horizontal text-center">
+			.padding-md-horizontal (15px)
+		</div>
+		<div class="example-panel padding-lg-horizontal text-center">
+			.padding-lg-horizontal (20px)
+		</div>
+	</div>
+	<div class="panel-footer">
+		<div class="small text-muted text-uppercase">Horizontal Padding Only</div>
+	</div>
+</div>
+
+<div class="panel panel-default">
+	<div class="panel-body">
+		<div class="example-panel padding-xs-vertical text-center">
+			.padding-xs-vertical (5px)
+		</div>
+		<div class="example-panel padding-sm-vertical text-center">
+			.padding-sm-vertical (10px)
+		</div>
+		<div class="example-panel padding-md-vertical text-center">
+			.padding-md-vertical (15px)
+		</div>
+		<div class="example-panel padding-lg-vertical text-center">
+			.padding-lg-vertical (20px)
+		</div>
+	</div>
+	<div class="panel-footer">
+		<div class="small text-muted text-uppercase">Vertical Padding Only</div>
+	</div>
+</div>
+
+<div class="small text-muted text-uppercase" style="margin-top:10px;">Select Padding</div>
+<div class="padding-md bg-info">
+	You can use any combination of <strong class="text-md">.padding-*-*</strong> to target a specific side (top | right | bottom | left).<br>
+	For example: <code>.padding-lg-top</code> or <code>.padding-xs-bottom</code>
+</div>
+
+<h1 class="title-space">Margin</h1>
+<div class="panel panel-default">
+	<div class="panel-body">
+		<div class="example-panel">
+			<div class="example-panel2 margin-xs">
+				.margin-xs (5px)
+			</div>
+		</div>
+		<div class="example-panel">
+			<div class="example-panel2 margin-sm">
+				.margin-sm (10px)
+			</div>
+		</div>
+		<div class="example-panel">
+			<div class="example-panel2 margin-md">
+				.margin-md (15px)
+			</div>
+		</div>
+		<div class="example-panel">
+			<div class="example-panel2 margin-lg">
+				.margin-lg (20px)
+			</div>
+		</div>
+	</div>
+	<div class="panel-footer">
+		<div class="small text-muted text-uppercase">Margin On All Sides</div>
+	</div>
+</div>
+
+<div class="panel panel-default">
+	<div class="panel-body">
+		<div class="example-panel">
+			<div class="example-panel2 margin-xs-horizontal">
+				.margin-xs-horizontal (5px)
+			</div>
+		</div>
+		<div class="example-panel">
+			<div class="example-panel2 margin-sm-horizontal">
+				.margin-sm-horizontal (10px)
+			</div>
+		</div>
+		<div class="example-panel">
+			<div class="example-panel2 margin-md-horizontal">
+				.margin-md-horizontal (15px)
+			</div>
+		</div>
+		<div class="example-panel">
+			<div class="example-panel2 margin-lg-horizontal">
+				.margin-lg-horizontal (20px)
+			</div>
+		</div>
+	</div>
+	<div class="panel-footer">
+		<div class="small text-muted text-uppercase">Horizontal Margin Only</div>
+	</div>
+</div>
+
+<div class="panel panel-default">
+	<div class="panel-body">
+		<div class="example-panel">
+			<div class="example-panel2 margin-xs-vertical">
+				.margin-xs-vertical (5px)
+			</div>
+		</div>
+		<div class="example-panel">
+			<div class="example-panel2 margin-sm-vertical">
+				.margin-sm-vertical (10px)
+			</div>
+		</div>
+		<div class="example-panel">
+			<div class="example-panel2 margin-md-vertical">
+				.margin-md-vertical (15px)
+			</div>
+		</div>
+		<div class="example-panel">
+			<div class="example-panel2 margin-lg-vertical">
+				.margin-lg-vertical (20px)
+			</div>
+		</div>
+	</div>
+	<div class="panel-footer">
+		<div class="small text-muted text-uppercase">Vertical Margin Only</div>
+	</div>
+</div>
+
+<div class="small text-muted text-uppercase" style="margin-top:10px;">Select Margin</div>
+<div class="padding-md bg-info">
+	You can use any combination of <strong class="text-md">.margin-*-*</strong> to target a specific side (top | right | bottom | left).<br>
+	For example: <code>.margin-lg-top</code> or <code>.margin-xs-bottom</code>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container main">
+	<div class="row">
+		<div class="col-md-9">
+			<h1 class="section" id="modal">Modal</h1>
+			<hr class="darker"/>
+
+			<h2>Example</h2>
+
+			<h3>Static example</h3>
+
+			<p>A rendered modal with header, body, and set of actions in the footer.</p>
+
+			<div class="bs-example bs-example-modal">
+				<div class="modal">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">
+									<span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+								<h4 class="modal-title">Modal title</h4>
+							</div>
+							<div class="modal-body">
+								<p>One fine body&hellip;</p>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-primary">Save changes</button>
+							</div>
+						</div>
+						<!-- /.modal-content -->
+					</div>
+					<!-- /.modal-dialog -->
+				</div>
+				<!-- /.modal -->
+			</div>
+			<!-- /example -->
+
+			<!-- sample modal content -->
+			<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 class="modal-title" id="myModalLabel">Modal Heading</h4>
+						</div>
+						<div class="modal-body">
+							<h4>Text in a modal</h4>
+
+							<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+
+							<h4>Popover in a modal</h4>
+
+							<p>This
+								<button role="button" class="btn btn-default popover-test" title="A Title" data-content="And here's some amazing content. It's very engaging. right?">button</button>
+								should trigger a popover on click.
+							</p>
+
+							<h4>Tooltips in a modal</h4>
+
+							<p><a href="#" class="tooltip-test" title="Tooltip">This link</a> and
+								<a href="#" class="tooltip-test" title="Tooltip">that link</a> should have tooltips on hover.
+							</p>
+
+							<hr>
+							<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+
+							<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+
+							<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+
+							<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+
+							<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-primary">Save changes</button>
+						</div>
+
+					</div>
+					<!-- /.modal-content -->
+				</div>
+				<!-- /.modal-dialog -->
+			</div>
+			<!-- /.modal -->
+
+			<div class="bs-example" style="padding-bottom: 24px;">
+				<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+					Launch demo modal
+				</button>
+			</div>
+			<!-- /example -->
+
+			<h2 id="modals-sizes">Optional sizes</h2>
+
+			<p>Modals have two optional sizes, available via modifier classes to be placed on a
+				<code>.modal-dialog</code>.</p>
+
+			<div class="bs-example">
+				<button class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Large modal</button>
+				<button class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">Small modal</button>
+			</div>
+
+			<!--  Modal content for the above example -->
+			<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 class="modal-title" id="myLargeModalLabel">Large modal</h4>
+						</div>
+						<div class="modal-body">
+							...
+						</div>
+					</div>
+					<!-- /.modal-content -->
+				</div>
+				<!-- /.modal-dialog -->
+			</div>
+			<!-- /.modal -->
+			<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-sm">
+					<div class="modal-content">
+
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 class="modal-title" id="mySmallModalLabel">Small modal</h4>
+						</div>
+						<div class="modal-body">
+							...
+						</div>
+					</div>
+					<!-- /.modal-content -->
+				</div>
+				<!-- /.modal-dialog -->
+			</div>
+			<!-- /.modal -->
+
+			<h1 class="section" id="dropdowns">Dropdowns</h1>
+			<hr class="darker"/>
+
+			<h2>Example</h2>
+
+			<h3>Within a navbar</h3>
+
+			<div class="bs-example">
+				<nav id="navbar-example" class="navbar navbar-default navbar-static" role="navigation">
+					<div class="container-fluid">
+						<div class="navbar-header">
+							<button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-example-js-navbar-collapse">
+								<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span>
+								<span class="icon-bar"></span> <span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" href="#">Project Name</a>
+						</div>
+						<div class="collapse navbar-collapse bs-example-js-navbar-collapse">
+							<ul class="nav navbar-nav">
+								<li class="dropdown">
+									<a id="drop1" href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Dropdown
+										<span class="caret"></span> </a>
+									<ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+										<li role="presentation">
+											<a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Action</a>
+										</li>
+										<li role="presentation">
+											<a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Another action</a>
+										</li>
+										<li role="presentation">
+											<a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Something else here</a>
+										</li>
+										<li role="presentation" class="divider"></li>
+										<li role="presentation">
+											<a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Separated link</a>
+										</li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a id="drop2" href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Dropdown
+										<span class="caret"></span> </a>
+									<ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
+										<li role="presentation">
+											<a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Action</a>
+										</li>
+										<li role="presentation">
+											<a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Another action</a>
+										</li>
+										<li role="presentation">
+											<a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Something else here</a>
+										</li>
+										<li role="presentation" class="divider"></li>
+										<li role="presentation">
+											<a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Separated link</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<ul class="nav navbar-nav navbar-right">
+								<li id="fat-menu" class="dropdown">
+									<a id="drop3" href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Dropdown
+										<span class="caret"></span> </a>
+									<ul class="dropdown-menu" role="menu" aria-labelledby="drop3">
+										<li role="presentation">
+											<a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Action</a>
+										</li>
+										<li role="presentation">
+											<a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Another action</a>
+										</li>
+										<li role="presentation">
+											<a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Something else here</a>
+										</li>
+										<li role="presentation" class="divider"></li>
+										<li role="presentation">
+											<a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Separated link</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<!-- /.nav-collapse -->
+					</div>
+					<!-- /.container-fluid -->
+				</nav>
+				<!-- /navbar-example -->
+			</div>
+			<!-- /example -->
+
+			<h4>Text Link</h4>
+
+			<div class="bs-example">
+				<a href="#">This is standard link text.</a>
+			</div>
+
+			<h4>Within Pills</h4>
+
+			<div class="bs-example">
+				<ul class="nav nav-pills" role="tablist">
+					<li role="presentation" class="active"><a href="#">Regular link</a></li>
+					<li role="presentation" class="dropdown">
+						<a id="drop4" href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Dropdown
+							<span class="caret"></span> </a>
+						<ul id="menu1" class="dropdown-menu" role="menu" aria-labelledby="drop4">
+							<li role="presentation">
+								<a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Action</a></li>
+							<li role="presentation">
+								<a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Another action</a></li>
+							<li role="presentation">
+								<a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Something else here</a>
+							</li>
+							<li role="presentation" class="divider"></li>
+							<li role="presentation">
+								<a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Separated link</a></li>
+						</ul>
+					</li>
+					<li role="presentation" class="dropdown">
+						<a id="drop5" href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Dropdown
+							<span class="caret"></span> </a>
+						<ul id="menu2" class="dropdown-menu" role="menu" aria-labelledby="drop5">
+							<li role="presentation">
+								<a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Action</a></li>
+							<li role="presentation">
+								<a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Another action</a></li>
+							<li role="presentation">
+								<a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Something else here</a>
+							</li>
+							<li role="presentation" class="divider"></li>
+							<li role="presentation">
+								<a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Separated link</a></li>
+						</ul>
+					</li>
+					<li role="presentation" class="dropdown">
+						<a id="drop6" href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Dropdown
+							<span class="caret"></span> </a>
+						<ul id="menu3" class="dropdown-menu" role="menu" aria-labelledby="drop6">
+							<li role="presentation">
+								<a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Action</a></li>
+							<li role="presentation">
+								<a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Another action</a></li>
+							<li role="presentation">
+								<a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Something else here</a>
+							</li>
+							<li role="presentation" class="divider"></li>
+							<li role="presentation">
+								<a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Separated link</a></li>
+						</ul>
+					</li>
+				</ul>
+				<!-- /pills -->
+			</div>
+			<!-- /example -->
+
+
+			<h1 class="section" id="tabs">Tabs</h1>
+			<hr class="darker"/>
+			<div class="bs-example bs-example-tabs">
+				<ul id="myTab" class="nav nav-tabs" role="tablist">
+					<li role="presentation" class="active"><a href="#home" role="tab" data-toggle="tab">Home</a></li>
+					<li role="presentation"><a href="#profile" role="tab" data-toggle="tab">Profile</a></li>
+					<li role="presentation" class="dropdown">
+						<a href="#" id="myTabDrop1" class="dropdown-toggle" data-toggle="dropdown">Dropdown
+							<span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1">
+							<li><a href="#dropdown1" tabindex="-1" role="tab" data-toggle="tab">@fat</a></li>
+							<li><a href="#dropdown2" tabindex="-1" role="tab" data-toggle="tab">@mdo</a></li>
+						</ul>
+					</li>
+				</ul>
+				<div id="myTabContent" class="tab-content">
+					<div role="tabpanel" class="tab-pane fade in active" id="home">
+						<p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+					</div>
+					<div role="tabpanel" class="tab-pane fade" id="profile">
+						<p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
+					</div>
+					<div role="tabpanel" class="tab-pane fade" id="dropdown1">
+						<p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+					</div>
+					<div role="tabpanel" class="tab-pane fade" id="dropdown2">
+						<p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park vegan.</p>
+					</div>
+				</div>
+			</div>
+			<!-- /example -->
+			<h1 class="section" id="tooltips">Tooltips</h1>
+			<hr class="darker"/>
+
+			<h2>Example</h2>
+
+			<h3>Four directions</h3>
+
+			<div class="bs-example tooltip-demo">
+				<div class="bs-example-tooltips">
+					<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button>
+					<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</button>
+					<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
+					<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
+				</div>
+			</div>
+			<!-- /example -->
+
+			<h3>Static Example</h3>
+
+			<div class="highlight" style="max-width: 200px;">
+
+				<div style="position: relative; height: 75px;">
+					<div class="tooltip left" style="display: block; position: relative; opacity: 1;" role="tooltip">
+						<div class="tooltip-arrow"></div>
+						<div class="tooltip-inner">test</div>
+					</div>
+				</div>
+
+				<div style="position: relative; height: 75px;">
+					<div class="tooltip top" style="display: block; position: relative; opacity: 1;" role="tooltip">
+						<div class="tooltip-arrow"></div>
+						<div class="tooltip-inner">test</div>
+					</div>
+				</div>
+
+				<div style="position: relative; height: 75px;">
+					<div class="tooltip bottom" style="display: block; position: relative; opacity: 1;" role="tooltip">
+						<div class="tooltip-arrow"></div>
+						<div class="tooltip-inner">test</div>
+					</div>
+				</div>
+
+				<div style="position: relative; height: 75px;">
+					<div class="tooltip right" style="display: block; position: relative; opacity: 1;" role="tooltip">
+						<div class="tooltip-arrow"></div>
+						<div class="tooltip-inner">test</div>
+					</div>
+				</div>
+
+			</div>
+
+			<h1 class="section" id="popover">Popover</h1>
+			<hr class="darker"/>
+
+			<h2>Example</h2>
+
+			<h3>Static popover</h3>
+
+			<p>Four options are available: top, right, bottom, and left aligned.</p>
+
+			<div class="bs-example bs-example-popover">
+				<div class="popover top">
+					<div class="arrow"></div>
+					<h3 class="popover-title">Popover top</h3>
+
+					<div class="popover-content">
+						Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+					</div>
+				</div>
+
+				<div class="popover right">
+					<div class="arrow"></div>
+					<h3 class="popover-title">Popover right</h3>
+
+					<div class="popover-content">
+						Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+					</div>
+				</div>
+
+				<div class="popover bottom">
+					<div class="arrow"></div>
+					<h3 class="popover-title">Popover bottom</h3>
+
+					<div class="popover-content">
+						Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+					</div>
+				</div>
+
+				<div class="popover left">
+					<div class="arrow"></div>
+					<h3 class="popover-title">Popover left</h3>
+
+					<div class="popover-content">
+						Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+					</div>
+				</div>
+
+				<div class="clearfix"></div>
+			</div>
+
+			<h3>Live demo</h3>
+
+			<div class="bs-example popover-button" style="padding-bottom: 24px;">
+				<button class="btn btn-lg btn-danger" data-toggle="popover" title="A Title" data-content="And here's some amazing content. It's very engaging. right?" role="button">Click to toggle popover</button>
+			</div>
+
+			<h4>Four directions</h4>
+
+			<div class="bs-example popover-demo">
+				<button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+					Popover on left
+				</button>
+				<button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+					Popover on top
+				</button>
+				<button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+					Popover on bottom
+				</button>
+				<button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+					Popover on right
+				</button>
+			</div>
+
+			<h1 class="section" id="alert-messages">Alert messages</h1>
+			<hr class="darker"/>
+
+			<h2 id="alerts-examples">Example alerts</h2>
+
+			<p>Add dismiss functionality to all alert messages with this plugin.</p>
+
+			<div class="bs-example">
+				<div class="alert alert-dismissible alert-warning fade in" role="alert">
+					<button type="button" class="close" data-dismiss="alert">
+						<span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+					<strong>Holy guacamole!</strong> Best check yo self, you're not looking too good.
+				</div>
+			</div>
+			<!-- /example -->
+
+			<div class="bs-example">
+				<div class="alert alert-danger alert-dismissible fade in" role="alert">
+					<button type="button" class="close" data-dismiss="alert">
+						<span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+					<h4>Oh snap! You got an error!</h4>
+
+					<p>Change this and that and try again. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
+
+					<p>
+						<button type="button" class="btn btn-danger">Take this action</button>
+						<button type="button" class="btn btn-default">Or do this</button>
+					</p>
+				</div>
+			</div>
+			<!-- /example -->
+
+			<h1 class="section" id="buttons">Buttons</h1>
+			<hr class="darker"/>
+
+			<div class="thin-box">
+				<button class="btn btn-default" type="button">Default</button>
+				<button class="btn btn-primary" type="button">Primary</button>
+				<button class="btn btn-success" type="button">Success</button>
+				<button class="btn btn-warning" type="button">Warning</button>
+				<button class="btn btn-danger" type="button">Danger</button>
+			</div>
+
+
+
+			<h2>Example</h2>
+			<h4>Stateful</h4>
+
+			<p>Add <code>data-loading-text="Loading..."</code> to use a loading state on a button.</p>
+
+			<div class="bs-example" style="padding-bottom: 24px;">
+				<button type="button" id="loading-example-btn" data-loading-text="Loading..." class="btn btn-primary">
+					Loading state
+				</button>
+			</div>
+			<!-- /example -->
+
+			<h4>Single toggle</h4>
+
+			<p>Add <code>data-toggle="button"</code> to activate toggling on a single button.</p>
+
+			<div class="bs-example" style="padding-bottom: 24px;">
+				<button type="button" class="btn btn-primary" data-toggle="button">Single toggle</button>
+			</div>
+			<!-- /example -->
+
+			<h4>Checkbox</h4>
+
+			<p>Add <code>data-toggle="buttons"</code> to a group of checkboxes for checkbox style toggling on btn-group.
+			</p>
+
+			<div class="bs-example" style="padding-bottom: 24px;">
+				<div class="btn-group" data-toggle="buttons">
+					<label class="btn btn-primary"> <input type="checkbox"> Option 1 </label>
+					<label class="btn btn-primary"> <input type="checkbox"> Option 2 </label>
+					<label class="btn btn-primary"> <input type="checkbox"> Option 3 </label>
+				</div>
+			</div>
+			<!-- /example -->
+
+			<h4>Radio</h4>
+
+			<p>Add <code>data-toggle="buttons"</code> to a group of radio inputs for radio style toggling on btn-group.
+			</p>
+
+			<div class="bs-example" style="padding-bottom: 24px;">
+				<div class="btn-group" data-toggle="buttons">
+					<label class="btn btn-primary"> <input type="radio" name="options" id="option1"> Option 1 </label>
+					<label class="btn btn-primary"> <input type="radio" name="options" id="option2"> Option 2 </label>
+					<label class="btn btn-primary"> <input type="radio" name="options" id="option3"> Option 3 </label>
+				</div>
+			</div>
+			<!-- /example -->
+
+
+			<h1 class="section" id="collapse">Collapse</h1>
+			<hr class="darker"/>
+
+			<h2 id="collapse-examples">Example Dropdown</h2>
+
+			<div class="bs-example">
+				<div class="panel-group collapse-dropdown" id="collapse-dropdown" style="max-width: 100%">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a data-toggle="collapse" aria-expanded="true" data-parent="#collapse-dropdown" href="#collapseOneDropdown">
+									<button class="glyphicon icon-caret glyphicon-play">
+										<span class="sr-only">Open</span></button>Collapsible Group Item #1 </a>
+							</h4>
+						</div>
+						<div id="collapseOneDropdown" class="panel-collapse collapse in">
+							<div class="panel-body">
+								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a data-toggle="collapse" class="collapsed" aria-expanded="false" data-parent="#accordion" href="#collapseTwoDropdown">
+									<button class="glyphicon icon-caret glyphicon-play">
+										<span class="sr-only">Open</span></button>Collapsible Group Item #2 </a>
+							</h4>
+						</div>
+						<div id="collapseTwoDropdown" class="panel-collapse collapse">
+							<div class="panel-body">
+								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a data-toggle="collapse" class="collapsed" aria-expanded="false" data-parent="#accordion" href="#collapseThreeDropdown">
+									<button class="glyphicon icon-caret glyphicon-play">
+										<span class="sr-only">Open</span></button>Collapsible Group Item #3 </a>
+							</h4>
+						</div>
+						<div id="collapseThreeDropdown" class="panel-collapse collapse">
+							<div class="panel-body">
+								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="bs-example">
+				<div class="panel-group" id="accordion">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"> Collapsible Group Item #1 </a>
+							</h4>
+						</div>
+						<div id="collapseOne" class="panel-collapse collapse in">
+							<div class="panel-body">
+								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"> Collapsible Group Item #2 </a>
+							</h4>
+						</div>
+						<div id="collapseTwo" class="panel-collapse collapse">
+							<div class="panel-body">
+								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"> Collapsible Group Item #3 </a>
+							</h4>
+						</div>
+						<div id="collapseThree" class="panel-collapse collapse">
+							<div class="panel-body">
+								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /example -->
+
+
+			<h1 class="section" id="carousel">Carousel</h1>
+			<hr class="darker"/>
+
+			<h2>Example</h2>
+
+			<div class="bs-example">
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="item active">
+							<img src="https://dl.dropboxusercontent.com/u/12146987/slides/Andromeda%20Galaxy.jpg" alt="Slide One">
+
+							<div class="carousel-caption">
+								Slide One
+							</div>
+						</div>
+						<div class="item">
+							<img src="https://dl.dropboxusercontent.com/u/12146987/slides/Beach.jpg" alt="Slide Two">
+
+							<div class="carousel-caption">
+								Slide Two
+							</div>
+						</div>
+						<div class="item">
+							<img src="https://dl.dropboxusercontent.com/u/12146987/slides/Bristle%20Grass.jpg" alt="Slide Three">
+
+							<div class="carousel-caption">
+								Slide Three
+							</div>
+						</div>
+					</div>
+					<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left"></span> </a>
+					<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right"></span> </a>
+				</div>
+			</div>
+			<!-- /example -->
+		</div>
+		<div class="col-md-3">
+			<nav class="fu-sidebar" style="position: fixed">
+				<ul class="nav nav-stacked">
+
+					<li class="active">
+						<a href="#modal">Modal</a>
+					</li>
+					<li>
+						<a href="#dropdowns">Dropdowns</a>
+					</li>
+					<li>
+						<a href="#tabs">Tabs</a>
+					</li>
+					<li>
+						<a href="#tooltips">Tooltips</a>
+					</li>
+					<li>
+						<a href="#popover">Popover</a>
+					</li>
+					<li>
+						<a href="#alert-messages">Alert Messages</a>
+					</li>
+					<li>
+						<a href="#buttons">Buttons</a>
+					</li>
+					<li>
+						<a href="#collapse">Collapse</a>
+					</li>
+					<li>
+						<a href="#carousel">Carousel</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div class="container main">
+
+		<h1 id="Dropdowns" class="section">Dropdowns</h1>
+		<hr class="darker"/>
+
+		<h2>Example</h2>
+		<div class="thin-box">
+			<div class="dropdown clearfix">
+				<button data-toggle="dropdown" id="dropdownMenu1" type="button" class="btn btn-dropdown dropdown-toggle">
+					<div class="btn-dropdown-text">Dropdown</div>
+					<span class="caret"></span>
+				</button>
+				<ul aria-labelledby="dropdownMenu1" role="menu" class="dropdown-menu">
+					<li role="presentation"><a href="javaScript:void(0);" tabindex="-1" role="menuitem">Action</a></li>
+					<li role="presentation"><a href="javaScript:void(0);" tabindex="-1" role="menuitem">Another action</a></li>
+					<li role="presentation"><a href="javaScript:void(0);" tabindex="-1" role="menuitem">Something else here</a></li>
+					<li class="divider" role="presentation"></li>
+					<li role="presentation"><a href="javaScript:void(0);" tabindex="-1" role="menuitem">Separated link</a></li>
+				</ul>
+			</div>
+			<br/>
+			<!--In styleguide 2012, the dropdown style is actually select style?-->
+			<select class="form-control select-bg">
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+				<option>5</option>
+			</select>
+
+		</div>
+
+		<h2>Headers</h2>
+		<div class="thin-box">
+			<div class="dropdown clearfix">
+				<button data-toggle="dropdown" id="dropdownMenu2" type="button" class="btn btn-dropdown dropdown-toggle">
+					<div class="btn-dropdown-text">Dropdown</div>
+					<span class="caret"></span>
+				</button>
+				<ul aria-labelledby="dropdownMenu2" role="menu" class="dropdown-menu">
+					<li class="dropdown-header" role="presentation">Dropdown header</li>
+					<li role="presentation"><a href="javaScript:void(0);" tabindex="-1" role="menuitem">Action</a></li>
+					<li role="presentation"><a href="javaScript:void(0);" tabindex="-1" role="menuitem">Another action</a></li>
+					<li role="presentation"><a href="javaScript:void(0);" tabindex="-1" role="menuitem">Something else here</a></li>
+					<li class="divider" role="presentation"></li>
+					<li class="dropdown-header" role="presentation">Dropdown header</li>
+					<li role="presentation"><a href="javaScript:void(0);" tabindex="-1" role="menuitem">Separated link</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<h2>Disabled menu items</h2>
+		<div class="thin-box">
+			<div class="dropdown clearfix">
+				<button data-toggle="dropdown" id="dropdownMenu3" type="button" class="btn btn-dropdown dropdown-toggle">
+					<div class="btn-dropdown-text">Dropdown</div>
+					<span class="caret"></span>
+				</button>
+				<ul aria-labelledby="dropdownMenu3" role="menu" class="dropdown-menu">
+					<li role="presentation"><a href="javaScript:void(0);" tabindex="-1" role="menuitem">Regular link</a></li>
+					<li class="disabled" role="presentation"><a href="javaScript:void(0);" tabindex="-1" role="menuitem">Disabled link</a></li>
+					<li role="presentation"><a href="javaScript:void(0);" tabindex="-1" role="menuitem">Another link</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<h1 id="Button-groups" class="section">Button groups</h1>
+		<hr class="darker"/>
+
+		<h2>Basic example</h2>
+		<div class="thin-box">
+			<div style="margin-bottom: 15px;" class="btn-group">
+				<button class="btn btn-default" type="button">Left</button>
+				<button class="btn btn-default" type="button">Middle</button>
+				<button class="btn btn-default" type="button">Right</button>
+			</div>
+			<br/>
+			<div class="btn-group">
+				<button class="btn btn-default active" type="button">Left</button>
+				<button class="btn btn-default" type="button">Middle</button>
+				<button class="btn btn-default" type="button">Right</button>
+			</div>
+		</div>
+
+		<h2>Button toolbar</h2>
+		<div class="thin-box">
+			<div style="margin: 0;" role="toolbar" class="btn-toolbar">
+				<div class="btn-group">
+					<button class="btn btn-default" type="button">1</button>
+					<button class="btn btn-default" type="button">2</button>
+					<button class="btn btn-default" type="button">3</button>
+					<button class="btn btn-default" type="button">4</button>
+				</div>
+				<div class="btn-group">
+					<button class="btn btn-default" type="button">5</button>
+					<button class="btn btn-default" type="button">6</button>
+					<button class="btn btn-default" type="button">7</button>
+				</div>
+				<div class="btn-group">
+					<button class="btn btn-default" type="button">8</button>
+				</div>
+			</div>
+		</div>
+
+		<h2>Sizing</h2>
+		<div class="thin-box">
+			<div role="toolbar" class="btn-toolbar">
+				<div class="btn-group">
+					<button class="btn btn-default btn-lg" type="button">Left</button>
+					<button class="btn btn-default btn-lg" type="button">Middle</button>
+					<button class="btn btn-default btn-lg" type="button">Right</button>
+				</div>
+			</div>
+			<div role="toolbar" class="btn-toolbar">
+				<div class="btn-group">
+					<button class="btn btn-default" type="button">Left</button>
+					<button class="btn btn-default" type="button">Middle</button>
+					<button class="btn btn-default" type="button">Right</button>
+				</div>
+			</div>
+			<div role="toolbar" class="btn-toolbar">
+				<div class="btn-group">
+					<button class="btn btn-default btn-sm" type="button">Left</button>
+					<button class="btn btn-default btn-sm" type="button">Middle</button>
+					<button class="btn btn-default btn-sm" type="button">Right</button>
+				</div>
+			</div>
+		</div>
+
+		<h2>Nesting</h2>
+		<div class="thin-box">
+			<div class="btn-group" style="margin-right: 15px;">
+				<button class="btn btn-default" type="button">1</button>
+				<button class="btn btn-default" type="button">2</button>
+
+				<div class="btn-group dropdown">
+					<button data-toggle="dropdown" class="btn btn-default dropdown-toggle" type="button" id="btnGroupDrop0">
+						<div class="btn-dropdown-text">Dropdown</div>
+						<span class="caret"></span>
+					</button>
+					<ul aria-labelledby="btnGroupDrop0" role="menu" class="dropdown-menu">
+						<li><a href="javaScript:void(0);">Dropdown link</a></li>
+						<li><a href="javaScript:void(0);">Dropdown link</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="btn-group">
+				<button class="btn btn-dropdown" type="button">1</button>
+				<button class="btn btn-dropdown" type="button">2</button>
+
+				<div class="btn-group dropdown">
+					<button data-toggle="dropdown" class="btn btn-dropdown dropdown-toggle" type="button" id="btnGroupDrop1">
+						<div class="btn-dropdown-text">Dropdown</div>
+						<span class="caret"></span>
+					</button>
+					<ul aria-labelledby="btnGroupDrop1" role="menu" class="dropdown-menu">
+						<li><a href="javaScript:void(0);">Dropdown link</a></li>
+						<li><a href="javaScript:void(0);">Dropdown link</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<h2>Vertical variation</h2>
+		<div class="thin-box">
+			<div class="btn-group-vertical" style="width: 120px;">
+				<button class="btn btn-dropdown" type="button">Button</button>
+				<button class="btn btn-dropdown" type="button">Button</button>
+				<div class="btn-group">
+					<button data-toggle="dropdown" class="btn btn-dropdown dropdown-toggle" type="button" id="btnGroupVerticalDrop1">
+						<div class="btn-dropdown-text">Dropdown</div>
+						<span class="caret"></span>
+					</button>
+					<ul aria-labelledby="btnGroupVerticalDrop1" role="menu" class="dropdown-menu">
+						<li><a href="javaScript:void(0);">Dropdown link</a></li>
+						<li><a href="javaScript:void(0);">Dropdown link</a></li>
+					</ul>
+				</div>
+				<button class="btn btn-dropdown" type="button">Button</button>
+				<button class="btn btn-dropdown" type="button">Button</button>
+				<div class="btn-group">
+					<button data-toggle="dropdown" class="btn btn-dropdown dropdown-toggle" type="button" id="btnGroupVerticalDrop2">
+						<div class="btn-dropdown-text">Dropdown</div>
+						<span class="caret"></span>
+					</button>
+					<ul aria-labelledby="btnGroupVerticalDrop2" role="menu" class="dropdown-menu">
+						<li><a href="javaScript:void(0);">Dropdown link</a></li>
+						<li><a href="javaScript:void(0);">Dropdown link</a></li>
+					</ul>
+				</div>
+				<div class="btn-group">
+					<button data-toggle="dropdown" class="btn btn-dropdown dropdown-toggle" type="button" id="btnGroupVerticalDrop3">
+						<div class="btn-dropdown-text">Dropdown</div>
+						<span class="caret"></span>
+					</button>
+					<ul aria-labelledby="btnGroupVerticalDrop3" role="menu" class="dropdown-menu">
+						<li><a href="javaScript:void(0);">Dropdown link</a></li>
+						<li><a href="javaScript:void(0);">Dropdown link</a></li>
+					</ul>
+				</div>
+				<div class="btn-group">
+					<button data-toggle="dropdown" class="btn btn-dropdown dropdown-toggle" type="button" id="btnGroupVerticalDrop4">
+						<div class="btn-dropdown-text">Dropdown</div>
+						<span class="caret"></span>
+					</button>
+					<ul aria-labelledby="btnGroupVerticalDrop4" role="menu" class="dropdown-menu">
+						<li><a href="javaScript:void(0);">Dropdown link</a></li>
+						<li><a href="javaScript:void(0);">Dropdown link</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<h2>Justified button groups</h2>
+		<div class="thin-box">
+			<h4>With <code>&lt;a&gt;</code> elements</h4>
+			<div class="btn-group btn-group-justified">
+				<a role="button" class="btn btn-default">Left</a>
+				<a role="button" class="btn btn-default">Middle</a>
+				<a role="button" class="btn btn-default">Right</a>
+			</div>
+			<br/>
+			<div class="btn-group btn-group-justified">
+				<a role="button" class="btn btn-dropdown">Left</a>
+				<a role="button" class="btn btn-dropdown">Middle</a>
+				<div class="btn-group">
+					<a data-toggle="dropdown" class="btn btn-dropdown dropdown-toggle">
+						<div class="btn-dropdown-text">Dropdown</div>
+						<span class="caret"></span>
+					</a>
+					<ul role="menu" class="dropdown-menu">
+						<li><a href="javaScript:void(0);">Action</a></li>
+						<li><a href="javaScript:void(0);">Another action</a></li>
+						<li><a href="javaScript:void(0);">Something else here</a></li>
+						<li class="divider"></li>
+						<li><a href="javaScript:void(0);">Separated link</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<br/>
+
+			<h4>With <code>&lt;button&gt;</code> elements</h4>
+			<div class="btn-group btn-group-justified">
+				<div class="btn-group">
+					<button class="btn btn-default" type="button">Left</button>
+				</div>
+				<div class="btn-group">
+					<button class="btn btn-default" type="button">Middle</button>
+				</div>
+				<div class="btn-group">
+					<button class="btn btn-default" type="button">Right</button>
+				</div>
+			</div>
+		</div>
+
+		<h1 id="Button-dropdowns" class="section">Button dropdowns</h1>
+		<hr class="darker"/>
+		<h2>Single button dropdowns</h2>
+		<div class="thin-box">
+			<div class="btn-group">
+				<button data-toggle="dropdown" class="btn btn-default dropdown-toggle" type="button">
+					<div class="btn-dropdown-text">Default</div>
+					<span class="caret"></span>
+				</button>
+				<ul role="menu" class="dropdown-menu">
+					<li><a href="javaScript:void(0);">Action</a></li>
+					<li><a href="javaScript:void(0);">Another action</a></li>
+					<li><a href="javaScript:void(0);">Something else here</a></li>
+					<li class="divider"></li>
+					<li><a href="javaScript:void(0);">Separated link</a></li>
+				</ul>
+			</div><!-- /btn-group -->
+			<div class="btn-group">
+				<button data-toggle="dropdown" class="btn btn-dropdown dropdown-toggle" type="button">
+					<div class="btn-dropdown-text">Dropdown</div>
+					<span class="caret"></span>
+				</button>
+				<ul role="menu" class="dropdown-menu">
+					<li><a href="javaScript:void(0);">Action</a></li>
+					<li><a href="javaScript:void(0);">Another action</a></li>
+					<li><a href="javaScript:void(0);">Something else here</a></li>
+					<li class="divider"></li>
+					<li><a href="javaScript:void(0);">Separated link</a></li>
+				</ul>
+			</div><!-- /btn-group -->
+			<div class="btn-group">
+				<button data-toggle="dropdown" class="btn btn-primary dropdown-toggle" type="button">
+					<div class="btn-dropdown-text">Primary</div>
+					<span class="caret"></span>
+				</button>
+				<ul role="menu" class="dropdown-menu">
+					<li><a href="javaScript:void(0);">Action</a></li>
+					<li><a href="javaScript:void(0);">Another action</a></li>
+					<li><a href="javaScript:void(0);">Something else here</a></li>
+					<li class="divider"></li>
+					<li><a href="javaScript:void(0);">Separated link</a></li>
+				</ul>
+			</div><!-- /btn-group -->
+			<div class="btn-group">
+				<button data-toggle="dropdown" class="btn btn-success dropdown-toggle" type="button">
+					<div class="btn-dropdown-text">Success</div>
+					<span class="caret"></span>
+				</button>
+				<ul role="menu" class="dropdown-menu">
+					<li><a href="javaScript:void(0);">Action</a></li>
+					<li><a href="javaScript:void(0);">Another action</a></li>
+					<li><a href="javaScript:void(0);">Something else here</a></li>
+					<li class="divider"></li>
+					<li><a href="javaScript:void(0);">Separated link</a></li>
+				</ul>
+			</div><!-- /btn-group -->
+			<div class="btn-group">
+				<button data-toggle="dropdown" class="btn btn-warning dropdown-toggle" type="button">
+					<div class="btn-dropdown-text">Warning</div>
+					<span class="caret"></span>
+				</button>
+				<ul role="menu" class="dropdown-menu">
+					<li><a href="javaScript:void(0);">Action</a></li>
+					<li><a href="javaScript:void(0);">Another action</a></li>
+					<li><a href="javaScript:void(0);">Something else here</a></li>
+					<li class="divider"></li>
+					<li><a href="javaScript:void(0);">Separated link</a></li>
+				</ul>
+			</div><!-- /btn-group -->
+			<div class="btn-group">
+				<button data-toggle="dropdown" class="btn btn-danger dropdown-toggle" type="button">
+					<div class="btn-dropdown-text">Danger</div>
+					<span class="caret"></span>
+				</button>
+				<ul role="menu" class="dropdown-menu">
+					<li><a href="javaScript:void(0);">Action</a></li>
+					<li><a href="javaScript:void(0);">Another action</a></li>
+					<li><a href="javaScript:void(0);">Something else here</a></li>
+					<li class="divider"></li>
+					<li><a href="javaScript:void(0);">Separated link</a></li>
+				</ul>
+			</div><!-- /btn-group -->
+		</div>
+
+	<h2>Split button dropdowns</h2>
+		<div class="thin-box">
+			<div class="btn-group">
+				<button class="btn btn-default" type="button">Default</button>
+				<button data-toggle="dropdown" class="btn btn-default dropdown-toggle" type="button">
+					<span class="caret"></span>
+					<span class="sr-only">Toggle Dropdown</span>
+				</button>
+				<ul role="menu" class="dropdown-menu">
+					<li><a href="javaScript:void(0);">Action</a></li>
+					<li><a href="javaScript:void(0);">Another action</a></li>
+					<li><a href="javaScript:void(0);">Something else here</a></li>
+					<li class="divider"></li>
+					<li><a href="javaScript:void(0);">Separated link</a></li>
+				</ul>
+			</div><!-- /btn-group -->
+			<div class="btn-group">
+				<button class="btn btn-dropdown" type="button">Dropdown</button>
+				<button data-toggle="dropdown" class="btn btn-dropdown dropdown-toggle" type="button">
+					<span class="caret"></span>
+					<span class="sr-only">Toggle Dropdown</span>
+				</button>
+				<ul role="menu" class="dropdown-menu">
+					<li><a href="javaScript:void(0);">Action</a></li>
+					<li><a href="javaScript:void(0);">Another action</a></li>
+					<li><a href="javaScript:void(0);">Something else here</a></li>
+					<li class="divider"></li>
+					<li><a href="javaScript:void(0);">Separated link</a></li>
+				</ul>
+			</div><!-- /btn-group -->
+			<div class="btn-group">
+				<button class="btn btn-primary" type="button">Primary</button>
+				<button data-toggle="dropdown" class="btn btn-primary dropdown-toggle" type="button">
+					<span class="caret"></span>
+					<span class="sr-only">Toggle Dropdown</span>
+				</button>
+				<ul role="menu" class="dropdown-menu">
+					<li><a href="javaScript:void(0);">Action</a></li>
+					<li><a href="javaScript:void(0);">Another action</a></li>
+					<li><a href="javaScript:void(0);">Something else here</a></li>
+					<li class="divider"></li>
+					<li><a href="javaScript:void(0);">Separated link</a></li>
+				</ul>
+			</div><!-- /btn-group -->
+			<div class="btn-group">
+				<button class="btn btn-success" type="button">Success</button>
+				<button data-toggle="dropdown" class="btn btn-success dropdown-toggle" type="button">
+					<span class="caret"></span>
+					<span class="sr-only">Toggle Dropdown</span>
+				</button>
+				<ul role="menu" class="dropdown-menu">
+					<li><a href="javaScript:void(0);">Action</a></li>
+					<li><a href="javaScript:void(0);">Another action</a></li>
+					<li><a href="javaScript:void(0);">Something else here</a></li>
+					<li class="divider"></li>
+					<li><a href="javaScript:void(0);">Separated link</a></li>
+				</ul>
+			</div><!-- /btn-group -->
+			<div class="btn-group">
+				<button class="btn btn-warning" type="button">Warning</button>
+				<button data-toggle="dropdown" class="btn btn-warning dropdown-toggle" type="button">
+					<span class="caret"></span>
+					<span class="sr-only">Toggle Dropdown</span>
+				</button>
+				<ul role="menu" class="dropdown-menu">
+					<li><a href="javaScript:void(0);">Action</a></li>
+					<li><a href="javaScript:void(0);">Another action</a></li>
+					<li><a href="javaScript:void(0);">Something else here</a></li>
+					<li class="divider"></li>
+					<li><a href="javaScript:void(0);">Separated link</a></li>
+				</ul>
+			</div><!-- /btn-group -->
+			<div class="btn-group">
+				<button class="btn btn-danger" type="button">Danger</button>
+				<button data-toggle="dropdown" class="btn btn-danger dropdown-toggle" type="button">
+					<span class="caret"></span>
+					<span class="sr-only">Toggle Dropdown</span>
+				</button>
+				<ul role="menu" class="dropdown-menu">
+					<li><a href="javaScript:void(0);">Action</a></li>
+					<li><a href="javaScript:void(0);">Another action</a></li>
+					<li><a href="javaScript:void(0);">Something else here</a></li>
+					<li class="divider"></li>
+					<li><a href="javaScript:void(0);">Separated link</a></li>
+				</ul>
+			</div><!-- /btn-group -->
+		</div>
+
+		<h2>Sizing</h2>
+		<div class="thin-box">
+			<div role="toolbar" class="btn-toolbar">
+				<div class="btn-group">
+					<button data-toggle="dropdown" type="button" class="btn btn-dropdown btn-lg dropdown-toggle">
+						<div class="btn-dropdown-text">Large button</div>
+						<span class="caret"></span>
+					</button>
+					<ul role="menu" class="dropdown-menu">
+						<li><a href="javaScript:void(0);">Action</a></li>
+						<li><a href="javaScript:void(0);">Another action</a></li>
+						<li><a href="javaScript:void(0);">Something else here</a></li>
+						<li class="divider"></li>
+						<li><a href="javaScript:void(0);">Separated link</a></li>
+					</ul>
+				</div><!-- /btn-group -->
+			</div><!-- /btn-toolbar -->
+			<div role="toolbar" class="btn-toolbar">
+				<div class="btn-group">
+					<button data-toggle="dropdown" type="button" class="btn btn-dropdown dropdown-toggle">
+						<div class="btn-dropdown-text">Medium button</div>
+						<span class="caret"></span>
+					</button>
+					<ul role="menu" class="dropdown-menu">
+						<li><a href="javaScript:void(0);">Action</a></li>
+						<li><a href="javaScript:void(0);">Another action</a></li>
+						<li><a href="javaScript:void(0);">Something else here</a></li>
+						<li class="divider"></li>
+						<li><a href="javaScript:void(0);">Separated link</a></li>
+					</ul>
+				</div><!-- /btn-group -->
+			</div>
+			<div role="toolbar" class="btn-toolbar">
+				<div class="btn-group">
+					<button data-toggle="dropdown" type="button" class="btn btn-dropdown btn-sm dropdown-toggle">
+						<div class="btn-dropdown-text">Small button</div>
+						<span class="caret"></span>
+					</button>
+					<ul role="menu" class="dropdown-menu">
+						<li><a href="javaScript:void(0);">Action</a></li>
+						<li><a href="javaScript:void(0);">Another action</a></li>
+						<li><a href="javaScript:void(0);">Something else here</a></li>
+						<li class="divider"></li>
+						<li><a href="javaScript:void(0);">Separated link</a></li>
+					</ul>
+				</div><!-- /btn-group -->
+			</div><!-- /btn-toolbar -->
+		</div>
+
+		<h2>Dropup variation</h2>
+		<div class="thin-box">
+			<div role="toolbar" class="btn-toolbar">
+				<div class="btn-group dropup">
+					<button class="btn btn-dropdown" type="button">Dropup</button>
+					<button data-toggle="dropdown" class="btn btn-dropdown dropdown-toggle" type="button">
+						<span class="caret"></span>
+						<span class="sr-only">Toggle Dropdown</span>
+					</button>
+					<ul role="menu" class="dropdown-menu">
+						<li><a href="javaScript:void(0);">Action</a></li>
+						<li><a href="javaScript:void(0);">Another action</a></li>
+						<li><a href="javaScript:void(0);">Something else here</a></li>
+						<li class="divider"></li>
+						<li><a href="javaScript:void(0);">Separated link</a></li>
+					</ul>
+				</div><!-- /btn-group -->
+				<div class="btn-group dropup">
+					<button class="btn btn-primary" type="button">Right dropup</button>
+					<button data-toggle="dropdown" class="btn btn-primary dropdown-toggle" type="button">
+						<span class="caret"></span>
+						<span class="sr-only">Toggle Dropdown</span>
+					</button>
+					<ul role="menu" class="dropdown-menu dropdown-menu-right">
+						<li><a href="javaScript:void(0);">Action</a></li>
+						<li><a href="javaScript:void(0);">Another action</a></li>
+						<li><a href="javaScript:void(0);">Something else here</a></li>
+						<li class="divider"></li>
+						<li><a href="javaScript:void(0);">Separated link</a></li>
+					</ul>
+				</div><!-- /btn-group -->
+			</div>
+		</div>
+
+		<h1 id="Input-groups" class="section">Input groups</h1>
+		<hr class="darker"/>
+
+		<h2>Basic example</h2>
+		<form role="form" class="thin-box">
+			<div class="input-group">
+				<span class="input-group-addon">@</span>
+				<input type="text" placeholder="Username" class="form-control">
+			</div>
+			<br>
+			<div class="input-group">
+				<input type="text" class="form-control">
+				<span class="input-group-addon">.00</span>
+			</div>
+			<br>
+			<div class="input-group">
+				<span class="input-group-addon">$</span>
+				<input type="text" class="form-control">
+				<span class="input-group-addon">.00</span>
+			</div>
+		</form>
+
+		<h2>Sizing</h2>
+		<form role="form" class="thin-box">
+			<div class="input-group input-group-lg">
+				<span class="input-group-addon">@</span>
+				<input type="text" placeholder="Username" class="form-control">
+			</div>
+			<br>
+			<div class="input-group input-group-md">
+				<span class="input-group-addon">@</span>
+				<input type="text" placeholder="Username" class="form-control">
+			</div>
+			<br>
+			<div class="input-group">
+				<span class="input-group-addon">@</span>
+				<input type="text" placeholder="Username" class="form-control">
+			</div>
+		</form>
+
+		<h2>Checkboxes and radio addons</h2>
+		<form class="thin-box">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="input-group">
+		  <span class="input-group-addon">
+			<input type="checkbox">
+		  </span>
+						<input type="text" class="form-control">
+					</div><!-- /input-group -->
+				</div><!-- /.col-lg-6 -->
+				<br/>
+				<div class="col-lg-6">
+					<div class="input-group">
+		  <span class="input-group-addon">
+			<input type="radio">
+		  </span>
+						<input type="text" class="form-control">
+					</div><!-- /input-group -->
+				</div><!-- /.col-lg-6 -->
+			</div><!-- /.row -->
+		</form>
+
+		<h2>Button addons</h2>
+		<form class="thin-box">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="input-group">
+		  <span class="input-group-btn">
+			<button type="button" class="btn btn-default">Go!</button>
+		  </span>
+						<input type="text" class="form-control">
+					</div><!-- /input-group -->
+				</div><!-- /.col-lg-6 -->
+				<br/>
+				<div class="col-lg-6">
+					<div class="input-group">
+						<input type="text" class="form-control">
+		  <span class="input-group-btn">
+			<button type="button" class="btn btn-default">Go!</button>
+		  </span>
+					</div><!-- /input-group -->
+				</div><!-- /.col-lg-6 -->
+			</div><!-- /.row -->
+		</form>
+
+		<h2>Buttons with dropdowns</h2>
+		<form role="form" class="thin-box">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="input-group">
+						<div class="input-group-btn">
+							<button data-toggle="dropdown" class="btn btn-dropdown dropdown-toggle" type="button">Action <span class="caret"></span></button>
+							<ul role="menu" class="dropdown-menu">
+								<li><a href="javaScript:void(0);">Action</a></li>
+								<li><a href="javaScript:void(0);">Another action</a></li>
+								<li><a href="javaScript:void(0);">Something else here</a></li>
+								<li class="divider"></li>
+								<li><a href="javaScript:void(0);">Separated link</a></li>
+							</ul>
+						</div><!-- /btn-group -->
+						<input type="text" class="form-control">
+					</div><!-- /input-group -->
+				</div><!-- /.col-lg-6 -->
+				<br/>
+				<div class="col-lg-6">
+					<div class="input-group">
+						<input type="text" class="form-control">
+						<div class="input-group-btn">
+							<button data-toggle="dropdown" class="btn btn-dropdown dropdown-toggle" type="button">Action <span class="caret"></span></button>
+							<ul role="menu" class="dropdown-menu dropdown-menu-right">
+								<li><a href="javaScript:void(0);">Action</a></li>
+								<li><a href="javaScript:void(0);">Another action</a></li>
+								<li><a href="javaScript:void(0);">Something else here</a></li>
+								<li class="divider"></li>
+								<li><a href="javaScript:void(0);">Separated link</a></li>
+							</ul>
+						</div><!-- /btn-group -->
+					</div><!-- /input-group -->
+				</div><!-- /.col-lg-6 -->
+			</div><!-- /.row -->
+		</form>
+
+		<h2>Segmented buttons</h2>
+		<form role="form" class="thin-box">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="input-group">
+						<div class="input-group-btn">
+							<button tabindex="-1" class="btn btn-dropdown" type="button">Action</button>
+							<button tabindex="-1" data-toggle="dropdown" class="btn btn-dropdown dropdown-toggle" type="button">
+								<span class="caret"></span>
+								<span class="sr-only">Toggle Dropdown</span>
+							</button>
+							<ul role="menu" class="dropdown-menu">
+								<li><a href="javaScript:void(0);">Action</a></li>
+								<li><a href="javaScript:void(0);">Another action</a></li>
+								<li><a href="javaScript:void(0);">Something else here</a></li>
+								<li class="divider"></li>
+								<li><a href="javaScript:void(0);">Separated link</a></li>
+							</ul>
+						</div>
+						<input type="text" class="form-control">
+					</div><!-- /.input-group -->
+				</div><!-- /.col-lg-6 -->
+				<br/>
+				<div class="col-lg-6">
+					<div class="input-group">
+						<input type="text" class="form-control">
+						<div class="input-group-btn">
+							<button tabindex="-1" class="btn btn-dropdown" type="button">Action</button>
+							<button tabindex="-1" data-toggle="dropdown" class="btn btn-dropdown dropdown-toggle" type="button">
+								<span class="caret"></span>
+								<span class="sr-only">Toggle Dropdown</span>
+							</button>
+							<ul role="menu" class="dropdown-menu dropdown-menu-right">
+								<li><a href="javaScript:void(0);">Action</a></li>
+								<li><a href="javaScript:void(0);">Another action</a></li>
+								<li><a href="javaScript:void(0);">Something else here</a></li>
+								<li class="divider"></li>
+								<li><a href="javaScript:void(0);">Separated link</a></li>
+							</ul>
+						</div>
+					</div><!-- /.input-group -->
+				</div><!-- /.col-lg-6 -->
+			</div><!-- /.row -->
+		</form>
+
+		<h1 id="Navs" class="section">Navs</h1>
+		<hr class="darker"/>
+
+		<h2 id="Tabs">Tabs</h2>
+		<div class="thin-box">
+			<ul role="tablist" class="nav nav-tabs">
+				<li class="active"><a href="javaScript:void(0);">Home</a></li>
+				<li><a href="javaScript:void(0);">Profile</a></li>
+				<li><a href="javaScript:void(0);">Messages</a></li>
+				<li class="disabled"><a href="javaScript:void(0);">Disabled</a></li>
+			</ul>
+			<br/>
+			<ul role="tablist" class="nav nav-tabs nav-tab-vertical">
+				<li class="active"><a href="javaScript:void(0);">Home</a></li>
+				<li><a href="javaScript:void(0);">Profile</a></li>
+				<li><a href="javaScript:void(0);">Messages</a></li>
+				<li class="disabled"><a href="javaScript:void(0);">Disabled</a></li>
+			</ul>
+		</div>
+
+		<h2 id="Pills">Pills</h2>
+		<div class="thin-box">
+			<ul class="nav nav-pills">
+				<li class="active"><a href="javaScript:void(0);">Home</a></li>
+				<li><a href="javaScript:void(0);">Profile</a></li>
+				<li><a href="javaScript:void(0);">Messages</a></li>
+			</ul>
+			<br/>
+			<ul class="nav nav-pills nav-stacked" style="max-width: 300px;">
+				<li class="active"><a href="javaScript:void(0);">Home</a></li>
+				<li><a href="javaScript:void(0);">Profile</a></li>
+				<li><a href="javaScript:void(0);">Messages</a></li>
+			</ul>
+		</div>
+
+		<h2>Justified</h2>
+		<div class="thin-box">
+			<ul class="nav nav-tabs nav-justified" role="tablist">
+				<li class="active"><a href="javaScript:void(0);">Home</a></li>
+				<li><a href="javaScript:void(0);">Profile</a></li>
+				<li><a href="javaScript:void(0);">Messages</a></li>
+			</ul>
+			<br>
+			<ul class="nav nav-pills nav-justified">
+				<li class="active"><a href="javaScript:void(0);">Home</a></li>
+				<li><a href="javaScript:void(0);">Profile</a></li>
+				<li><a href="javaScript:void(0);">Messages</a></li>
+			</ul>
+		</div>
+
+		<h2>Disabled links</h2>
+		<div class="thin-box">
+			<ul class="nav nav-pills">
+				<li><a href="javaScript:void(0);">Clickable link</a></li>
+				<li><a href="javaScript:void(0);">Clickable link</a></li>
+				<li class="disabled"><a href="javaScript:void(0);">Disabled link</a></li>
+			</ul>
+		</div>
+
+		<h2>Using dropdowns</h2>
+		<div class="thin-box">
+			<h3>Tabs with dropdowns</h3>
+			<ul class="nav nav-tabs" role="tablist">
+				<li class="active"><a href="javaScript:void(0);">Home</a></li>
+				<li><a href="javaScript:void(0);">Help</a></li>
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="javaScript:void(0);">
+						Dropdown <span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="javaScript:void(0);">Action</a></li>
+						<li><a href="javaScript:void(0);">Another action</a></li>
+						<li><a href="javaScript:void(0);">Something else here</a></li>
+						<li class="divider"></li>
+						<li><a href="javaScript:void(0);">Separated link</a></li>
+					</ul>
+				</li>
+			</ul>
+			<br/>
+			<h3>Pills with dropdowns</h3>
+			<ul class="nav nav-pills">
+				<li class="active"><a href="javaScript:void(0);">Home</a></li>
+				<li><a href="javaScript:void(0);">Help</a></li>
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="javaScript:void(0);">
+						Dropdown <span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="javaScript:void(0);">Action</a></li>
+						<li><a href="javaScript:void(0);">Another action</a></li>
+						<li><a href="javaScript:void(0);">Something else here</a></li>
+						<li class="divider"></li>
+						<li><a href="javaScript:void(0);">Separated link</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+
+		<h1 id="Navbar" class="section">Navbar</h1>
+		<hr class="darker"/>
+
+		<h2>Default navbar</h2>
+		<div class="thin-box">
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="container-fluid">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse-1">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="javaScript:void(0);">Brand</a>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="javaScript:void(0);">Link</a></li>
+							<li><a href="javaScript:void(0);">Link</a></li>
+							<li class="dropdown">
+								<a href="javaScript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="javaScript:void(0);">Action</a></li>
+									<li><a href="javaScript:void(0);">Another action</a></li>
+									<li><a href="javaScript:void(0);">Something else here</a></li>
+									<li class="divider"></li>
+									<li><a href="javaScript:void(0);">Separated link</a></li>
+									<li class="divider"></li>
+									<li><a href="javaScript:void(0);">One more separated link</a></li>
+								</ul>
+							</li>
+						</ul>
+						<form class="navbar-form navbar-left" role="search">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Search">
+							</div>
+							<button type="submit" class="btn btn-default">Submit</button>
+						</form>
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="javaScript:void(0);">Link</a></li>
+							<li class="dropdown">
+								<a href="javaScript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="javaScript:void(0);">Action</a></li>
+									<li><a href="javaScript:void(0);">Another action</a></li>
+									<li><a href="javaScript:void(0);">Something else here</a></li>
+									<li class="divider"></li>
+									<li><a href="javaScript:void(0);">Separated link</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</div><!-- /.container-fluid -->
+			</nav>
+		</div>
+
+		<h2>Forms</h2>
+		<div class="thin-box">
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse-2">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="javaScript:void(0);">Brand</a>
+					</div>
+					<div class="collapse navbar-collapse" id="example-navbar-collapse-2">
+						<form class="navbar-form navbar-left" role="search">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Search">
+							</div>
+							<button type="submit" class="btn btn-default">Submit</button>
+						</form>
+					</div>
+				</div>
+			</nav>
+		</div>
+
+		<h2>Buttons</h2>
+		<div class="thin-box">
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse-3">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="javaScript:void(0);">Brand</a>
+					</div>
+					<div class="collapse navbar-collapse" id="example-navbar-collapse-3">
+						<button type="button" class="btn btn-default navbar-btn">Sign in</button>
+					</div>
+				</div>
+			</nav>
+		</div>
+
+		<h2>Text</h2>
+		<div class="thin-box">
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-4">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="javaScript:void(0);">Brand</a>
+					</div>
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-4">
+						<p class="navbar-text">Signed in as Mark Otto</p>
+					</div>
+				</div>
+			</nav>
+		</div>
+
+		<h2>Non-nav links</h2>
+		<div class="thin-box">
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-5">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="javaScript:void(0);">Brand</a>
+					</div>
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-5">
+						<p class="navbar-text navbar-right">Signed in as <a href="javaScript:void(0);" class="navbar-link">Mark Otto</a></p>
+					</div>
+				</div>
+			</nav>
+		</div>
+
+		<h2>Fixed to top</h2>
+		<div class="thin-box thin-box-nav-top">
+			<nav role="navigation" class="navbar navbar-default navbar-fixed-top">
+				<!-- We use the fluid option here to avoid overriding the fixed width of a normal container within the narrow content columns. -->
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button data-target="#bs-example-navbar-collapse-6" data-toggle="collapse" class="navbar-toggle" type="button">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a href="javaScript:void(0);" class="navbar-brand">Brand</a>
+					</div>
+
+					<div id="bs-example-navbar-collapse-6" class="collapse navbar-collapse">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="javaScript:void(0);">Home</a></li>
+							<li><a href="javaScript:void(0);">Link</a></li>
+							<li><a href="javaScript:void(0);">Link</a></li>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</div>
+			</nav>
+		</div>
+
+		<h2>Fixed to bottom</h2>
+		<div class="thin-box thin-box-nav-bottom">
+			<nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+				<!-- We use the fluid option here to avoid overriding the fixed width of a normal container within the narrow content columns. -->
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-7">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="javaScript:void(0);">Brand</a>
+					</div>
+
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-7">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="javaScript:void(0);">Home</a></li>
+							<li><a href="javaScript:void(0);">Link</a></li>
+							<li><a href="javaScript:void(0);">Link</a></li>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</div>
+			</nav>
+		</div>
+
+		<h2>Static top</h2>
+		<div class="thin-box">
+			<nav class="navbar navbar-default navbar-static-top" role="navigation">
+				<!-- We use the fluid option here to avoid overriding the fixed width of a normal container within the narrow content columns. -->
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-8">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="javaScript:void(0);">Brand</a>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-8">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="javaScript:void(0);">Home</a></li>
+							<li><a href="javaScript:void(0);">Link</a></li>
+							<li><a href="javaScript:void(0);">Link</a></li>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</div>
+			</nav>
+		</div>
+
+
+		<h1 id="Breadcrumbs" class="section">Breadcrumbs</h1>
+		<hr class="darker"/>
+		<div class="thin-box">
+			<ol class="breadcrumb">
+				<li class="active">Home</li>
+			</ol>
+			<ol class="breadcrumb">
+				<li><a href="javaScript:void(0);">Home</a></li>
+				<li class="active">Library</li>
+			</ol>
+			<ol class="breadcrumb" style="margin-bottom: 5px;">
+				<li><a href="javaScript:void(0);">Home</a></li>
+				<li><a href="javaScript:void(0);">Library</a></li>
+				<li class="active">Data</li>
+			</ol>
+		</div>
+
+		<h1 id="Pagination" class="section">Pagination</h1>
+		<hr class="darker"/>
+
+		<h2>Default pagination</h2>
+		<div class="thin-box">
+			<button class="btn pagination-btn"><span class="pagination-previous"></span>
+				<span class="sr-only">previous</span></button>
+			<button class="btn pagination-btn"><span class="pagination-next"></span>
+				<span class="sr-only">next</span></button>
+			<br/><br/>
+			<ul class="pagination">
+				<li><a href="javaScript:void(0);" class="pagination-btn">
+					<span class="pagination-previous"></span>
+					<span class="sr-only">previous</span>
+				</a></li>
+				<li><a href="javaScript:void(0);">1</a></li>
+				<li><a href="javaScript:void(0);">2</a></li>
+				<li><a href="javaScript:void(0);">3</a></li>
+				<li><a href="javaScript:void(0);">4</a></li>
+				<li><a href="javaScript:void(0);">5</a></li>
+				<li><a href="javaScript:void(0);" class="pagination-btn"><span class="pagination-next"></span>
+					<span class="sr-only">next</span></a></li>
+			</ul>
+			<br/>
+			<h3>Disabled and active states</h3>
+			<ul class="pagination">
+				<li class="disabled"><a href="javaScript:void(0);" class="pagination-btn"><span class="pagination-previous"></span><span class="sr-only">previous</span></a></li>
+				<li class="active"><a href="javaScript:void(0);">1 <span class="sr-only">(current)</span></a></li>
+				<li><a href="javaScript:void(0);">2</a></li>
+				<li><a href="javaScript:void(0);">3</a></li>
+				<li><a href="javaScript:void(0);">4</a></li>
+				<li><a href="javaScript:void(0);">5</a></li>
+				<li><a href="javaScript:void(0);" class="pagination-btn"><span class="pagination-next"></span>
+					<span class="sr-only">next</span></a></li>
+			</ul>
+			<br/>
+			<ul class="pagination">
+				<li><a href="javaScript:void(0);" class="pagination-btn"><span class="pagination-previous"></span><span class="sr-only">previous</span></a></li>
+				<li><a href="javaScript:void(0);">1 <span class="sr-only">(current)</span></a></li>
+				<li><a href="javaScript:void(0);">2</a></li>
+				<li><a href="javaScript:void(0);">3</a></li>
+				<li><a href="javaScript:void(0);">4</a></li>
+				<li class="active"><a href="javaScript:void(0);">5<span class="sr-only">(current)</span></a></li>
+				<li class="disabled"><a href="javaScript:void(0);" class="pagination-btn"><span class="pagination-next"></span>
+					<span class="sr-only">next</span></a></li>
+			</ul>
+			<br/>
+			<h3>Sizing</h3>
+			<div>
+				<ul class="pagination pagination-lg">
+					<li><a href="javaScript:void(0);" class="pagination-btn"> <span class="pagination-previous"></span>
+						<span class="sr-only">previous</span></a></li>
+					<li><a href="javaScript:void(0);">1</a></li>
+					<li><a href="javaScript:void(0);">2</a></li>
+					<li><a href="javaScript:void(0);">3</a></li>
+					<li><a href="javaScript:void(0);">4</a></li>
+					<li><a href="javaScript:void(0);">5</a></li>
+					<li><a href="javaScript:void(0);" class="pagination-btn"><span class="pagination-next"></span>
+						<span class="sr-only">next</span></a></li>
+				</ul>
+			</div>
+			<br/>
+			<div>
+				<ul class="pagination">
+					<li><a href="javaScript:void(0);" class="pagination-btn"> <span class="pagination-previous"></span>
+						<span class="sr-only">previous</span></a></li>
+					<li><a href="javaScript:void(0);">1</a></li>
+					<li><a href="javaScript:void(0);">2</a></li>
+					<li><a href="javaScript:void(0);">3</a></li>
+					<li><a href="javaScript:void(0);">4</a></li>
+					<li><a href="javaScript:void(0);">5</a></li>
+					<li><a href="javaScript:void(0);" class="pagination-btn"><span class="pagination-next"></span>
+						<span class="sr-only">next</span></a></li>
+				</ul>
+			</div>
+		</div>
+
+		<h2>Pager</h2>
+		<div class="thin-box">
+			<h3>Default example</h3>
+			<ul class="pager">
+				<li><a href="javaScript:void(0);">Previous</a></li>
+				<li><a href="javaScript:void(0);">Next</a></li>
+			</ul>
+			<br/>
+			<h3>Aligned links</h3>
+			<ul class="pager">
+				<li class="previous"><a href="javaScript:void(0);">← Older</a></li>
+				<li class="next"><a href="javaScript:void(0);">Newer →</a></li>
+			</ul>
+			<br/>
+			<h3>Optional disabled state</h3>
+			<ul class="pager">
+				<li class="previous disabled"><a href="javaScript:void(0);">← Older</a></li>
+				<li class="next"><a href="javaScript:void(0);">Newer →</a></li>
+			</ul>
+		</div>
+
+		<h1 id="Labels" class="section">Labels</h1>
+		<hr class="darker"/>
+		<h2>Example</h2>
+		<div class="thin-box">
+			<h1>Example heading <span class="label label-default">New</span></h1>
+			<h2>Example heading <span class="label label-default">New</span></h2>
+			<h3>Example heading <span class="label label-default">New</span></h3>
+			<h4>Example heading <span class="label label-default">New</span></h4>
+			<h5>Example heading <span class="label label-default">New</span></h5>
+			<h6>Example heading <span class="label label-default">New</span></h6>
+		</div>
+		<h2>Available variations</h2>
+		<div class="thin-box">
+			<span class="label label-default">Default</span>
+			<span class="label label-primary">Primary</span>
+			<span class="label label-success">Success</span>
+			<span class="label label-info">Info</span>
+			<span class="label label-warning">Warning</span>
+			<span class="label label-danger">Danger</span>
+		</div>
+
+		<h1 id="Badges" class="section">Badges</h1>
+		<hr class="darker"/>
+
+		<div class="thin-box">
+			<a href="javaScript:void(0);">Inbox <span class="badge">42</span></a>
+		</div>
+
+		<h2>Adapts to active nav states</h2>
+		<div class="thin-box">
+			<ul class="nav nav-pills">
+				<li class="active"><a href="javaScript:void(0);">Home <span class="badge">42</span></a></li>
+				<li><a href="javaScript:void(0);">Profile</a></li>
+				<li><a href="javaScript:void(0);">Messages <span class="badge">3</span></a></li>
+			</ul>
+			<br><br>
+			<ul class="nav nav-pills nav-stacked" style="max-width: 260px;">
+				<li class="active">
+					<a href="javaScript:void(0);">
+						<span class="badge pull-right">42</span>
+						Home
+					</a>
+				</li>
+				<li><a href="javaScript:void(0);">Profile</a></li>
+				<li>
+					<a href="javaScript:void(0);">
+						<span class="badge pull-right">3</span>
+						Messages
+					</a>
+				</li>
+			</ul>
+			<br><br>
+			<button class="btn btn-primary" type="button">
+				Messages <span class="badge">4</span>
+			</button>
+		</div>
+
+		<h1 id="Jumbotron" class="section">Jumbotron</h1>
+		<hr class="darker"/>
+
+		<div class="thin-box">
+			<div class="jumbotron">
+				<h1>Hello, world!</h1>
+				<p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+				<p><a class="btn btn-primary btn-lg" role="button">Learn more</a></p>
+			</div>
+		</div>
+
+		<h1 id="Page header" class="section">Page header</h1>
+		<hr class="darker"/>
+
+		<div class="thin-box">
+			<div class="page-header">
+				<h1>Example page header <small>Subtext for header</small></h1>
+			</div>
+		</div>
+
+		<h1 id="Thumbnails" class="section">Thumbnails</h1>
+		<hr class="darker"/>
+
+		<h2>Default example</h2>
+		<div class="thin-box">
+			<div class="row">
+				<div class="col-xs-6 col-md-3">
+					<a href="javaScript:void(0);" class="thumbnail">
+						<img data-src="holder.js/100%x180" alt="100%x180" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMzQiIGhlaWdodD0iMTgwIj48cmVjdCB3aWR0aD0iMTM0IiBoZWlnaHQ9IjE4MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjY3IiB5PSI5MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjEzNHgxODA8L3RleHQ+PC9zdmc+" style="height: 180px; width: 100%; display: block;">
+					</a>
+				</div>
+				<div class="col-xs-6 col-md-3">
+					<a href="javaScript:void(0);" class="thumbnail">
+						<img data-src="holder.js/100%x180" alt="100%x180" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMzQiIGhlaWdodD0iMTgwIj48cmVjdCB3aWR0aD0iMTM0IiBoZWlnaHQ9IjE4MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjY3IiB5PSI5MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjEzNHgxODA8L3RleHQ+PC9zdmc+" style="height: 180px; width: 100%; display: block;">
+					</a>
+				</div>
+				<div class="col-xs-6 col-md-3">
+					<a href="javaScript:void(0);" class="thumbnail">
+						<img data-src="holder.js/100%x180" alt="100%x180" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMzQiIGhlaWdodD0iMTgwIj48cmVjdCB3aWR0aD0iMTM0IiBoZWlnaHQ9IjE4MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjY3IiB5PSI5MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjEzNHgxODA8L3RleHQ+PC9zdmc+" style="height: 180px; width: 100%; display: block;">
+					</a>
+				</div>
+				<div class="col-xs-6 col-md-3">
+					<a href="javaScript:void(0);" class="thumbnail">
+						<img data-src="holder.js/100%x180" alt="100%x180" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMzQiIGhlaWdodD0iMTgwIj48cmVjdCB3aWR0aD0iMTM0IiBoZWlnaHQ9IjE4MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjY3IiB5PSI5MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjEzNHgxODA8L3RleHQ+PC9zdmc+" style="height: 180px; width: 100%; display: block;">
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<h2>Custom content</h2>
+		<div class="thin-box">
+			<div class="row">
+				<div class="col-sm-6 col-md-4">
+					<div class="thumbnail">
+						<img data-src="holder.js/100%x200" alt="100%x200" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOTIiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMTkyIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9Ijk2IiB5PSIxMDAiIHN0eWxlPSJmaWxsOiNhYWE7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LXNpemU6MTNweDtmb250LWZhbWlseTpBcmlhbCxIZWx2ZXRpY2Esc2Fucy1zZXJpZjtkb21pbmFudC1iYXNlbGluZTpjZW50cmFsIj4xOTJ4MjAwPC90ZXh0Pjwvc3ZnPg==" style="height: 200px; width: 100%; display: block;">
+						<div class="caption">
+							<h3>Thumbnail label</h3>
+							<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+							<p><a href="javaScript:void(0);" class="btn btn-primary" role="button">Button</a> <a href="javaScript:void(0);" class="btn btn-default" role="button">Button</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4">
+					<div class="thumbnail">
+						<img data-src="holder.js/100%x200" alt="100%x200" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOTIiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMTkyIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9Ijk2IiB5PSIxMDAiIHN0eWxlPSJmaWxsOiNhYWE7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LXNpemU6MTNweDtmb250LWZhbWlseTpBcmlhbCxIZWx2ZXRpY2Esc2Fucy1zZXJpZjtkb21pbmFudC1iYXNlbGluZTpjZW50cmFsIj4xOTJ4MjAwPC90ZXh0Pjwvc3ZnPg==" style="height: 200px; width: 100%; display: block;">
+						<div class="caption">
+							<h3>Thumbnail label</h3>
+							<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+							<p><a href="javaScript:void(0);" class="btn btn-primary" role="button">Button</a> <a href="javaScript:void(0);" class="btn btn-default" role="button">Button</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4">
+					<div class="thumbnail">
+						<img data-src="holder.js/100%x200" alt="100%x200" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOTIiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMTkyIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9Ijk2IiB5PSIxMDAiIHN0eWxlPSJmaWxsOiNhYWE7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LXNpemU6MTNweDtmb250LWZhbWlseTpBcmlhbCxIZWx2ZXRpY2Esc2Fucy1zZXJpZjtkb21pbmFudC1iYXNlbGluZTpjZW50cmFsIj4xOTJ4MjAwPC90ZXh0Pjwvc3ZnPg==" style="height: 200px; width: 100%; display: block;">
+						<div class="caption">
+							<h3>Thumbnail label</h3>
+							<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+							<p><a href="javaScript:void(0);" class="btn btn-primary" role="button">Button</a> <a href="javaScript:void(0);" class="btn btn-default" role="button">Button</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<h1 id="Alerts" class="section">Alerts</h1>
+		<hr class="darker"/>
+
+		<h2>Examples</h2>
+		<div class="thin-box">
+			<div class="alert alert-success" role="alert">
+				<strong>Well done!</strong> You successfully read this important alert message.
+			</div>
+			<div class="alert alert-info" role="alert">
+				<strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+			</div>
+			<div class="alert alert-warning" role="alert">
+				<strong>Warning!</strong> Better check yourself, you're not looking too good.
+			</div>
+			<div class="alert alert-danger" role="alert">
+				<strong>Oh snap!</strong> Change a few things up and try submitting again.
+			</div>
+		</div>
+
+		<h2>Dismissible alerts</h2>
+		<div class="thin-box">
+			<div class="alert alert-success alert-dismissible" role="alert">
+				<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+				<strong>Check me out!</strong> Maecenas sed diam eget risus varius blandit sit amet non magna.
+			</div>
+			<div class="alert alert-info alert-dismissible" role="alert">
+				<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+				<strong>Duis mollis</strong>, est non commodo luctus, nisi erat porttitor ligula.
+			</div>
+			<div class="alert alert-warning alert-dismissible" role="alert">
+				<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+				<strong>Warning!</strong> Better check yourself, you're not looking too good.
+			</div>
+			<div class="alert alert-danger alert-dismissible" role="alert">
+				<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+				<strong>3 contacts were entered incorrectly.</strong>
+				<a>Update now</a>
+				<br/>
+				<small>kzhang@exacttarget.com </small><small>kzhang@exacttarget.com </small><small>kzhang@exacttarget.com</small>
+				<small> Duis mollis, est non aaaaa commodo luctus, nisi erat porttitor ligula.  Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+					Duis mollis, est non a commodo luctus, nisi erat porttitor ligula.  Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</small>
+			</div>
+		</div>
+
+		<h2>Links in alerts</h2>
+		<div class="thin-box">
+			<div class="alert alert-success" role="alert">
+				<strong>Well done!</strong> You successfully read <a href="javaScript:void(0);" class="alert-link">this important alert message</a>.
+			</div>
+			<div class="alert alert-info" role="alert">
+				<strong>Heads up!</strong> This <a href="javaScript:void(0);" class="alert-link">alert needs your attention</a>, but it's not super important.
+			</div>
+			<div class="alert alert-warning" role="alert">
+				<strong>Warning!</strong> Better check yourself, you're <a href="javaScript:void(0);" class="alert-link">not looking too good</a>.
+			</div>
+			<div class="alert alert-danger" role="alert">
+				<strong>Oh snap!</strong> <a href="javaScript:void(0);" class="alert-link">Change a few things up</a> and try submitting again.
+			</div>
+		</div>
+
+		<h1 id="Progress-bars" class="section">Progress bars</h1>
+		<hr class="darker"/>
+
+		<h2>Basic example</h2>
+		<div class="thin-box">
+			<div class="progress">
+				<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+					<span class="sr-only">60% Complete</span>
+				</div>
+			</div>
+		</div>
+
+		<h2>With label</h2>
+		<div class="thin-box">
+			<div class="progress">
+				<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+					60%
+				</div>
+			</div>
+		</div>
+
+		<h2>Low percentages</h2>
+		<div class="thin-box">
+			<div class="progress">
+				<div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+					0%
+				</div>
+			</div>
+			<div class="progress">
+				<div class="progress-bar" role="progressbar" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100" style="width: 2%;">
+					2%
+				</div>
+			</div>
+		</div>
+
+		<h2>Contextual alternatives</h2>
+		<div class="thin-box">
+			<div class="progress">
+				<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+					<span class="sr-only">40% Complete (success)</span>
+				</div>
+			</div>
+			<div class="progress">
+				<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+					<span class="sr-only">20% Complete</span>
+				</div>
+			</div>
+			<div class="progress">
+				<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+					<span class="sr-only">60% Complete (warning)</span>
+				</div>
+			</div>
+			<div class="progress">
+				<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+					<span class="sr-only">80% Complete (danger)</span>
+				</div>
+			</div>
+		</div>
+
+		<h2>Striped</h2>
+		<div class="thin-box">
+			<div class="progress">
+				<div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+					<span class="sr-only">40% Complete (success)</span>
+				</div>
+			</div>
+			<div class="progress">
+				<div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+					<span class="sr-only">20% Complete</span>
+				</div>
+			</div>
+			<div class="progress">
+				<div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+					<span class="sr-only">60% Complete (warning)</span>
+				</div>
+			</div>
+			<div class="progress">
+				<div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+					<span class="sr-only">80% Complete (danger)</span>
+				</div>
+			</div>
+		</div>
+		<h2>Animated</h2>
+		<div class="thin-box">
+			<div class="progress">
+				<div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%"><span class="sr-only">45% Complete</span></div>
+			</div>
+		</div>
+
+		<h2>Stacked</h2>
+		<div class="thin-box">
+			<div class="progress">
+				<div class="progress-bar progress-bar-success" style="width: 35%">
+					<span class="sr-only">35% Complete (success)</span>
+				</div>
+				<div class="progress-bar progress-bar-warning progress-bar-striped" style="width: 20%">
+					<span class="sr-only">20% Complete (warning)</span>
+				</div>
+				<div class="progress-bar progress-bar-danger" style="width: 10%">
+					<span class="sr-only">10% Complete (danger)</span>
+				</div>
+			</div>
+		</div>
+
+		<h2>Standard progress bar</h2>
+		<div class="thin-box">
+			<div class="progress">
+				<div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+					<span class="sr-only">40% Complete (info)</span>
+				</div>
+				<div class="progress-highlight"></div>
+			</div>
+			<div class="progress">
+				<div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+					<span class="sr-only">20% Complete (success)</span>
+				</div>
+				<div class="progress-highlight"></div>
+			</div>
+			<div class="progress">
+				<div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+					<span class="sr-only">60% Complete (warning)</span>
+				</div>
+				<div class="progress-highlight"></div>
+			</div>
+		</div>
+
+		<h2>Indeterminate progress bar</h2>
+		<div class="thin-box">
+			<div class="progress">
+				<div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+					<span class="sr-only">100% Complete</span>
+				</div>
+				<div class="progress-highlight"></div>
+			</div>
+			<div class="progress">
+				<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+					<span class="sr-only">100% Complete (success)</span>
+				</div>
+				<div class="progress-highlight"></div>
+			</div>
+			<div class="progress">
+				<div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+					<span class="sr-only">100% Complete (warning)</span>
+				</div>
+				<div class="progress-highlight"></div>
+			</div>
+		</div>
+
+		<h2>Small progress bar</h2>
+		<div class="thin-box">
+			<div class="progress progress-sm">
+				<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+					<span class="sr-only">40% Complete (success)</span>
+					<div class="progress-highlight"></div>
+				</div>
+			</div>
+			<div class="progress progress-sm">
+				<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+					<span class="sr-only">20% Complete</span>
+					<div class="progress-highlight"></div>
+				</div>
+			</div>
+			<div class="progress progress-sm">
+				<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+					<span class="sr-only">60% Complete (warning)</span>
+					<div class="progress-highlight"></div>
+				</div>
+			</div>
+		</div>
+
+		<h1 id="Media-object" class="section">Media object</h1>
+		<hr class="darker"/>
+
+		<h2>Default media</h2>
+		<div class="thin-box">
+			<div class="media">
+				<a class="pull-left" href="javaScript:void(0);">
+					<img class="media-object" data-src="holder.js/64x64" alt="64x64" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+" style="width: 64px; height: 64px;">
+				</a>
+				<div class="media-body">
+					<h4 class="media-heading">Media heading</h4>
+					Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+				</div>
+			</div>
+			<div class="media">
+				<a class="pull-left" href="javaScript:void(0);">
+					<img class="media-object" data-src="holder.js/64x64" alt="64x64" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+" style="width: 64px; height: 64px;">
+				</a>
+				<div class="media-body">
+					<h4 class="media-heading">Media heading</h4>
+					Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+					<div class="media">
+						<a class="pull-left" href="javaScript:void(0);">
+							<img class="media-object" data-src="holder.js/64x64" alt="64x64" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+" style="width: 64px; height: 64px;">
+						</a>
+						<div class="media-body">
+							<h4 class="media-heading">Nested media heading</h4>
+							Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<h2>Media list</h2>
+		<div class="thin-box">
+			<ul class="media-list">
+				<li class="media">
+					<a class="pull-left" href="javaScript:void(0);">
+						<img class="media-object" data-src="holder.js/64x64" alt="64x64" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+" style="width: 64px; height: 64px;">
+					</a>
+					<div class="media-body">
+						<h4 class="media-heading">Media heading</h4>
+						<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+						<!-- Nested media object -->
+						<div class="media">
+							<a class="pull-left" href="javaScript:void(0);">
+								<img class="media-object" data-src="holder.js/64x64" alt="64x64" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+" style="width: 64px; height: 64px;">
+							</a>
+							<div class="media-body">
+								<h4 class="media-heading">Nested media heading</h4>
+								Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+								<!-- Nested media object -->
+								<div class="media">
+									<a class="pull-left" href="javaScript:void(0);">
+										<img class="media-object" data-src="holder.js/64x64" alt="64x64" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+" style="width: 64px; height: 64px;">
+									</a>
+									<div class="media-body">
+										<h4 class="media-heading">Nested media heading</h4>
+										Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Nested media object -->
+						<div class="media">
+							<a class="pull-left" href="javaScript:void(0);">
+								<img class="media-object" data-src="holder.js/64x64" alt="64x64" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+" style="width: 64px; height: 64px;">
+							</a>
+							<div class="media-body">
+								<h4 class="media-heading">Nested media heading</h4>
+								Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="media">
+					<a class="pull-right" href="javaScript:void(0);">
+						<img class="media-object" data-src="holder.js/64x64" alt="64x64" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+" style="width: 64px; height: 64px;">
+					</a>
+					<div class="media-body">
+						<h4 class="media-heading">Media heading</h4>
+						Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+					</div>
+				</li>
+			</ul>
+		</div>
+
+		<h1 id="List-group" class="section">List group</h1>
+		<hr class="darker"/>
+
+		<h2>Basic example</h2>
+		<div class="thin-box">
+			<ul class="list-group">
+				<li class="list-group-item">Cras justo odio</li>
+				<li class="list-group-item">Dapibus ac facilisis in</li>
+				<li class="list-group-item">Morbi leo risus</li>
+				<li class="list-group-item">Porta ac consectetur ac</li>
+				<li class="list-group-item">Vestibulum at eros</li>
+			</ul>
+		</div>
+
+		<h2>Badges</h2>
+		<div class="thin-box">
+			<ul class="list-group">
+				<li class="list-group-item">
+					<span class="badge">14</span>
+					Cras justo odio
+				</li>
+				<li class="list-group-item">
+					<span class="badge">2</span>
+					Dapibus ac facilisis in
+				</li>
+				<li class="list-group-item">
+					<span class="badge">1</span>
+					Morbi leo risus
+				</li>
+			</ul>
+		</div>
+
+		<h2>Linked items</h2>
+		<div class="thin-box">
+			<div class="list-group">
+				<a href="javaScript:void(0);" class="list-group-item active">
+					Cras justo odio
+				</a>
+				<a href="javaScript:void(0);" class="list-group-item">Dapibus ac facilisis in</a>
+				<a href="javaScript:void(0);" class="list-group-item">Morbi leo risus</a>
+				<a href="javaScript:void(0);" class="list-group-item">Porta ac consectetur ac</a>
+				<a href="javaScript:void(0);" class="list-group-item">Vestibulum at eros</a>
+			</div>
+		</div>
+
+		<h2>Disabled items</h2>
+		<div class="thin-box">
+			<div class="list-group">
+				<a class="list-group-item disabled">
+					Cras justo odio
+				</a>
+				<a href="javaScript:void(0);" class="list-group-item">Dapibus ac facilisis in</a>
+				<a href="javaScript:void(0);" class="list-group-item">Morbi leo risus</a>
+				<a href="javaScript:void(0);" class="list-group-item">Porta ac consectetur ac</a>
+				<a href="javaScript:void(0);" class="list-group-item">Vestibulum at eros</a>
+			</div>
+		</div>
+
+		<h2>Contextual classes</h2>
+		<div class="thin-box">
+			<div class="row">
+				<div class="col-sm-6">
+					<ul class="list-group">
+						<li class="list-group-item list-group-item-success">Dapibus ac facilisis in</li>
+						<li class="list-group-item list-group-item-info">Cras sit amet nibh libero</li>
+						<li class="list-group-item list-group-item-warning">Porta ac consectetur ac</li>
+						<li class="list-group-item list-group-item-danger">Vestibulum at eros</li>
+					</ul>
+				</div>
+				<div class="col-sm-6">
+					<div class="list-group">
+						<a href="javaScript:void(0);" class="list-group-item list-group-item-success">Dapibus ac facilisis in</a>
+						<a href="javaScript:void(0);" class="list-group-item list-group-item-info">Cras sit amet nibh libero</a>
+						<a href="javaScript:void(0);" class="list-group-item list-group-item-warning">Porta ac consectetur ac</a>
+						<a href="javaScript:void(0);" class="list-group-item list-group-item-danger">Vestibulum at eros</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<h2>Custom content</h2>
+		<div class="thin-box">
+			<div class="list-group">
+				<a href="javaScript:void(0);" class="list-group-item active">
+					<h4 class="list-group-item-heading">List group item heading</h4>
+					<p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+				</a>
+				<a href="javaScript:void(0);" class="list-group-item">
+					<h4 class="list-group-item-heading">List group item heading</h4>
+					<p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+				</a>
+				<a href="javaScript:void(0);" class="list-group-item">
+					<h4 class="list-group-item-heading">List group item heading</h4>
+					<p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+				</a>
+			</div>
+		</div>
+
+		<h1 id="Panels" class="section">Panels</h1>
+		<hr class="darker"/>
+
+		<h2>Basic example</h2>
+		<div class="thin-box">
+			<div class="panel panel-default">
+				<div class="panel-body">
+					Basic panel example
+				</div>
+			</div>
+		</div>
+
+		<h2>Panel with heading</h2>
+		<div class="thin-box">
+			<div class="panel panel-default">
+				<div class="panel-heading">Panel heading without title</div>
+				<div class="panel-body">
+					Panel content
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<div class="panel-title">Panel title</div>
+				</div>
+				<div class="panel-body">
+					Panel content
+				</div>
+			</div>
+		</div>
+
+		<h2>Panel with footer</h2>
+		<div class="thin-box">
+			<div class="panel panel-default">
+				<div class="panel-body">
+					Panel content
+				</div>
+				<div class="panel-footer">Panel footer</div>
+			</div>
+		</div>
+
+		<h2>Contextual alternatives</h2>
+		<div class="thin-box">
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<div class="panel-title">Panel title</div>
+				</div>
+				<div class="panel-body">
+					Panel content
+				</div>
+			</div>
+			<div class="panel panel-success">
+				<div class="panel-heading">
+					<div class="panel-title">Panel title</div>
+				</div>
+				<div class="panel-body">
+					Panel content
+				</div>
+			</div>
+			<div class="panel panel-info">
+				<div class="panel-heading">
+					<div class="panel-title">Panel title</div>
+				</div>
+				<div class="panel-body">
+					Panel content
+				</div>
+			</div>
+			<div class="panel panel-warning">
+				<div class="panel-heading">
+					<div class="panel-title">Panel title</div>
+				</div>
+				<div class="panel-body">
+					Panel content
+				</div>
+			</div>
+			<div class="panel panel-danger">
+				<div class="panel-heading">
+					<div class="panel-title">Panel title</div>
+				</div>
+				<div class="panel-body">
+					Panel content
+				</div>
+			</div>
+		</div>
+
+		<h2>With tables</h2>
+		<div class="thin-box">
+			<div class="panel panel-default">
+				<!-- Default panel contents -->
+				<div class="panel-heading">
+					<div class="panel-title">Panel heading</div>
+				</div>
+				<div class="panel-body">
+					<p>Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+				</div>
+
+				<!-- Table -->
+				<table class="table">
+					<thead>
+					<tr>
+						<th>#</th>
+						<th>First Name</th>
+						<th>Last Name</th>
+						<th>Username</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<td>1</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Jacob</td>
+						<td>Thornton</td>
+						<td>@fat</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>Larry</td>
+						<td>the Bird</td>
+						<td>@twitter</td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+			<br/>
+			<div class="panel panel-default">
+				<!-- Default panel contents -->
+				<div class="panel-heading">
+					<div class="panel-title">Panel heading</div>
+				</div>
+
+				<!-- Table -->
+				<table class="table">
+					<thead>
+					<tr>
+						<th>#</th>
+						<th>First Name</th>
+						<th>Last Name</th>
+						<th>Username</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<td>1</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Jacob</td>
+						<td>Thornton</td>
+						<td>@fat</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>Larry</td>
+						<td>the Bird</td>
+						<td>@twitter</td>
+					</tr>
+					</tbody>
+				</table>
+
+				<div class="panel-footer">Blahblah</div>
+			</div>
+		</div>
+
+		<h2>With list groups</h2>
+		<div class="thin-box">
+			<div class="panel panel-default">
+				<!-- Default panel contents -->
+				<div class="panel-heading">Panel heading</div>
+				<div class="panel-body">
+					<p>Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+				</div>
+
+				<!-- List group -->
+				<ul class="list-group">
+					<li class="list-group-item">Cras justo odio</li>
+					<li class="list-group-item">Dapibus ac facilisis in</li>
+					<li class="list-group-item">Morbi leo risus</li>
+					<li class="list-group-item">Porta ac consectetur ac</li>
+					<li class="list-group-item">Vestibulum at eros</li>
+				</ul>
+			</div>
+		</div>
+
+		<h1 id="Responsive-embed" class="section">Responsive embed</h1>
+		<hr class="darker"/>
+		<div class="thin-box">
+			<div class="embed-responsive embed-responsive-16by9">
+				<iframe class="embed-responsive-item" src="//www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen=""></iframe>
+			</div>
+		</div>
+
+		<h1 id="Wells" class="section">Wells</h1>
+		<hr class="darker"/>
+
+		<h2>Default well</h2>
+		<div class="thin-box">
+			<div class="well">
+				Look, I'm in a well!
+			</div>
+		</div>
+
+		<h2>Optional classes</h2>
+		<div class="thin-box">
+			<div class="well well-lg">
+				Look, I'm in a large well!
+			</div>
+			<br/>
+			<div class="well well-sm">
+				Look, I'm in a small well!
+			</div>
+		</div>
+	</div>
+
+	<script>
+	/* grunticon Stylesheet Loader | https://github.com/filamentgroup/grunticon | (c) 2012 Scott Jehl, Filament Group, Inc. | MIT license. */
+window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.createElementNS||!t.document.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect||!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1")||window.opera&&-1===navigator.userAgent.indexOf("Chrome")||-1!==navigator.userAgent.indexOf("Series40")),o=function(o){var a=t.document.createElement("link"),r=t.document.getElementsByTagName("script")[0];a.rel="stylesheet",a.href=e[o&&n?0:o?1:2],a.media="only x",r.parentNode.insertBefore(a,r),setTimeout(function(){a.media="all"})},a=new t.Image;a.onerror=function(){o(!1)},a.onload=function(){o(1===a.width&&1===a.height)},a.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="}};
+	
+	grunticon(["mctheme.svg.css", "mctheme.png.css", "mctheme.css"]);
+	</script>
+		<noscript>
+			<link href="mctheme.css" rel="stylesheet">
+		</noscript>
+
+		<h1 id="icons">Icons</h2>
+
+	<div class="row">
+		<div class="col-md-12">
+			<ul class="fuelux-icon-list">
+				
+					
+						<li>
+							<div class="fuelux-calendar-hover fuelux-icon"></div>
+							<p class="text-center">.fuelux-icon<br>.fuelux-calendar-hover</p>
+						</li>
+					
+				
+					
+						<li>
+							<div class="fuelux-calendar fuelux-icon"></div>
+							<p class="text-center">.fuelux-icon<br>.fuelux-calendar</p>
+						</li>
+					
+				
+					
+						<li>
+							<div class="fuelux-caret-down-hover fuelux-icon"></div>
+							<p class="text-center">.fuelux-icon<br>.fuelux-caret-down-hover</p>
+						</li>
+					
+				
+					
+						<li>
+							<div class="fuelux-caret-down fuelux-icon"></div>
+							<p class="text-center">.fuelux-icon<br>.fuelux-caret-down</p>
+						</li>
+					
+				
+					
+						<li>
+							<div class="fuelux-caret-right-hover fuelux-icon"></div>
+							<p class="text-center">.fuelux-icon<br>.fuelux-caret-right-hover</p>
+						</li>
+					
+				
+					
+						<li>
+							<div class="fuelux-caret-right fuelux-icon"></div>
+							<p class="text-center">.fuelux-icon<br>.fuelux-caret-right</p>
+						</li>
+					
+				
+					
+						<li>
+							<div class="fuelux-checkbox-checked-disabled fuelux-icon"></div>
+							<p class="text-center">.fuelux-icon<br>.fuelux-checkbox-checked-disabled</p>
+						</li>
+					
+				
+					
+						<li>
+							<div class="fuelux-checkbox-checked-hover fuelux-icon"></div>
+							<p class="text-center">.fuelux-icon<br>.fuelux-checkbox-checked-hover</p>
+						</li>
+					
+				
+					
+						<li>
+							<div class="fuelux-checkbox-checked fuelux-icon"></div>
+							<p class="text-center">.fuelux-icon<br>.fuelux-checkbox-checked</p>
+						</li>
+					
+				
+					
+						<li>
+							<div class="fuelux-checkbox-disabled fuelux-icon"></div>
+							<p class="text-center">.fuelux-icon<br>.fuelux-checkbox-disabled</p>
+						</li>
+					
+				
+					
+						<li>
+							<div class="fuelux-checkbox-hover fuelux-icon"></div>
+							<p class="text-center">.fuelux-icon<br>.fuelux-checkbox-hover</p>
+						</li>
+					
+				
+					
+						<li>
+							<div class="fuelux-checkbox fuelux-icon"></div>
+							<p class="text-center">.fuelux-icon<br>.fuelux-checkbox</p>
+						</li>
+					
+				
+					
+						<li>
+							<div class="fuelux-checked-indicator fuelux-icon"></div>
+							<p class="text-center">.fuelux-icon<br>.fuelux-checked-indicator</p>
+						</li>
+					
+				
+					
+						<li>
+							<div class="fuelux-close-content-block fuelux-icon"></div>
+							<p class="text-center">.fuelux-icon<br>.fuelux-close-content-block</p>
+						</li>
+					
+				
+					
+						<li>
+							<div class="fuelux-delete fuelux-icon"></div>
+							<p class="text-center">.fuelux-icon<br>.fuelux-delete</p>
+						</li>
+					
+				
+					
+						<li>
+							<div class="fuelux-folder-open fuelux-icon"></div>
+							<p class="text-center">.fuelux-icon<br>.fuelux-folder-open</p>
+						</li>
+					
+				
+					
+						<li>
+							<div class="fuelux-folder fuelux-icon"></div>
+							<p class="text-center">.fuelux-icon<br>.fuelux-folder</p>
+						</li>
+					
+				
+					
+						<li>
+							<div class="fuelux-gridview-columns fuelux-icon"></div>
+							<p class="text-center">.fuelux-icon<br>.fuelux-gridview-columns</p>
+						</li>
+					
+				
+					
+						<li>
+							<div class="fuelux-gridview-list fuelux-icon"></div>
+							<p class="text-center">.fuelux-icon<br>.fuelux-gridview-list</p>
+						</li>
+					
+				
+					
+						<li>
+							<div class="fuelux-gridview-paragraph fuelux-icon"></div>
+							<p class="text-center">.fuelux-icon<br>.fuelux-gridview-paragraph</p>
+						</li>
+					
+				
+					
+						<li>
+							<div class="fuelux-gridview-thumbnail fuelux-icon"></div>
+							<p class="text-center">.fuelux-icon<br>.fuelux-gridview-thumbnail</p>
+						</li>
+					
+				
+					
+						<li>
+							<div class="fuelux-pencil-hover fuelux-icon"></div>
+							<p class="text-center">.fuelux-icon<br>.fuelux-pencil-hover</p>
+						</li>
+					
+				
+					
+						<li>
+							<div class="fuelux-pencil fuelux-icon"></div>
+							<p class="text-center">.fuelux-icon<br>.fuelux-pencil</p>
+						</li>
+					
+				
+					
+						<li>
+							<div class="fuelux-plus-sign-disabled fuelux-icon"></div>
+							<p class="text-center">.fuelux-icon<br>.fuelux-plus-sign-disabled</p>
+						</li>
+					
+				
+					
+						<li>
+							<div class="fuelux-plus-sign fuelux-icon"></div>
+							<p class="text-center">.fuelux-icon<br>.fuelux-plus-sign</p>
+						</li>
+					
+				
+					
+						<li>
+							<div class="fuelux-radio-button-checked-disabled fuelux-icon"></div>
+							<p class="text-center">.fuelux-icon<br>.fuelux-radio-button-checked-disabled</p>
+						</li>
+					
+				
+					
+						<li>
+							<div class="fuelux-radio-button-checked-hover fuelux-icon"></div>
+							<p class="text-center">.fuelux-icon<br>.fuelux-radio-button-checked-hover</p>
+						</li>
+					
+				
+					
+						<li>
+							<div class="fuelux-radio-button-checked fuelux-icon"></div>
+							<p class="text-center">.fuelux-icon<br>.fuelux-radio-button-checked</p>
+						</li>
+					
+				
+					
+						<li>
+							<div class="fuelux-radio-button-disabled fuelux-icon"></div>
+							<p class="text-center">.fuelux-icon<br>.fuelux-radio-button-disabled</p>
+						</li>
+					
+				
+					
+						<li>
+							<div class="fuelux-radio-button-hover fuelux-icon"></div>
+							<p class="text-center">.fuelux-icon<br>.fuelux-radio-button-hover</p>
+						</li>
+					
+				
+					
+						<li>
+							<div class="fuelux-radio-button fuelux-icon"></div>
+							<p class="text-center">.fuelux-icon<br>.fuelux-radio-button</p>
+						</li>
+					
+				
+					
+						<li>
+							<div class="fuelux-search-deprecatd-hover fuelux-icon"></div>
+							<p class="text-center">.fuelux-icon<br>.fuelux-search-deprecatd-hover</p>
+						</li>
+					
+				
+					
+						<li>
+							<div class="fuelux-search-deprecated fuelux-icon"></div>
+							<p class="text-center">.fuelux-icon<br>.fuelux-search-deprecated</p>
+						</li>
+					
+				
+					
+						<li>
+							<div class="fuelux-search-hover fuelux-icon"></div>
+							<p class="text-center">.fuelux-icon<br>.fuelux-search-hover</p>
+						</li>
+					
+				
+					
+						<li>
+							<div class="fuelux-search fuelux-icon"></div>
+							<p class="text-center">.fuelux-icon<br>.fuelux-search</p>
+						</li>
+					
+				
+					
+						<li>
+							<div class="fuelux-sort fuelux-icon"></div>
+							<p class="text-center">.fuelux-icon<br>.fuelux-sort</p>
+						</li>
+					
+				
+					
+						<li>
+							<div class="fuelux-spyglass fuelux-icon"></div>
+							<p class="text-center">.fuelux-icon<br>.fuelux-spyglass</p>
+						</li>
+					
+				
+					
+						<li>
+							<div class="fuelux-trash-hover fuelux-icon"></div>
+							<p class="text-center">.fuelux-icon<br>.fuelux-trash-hover</p>
+						</li>
+					
+				
+					
+						<li>
+							<div class="fuelux-trash fuelux-icon"></div>
+							<p class="text-center">.fuelux-icon<br>.fuelux-trash</p>
+						</li>
+					
+				
+			</ul>
+		</div>
 	</div>
 
 </body>

@@ -4,14 +4,27 @@
 // ACHROMATIC GRAYS - number suffix = luminance value 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
+// A few shades of gray will suffice for simple controls and themes,
+// but don't torture yourself with 'light', 'lighter', and 'more mediumer'
+
+@true-white: #fff;
+@true-black: #000;
+
 // Used
-@gray13:            lighten(#000, 13.5%);	// #222
-@gray33:            lighten(#000, 33.5%);	// #555
-@gray40:            lighten(#000, 40%); 		// #666
-@gray47:            lighten(#000, 46.7%);	// #777
-@gray60:            lighten(#000, 60%);	// #999
-@gray67:            lighten(#000, 67%);	// #AAA
-@gray93:            lighten(#000, 93.5%);	// @EEE
+@gray13:            lighten(#000, 13.5%); // #222
+@gray27:            lighten(#000, 27%);   // #444
+@gray33:            lighten(#000, 33.5%); // #555
+@gray40:            lighten(#000, 40%);   // #666
+@gray47:            lighten(#000, 46.7%); // #777
+@gray53:            lighten(#000, 53%);	  // #888
+@gray60:            lighten(#000, 60%);	  // #999
+@gray67:            lighten(#000, 66.5%); // #AAA
+@gray74:            lighten(#000, 73.5%); // #BBB
+@gray80:            lighten(#000, 80%);   // #CCC
+@gray87:            lighten(#000, 86.5%); // #DDD
+@gray93:            lighten(#000, 93.5%); // #EEE
+@gray96:            lighten(#000, 96%); // #F5F5F5
+@gray99:            lighten(#000, 99%); // #FCFCFC
 
 // Not currently used
 @gray20:            lighten(#000, 20%);	// #333
@@ -30,9 +43,12 @@
 
 // BLUE SLATE a powdery, light blue for selected items
 @blue-slate:                 #D9EAF5;
+@blue-smoke:                 lighten(@blue-slate, 5%); // #edf5fa, wizard active step, repeater list sorted
 
 // BLUE SKY - a light blue for hover of selected items.
 @blue-sky:                   #B9DFF1;
+
+@text-primary: 							#3074af;
 
 // BLUE STEEL - primary link and button text color.
 // "And then there's Ferrari and Le Tigre. Le Tigre's a lot softer.
@@ -40,20 +56,28 @@
 @blue-steel:                 #4E8ABE;
 
 // text color for selected items
-@gray-slate:                 #385b6b;
+@rainstorm: #385B6B;
+
+
 
 // Link color, button color
+@brand-primary-dark:       #2075c0;
 @brand-primary-medium:       @blue-steel;
 @brand-primary-light:        @blue-slate;
 
-@brand-success-dark:         #51A62B;
+@brand-success-dark:         #3c763d;	// new 'accessible/high contrast' green
 @brand-success-medium:       #8BD06D;
 @brand-success-light:        #E9FCDE;
 
+// Tooltips
+@tooltip-color:               @gray13;
+
+
+
 // blue
-@brand-info-dark:            #385B6B;
+@brand-info-dark:            @rainstorm;	// text color for selected items
 @brand-info-medium:          @blue-steel;
-@brand-info-light:           #DFEEF5;
+@brand-info-light:           @blue-sky;
 
 // orange
 @brand-warning-dark:         #f7841d;
@@ -79,9 +103,10 @@
 // 
 // Popovers
 // --------------------------------------------------
-@popover-bg:                                        #FFFFFF;
+@popover-bg:                                        @gray96;
 @popover-title-bg:                                  @element-title-bg;
-@popover-border-color:                              darken(@element-border-color, 5%);
+@popover-border-color:                              @gray74;
+@modal-bottom-border: @gray93;
 
 
 // Text colors
