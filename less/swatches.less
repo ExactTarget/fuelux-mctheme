@@ -1,5 +1,19 @@
 @import "colors.less";
 
+.swatches {
+	overflow: auto;
+}
+
+.swatch {
+	padding: 50px 20px 50px 20px;
+	min-height: 100px;
+	width: 150px;
+	text-align: center;
+	margin: 20px;
+	float: left;
+	font-weight: bold;
+}
+
 .color-swatch(@color) {
 	.swatch-@{color} {
 		@temp: "@{color}";
@@ -7,6 +21,29 @@
 	}
 }
 
+// grays
+.color-swatch(true-white);
+.color-swatch(gray13);
+.color-swatch(gray20);
+.color-swatch(gray27);
+.color-swatch(gray33);
+.color-swatch(gray40);
+.color-swatch(gray46);
+.color-swatch(gray47);
+.color-swatch(gray53);
+.color-swatch(gray60);
+.color-swatch(gray67);
+.color-swatch(gray74);
+.color-swatch(gray75);
+.color-swatch(gray80);
+.color-swatch(gray87);
+.color-swatch(gray93);
+.color-swatch(gray96);
+.color-swatch(gray98);
+.color-swatch(gray99);
+.color-swatch(true-black);
+
+// colors
 .color-swatch(blue-slate);
 .color-swatch(blue-smoke);
 .color-swatch(blue-sky);
