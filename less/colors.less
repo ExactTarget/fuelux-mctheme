@@ -12,22 +12,23 @@
 
 // Used
 @gray13:            lighten(@true-black, 13.5%); // #222
+@gray20:            lighten(@true-black, 20%);	// #333
 @gray27:            lighten(@true-black, 27%);   // #444
 @gray33:            lighten(@true-black, 33.5%); // #555
 @gray40:            lighten(@true-black, 40%);   // #666
+@gray46:            lighten(@true-black, 46%); // #757575
 @gray47:            lighten(@true-black, 46.7%); // #777
 @gray53:            lighten(@true-black, 53%);	  // #888
 @gray60:            lighten(@true-black, 60%);	  // #999
 @gray67:            lighten(@true-black, 66.5%); // #AAA
 @gray74:            lighten(@true-black, 73.5%); // #BBB
+@gray75:            lighten(@true-black, 75%); // #4b4b4b
 @gray80:            lighten(@true-black, 80%);   // #CCC
 @gray87:            lighten(@true-black, 86.5%); // #DDD
 @gray93:            lighten(@true-black, 93.5%); // #EEE
 @gray96:            lighten(@true-black, 96%); // #F5F5F5
+@gray98:            lighten(@true-black, 98%); // #f9f9f9
 @gray99:            lighten(@true-black, 99%); // #FCFCFC
-
-// Not currently used
-@gray20:            lighten(@true-black, 20%);	// #333
 
 // FOR BOOTSTRAP REFERENCE -- DO NOT USE!!!
 // @gray-darker:            lighten(@true-black, 13.5%); // #222
@@ -43,12 +44,12 @@
 
 // BLUE SLATE a powdery, light blue for selected items
 @blue-slate:                 #D9EAF5;
+
+
 @blue-smoke:                 lighten(@blue-slate, 5%); // #edf5fa, wizard active step, repeater list sorted
 
 // BLUE SKY - a light blue for hover of selected items.
 @blue-sky:                   #B9DFF1;
-
-@text-primary: 							#3074af;
 
 // BLUE STEEL - primary link and button text color.
 // "And then there's Ferrari and Le Tigre. Le Tigre's a lot softer.
@@ -56,48 +57,64 @@
 @blue-steel:                 #4E8ABE;
 
 // text color for selected items
-@rainstorm: #385B6B;
+@rainstorm:                  #385B6B;
+
+@blue-royale:                #3074af;
+
+@cadet-blue:                 #507587;
+@cornflower-blue:            #66afe9;
+
+// green
+@forest-green:               #3c763d;
+@olive-green:                #8bd06d;
+@mint-green:                 #E9FCDE;
+
+// orange
+@carrot-orange:              #f7841d;
+@apricot:                    #FFB55E;
+@peach:                      #FFF1E1;
+@goldenrod-brown:            #986000;	// new warning orange-brown
+
+// red
+@indian-red:                 #e64141;
+@firetruck-red:              #e00000; // new danger red
+@salmon-red:                 #EE6767;
+@cotton-candy-pink:          #FCECED;
 
 
 
 // Link color, button color
-@brand-primary-dark:       #2075c0;
+@brand-primary-dark:         @blue-royale;
 @brand-primary-medium:       @blue-steel;
 @brand-primary-light:        @blue-slate;
 
-@brand-success-dark:         #3c763d;	// new 'accessible/high contrast' green
-@brand-success-medium:       #8BD06D;
-@brand-success-light:        #E9FCDE;
+@brand-success-dark:         @forest-green;	// new 'accessible/high contrast' green
+@brand-success-medium:       @olive-green;
+@brand-success-light:        @mint-green;
 
 // Tooltips
-@tooltip-color:               @gray13;
+@tooltip-color:              @gray13;
 
-
-
-// blue
 @brand-info-dark:            @rainstorm;	// text color for selected items
 @brand-info-medium:          @blue-steel;
 @brand-info-light:           @blue-sky;
 
-// orange
-@brand-warning-dark:         #f7841d;
-@brand-warning-medium:       #FFB55E;
-@brand-warning-light:        #FFF1E1;
+@brand-warning-dark:         @carrot-orange;
+@brand-warning-medium:       @apricot;
+@brand-warning-light:        @peach;
 
-// red
-@brand-danger-dark:          #e64141;
-@brand-danger-medium:        #EE6767;
-@brand-danger-light:         #FCECED;
+@brand-danger-dark:          @indian-red;
+@brand-danger-medium:        @salmon-red;
+@brand-danger-light:         @cotton-candy-pink;
 
 
 //
 // Generic Element Colours
 // --------------------------------------------------
-
 @element-title-bg:                                  desaturate(lighten(@blue-slate, 3%), 25%); // #E9F0F4
 @element-border-color:                              desaturate(darken(@element-title-bg, 5%), 15%); // ???
 @element-footer-bg-gradient-start:                  @element-title-bg;
-@element-footer-bg-gradient-end:                    #FFFFFF;
+@element-footer-bg-gradient-end:                    @true-white;
 
 
 // 
@@ -110,12 +127,11 @@
 
 
 // Text colors
-@text-danger: #e00000;
-@text-dimmed: #4b4b4b;
-@text-muted: #757575;
-@text-primary: #3074af;
-@text-warning: #986000;
-
+@text-danger: @firetruck-red;
+@text-dimmed: @gray75;
+@text-muted: @gray46;
+@text-primary: @blue-royale;
+@text-warning: @goldenrod-brown;
 
 // Tooltips
 @tooltip-color:               @true-black;
