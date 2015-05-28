@@ -1,0 +1,31 @@
+@import "colors.less";
+
+.color-swatch(@color) {
+	.swatch-@{color} {
+		@temp: "@{color}";
+		background-color: @@temp;
+	}
+}
+
+.color-swatch(blue-slate);
+.color-swatch(blue-smoke);
+.color-swatch(blue-sky);
+.color-swatch(blue-steel);
+.color-swatch(rainstorm);
+.color-swatch(blue-royale);
+.color-swatch(cadet-blue);
+.color-swatch(cornflower-blue);
+
+.color-swatch(forest-green);
+.color-swatch(olive-green);
+.color-swatch(mint-green);
+
+.color-swatch(carrot-orange);
+.color-swatch(apricot);
+.color-swatch(peach);
+.color-swatch(goldenrod-brown);
+
+.color-swatch(indian-red);
+.color-swatch(firetruck-red);
+.color-swatch(salmon-red);
+.color-swatch(cotton-candy-pink);
