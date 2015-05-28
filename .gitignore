@@ -23,5 +23,3 @@ less/icons/png/*.png
 # dev-specific fils related to serve-dev task
 examples/*/*-dev.html
 dist-dev/
-
-dist/
