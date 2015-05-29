@@ -300,13 +300,14 @@
 // Button Sizes
 // --------------------------------------------------
 
-.btn-lg {
+.btn-lg, .btn-group-lg .btn-lg {
 	.button-size( 7px; 10px; @font-size-large; @border-radius-large);
 }
-.btn-sm,
-.btn-xs
-{
+
+.btn-sm, .btn-group-sm .btn-sm,
+.btn-xs, .btn-group-xs .btn-xs {
 	.button-size( 3px; 8px; @font-size-small; @border-radius-small);
+	line-height: 10px;
 }
 
 
