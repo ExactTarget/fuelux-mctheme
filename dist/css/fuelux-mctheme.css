@@ -1,5 +1,5 @@
 /*!
- * Marketing Cloud Theme v1.5.2 
+ * Marketing Cloud Theme v1.5.3 
  * Copyright 2015 ExactTarget
  * Licensed under MIT (https://github.com/ExactTarget/fuelux-mctheme/blob/master/COPYING)
  */
@@ -3381,16 +3381,20 @@ fieldset[disabled] .btn-link:focus {
   text-decoration: none;
   cursor: not-allowed;
 }
-.btn-lg {
+.btn-lg,
+.btn-group-lg .btn-lg {
   padding: 7px 10px;
   font-size: 12px;
   border-radius: 4px;
 }
 .btn-sm,
-.btn-xs {
+.btn-group-sm .btn-sm,
+.btn-xs,
+.btn-group-xs .btn-xs {
   padding: 3px 8px;
   font-size: 10px;
   border-radius: 3px;
+  line-height: 10px;
 }
 .btn-block {
   display: block;
