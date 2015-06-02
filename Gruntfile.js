@@ -4,8 +4,8 @@ module.exports = function (grunt) {
 	// use --no-livereload to disable livereload. Helpful to 'serve' multiple projects
 	var isLivereloadEnabled = (typeof grunt.option('livereload') !== 'undefined') ? grunt.option('livereload') : 35730;
 
-	// release minor or patch version. Do major releases manually
-	var versionReleaseType = (typeof grunt.option('minor') !== 'undefined') ? 'minor' : 'patch';
+	var semver = require('semver');
+	var packageVersion = require('./package.json').version;
 
 	// Project configuration.
 	grunt.initConfig({
@@ -21,6 +21,9 @@ module.exports = function (grunt) {
 				' * Copyright 2012-<%= grunt.template.today("yyyy") %> <%= pkg.author.name %>\n' +
 				' * Licensed under the <%= pkg.license.type %> license (<%= pkg.license.url %>)\n' +
 				' */\n',
+		cdnLoginFile: grunt.file.exists('FUELUX_MCTHEME_CDN.yml') ? grunt.file.readYAML('FUELUX_MCTHEME_CDN.yml') : undefined,
+		minorReleaseBranch: '1.5.x',
+		majorReleaseBranch: '1.x',
 		pkg: grunt.file.readJSON('package.json'),
 		// Tasks configuration
 
@@ -254,9 +257,76 @@ module.exports = function (grunt) {
 				}
 			}
 		},
+		prompt: {
+			'releaseTasks': {
+				options: {
+					questions: [
+						{
+							config: 'releaseTask',
+							type: 'list',
+							message: 'What would you like to do?',
+							choices: [
+								{
+									value: 'patch',
+									name: 'Patch:  ' + semver.inc(packageVersion, 'patch') + ' Backwards-compatible bug fixes.'
+								},
+								{
+									value: 'minor',
+									name: 'Minor:  ' + semver.inc(packageVersion, 'minor') + ' Add functionality in a backwards-compatible manner.'
+								},
+								{
+									value: 'major',
+									name: 'Major:  ' + semver.inc(packageVersion, 'major') + ' Incompatible API changes.'
+								},
+								{
+									value: 'custom',
+									name: 'Custom: ?.?.? Specify version...'
+								},
+								{
+									value: 'commit',
+									name: 'Stage and commit build files'
+								},
+								{
+									value: 'tag',
+									name: 'Tag current commit for release'
+								},
+								{
+									value: 'pushPatchBranchToOrigin',
+									name: 'Push patch commits to origin\'s minor release branch '
+								},
+								{
+									value: 'pushMinorBranchToOrigin',
+									name: 'Push minor commits to origin\'s major release branch'
+								},
+								{
+									value: 'upload',
+									name: 'Upload dist folder to CDN server'
+								},
+								{
+									value: 'exit',
+									name: 'Exit'
+								}
+							]
+						},
+						{
+							config: 'bump.version',
+							type: 'input',
+							message: 'What specific version would you like',
+							when: function (answers) {
+								return answers['bump.increment'] === 'custom';
+							},
+							validate: function (value) {
+								var valid = semver.valid(value);
+								return valid || 'Must be a valid semver, such as 1.2.3-rc1. See http://semver.org/ for more details.';
+							}
+						}
+					]
+				}
+			}
+		},
 		replace: {
 			readme: {
-				src: ['DETAILS.md', 'README.md'],
+				src: ['README.md'],
 				overwrite: true,// overwrite matched source files
 				replacements: [{
 					from: /fuelux-mctheme\/\d\.\d\.\d/g,
@@ -287,23 +357,119 @@ module.exports = function (grunt) {
 			}
 		},
 		shell: {
-			pullMaster: {
-				command: 'git checkout master && git pull origin master'
+			// Compile release notes while waiting for tests to pass. Needs Ruby gem. 
+			// Install with: gem install github_changelog_generator
+			notes: {
+				command: 'github_changelog_generator --no-author --unreleased-only --compare-link'
 			},
-			pullRelease: {
-				command: 'git checkout 1.x && git pull origin 1.x'
+			mergeLocalMasterAndMinorBranch: {
+				command: function() {
+					var command = [
+						'git checkout master',
+						'git pull origin master',
+						'git checkout ' + grunt.config('majorReleaseBranch'),
+						'git pull origin ' + grunt.config('majorReleaseBranch'), 
+						'git merge master '
+					].join(' && ')
+					grunt.log.write(command);
+					return command;
+				}
+
 			},
-			mergeRelease: {
-				command: 'git merge master'
+			checkoutPatchBranch: {
+				command: function() {
+					var command = [
+						'git checkout ' + grunt.config('minorReleaseBranch'),
+						'git pull origin ' + grunt.config('minorReleaseBranch')
+					].join(' && ')
+					grunt.log.write(command);
+					return command;
+				}
 			},
-			commitRelease: {
-				command: 'git add dist && git add *.md && git add *.json && git commit -m "release <%= pkg.version %>"'
+			addReleaseFiles: {
+				command: 'git add dist README.md bower.json package.json'
 			},
-			tagRelease: {
-				command: 'git tag -a <%= pkg.version %> -m "v<%= pkg.version %>"'
+			commit: {
+				command: function() {
+					var command = [
+						'git commit -m "release ' + grunt.config('pkg.version') + '"'
+					].join(' && ')
+					grunt.log.write(command);
+					return command;
+				}
 			},
-			syncDistWithMaster: {
-				command: 'git checkout master -- dist/'
+			tag: {
+				command: function() {
+					var command = [
+						'git tag -a "' + grunt.config('pkg.version') + '" -m "' + grunt.config('pkg.version') + '"'
+					].join(' && ')
+					grunt.log.write(command);
+					return command;
+				}
+			},
+			pushLocalMinorBranchToOrigin: {
+				command: 'git push origin ' + grunt.config('majorReleaseBranch')
+			},
+			// needs manual update before release freeze
+			pushLocalPatchBranchToOrigin: {
+				command: function() {
+					var command = [
+						'git push origin ' + grunt.config('minorReleaseBranch')
+					].join(' && ')
+					grunt.log.write(command);
+					return command;
+				}
+			},
+			pushTagToOrigin: {
+				command: function() {
+					var command = [
+						'git push origin ' + packageVersion
+					].join(' && ')
+					grunt.log.write(command);
+					return command;
+				}
+			},
+			pushLocalMinorBranchToOriginMaster: {
+				command: function() {
+					var command = [
+						'git push origin ' + grunt.config('majorReleaseBranch') + ':master'
+					].join(' && ')
+					grunt.log.write(command);
+					return command;
+				}
+			},
+			mergeLocalPatchBranchToHead: {
+				command: function() {
+					var command = [
+						'git merge ' + grunt.config('minorReleaseBranch')
+					].join(' && ')
+					grunt.log.write(command);
+					return command;
+				}
+			},
+			// syncs local and origin branches
+			pushLocalMasterToOriginMaster: {
+				command: 'git push origin master'
+			},
+			// syncs local and origin branches
+			pullOriginMasterToLocal: {
+				command: [
+					'git checkout master',
+					'git pull origin master'
+				].join(' && ')
+			},
+			upload: {
+				command: function() {
+					var command = [
+						'mv dist ' + '<%= pkg.version %>',
+						'scp -i ~/.ssh/fuelcdn -r "' + '<%= pkg.version %>' + '"/ ' + 
+						'<%= cdnLoginFile.user %>' + '@' + '<%= cdnLoginFile.server %>' + ':' + '<%= cdnLoginFile.folder %>',
+						'mv "' + '<%= pkg.version %>' + '" dist',
+						'echo "Done uploading files."'
+					].join(' && ')
+					grunt.log.write(command);
+					return command;
+				}
 			}
 		},
 		svgmin: {
@@ -390,14 +556,53 @@ module.exports = function (grunt) {
 	/* -------------
 		RELEASE
 	------------- */
-	// Maintainers: Run prior to a release. 
-	// --minor will create a semver minor release, otherwise a patch release will be created
-	grunt.registerTask('release', 'Build a new version', function () {
+	// Maintainers: Run prior to a release. Includes SauceLabs VM tests.
+	grunt.registerTask('release', 'Select tasks to release a new version', ['prompt:releaseTasks', 'release-tasks']);
+
+	grunt.registerTask('release-tasks', function() {
+		var task = grunt.config('releaseTask');
+
 		grunt.config('banner', '<%= bannerRelease %>');
-		grunt.task.run(['bump-only:' + versionReleaseType, 'dist', 'replace:readme']);
+
+		if (task !== 'exit') {
+
+			if (task === 'releaseNotes') {
+				grunt.task.run(['notes']);
+			}
+			else if(task === 'patch' || task === 'minor' || task === 'major' || task === 'custom') {
+
+				if (grunt.config('releaseTask') === 'patch') {
+					grunt.task.run(['shell:checkoutPatchBranch']);
+				}
+				else if (grunt.config('releaseTask') === 'minor') {
+					grunt.task.run(['shell:mergeLocalMasterAndMinorBranch']);	
+				}
+
+				grunt.task.run(['bump-only:' + grunt.config('releaseTask'), 'replace:readme', 'dist']);
+			}
+			else if(task === 'commit') {
+				grunt.task.run(['shell:addReleaseFiles', 'shell:commit']);
+			}
+			else if(task === 'tag') {
+				grunt.task.run(['shell:tag']);
+			}
+			else if(task === 'pushPatchBranchToOrigin') {
+				grunt.task.run(['shell:pushLocalPatchBranchToOrigin', 'shell:pushTagToOrigin', 'shell:pullOriginMasterToLocal', 
+			'shell:mergeLocalPatchBranchToHead', 'shell:pushLocalMasterToOriginMaster']);
+			}
+			else if(task === 'pushMinorBranchToOrigin') {
+				grunt.task.run(['shell:pushLocalPatchBranchToOrigin', 'shell:pushTagToOrigin', 'shell:pushLocalPatchBranchToOriginMaster', 
+				'shell:pullOriginMasterToLocal']);
+			}
+			else if(task === 'upload') {
+				grunt.task.run(['shell:upload']);
+			}
+
+		}
+
 	});
 
-	grunt.registerTask('gitrelease', ['shell:pullMaster', 'shell:pullRelease', 'shell:mergeRelease', 'release', 'shell:commitRelease', 'shell:tagRelease']);
+	grunt.registerTask('notes', 'Run a ruby gem that will request from Github unreleased pull requests', ['shell:notes']);
 
 	/* -------------
 			SERVE
