@@ -1,5 +1,5 @@
 /*!
- * Marketing Cloud Theme v1.5.3 
+ * Marketing Cloud Theme v1.5.4 
  * Copyright 2015 ExactTarget
  * Licensed under MIT (https://github.com/ExactTarget/fuelux-mctheme/blob/master/COPYING)
  */
@@ -8171,26 +8171,32 @@ a.list-group-item-danger.active:focus {
 .fuelux .wizard .actions .btn-prev:focus {
   color: #33638c;
 }
-.fuelux .wizard .steps {
+.fuelux .wizard > ul.steps,
+.fuelux .wizard > .steps-container > ul.steps {
   background: #f4f5f6;
   background-image: -webkit-linear-gradient(top, #fafafa, #eeeff1);
   background-image: linear-gradient(to bottom, #fafafa, #eeeff1);
   *zoom: 1;
 }
-.fuelux .wizard .steps:before,
-.fuelux .wizard .steps:after {
+.fuelux .wizard > ul.steps:before,
+.fuelux .wizard > .steps-container > ul.steps:before,
+.fuelux .wizard > ul.steps:after,
+.fuelux .wizard > .steps-container > ul.steps:after {
   display: table;
   content: "";
   line-height: 0;
 }
-.fuelux .wizard .steps:after {
+.fuelux .wizard > ul.steps:after,
+.fuelux .wizard > .steps-container > ul.steps:after {
   clear: both;
 }
-.fuelux .wizard .steps li {
+.fuelux .wizard > ul.steps li,
+.fuelux .wizard > .steps-container > ul.steps li {
   background: #f3f4f5;
   box-shadow: 0px 0px 0px 1px #fff inset;
 }
-.fuelux .wizard .steps li:before {
+.fuelux .wizard > ul.steps li:before,
+.fuelux .wizard > .steps-container > ul.steps li:before {
   background: #d4d4d4;
   bottom: -1px;
   content: " ";
@@ -8201,27 +8207,34 @@ a.list-group-item-danger.active:focus {
   width: 5px;
   z-index: 5;
 }
-.fuelux .wizard .steps li.active {
+.fuelux .wizard > ul.steps li.active,
+.fuelux .wizard > .steps-container > ul.steps li.active {
   color: #4e8abe;
 }
-.fuelux .wizard .steps li.active .badge {
+.fuelux .wizard > ul.steps li.active .badge,
+.fuelux .wizard > .steps-container > ul.steps li.active .badge {
   background: #4e8abe;
 }
-.fuelux .wizard .steps li.active .chevron:before {
+.fuelux .wizard > ul.steps li.active .chevron:before,
+.fuelux .wizard > .steps-container > ul.steps li.active .chevron:before {
   border-color: transparent transparent transparent #fff;
 }
-.fuelux .wizard .steps li.active .chevron:after {
+.fuelux .wizard > ul.steps li.active .chevron:after,
+.fuelux .wizard > .steps-container > ul.steps li.active .chevron:after {
   border-color: transparent transparent transparent #f1f6fc;
 }
-.fuelux .wizard .steps li.complete {
+.fuelux .wizard > ul.steps li.complete,
+.fuelux .wizard > .steps-container > ul.steps li.complete {
   color: #5fb21c;
 }
-.fuelux .wizard .steps li.complete .badge {
+.fuelux .wizard > ul.steps li.complete .badge,
+.fuelux .wizard > .steps-container > ul.steps li.complete .badge {
   background: #5fb21c;
   color: #5fb21c;
   position: relative;
 }
-.fuelux .wizard .steps li.complete .badge:before {
+.fuelux .wizard > ul.steps li.complete .badge:before,
+.fuelux .wizard > .steps-container > ul.steps li.complete .badge:before {
   color: #fff;
   content: "\e013";
   display: block;
@@ -8231,23 +8244,29 @@ a.list-group-item-danger.active:focus {
   position: absolute;
   top: 4px;
 }
-.fuelux .wizard .steps li.complete .chevron:before {
+.fuelux .wizard > ul.steps li.complete .chevron:before,
+.fuelux .wizard > .steps-container > ul.steps li.complete .chevron:before {
   border-color: transparent transparent transparent #fff;
 }
-.fuelux .wizard .steps li.complete .chevron:after {
+.fuelux .wizard > ul.steps li.complete .chevron:after,
+.fuelux .wizard > .steps-container > ul.steps li.complete .chevron:after {
   border-color: transparent transparent transparent #f3f4f5;
 }
-.fuelux .wizard .steps li.complete:hover .chevron:after {
+.fuelux .wizard > ul.steps li.complete:hover .chevron:after,
+.fuelux .wizard > .steps-container > ul.steps li.complete:hover .chevron:after {
   border-color: transparent transparent transparent #e7eff8;
 }
-.fuelux .wizard .steps li .badge {
+.fuelux .wizard > ul.steps li .badge,
+.fuelux .wizard > .steps-container > ul.steps li .badge {
   background: #999;
   padding: 3px 6px;
 }
-.fuelux .wizard .steps li .chevron:before {
+.fuelux .wizard > ul.steps li .chevron:before,
+.fuelux .wizard > .steps-container > ul.steps li .chevron:before {
   border-color: transparent transparent transparent #fff;
 }
-.fuelux .wizard .steps li .chevron:after {
+.fuelux .wizard > ul.steps li .chevron:after,
+.fuelux .wizard > .steps-container > ul.steps li .chevron:after {
   border: 24px solid transparent;
   border-left: 14px solid #f3f4f5;
   border-right: 0;
@@ -8257,15 +8276,18 @@ a.list-group-item-danger.active:focus {
   right: 2px;
   top: -24px;
 }
-.fuelux .wizard .steps li .has-secondary-text {
+.fuelux .wizard > ul.steps li .has-secondary-text,
+.fuelux .wizard > .steps-container > ul.steps li .has-secondary-text {
   display: inline-block;
   float: right;
 }
-.fuelux .wizard .steps li .has-secondary-text h4 {
+.fuelux .wizard > ul.steps li .has-secondary-text h4,
+.fuelux .wizard > .steps-container > ul.steps li .has-secondary-text h4 {
   font-size: 14px;
   margin-bottom: -1.25em;
 }
-.fuelux .wizard .steps li .has-secondary-text small {
+.fuelux .wizard > ul.steps li .has-secondary-text small,
+.fuelux .wizard > .steps-container > ul.steps li .has-secondary-text small {
   color: #ababab;
   font-size: 11px;
   line-height: 1em;
