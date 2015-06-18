@@ -2,7 +2,7 @@
   "name": "fuelux-mctheme",
   "title": "Marketing Cloud Theme",
   "version": "1.5.4",
-  "description": "Salesforce ExactTarget Marketing Cloud styling",
+  "description": "Salesforce Marketing Cloud styles",
   "homepage": "https://github.com/ExactTarget/fuelux-mctheme",
   "author": {
     "name": "ExactTarget",
@@ -24,15 +24,15 @@
     "node": ">= 0.8.0"
   },
   "scripts": {
-    "main": "www/server.js",
-    "postinstall": "bower install"
+    "postinstall": "node ./node_modules/bower/bin/bower install",
+    "start": "node www/server.js"
   },
   "dependencies": {
-    "connect": "3.x",
-    "bower": "1.x",
-    "serve-static": "1.x"
+    "fuelux": "3.x"
   },
   "devDependencies": {
+    "bower": "1.x",
+    "connect": "3.x",
     "grunt": "0.x",
     "grunt-banner": "0.x",
     "grunt-bump": "0.x",
@@ -53,6 +53,7 @@
     "grunt-zip": "0.x",
     "load-grunt-tasks": "0.x",
     "semver": "4.x",
+    "serve-static": "1.x",
     "volo": "0.x"
   },
   "keywords": [
@@ -60,7 +61,7 @@
     "fuel ux",
     "bootstrap"
   ],
-  "private": true,
+  "private": false,
   "volo": {
     "baseDir": "lib",
     "url": "https://raw.github.com/ExactTarget/fuelux-mctheme/{version}/dist/fuelux-mctheme.zip",
