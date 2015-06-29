@@ -156,6 +156,8 @@
 
 .fuelux-icon-info, .glyphicon-info { background-image: url('png/info.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
+.fuelux-icon-line, .glyphicon-line { background-image: url('png/line.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
 .fuelux-icon-loader, .glyphicon-loader { background-image: url('png/loader.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
 .fuelux-icon-loader_full, .glyphicon-loader_full { background-image: url('png/loader_full.png'); background-repeat: no-repeat; .fuelux-icon; } 
@@ -211,6 +213,12 @@
 .fuelux-icon-radio-button-hover, .fuelux-icon-radio-button:hover, button:hover > .fuelux-icon-radio-button , .glyphicon-radio-button-hover, .glyphicon-radio-button:hover, button:hover > .glyphicon-radio-button { background-image: url('png/radio-button-hover.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
 .fuelux-icon-radio-button, .glyphicon-radio-button { background-image: url('png/radio-button.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-refresh-disabled-hover, .fuelux-icon-refresh-disabled:hover, button:hover > .fuelux-icon-refresh-disabled , .glyphicon-refresh-disabled-hover, .glyphicon-refresh-disabled:hover, button:hover > .glyphicon-refresh-disabled { background-image: url('png/refresh-disabled-hover.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-refresh-disabled, .glyphicon-refresh-disabled { background-image: url('png/refresh-disabled.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-refresh-hover, .fuelux-icon-refresh:hover, button:hover > .fuelux-icon-refresh -disabled, .glyphicon-refresh-hover, .glyphicon-refresh:hover, button:hover > .glyphicon-refresh -disabled { background-image: url('png/refresh-hover-disabled.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
 .fuelux-icon-refresh-hover, .fuelux-icon-refresh:hover, button:hover > .fuelux-icon-refresh , .glyphicon-refresh-hover, .glyphicon-refresh:hover, button:hover > .glyphicon-refresh { background-image: url('png/refresh-hover.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
