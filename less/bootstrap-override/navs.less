@@ -16,7 +16,7 @@
 		> a {
 			color: @brand-primary-medium;
 			line-height: 1;
-			border: 1px solid #ddd;
+			border: 1px solid @gray87;
 			background-color: @gray96;
 			margin-left: 0;
 			margin-right: 3px;
@@ -24,7 +24,7 @@
 
 			&:hover,
 			&:focus {
-				border-color: #ddd;
+				border-color: @gray87;
 			}
 		}
 		&.active > a {
@@ -32,22 +32,22 @@
 			&:hover,
 			&:focus {
 				color: @gray33;
-				#gradient > .gradient-bg(#eef9fe, #fff);
+				#gradient > .gradient-bg(#eef9fe, @true-white);
 				border-bottom-color: @true-white;
-				.box-shadow(inset 1px 1px 1px #fff);
+				.box-shadow(inset 1px 1px 1px @true-white);
 			}
 		}
 		&.disabled > a {
-			color: #bbb;
+			color: @gray74;
 			background-color: #f5f5f5;
 			border-color:  @gray93;
-			border-bottom-color: #ddd;
+			border-bottom-color: @gray87;
 			&:hover,
 			&:focus{
-				color: #bbb;
+				color: @gray74;
 				background-color: #f5f5f5;
 				border-color:  @gray93;
-				border-bottom-color: #ddd;
+				border-bottom-color: @gray87;
 				text-decoration: none;
 				cursor: not-allowed;
 			}
@@ -58,7 +58,7 @@
 		&:hover,
 		&:focus {
 			background-color: #edf8fd;
-			border-color: #ddd;
+			border-color: @gray87;
 		}
 	}
 }
@@ -69,7 +69,7 @@
 	padding: 10px 0;
 	display: inline-block;
 	border-bottom: 0;
-	border-right: 1px solid #ddd;
+	border-right: 1px solid @gray87;
 	> li {
 		width: 80px;
 		float: none;
@@ -90,9 +90,9 @@
 				&,
 				&:hover,
 				&:focus {
-					#gradient > .gradient-vertical-bg(#eef9fe, #fff);
+					#gradient > .gradient-vertical-bg(#eef9fe, @true-white);
 					border-right: 0;
-					border-bottom-color: #ddd;
+					border-bottom-color: @gray87;
 				}
 			}
 		}

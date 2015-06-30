@@ -1,5 +1,5 @@
 .fuelux .spinbox {
-	border: solid 1px #bbbbbb;
+	border: solid 1px @gray74;
 	border-radius: 4px;
 	background: @true-white;
 
@@ -18,11 +18,11 @@
 		button {
 			&:hover {
 				&.spinbox-up {
-					background: linear-gradient(#c1c1c1, #ddd);
+					background: linear-gradient(@gray75, @gray87);
 				}
 
 				&.spinbox-down {
-					background: linear-gradient(#ddd, #c1c1c1);
+					background: linear-gradient(@gray87, @gray75);
 				}
 			}
 
@@ -64,20 +64,20 @@
 		right: 0px;
 
 		&.spinbox-up {
-			background: linear-gradient(#fcfcfc, #e4e4e4);
+			background: linear-gradient(@gray98, @gray87);
 		}
 
 		&.spinbox-down {
-			background: linear-gradient(#fcfcfc, #e4e4e4);
+			background: linear-gradient(@gray98, @gray87);
 		}
 	}
 
 	&.disabled {
-		border: 1px solid #cfcfcf;
+		border: 1px solid @gray80;
 
 		.form-control {
 			background: @disabled-background;
-			color: #cfcfcf;
+			color: @gray80;
 		}
 	}
 

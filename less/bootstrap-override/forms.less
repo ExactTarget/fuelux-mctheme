@@ -142,12 +142,12 @@ output {
 
 	// Select box gradient background
 	&.select-bg{
-		background: -moz-linear-gradient(#FEFEFE,#E0E0E0);
-		background: -webkit-linear-gradient(#FEFEFE,#E0E0E0);
-		background: -o-linear-gradient(#FEFEFE,#E0E0E0);
-		background: linear-gradient(#FEFEFE,#E0E0E0);
-		border: 1px solid #bbb;
-		.box-shadow(0 1px 1px rgba(0,0,0,.05));
+		background: -moz-linear-gradient(@gray99,@gray87);
+		background: -webkit-linear-gradient(@gray99,@gray87);
+		background: -o-linear-gradient(@gray99,@gray87);
+		background: linear-gradient(@gray99,@gray87);
+		border: 1px solid @gray74;
+		.box-shadow(0 1px 1px fade(@true-black, 95%));
 	}
 
 
@@ -182,7 +182,7 @@ output {
 	color: @gray33;
 	text-align: center;
 	background-color: @gray93;
-	border: 1px solid #ccc;
+	border: 1px solid @gray80;
 	border-radius: 4px;
 }
 

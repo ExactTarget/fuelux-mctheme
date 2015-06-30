@@ -303,11 +303,11 @@
 //Panels
 //
 //** Border color for elements within panels
-@panel-inner-border:          #ddd;
+@panel-inner-border:          @gray87;
 @panel-footer-bg:             #f0f2f3;
 
 @panel-default-text:          @gray13;
-@panel-default-border:        #ddd;
+@panel-default-border:        @gray87;
 @panel-default-heading-bg:    @gray96;
 
 @panel-primary-text:          @true-white;
@@ -333,20 +333,20 @@
 //Wells
 @well-background: @gray96;
 @well-border-color: @gray80;
-@well-box-shadow: 0 0 0 1px #fff inset;
+@well-box-shadow: 0 0 0 1px @true-white inset;
 
 // Navbar gradient
 
 .navbar-active-gradient() {
-	background: #ffffff;
-	background: -moz-linear-gradient(top, #ffffff 0%, #dce6ee 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #dce6ee));
-	background: -webkit-linear-gradient(top, #ffffff 0%, #dce6ee 100%);
-	background: -o-linear-gradient(top, #ffffff 0%, #dce6ee 100%);
-	background: -ms-linear-gradient(top, #ffffff 0%, #dce6ee 100%);
-	background: linear-gradient(to bottom, #ffffff 0%, #dce6ee 100%);
+	background: @true-white;
+	background: -moz-linear-gradient(top, @true-white 0%, #dce6ee 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, @true-white), color-stop(100%, #dce6ee));
+	background: -webkit-linear-gradient(top, @true-white 0%, #dce6ee 100%);
+	background: -o-linear-gradient(top, @true-white 0%, #dce6ee 100%);
+	background: -ms-linear-gradient(top, @true-white 0%, #dce6ee 100%);
+	background: linear-gradient(to bottom, @true-white 0%, #dce6ee 100%);
 	border: 1px solid #b5c6d2;
 	border-top: 0;
 	border-radius: 0 0 5px 5px;
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dce6ee', GradientType=0);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@true-white', endColorstr='#dce6ee', GradientType=0);
 }
