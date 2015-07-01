@@ -147,7 +147,7 @@ output {
 		background: -o-linear-gradient(@gray99,@gray87);
 		background: linear-gradient(@gray99,@gray87);
 		border: 1px solid @gray74;
-		.box-shadow(0 1px 1px fade(@true-black, 95%));
+		.box-shadow(0 1px 1px fade(@true-black, 5%));
 	}
 
 
@@ -500,7 +500,7 @@ input[type="checkbox"] {
 		white-space: nowrap;
 		height: 21px; // Height: 21px and padding: 6px 5px 7px 5px are conflicting.
 		line-height: 21px; //in order to make the padding right
-		background: linear-gradient(#EE6767,#E64141);
+		background: linear-gradient(@brand-danger-medium,@brand-danger-dark);
 		position: absolute;
 		-moz-border-radius:    3px;
 		-webkit-border-radius: 3px;
@@ -514,7 +514,7 @@ input[type="checkbox"] {
 		width: 0;
 		height: 0;
 		border-top: 3px solid transparent;
-		border-right: 3px solid #ee5457;
+		border-right: 3px solid @brand-danger-medium;
 		border-bottom: 3px solid transparent;
 		}
 	}

@@ -1,12 +1,12 @@
 //Container
 //
 .progress {
-	#gradient > .gradient-bg(#f5f5f5, #dbdbdb);
+	#gradient > .gradient-bg(@gray96, @gray87);
 	height: @progress-bar-height;
 	border-radius: @progress-bar-height;
 	border: 1px solid @gray87;
 	border-bottom-color: @gray74;
-	.box-shadow(0 1px 1px rgba(0,0,0,0.15));
+	.box-shadow(0 1px 1px fade(@true-black, 15%));
 	position: relative;
 	margin-bottom: 0;
 
@@ -18,10 +18,10 @@
 
 .progress-highlight {
 	//background-color: transparent;
-	background: -webkit-linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
-	background:    -moz-linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
-	background:      -o-linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
-	background:         linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+	background: -webkit-linear-gradient(fade(@true-white, 80%), @true-white);
+	background:    -moz-linear-gradient(fade(@true-white, 80%), @true-white);
+	background:      -o-linear-gradient(fade(@true-white, 80%), @true-white);
+	background:         linear-gradient(fade(@true-white, 80%), @true-white);
 	border-radius: 5px;
 	left: 0;
 	top: 0;
@@ -34,7 +34,7 @@
 //
 .progress-bar {
 	#gradient > .gradient-bg(@blue-sky, @brand-primary-medium);
-	.box-shadow(0 0 0 rgba(0,0,0,0.15));
+	.box-shadow(0 0 0 fade(@true-black, 15%));
 	//texts on progress bar
 	font-size: 9px;
 	line-height: 11px;

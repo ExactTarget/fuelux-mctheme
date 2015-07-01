@@ -5,7 +5,7 @@
 	}
 
 	.modal-content {
-		box-shadow: 0 3px 10px rgba(0, 0, 0, .4);
+		box-shadow: 0 3px 10px fade(@true-black, 40%);
 	}
 
 	.modal-title {
@@ -18,14 +18,14 @@
 	}
 
 	.modal-header {
-		background: #eaf0f3;
+		background: @blue-smoke;
 		background: @element-title-bg;
 		border-radius: 5px 5px 0 0;
 		border-bottom-color: @gray93;
 	}
 
-@modal-bg-gradient-dark:  #e7edf0;
-@modal-bg-gradient-light: @true-white;
+	@modal-bg-gradient-dark:  @blue-smoke;
+	@modal-bg-gradient-light: @true-white;
 
 	.modal-footer {
 		background: -webkit-linear-gradient(@modal-bg-gradient-dark, @modal-bg-gradient-light);
@@ -37,7 +37,7 @@
 	}
 
 	.modal-body {
-		box-shadow: inset 0 7px 7px -9px #AFB0B2;
+		box-shadow: inset 0 7px 7px -9px @gray67;
 	}
 
 	.modal-footer .btn-default[data-dismiss=modal] {

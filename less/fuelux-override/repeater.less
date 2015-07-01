@@ -49,32 +49,13 @@
 
 
 		.repeater-next, .repeater-prev {
-			background: @gray96;
-			background-image: -webkit-linear-gradient(top, #feffff, #e0e9f0);
-			background-image: linear-gradient(to bottom, #feffff, #e0e9f0);
-			border: 1px solid #b5c6d2;	// light blue, a gray disappears on a gray background
+			.btn-default;
+			border: 1px solid @gray87;
+
 			height: 17px;
 			position: relative;
 			top: -1px;
 			width: 17px;
-
-			&:hover {
-				background: #ddecf7;
-				background-image: -webkit-linear-gradient(top, #e8f6ff, #cee1ee);
-				background-image: linear-gradient(to bottom, #e8f6ff, #cee1ee);
-
-				.repeater-next {
-					.glyphicon {
-						border-color: transparent transparent transparent #6699bb;
-					}
-				}
-
-				.repeater-prev {
-					.glyphicon {
-						border-color: transparent #6699bb transparent transparent;
-					}
-				}
-			}
 
 			.glyphicon {
 				display: block;
@@ -93,7 +74,7 @@
 
 		.repeater-next {
 			.glyphicon {
-				border-color: transparent transparent transparent #6799bb;
+				border-color: transparent transparent transparent @brand-primary-medium;
 				border-style: solid none solid solid;
 				border-width: 4px medium 4px 4px;
 			}
@@ -101,7 +82,7 @@
 
 		.repeater-prev {
 			.glyphicon {
-				border-color: transparent #6799bb transparent transparent;
+				border-color: transparent @brand-primary-medium transparent transparent;
 				border-style: solid solid solid none;
 				border-width: 4px 4px 4px medium;
 				left: 2px;

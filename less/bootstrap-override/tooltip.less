@@ -1,7 +1,7 @@
 .tooltip {
 	border-radius: 4px;
-	background-color: #FCFBDA;
-	background: linear-gradient(#f2f0b9, #fcfbda);
+	background-color: @khaki-dark;
+	background: linear-gradient(@khaki-dark, @khaki-light);
 	box-shadow: 0 3px 10px rgba(0, 0, 0, .4);
 	line-height: 1.2;
 	padding: 0;
@@ -12,40 +12,40 @@
 	}
 
 	&.left {
-		#gradient > .horizontal(#f2f0b9, #fcfbda);
+		#gradient > .horizontal(@khaki-dark, @khaki-light);
 
 		.tooltip-arrow {
-			border-left-color: #fcfbda;
+			border-left-color: @khaki-light;
 			right: -5px;
 		}
 	}
 
 	&.right {
-		#gradient > .horizontal(#fcfbda, #f2f0b9);
+		#gradient > .horizontal(@khaki-light, @khaki-dark);
 
 		.tooltip-arrow {
-			border-right-color: #fcfbda;
+			border-right-color: @khaki-light;
 			left: -5px;
 		}
 	}
 
 	&.top {
-		#gradient > .vertical(#f2f0b9, #fcfbda);
+		#gradient > .vertical(@khaki-dark, @khaki-light);
 		padding: 0;
 
 		.tooltip-arrow {
-			border-top-color: #fcfbda;
+			border-top-color: @khaki-light;
 			bottom: -5px;
 		}
 	}
 
 	&.bottom {
-		box-shadow: 0 -3px 10px rgba(0, 0, 0, .4);
-		#gradient > .vertical(#fcfbda, #f2f0b9);
+		box-shadow: 0 -3px 10px fade(@true-black, 40%);
+		#gradient > .vertical(@khaki-light, @khaki-dark);
 		padding: 0;
 
 		.tooltip-arrow {
-			border-bottom-color: #fcfbda;
+			border-bottom-color: @khaki-light;
 			top: -5px;
 		}
 	}
@@ -53,37 +53,47 @@
 }
 
 .has-error {
-	+ .tooltip, .tooltip{
-		background: linear-gradient(#EE6767,#E64141);
+	+ .tooltip, .tooltip {
+		background: linear-gradient(@brand-danger-medium, darken(@brand-danger-medium, 8%));
 
 		.tooltip-inner{
 			color: @true-white;
 			font-size: 11px;
 		}
 
+		&.left {
+			#gradient > .horizontal(darken(@brand-danger-medium, 8%), @brand-danger-medium);
 
-		&.top {
 			.tooltip-arrow {
-				border-top-color: #EE5457;
+				border-left-color: @brand-danger-medium;
 			}
 		}
 
 		&.right {
+			#gradient > .horizontal(@brand-danger-medium, darken(@brand-danger-medium, 8%));
+
 			.tooltip-arrow {
-				border-right-color: #EE5457;
+				border-right-color: @brand-danger-medium;
+			}
+		}
+
+		&.top {
+			#gradient > .vertical(darken(@brand-danger-medium, 8%), @brand-danger-medium);
+
+			.tooltip-arrow {
+				border-top-color: @brand-danger-medium;
 			}
 		}
 
 		&.bottom {
+			#gradient > .vertical(@brand-danger-medium, darken(@brand-danger-medium, 8%));
+
 			.tooltip-arrow {
-				border-bottom-color: #EE5457;
+				border-bottom-color: @brand-danger-medium;
 			}
 		}
 
-		&.left {
-			.tooltip-arrow {
-				border-left-color: #EE5457;
-			}
-		}
+
+	
 	}
 }

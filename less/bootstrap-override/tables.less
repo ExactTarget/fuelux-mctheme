@@ -5,7 +5,7 @@
 //Additional grid header with round corners
 
 .title-table-bg {
-	background-color: #f0f2f3;
+	background-color: @blue-smoke;
 	line-height: @line-height-base;
 	padding: 10px;
 	border-top-left-radius: 5px;
@@ -51,11 +51,11 @@ th {
 	}
 
 	>thead > tr {
-		.box-shadow(0 1px 2px rgba(0,0,0,.08)); //shadow under table header, only works in Firefox
+		.box-shadow(0 1px 2px fade(@true-black, 8%)); //shadow under table header, only works in Firefox
 	}
 
-	@th-bg-gradient-dark:  #ebedf0;
-	@th-bg-gradient-light: #f8f9f9;
+	@th-bg-gradient-dark:  @gray93;
+	@th-bg-gradient-light: @gray98;
 	// Bottom align, background for column headings
 	> thead > tr > th {
 		background: -webkit-linear-gradient(@th-bg-gradient-dark, @th-bg-gradient-light);

@@ -7,7 +7,7 @@
 
 			&.selected {
 				&:focus {
-					outline: 1px dotted #66afe9;
+					outline: 1px dotted @cornflower-blue;
 				}
 
 				&:hover {
@@ -28,8 +28,8 @@
 
 			th {
 				background-color: @gray96;
-				background-image: -webkit-linear-gradient(top, #f0f2f4, #f8f9f9);
-				background-image: linear-gradient(to bottom, #f0f2f4, #f8f9f9);
+				background-image: -webkit-linear-gradient(top, @gray96, @gray98);
+				background-image: linear-gradient(to bottom, @gray96, @gray98);
 				border-left: 1px solid transparent;
 				border-right: none;
 				.column-header();
@@ -45,9 +45,9 @@
 
 				&.sortable {
 					&:hover {
-						background: #e1eaed;
-						background-image: -webkit-linear-gradient(top, #deedf4, #e4eef3);
-						background-image: linear-gradient(to bottom, #deedf4, #e4eef3);
+						background: @brand-primary-light;
+						background-image: -webkit-linear-gradient(top, @brand-primary-light, @blue-smoke);
+						background-image: linear-gradient(to bottom, @brand-primary-light, @blue-smoke);
 					}
 
 					.glyphicon {
@@ -63,8 +63,8 @@
 
 					&.sorted, &.sorted:hover {
 						background: @blue-smoke;
-						background-image: -webkit-linear-gradient(top, #deedf4, #e4eef3);
-						background-image: linear-gradient(to bottom, #deedf4, #e4eef3);
+						background-image: -webkit-linear-gradient(top, @brand-primary-light, @blue-smoke);
+						background-image: linear-gradient(to bottom, @brand-primary-light, @blue-smoke);
 
 						.glyphicon.glyphicon-chevron {
 							&-down {
@@ -83,9 +83,9 @@
 				}
 
 				.repeater-list-heading {
-					background: #f4f6f7;
-					background-image: -webkit-linear-gradient(top, #f0f2f4, #f8f9f9);
-					background-image: linear-gradient(to bottom, #f0f2f4, #f8f9f9);
+					background: @gray96;
+					background-image: -webkit-linear-gradient(top, @gray96, @gray98);
+					background-image: linear-gradient(to bottom, @gray96, @gray98);
 					border-left: 0;
 					border-right: none;
 					padding-left: 10px;
@@ -97,9 +97,9 @@
 
 					&.sortable {
 						&:hover {
-							background: #e1eaed;
-							background-image: -webkit-linear-gradient(top, #deedf4, #e4eef3);
-							background-image: linear-gradient(to bottom, #deedf4, #e4eef3);
+							background: @brand-primary-light;
+							background-image: -webkit-linear-gradient(top, @brand-primary-light, @blue-smoke);
+							background-image: linear-gradient(to bottom, @brand-primary-light, @blue-smoke);
 						}
 
 						.glyphicon {
@@ -115,21 +115,21 @@
 					}
 
 					&.sorted, &.sorted:hover {
-						background: #d6e2e6;
-						background-image: -webkit-linear-gradient(top, #deedf4, #e4eef3);
-						background-image: linear-gradient(to bottom, #deedf4, #e4eef3);
+						background: @brand-primary-light;
+						background-image: -webkit-linear-gradient(top, @brand-primary-light, @blue-smoke);
+						background-image: linear-gradient(to bottom, @brand-primary-light, @blue-smoke);
 						border-right:  1px solid @gray80;
 
 						.glyphicon.glyphicon-chevron {
 							&-down {
 								border-width: 5px 5px 0 5px;
-								border-color: #45514f transparent transparent transparent;
+								border-color: @gray27 transparent transparent transparent;
 								border-style: solid;
 							}
 
 							&-up {
 								border-width: 0 5px 5px 5px;
-								border-color: transparent transparent #45514f transparent;
+								border-color: transparent transparent @gray27 transparent;
 								border-style: solid;
 							}
 						}
@@ -146,7 +146,7 @@
 			}
 
 			&:focus {
-				outline: 1px dotted #66afe9;
+				outline: 1px dotted @cornflower-blue;
 			}
 		}
 	}

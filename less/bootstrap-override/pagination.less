@@ -6,7 +6,7 @@
 	width: 0;
 	border-top: 4px solid transparent;
 	border-bottom: 4px solid transparent;
-	border-right: 4px solid #5f97b7;
+	border-right: 4px solid @cadet-blue;
 }
 .pagination-next{
 	display: block;
@@ -14,19 +14,16 @@
 	width: 0;
 	border-top: 4px solid transparent;
 	border-bottom: 4px solid transparent;
-	border-left: 4px solid #5f97b7;
+	border-left: 4px solid @cadet-blue;
 }
 
 //previous and next button
 //
 .pagination-btn {
-	#gradient > .gradient-bg(@true-white, #DAE5ED);
-	.box-shadow(inset 0 0 2px rgba(255,255,255,0.75));
-	border: 1px solid #b5c6d2;
-	border-radius: 3px;
-	&:active {
-		#gradient > .gradient-bg(@true-white, #DAE5ED);
-	}
+	.btn-default;
+	box-shadow: none;
+	border: 1px solid @gray87;
+
 	//to make arrow in the center
 	.pagination-previous,
 	.pagination-next {
@@ -40,11 +37,11 @@
 			height: 21px;
 			line-height: 1;
 			padding: 5px 10px;
-			color: #5f97b7;
+			color: @cadet-blue;
 			&:hover,
 			&:focus {
-				color: #5f97b7;
-				background-color: #ddeef4;
+				color: @cadet-blue;
+				background-color: @brand-primary-light;
 			}
 
 			//adjust arrow position
@@ -78,7 +75,7 @@
 
 		&.disabled > a {
 			&.pagination-btn{
-				#gradient > .gradient-bg(@true-white, #e3e8eb);
+				#gradient > .gradient-bg(@true-white, @blue-smoke);
 				.pagination-previous {
 					border-right-color: @gray74;
 				}
