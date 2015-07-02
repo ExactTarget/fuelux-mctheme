@@ -1,7 +1,7 @@
 {
   "name": "fuelux-mctheme",
   "title": "Marketing Cloud Theme",
-  "version": "1.5.2",
+  "version": "1.5.4",
   "description": "Salesforce ExactTarget Marketing Cloud styling",
   "homepage": "https://github.com/ExactTarget/fuelux-mctheme",
   "author": {
@@ -45,12 +45,14 @@
     "grunt-contrib-watch": "0.x",
     "grunt-curl": "2.x",
     "grunt-grunticon": "2.0.0-beta.5",
+    "grunt-prompt": "1.x",
     "grunt-shell": "1.x",
     "grunt-string-replace": "1.x",
     "grunt-svgmin": "2.x",
     "grunt-text-replace": "0.x",
     "grunt-zip": "0.x",
     "load-grunt-tasks": "0.x",
+    "semver": "4.x",
     "volo": "0.x"
   },
   "keywords": [
