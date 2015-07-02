@@ -144,19 +144,19 @@
 			padding: 1px 5px;
 			margin-right: 5px;
 			border-radius: 100%;
-			#gradient > .gradient-bg(@brand-primary-medium, @cornflower-blue);
+			#gradient > .gradient-bg(@brand-primary-medium, @blue-cornflower);
 		}
 
 		&.hover,
 		&:hover{
 			&:before{
-				#gradient > .gradient-bg(lighten(@brand-primary-medium, 5%), lighten(@cornflower-blue, 5%));
+				#gradient > .gradient-bg(lighten(@brand-primary-medium, 5%), lighten(@blue-cornflower, 5%));
 			}
 		}
 
 		&:active,&.active,&:focus{
 			&:before{
-				#gradient > .gradient-bg(@cadet-blue, lighten(@cornflower-blue, 5%));
+				#gradient > .gradient-bg(@blue-cadet, lighten(@blue-cornflower, 5%));
 				//.box-shadow(0 -2px 2px rgba(0,0,0,.3) inset)
 			}
 		}
