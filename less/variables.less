@@ -72,12 +72,12 @@
 @brand-success-light:        @green-mint;
 
 // orange
-@carrot-orange:              #f7841d;
+@orange-carrot:              #f7841d;
 @orange-apricot:             #FFB55E;
 @orange-peach:               #FFF1E1;
 @brown-goldenrod:            #986000;	// new warning orange-brown
 
-@brand-warning-dark:         @carrot-orange;
+@brand-warning-dark:         @orange-carrot;
 @brand-warning-medium:       @orange-apricot;
 @brand-warning-light:        @orange-peach;
 
@@ -87,13 +87,13 @@
 @red-indian:                 #e64141;
 @red-firetruck:              #e00000; // new danger red
 @red-salmon:                 #EE6767;
-@cotton-candy-pink:          #FCECED;
+@pink-cotton-candy:          #FCECED;
 
 @text-danger: @red-firetruck;
 
 @brand-danger-dark:          @red-indian;
 @brand-danger-medium:        @red-salmon;
-@brand-danger-light:         @cotton-candy-pink;
+@brand-danger-light:         @pink-cotton-candy;
 
 // Tooltips
 @khaki-dark:                 #f2f0b9;
@@ -286,37 +286,25 @@
 
 @btn-default-color:              @blue-steel;
 @btn-default-bg-start:           @true-white;
-@btn-default-bg-end:             #DAE5ED;
-@btn-default-bg-hover-start:     #F2F9FF;
-@btn-default-bg-hover-end:       #C6DDEE;
-@btn-default-bg-press-start:     #D5E4EB;
-@btn-default-bg-press-end:       #DEEAF6;
+@btn-default-bg-end:             @blue-slate;
+@btn-default-bg-hover-start:     @blue-smoke;
+@btn-default-bg-hover-end:       @blue-slate;
+@btn-default-bg-press-start:     @blue-smoke;
+@btn-default-bg-press-end:       @blue-slate;
 @btn-default-bg-disabled-start:  @true-white;
-@btn-default-bg-disabled-end:    #DAE5ED;
+@btn-default-bg-disabled-end:    @blue-slate;
 @btn-default-border:             @gray67;
 
 @btn-primary-color:              @true-white;
-@btn-primary-bg-start:           #7FB9EC;
+@btn-primary-bg-start:           @blue-cornflower;
 @btn-primary-bg-end:             @blue-steel;
-@btn-primary-bg-hover-start:     #9ACCF7;
-@btn-primary-bg-hover-end:       #669ECF;
+@btn-primary-bg-hover-start:     lighten(@blue-cornflower, 5%);
+@btn-primary-bg-hover-end:       lighten(@blue-steel, 5%);
 @btn-primary-bg-press-start:     @blue-steel;
-@btn-primary-bg-press-end:       #5793C7;
-@btn-primary-bg-disabled-start:  #7FB9EF;
+@btn-primary-bg-press-end:       darken(@blue-steel, 10%);
+@btn-primary-bg-disabled-start:  @blue-cornflower;
 @btn-primary-bg-disabled-end:    @blue-steel;
 @btn-primary-border:             transparent;
-
-@btn-secondary-color:              @blue-steel;
-@btn-secondary-bg-start:           @true-white;
-@btn-secondary-bg-end:             #DAE5ED;
-@btn-secondary-bg-hover-start:     #F2F9FF;
-@btn-secondary-bg-hover-end:       #C6DDEE;
-@btn-secondary-bg-press-start:     #D5E4EB;
-@btn-secondary-bg-press-end:       #DEEAF6;
-@btn-secondary-bg-disabled-start:  @true-white;
-@btn-secondary-bg-disabled-end:    #DAE5ED;
-@btn-secondary-border:             #B5C6D2;
-@btn-secondary-active-color:       #4674A3;
 
 @btn-success-color:              @brand-success-light;
 @btn-success-bg:                 @brand-success-dark;
@@ -329,7 +317,6 @@
 
 @btn-danger-color:               @true-white;
 @btn-danger-bg:                  @brand-danger-dark;
-
 
 @btn-link-disabled-color:        @gray47;
 
@@ -491,13 +478,13 @@
 
 //** Default progress bar color
 @progress-bar-bg-dark:          @blue-cornflower;
-@progress-bar-bg-light:         #e9f4fb;
+@progress-bar-bg-light:         @blue-smoke;
 //** Success progress bar color
-@progress-bar-success-bg-dark:  #66b762;
-@progress-bar-success-bg-light: #ddedd5;
+@progress-bar-success-bg-dark:  @green-olive;
+@progress-bar-success-bg-light: @green-mint;
 //** Warning progress bar color
-@progress-bar-warning-bg-dark:  #fc8441;
-@progress-bar-warning-bg-light: #fde7d9;
+@progress-bar-warning-bg-dark:  @orange-apricot;
+@progress-bar-warning-bg-light: @orange-peach;
 //** Danger progress bar color
 @progress-bar-danger-bg-dark:   @brand-danger-dark;
 @progress-bar-danger-bg-light:  @brand-danger-light;
@@ -509,7 +496,7 @@
 //
 //** Border color for elements within panels
 @panel-inner-border:          @gray87;
-@panel-footer-bg:             #f0f2f3;
+@panel-footer-bg:             @gray96;
 
 @panel-default-text:          @gray13;
 @panel-default-border:        @gray87;
