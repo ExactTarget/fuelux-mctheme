@@ -1,8 +1,8 @@
 .tooltip {
 	border-radius: 4px;
-	background-color: @khaki-dark;
-	background: linear-gradient(@khaki-dark, @khaki-light);
-	box-shadow: 0 3px 10px rgba(0, 0, 0, .4);
+	background-color: @khaki-medium;
+	background: linear-gradient(@khaki-medium, @khaki-light);
+	box-shadow: 0 3px 10px fade(@true-black, 40%);
 	line-height: 1.2;
 	padding: 0;
 
@@ -12,7 +12,7 @@
 	}
 
 	&.left {
-		#gradient > .horizontal(@khaki-dark, @khaki-light);
+		#gradient > .horizontal(@khaki-medium, @khaki-light);
 
 		.tooltip-arrow {
 			border-left-color: @khaki-light;
@@ -21,7 +21,7 @@
 	}
 
 	&.right {
-		#gradient > .horizontal(@khaki-light, @khaki-dark);
+		#gradient > .horizontal(@khaki-light, @khaki-medium);
 
 		.tooltip-arrow {
 			border-right-color: @khaki-light;
@@ -30,7 +30,7 @@
 	}
 
 	&.top {
-		#gradient > .vertical(@khaki-dark, @khaki-light);
+		#gradient > .vertical(@khaki-medium, @khaki-light);
 		padding: 0;
 
 		.tooltip-arrow {
@@ -41,7 +41,7 @@
 
 	&.bottom {
 		box-shadow: 0 -3px 10px fade(@true-black, 40%);
-		#gradient > .vertical(@khaki-light, @khaki-dark);
+		#gradient > .vertical(@khaki-light, @khaki-medium);
 		padding: 0;
 
 		.tooltip-arrow {
