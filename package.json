@@ -52,7 +52,7 @@
     "grunt-text-replace": "0.x",
     "grunt-zip": "0.x",
     "load-grunt-tasks": "0.x",
-    "semver": "4.x",
+    "semver": "5.x",
     "serve-static": "1.x",
     "volo": "0.x"
   },
