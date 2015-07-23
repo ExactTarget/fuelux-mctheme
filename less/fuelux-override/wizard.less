@@ -1,7 +1,12 @@
 .fuelux .wizard {
 	position: relative;
-	border: 1px solid @gray87;
 	background: @gray96;
+	border: 1px solid @gray87;
+
+	&.no-border {
+		border-radius: 0;
+		border: 0;
+	}
 
 	.actions {
 		background-color: @gray96;
@@ -26,11 +31,15 @@
 			&:focus {
 				color: @link-hover-color;
 			}
+			&[disabled] {
+				visibility: hidden;
+			}
 		}
 	}
 
 	.step-content {
-		border-top-color: @gray87;
+		padding: 10px 15px;
+		background-color: @true-white;
 	}
 
 	> ul.steps, > .steps-container > ul.steps {
