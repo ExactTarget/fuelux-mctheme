@@ -38,9 +38,9 @@ module.exports = function (grunt) {
 				},
 
 				// we have to go through and massage the .less file that gruntion makes
-				// 
+				//
 				// as it is created it only supports .fuelux-icon- prefixen, and we need it to support .glyphicon- also, so that the theme can override bootstrap and fuelux fefaults
-				// 
+				//
 				options: {
 					replacements: [{
 						// so, first we add .glyphicon as a prefix in addition to .fuelux-icon
@@ -50,9 +50,9 @@ module.exports = function (grunt) {
 
 						, {
 							// we need to temporarily change -checked-hover-active into something else that we will tweek later.
-							// 
+							//
 							// if we were to do this replacement "for real" right now,there are replacements soon that would ruin it (same if reversed)
-							// 
+							//
 							// so, we replace it with TOBECHECKEDHOVERACTIVE and then the replacements looking for -checked or -hover or -active will leave it alone.
 							pattern: /(\.-?[_a-zA-Z]+[_a-zA-Z0-9-]*)-checked-hover-active\s*/g,
 							replacement: '$1-TOBECHECKEDHOVERACTIVE '
@@ -60,28 +60,28 @@ module.exports = function (grunt) {
 
 						, {
 							// we need to temporarily change -active-hover into something else that we will tweek later.
-							// 
+							//
 							// if we were to do this replacement "for real" right now,there are replacements soon that would ruin it (same if reversed)
-							// 
+							//
 							// so, we replace it with TOBEACTIVEHOVER and then the replacements looking for -hover or -active will leave it alone.
 							pattern: /(\.-?[_a-zA-Z]+[_a-zA-Z0-9-]*)-active-hover\s*/g,
 							replacement: '$1-TOBEACTIVEHOVER '
 						}
 
 						, {
-							// Replace (pattern) dash hover with (itself), (pattern):hover, 
+							// Replace (pattern) dash hover with (itself), (pattern):hover,
 							// and (itself as a direct decendant of a button that is being hovered)
-							// 
-							// The first one means that, say, .fuelux-icon-checkbox-hover as a 
+							//
+							// The first one means that, say, .fuelux-icon-checkbox-hover as a
 							// classname will render the proper icon...
-							// 
+							//
 							// ...but so will .fuelux-icon-checkbox:hover ...
-							// 
-							// ...which gets us *automatic hover states for all icons which follow 
+							//
+							// ...which gets us *automatic hover states for all icons which follow
 							// the proper naming convention*.
-							// 
-							// The last one tells the icons to show the hover state if they are 
-							// inside a button that is itself being hovered. Search is a good 
+							//
+							// The last one tells the icons to show the hover state if they are
+							// inside a button that is itself being hovered. Search is a good
 							// example of where this happens.
 							pattern: /(\.-?[_a-zA-Z]+[_a-zA-Z0-9-]*)-hover\s*/g,
 							replacement: '$1-hover, $1:hover, button:hover > $1 '
@@ -101,7 +101,7 @@ module.exports = function (grunt) {
 
 
 						, {
-							// Here we go ahead and safely affect the change on TOBEACTIVEHOVER, now that 
+							// Here we go ahead and safely affect the change on TOBEACTIVEHOVER, now that
 							// the other replacements have happened.
 							pattern: /(\.-?[_a-zA-Z]+[_a-zA-Z0-9-]*)-TOBEACTIVEHOVER\s*/g,
 							replacement: '$1-active-hover, $1:active:hover, button:active:hover > $1 '
@@ -114,7 +114,7 @@ module.exports = function (grunt) {
 						}
 
 						, {
-							// Add a .fuelux-icon mixin to all the icons, so taht they catch the 
+							// Add a .fuelux-icon mixin to all the icons, so taht they catch the
 							// inherited rules of height, width, background-size, and so forth.
 							pattern: /\}/g,
 							replacement: '.fuelux-icon; } '
@@ -390,7 +390,7 @@ module.exports = function (grunt) {
 	/* -------------
 		RELEASE
 	------------- */
-	// Maintainers: Run prior to a release. 
+	// Maintainers: Run prior to a release.
 	// --minor will create a semver minor release, otherwise a patch release will be created
 	grunt.registerTask('release', 'Build a new version', function () {
 		grunt.config('banner', '<%= bannerRelease %>');
