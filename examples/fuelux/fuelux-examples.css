@@ -120,11 +120,3 @@ body {
 .thin-box .tree {
 	overflow: auto;
 }
-
-#myRepeaterActions table thead tr th, #myRepeaterActions .repeater-list-heading {
-	width: 400px;
-}
-
-#myRepeaterActions table.table-actions .repeater-list-heading {
-	width: 100%;
-}
