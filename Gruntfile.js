@@ -28,7 +28,7 @@ module.exports = function (grunt) {
 
 		// Copy svg-sources to svg-exports
 
-		// add comments abou the regex-foo
+		// add comments about the regex-foo
 		'string-replace': {
 			inline: {
 				files: {
@@ -39,7 +39,7 @@ module.exports = function (grunt) {
 
 				// we have to go through and massage the .less file that gruntion makes
 				//
-				// as it is created it only supports .fuelux-icon- prefixen, and we need it to support .glyphicon- also, so that the theme can override bootstrap and fuelux fefaults
+				// as it is created it only supports .fuelux-icon- prefixes, and we need it to support .glyphicon- also, so that the theme can override bootstrap and fuelux defaults
 				//
 				options: {
 					replacements: [{
@@ -51,7 +51,7 @@ module.exports = function (grunt) {
 						, {
 							// we need to temporarily change -checked-hover-active into something else that we will tweek later.
 							//
-							// if we were to do this replacement "for real" right now,there are replacements soon that would ruin it (same if reversed)
+							// if we were to do this replacement "for real" right now, there are replacements soon that would ruin it (same if reversed)
 							//
 							// so, we replace it with TOBECHECKEDHOVERACTIVE and then the replacements looking for -checked or -hover or -active will leave it alone.
 							pattern: /(\.-?[_a-zA-Z]+[_a-zA-Z0-9-]*)-checked-hover-active\s*/g,

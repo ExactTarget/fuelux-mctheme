@@ -28,9 +28,21 @@
 
 .fuelux-icon-caret-down, .glyphicon-caret-down { background-image: url('png/caret-down.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
+.fuelux-icon-caret-left-01, .glyphicon-caret-left-01 { background-image: url('png/caret-left-01.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-caret-left-hover, .fuelux-icon-caret-left:hover, button:hover > .fuelux-icon-caret-left -01, .glyphicon-caret-left-hover, .glyphicon-caret-left:hover, button:hover > .glyphicon-caret-left -01 { background-image: url('png/caret-left-hover-01.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-caret-left-hover, .fuelux-icon-caret-left:hover, button:hover > .fuelux-icon-caret-left , .glyphicon-caret-left-hover, .glyphicon-caret-left:hover, button:hover > .glyphicon-caret-left { background-image: url('png/caret-left-hover.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-caret-left, .glyphicon-caret-left { background-image: url('png/caret-left.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
 .fuelux-icon-caret-right-hover, .fuelux-icon-caret-right:hover, button:hover > .fuelux-icon-caret-right , .glyphicon-caret-right-hover, .glyphicon-caret-right:hover, button:hover > .glyphicon-caret-right { background-image: url('png/caret-right-hover.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
 .fuelux-icon-caret-right, .glyphicon-caret-right { background-image: url('png/caret-right.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-caret-up-01, .glyphicon-caret-up-01 { background-image: url('png/caret-up-01.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-caret-up-hover, .fuelux-icon-caret-up:hover, button:hover > .fuelux-icon-caret-up -01, .glyphicon-caret-up-hover, .glyphicon-caret-up:hover, button:hover > .glyphicon-caret-up -01 { background-image: url('png/caret-up-hover-01.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
 .fuelux-icon-caret-up-hover, .fuelux-icon-caret-up:hover, button:hover > .fuelux-icon-caret-up , .glyphicon-caret-up-hover, .glyphicon-caret-up:hover, button:hover > .glyphicon-caret-up { background-image: url('png/caret-up-hover.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
