@@ -307,6 +307,11 @@ module.exports = function (grunt) {
 			}
 		},
 		svgmin: {
+			options: {
+				plugins: [
+					{ removeXMLProcInst: false } // prevent the XML header from being stripped
+				]
+			},
 			dist: {
 				files: [{
 					expand: true,
