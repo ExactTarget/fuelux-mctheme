@@ -48,11 +48,13 @@ Be sure to edit this file directly and *not* to copy it to another place. The po
 
 Provided in this project is a JavaScript: `/icons/scripts/MultiExporter-v2.jsx`.
 
-In order to Illustrator to properly export the layers as .svg files, this file must be copied into the proper "Scripts" directory in your Illustrator installation.
+In order for Illustrator to properly export the layers as .svg files, this file must be copied into the proper "Scripts" directory in your Illustrator installation.
 
-On a standard Mac OS X installation, that proper path would be:
+On a standard Mac OS X and Windows installation, that proper path would be:
 
 	/Applications/Adobe Illustrator CS6/Presets/en_US/Scripts/MultiExporter-v2.jsx
+    C:\Program Files\Adobe Illustrator CC 2015\Presets\en_US\Scripts\MultiExporter-v2.jsx
+
 
 Once this .jsx file is in the proper place, and you have the `fuelux-mctheme-icons-20px.ai` open, you can run the script via the menu at File > Scripts and choosing "MultiExporter-v2".
 
@@ -108,7 +110,6 @@ The file in question is at: `node_modules/grunt-grunticon/lib/grunticon-helper.j
 The code you need to put into place is starts at about line 72, and you want this in there:
 
 ```javascript
-
 		var prevData = {
 			loaderText: min,
 			embedText: embed,
@@ -116,7 +117,6 @@ The code you need to put into place is starts at about line 72, and you want thi
 			icons: icons,
 			rows: []
 		};
-
 
 		var step = 6,
 			i = 0,
@@ -126,7 +126,7 @@ The code you need to put into place is starts at about line 72, and you want thi
 				rowicons: prevData.icons.slice(i, i + step)
 			});
 		}
-		;
+
 ```
 
 We added the `rows: []` line to the var sets and the for-loop that pushes sliced up icons data into the `rows` array.

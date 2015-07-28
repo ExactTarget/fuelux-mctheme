@@ -24,7 +24,7 @@
     "node": ">= 0.8.0"
   },
   "scripts": {
-    "postinstall": "node ./node_modules/bower/bin/bower install",
+    "postinstall": "bower install",
     "start": "node www/server.js"
   },
   "dependencies": {
@@ -33,6 +33,9 @@
   "devDependencies": {
     "bower": "1.x",
     "connect": "3.x",
+    "directory-colorfy": "1.1.0",
+    "directory-encoder": "0.6.1",
+    "fs-extra": "0.8.1",
     "grunt": "0.x",
     "grunt-banner": "0.x",
     "grunt-bump": "0.x",
@@ -48,13 +51,20 @@
     "grunt-prompt": "1.x",
     "grunt-shell": "1.x",
     "grunt-string-replace": "1.x",
-    "grunt-svgmin": "2.x",
+    "grunt-svgmin": "0.3.0",
     "grunt-text-replace": "0.x",
     "grunt-zip": "0.x",
+    "handlebars": "1.1.2",
+    "jszip": "2.5.x",
+    "less": "2.5.x",
     "load-grunt-tasks": "0.x",
+    "lodash": "2.4.0",
     "semver": "5.x",
     "serve-static": "1.x",
-    "volo": "0.x"
+    "svg-to-png": "2.0.x",
+    "uglify-js": "2.4.x",
+    "volo": "0.x",
+    "xmldom": "0.1.16"
   },
   "keywords": [
     "fuelux",
