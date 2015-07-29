@@ -62,6 +62,18 @@
 		}
 	}
 
+	&.radio-inline {
+		&:not(.disabled) {
+			&:not(.checked) {
+				&:hover {
+					&:before {
+						top: 3px;
+					}
+				}
+			}
+		}
+	}
+
 	&:active, &:focus {
 		.radio-button-before;
 		&:before {
