@@ -1,4 +1,7 @@
 define(function(require) {
+	require('jqtoc');
+	$('#toc').toc({'selectors': 'h1, h2'})
+
 	var data = require('data');
 	var jquery = require('jquery');
 	var log = function(){
@@ -29,7 +32,7 @@ define(function(require) {
 	});
 
 	//CHECKBOX NO JS
-	$("#checkboxes-no-js-block-indeterminate").prop("indeterminate", true); 
+	$("#checkboxes-no-js-block-indeterminate").prop("indeterminate", true);
 
 
 	//COMBOBOX
