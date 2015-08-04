@@ -82,7 +82,7 @@
 									@btn-default-bg-hover-start; @btn-default-bg-hover-end;
 									@btn-default-bg-press-start; @btn-default-bg-press-end;
 									@btn-default-bg-disabled-start; @btn-default-bg-disabled-end);
-	&:active,&.active,&:focus{
+	&:active,&.active,&:focus,&:active:focus,&:active:hover {
 		#gradient > .gradient-bg(@btn-default-bg-press-start, @btn-default-bg-press-end);
 		color: @btn-default-color;
 	}
