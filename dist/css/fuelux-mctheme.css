@@ -1,5 +1,5 @@
 /*!
- * Marketing Cloud Theme EDGE - Built 2015/08/03, 1:45:43 PM 
+ * Marketing Cloud Theme EDGE - Built 2015/08/04, 2:38:11 PM 
  * Previous release: v1.6.1 
  * Copyright 2012-2015 ExactTarget
  * Licensed under the BSD-3 license (https://github.com/ExactTarget/fuelux-mctheme/blob/master/LICENSE)
@@ -2693,146 +2693,166 @@ button:hover > .glyphicon-triangle-west:before {
 .fuel-help:focus:before {
   content: "";
 }
-.btn-lg .fuelux-icon {
-  width: 20px;
-  height: 20px;
+.btn .fuelux-icon,
+.btn:hover .fuelux-icon {
+  width: 12px;
+  height: 12px;
+  margin-top: -2px;
+  margin-bottom: -1px;
 }
-.btn-sm .fuelux-icon {
+.btn-lg .fuelux-icon,
+.btn-lg:hover .fuelux-icon {
   width: 13px;
   height: 13px;
+  margin-top: -2px;
+  margin-bottom: -1px;
+}
+.btn-sm .fuelux-icon,
+.btn-sm:hover .fuelux-icon {
+  width: 10px;
+  height: 10px;
+  margin-top: -1px;
+  margin-bottom: -1px;
+}
+.btn-xs .fuelux-icon,
+.btn-xs:hover .fuelux-icon {
+  width: 9px;
+  height: 9px;
+  margin-top: -1px;
+  margin-bottom: -1px;
 }
 .fuelux-icon.fuelux-icon-gridview-columns-configure {
   width: 18px;
   height: 18px;
   margin-bottom: -5px;
 }
-body {
+.fuelux body {
   font-family: Arial, sans-serif;
   color: #222222;
   font-size: 11px;
   line-height: 1.4;
 }
-.title-form,
-.title-header-page,
-.title-table {
+.fuelux .title-form,
+.fuelux .title-header-page,
+.fuelux .title-table {
   line-height: 1.4;
 }
-.title-form small,
-.title-header-page small,
-.title-table small,
-.title-form .small,
-.title-header-page .small,
-.title-table .small {
+.fuelux .title-form small,
+.fuelux .title-header-page small,
+.fuelux .title-table small,
+.fuelux .title-form .small,
+.fuelux .title-header-page .small,
+.fuelux .title-table .small {
   font-weight: normal;
   line-height: 1;
   color: #777777;
   font-size: 65%;
 }
-.title-table {
+.fuelux .title-table {
   font-size: 15px;
 }
-.title-form {
+.fuelux .title-form {
   font-size: 14px;
 }
-.page-header {
+.fuelux .page-header {
   font-size: 20px;
   margin-top: 10px;
   border-bottom: none;
   margin-bottom: 0;
 }
-.page-header h1 {
+.fuelux .page-header h1 {
   line-height: 30px;
   margin-top: 0;
   margin-bottom: 0;
 }
-.page-header > :last-of-type:not(:only-of-type) {
+.fuelux .page-header > :last-of-type:not(:only-of-type) {
   text-align: right;
 }
-p {
+.fuelux p {
   font-size: 11px;
 }
-p.support-text {
+.fuelux p.support-text {
   color: #666666;
 }
-p.hint-text {
+.fuelux p.hint-text {
   color: #999999;
 }
-p.disabled-text {
+.fuelux p.disabled-text {
   color: #ababab;
 }
-h1,
-.h1 {
+.fuelux h1,
+.fuelux .h1 {
   font-size: 20px;
 }
-h2,
-.h2 {
+.fuelux h2,
+.fuelux .h2 {
   font-size: 15px;
 }
-h3,
-.h3 {
+.fuelux h3,
+.fuelux .h3 {
   font-size: 14px;
 }
-h4,
-.h4 {
+.fuelux h4,
+.fuelux .h4 {
   font-size: 12px;
 }
-h5,
-.h5 {
+.fuelux h5,
+.fuelux .h5 {
   font-size: 11px;
 }
-h6,
-.h6 {
+.fuelux h6,
+.fuelux .h6 {
   font-size: 10px;
 }
-.h1 {
+.fuelux .h1 {
   margin: 0;
 }
-.h2 {
+.fuelux .h2 {
   margin: 0;
 }
-.h3 {
+.fuelux .h3 {
   margin: 0;
 }
-.h4 {
+.fuelux .h4 {
   margin: 0;
 }
-.h5 {
+.fuelux .h5 {
   margin: 0;
 }
-.h6 {
+.fuelux .h6 {
   margin: 0;
 }
-.serif {
+.fuelux .serif {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
-.monospace {
+.fuelux .monospace {
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
 }
-.text-sm {
+.fuelux .text-sm {
   font-size: 10px;
 }
-.text-lg {
+.fuelux .text-lg {
   font-size: 24px;
 }
-.text-xl {
+.fuelux .text-xl {
   font-size: 32px;
 }
-.text-xxl {
+.fuelux .text-xxl {
   font-size: 44px;
 }
-.text-danger {
+.fuelux .text-danger {
   color: #e00000;
 }
-.text-dimmed {
+.fuelux .text-dimmed {
   color: #4b4b4b;
 }
-.text-muted {
+.fuelux .text-muted {
   color: #757575;
 }
-.text-primary {
+.fuelux .text-primary {
   color: #3074af;
 }
-.text-warning {
+.fuelux .text-warning {
   color: #986000;
 }
 .btn {
@@ -2967,7 +2987,9 @@ fieldset[disabled] .btn-default.active {
 }
 .btn-default:active,
 .btn-default.active,
-.btn-default:focus {
+.btn-default:focus,
+.btn-default:active:focus,
+.btn-default:active:hover {
   background-color: #d5e4eb;
   background: -webkit-linear-gradient(#d5e4eb, #deeaf6);
   background: -moz-linear-gradient(#d5e4eb, #deeaf6);
@@ -6820,6 +6842,9 @@ a.list-group-item-danger.active:focus {
 }
 .fuelux .radio-custom:hover.checked:before:before {
   content: "";
+}
+.fuelux .radio-custom.radio-inline:not(.disabled):not(.checked):hover:before {
+  top: 3px;
 }
 .fuelux .radio-custom:active input[type="radio"],
 .fuelux .radio-custom:focus input[type="radio"] {
