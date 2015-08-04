@@ -15,6 +15,7 @@
 	<!--<script type="text/javascript">if(window.console && window.console.clear){ window.console.clear(); }</script>-->
 
 	<link href="bootstrap-css-examples.css" rel="stylesheet" type="text/css">
+	<link href="../jqtoc.css" rel="stylesheet" type="text/css">
 
 	<script src="../../bower_components/requirejs/require.js"></script>
 	<script type="text/javascript">
@@ -30,7 +31,8 @@
 					underscore: '../../bower_components/underscore/underscore',
 					bootstrap: '../../bower_components/bootstrap/dist/js/bootstrap',
 					//moment: '../../bower_components/moment/min/moment-with-langs',
-					fuelux: '../../bower_components/fuelux/dist/js/fuelux'
+					fuelux: '../../bower_components/fuelux/dist/js/fuelux',
+					jqtoc: '../jqtoc'
 				},
 				shim: {
 					'bootstrap': {
@@ -40,17 +42,54 @@
 				}
 			});
 		})();
-		require(['jquery', 'main'], function($){ });
+		require(['jquery', 'main'], function($){});
 	</script>
+
 </head>
 <body>
+<div class="container">
+<div class="row">
+<div class="col-md-2" id="toc"></div>
+<div class="col-md-10">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">MC Theme</a>
+    </div>
 
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+		<li><a href="/examples/bootstrap-css/bootstrap-css.html">Bootstrap CSS</a></li>
+
+		<li><a href="/examples/bootstrap-components/bootstrap-components.html">Bootstrap Components</a></li>
+
+		<li><a href="/examples/bootstrap-javascript/bootstrap-javascript.html">Bootstrap Javascript</a></li>
+
+		<li><a href="/examples/fuelux/fuelux.html">Fuel UX Controls</a></li>
+
+		<li><a href="/examples/utilities/utilities.html">Typography</a></li>
+
+		<li><a href="/examples/icons/icons.html">Iconography</a></li>
+
+      </ul>
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
 	<div class="container main">
 
-		<h1 class="section">Typography</h1>
+		<h1 id="typography" class="section">Typography</h1>
 		<hr class="darker"/>
 
-		<h2>Headings</h2>
+		<h2 id="headings">Headings</h2>
 		<div class="thin-box">
 			<div class="title-header-page">Headers and Page Titles <small>Secondary text</small></div>
 			<div class="title-table">Table Titles <small>Secondary text</small></div>
@@ -64,29 +103,29 @@
 			<h6>h6. Bootstrap heading <small>Secondary text</small></h6>
 		</div>
 
-		<h2>Body copy</h2>
+		<h2 id="body_copy">Body copy</h2>
 		<div class="thin-box">
-			<h3>Body text</h3>
+			<h3 id="body_text">Body text</h3>
 			<p>
 				Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.
 				Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.
 				Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
 			</p>
 			<br/>
-			<h3>Support text</h3>
+			<h3 id="support_text">Support text</h3>
 			<p class="support-text">
 				Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.
 				Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.
 				Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
 			</p>
 			<br/>
-			<h3>Hint text</h3>
+			<h3 id="hint_text">Hint text</h3>
 			<p class="hint-text">
 				Search...Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.
 				Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
 			</p>
 			<br/>
-			<h3>Disabled text</h3>
+			<h3 id="disabled_text">Disabled text</h3>
 			<p class="disabled-text">
 				Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.
 				Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.
@@ -95,7 +134,7 @@
 
 		</div>
 
-		<h2>Inline text elements</h2>
+		<h2 id="inline_text_elements">Inline text elements</h2>
 		<div class="thin-box">
 			<div>You can use the mark tag to <mark>highlight</mark> text.</div>
 			<div><del>This line of text is meant to be treated as deleted text.</del></div>
@@ -107,7 +146,7 @@
 			<div><em>rendered as italicized text</em></div>
 		</div>
 
-		<h2>Alignment classes</h2>
+		<h2 id="alignment_classes">Alignment classes</h2>
 		<div class="thin-box">
 			<p class="text-left">Left aligned text.</p>
 			<p class="text-center">Center aligned text.</p>
@@ -116,20 +155,20 @@
 			<p class="text-nowrap">No wrap text.</p>
 		</div>
 
-		<h2>Transformation classes</h2>
+		<h2 id="transformation_classes">Transformation classes</h2>
 		<div class="thin-box">
 			<p class="text-lowercase">Lowercased text.</p>
 			<p class="text-uppercase">Uppercased text.</p>
 			<p class="text-capitalize">Capitalized text.</p>
 		</div>
 
-		<h2>Abbreviations</h2>
+		<h2 id="abbreviations">Abbreviations</h2>
 		<div class="thin-box">
 			<div><abbr title="attribute">attr</abbr></div>
 			<div><abbr title="HyperText Markup Language" class="initialism">HTML</abbr></div>
 		</div>
 
-		<h2>Addresses</h2>
+		<h2 id="addresses">Addresses</h2>
 		<div class="thin-box">
 			<address>
 				<strong>Twitter, Inc.</strong><br>
@@ -143,7 +182,7 @@
 			</address>
 		</div>
 
-		<h2>Blockquotes</h2>
+		<h2 id="blockquotes">Blockquotes</h2>
 		<div class="thin-box">
 			<blockquote>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
@@ -158,9 +197,9 @@
 			</blockquote>
 		</div>
 
-		<h2>Lists</h2>
+		<h2 id="lists">Lists</h2>
 		<div class="thin-box">
-			<h3>Unordered</h3>
+			<h3 id="lists_unordered">Unordered</h3>
 			<ul>
 				<li>Lorem ipsum dolor sit ame</li>
 				<li>Consectetur adipiscing elit</li>
@@ -171,28 +210,28 @@
 				<li>Aenean sit amet erat nunc</li>
 				<li>Eget porttitor lorem</li>
 			</ul>
-			<h3>Ordered</h3>
+			<h3 id="lists_ordered">Ordered</h3>
 			<ol>
 				<li>Lorem ipsum dolor sit ame</li>
 				<li>Consectetur adipiscing elit</li>
 				<li>Aenean sit amet erat nunc</li>
 				<li>Eget porttitor lorem</li>
 			</ol>
-			<h3>Unstyled</h3>
+			<h3 id="lists_unstyled">Unstyled</h3>
 			<ul class="list-unstyled">
 				<li>Lorem ipsum dolor sit ame</li>
 				<li>Consectetur adipiscing elit</li>
 				<li>Aenean sit amet erat nunc</li>
 				<li>Eget porttitor lorem</li>
 			</ul>
-			<h3>Inline</h3>
+			<h3 id="lists_inline">Inline</h3>
 			<ul class="list-inline">
 				<li>Lorem ipsum dolor sit ame</li>
 				<li>Consectetur adipiscing elit</li>
 				<li>Aenean sit amet erat nunc</li>
 				<li>Eget porttitor lorem</li>
 			</ul>
-			<h3>Description</h3>
+			<h3 id="lists_description">Description</h3>
 			<dl>
 				<dt>Description lists</dt>
 				<dd>A description list is perfect for defining terms.</dd>
@@ -202,7 +241,7 @@
 				<dt>Malesuada porta</dt>
 				<dd>Etiam porta sem malesuada magna mollis euismod.</dd>
 			</dl>
-			<h3>Horizontal description</h3>
+			<h3 id="lists_horizontal_description">Horizontal description</h3>
 			<dl class="dl-horizontal">
 				<dt>Description lists</dt>
 				<dd>A description list is perfect for defining terms.</dd>
@@ -216,38 +255,38 @@
 
 
 
-		<h1 class="section">Code</h1>
+		<h1 id="code" class="section">Code</h1>
 		<hr class="darker"/>
 
-		<h2>Inline</h2>
+		<h2 id="code_">Inline</h2>
 		<div class="thin-box">
 			For example, <code>&lt;section&gt;</code> should be wrapped as inline.
 		</div>
 
-		<h2>User Input</h2>
+		<h2 id="code_user_input">User Input</h2>
 		<div class="thin-box">
 			To switch directories, type <kbd>cd</kbd> followed by the name of the directory.
 		</div>
 
-		<h2>Basic Block</h2>
+		<h2 id="code_basic_blocks">Basic Block</h2>
 		<div class="thin-box">
 			<pre>&lt;p&gt;Sample text here...&lt;/p&gt;</pre>
 		</div>
 
-		<h2>Variables</h2>
+		<h2 id="code_variables">Variables</h2>
 		<div class="thin-box">
 			<var>y</var> = <var>m</var><var>x</var> + <var>b</var>
 		</div>
 
-		<h2>Sample output</h2>
+		<h2 id="code_sample_output">Sample output</h2>
 		<div class="thin-box">
 			<samp>This text is meant to be treated as sample output from a computer program.</samp>
 		</div>
 
-		<h1 class="section">Tables</h1>
+		<h1 id="" class="section">Tables</h1>
 		<hr class="darker"/>
 
-		<h2>Basic Example</h2>
+		<h2 id="tables_basic_example">Basic Example</h2>
 		<div class="thin-box">
 			<table class="table">
 				<div class="title-table-bg title-table">Grid Name</div>
@@ -296,7 +335,7 @@
 			</table>
 		</div>
 
-		<h2>Striped rows</h2>
+		<h2 id="tables_striped_rows">Striped rows</h2>
 		<div class="thin-box">
 			<table class="table table-striped">
 				<thead>
@@ -330,7 +369,7 @@
 			</table>
 		</div>
 
-		<h2>Bordered table</h2>
+		<h2 id="tables_bordered_tables">Bordered table</h2>
 		<div class="thin-box">
 			<table class="table table-bordered">
 				<thead>
@@ -368,7 +407,7 @@
 			</table>
 		</div>
 
-		<h2>Hover rows</h2>
+		<h2 id="tables_hover_rows">Hover rows</h2>
 		<div class="thin-box">
 			<table class="table table-hover">
 				<thead>
@@ -401,7 +440,7 @@
 			</table>
 		</div>
 
-		<h2>Condensed table</h2>
+		<h2 id="tables_condensed_table">Condensed table</h2>
 		<div class="thin-box">
 			<table class="table table-condensed">
 				<thead>
@@ -434,7 +473,7 @@
 			</table>
 		</div>
 
-		<h2>Contextual classes</h2>
+		<h2 id="tables_contextual_classes">Contextual classes</h2>
 		<div class="thin-box">
 			<table class="table">
 				<thead>
@@ -504,7 +543,7 @@
 			</table>
 		</div>
 
-		<h2>Responsive tables</h2>
+		<h2 id="tables_responsive_tables">Responsive tables</h2>
 		<div class="thin-box">
 			<div class="table-responsive">
 				<table class="table">
@@ -598,10 +637,10 @@
 		</div>
 
 
-		<h1 class="section">Forms</h1>
+		<h1 id="" class="section">Forms</h1>
 		<hr class="darker"/>
 
-		<h2>Basic example</h2>
+		<h2 id="forms_basic_example">Basic example</h2>
 		<div class="thin-box">
 			<form role="form">
 				<div class="form-group">
@@ -626,7 +665,7 @@
 			</form>
 		</div>
 
-		<h2>Inline form</h2>
+		<h2 id="forms_inline_forms">Inline form</h2>
 		<div class="thin-box">
 			<form class="form-inline" role="form">
 				<div class="form-group">
@@ -652,7 +691,7 @@
 			</form>
 		</div>
 
-		<h2>Horizontal form</h2>
+		<h2 id="forms_horizontal_forms">Horizontal form</h2>
 		<div class="thin-box">
 			<form class="form-horizontal" role="form">
 				<div class="form-group">
@@ -684,24 +723,24 @@
 			</form>
 		</div>
 
-		<h2>Supported controls</h2>
+		<h2 id="forms_supported_controls">Supported controls</h2>
 		<div class="thin-box">
-			<h3>Inputs</h3>
+			<h3 id="forms_supported_controls_inputs">Inputs</h3>
 			<form role="form">
 				<input type="text" class="form-control" placeholder="Text input">
 			</form>
 
 			<br/>
 
-			<h3>Textarea</h3>
+			<h3 id="forms_supported_controls_textarea">Textarea</h3>
 			<form role="form">
 				<textarea class="form-control" rows="3"></textarea>
 			</form>
 
 			<br/>
 
-			<h3>Checkboxes and radios</h3>
-			<h4>Default (stacked)</h4>
+			<h3 id="forms_supported_controls_checkboxes_and_radios">Checkboxes and radios</h3>
+			<h4 id="forms_supported_controls_checkboxes_and_radios_default">Default (stacked)</h4>
 			<form role="form">
 				<div class="checkbox">
 					<label>
@@ -738,7 +777,7 @@
 
 			<br/>
 
-			<h4>Inline checkboxes and radios</h4>
+			<h4 id="forms_supported_controls_checkboxes_and_radios_inline">Inline checkboxes and radios</h4>
 			<form role="form">
 				<label class="checkbox-inline">
 					<input type="checkbox" id="inlineCheckbox1" value="option1"> 1
@@ -765,7 +804,7 @@
 
 			<br/>
 
-			<h3>Selects</h3>
+			<h3 id="forms_supported_controls_selects">Selects</h3>
 			<form role="form">
 				<select class="form-control select-bg">
 					<option>1</option>
@@ -787,7 +826,7 @@
 		</div>
 
 
-		<h2>Static control</h2>
+		<h2 id="forms_static_control">Static control</h2>
 		<div class="thin-box">
 			<form class="form-horizontal" role="form">
 				<div class="form-group">
@@ -805,20 +844,20 @@
 			</form>
 		</div>
 
-		<h2>Input focus (Focus state)</h2>
+		<h2 id="forms_input_focus">Input focus (Focus state)</h2>
 		<div class="thin-box">
 			<form role="form">
 				<input class="form-control form-on-focus" id="focusedInput" type="text" value="Demonstrative focus state">
 			</form>
 		</div>
 
-		<h2>Disabled inputs</h2>
+		<h2 id="forms_disabled_inputs">Disabled inputs</h2>
 		<div class="thin-box">
 			<form role="form">
 				<input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here…" disabled="">
 			</form>
 			<br/>
-			<h3>Disabled fieldsets</h3>
+			<h3 id="forms_disabled_inputs_disabled_fieldsets">Disabled fieldsets</h3>
 			<form role="form">
 				<fieldset disabled="">
 					<div class="form-group">
@@ -841,14 +880,14 @@
 			</form>
 		</div>
 
-		<h2>Readonly inputs</h2>
+		<h2 id="forms_readonly_inputs">Readonly inputs</h2>
 		<div class="thin-box">
 			<form role="form">
 				<input class="form-control" type="text" placeholder="Readonly input here…" readonly="">
 			</form>
 		</div>
 
-		<h2>Validation states</h2>
+		<h2 id="forms_validation_states">Validation states</h2>
 		<div class="thin-box">
 			<form role="form">
 				<div class="form-group has-success">
@@ -873,7 +912,7 @@
 			</form>
 			<br/>
 
-			<h3>With optional icons</h3>
+			<h3 id="forms_validation_states_with_optional_icons">With optional icons</h3>
 			<form role="form">
 				<!--<div class="form-group has-success has-feedback">-->
 					<!--<label class="control-label" for="inputSuccess2">Input with success</label>-->
@@ -893,7 +932,7 @@
 			</form>
 			<br/>
 
-			<h4>Optional icons in horizontal and inline forms</h4>
+			<h4 id="forms_validation_states_with_optional_icons_horizontal">Optional icons in horizontal and inline forms</h4>
 			<form class="form-horizontal" role="form">
 				<div class="form-group has-success has-feedback">
 					<label class="control-label col-sm-3" for="inputSuccess3">Input with success</label>
@@ -944,14 +983,14 @@
 			</form>
 			<br/>
 
-			<h4>Optional icons with hidden .sr-only labels</h4>
+			<h4 id="forms_validation_states_with_optional_icons_hidden_labels">Optional icons with hidden .sr-only labels</h4>
 			<div class="form-group has-success has-feedback">
 				<label class="control-label sr-only" for="inputSuccess5">Hidden label</label>
 				<input type="text" class="form-control" id="inputSuccess5">
 				<span class="glyphicon glyphicon-ok form-control-feedback"></span>
 			</div>
 
-			<h4>With tooltip validation triggered</h4>
+			<h4 id="forms_validation_states_with_optional_icons_tooltip">With tooltip validation triggered</h4>
 			<form>
 				<div class="form-group has-error" style="width: 200px;">
 					<label class="control-label" for="inputError1">Input with error</label>
@@ -960,9 +999,9 @@
 			</form>
 		</div>
 
-		<h2>Control sizing</h2>
+		<h2 id="forms_control_sizing">Control sizing</h2>
 		<div class="thin-box">
-			<h3>Height sizing</h3>
+			<h3 id="forms_control_sizing_height_sizing">Height sizing</h3>
 			<form role="form">
 				<div class="controls">
 					<input class="form-control input-lg" type="text" placeholder=".input-lg">
@@ -987,7 +1026,7 @@
 			</form>
 			<br/>
 
-			<h3>Horizontal form group sizes</h3>
+			<h3 id="forms_control_sizing_horizontal_form_group_sizes">Horizontal form group sizes</h3>
 			<form class="form-horizontal" role="form">
 				<div class="form-group form-group-lg">
 					<label class="col-sm-2 control-label" for="formGroupInputLarge">Large label</label>
@@ -1004,7 +1043,7 @@
 			</form>
 			<br/>
 
-			<h3>Column sizing</h3>
+			<h3 id="forms_control_sizing_column_sizing">Column sizing</h3>
 			<form role="form">
 				<div class="row">
 					<div class="col-xs-2">
@@ -1020,7 +1059,7 @@
 			</form>
 		</div>
 
-		<h2>Help text</h2>
+		<h2 id="forms_help_text">Help text</h2>
 		<div class="thin-box">
 			<form role="form">
 				<input type="text" class="form-control">
@@ -1029,10 +1068,10 @@
 		</div>
 
 
-		<h1 class="section">Buttons</h1>
+		<h1 id="buttons" class="section">Buttons</h1>
 		<hr class="darker"/>
 
-		<h2>Options</h2>
+		<h2 id="buttons_options">Options</h2>
 		<div class="thin-box">
 			<button type="button" class="btn btn-default">Default</button>
 			<button type="button" class="btn btn-primary">Primary</button>
@@ -1048,7 +1087,7 @@
 			<button type="button" class="btn btn-link"><span class="fuelux-icon fuelux-icon-add-hover"></span> Add Header</button>
 		</div>
 
-		<h2>Sizes</h2>
+		<h2 id="buttons_sizes">Sizes</h2>
 		<div class="thin-box">
 			<p>
 				<button type="button" class="btn btn-primary btn-lg">Large button</button>
@@ -1073,31 +1112,31 @@
 			</div>
 		</div>
 
-		<h2>Active state</h2>
+		<h2 id="buttons_active_state">Active state</h2>
 		<div class="thin-box">
-			<h3>Button element</h3>
+			<h3 id="buttons_active_state_button_element">Button element</h3>
 			<button type="button" class="btn btn-primary btn-lg active">Primary button</button>
 			<button type="button" class="btn btn-default btn-lg active">Default button</button>
 			<br/>
 
-			<h3>Anchor element</h3>
+			<h3 id="buttons_active_state_anchor_element">Anchor element</h3>
 			<a href="#" class="btn btn-primary btn-lg active" role="button">Primary link</a>
 			<a href="#" class="btn btn-default btn-lg active" role="button">Default link</a>
 		</div>
 
-		<h2>Disabled state</h2>
+		<h2 id="buttons_disabled_state">Disabled state</h2>
 		<div class="thin-box">
-			<h3>Button element</h3>
+			<h3 id="buttons_disabled_state_button_element">Button element</h3>
 			<button type="button" class="btn btn-primary btn-lg" disabled="disabled">Primary button</button>
 			<button type="button" class="btn btn-default btn-lg" disabled="disabled">Default button</button>
 			<br/>
 
-			<h3>Anchor element</h3>
+			<h3 id="buttons_disabled_state_anchor_element">Anchor element</h3>
 			<a href="#" class="btn btn-primary btn-lg disabled" role="button">Primary link</a>
 			<a href="#" class="btn btn-default btn-lg disabled" role="button">Default link</a>
 		</div>
 
-		<h2>Button tags</h2>
+		<h2 id="buttons_tags">Button tags</h2>
 		<div class="thin-box">
 			<a class="btn btn-default" href="#" role="button">Link</a>
 			<button class="btn btn-default" type="submit">Button</button>
@@ -1105,13 +1144,13 @@
 			<input class="btn btn-default" type="submit" value="Submit">
 		</div>
 
-		<h2>Like/Dislike</h2>
+		<h2 id="buttons_like_dislike">Like/Dislike</h2>
 		<div class="thin-box">
 			<button class="btn btn-default btn-lg" type="button"><span class="glyphicon glyphicon-thumbs-up"></span> Like This</button>
 			<button class="btn btn-default btn-lg" type="button"><span class="glyphicon glyphicon-thumbs-down"></span> Needs Work</button>
 		</div>
 
-		<h2>Arrows</h2>
+		<h2 id="buttons_arrows">Arrows</h2>
 		<div class="thin-box">
 			<button class="btn btn-primary" type="button"><span class="glyphicon glyphicon-arrow-left"></span> Previous</button>
 			<button class="btn btn-primary" type="button" disabled="disabled"><span class="glyphicon glyphicon-arrow-left"></span> Previous</button>
@@ -1130,7 +1169,7 @@
 			<br/><br/>
 		</div>
 
-		<h2>Toggle</h2>
+		<h2 id="buttons_toggle">Toggle</h2>
 		<div class="thin-box">
 
 			<div class="btn-group btn-group-check-toggle btn-group-switch" data-toggle="buttons">
@@ -1155,10 +1194,10 @@
 
 		</div>
 
-		<h1 class="section">Helper classes</h1>
+		<h1 id="helper_classes" class="section">Helper classes</h1>
 		<hr class="darker"/>
 
-		<h2>Contextual colors</h2>
+		<h2 id="helper_classes_contextual_colors">Contextual colors</h2>
 		<div class="thin-box">
 			<p class="text-muted">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
 			<p class="text-primary">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
@@ -1168,7 +1207,7 @@
 			<p class="text-danger">Donec ullamcorper nulla non metus auctor fringilla.</p>
 		</div>
 
-		<h2>Contextual backgrounds</h2>
+		<h2 id="helper_classes_contextuial_backgrounds">Contextual backgrounds</h2>
 		<div class="thin-box">
 			<!--<p class="bg-primary">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>-->
 			<p class="alert">
@@ -1199,7 +1238,7 @@
 
 		</div>
 
-		<h2>Breadcrumbs</h2>
+		<h2 id="helper_classes_breadcrumbs">Breadcrumbs</h2>
 		<div class="thin-box">
 			<ol class="breadcrumb">
 				<li><a href="#">Home</a> </li>
@@ -1208,7 +1247,7 @@
 			</ol>
 		</div>
 
-		<h2>Close icon</h2>
+		<h2 id="helper_classes_close_icon">Close icon</h2>
 		<div class="thin-box">
 			<p class="clearfix">
 				<button type="button" class="close">
@@ -1218,7 +1257,7 @@
 			</p>
 		</div>
 
-		<h2>Help icon</h2>
+		<h2 id="helper_classes_help_icon">Help icon</h2>
 		<div class="thin-box">
 			<p class="clearfix">
 				<button class="fueluxicon-question-mark">
@@ -1227,14 +1266,14 @@
 			</p>
 		</div>
 
-		<h2>Carets</h2>
+		<h2 id="helper_classes_carets">Carets</h2>
 		<div class="thin-box">
 			<span class="caret"></span>
 		</div>
 
 
 	</div>
+	</div></div></div>
 	<script src="//localhost:35730/livereload.js"></script>
-
 </body>
 </html>

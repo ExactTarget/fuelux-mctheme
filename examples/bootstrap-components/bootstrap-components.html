@@ -8,19 +8,53 @@
 	<link href="../../bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css">
 	<link href="../../dist/css/fuelux-mctheme.css" rel="stylesheet" type="text/css"/>
 	<link href="bootstrap-components-examples.css" rel="stylesheet" type="text/css"/>
-
-	<script src="../../bower_components/jquery/dist/jquery.js" type="text/javascript"></script>
-	<script src="../../bower_components/bootstrap/dist/js/bootstrap.js" type="text/javascript"></script>
+	<link href="../jqtoc.css" rel="stylesheet" type="text/css">
 
 </head>
 <body>
+<div class="container">
+<div class="row">
+<div class="col-md-2" id="toc"></div>
+<div class="col-md-10">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">MC Theme</a>
+    </div>
 
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+		<li><a href="/examples/bootstrap-css/bootstrap-css.html">Bootstrap CSS</a></li>
+
+		<li><a href="/examples/bootstrap-components/bootstrap-components.html">Bootstrap Components</a></li>
+
+		<li><a href="/examples/bootstrap-javascript/bootstrap-javascript.html">Bootstrap Javascript</a></li>
+
+		<li><a href="/examples/fuelux/fuelux.html">Fuel UX Controls</a></li>
+
+		<li><a href="/examples/utilities/utilities.html">Typography</a></li>
+
+		<li><a href="/examples/icons/icons.html">Iconography</a></li>
+
+      </ul>
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
 	<div class="container main">
 
-		<h1 id="Dropdowns" class="section">Dropdowns</h1>
+		<h1 id="dropdowns" class="section">Dropdowns</h1>
 		<hr class="darker"/>
 
-		<h2>Example</h2>
+		<h2 id="dropdowns_example">Example</h2>
 		<div class="thin-box">
 			<div class="dropdown clearfix">
 				<button data-toggle="dropdown" id="dropdownMenu1" type="button" class="btn btn-dropdown dropdown-toggle">
@@ -47,7 +81,7 @@
 
 		</div>
 
-		<h2>Headers</h2>
+		<h2 id="dropdowns_headers">Headers</h2>
 		<div class="thin-box">
 			<div class="dropdown clearfix">
 				<button data-toggle="dropdown" id="dropdownMenu2" type="button" class="btn btn-dropdown dropdown-toggle">
@@ -66,7 +100,7 @@
 			</div>
 		</div>
 
-		<h2>Disabled menu items</h2>
+		<h2 id="dropdowns_disabled_menu_items">Disabled menu items</h2>
 		<div class="thin-box">
 			<div class="dropdown clearfix">
 				<button data-toggle="dropdown" id="dropdownMenu3" type="button" class="btn btn-dropdown dropdown-toggle">
@@ -84,7 +118,7 @@
 		<h1 id="Button-groups" class="section">Button groups</h1>
 		<hr class="darker"/>
 
-		<h2>Basic example</h2>
+		<h2 id="dropdowns_basic_example">Basic example</h2>
 		<div class="thin-box">
 			<div style="margin-bottom: 15px;" class="btn-group">
 				<button class="btn btn-default" type="button">Left</button>
@@ -100,7 +134,7 @@
 		</div>
 
 
-		<h2>Button toolbar</h2>
+		<h2 id="dropdowns_button_toolbar">Button toolbar</h2>
 		<div class="thin-box">
 			<div style="margin: 0;" role="toolbar" class="btn-toolbar">
 				<div class="btn-group">
@@ -120,7 +154,7 @@
 			</div>
 		</div>
 
-		<h2>Sizing</h2>
+		<h2 id="dropdowns_sizing">Sizing</h2>
 		<div class="row">
 			<div class="col-sm-6">
 				<div class="thin-box">
@@ -154,9 +188,9 @@
 						</div>
 					</div>
 				</div>
-				
+
 			</div>
-			
+
 			<div class="col-sm-6">
 				<div class="thin-box">
 					<h3>Buttons</h3>
@@ -194,11 +228,11 @@
 					</p>
 				</div>
 			</div>
-			
+
 		</div>
 
 
-		<h2>Sizing with icons</h2>
+		<h2 id="dropdowns_sizing_with_icons">Sizing with icons</h2>
 		<div class="row">
 			<div class="col-sm-6">
 				<div class="thin-box">
@@ -268,9 +302,9 @@
 						</div>
 					</div>
 				</div>
-				
+
 			</div>
-			
+
 			<div class="col-sm-6">
 				<div class="thin-box">
 					<h3>Buttons</h3>
@@ -316,7 +350,7 @@
 					</p>
 				</div>
 			</div>
-			
+
 		</div>
 
 
@@ -326,7 +360,7 @@
 
 
 
-		<h2>Nesting</h2>
+		<h2 id="dropdowns_nesting">Nesting</h2>
 		<div class="thin-box">
 			<div class="btn-group" style="margin-right: 15px;">
 				<button class="btn btn-default" type="button">1</button>
@@ -360,7 +394,7 @@
 			</div>
 		</div>
 
-		<h2>Vertical variation</h2>
+		<h2 id="dropdowns_vertical_variation">Vertical variation</h2>
 		<div class="thin-box">
 			<div class="btn-group-vertical" style="width: 120px;">
 				<button class="btn btn-dropdown" type="button">Button</button>
@@ -410,7 +444,7 @@
 			</div>
 		</div>
 
-		<h2>Justified button groups</h2>
+		<h2 id="dropdowns_justified_button_groups">Justified button groups</h2>
 		<div class="thin-box">
 			<h4>With <code>&lt;a&gt;</code> elements</h4>
 			<div class="btn-group btn-group-justified">
@@ -455,7 +489,7 @@
 
 		<h1 id="Button-dropdowns" class="section">Button dropdowns</h1>
 		<hr class="darker"/>
-		<h2>Single button dropdowns</h2>
+		<h2 id="button_dropdowns_single_button_dropdowns">Single button dropdowns</h2>
 		<div class="thin-box">
 			<div class="btn-group">
 				<button data-toggle="dropdown" class="btn btn-default dropdown-toggle" type="button">
@@ -537,7 +571,7 @@
 			</div><!-- /btn-group -->
 		</div>
 
-	<h2>Split button dropdowns</h2>
+	<h2 id="button_dropdowns_split_button_dropdowns">Split button dropdowns</h2>
 		<div class="thin-box">
 			<div class="btn-group">
 				<button class="btn btn-default" type="button">Default</button>
@@ -625,7 +659,7 @@
 			</div><!-- /btn-group -->
 		</div>
 
-		<h2>Sizing</h2>
+		<h2 id="button_dropdowns_sizing">Sizing</h2>
 		<div class="thin-box">
 			<div role="toolbar" class="btn-toolbar">
 				<div class="btn-group">
@@ -674,7 +708,7 @@
 			</div><!-- /btn-toolbar -->
 		</div>
 
-		<h2>Dropup variation</h2>
+		<h2 id="button_dropdowns_dropup_variation">Dropup variation</h2>
 		<div class="thin-box">
 			<div role="toolbar" class="btn-toolbar">
 				<div class="btn-group dropup">
@@ -708,10 +742,10 @@
 			</div>
 		</div>
 
-		<h1 id="Input-groups" class="section">Input groups</h1>
+		<h1 id="input_groups" class="section">Input groups</h1>
 		<hr class="darker"/>
 
-		<h2>Basic example</h2>
+		<h2 id="input_groups_basic_example">Basic example</h2>
 		<form role="form" class="thin-box">
 			<div class="input-group">
 				<span class="input-group-addon">@</span>
@@ -730,7 +764,7 @@
 			</div>
 		</form>
 
-		<h2>Sizing</h2>
+		<h2 id="input_groups_sizing">Sizing</h2>
 		<form role="form" class="thin-box">
 			<div class="input-group input-group-lg">
 				<span class="input-group-addon">@</span>
@@ -748,7 +782,7 @@
 			</div>
 		</form>
 
-		<h2>Checkboxes and radio addons</h2>
+		<h2 id="input_groups_checkboxes_and_radio_addons">Checkboxes and radio addons</h2>
 		<form class="thin-box">
 			<div class="row">
 				<div class="col-lg-6">
@@ -771,7 +805,7 @@
 			</div><!-- /.row -->
 		</form>
 
-		<h2>Button addons</h2>
+		<h2 id="input_groups_button_addons">Button addons</h2>
 		<form class="thin-box">
 			<div class="row">
 				<div class="col-lg-6">
@@ -794,7 +828,7 @@
 			</div><!-- /.row -->
 		</form>
 
-		<h2>Buttons with dropdowns</h2>
+		<h2 id="input_groups_buttons_with_dropdowns">Buttons with dropdowns</h2>
 		<form role="form" class="thin-box">
 			<div class="row">
 				<div class="col-lg-6">
@@ -831,7 +865,7 @@
 			</div><!-- /.row -->
 		</form>
 
-		<h2>Segmented buttons</h2>
+		<h2 id="input_groups_segmented_buttons">Segmented buttons</h2>
 		<form role="form" class="thin-box">
 			<div class="row">
 				<div class="col-lg-6">
@@ -879,7 +913,7 @@
 		<h1 id="Navs" class="section">Navs</h1>
 		<hr class="darker"/>
 
-		<h2 id="Tabs">Tabs</h2>
+		<h2 id="navs_tabs">Tabs</h2>
 		<div class="thin-box">
 			<ul role="tablist" class="nav nav-tabs">
 				<li class="active"><a href="javaScript:void(0);">Home</a></li>
@@ -896,7 +930,7 @@
 			</ul>
 		</div>
 
-		<h2 id="Pills">Pills</h2>
+		<h2 id="navs_pills">Pills</h2>
 		<div class="thin-box">
 			<ul class="nav nav-pills">
 				<li class="active"><a href="javaScript:void(0);">Home</a></li>
@@ -911,7 +945,7 @@
 			</ul>
 		</div>
 
-		<h2>Justified</h2>
+		<h2 id="navs_justified">Justified</h2>
 		<div class="thin-box">
 			<ul class="nav nav-tabs nav-justified" role="tablist">
 				<li class="active"><a href="javaScript:void(0);">Home</a></li>
@@ -926,7 +960,7 @@
 			</ul>
 		</div>
 
-		<h2>Disabled links</h2>
+		<h2 id="navs_disabled_links">Disabled links</h2>
 		<div class="thin-box">
 			<ul class="nav nav-pills">
 				<li><a href="javaScript:void(0);">Clickable link</a></li>
@@ -935,7 +969,7 @@
 			</ul>
 		</div>
 
-		<h2>Using dropdowns</h2>
+		<h2 id="navs_using_dropdowns">Using dropdowns</h2>
 		<div class="thin-box">
 			<h3>Tabs with dropdowns</h3>
 			<ul class="nav nav-tabs" role="tablist">
@@ -974,10 +1008,10 @@
 			</ul>
 		</div>
 
-		<h1 id="Navbar" class="section">Navbar</h1>
+		<h1 id="navbar" class="section">Navbar</h1>
 		<hr class="darker"/>
 
-		<h2>Default navbar</h2>
+		<h2 id="navbar_default_navbar">Default navbar</h2>
 		<div class="thin-box">
 			<nav class="navbar navbar-default" role="navigation">
 				<div class="container-fluid">
@@ -1034,7 +1068,7 @@
 			</nav>
 		</div>
 
-		<h2>Forms</h2>
+		<h2 id="navbar_forms">Forms</h2>
 		<div class="thin-box">
 			<nav class="navbar navbar-default" role="navigation">
 				<div class="container-fluid">
@@ -1059,7 +1093,7 @@
 			</nav>
 		</div>
 
-		<h2>Buttons</h2>
+		<h2 id="navbar_buttons">Buttons</h2>
 		<div class="thin-box">
 			<nav class="navbar navbar-default" role="navigation">
 				<div class="container-fluid">
@@ -1079,7 +1113,7 @@
 			</nav>
 		</div>
 
-		<h2>Text</h2>
+		<h2 id="navbar_text">Text</h2>
 		<div class="thin-box">
 			<nav class="navbar navbar-default" role="navigation">
 				<div class="container-fluid">
@@ -1099,7 +1133,7 @@
 			</nav>
 		</div>
 
-		<h2>Non-nav links</h2>
+		<h2 id="navbar_non_nav_links">Non-nav links</h2>
 		<div class="thin-box">
 			<nav class="navbar navbar-default" role="navigation">
 				<div class="container-fluid">
@@ -1119,7 +1153,7 @@
 			</nav>
 		</div>
 
-		<h2>Fixed to top</h2>
+		<h2 id="navbar_fixed_to_top">Fixed to top</h2>
 		<div class="thin-box thin-box-nav-top">
 			<nav role="navigation" class="navbar navbar-default navbar-fixed-top">
 				<!-- We use the fluid option here to avoid overriding the fixed width of a normal container within the narrow content columns. -->
@@ -1145,7 +1179,7 @@
 			</nav>
 		</div>
 
-		<h2>Fixed to bottom</h2>
+		<h2 id="navbar_fixed_to_bottom">Fixed to bottom</h2>
 		<div class="thin-box thin-box-nav-bottom">
 			<nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
 				<!-- We use the fluid option here to avoid overriding the fixed width of a normal container within the narrow content columns. -->
@@ -1171,7 +1205,7 @@
 			</nav>
 		</div>
 
-		<h2>Static top</h2>
+		<h2 id="navbar_static_top">Static top</h2>
 		<div class="thin-box">
 			<nav class="navbar navbar-default navbar-static-top" role="navigation">
 				<!-- We use the fluid option here to avoid overriding the fixed width of a normal container within the narrow content columns. -->
@@ -1198,7 +1232,7 @@
 			</nav>
 		</div>
 
-		<h2>Inverted navbar</h2>
+		<h2 id="navbar_inverted_navbar">Inverted navbar</h2>
 		<div class="thin-box">
 			<nav class="navbar navbar-inverse" role="navigation">
 				<div class="container-fluid">
@@ -1225,7 +1259,7 @@
 			</nav>
 		</div>
 
-		<h1 id="Breadcrumbs" class="section">Breadcrumbs</h1>
+		<h1 id="breadcrumbs" class="section">Breadcrumbs</h1>
 		<hr class="darker"/>
 		<div class="thin-box">
 			<ol class="breadcrumb">
@@ -1242,10 +1276,10 @@
 			</ol>
 		</div>
 
-		<h1 id="Pagination" class="section">Pagination</h1>
+		<h1 id="pagination" class="section">Pagination</h1>
 		<hr class="darker"/>
 
-		<h2>Default pagination</h2>
+		<h2 id="pagination_default_pagination">Default pagination</h2>
 		<div class="thin-box">
 			<button class="btn pagination-btn"><span class="pagination-previous"></span>
 				<span class="sr-only">previous</span></button>
@@ -1319,7 +1353,7 @@
 			</div>
 		</div>
 
-		<h2>Pager</h2>
+		<h2 id="pagination_pager">Pager</h2>
 		<div class="thin-box">
 			<h3>Default example</h3>
 			<ul class="pager">
@@ -1340,9 +1374,9 @@
 			</ul>
 		</div>
 
-		<h1 id="Labels" class="section">Labels</h1>
+		<h1 id="labels" class="section">Labels</h1>
 		<hr class="darker"/>
-		<h2>Example</h2>
+		<h2 id="labels_example">Example</h2>
 		<div class="thin-box">
 			<h1>Example heading <span class="label label-default">New</span></h1>
 			<h2>Example heading <span class="label label-default">New</span></h2>
@@ -1351,7 +1385,7 @@
 			<h5>Example heading <span class="label label-default">New</span></h5>
 			<h6>Example heading <span class="label label-default">New</span></h6>
 		</div>
-		<h2>Available variations</h2>
+		<h2 id="labels_available_variations">Available variations</h2>
 		<div class="thin-box">
 			<span class="label label-default">Default</span>
 			<span class="label label-primary">Primary</span>
@@ -1361,14 +1395,14 @@
 			<span class="label label-danger">Danger</span>
 		</div>
 
-		<h1 id="Badges" class="section">Badges</h1>
+		<h1 id="badges" class="section">Badges</h1>
 		<hr class="darker"/>
 
 		<div class="thin-box">
 			<a href="javaScript:void(0);">Inbox <span class="badge">42</span></a>
 		</div>
 
-		<h2>Adapts to active nav states</h2>
+		<h2 id="badges_adapts_to_active_nav_states">Adapts to active nav states</h2>
 		<div class="thin-box">
 			<ul class="nav nav-pills">
 				<li class="active"><a href="javaScript:void(0);">Home <span class="badge">42</span></a></li>
@@ -1417,10 +1451,10 @@
 			</div>
 		</div>
 
-		<h1 id="Thumbnails" class="section">Thumbnails</h1>
+		<h1 id="thumbnails" class="section">Thumbnails</h1>
 		<hr class="darker"/>
 
-		<h2>Default example</h2>
+		<h2 id="thumbnails_default_example">Default example</h2>
 		<div class="thin-box">
 			<div class="row">
 				<div class="col-xs-6 col-md-3">
@@ -1446,7 +1480,7 @@
 			</div>
 		</div>
 
-		<h2>Custom content</h2>
+		<h2 id="thumbnails_custom_content">Custom content</h2>
 		<div class="thin-box">
 			<div class="row">
 				<div class="col-sm-6 col-md-4">
@@ -1482,10 +1516,10 @@
 			</div>
 		</div>
 
-		<h1 id="Alerts" class="section">Alerts</h1>
+		<h1 id="alerts" class="section">Alerts</h1>
 		<hr class="darker"/>
 
-		<h2>Examples</h2>
+		<h2 id="alerts_examples">Examples</h2>
 		<div class="thin-box">
 			<div class="alert alert-success" role="alert">
 				<strong>Well done!</strong> You successfully read this important alert message.
@@ -1501,7 +1535,7 @@
 			</div>
 		</div>
 
-		<h2>Dismissible alerts</h2>
+		<h2 id="alerts_dismissible_alerts">Dismissible alerts</h2>
 		<div class="thin-box">
 			<div class="alert alert-success alert-dismissible" role="alert">
 				<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
@@ -1526,7 +1560,7 @@
 			</div>
 		</div>
 
-		<h2>Links in alerts</h2>
+		<h2 id="alerts_links_in_alerts">Links in alerts</h2>
 		<div class="thin-box">
 			<div class="alert alert-success" role="alert">
 				<strong>Well done!</strong> You successfully read <a href="javaScript:void(0);" class="alert-link">this important alert message</a>.
@@ -1542,10 +1576,10 @@
 			</div>
 		</div>
 
-		<h1 id="Progress-bars" class="section">Progress bars</h1>
+		<h1 id="progress_bars" class="section">Progress bars</h1>
 		<hr class="darker"/>
 
-		<h2>Basic example</h2>
+		<h2 id="progress_bars_basic_example">Basic example</h2>
 		<div class="thin-box">
 			<div class="progress">
 				<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
@@ -1554,7 +1588,7 @@
 			</div>
 		</div>
 
-		<h2>With label</h2>
+		<h2 id="progress_bars_with_label">With label</h2>
 		<div class="thin-box">
 			<div class="progress">
 				<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
@@ -1563,7 +1597,7 @@
 			</div>
 		</div>
 
-		<h2>Low percentages</h2>
+		<h2 id="progress_bars_low_percentages">Low percentages</h2>
 		<div class="thin-box">
 			<div class="progress">
 				<div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
@@ -1577,7 +1611,7 @@
 			</div>
 		</div>
 
-		<h2>Contextual alternatives</h2>
+		<h2 id="progress_bars_contextual_alternatives">Contextual alternatives</h2>
 		<div class="thin-box">
 			<div class="progress">
 				<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
@@ -1601,7 +1635,7 @@
 			</div>
 		</div>
 
-		<h2>Striped</h2>
+		<h2 id="progress_bars_striped">Striped</h2>
 		<div class="thin-box">
 			<div class="progress">
 				<div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
@@ -1624,14 +1658,14 @@
 				</div>
 			</div>
 		</div>
-		<h2>Animated</h2>
+		<h2 id="progress_bars_animated">Animated</h2>
 		<div class="thin-box">
 			<div class="progress">
 				<div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%"><span class="sr-only">45% Complete</span></div>
 			</div>
 		</div>
 
-		<h2>Stacked</h2>
+		<h2 id="progress_bars_stacked">Stacked</h2>
 		<div class="thin-box">
 			<div class="progress">
 				<div class="progress-bar progress-bar-success" style="width: 35%">
@@ -1646,7 +1680,7 @@
 			</div>
 		</div>
 
-		<h2>Standard progress bar</h2>
+		<h2 id="progress_bars_standard_progress_bar">Standard progress bar</h2>
 		<div class="thin-box">
 			<div class="progress">
 				<div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
@@ -1668,7 +1702,7 @@
 			</div>
 		</div>
 
-		<h2>Indeterminate progress bar</h2>
+		<h2 id="progress_bars_indeterminate_progress_bar">Indeterminate progress bar</h2>
 		<div class="thin-box">
 			<div class="progress">
 				<div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
@@ -1690,7 +1724,7 @@
 			</div>
 		</div>
 
-		<h2>Small progress bar</h2>
+		<h2 id="progress_bars_small_progress_bar">Small progress bar</h2>
 		<div class="thin-box">
 			<div class="progress progress-sm">
 				<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
@@ -1712,10 +1746,10 @@
 			</div>
 		</div>
 
-		<h1 id="Media-object" class="section">Media object</h1>
+		<h1 id="media_object" class="section">Media object</h1>
 		<hr class="darker"/>
 
-		<h2>Default media</h2>
+		<h2 id="media_object_default_media">Default media</h2>
 		<div class="thin-box">
 			<div class="media">
 				<a class="pull-left" href="javaScript:void(0);">
@@ -1746,7 +1780,7 @@
 			</div>
 		</div>
 
-		<h2>Media list</h2>
+		<h2 id="media_object_media_list">Media list</h2>
 		<div class="thin-box">
 			<ul class="media-list">
 				<li class="media">
@@ -1800,10 +1834,10 @@
 			</ul>
 		</div>
 
-		<h1 id="List-group" class="section">List group</h1>
+		<h1 id="list_group" class="section">List group</h1>
 		<hr class="darker"/>
 
-		<h2>Basic example</h2>
+		<h2 id="list_group_basic_example">Basic example</h2>
 		<div class="thin-box">
 			<ul class="list-group">
 				<li class="list-group-item">Cras justo odio</li>
@@ -1814,7 +1848,7 @@
 			</ul>
 		</div>
 
-		<h2>Badges</h2>
+		<h2 id="list_group_badges">Badges</h2>
 		<div class="thin-box">
 			<ul class="list-group">
 				<li class="list-group-item">
@@ -1832,7 +1866,7 @@
 			</ul>
 		</div>
 
-		<h2>Linked items</h2>
+		<h2 id="list_group_linked_items">Linked items</h2>
 		<div class="thin-box">
 			<div class="list-group">
 				<a href="javaScript:void(0);" class="list-group-item active">
@@ -1845,7 +1879,7 @@
 			</div>
 		</div>
 
-		<h2>Disabled items</h2>
+		<h2 id="list_group_disabled_items">Disabled items</h2>
 		<div class="thin-box">
 			<div class="list-group">
 				<a class="list-group-item disabled">
@@ -1858,7 +1892,7 @@
 			</div>
 		</div>
 
-		<h2>Contextual classes</h2>
+		<h2 id="list_group_contextual_classes">Contextual classes</h2>
 		<div class="thin-box">
 			<div class="row">
 				<div class="col-sm-6">
@@ -1880,7 +1914,7 @@
 			</div>
 		</div>
 
-		<h2>Custom content</h2>
+		<h2 id="list_group_custom_content">Custom content</h2>
 		<div class="thin-box">
 			<div class="list-group">
 				<a href="javaScript:void(0);" class="list-group-item active">
@@ -1898,10 +1932,10 @@
 			</div>
 		</div>
 
-		<h1 id="Panels" class="section">Panels</h1>
+		<h1 id="panels" class="section">Panels</h1>
 		<hr class="darker"/>
 
-		<h2>Basic example</h2>
+		<h2 id="panels_basic_example">Basic example</h2>
 		<div class="thin-box">
 			<div class="panel panel-default">
 				<div class="panel-body">
@@ -1910,7 +1944,7 @@
 			</div>
 		</div>
 
-		<h2>Panel with heading</h2>
+		<h2 id="panels_panel_with_heading">Panel with heading</h2>
 		<div class="thin-box">
 			<div class="panel panel-default">
 				<div class="panel-heading">Panel heading without title</div>
@@ -1928,7 +1962,7 @@
 			</div>
 		</div>
 
-		<h2>Panel with footer</h2>
+		<h2 id="panels_panel_with_footer">Panel with footer</h2>
 		<div class="thin-box">
 			<div class="panel panel-default">
 				<div class="panel-body">
@@ -1938,7 +1972,7 @@
 			</div>
 		</div>
 
-		<h2>Contextual alternatives</h2>
+		<h2 id="panels_contextual_alternatives">Contextual alternatives</h2>
 		<div class="thin-box">
 			<div class="panel panel-primary">
 				<div class="panel-heading">
@@ -1982,7 +2016,7 @@
 			</div>
 		</div>
 
-		<h2>With tables</h2>
+		<h2 id="panels_with_tables">With tables</h2>
 		<div class="thin-box">
 			<div class="panel panel-default">
 				<!-- Default panel contents -->
@@ -2068,7 +2102,7 @@
 			</div>
 		</div>
 
-		<h2>With list groups</h2>
+		<h2 id="panels_with_list_groups">With list groups</h2>
 		<div class="thin-box">
 			<div class="panel panel-default">
 				<!-- Default panel contents -->
@@ -2096,17 +2130,17 @@
 			</div>
 		</div>
 
-		<h1 id="Wells" class="section">Wells</h1>
+		<h1 id="wells" class="section">Wells</h1>
 		<hr class="darker"/>
 
-		<h2>Default well</h2>
+		<h2 id="wells_default_well">Default well</h2>
 		<div class="thin-box">
 			<div class="well">
 				Look, I'm in a well!
 			</div>
 		</div>
 
-		<h2>Optional classes</h2>
+		<h2 id="wells_optional_classes">Optional classes</h2>
 		<div class="thin-box">
 			<div class="well well-lg">
 				Look, I'm in a large well!
@@ -2117,6 +2151,10 @@
 			</div>
 		</div>
 	</div>
-
+</div></div></div>
+	<script src="../../bower_components/jquery/dist/jquery.js" type="text/javascript"></script>
+	<script src="../../bower_components/bootstrap/dist/js/bootstrap.js" type="text/javascript"></script>
+	<script src="../jqtoc.js" type="text/javascript"></script>
+	<script>$('#toc').toc({'selectors': 'h1,h2'});</script>
 </body>
 </html>
