@@ -38,7 +38,6 @@
 	&:active,
 	&.active,
 	&:focus {
-
 		outline: 0;
 		//background-image: none;
 		.box-shadow( 0 3px 3px rgba(0,0,0,.1) inset);
@@ -62,7 +61,6 @@
 
 // Alternate buttons
 // --------------------------------------------------
-
 .btn-default {
 	//because this button has 1px border, padding needs to be adjusted
 	//padding + border = 5px
@@ -89,6 +87,56 @@
 
 	&.dropdown-toggle .caret {
 		color: @btn-default-color;
+	}
+
+	&.btn-lg {
+		//padding + border = 7px
+		padding: 6px 10px;
+	}
+
+	&.btn-sm,
+	&.btn-xs
+	{
+		//padding + border = 3px
+		padding: 2px 8px;
+	}
+}
+
+.btn-basic {
+	//because this button has 1px border, padding needs to be adjusted
+	//padding + border = 5px
+	padding: 4px 10px;
+	border: 1px solid #bbb;
+	#gradient > .gradient-bg(#FEFEFE,#E0E0E0);
+
+	&:active,&.active,&:focus{
+		background: @gray93;
+		.box-shadow(inset 0 1px 1px rgba(0,0,0,.2));
+	}
+
+
+	border: 1px solid @btn-basic-border;
+	.button-size(4px; 10px; @font-size-base; @border-radius-base);
+	.repeater-views & {
+		.button-size(3px; 5px; @font-size-base; @border-radius-base);
+		.glyphicon, .fuelux-icon {
+			width: 11px;
+			height: 11px;
+		}
+	}
+
+	.button-variant(@btn-basic-color;
+									@btn-basic-bg-start; @btn-basic-bg-end;
+									@btn-basic-bg-hover-start; @btn-basic-bg-hover-end;
+									@btn-basic-bg-press-start; @btn-basic-bg-press-end;
+									@btn-basic-bg-disabled-start; @btn-basic-bg-disabled-end);
+	&:active,&.active,&:focus,&:active:focus,&:active:hover {
+		#gradient > .gradient-bg(@btn-basic-bg-press-start, @btn-basic-bg-press-end);
+		color: @btn-basic-color;
+	}
+
+	&.dropdown-toggle .caret {
+		color: @btn-basic-color;
 	}
 
 	&.btn-lg {
