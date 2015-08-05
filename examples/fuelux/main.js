@@ -833,4 +833,10 @@ define(function(require) {
 		$cont.append(markup);
 		$('#myWizard').wizard();
 	});
+
+	$('body').scrollspy({
+		target: '.scrollspy'
+	});
+
+	$('.fu-sidebar').affix();
 });

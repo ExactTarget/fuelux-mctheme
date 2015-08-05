@@ -57,13 +57,50 @@
 				$(".nav").find(".active").removeClass("active");
 				$(this).parent().addClass("active");
 			});
+
+			$('body').scrollspy({
+				target: '.scrollspy'
+			});
 		});
 	</script>
 </head>
 <body>
 
+<header class="navbar navbar-fixed-top" role="banner">
+	<div class="container">
+		<div class="navbar-header">
+			<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".fu-navbar-collapse">
+				<span class="sr-only">Toggle navigation</span>
+			</button>
+			<a href="/" class="navbar-brand">MC Theme</a>
+		</div>
+		<nav class="collapse navbar-collapse fu-navbar-collapse" role="navigation">
+			<ul class="nav navbar-nav">
+				<li>
+					<a href="../bootstrap-css/bootstrap-css.html">Bootstrap CSS</a>
+				</li>
+				<li>
+					<a href="../bootstrap-components/bootstrap-components.html">Bootstrap Components</a>
+				</li>
+				<li class="active">
+					<a href="./bootstrap-javascript.html">Bootstrap Javascript</a>
+				</li>
+				<li>
+					<a href="../fuelux/fuelux.html">Fuel UX Controls</a>
+				</li>
+				<li>
+					<a href="../utilities/utilities.html">Typography</a>
+				</li>
+				<li>
+					<a href="../icons/icons.html">Iconography</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</header>
+
 <div class="container main">
-	<div class="row">
+	<div class="row" style="margin-top:60px;">
 		<div class="col-md-9">
 			<h1 class="section" id="modal">Modal</h1>
 			<hr class="darker"/>
@@ -777,39 +814,39 @@
 			<!-- /example -->
 		</div>
 		<div class="col-md-3">
-			<nav class="fu-sidebar" style="position: fixed">
-				<ul class="nav nav-stacked">
+			<div data-spy="affix" class="fu-sidebar hidden-print affix-top scrollspy" role="complementary" style="margin-top: 20px;" data-offset-top="0">
+				<ul class="nav" id="side-nav">
 
-					<li class="active">
+					<li class="">
 						<a href="#modal">Modal</a>
 					</li>
-					<li>
+					<li class="">
 						<a href="#dropdowns">Dropdowns</a>
 					</li>
-					<li>
+					<li class="">
 						<a href="#tabs">Tabs</a>
 					</li>
-					<li>
+					<li class="">
 						<a href="#tooltips">Tooltips</a>
 					</li>
-					<li>
+					<li class="">
 						<a href="#popover">Popover</a>
 					</li>
-					<li>
-						<a href="#alert-messages">Alert Messages</a>
+					<li class="">
+						<a href="#alert-messages">Alert messages</a>
 					</li>
-					<li>
+					<li class="">
 						<a href="#buttons">Buttons</a>
 					</li>
-					<li>
+					<li class="">
 						<a href="#collapse">Collapse</a>
 					</li>
-					<li>
+					<li class="">
 						<a href="#carousel">Carousel</a>
 					</li>
+
 				</ul>
-			</nav>
-		</div>
+			</div>
 	</div>
 </div>
 
