@@ -1,8 +1,7 @@
 /*!
- * Marketing Cloud Theme EDGE - Built 2015/08/04, 2:38:11 PM 
- * Previous release: v1.6.1 
- * Copyright 2012-2015 ExactTarget
- * Licensed under the BSD-3 license (https://github.com/ExactTarget/fuelux-mctheme/blob/master/LICENSE)
+ * Marketing Cloud Theme v1.6.2 
+ * Copyright 2015 ExactTarget
+ * Licensed under BSD-3 (https://github.com/ExactTarget/fuelux-mctheme/blob/master/LICENSE)
  */
 
 .clearfix,
@@ -7788,6 +7787,9 @@ a.list-group-item-danger.active:focus {
 .fuelux .repeater[data-viewtype="list"] .repeater-canvas .repeater-list .table tr.selected:hover td {
   background: #b9dff1;
 }
+.fuelux .repeater[data-viewtype="list"] .repeater-canvas .repeater-list .table tr.selected.hovered td {
+  background: #b9dff1;
+}
 .fuelux .repeater[data-viewtype="list"] .repeater-canvas .repeater-list .table tr.selected td {
   background: #d9eaf5;
   color: #385b6b;
@@ -7848,6 +7850,7 @@ a.list-group-item-danger.active:focus {
   border-left: 0;
   border-right: none;
   padding-left: 10px;
+  margin-left: -11px;
   padding: 6px 10px;
 }
 .fuelux .repeater[data-viewtype="list"] .repeater-canvas .repeater-list .table tr th .repeater-list-heading:last-child {
@@ -7899,14 +7902,49 @@ a.list-group-item-danger.active:focus {
 .fuelux .repeater[data-viewtype="list"] .repeater-canvas .repeater-list-check {
   float: left;
 }
-.fuelux .repeater[data-viewtype="list"] .repeater-canvas.actions-enabled .repeater-list .actions-column-wrapper table.table-actions tr th {
-  padding-bottom: 6px;
+.fuelux .repeater[data-viewtype="list"] .repeater-canvas.actions-enabled .repeater-list .actions-column-wrapper table.table-actions thead tr th .repeater-list-heading {
+  margin-left: -11px;
 }
-.fuelux .repeater[data-viewtype="list"] .repeater-canvas.actions-enabled .repeater-list .actions-column-wrapper table.table-actions tr th .repeater-list-heading {
-  padding: 6px 0 5px;
+.fuelux .repeater[data-viewtype="list"] .repeater-canvas.actions-enabled .repeater-list .actions-column-wrapper table.table-actions tr.selected td:first-child {
+  padding-left: 10px;
 }
-.fuelux .repeater[data-viewtype="list"] .repeater-canvas.actions-enabled .repeater-list .actions-column-wrapper table.table-actions .dropdown-toggle {
-  padding: 2px 5px;
+.fuelux .repeater[data-viewtype="list"] .repeater-canvas.actions-enabled .repeater-list .actions-column-wrapper table.table-actions tr.selected:focus {
+  outline: 1px dotted #66afe9;
+}
+.fuelux .repeater[data-viewtype="list"] .repeater-canvas.actions-enabled .repeater-list .actions-column-wrapper table.table-actions tr.selected:hover td {
+  background: #b9dff1;
+}
+.fuelux .repeater[data-viewtype="list"] .repeater-canvas.actions-enabled .repeater-list .actions-column-wrapper table.table-actions tr.selected.hovered td {
+  background: #b9dff1;
+}
+.fuelux .repeater[data-viewtype="list"] .repeater-canvas.actions-enabled .repeater-list .actions-column-wrapper table.table-actions tr.selected td {
+  background: #d9eaf5;
+  color: #385b6b;
+}
+.fuelux .repeater[data-viewtype="list"] .repeater-canvas.actions-enabled .repeater-list .actions-column-wrapper table.table-actions .btn {
+  padding: 2px 4px;
+}
+.fuelux .repeater[data-viewtype="list"] .repeater-canvas.actions-enabled .repeater-list .actions-column-wrapper table.table-actions .action-item .fuelux-icon {
+  width: 10px;
+  height: 10px;
+  margin-top: -1px;
+  margin-bottom: -1px;
+}
+.fuelux .repeater[data-viewtype="list"] .repeater-canvas.actions-enabled .repeater-list .repeater-list-wrapper > table tr td:last-child {
+  border-bottom: none;
+}
+.fuelux .repeater[data-viewtype="list"] .repeater-canvas.actions-enabled .repeater-list.firefox .actions-column-wrapper table.table-actions tr,
+.fuelux .repeater[data-viewtype="list"] .repeater-canvas.actions-enabled .repeater-list.firefox .actions-column-wrapper table.table-actions td {
+  line-height: 1.56;
+}
+.fuelux .repeater[data-viewtype="list"] .repeater-canvas.multi-select-enabled .repeater-list thead tr:first-child .header-checkbox label {
+  left: 3px;
+}
+.fuelux .repeater[data-viewtype="list"] .repeater-canvas.multi-select-enabled .repeater-list tbody tr .body-checkbox {
+  left: 3px;
+}
+.fuelux .repeater[data-viewtype="list"] .repeater-canvas.multi-select-enabled .repeater-list tr.selected td:first-child {
+  padding-left: 10px;
 }
 .fuelux .repeater-thumbnail-cont .thumbnail.selected {
   background: #d9eaf5;
