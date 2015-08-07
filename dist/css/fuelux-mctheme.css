@@ -1,7 +1,8 @@
 /*!
- * Marketing Cloud Theme v1.6.2 
- * Copyright 2015 ExactTarget
- * Licensed under BSD-3 (https://github.com/ExactTarget/fuelux-mctheme/blob/master/LICENSE)
+ * Marketing Cloud Theme EDGE - Built 2015/08/07, 12:40:48 PM 
+ * Previous release: v1.6.2 
+ * Copyright 2012-2015 ExactTarget
+ * Licensed under the BSD-3 license (https://github.com/ExactTarget/fuelux-mctheme/blob/master/LICENSE)
  */
 
 .clearfix,
@@ -2725,133 +2726,133 @@ button:hover > .glyphicon-triangle-west:before {
   height: 18px;
   margin-bottom: -5px;
 }
-.fuelux body {
+body {
   font-family: Arial, sans-serif;
   color: #222222;
   font-size: 11px;
   line-height: 1.4;
 }
-.fuelux .title-form,
-.fuelux .title-header-page,
-.fuelux .title-table {
+.title-form,
+.title-header-page,
+.title-table {
   line-height: 1.4;
 }
-.fuelux .title-form small,
-.fuelux .title-header-page small,
-.fuelux .title-table small,
-.fuelux .title-form .small,
-.fuelux .title-header-page .small,
-.fuelux .title-table .small {
+.title-form small,
+.title-header-page small,
+.title-table small,
+.title-form .small,
+.title-header-page .small,
+.title-table .small {
   font-weight: normal;
   line-height: 1;
   color: #777777;
   font-size: 65%;
 }
-.fuelux .title-table {
+.title-table {
   font-size: 15px;
 }
-.fuelux .title-form {
+.title-form {
   font-size: 14px;
 }
-.fuelux .page-header {
+.page-header {
   font-size: 20px;
   margin-top: 10px;
   border-bottom: none;
   margin-bottom: 0;
 }
-.fuelux .page-header h1 {
+.page-header h1 {
   line-height: 30px;
   margin-top: 0;
   margin-bottom: 0;
 }
-.fuelux .page-header > :last-of-type:not(:only-of-type) {
+.page-header > :last-of-type:not(:only-of-type) {
   text-align: right;
 }
-.fuelux p {
+p {
   font-size: 11px;
 }
-.fuelux p.support-text {
+p.support-text {
   color: #666666;
 }
-.fuelux p.hint-text {
+p.hint-text {
   color: #999999;
 }
-.fuelux p.disabled-text {
+p.disabled-text {
   color: #ababab;
 }
-.fuelux h1,
-.fuelux .h1 {
+h1,
+.h1 {
   font-size: 20px;
 }
-.fuelux h2,
-.fuelux .h2 {
+h2,
+.h2 {
   font-size: 15px;
 }
-.fuelux h3,
-.fuelux .h3 {
+h3,
+.h3 {
   font-size: 14px;
 }
-.fuelux h4,
-.fuelux .h4 {
+h4,
+.h4 {
   font-size: 12px;
 }
-.fuelux h5,
-.fuelux .h5 {
+h5,
+.h5 {
   font-size: 11px;
 }
-.fuelux h6,
-.fuelux .h6 {
+h6,
+.h6 {
   font-size: 10px;
 }
-.fuelux .h1 {
+.h1 {
   margin: 0;
 }
-.fuelux .h2 {
+.h2 {
   margin: 0;
 }
-.fuelux .h3 {
+.h3 {
   margin: 0;
 }
-.fuelux .h4 {
+.h4 {
   margin: 0;
 }
-.fuelux .h5 {
+.h5 {
   margin: 0;
 }
-.fuelux .h6 {
+.h6 {
   margin: 0;
 }
-.fuelux .serif {
+.serif {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
-.fuelux .monospace {
+.monospace {
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
 }
-.fuelux .text-sm {
+.text-sm {
   font-size: 10px;
 }
-.fuelux .text-lg {
+.text-lg {
   font-size: 24px;
 }
-.fuelux .text-xl {
+.text-xl {
   font-size: 32px;
 }
-.fuelux .text-xxl {
+.text-xxl {
   font-size: 44px;
 }
-.fuelux .text-danger {
+.text-danger {
   color: #e00000;
 }
-.fuelux .text-dimmed {
+.text-dimmed {
   color: #4b4b4b;
 }
-.fuelux .text-muted {
+.text-muted {
   color: #757575;
 }
-.fuelux .text-primary {
+.text-primary {
   color: #3074af;
 }
-.fuelux .text-warning {
+.text-warning {
   color: #986000;
 }
 .btn {
