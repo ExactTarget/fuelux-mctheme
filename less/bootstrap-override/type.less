@@ -1,117 +1,65 @@
-.fuelux {
-	body{
-		font-family: @font-family-base;
-		color: @gray13;
-		font-size: @font-size-base;
-		line-height: @line-height-base;
-	}
+// Bootstrap overrides
 
-	.title-form, .title-header-page, .title-table {
-		line-height: @line-height-base;
+body{
+	font-family: @font-family-base;
+	color: @gray13;
+	font-size: @font-size-base;
+	line-height: @line-height-base;
+}
 
-		small,
-		.small {
-			font-weight: normal;
-			line-height: 1;
-			color: @gray47;
-			font-size: 65%;
-		}
-	}
+a {
+	color: @text-primary;
 
-	.title-table { font-size: @font-size-h2; }
-
-	.title-form { font-size: @font-size-h3; }
-
-	// Page header
-	// -------------------------
-	.page-header {
-		font-size: @font-size-h1;
-		margin-top: 10px;
-		border-bottom: none;
-		margin-bottom: 0;
-
-		h1 {
-			line-height: 30px;	// matches create button height
-			margin-top: 0;
-			margin-bottom: 0;
-		}
-
-		// create button, etc.
-		& > :last-of-type:not(:only-of-type) {
-			text-align: right
-		}
-
-	}
-
-	p {
-		font-size: @font-size-base;
-
-		&.support-text{
-			color: @gray40;
-		}
-
-		&.hint-text{
-			color: @gray60;
-		}
-
-		&.disabled-text{
-			color: @gray67;
-		}
-	}
-
-	h1, .h1 { font-size: @font-size-h1; }
-	h2, .h2 { font-size: @font-size-h2; }
-	h3, .h3 { font-size: @font-size-h3; }
-	h4, .h4 { font-size: @font-size-h4; }
-	h5, .h5 { font-size: @font-size-h5; }
-	h6, .h6 { font-size: @font-size-h6; }
-
-	.h1 { margin: 0; }
-	.h2 { margin: 0; }
-	.h3 { margin: 0; }
-	.h4 { margin: 0; }
-	.h5 { margin: 0; }
-	.h6 { margin: 0; }
-
-	// Font Family
-	// -------------------------
-	.serif {
-		font-family: Georgia, "Times New Roman", Times, serif;
-	}
-	.monospace {
-		font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
-	}
-
-	// Font Size
-	// -------------------------
-	.text-sm {
-		font-size: 10px;
-	}
-	.text-lg {
-		font-size: 24px;
-	}
-	.text-xl {
-		font-size: 32px;
-	}
-	.text-xxl {
-		font-size: 44px;
-	}
-
-	// Font Color
-	// -------------------------
-	.text-danger {
-		color: @text-danger;
-	}
-	.text-dimmed {
-		color: @text-dimmed;
-	}
-	.text-muted {
-		color: @text-muted;
-	}
-	.text-primary {
+	&:hover, &:active {
+		text-decoration: underline;
 		color: @text-primary;
 	}
-	.text-warning {
-		color: @text-warning;
+}
+
+p {
+	font-size: @font-size-base;
+
+	&.support-text{
+		color: @gray40;
 	}
+
+	&.hint-text{
+		color: @gray60;
+	}
+
+	&.disabled-text{
+		color: @gray67;
+	}
+}
+
+h1, .h1 { font-size: @font-size-h1; }
+h2, .h2 { font-size: @font-size-h2; }
+h3, .h3 { font-size: @font-size-h3; }
+h4, .h4 { font-size: @font-size-h4; }
+h5, .h5 { font-size: @font-size-h5; }
+h6, .h6 { font-size: @font-size-h6; }
+
+.h1 { margin: 0; }
+.h2 { margin: 0; }
+.h3 { margin: 0; }
+.h4 { margin: 0; }
+.h5 { margin: 0; }
+.h6 { margin: 0; }
+
+// Font Color
+// -------------------------
+.text-danger {
+	color: @text-danger;
+}
+.text-dimmed {
+	color: @text-dimmed;
+}
+.text-muted {
+	color: @text-muted;
+}
+.text-primary {
+	color: @text-primary;
+}
+.text-warning {
+	color: @text-warning;
 }
