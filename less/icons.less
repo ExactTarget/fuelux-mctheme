@@ -1,11 +1,26 @@
-.btn-lg .fuelux-icon {
-	width: 20px;
-	height: 20px;
+@import 'mixins.less';
+.btn .fuelux-icon, .btn:hover .fuelux-icon {
+	width: 12px;
+	height: 12px;
+	margin-top: -2px;
+	margin-bottom: -1px;
 }
 
-.btn-sm .fuelux-icon {
+.btn-lg .fuelux-icon, .btn-lg:hover .fuelux-icon {
 	width: 13px;
 	height: 13px;
+	margin-top: -2px;
+	margin-bottom: -1px;
+}
+
+.btn-sm .fuelux-icon, .btn-sm:hover .fuelux-icon {
+	.btn-sm-fuelux-icon();
+}
+.btn-xs .fuelux-icon, .btn-xs:hover .fuelux-icon {
+	width: 9px;
+	height: 9px;
+	margin-top: -1px;
+	margin-bottom: -1px;
 }
 
 // The columns configure icon has a little gear sticking out of it, making it need to be bigger than the other column type icons in a repeater toolbar, so that the columns box itself appears to be the same size. The margin-bottom is so that it aligns correctly, and it's container button is the same size as the rest of the buttons in the toolbar.

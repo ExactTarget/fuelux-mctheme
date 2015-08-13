@@ -28,9 +28,17 @@
 
 .fuelux-icon-caret-down, .glyphicon-caret-down { background-image: url('png/caret-down.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
+.fuelux-icon-caret-left-hover, .fuelux-icon-caret-left:hover, button:hover > .fuelux-icon-caret-left , .glyphicon-caret-left-hover, .glyphicon-caret-left:hover, button:hover > .glyphicon-caret-left { background-image: url('png/caret-left-hover.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-caret-left, .glyphicon-caret-left { background-image: url('png/caret-left.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
 .fuelux-icon-caret-right-hover, .fuelux-icon-caret-right:hover, button:hover > .fuelux-icon-caret-right , .glyphicon-caret-right-hover, .glyphicon-caret-right:hover, button:hover > .glyphicon-caret-right { background-image: url('png/caret-right-hover.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
 .fuelux-icon-caret-right, .glyphicon-caret-right { background-image: url('png/caret-right.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-caret-up-hover, .fuelux-icon-caret-up:hover, button:hover > .fuelux-icon-caret-up , .glyphicon-caret-up-hover, .glyphicon-caret-up:hover, button:hover > .glyphicon-caret-up { background-image: url('png/caret-up-hover.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-caret-up, .glyphicon-caret-up { background-image: url('png/caret-up.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
 .fuelux-icon-channel-pin-blue, .glyphicon-channel-pin-blue { background-image: url('png/channel-pin-blue.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
@@ -160,8 +168,6 @@
 
 .fuelux-icon-loader, .glyphicon-loader { background-image: url('png/loader.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
-.fuelux-icon-loader_full, .glyphicon-loader_full { background-image: url('png/loader_full.png'); background-repeat: no-repeat; .fuelux-icon; } 
-
 .fuelux-icon-message-type-in, .glyphicon-message-type-in { background-image: url('png/message-type-in.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
 .fuelux-icon-message-type-out, .glyphicon-message-type-out { background-image: url('png/message-type-out.png'); background-repeat: no-repeat; .fuelux-icon; } 
@@ -214,11 +220,7 @@
 
 .fuelux-icon-radio-button, .glyphicon-radio-button { background-image: url('png/radio-button.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
-.fuelux-icon-refresh-disabled-hover, .fuelux-icon-refresh-disabled:hover, button:hover > .fuelux-icon-refresh-disabled , .glyphicon-refresh-disabled-hover, .glyphicon-refresh-disabled:hover, button:hover > .glyphicon-refresh-disabled { background-image: url('png/refresh-disabled-hover.png'); background-repeat: no-repeat; .fuelux-icon; } 
-
 .fuelux-icon-refresh-disabled, .glyphicon-refresh-disabled { background-image: url('png/refresh-disabled.png'); background-repeat: no-repeat; .fuelux-icon; } 
-
-.fuelux-icon-refresh-hover, .fuelux-icon-refresh:hover, button:hover > .fuelux-icon-refresh -disabled, .glyphicon-refresh-hover, .glyphicon-refresh:hover, button:hover > .glyphicon-refresh -disabled { background-image: url('png/refresh-hover-disabled.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
 .fuelux-icon-refresh-hover, .fuelux-icon-refresh:hover, button:hover > .fuelux-icon-refresh , .glyphicon-refresh-hover, .glyphicon-refresh:hover, button:hover > .glyphicon-refresh { background-image: url('png/refresh-hover.png'); background-repeat: no-repeat; .fuelux-icon; } 
 

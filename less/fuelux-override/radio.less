@@ -4,7 +4,7 @@
 }
 
 .radio-button-before() {
-	
+
 	input[type="radio"] {
 		height: 1px;
 		width: 1px;
@@ -58,6 +58,18 @@
 			&:before {
 				.fuelux-icon-radio-button-checked-hover;
 				.radio-button-element-sizes;
+			}
+		}
+	}
+
+	&.radio-inline {
+		&:not(.disabled) {
+			&:not(.checked) {
+				&:hover {
+					&:before {
+						top: 3px;
+					}
+				}
 			}
 		}
 	}
@@ -119,11 +131,11 @@
 }
 
 // remove box shadow
-.fuelux .radio input[type="radio"]:hover:not(.sr-only) ~ label::before, 
-.fuelux .radio-inline input[type="radio"]:hover:not(.sr-only) ~ label::before, 
-.fuelux .radio input[type="radio"]:active:not(.sr-only) ~ label::before, 
-.fuelux .radio-inline input[type="radio"]:active:not(.sr-only) ~ label::before, 
-.fuelux .radio input[type="radio"]:focus:not(.sr-only) ~ label::before, 
-.fuelux .radio-inline input[type="radio"]:focus:not(.sr-only) ~ label::before { 
+.fuelux .radio input[type="radio"]:hover:not(.sr-only) ~ label::before,
+.fuelux .radio-inline input[type="radio"]:hover:not(.sr-only) ~ label::before,
+.fuelux .radio input[type="radio"]:active:not(.sr-only) ~ label::before,
+.fuelux .radio-inline input[type="radio"]:active:not(.sr-only) ~ label::before,
+.fuelux .radio input[type="radio"]:focus:not(.sr-only) ~ label::before,
+.fuelux .radio-inline input[type="radio"]:focus:not(.sr-only) ~ label::before {
 	box-shadow: none;
 }

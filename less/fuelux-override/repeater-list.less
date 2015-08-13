@@ -1,3 +1,4 @@
+@import '../mixins.less';
 .fuelux .repeater[data-viewtype="list"] {
 	.repeater-canvas {
 		.repeater-list {
@@ -13,6 +14,11 @@
 					}
 
 					&:hover {
+						td {
+							background: @blue-sky;
+						}
+					}
+					&.hovered {
 						td {
 							background: @blue-sky;
 						}
@@ -90,6 +96,7 @@
 						border-left: 0;
 						border-right: none;
 						padding-left: 10px;
+						margin-left: -11px;
 						.column-header();
 
 						&:last-child {
@@ -160,21 +167,104 @@
 			.repeater-list {
 				.actions-column-wrapper {
 					table.table-actions {
+						thead {
+							tr {
+								th {
+									.repeater-list-heading {
+										margin-left: -11px;
+									}
+								}
+							}
+						}
 						tr {
-							th {
-								padding-bottom: 6px;
-								.repeater-list-heading {
-									padding: 6px 0 5px;
+							&.selected {
+								td:first-child {
+									padding-left: 10px;
+								}
+
+								&:focus {
+									outline: 1px dotted #66afe9;
+								}
+
+								&:hover {
+									td {
+										background: @blue-sky;
+									}
+								}
+								&.hovered {
+									td {
+										background: @blue-sky;
+									}
+								}
+
+								td {
+									background: @blue-slate;
+									color: @brand-info-dark;
 								}
 							}
 						}
 
-						.dropdown-toggle {
-							padding: 2px 5px;
+						.btn {
+							padding: 2px 4px;
+						}
+						.action-item {
+							.fuelux-icon {
+								.btn-sm-fuelux-icon();
+							}
+						}
+					}
+				}
+				.repeater-list-wrapper {
+					> table {
+						tr {
+							td:last-child {
+								border-bottom: none;
+							}
+						}
+					}
+				}
+				&.firefox {
+					.actions-column-wrapper {
+						table {
+							&.table-actions {
+								tr,td {
+									line-height: 1.56;
+								}
+							}
 						}
 					}
 				}
 			}
 		}
+		&.multi-select-enabled {
+			 .repeater-list {
+				 thead {
+					 tr:first-child {
+						 .header-checkbox {
+							 label {
+								 left: 3px;
+							 }
+						 }
+					 }
+				 }
+				 tbody {
+					 tr {
+						 .body-checkbox {
+							 left: 3px;
+						 }
+					 }
+				 }
+				 tr {
+					 &.selected {
+						 td {
+							 &:first-child {
+								 padding-left: 10px;
+							 }
+						 }
+					 }
+				 }
+			 }
+		}
+
 	}
 }

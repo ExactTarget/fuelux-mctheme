@@ -85,7 +85,8 @@
 	&:active,
 	&.active,
 	&.focus,
-	&:focus {
+	&:active:focus,
+	&:active:hover {
 		#gradient > .gradient-bg(@btn-default-bg-press-start, @btn-default-bg-press-end);
 		color: @btn-default-color;
 		border-color: @gray67;

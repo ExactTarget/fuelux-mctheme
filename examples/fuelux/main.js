@@ -391,7 +391,6 @@ define(function(require) {
 					thumbnail(options, callback);
 				}
 			},
-			list_selectable: 'multi',
 			list_noItemsHTML: 'no items found',
 			thumbnail_noItemsHTML: 'no items found',
 			thumbnail_infiniteScroll: { hybrid: true }
@@ -480,30 +479,23 @@ define(function(require) {
 		// initialize the repeater
 		var repeaterActions = $('#myRepeaterActions');
 		repeaterActions.repeater({
-			list_columnSizing:false,
-			list_columnSyncing: false,
 			list_noItemsHTML: '<span>foo</span>',
 			list_highlightSortedColumn: true,
+			list_selectable: 'multi',
 			list_actions:  {
-				width: '37px',
+				width: 37,
 				items: [
 					{
 						name: 'edit',
-						html: function () {
-							return '<div class="fuelux-icon fuelux-icon-pencil"></div> Edit'
-						}
+						html: '<span class="fuelux-icon fuelux-icon-pencil"></span> Edit'
 					},
 					{
 						name: 'copy',
-						html: function () {
-							return '<div class="fuelux-icon fuelux-icon-copy"></div> Copy'
-						}
+						html: '<span class="fuelux-icon fuelux-icon-copy"></span> Copy'
 					},
 					{
 						name: 'delete',
-						html: function () {
-							return '<div class="fuelux-icon fuelux-icon-delete"></div> Delete'
-						},
+						html: '<span class="fuelux-icon fuelux-icon-delete"></span> Delete',
 						clickAction: function(helpers, callback) {
 							console.log('hey it worked');
 							console.log(helpers);
@@ -833,4 +825,10 @@ define(function(require) {
 		$cont.append(markup);
 		$('#myWizard').wizard();
 	});
+
+	$('body').scrollspy({
+		target: '.scrollspy'
+	});
+
+	$('.fu-sidebar').affix();
 });
