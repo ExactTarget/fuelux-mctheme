@@ -7,6 +7,11 @@ module.exports = function (grunt) {
 	// release minor or patch version. Do major releases manually
 	var versionReleaseType = (typeof grunt.option('minor') !== 'undefined') ? 'minor' : 'patch';
 
+	// used by resetdist task
+	var fs = require('fs');
+	var path = require('path');
+
+
 	// Project configuration.
 	grunt.initConfig({
 		// Metadata
@@ -380,10 +385,16 @@ module.exports = function (grunt) {
 	// The default build task
 	grunt.registerTask('default', ['dist']);
 
-
 	// SVG Icon Making Tools
 	grunt.loadNpmTasks('grunt-grunticon');
 
+	//if you've already accidentally added your files for commit, this will at least unstage them. If you haven't, this will wipe them out.
+	grunt.registerTask('resetdist', 'resets changes to dist to keep them from being checked in', function () {
+			var exec = require('child_process').exec;
+			console.log(exec);
+			exec('git reset HEAD dist/*');
+			exec('git checkout -- dist/*');
+	});
 
 	/* ----------------
 		Making Icons
