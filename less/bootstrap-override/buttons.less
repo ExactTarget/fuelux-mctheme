@@ -112,13 +112,7 @@
 	//padding + border = 5px
 	padding: 4px 10px;
 	border: 1px solid #bbb;
-	#gradient > .gradient-bg(#FEFEFE,#E0E0E0);
-
-	&:active,&.active,&:focus{
-		background: @gray93;
-		.box-shadow(inset 0 1px 1px rgba(0,0,0,.2));
-	}
-
+	#gradient > .gradient-bg(#FFFFFF, @gray93);
 
 	border: 1px solid @btn-basic-border;
 	.button-size(4px; 10px; @font-size-base; @border-radius-base);
@@ -141,7 +135,7 @@
 	}
 
 	&.dropdown-toggle .caret {
-		color: @btn-basic-color;
+		color: @btn-basic-color; // #656565
 	}
 
 	&.btn-lg {
@@ -346,12 +340,12 @@
 		}
 	}
 
-	.fuelux-icon { 
+	.fuelux-icon {
 		width: 12px;
 		height: 12px;
 		position: relative;
 		top: 2px;
-		margin-right: 2px; 
+		margin-right: 2px;
 	}
 
 }
