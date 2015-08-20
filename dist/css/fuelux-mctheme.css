@@ -1,5 +1,5 @@
 /*!
- * Marketing Cloud Theme v1.7.0 
+ * Marketing Cloud Theme v1.7.1 
  * Copyright 2015 ExactTarget
  * Licensed under BSD-3 (https://github.com/ExactTarget/fuelux-mctheme/blob/master/LICENSE)
  */
@@ -19,191 +19,6 @@
 .clearfix:after,
 .form-horizontal .form-group:after {
   clear: both;
-}
-.padding-xs {
-  padding: 5px;
-}
-.padding-xs-horizontal {
-  padding: 0 5px;
-}
-.padding-xs-vertical {
-  padding: 5px 0;
-}
-.padding-xs-top {
-  padding-top: 5px;
-}
-.padding-xs-bottom {
-  padding-bottom: 5px;
-}
-.padding-xs-left {
-  padding-left: 5px;
-}
-.padding-xs-right {
-  padding-right: 5px;
-}
-.padding-sm {
-  padding: 10px;
-}
-.padding-sm-horizontal {
-  padding: 0 10px;
-}
-.padding-sm-vertical {
-  padding: 10px 0;
-}
-.padding-sm-top {
-  padding-top: 10px;
-}
-.padding-sm-bottom {
-  padding-bottom: 10px;
-}
-.padding-sm-left {
-  padding-left: 10px;
-}
-.padding-sm-right {
-  padding-right: 10px;
-}
-.padding-md {
-  padding: 15px;
-}
-.padding-md-horizontal {
-  padding: 0 15px;
-}
-.padding-md-vertical {
-  padding: 15px 0;
-}
-.padding-md-top {
-  padding-top: 15px;
-}
-.padding-md-bottom {
-  padding-bottom: 15px;
-}
-.padding-md-left {
-  padding-left: 15px;
-}
-.padding-md-right {
-  padding-right: 15px;
-}
-.padding-lg {
-  padding: 20px;
-}
-.padding-lg-horizontal {
-  padding: 0 20px;
-}
-.padding-lg-vertical {
-  padding: 20px 0;
-}
-.padding-lg-top {
-  padding-top: 20px;
-}
-.padding-lg-bottom {
-  padding-bottom: 20px;
-}
-.padding-lg-left {
-  padding-left: 20px;
-}
-.padding-lg-right {
-  padding-right: 20px;
-}
-.margin-xs {
-  margin: 5px;
-}
-.margin-xs-horizontal {
-  margin: 0 5px;
-}
-.margin-xs-vertical {
-  margin: 5px 0;
-}
-.margin-xs-top {
-  margin-top: 5px;
-}
-.margin-xs-bottom {
-  margin-bottom: 5px;
-}
-.margin-xs-left {
-  margin-left: 5px;
-}
-.margin-xs-right {
-  margin-right: 5px;
-}
-.margin-sm {
-  margin: 10px;
-}
-.margin-sm-horizontal {
-  margin: 0 10px;
-}
-.margin-sm-vertical {
-  margin: 10px 0;
-}
-.margin-sm-top {
-  margin-top: 10px;
-}
-.margin-sm-bottom {
-  margin-bottom: 10px;
-}
-.margin-sm-left {
-  margin-left: 10px;
-}
-.margin-sm-right {
-  margin-right: 10px;
-}
-.margin-md {
-  margin: 15px;
-}
-.margin-md-horizontal {
-  margin: 0 15px;
-}
-.margin-md-vertical {
-  margin: 15px 0;
-}
-.margin-md-top {
-  margin-top: 15px;
-}
-.margin-md-bottom {
-  margin-bottom: 15px;
-}
-.margin-md-left {
-  margin-left: 15px;
-}
-.margin-md-right {
-  margin-right: 15px;
-}
-.margin-lg {
-  margin: 20px;
-}
-.margin-lg-horizontal {
-  margin: 0 20px;
-}
-.margin-lg-vertical {
-  margin: 20px 0;
-}
-.margin-lg-top {
-  margin-top: 20px;
-}
-.margin-lg-bottom {
-  margin-bottom: 20px;
-}
-.margin-lg-left {
-  margin-left: 20px;
-}
-.margin-lg-right {
-  margin-right: 20px;
-}
-.data-label {
-  text-transform: uppercase;
-  font-size: 10px;
-  margin-bottom: 2px;
-  text-shadow: 0 1px #fff;
-  color: #666;
-}
-.data-value {
-  font-size: 14px;
-}
-.section-heading {
-  font-size: 16px;
-  color: #333;
-  margin: 0 0 10px;
-  padding: 0;
-  text-shadow: 0 1px #fff;
 }
 .fuelux-icon-add-hover,
 .fuelux-icon-add:hover,
@@ -2725,135 +2540,105 @@ button:hover > .glyphicon-triangle-west:before {
   height: 18px;
   margin-bottom: -5px;
 }
-.fuelux body {
+/*
+	BOOTSTRAP OVERRIDE RULES
+	Please do not add the .fuelux namespace wrapper class.
+ */
+/*
+	BOOTSTRAP OVERRIDE RULES
+	Please do not add the .fuelux namespace wrapper class.
+ */
+/*
+	BOOTSTRAP OVERRIDE RULES
+	Please do not add the .fuelux namespace wrapper class.
+ */
+body {
   font-family: Arial, sans-serif;
   color: #222222;
   font-size: 11px;
   line-height: 1.4;
 }
-.fuelux .title-form,
-.fuelux .title-header-page,
-.fuelux .title-table {
-  line-height: 1.4;
-}
-.fuelux .title-form small,
-.fuelux .title-header-page small,
-.fuelux .title-table small,
-.fuelux .title-form .small,
-.fuelux .title-header-page .small,
-.fuelux .title-table .small {
-  font-weight: normal;
-  line-height: 1;
-  color: #777777;
-  font-size: 65%;
-}
-.fuelux .title-table {
-  font-size: 15px;
-}
-.fuelux .title-form {
-  font-size: 14px;
-}
-.fuelux .page-header {
-  font-size: 20px;
-  margin-top: 10px;
-  border-bottom: none;
-  margin-bottom: 0;
-}
-.fuelux .page-header h1 {
-  line-height: 30px;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-.fuelux .page-header > :last-of-type:not(:only-of-type) {
-  text-align: right;
-}
-.fuelux p {
-  font-size: 11px;
-}
-.fuelux p.support-text {
-  color: #666666;
-}
-.fuelux p.hint-text {
-  color: #999999;
-}
-.fuelux p.disabled-text {
-  color: #ababab;
-}
-.fuelux h1,
-.fuelux .h1 {
-  font-size: 20px;
-}
-.fuelux h2,
-.fuelux .h2 {
-  font-size: 15px;
-}
-.fuelux h3,
-.fuelux .h3 {
-  font-size: 14px;
-}
-.fuelux h4,
-.fuelux .h4 {
-  font-size: 12px;
-}
-.fuelux h5,
-.fuelux .h5 {
-  font-size: 11px;
-}
-.fuelux h6,
-.fuelux .h6 {
-  font-size: 10px;
-}
-.fuelux .h1 {
-  margin: 0;
-}
-.fuelux .h2 {
-  margin: 0;
-}
-.fuelux .h3 {
-  margin: 0;
-}
-.fuelux .h4 {
-  margin: 0;
-}
-.fuelux .h5 {
-  margin: 0;
-}
-.fuelux .h6 {
-  margin: 0;
-}
-.fuelux .serif {
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
-.fuelux .monospace {
-  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
-}
-.fuelux .text-sm {
-  font-size: 10px;
-}
-.fuelux .text-lg {
-  font-size: 24px;
-}
-.fuelux .text-xl {
-  font-size: 32px;
-}
-.fuelux .text-xxl {
-  font-size: 44px;
-}
-.fuelux .text-danger {
-  color: #e00000;
-}
-.fuelux .text-dimmed {
-  color: #4b4b4b;
-}
-.fuelux .text-muted {
-  color: #757575;
-}
-.fuelux .text-primary {
+a {
   color: #3074af;
 }
-.fuelux .text-warning {
+a:hover,
+a:active {
+  text-decoration: underline;
+  color: #3074af;
+}
+p {
+  font-size: 11px;
+}
+p.support-text {
+  color: #666666;
+}
+p.hint-text {
+  color: #999999;
+}
+p.disabled-text {
+  color: #ababab;
+}
+h1,
+.h1 {
+  font-size: 20px;
+}
+h2,
+.h2 {
+  font-size: 15px;
+}
+h3,
+.h3 {
+  font-size: 14px;
+}
+h4,
+.h4 {
+  font-size: 12px;
+}
+h5,
+.h5 {
+  font-size: 11px;
+}
+h6,
+.h6 {
+  font-size: 10px;
+}
+.h1 {
+  margin: 0;
+}
+.h2 {
+  margin: 0;
+}
+.h3 {
+  margin: 0;
+}
+.h4 {
+  margin: 0;
+}
+.h5 {
+  margin: 0;
+}
+.h6 {
+  margin: 0;
+}
+.text-danger {
+  color: #e00000;
+}
+.text-dimmed {
+  color: #4b4b4b;
+}
+.text-muted {
+  color: #757575;
+}
+.text-primary {
+  color: #3074af;
+}
+.text-warning {
   color: #986000;
 }
+/*
+	BOOTSTRAP OVERRIDE RULES
+	Please do not add the .fuelux namespace wrapper class.
+ */
 .btn {
   display: inline-block;
   margin-bottom: 0;
@@ -3550,6 +3335,10 @@ input[type="button"].btn-block {
   background: none;
   background-color: #f76c6c;
 }
+/*
+	BOOTSTRAP OVERRIDE RULES
+	Please do not add the .fuelux namespace wrapper class.
+ */
 fieldset {
   padding: 0;
   margin: 0;
@@ -4183,6 +3972,10 @@ select[multiple].input-md {
   padding-right: 10px;
   padding-left: 10px;
 }
+/*
+	BOOTSTRAP OVERRIDE RULES
+	Please do not add the .fuelux namespace wrapper class.
+ */
 .title-table-bg {
   background-color: #f0f2f3;
   line-height: 1.4;
@@ -4445,9 +4238,17 @@ table th[class*="col-"] {
     border-bottom: 0;
   }
 }
+/*
+	BOOTSTRAP OVERRIDE RULES
+	Please do not add the .fuelux namespace wrapper class.
+ */
 .label {
   padding: .3em .6em .2em;
 }
+/*
+	BOOTSTRAP OVERRIDE RULES
+	Please do not add the .fuelux namespace wrapper class.
+ */
 .progress {
   background-color: #f5f5f5;
   background: -webkit-linear-gradient(#f5f5f5, #dbdbdb);
@@ -4551,6 +4352,10 @@ table th[class*="col-"] {
   -o-animation: progress-bar-stripes 2s linear infinite;
   animation: progress-bar-stripes 2s linear infinite;
 }
+/*
+	BOOTSTRAP OVERRIDE RULES
+	Please do not add the .fuelux namespace wrapper class.
+ */
 .alert-dismissable .close,
 .alert-dismissible .close {
   top: -4px;
@@ -4693,6 +4498,10 @@ table th[class*="col-"] {
 .alert-info:before:before {
   content: "";
 }
+/*
+	BOOTSTRAP OVERRIDE RULES
+	Please do not add the .fuelux namespace wrapper class.
+ */
 .close {
   font-weight: normal;
   font-size: 25px;
@@ -4703,6 +4512,14 @@ table th[class*="col-"] {
   opacity: 1;
   filter: alpha(opacity=100);
 }
+/*
+	BOOTSTRAP OVERRIDE RULES
+	Please do not add the .fuelux namespace wrapper class.
+ */
+/*
+	BOOTSTRAP OVERRIDE RULES
+	Please do not add the .fuelux namespace wrapper class.
+ */
 .btn-dropdown {
   text-align: left;
   border: 1px solid #bbb;
@@ -4759,12 +4576,20 @@ table th[class*="col-"] {
   font-size: 10px;
   padding: 2px 9px;
 }
+/*
+	BOOTSTRAP OVERRIDE RULES
+	Please do not add the .fuelux namespace wrapper class.
+ */
 .caret {
   border-top: 3px solid ;
   border-left: 3px solid transparent;
   border-right: 3px solid transparent;
   color: #777777;
 }
+/*
+	BOOTSTRAP OVERRIDE RULES
+	Please do not add the .fuelux namespace wrapper class.
+ */
 .input-group-lg > .form-control,
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .btn {
@@ -4892,6 +4717,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .input-group-btn:last-child > .btn-group {
   margin-left: -1px;
 }
+/*
+	BOOTSTRAP OVERRIDE RULES
+	Please do not add the .fuelux namespace wrapper class.
+ */
 .nav > li > a {
   padding: 5px 10px;
 }
@@ -5034,6 +4863,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     margin-bottom: 0;
   }
 }
+/*
+	BOOTSTRAP OVERRIDE RULES
+	Please do not add the .fuelux namespace wrapper class.
+ */
 .navbar {
   min-height: 30px;
 }
@@ -5131,6 +4964,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-nav li .dropdown-menu {
   border-radius: 4px;
 }
+/*
+	BOOTSTRAP OVERRIDE RULES
+	Please do not add the .fuelux namespace wrapper class.
+ */
 .badge {
   background-color: #4e8abe;
 }
@@ -5149,6 +4986,10 @@ a.list-group-item.active > .badge,
 .btn .badge {
   top: 0;
 }
+/*
+	BOOTSTRAP OVERRIDE RULES
+	Please do not add the .fuelux namespace wrapper class.
+ */
 .list-group-item.active,
 .list-group-item.active:hover,
 .list-group-item.active:focus {
@@ -5248,6 +5089,10 @@ a.list-group-item-danger.active:focus {
   background-color: #e64141;
   border-color: #e64141;
 }
+/*
+	BOOTSTRAP OVERRIDE RULES
+	Please do not add the .fuelux namespace wrapper class.
+ */
 .panel .table {
   border: 0;
 }
@@ -5488,6 +5333,10 @@ a.list-group-item-danger.active:focus {
   border: none;
   padding: 0 30px 10px;
 }
+/*
+	BOOTSTRAP OVERRIDE RULES
+	Please do not add the .fuelux namespace wrapper class.
+ */
 .pagination-previous {
   display: block;
   height: 0;
@@ -5582,6 +5431,10 @@ a.list-group-item-danger.active:focus {
 .pagination.pagination-lg > li > a.pagination-btn {
   padding-top: 8px;
 }
+/*
+	BOOTSTRAP OVERRIDE RULES
+	Please do not add the .fuelux namespace wrapper class.
+ */
 .breadcrumb {
   padding: 8px 15px;
   margin-bottom: 20px;
@@ -5618,6 +5471,10 @@ a.list-group-item-danger.active:focus {
 .breadcrumb .active {
   color: #000000;
 }
+/*
+	BOOTSTRAP OVERRIDE RULES
+	Please do not add the .fuelux namespace wrapper class.
+ */
 .well {
   background: #f4f4f4;
   border-color: #cccccc;
@@ -5630,6 +5487,10 @@ a.list-group-item-danger.active:focus {
 .well-sm {
   padding: 9px;
 }
+/*
+	BOOTSTRAP OVERRIDE RULES
+	Please do not add the .fuelux namespace wrapper class.
+ */
 .modal .modal-content {
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
 }
@@ -5679,6 +5540,10 @@ a.list-group-item-danger.active:focus {
   opacity: 0.65;
   filter: alpha(opacity=65);
 }
+/*
+	BOOTSTRAP OVERRIDE RULES
+	Please do not add the .fuelux namespace wrapper class.
+ */
 .tooltip {
   border-radius: 4px;
   background: linear-gradient(#f2f0b9, #fcfbda);
@@ -5762,6 +5627,10 @@ a.list-group-item-danger.active:focus {
 .has-error .tooltip.left .tooltip-arrow {
   border-left-color: #EE5457;
 }
+/*
+	BOOTSTRAP OVERRIDE RULES
+	Please do not add the .fuelux namespace wrapper class.
+ */
 .popover {
   background: #ffffff;
   border: 1px solid #cdd7dd;
@@ -5805,6 +5674,10 @@ a.list-group-item-danger.active:focus {
   line-height: 14px;
   padding: 4px 8px;
 }
+/*
+	BOOTSTRAP OVERRIDE RULES
+	Please do not add the .fuelux namespace wrapper class.
+ */
 .column-header {
   padding: 6px 10px;
 }
