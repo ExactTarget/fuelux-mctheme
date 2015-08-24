@@ -20,7 +20,7 @@ body {
   font-size: 14px;
 }
 
-#docnav .navbar-nav > li > a:hover, .navbar .navbar-nav > .active > a, .navbar .navbar-nav > .active > a:hover {
+#docnav .navbar-nav > li > a:hover, #docnav .navbar .navbar-nav > .active > a,#docnav .navbar .navbar-nav > .active > a:hover {
   background-color: #1f2f3f;
   color: #fff;
 }
@@ -358,4 +358,8 @@ body {
 
 .bs-example-modal  {
   background: #5a5a5a;
+}
+
+.modal-dialog {
+  margin-top: 60px;
 }
