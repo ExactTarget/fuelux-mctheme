@@ -63,13 +63,15 @@
 @brand-info-light:           @blue-slate;
 
 // green
-@green-forest:               #3c763d;
-@green-olive:                #8bd06d;
+@green-forest:               #04844B; // Consistent with SLDS, old value from revised MCtheme: #3c763d;
+@green-olive:                #4BCA81; // Consistent with SLDS, old value from revised MCtheme: #8bd06d
 @green-mint:                 #E9FCDE;
 
 @brand-success-dark:         @green-forest;	// new 'accessible/high contrast' green
 @brand-success-medium:       @green-olive;
 @brand-success-light:        @green-mint;
+
+//75, 202, 129
 
 // orange
 @orange-carrot:              #f7841d;
@@ -95,14 +97,14 @@
 @brand-danger-medium:        @red-salmon;
 @brand-danger-light:         @pink-cotton-candy;
 
-// Tooltips
+// Tooltips`
 @khaki-medium:               #f2f0b9;
 @khaki-light:                #FCFBDA;
 
 @tooltip-text-color:         @gray13;
 
 
-// Spacing
+// SLDS Spacing
 // -------------------------
 @spacing-xxx-small: 2px;
 @spacing-xx-small: 4px;
@@ -249,8 +251,17 @@
 @font-family-base:        @font-family-sans-serif;
 
 @font-size-base:          11px;
-@font-size-large:         12px;
-@font-size-small:         10px;
+@font-size-large:         12px; // (deprecated)
+@font-size-small:         10px; // (deprecated)
+
+// Merger of MC and SLDS Font Sizes
+@font-size-x-small: 10px;
+@font-size-small: 12px;
+@font-size-medium: 16px;
+@font-size-large: 20px;
+@font-size-x-large: 24px;
+@font-size-xx-large: 32px;
+
 
 @font-size-h1:            20px;
 @font-size-h2:            15px;
@@ -394,7 +405,7 @@
 @state-warning-bg:               @brand-warning-light;
 @state-warning-border:           darken(spin(@state-warning-bg, -10), 5%);
 
-@state-danger-text:              @gray13;
+@state-danger-text:              @brand-danger-dark;
 @state-danger-bg:                @brand-danger-light;
 @state-danger-border:            darken(spin(@state-danger-bg, -10), 5%);
 
