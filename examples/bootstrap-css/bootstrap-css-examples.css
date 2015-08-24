@@ -7,29 +7,30 @@ body {
 	padding-top: 60px;
 }
 
-.navbar .navbar-nav > li > a {
+#docnav .navbar-nav > li > a {
 	color: #fff;
 	padding: 15px;
 	font-size: 14px;
 }
 
-.navbar .navbar-nav > li > a:hover, .navbar .navbar-nav > .active > a, .navbar .navbar-nav > .active > a:hover {
+#docnav .navbar-nav > li > a:hover,#docnav .navbar .navbar-nav > .active > a,#docnav .navbar .navbar-nav > .active > a:hover {
 	background-color: #1f2f3f;
 	color: #fff;
 }
 
-.navbar {
+#docnav {
 	background-color: #293f54;
+	z-index: 1200;
 	font-family: "Helvetica Neue",​Helvetica,​Arial,​sans-serif;
 }
 
-.navbar-brand {
+#docnav .navbar-brand {
 	color: #fff;
 	font-size: 18px;
 	font-weight: 500;
 }
 
-.navbar-brand:hover {
+#docnav .navbar-brand:hover {
 	color: #fff;
 }
 
