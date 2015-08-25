@@ -10,6 +10,7 @@
 
 // Base styles
 // --------------------------------------------------
+@import url(mixins.less);
 
 .btn {
 	display: inline-block;
@@ -36,7 +37,6 @@
 
 	&:hover,
 	&:focus {
-		//color: @btn-default-color;
 		text-decoration: none;
 	}
 
@@ -89,6 +89,7 @@
 									@btn-default-bg-disabled-start; @btn-default-bg-disabled-end);
 	&:active,
 	&.active,
+	&:focus,
 	&.focus,
 	&:active:focus,
 	&:active:hover {
