@@ -79,6 +79,20 @@
 		{{/each}}
 	</div>
 </div>
+<script src="/bower_components/jquery/dist/jquery.js"></script>
+<script>
+	$('code').each(function() {
+		var code = $(this).text();
+		$(this).parent().parent()
+				.css('position', 'relative')
+				.append(
+				$('<div class="super-copy">Copy</div>')
+						.click(function() {
+							window.prompt("Copy to clipboard: Ctrl+C (cmd+c), Enter", code);
+						})
+		);
+	});
+</script>
 <script src="//localhost:35730/livereload.js"></script>
 </body>
 </html>
