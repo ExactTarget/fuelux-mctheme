@@ -1,5 +1,7 @@
 .fuelux .wizard {
 	position: relative;
+	background: @gray96;
+	border: 1px solid @gray87;
 
 	&.no-border {
 		border-radius: 0;
@@ -7,9 +9,10 @@
 	}
 
 	.actions {
-		background: #f4f5f6;
-		background-image: -webkit-linear-gradient(top, #fafafa, #eeeff1);
-		background-image: linear-gradient(to bottom, #fafafa, #eeeff1);
+		background-color: @gray96;
+		background-image: -webkit-linear-gradient(top, @gray98, @gray93);
+		background-image: linear-gradient(to bottom, @gray98, @gray93);
+		border-left-color: @gray87;
 		float: none;
 		top: 0;
 
@@ -23,7 +26,7 @@
 			background: none;
 			border: none;
 			box-shadow: none;
-			color: #2168a7;
+			color: @link-color;
 			&:hover,
 			&:focus {
 				color: @link-hover-color;
@@ -36,21 +39,22 @@
 
 	.step-content {
 		padding: 10px 15px;
-		background-color: #ffffff;
+		background-color: @true-white;
+		border-top: @gray87 1px solid;
 	}
 
 	> ul.steps, > .steps-container > ul.steps {
-		background: #f4f5f6;
-		background-image: -webkit-linear-gradient(top, #fafafa, #eeeff1);
-		background-image: linear-gradient(to bottom, #fafafa, #eeeff1);
+		background-color: @gray96;
+		background-image: -webkit-linear-gradient(top, @gray98, @gray93);
+		background-image: linear-gradient(to bottom, @gray98, @gray93);
 		.clearfix();
 
 		li {
-			background: #f3f4f5;
-			box-shadow: 0px 0px 0px 1px #fff inset;
+			background-color: @gray96;
+			box-shadow: 0px 0px 0px 1px @true-white inset;
 
 			&:before {
-				background: #d4d4d4;
+				background-color: @gray80;
 				bottom: -1px;
 				content: " ";
 				display: block;
@@ -63,30 +67,32 @@
 
 			&.active {
 				color: @blue-steel;
+				background-color: @blue-smoke;
 
 				.badge {
 					background: @blue-steel;
 				}
 
 				.chevron:before {
-					border-color: transparent transparent transparent #fff;
+					border-color: transparent transparent transparent @true-white;
 				}
 
 				.chevron:after {
-					border-color: transparent transparent transparent #f1f6fc;
+					border-color: transparent transparent transparent @blue-smoke;
 				}
 			}
 
 			&.complete {
-				color: #5fb21c;
+				color: @brand-success-dark;
+				background-color: @gray96;
 
 				.badge {
-					background: #5fb21c;
-					color: #5fb21c;
+					background: @brand-success-dark;
+					color: @brand-success-dark;
 					position: relative;
 
 					&:before {
-						color: #fff;
+						color: @true-white;
 						content: "\e013";
 						display: block;
 						font-family: "Glyphicons Halflings";
@@ -98,33 +104,37 @@
 				}
 
 				.chevron:before {
-					border-color: transparent transparent transparent #fff;
+					border-color: transparent transparent transparent @true-white;
 				}
 
 				.chevron:after {
-					border-color: transparent transparent transparent #f3f4f5;
+					border-color: transparent transparent transparent @gray96;
 				}
 
 				&:hover {
+					background-color: @blue-smoke;
+
 					.chevron:after {
-						border-color: transparent transparent transparent #e7eff8;
+						border-color: transparent transparent transparent @blue-smoke;
 					}
 				}
 			}
 
 			.badge {
-				background: #999;
+				background: @gray60;
 				padding: 3px 6px;
 			}
 
 			.chevron {
+				border-left-color: @gray87;
+
 				&:before {
-					border-color: transparent transparent transparent #fff;
+					border-color: transparent transparent transparent @true-white;
 				}
 
 				&:after {
 					border: 24px solid transparent;
-					border-left: 14px solid #f3f4f5;
+					border-left: 14px solid @gray96;
 					border-right: 0;
 					content: "";
 					display: block;

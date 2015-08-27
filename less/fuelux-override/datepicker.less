@@ -1,5 +1,5 @@
 .fuelux .datepicker {
-	background: #fff;
+	background: @true-white;
 
 	&:hover {
 		.dropdown-toggle {
@@ -20,7 +20,7 @@
 		box-shadow: none;
 
 		&[disabled] {
-			color: #cfcfcf;
+			color: @gray80;
 		}
 	}
 
@@ -34,7 +34,7 @@
 
 		&:hover {
 			background: transparent;
-			border-color: #ccc;
+			border-color: @gray80;
 
 			.glyphicon-calendar {
 			}
@@ -42,7 +42,7 @@
 
 		&[disabled] {
 			background: none;
-			border-color: #ccc;
+			border-color: @gray80;
 			opacity: 1;
 
 			.glyphicon-calendar {
@@ -61,9 +61,9 @@
 	}
 
 	.input-group {
-		border: 1px solid #ccc;
+		border: 1px solid @gray80;
 		border-radius: 4px;
-		.box-shadow(inset 0 1px 1px rgba(0,0,0,.075));
+		.box-shadow(inset 0 1px 1px fade(@true-black, 7.5%));
 	}
 
 	.input-group-btn {
@@ -87,9 +87,10 @@
 
 		&-days {
 			margin: 0;
+			border-color: @gray53;
 
 			thead {
-				border-bottom: none;
+				border-bottom: 1px solid @gray80;
 
 				th {
 					font-size: 11px;
@@ -107,23 +108,27 @@
 				td {
 					height: 24px;
 
+					b {
+						color: @gray13;
+					}
+
 					&.current-day {
 						button {
-							background: #E6E6E6;
-							// border: 1px solid #999;
+							background: @gray87;
+							// border: 1px solid @gray60;
 						}
 
 						span {
 							border-radius: 0px;
-							border: 1px solid #999;
+							border: 1px solid @gray60;
 						}
 
 						&.selected, &.selected:hover {
 							button {
 								background: @blue-slate;
 								border: none;
-								-webkit-box-shadow: 1px 2px 2px 0 rgba(0, 0, 0, 0.1) inset;
-								box-shadow: 1px 2px 2px 0 rgba(0, 0, 0, 0.1) inset;
+								-webkit-box-shadow: 1px 2px 2px 0 fade(@true-black, 10%) inset;
+								box-shadow: 1px 2px 2px 0 fade(@true-black, 10%) inset;
 							}
 						}
 
@@ -143,18 +148,19 @@
 							}
 						}
 						b, b:hover, button, button:hover {
-							background: #fff;
-							border: 1px solid #ddd;
-							color: #ddd;
+							background: @true-white;
+							border: 1px solid @gray87;
+							color: @gray13;
 						}
 					}
 
 					&.selected {
 						button, button:hover {
+							color: @gray13;
 							background: @blue-sky;
 							border: none;
-							-webkit-box-shadow: 1px 2px 2px 0 rgba(0, 0, 0, 0.1) inset;
-							box-shadow: 1px 2px 2px 0 rgba(0, 0, 0, 0.1) inset;
+							-webkit-box-shadow: 1px 2px 2px 0 fade(@true-black, 10%) inset;
+							box-shadow: 1px 2px 2px 0 fade(@true-black, 10%) inset;
 						}
 						button:hover {
 							background: @blue-slate;
@@ -174,8 +180,8 @@
 					}
 
 					.datepicker-date {
-						background: #fff;
-						border: 1px solid #d3d3d3;
+						background: @true-white;
+						border: 1px solid @gray87;
 						color: @gray33;
 						font-size: 10px;
 						height: 22px;
@@ -184,13 +190,14 @@
 						width: 28px;
 
 						&:hover {
-							background: #DFEEF5;
-							border: 1px solid #98D2EE;
+							background: @brand-primary-light;
+							border: 1px solid @blue-sky;
 						}
 					}
 
 					&.last-month, &.next-month {
 						visibility: hidden;
+						background: @gray93;
 					}
 				}
 			}
@@ -198,32 +205,32 @@
 
 		//this had to be done due to other wonky rules overriding these styles
 		.datepicker-calendar-header {
-			background: #9f9f9f;
-			background-image: -webkit-linear-gradient(top, #b6b6b6, #949494);
-			background-image: linear-gradient(to bottom, #b6b6b6, #949494);
+			background: @gray60;
+			background-image: -webkit-linear-gradient(top, @gray74, @gray60);
+			background-image: linear-gradient(to bottom, @gray74, @gray60);
 			border-radius: 4px;
 			padding: 4px 6px;
 
 			.next, .prev {
-				background: #fefffe;
-				box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.25);
+				background: @gray96;
+				box-shadow: 0px 1px 1px 0px fade(@true-black, 25%);
 				height: 12px;
 				margin: 4px 0 0;
 				width: 12px;
 
 				&:hover {
-					background: #87b9e5;
-					background-image: -webkit-linear-gradient(top, #a8d4fa, #71a1cc);
-					background-image: linear-gradient(to bottom, #a8d4fa, #71a1cc);
-					border: 1px solid #fff;
+					background: @brand-primary-light;
+					background-image: -webkit-linear-gradient(top, @brand-primary-light, @brand-primary-medium);
+					background-image: linear-gradient(to bottom, @brand-primary-light, @brand-primary-medium);
+					border: 1px solid @true-white;
 
 					.glyphicon-chevron-left {
-						border-color: transparent #fff transparent transparent;
+						border-color: transparent @true-white transparent transparent;
 						left: 3px;
 					}
 
 					.glyphicon-chevron-right {
-						border-color: transparent transparent transparent #fff;
+						border-color: transparent transparent transparent @true-white;
 						left: 4px;
 					}
 				}
@@ -242,7 +249,7 @@
 
 			.next {
 				.glyphicon-chevron-right {
-					border-color: transparent transparent transparent #4e8abe;
+					border-color: transparent transparent transparent @brand-primary-medium;
 					border-style: solid none solid solid;
 					border-width: 3px medium 3px 3px;
 					left: 5px;
@@ -251,7 +258,7 @@
 
 			.prev {
 				.glyphicon-chevron-left {
-					border-color: transparent #4e8abe transparent transparent;
+					border-color: transparent @brand-primary-medium transparent transparent;
 					border-style: solid solid solid none;
 					border-width: 3px 3px 3px medium;
 					left: 4px;
@@ -259,23 +266,29 @@
 			}
 
 			.title {
-				color: #fff;
+				color: @true-white;
 				font-size: 12px;
 				font-weight: bold;
 				line-height: 20px;
 
 				&:hover {
-					color: #4e8abe;
+					color: @gray27;
 				}
 			}
 		}
 
 		&-footer {
 			display: none;
+			background: @gray93;
+			border-top-color: @gray80;
+		}
+
+		.datepicker-today {
+			color: @gray13;
 		}
 
 		&-wrapper {
-			border: 1px solid #bbbbbb;
+			border: 1px solid @gray74;
 			width: 224px;
 		}
 	}
@@ -284,8 +297,10 @@
 		&-footer {
 			background: @gray93;
 			height: 28px;
+			border-top: 1px solid @gray80;
 
 			.datepicker-wheels-back {
+				color: @gray27;
 				box-shadow: none;
 				line-height: 17px;
 			}
@@ -299,10 +314,12 @@
 
 		&-month, &-year {
 			.header {
+				color: @gray27;
 				background: @gray93;
 				font-size: 12px;
 				font-weight: bold;
 				line-height: 27px;
+				border-bottom: 1px solid @gray80;
 			}
 
 			ul {
@@ -330,6 +347,11 @@
 				}
 			}
 		}
+
+		&-year {
+			border-left-color: @gray80;
+		}
+
 	}
 }
 
