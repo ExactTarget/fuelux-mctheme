@@ -1,0 +1,67 @@
+@import "variables.less";
+
+.swatches {
+	overflow: auto;
+}
+
+.swatch {
+	padding: 50px 20px 50px 20px;
+	min-height: 100px;
+	width: 150px;
+	text-align: center;
+	margin: 20px;
+	float: left;
+	font-weight: bold;
+}
+
+.color-swatch(@color) {
+	.swatch-@{color} {
+		@temp: "@{color}";
+		background-color: @@temp;
+	}
+}
+
+// grays
+.color-swatch(true-white);
+.color-swatch(gray13);
+.color-swatch(gray20);
+.color-swatch(gray27);
+.color-swatch(gray33);
+.color-swatch(gray40);
+.color-swatch(gray46);
+.color-swatch(gray47);
+.color-swatch(gray53);
+.color-swatch(gray60);
+.color-swatch(gray67);
+.color-swatch(gray74);
+.color-swatch(gray75);
+.color-swatch(gray80);
+.color-swatch(gray87);
+.color-swatch(gray93);
+.color-swatch(gray96);
+.color-swatch(gray98);
+.color-swatch(gray99);
+.color-swatch(true-black);
+
+// colors
+.color-swatch(blue-slate);
+.color-swatch(blue-smoke);
+.color-swatch(blue-sky);
+.color-swatch(blue-steel);
+.color-swatch(blue-rainstorm);
+.color-swatch(blue-royale);
+.color-swatch(blue-cadet);
+.color-swatch(blue-cornflower);
+
+.color-swatch(green-forest);
+.color-swatch(green-olive);
+.color-swatch(green-mint);
+
+.color-swatch(orange-carrot);
+.color-swatch(orange-apricot);
+.color-swatch(orange-peach);
+.color-swatch(brown-goldenrod);
+
+.color-swatch(red-iron);
+.color-swatch(red-salmon);
+.color-swatch(pink-cotton-candy);

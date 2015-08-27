@@ -147,12 +147,12 @@ output {
 
 	// Select box gradient background
 	&.select-bg{
-		background: -moz-linear-gradient(#FEFEFE,#E0E0E0);
-		background: -webkit-linear-gradient(#FEFEFE,#E0E0E0);
-		background: -o-linear-gradient(#FEFEFE,#E0E0E0);
-		background: linear-gradient(#FEFEFE,#E0E0E0);
-		border: 1px solid #bbb;
-		.box-shadow(0 1px 1px rgba(0,0,0,.05));
+		background: -moz-linear-gradient(@gray99,@gray87);
+		background: -webkit-linear-gradient(@gray99,@gray87);
+		background: -o-linear-gradient(@gray99,@gray87);
+		background: linear-gradient(@gray99,@gray87);
+		border: 1px solid @gray74;
+		.box-shadow(0 1px 1px fade(@true-black, 5%));
 	}
 
 
@@ -187,7 +187,7 @@ output {
 	color: @gray33;
 	text-align: center;
 	background-color: @gray93;
-	border: 1px solid #ccc;
+	border: 1px solid @gray80;
 	border-radius: 4px;
 }
 
@@ -482,7 +482,7 @@ input[type="checkbox"] {
 
 	.form-control{
 		.placeholder(@state-danger-text);
-		background-color: @gray93;
+		background-color: @gray96;
 		display: inline;
 		position: absolute;
 	}
@@ -496,7 +496,7 @@ input[type="checkbox"] {
 	.error-label{
 		font-size: 11px; //11pt;
 		font-weight: normal;
-		color: #fff;
+		color: @true-white;
 		padding: 0 5px;//6px 5px 7px 5px; //This padding described in styleguide cannot be possible.
 		margin-left: 5px;//8px;
 		margin-top: 0; //-5px;
@@ -505,7 +505,7 @@ input[type="checkbox"] {
 		white-space: nowrap;
 		height: 21px; // Height: 21px and padding: 6px 5px 7px 5px are conflicting.
 		line-height: 21px; //in order to make the padding right
-		background: linear-gradient(#EE6767,#E64141);
+		background: linear-gradient(@brand-danger-medium,@brand-danger-dark);
 		position: absolute;
 		-moz-border-radius:    3px;
 		-webkit-border-radius: 3px;
@@ -519,7 +519,7 @@ input[type="checkbox"] {
 		width: 0;
 		height: 0;
 		border-top: 3px solid transparent;
-		border-right: 3px solid #ee5457;
+		border-right: 3px solid @brand-danger-medium;
 		border-bottom: 3px solid transparent;
 		}
 	}
@@ -540,7 +540,7 @@ input[type="checkbox"] {
 	display: block; // account for any element using help-block
 	margin-top: 5px;
 	margin-bottom: 10px;
-	color: #666;
+	color: @gray40;
 }
 
 
