@@ -7,6 +7,21 @@ body {
 	padding-top: 60px;
 }
 
+
+.super-copy {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 10;
+	display: block;
+	padding: 2px 3px;
+	font-size: 12px;
+	color: #767676;
+	cursor: pointer;
+	background-color: #fff;
+	border: 1px solid #e1e1e8;
+}
+
 #docnav .navbar-nav > li > a {
 	color: #fff;
 	padding: 15px;
@@ -93,6 +108,7 @@ body {
 }
 .panel-footer {
 	min-height: 6rem;
+	padding: 20px 10px 8px 10px;
 }
 
 .panel-body > .fuelux-icon {
