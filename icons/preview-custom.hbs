@@ -7,6 +7,7 @@
 	<link href="/bower_components/fuelux/dist/css/fuelux.css" rel="stylesheet" type="text/css">
 	<link href="/dist/css/fuelux-mctheme.css" rel="stylesheet" type="text/css">
 	<link href="/examples/icons/icons-examples.css" rel="stylesheet" type="text/css">
+	<link href="/examples/css/super-copy.css" />
 </head>
 <body>
 <header id="docnav" class="navbar navbar-fixed-top" role="banner">
@@ -66,10 +67,8 @@
 										<span class="fuelux-icon fuelux-icon-{{name}}"></span> Button Link
 									</button>
 								</div>
-								<div class="panel-footer">
-									<small>
-										<code>&lt;span class="fuelux-icon fuelux-icon-{{name}}"&gt;&lt;/span&gt;</code>
-									</small>
+								<div class="panel-footer small">
+									<code>&lt;span class="fuelux-icon fuelux-icon-{{name}}"&gt;&lt;/span&gt;</code>
 								</div>
 							</div>
 						</div>
@@ -80,19 +79,7 @@
 	</div>
 </div>
 <script src="/bower_components/jquery/dist/jquery.js"></script>
-<script>
-	$('code').each(function() {
-		var code = $(this).text();
-		$(this).parent().parent()
-				.css('position', 'relative')
-				.append(
-				$('<div class="super-copy">Copy</div>')
-						.click(function() {
-							window.prompt("Copy to clipboard: Ctrl+C (cmd+c), Enter", code);
-						})
-		);
-	});
-</script>
+<script src="/examples/scripts/super-copy.js"></script>
 <script src="//localhost:35730/livereload.js"></script>
 </body>
 </html>
