@@ -124,11 +124,8 @@
 }
 
 .btn-basic {
-	//because this button has 1px border, padding needs to be adjusted
-	//padding + border = 5px
 	padding: 4px 10px;
-	border: 1px solid #bbb;
-	#gradient > .gradient-bg(#FFFFFF, @gray93);
+	#gradient > .gradient-bg(@true-white, @gray93);
 
 	border: 1px solid @btn-basic-border;
 	.button-size(4px; 10px; @font-size-base; @border-radius-base);
@@ -151,18 +148,16 @@
 	}
 
 	&.dropdown-toggle .caret {
-		color: @btn-basic-color; // #656565
+		color: @btn-basic-color;
 	}
 
 	&.btn-lg {
-		//padding + border = 7px
 		padding: 6px 10px;
 	}
 
 	&.btn-sm,
 	&.btn-xs
 	{
-		//padding + border = 3px
 		padding: 2px 8px;
 	}
 }
