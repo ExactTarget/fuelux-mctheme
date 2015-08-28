@@ -8,10 +8,17 @@
 }
 
 .navbar-default {
+	border-color: @gray93;
+	background-color: @gray96;
 
 	.navbar-brand {
 		padding: 9px 16px;
 		height: 36px;
+	}
+
+	& .navbar-collapse, 
+	& .navbar-form {
+		border-color: @gray93;
 	}
 
 	.navbar-nav {
@@ -92,4 +99,11 @@
 			border-radius: 4px;
 		}
 	}
+
+	.nav-tabs > li.disabled > a, 
+	.nav-tabs > li.disabled > a:hover,
+	.nav-tabs > li.disabled > a:focus {
+		border-color: @gray93;
+	}
+
 }

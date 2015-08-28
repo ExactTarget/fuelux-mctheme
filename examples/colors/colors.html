@@ -1,0 +1,85 @@
+<!doctype HTML>
+<html class="fuelux">
+<head>
+	<title>Marketing Cloud Colors</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href="/bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="/bower_components/fuelux/dist/css/fuelux.css" rel="stylesheet" type="text/css">
+
+	<link href="/dist/css/fuelux-mctheme.css" rel="stylesheet" type="text/css">
+	<link href="../../less/swatches.less" rel="stylesheet/less" type="text/css"/>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.7.0/less.min.js"></script>
+	<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+
+</head>
+<body>
+
+
+	<div id="main-wrapper" class="container">
+		<div class="swatches">
+
+			<div class="swatch swatch-true-white">true-white</div>
+			<div class="swatch swatch-gray13">gray13</div>
+			<div class="swatch swatch-gray13">gray13</div>
+			<div class="swatch swatch-gray20">gray20</div>
+			<div class="swatch swatch-gray27">gray27</div>
+			<div class="swatch swatch-gray33">gray33</div>
+			<div class="swatch swatch-gray40">gray40</div>
+			<div class="swatch swatch-gray46">gray46</div>
+			<div class="swatch swatch-gray47">gray47</div>
+			<div class="swatch swatch-gray53">gray53</div>
+			<div class="swatch swatch-gray60">gray60</div>
+			<div class="swatch swatch-gray67">gray67</div>
+			<div class="swatch swatch-gray74">gray74</div>
+			<div class="swatch swatch-gray75">gray75</div>
+			<div class="swatch swatch-gray80">gray80</div>
+			<div class="swatch swatch-gray87">gray87</div>
+			<div class="swatch swatch-gray93">gray93</div>
+			<div class="swatch swatch-gray96">gray96</div>
+			<div class="swatch swatch-gray98">gray98</div>
+			<div class="swatch swatch-gray99">gray99</div>
+			<div class="swatch swatch-true-black">true-black</div>
+
+			<div class="swatch swatch-blue-slate">blue-slate</div>
+			<div class="swatch swatch-blue-smoke">blue-smoke</div>
+			<div class="swatch swatch-blue-sky">blue-sky</div>
+			<div class="swatch swatch-blue-steel">blue-steel</div>
+			<div class="swatch swatch-blue-rainstorm">blue-rainstorm</div>
+			<div class="swatch swatch-blue-royale">blue-royale</div>
+			<div class="swatch swatch-blue-cadet">blue-cadet</div>
+			<div class="swatch swatch-blue-cornflower">blue-cornflower</div>
+			<div class="swatch swatch-green-forest">green-forest</div>
+			<div class="swatch swatch-green-olive">green-olive</div>
+			<div class="swatch swatch-green-mint">green-mint</div>
+			<div class="swatch swatch-orange-carrot">orange-carrot</div>
+			<div class="swatch swatch-orange-apricot">orange-apricot</div>
+			<div class="swatch swatch-orange-peach">orange-peach</div>
+			<div class="swatch swatch-brown-goldenrod">brown-goldenrod</div>
+			<div class="swatch swatch-red-iron">red-iron</div>
+			<div class="swatch swatch-red-salmon">red-salmon</div>
+			<div class="swatch swatch-pink-cotton-candy">pink-cotton-candy</div>
+
+			<br/>
+		</div>
+
+	</div>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.swatch').each(function(){
+	            var bgcolor = $(this).css('background-color');
+	            var matchColors = /rgb\((\d{1,3}), (\d{1,3}), (\d{1,3})\)/;
+	            var match = matchColors.exec(bgcolor);
+	            var darkness = Math.round(((parseInt(match[1]) * 299) + (parseInt(match[2]) * 587) + (parseInt(match[3]) * 114)) /1000);
+
+	            if(darkness > 125) {
+	                $(this).css('color', 'black');
+	            } else {
+	                $(this).css('color', 'white');
+	            }
+	        });
+		});
+	</script>
+</body>
+</html>

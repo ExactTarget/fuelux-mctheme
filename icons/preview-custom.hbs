@@ -3,20 +3,50 @@
 <head>
 	<title>Fuel UX 3 Icons</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 	<link href="/bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css">
-
 	<link href="/bower_components/fuelux/dist/css/fuelux.css" rel="stylesheet" type="text/css">
-
 	<link href="/dist/css/fuelux-mctheme.css" rel="stylesheet" type="text/css">
 	<link href="/examples/icons/icons-examples.css" rel="stylesheet" type="text/css">
-
 </head>
 <body>
-
-
+<header id="docnav" class="navbar navbar-fixed-top" role="banner">
+	<div class="container">
+		<div class="navbar-header">
+			<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".fu-navbar-collapse">
+				<span class="sr-only">Toggle navigation</span>
+			</button>
+			<a href="/" class="navbar-brand">MC Theme</a>
+		</div>
+		<nav class="collapse navbar-collapse fu-navbar-collapse" role="navigation">
+			<ul class="nav navbar-nav">
+				<li>
+					<a href="../bootstrap-css/bootstrap-css.html">Bootstrap CSS</a>
+				</li>
+				<li>
+					<a href="../bootstrap-components/bootstrap-components.html">Bootstrap Components</a>
+				</li>
+				<li>
+					<a href="../bootstrap-javascript/bootstrap-javascript.html">Bootstrap Javascript</a>
+				</li>
+				<li>
+					<a href="../fuelux/fuelux.html">Fuel UX Controls</a>
+				</li>
+				<li>
+					<a href="../utilities/utilities.html">Typography</a>
+				</li>
+				<li class="active">
+					<a href="./icons.html">Iconography</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</header>
 <div id="main-wrapper">
 	<div class="container">
+		<div class="alert alert-warning alert-dismissible" role="alert">
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<strong>Warning!</strong> All icons below are shown within buttons and link button for quality assurance. This is not promotion of using all the icons below within buttons and link buttons.
+		</div>
 		{{#each rows}}
 			<div class="row">
 				{{#each rowicons}}
@@ -25,10 +55,20 @@
 							<div class="panel panel-default">
 								<div class="panel-body text-center">
 									<div class="fuelux-icon fuelux-icon-{{name}}"></div>
+									<br/>
+									<br/>
+									<button type="button" class="btn btn-default">
+										<i class="fuelux-icon fuelux-icon-{{name}}"></i> Button
+									</button>
+									<br/>
+									<br/>
+									<button type="button" class="btn btn-link">
+										<span class="fuelux-icon fuelux-icon-{{name}}"></span> Button Link
+									</button>
 								</div>
 								<div class="panel-footer">
 									<small>
-										<code>.fuelux-icon {{prefix}}{{name}}</code>
+										<code>&lt;span class="fuelux-icon fuelux-icon-{{name}}"&gt;&lt;/span&gt;</code>
 									</small>
 								</div>
 							</div>
@@ -39,6 +79,20 @@
 		{{/each}}
 	</div>
 </div>
+<script src="/bower_components/jquery/dist/jquery.js"></script>
+<script>
+	$('code').each(function() {
+		var code = $(this).text();
+		$(this).parent().parent()
+				.css('position', 'relative')
+				.append(
+				$('<div class="super-copy">Copy</div>')
+						.click(function() {
+							window.prompt("Copy to clipboard: Ctrl+C (cmd+c), Enter", code);
+						})
+		);
+	});
+</script>
 <script src="//localhost:35730/livereload.js"></script>
 </body>
 </html>
