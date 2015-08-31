@@ -1,22 +1,22 @@
 /*
  * VARIABLES
  *
- * This file contains LESS variables that are used throughout the 
+ * This file contains LESS variables that are used throughout the
  * theme by existing controls and styles. These are NOT design tokens
  * as defined by the Salesforce Lightning Design System, and therefore
- * should not be used in product applications. The purpose of the 
- * following variables is to have one standardized collection of 
+ * should not be used in product applications. The purpose of the
+ * following variables is to have one standardized collection of
  * attributes used in this theme.
  *
- * If one of the variables below needs to be surfaced as a 
+ * If one of the variables below needs to be surfaced as a
  * design token, please submit an issue.
  *
  */
 
 
-// - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-// ACHROMATIC GRAYS - number suffix = luminance value 
-// - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// ACHROMATIC GRAYS - number suffix = luminance value
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
 // A few shades of gray will suffice for simple controls and themes,
 // but don't torture yourself with 'light', 'lighter', and 'more mediumer'
 
@@ -47,14 +47,14 @@
 @text-dimmed:       @gray75;
 @text-muted:        @gray46;
 
-// - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-// HUES 
-// - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// HUES
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 // BLUE SLATE a powdery, light blue for selected items
 @blue-slate:                 #D9EAF5;
 // #edf5fa, wizard active step, repeater list sorted
-@blue-smoke:                 lighten(@blue-slate, 5%); 
+@blue-smoke:                 lighten(@blue-slate, 5%);
 // BLUE SKY - a light blue for hover of selected items.
 @blue-sky:                   #B9DFF1;
 // BLUE STEEL - primary link and button text color.
@@ -145,14 +145,14 @@
 @element-footer-bg-gradient-start:                  @element-title-bg;
 @element-footer-bg-gradient-end:                    @true-white;
 
-// 
+//
 // Popovers
 // --------------------------------------------------
 @popover-bg:                                        @gray96;
 @popover-title-bg:                                  @element-title-bg;
 @popover-border-color:                              @gray80;
 
-// 
+//
 // Modal
 // --------------------------------------------------
 @modal-bottom-border:                               @gray93;
@@ -342,6 +342,17 @@
 @btn-default-bg-disabled-start:  @true-white;
 @btn-default-bg-disabled-end:    @blue-slate;
 @btn-default-border:             @gray67;
+
+@btn-basic-color:                @gray40;
+@btn-basic-bg-start:             @true-white;
+@btn-basic-bg-end:               @gray87;
+@btn-basic-bg-hover-start:       @gray96;
+@btn-basic-bg-hover-end:         @gray87;
+@btn-basic-bg-press-start:       @gray96;
+@btn-basic-bg-press-end:         @gray87;
+@btn-basic-bg-disabled-start:    @true-white;
+@btn-basic-bg-disabled-end:      @gray87;
+@btn-basic-border:               @gray74;
 
 @btn-primary-color:              @true-white;
 @btn-primary-bg-start:           @blue-cornflower;
