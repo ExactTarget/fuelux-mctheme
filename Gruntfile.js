@@ -29,8 +29,6 @@ module.exports = function (grunt) {
 		pkg: grunt.file.readJSON('package.json'),
 		// Tasks configuration
 
-
-
 		// Copy svg-sources to svg-exports
 
 		// add comments about the regex-foo
@@ -145,6 +143,7 @@ module.exports = function (grunt) {
 		},
 		clean: {
 			dist: ['dist/**'],
+			tokens: ['dist/css/design-tokens.css'],
 			zipsrc: ['dist/fuelux-mctheme']
 		},
 		compress: {
@@ -219,9 +218,6 @@ module.exports = function (grunt) {
 				}
 			}
 		},
-
-
-
 		less: {
 			dev: {
 				options: {
@@ -245,9 +241,8 @@ module.exports = function (grunt) {
 				},
 				files: {
 					'dist/css/fuelux-mctheme.css': 'less/fuelux-mctheme.less'
-				}
+				},
 			},
-
 			minify: {
 				options: {
 					cleancss: true,
@@ -256,6 +251,14 @@ module.exports = function (grunt) {
 				},
 				files: {
 					'dist/css/<%= pkg.name %>.min.css': 'dist/css/<%= pkg.name %>.css'
+				}
+			},
+			tokens: {
+				options: {
+					strictMath: true,
+				},
+				files: {
+					'dist/css/design-tokens.css': 'less/design-tokens.less'
 				}
 			}
 		},
@@ -371,7 +374,7 @@ module.exports = function (grunt) {
 	grunt.registerTask('iconify', ['svgmin', 'grunticon']);
 
 	// CSS distribution task
-	grunt.registerTask('distcss', 'Compile LESS into the dist CSS', ['less:dist', 'replace:imgpaths', 'less:minify', 'usebanner']);
+	grunt.registerTask('distcss', 'Compile LESS into the dist CSS', ['less:dist', 'less:tokens', 'replace:imgpaths', 'less:minify', 'usebanner', 'clean:tokens']);
 
 	// CSS dev distribution task
 	grunt.registerTask('distcssdev', 'Compile LESS into the dev CSS', ['less:dev']);
