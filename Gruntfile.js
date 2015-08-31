@@ -240,7 +240,7 @@ module.exports = function (grunt) {
 				},
 				files: {
 					'dist/css/fuelux-mctheme.css': 'less/fuelux-mctheme.less'
-				},
+				}
 			},
 			minify: {
 				options: {
