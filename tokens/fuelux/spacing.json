@@ -1,0 +1,31 @@
+{
+  "global": {
+    "category": "spacing",
+    "type": "size",
+    "comment": "",
+    "cssProperties": ["margin", "margin-top", "margin-right", "margin-bottom", "margin-left", "padding", "padding-top", "padding-right", "padding-bottom", "padding-left"]
+  },
+  "props": {
+    "SPACING_XXX_SMALL": {
+      "value": "2px"
+    },
+    "SPACING_XX_SMALL": {
+      "value": "4px"
+    },
+    "SPACING_X_SMALL": {
+      "value": "8px"
+    },
+    "SPACING_SMALL": {
+      "value": "12PX"
+    },
+    "SPACING_MEDIUM": {
+      "value": "16px"
+    },
+    "SPACING_LARGE": {
+      "value": "24px"
+    },
+    "SPACING_X_LARGE": {
+      "value": "32px"
+    }
+  }
+}

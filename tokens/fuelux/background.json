@@ -1,0 +1,154 @@
+{
+  "imports": [
+    "./aliases.json"
+  ],
+  "props": {
+    "COLOR_BACKGROUND": {
+      "value": "{!WHITE}",
+      "type": "color",
+      "category": "background-color",
+      "cssProperties": ["background", "background-color"],
+      "comment": ""
+    },
+    "COLOR_BACKGROUND_ALT": {
+      "value": "{!GRAY_96}",
+      "type": "color",
+      "category": "background-color",
+      "cssProperties": ["background", "background-color"],
+      "comment": ""
+    },
+    "COLOR_BACKGROUND_ALT_2": {
+      "value": "{!GRAY_93}",
+      "type": "color",
+      "category": "background-color",
+      "cssProperties": ["background", "background-color"],
+      "comment": ""
+    },
+    "COLOR_BACKGROUND_ALT_INVERSE": {
+      "value": "{!BLUE_RAINSTORM}",
+      "type": "color",
+      "category": "background-color",
+      "cssProperties": ["background", "background-color"],
+      "comment": ""
+    },
+    "COLOR_BACKGROUND_ROW_HOVER": {
+      "value": "{!GRAY_96}",
+      "type": "color",
+      "category": "background-color",
+      "cssProperties": ["background", "background-color"],
+      "comment": ""
+    },
+    "COLOR_BACKGROUND_ROW_ACTIVE": {
+      "value": "{!GRAY_96}",
+      "type": "color",
+      "category": "background-color",
+      "cssProperties": ["background", "background-color"],
+      "comment": ""
+    },
+    "COLOR_BACKGROUND_ROW_SELECTED": {
+      "value": "{!BLUE_SLATE}",
+      "type": "color",
+      "category": "background-color",
+      "cssProperties": ["background", "background-color"],
+      "comment": ""
+    },
+    "COLOR_BACKGROUND_INVERSE": {
+      "value": "{!BLUE_RAINSTORM}",
+      "type": "color",
+      "category": "background-color",
+      "cssProperties": ["background", "background-color"],
+      "comment": ""
+    },
+    "COLOR_BACKGROUND_ANCHOR": {
+      "value": "{!GRAY_96}",
+      "type": "color",
+      "category": "background-color",
+      "cssProperties": ["background", "background-color"],
+      "comment": ""
+    },
+    "COLOR_BACKGROUND_BROWSER": {
+      "value": "{!WHITE}",
+      "type": "color",
+      "category": "background-color",
+      "cssProperties": ["background", "background-color"],
+      "comment": ""
+    },
+    "COLOR_BACKGROUND_HIGHLIGHT": {
+      "value": "{!BLUE_SKY}",
+      "type": "color",
+      "category": "background-color",
+      "cssProperties": ["background", "background-color"],
+      "comment": ""
+    },
+    "COLOR_BACKGROUND_MODAL": {
+      "value": "{!WHITE}",
+      "type": "color",
+      "category": "background-color",
+      "cssProperties": ["background", "background-color"],
+      "comment": ""
+    },
+    "COLOR_BACKGROUND_INPUT": {
+      "value": "{!WHITE}",
+      "type": "color",
+      "category": "background-color",
+      "cssProperties": ["background", "background-color"],
+      "comment": ""
+    },
+    "COLOR_BACKGROUND_INPUT_ACTIVE": {
+      "value": "{!WHITE}",
+      "type": "color",
+      "category": "background-color",
+      "cssProperties": ["background", "background-color"],
+      "comment": ""
+    },
+    "COLOR_BACKGROUND_BROWSER": {
+      "value": "{!WHITE}",
+      "type": "color",
+      "category": "background-color",
+      "cssProperties": ["background", "background-color"],
+      "comment": ""
+    },
+    "COLOR_BACKGROUND_INPUT_DISABLED": {
+      "value": "{!GRAY_98}",
+      "type": "color",
+      "category": "background-color",
+      "cssProperties": ["background", "background-color"],
+      "comment": ""
+    },
+    "COLOR_BACKGROUND_INPUT_SEARCH": {
+      "value": "{!WHITE}",
+      "type": "color",
+      "category": "background-color",
+      "cssProperties": ["background", "background-color"],
+      "comment": ""
+    },
+    "COLOR_BACKGROUND_PILL": {
+      "value": "{!GRAY_93}",
+      "type": "color",
+      "category": "background-color",
+      "cssProperties": ["background", "background-color"],
+      "comment": ""
+    },
+    "COLOR_BACKGROUND_ERROR": {
+      "value": "{!PINK_COTTON_CANDY}",
+      "type": "color",
+      "category": "background-color",
+      "cssProperties": ["background", "background-color"],
+      "comment": ""
+    },
+    "COLOR_BACKGROUND_SUCCESS": {
+      "value": "{!GREEN_MINT}",
+      "type": "color",
+      "category": "background-color",
+      "cssProperties": ["background", "background-color"],
+      "comment": ""
+    },
+    "COLOR_BACKGROUND_ERROR": {
+      "value": "{!ORANGE_PEACH}",
+      "type": "color",
+      "category": "background-color",
+      "cssProperties": ["background", "background-color"],
+      "comment": ""
+    }
+  }
+}

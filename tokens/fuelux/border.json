@@ -1,0 +1,172 @@
+{
+  "imports": [
+    "./aliases.json"
+  ],
+  "props": {
+    "BORDER_WIDTH_THIN": {
+      "value": "1px",
+      "type": "size",
+      "cssProperties": ["border", "border-width", "border-top-width", "border-right-width", "border-bottom-width", "border-left-width"],
+      "category": "spacing"
+    },
+    "BORDER_WIDTH_THICK": {
+      "value": "2px",
+      "type": "size",
+      "cssProperties": ["border", "border-width", "border-top-width", "border-right-width", "border-bottom-width", "border-left-width"],
+      "category": "spacing"
+    },
+    "BORDER_RADIUS_SMALL": {
+      "value": ".125rem",
+      "type": "size",
+      "cssProperties": ["border-radius", "border-top-left-radius", "border-top-right-radius", "border-bottom-right-radius", "border-bottom-left-radius"],
+      "category": "radius"
+    },
+    "BORDER_RADIUS_MEDIUM": {
+      "value": ".25rem",
+      "category": "radius",
+      "type": "size",
+      "cssProperties": ["border-radius", "border-top-left-radius", "border-top-right-radius", "border-bottom-right-radius", "border-bottom-left-radius"],
+      "comment": "Icons in lists, record home icon, unbound input elements"
+    },
+    "BORDER_RADIUS_LARGE": {
+      "value": ".5rem",
+      "type": "size",
+      "cssProperties": ["border-radius", "border-top-left-radius", "border-top-right-radius", "border-bottom-right-radius", "border-bottom-left-radius"],
+      "category": "radius"
+    },
+    "BORDER_RADIUS_PILL": {
+      "value": "15rem",
+      "type": "size",
+      "cssProperties": ["border-radius", "border-top-left-radius", "border-top-right-radius", "border-bottom-right-radius", "border-bottom-left-radius"],
+      "category": "radius"
+    },
+    "BORDER_RADIUS_CIRCLE": {
+      "value": "50%",
+      "type": "size",
+      "category": "radius",
+      "cssProperties": ["border-radius", "border-top-left-radius", "border-top-right-radius", "border-bottom-right-radius", "border-bottom-left-radius"],
+      "comment": "Circle for global use, action icon bgd shape"
+    },
+
+
+    "COLOR_BORDER": {
+      "value": "{!GRAY_87}",
+      "type": "color",
+      "category": "border-color",
+      "cssProperties": ["border", "border-color", "border-top-color", "border-right-color", "border-bottom-color", "border-left-color"],
+      "comment": ""
+    },
+    "COLOR_BORDER_ERROR": {
+      "value": "{!RED_SALMON}",
+      "type": "color",
+      "category": "border-color",
+      "cssProperties": ["border", "border-color", "border-top-color", "border-right-color", "border-bottom-color", "border-left-color"],
+      "comment": ""
+    },
+    "COLOR_BORDER_SUCCESS": {
+      "value": "{!GREEN_OLIVE}",
+      "type": "color",
+      "category": "border-color",
+      "cssProperties": ["border", "border-color", "border-top-color", "border-right-color", "border-bottom-color", "border-left-color"],
+      "comment": ""
+    },
+    "COLOR_BORDER_WARNING": {
+      "value": "{!ORANGE_APRICOT}",
+      "type": "color",
+      "category": "border-color",
+      "cssProperties": ["border", "border-color", "border-top-color", "border-right-color", "border-bottom-color", "border-left-color"],
+      "comment": ""
+    },
+    "COLOR_BORDER_TAB_SELECTED": {
+      "value": "{!GRAY_87}",
+      "type": "color",
+      "category": "border-color",
+      "cssProperties": ["border", "border-color", "border-top-color", "border-right-color", "border-bottom-color", "border-left-color"],
+      "comment": ""
+    },
+    "COLOR_BORDER_SEPARATOR": {
+      "value": "{!GRAY_87}",
+      "type": "color",
+      "category": "border-color",
+      "cssProperties": ["border", "border-color", "border-top-color", "border-right-color", "border-bottom-color", "border-left-color"],
+      "comment": ""
+    },
+    "COLOR_BORDER_ROW_SELECTED": {
+      "value": "{!GRAY_80}",
+      "type": "color",
+      "category": "border-color",
+      "cssProperties": ["border", "border-color", "border-top-color", "border-right-color", "border-bottom-color", "border-left-color"],
+      "comment": ""
+    },
+    "COLOR_BORDER_ROW_SELECTED_HOVER": {
+      "value": "{!GRAY_80}",
+      "type": "color",
+      "category": "border-color",
+      "cssProperties": ["border", "border-color", "border-top-color", "border-right-color", "border-bottom-color", "border-left-color"],
+      "comment": ""
+    },
+    "COLOR_BORDER_SELECTION": {
+      "value": "{!GRAY_80}",
+      "type": "color",
+      "category": "border-color",
+      "cssProperties": ["border", "border-color", "border-top-color", "border-right-color", "border-bottom-color", "border-left-color"],
+      "comment": ""
+    },
+    "COLOR_BORDER_SELECTION_HOVER": {
+      "value": "{!GRAY_80}",
+      "type": "color",
+      "category": "border-color",
+      "cssProperties": ["border", "border-color", "border-top-color", "border-right-color", "border-bottom-color", "border-left-color"],
+      "comment": ""
+    },
+    "COLOR_BORDER_SELECTION_ACTIVE": {
+      "value": "{!GRAY_80}",
+      "type": "color",
+      "category": "border-color",
+      "cssProperties": ["border", "border-color", "border-top-color", "border-right-color", "border-bottom-color", "border-left-color"],
+      "comment": ""
+    },
+    "COLOR_BORDER_BUTTON_BRAND": {
+      "value": "{!WHITE}",
+      "type": "color",
+      "category": "border-color",
+      "cssProperties": ["border", "border-color", "border-top-color", "border-right-color", "border-bottom-color", "border-left-color"],
+      "comment": ""
+    },
+   "COLOR_BORDER_BUTTON_BRAND_DISABLED": {
+      "value": "{!WHITE}",
+      "type": "color",
+      "category": "border-color",
+      "cssProperties": ["border", "border-color", "border-top-color", "border-right-color", "border-bottom-color", "border-left-color"],
+      "comment": ""
+    },
+   "COLOR_BORDER_BUTTON_DEFAULT": {
+      "value": "{!GRAY_67}",
+      "type": "color",
+      "category": "border-color",
+      "cssProperties": ["border", "border-color", "border-top-color", "border-right-color", "border-bottom-color", "border-left-color"],
+      "comment": ""
+    },
+   "COLOR_BORDER_INPUT": {
+      "value": "{!GRAY_80}",
+      "type": "color",
+      "category": "border-color",
+      "cssProperties": ["border", "border-color", "border-top-color", "border-right-color", "border-bottom-color", "border-left-color"],
+      "comment": ""
+    },
+   "COLOR_BORDER_INPUT_FOCUS": {
+      "value": "{!BLUE_CORNFLOWER}",
+      "type": "color",
+      "category": "border-color",
+      "cssProperties": ["border", "border-color", "border-top-color", "border-right-color", "border-bottom-color", "border-left-color"],
+      "comment": ""
+    },
+   "COLOR_BORDER_INPUT_DISABLED": {
+      "value": "{!GRAY_80}",
+      "type": "color",
+      "category": "border-color",
+      "cssProperties": ["border", "border-color", "border-top-color", "border-right-color", "border-bottom-color", "border-left-color"],
+      "comment": ""
+    }
+  }
+}

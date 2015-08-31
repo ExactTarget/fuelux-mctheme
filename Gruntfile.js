@@ -142,8 +142,7 @@ module.exports = function (grunt) {
 			}
 		},
 		clean: {
-			dist: ['dist/**'],
-			tokens: ['dist/css/design-tokens.css'],
+			dist: ['dist/css', 'dist/*.zip'],
 			zipsrc: ['dist/fuelux-mctheme']
 		},
 		compress: {
@@ -252,14 +251,6 @@ module.exports = function (grunt) {
 				files: {
 					'dist/css/<%= pkg.name %>.min.css': 'dist/css/<%= pkg.name %>.css'
 				}
-			},
-			tokens: {
-				options: {
-					strictMath: true,
-				},
-				files: {
-					'dist/css/design-tokens.css': 'less/design-tokens.less'
-				}
 			}
 		},
 		replace: {
@@ -312,6 +303,9 @@ module.exports = function (grunt) {
 			},
 			syncDistWithMaster: {
 				command: 'git checkout master -- dist/'
+			},
+			tokenCreate: {
+				command: 'gulp'	// Runs theo token build task, see gulpfile.js
 			}
 		},
 		svgmin: {
@@ -345,14 +339,14 @@ module.exports = function (grunt) {
 		},
 		watch: {
 			full: {
-				files: ['Gruntfile.js', 'examples/**', 'less/**'],
+				files: ['Gruntfile.js', 'examples/**', 'less/**', 'tokens/**'],
 				options: {
 					livereload: isLivereloadEnabled
 				},
 				tasks: ['distcss']
 			},
 			dev: {
-				files: ['Gruntfile.js', 'less/**', 'index.html', 'index-dev.html', '*-dev.html', 'dev.html'],
+				files: ['Gruntfile.js', 'less/**', 'tokens/**', 'index.html', 'index-dev.html', '*-dev.html', 'dev.html'],
 				options: {
 					livereload: isLivereloadEnabled
 				},
@@ -374,7 +368,7 @@ module.exports = function (grunt) {
 	grunt.registerTask('iconify', ['svgmin', 'grunticon']);
 
 	// CSS distribution task
-	grunt.registerTask('distcss', 'Compile LESS into the dist CSS', ['less:dist', 'less:tokens', 'replace:imgpaths', 'less:minify', 'usebanner', 'clean:tokens']);
+	grunt.registerTask('distcss', 'Compile LESS into the dist CSS', ['less:dist', 'replace:imgpaths', 'less:minify', 'usebanner', 'shell:tokenCreate']);
 
 	// CSS dev distribution task
 	grunt.registerTask('distcssdev', 'Compile LESS into the dev CSS', ['less:dev']);
