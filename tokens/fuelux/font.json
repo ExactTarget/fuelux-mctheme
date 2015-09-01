@@ -12,22 +12,40 @@
       "type": "font",
       "cssProperties": ["font", "font-family"]
     },
+    "FONT_FAMILY_BODY": {
+      "value": "Arial, sans-serif",
+      "type": "font",
+      "cssProperties": ["font", "font-family"]
+    },
+    "FONT_FAMILY_ALT": {
+      "value": "Georgia, Times New Roman, Times, serif",
+      "type": "font",
+      "cssProperties": ["font", "font-family"]
+    },
+    "FONT_FAMILY_MONO": {
+      "value": "Menlo, Monaco, Consolas, 'Courier New', monospace",
+      "type": "font",
+      "cssProperties": ["font", "font-family"]
+    },
     "FONT_WEIGHT_LIGHT": {
       "value": "300",
-      "cssProperties": ["font", "font-weight"],
-      "type": "font",
-      "comment": "Use for large headings only."
+      "cssProperties": ["font-weight"],
+      "type": "font-weight",
+      "category": "font-weight",
+      "comment": "Use for large headings only. Has no affect when used with Arial."
     },
     "FONT_WEIGHT_REGULAR": {
       "value": "400",
-      "cssProperties": ["font", "font-weight"],
-      "type": "font",
-      "comment": "Most all body copy."
+      "cssProperties": ["font-weight"],
+      "type": "font-weight",
+      "category": "font-weight",
+      "comment": "Most body copy."
     },
     "FONT_WEIGHT_BOLD": {
       "value": "700",
-      "cssProperties": ["font", "font-weight"],
-      "type": "font",
+      "cssProperties": ["font-weight"],
+      "type": "font-weight",
+      "category": "font-weight",
       "comment": "Used sparingly for emphasized text within regular body copy."
     },
     "FONT_SIZE_X_SMALL": {
