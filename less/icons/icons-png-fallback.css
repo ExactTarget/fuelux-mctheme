@@ -2,6 +2,12 @@
 
 .fuelux-icon-add, .glyphicon-add { background-image: url('png/add.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
+.fuelux-icon-align-horizontal-center, .glyphicon-align-horizontal-center { background-image: url('png/align-horizontal-center.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-align-horizontal-left, .glyphicon-align-horizontal-left { background-image: url('png/align-horizontal-left.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-align-horizontal-right, .glyphicon-align-horizontal-right { background-image: url('png/align-horizontal-right.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
 .fuelux-icon-arrow-east-hover, .fuelux-icon-arrow-east:hover, button:hover > .fuelux-icon-arrow-east , .glyphicon-arrow-east-hover, .glyphicon-arrow-east:hover, button:hover > .glyphicon-arrow-east { background-image: url('png/arrow-east-hover.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
 .fuelux-icon-arrow-east, .glyphicon-arrow-east { background-image: url('png/arrow-east.png'); background-repeat: no-repeat; .fuelux-icon; } 
@@ -94,9 +100,19 @@
 
 .fuelux-icon-close-content-block, .glyphicon-close-content-block { background-image: url('png/close-content-block.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
+.fuelux-icon-content-image, .glyphicon-content-image { background-image: url('png/content-image.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-content-replace-hover, .fuelux-icon-content-replace:hover, button:hover > .fuelux-icon-content-replace , .glyphicon-content-replace-hover, .glyphicon-content-replace:hover, button:hover > .glyphicon-content-replace { background-image: url('png/content-replace-hover.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-content-replace, .glyphicon-content-replace { background-image: url('png/content-replace.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-content-text, .glyphicon-content-text { background-image: url('png/content-text.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
 .fuelux-icon-copy-hover, .fuelux-icon-copy:hover, button:hover > .fuelux-icon-copy , .glyphicon-copy-hover, .glyphicon-copy:hover, button:hover > .glyphicon-copy { background-image: url('png/copy-hover.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
 .fuelux-icon-copy, .glyphicon-copy { background-image: url('png/copy.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-corner-radius, .glyphicon-corner-radius { background-image: url('png/corner-radius.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
 .fuelux-icon-danger, .glyphicon-danger { background-image: url('png/danger.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
@@ -110,6 +126,10 @@
 
 .fuelux-icon-dot, .glyphicon-dot { background-image: url('png/dot.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
+.fuelux-icon-dots-horizontal, .glyphicon-dots-horizontal { background-image: url('png/dots-horizontal.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-dots-verticle, .glyphicon-dots-verticle { background-image: url('png/dots-verticle.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
 .fuelux-icon-download-document-hover, .fuelux-icon-download-document:hover, button:hover > .fuelux-icon-download-document , .glyphicon-download-document-hover, .glyphicon-download-document:hover, button:hover > .glyphicon-download-document { background-image: url('png/download-document-hover.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
 .fuelux-icon-download-document, .glyphicon-download-document { background-image: url('png/download-document.png'); background-repeat: no-repeat; .fuelux-icon; } 
@@ -117,6 +137,10 @@
 .fuelux-icon-download-hover, .fuelux-icon-download:hover, button:hover > .fuelux-icon-download , .glyphicon-download-hover, .glyphicon-download:hover, button:hover > .glyphicon-download { background-image: url('png/download-hover.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
 .fuelux-icon-download, .glyphicon-download { background-image: url('png/download.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-drag-handle-squares-hover, .fuelux-icon-drag-handle-squares:hover, button:hover > .fuelux-icon-drag-handle-squares , .glyphicon-drag-handle-squares-hover, .glyphicon-drag-handle-squares:hover, button:hover > .glyphicon-drag-handle-squares { background-image: url('png/drag-handle-squares-hover.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-drag-handle-squares, .glyphicon-drag-handle-squares { background-image: url('png/drag-handle-squares.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
 .fuelux-icon-email-hover, .fuelux-icon-email:hover, button:hover > .fuelux-icon-email , .glyphicon-email-hover, .glyphicon-email:hover, button:hover > .glyphicon-email { background-image: url('png/email-hover.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
@@ -168,6 +192,18 @@
 
 .fuelux-icon-loader, .glyphicon-loader { background-image: url('png/loader.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
+.fuelux-icon-margin-all, .glyphicon-margin-all { background-image: url('png/margin-all.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-margin-bottom, .glyphicon-margin-bottom { background-image: url('png/margin-bottom.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-margin-left, .glyphicon-margin-left { background-image: url('png/margin-left.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-margin-none, .glyphicon-margin-none { background-image: url('png/margin-none.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-margin-right, .glyphicon-margin-right { background-image: url('png/margin-right.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-margin-top, .glyphicon-margin-top { background-image: url('png/margin-top.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
 .fuelux-icon-message-type-in, .glyphicon-message-type-in { background-image: url('png/message-type-in.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
 .fuelux-icon-message-type-out, .glyphicon-message-type-out { background-image: url('png/message-type-out.png'); background-repeat: no-repeat; .fuelux-icon; } 
@@ -185,6 +221,22 @@
 .fuelux-icon-mobile-sms-deprecated, .glyphicon-mobile-sms-deprecated { background-image: url('png/mobile-sms-deprecated.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
 .fuelux-icon-mobile-sms, .glyphicon-mobile-sms { background-image: url('png/mobile-sms.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-padding-all, .glyphicon-padding-all { background-image: url('png/padding-all.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-padding-bottom, .glyphicon-padding-bottom { background-image: url('png/padding-bottom.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-padding-left, .glyphicon-padding-left { background-image: url('png/padding-left.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-padding-none, .glyphicon-padding-none { background-image: url('png/padding-none.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-padding-right, .glyphicon-padding-right { background-image: url('png/padding-right.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-padding-top, .glyphicon-padding-top { background-image: url('png/padding-top.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-padlock-locked, .glyphicon-padlock-locked { background-image: url('png/padlock-locked.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-padlock-unlocked, .glyphicon-padlock-unlocked { background-image: url('png/padlock-unlocked.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
 .fuelux-icon-pencil-hover, .fuelux-icon-pencil:hover, button:hover > .fuelux-icon-pencil , .glyphicon-pencil-hover, .glyphicon-pencil:hover, button:hover > .glyphicon-pencil { background-image: url('png/pencil-hover.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
