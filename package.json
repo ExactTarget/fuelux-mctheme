@@ -17,7 +17,7 @@
     "url": "https://github.com/ExactTarget/fuelux-mctheme/issues"
   },
   "license": {
-    "type": "BSD-3",
+    "type": "BSD-3-Clause",
     "url": "https://github.com/ExactTarget/fuelux-mctheme/blob/master/LICENSE"
   },
   "engines": {
@@ -55,6 +55,7 @@
     "grunt-svgmin": "0.3.0",
     "grunt-text-replace": "0.x",
     "grunt-zip": "0.x",
+    "gulp": "3.x",
     "gulp-json-lint": "0.x",
     "gulp-rename": "1.x",
     "handlebars": "1.1.2",
@@ -66,6 +67,7 @@
     "semver": "5.x",
     "serve-static": "1.x",
     "svg-to-png": "2.0.x",
+    "theo": "4.x",
     "uglify-js": "2.4.x",
     "volo": "0.x",
     "xmldom": "0.1.16"
