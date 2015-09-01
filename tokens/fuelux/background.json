@@ -143,11 +143,126 @@
       "cssProperties": ["background", "background-color"],
       "comment": ""
     },
-    "COLOR_BACKGROUND_ERROR": {
+    "COLOR_BACKGROUND_WARNING": {
       "value": "{!ORANGE_PEACH}",
       "type": "color",
       "category": "background-color",
       "cssProperties": ["background", "background-color"],
+      "comment": ""
+    },
+
+    "COLOR_BRAND": {
+      "value": "linear-gradient(to bottom, {!BLUE_CORNFLOWER}, {!BLUE_STEEL})",
+      "type": "gradient",
+      "category": "gradient",
+      "cssProperties": ["background", "background-image"],
+      "comment": ""
+    },
+    "COLOR_BRAND_DARK": {
+      "value": "linear-gradient(to bottom, {!BLUE_STEEL}, {!BLUE_ROYALE})",
+      "type": "gradient",
+      "category": "gradient",
+      "cssProperties": ["background", "background-image"],
+      "comment": ""
+    },
+    "COLOR_BACKGROUND_BUTTON_BRAND": {
+      "value": "linear-gradient(to bottom, {!BLUE_CORNFLOWER}, {!BLUE_STEEL})",
+      "type": "gradient",
+      "category": "gradient",
+      "cssProperties": ["background", "background-image"],
+      "comment": ""
+    },
+    "COLOR_BACKGROUND_BUTTON_BRAND_ACTIVE": {
+      "value": "linear-gradient(to bottom, {!BLUE_STEEL}, {!BLUE_ROYALE})",
+      "type": "gradient",
+      "category": "gradient",
+      "cssProperties": ["background", "background-image"],
+      "comment": ""
+    },
+    "COLOR_BACKGROUND_BUTTON_BRAND_HOVER": {
+      "value": "linear-gradient(to bottom, {!BLUE_CORNFLOWER}, {!BLUE_STEEL})",
+      "type": "gradient",
+      "category": "gradient",
+      "cssProperties": ["background", "background-image"],
+      "comment": ""
+    },
+    "COLOR_BACKGROUND_BUTTON_BRAND_DISABLED": {
+      "value": "linear-gradient(to bottom, {!BLUE_CORNFLOWER}, {!BLUE_STEEL})",
+      "type": "gradient",
+      "category": "gradient",
+      "cssProperties": ["background", "background-image"],
+      "comment": ""
+    },
+    "COLOR_BACKGROUND_BUTTON_DEFAULT": {
+      "value": "linear-gradient(to bottom, {!WHITE}, {!BLUE_SLATE})",
+      "type": "gradient",
+      "category": "gradient",
+      "cssProperties": ["background", "background-image"],
+      "comment": ""
+    },
+    "COLOR_BACKGROUND_BUTTON_DEFAULT_HOVER": {
+      "value": "linear-gradient(to bottom, {!BLUE_SMOKE}, {!BLUE_SLATE})",
+      "type": "gradient",
+      "category": "gradient",
+      "cssProperties": ["background", "background-image"],
+      "comment": ""
+    },
+
+
+    "COLOR_BACKGROUND_MODAL_BRAND": {
+      "value": "linear-gradient(to bottom, {!BLUE_CORNFLOWER}, {!BLUE_STEEL})",
+      "type": "gradient",
+      "category": "gradient",
+      "cssProperties": ["background", "background-image"],
+      "comment": ""
+    },
+    "COLOR_BACKGROUND_BUTTON_DEFAULT_FOCUS": {
+      "value": "linear-gradient(to bottom, {!WHITE}, {!BLUE_SLATE})",
+      "type": "gradient",
+      "category": "gradient",
+      "cssProperties": ["background", "background-image"],
+      "comment": ""
+    },
+    "COLOR_BACKGROUND_BUTTON_DEFAULT_DISABLED": {
+      "value": "linear-gradient(to bottom, {!WHITE}, {!BLUE_SLATE})",
+      "type": "gradient",
+      "category": "gradient",
+      "cssProperties": ["background", "background-image"],
+      "comment": ""
+    },
+    "COLOR_BACKGROUND_BUTTON_ICON": {
+      "value": "linear-gradient(to bottom, {!WHITE}, {!BLUE_SLATE})",
+      "type": "gradient",
+      "category": "gradient",
+      "cssProperties": ["background", "background-image"],
+      "comment": ""
+    },
+    "COLOR_BACKGROUND_BUTTON_ICON_HOVER": {
+      "value": "linear-gradient(to bottom, {!BLUE_SMOKE}, {!BLUE_SLATE})",
+      "type": "gradient",
+      "category": "gradient",
+      "cssProperties": ["background", "background-image"],
+      "comment": ""
+    },
+    "COLOR_BACKGROUND_BUTTON_ICON_FOCUS": {
+      "value": "linear-gradient(to bottom, {!WHITE}, {!BLUE_SLATE})",
+      "type": "gradient",
+      "category": "gradient",
+      "cssProperties": ["background", "background-image"],
+      "comment": ""
+    },
+    "COLOR_BACKGROUND_BUTTON_ICON_ACTIVE": {
+      "value": "linear-gradient(to bottom, {!BLUE_SMOKE}, {!BLUE_SLATE})",
+      "type": "gradient",
+      "category": "gradient",
+      "cssProperties": ["background", "background-image"],
+      "comment": ""
+    },
+    "COLOR_BACKGROUND_BUTTON_ICON_DISABLED": {
+      "value": "linear-gradient(to bottom, {!WHITE}, {!BLUE_SLATE})",
+      "type": "gradient",
+      "category": "gradient",
+      "cssProperties": ["background", "background-image"],
       "comment": ""
     }
   }
