@@ -31,7 +31,6 @@ $(function() {
             .css('position', 'relative')
             .append($copyPrompt.clone()
                     .click(function() {
-                        debugger;
                         onCopyClick($(this));
                     })
                    )
