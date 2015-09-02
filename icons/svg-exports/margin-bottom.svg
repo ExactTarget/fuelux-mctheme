@@ -6,22 +6,22 @@
 <g id="margin-bottom">
 	<g>
 		<g>
-			<rect x="0.5" y="75.5" fill="#B9B9BA" width="12" height="3"/>
-			<path fill="#8D8E8D" d="M1,78v-2h11v2H1 M0,79h13v-4H0V79L0,79z"/>
+			<rect x="0.5" y="9.502" fill="#B9B9BA" width="12" height="3"/>
+			<path fill="#8D8E8D" d="M1,12.002v-2h11v2H1 M0,13.002h13v-4H0V13.002L0,13.002z"/>
 		</g>
 		<g>
-			<rect x="3.5" y="69.498" fill="#F1F1F1" width="6" height="6"/>
-			<path fill="#323232" d="M4,75v-5.002h5v5H4 M3,76h7v-7.002H3V76L3,76z"/>
+			<rect x="3.5" y="3.5" fill="#F1F1F1" width="6" height="6"/>
+			<path fill="#323232" d="M4,9.002V4h5v5H4 M3,10.002h7V3H3V10.002L3,10.002z"/>
 		</g>
 		<g>
-			<rect x="12" y="68.998" fill="#797979" width="1" height="1"/>
-			<rect x="10" y="68.998" fill="#797979" width="1" height="1"/>
-			<rect x="9" y="67.998" fill="#797979" width="1" height="1"/>
-			<rect x="9" y="65.998" fill="#797979" width="1" height="1"/>
-			<rect x="3" y="67.998" fill="#797979" width="1" height="1"/>
-			<rect x="3" y="65.998" fill="#797979" width="1" height="1"/>
-			<rect x="2" y="68.998" fill="#797979" width="1" height="1"/>
-			<rect y="68.998" fill="#797979" width="1" height="1"/>
+			<rect x="12" y="3" fill="#797979" width="1" height="1"/>
+			<rect x="10" y="3" fill="#797979" width="1" height="1"/>
+			<rect x="9" y="2" fill="#797979" width="1" height="1"/>
+			<rect x="9" fill="#797979" width="1" height="1"/>
+			<rect x="3" y="2" fill="#797979" width="1" height="1"/>
+			<rect x="3" fill="#797979" width="1" height="1"/>
+			<rect x="2" y="3" fill="#797979" width="1" height="1"/>
+			<rect y="3" fill="#797979" width="1" height="1"/>
 		</g>
 	</g>
 </g>
