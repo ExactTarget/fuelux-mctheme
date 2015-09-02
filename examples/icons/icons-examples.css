@@ -106,6 +106,10 @@ body {
 	margin-right: auto;
 }
 
+[class*="white"] {
+	background-color: #ccc;
+}
+
 
 .panel-body.text-center {
 	background: url(./transparency-grid.png);
