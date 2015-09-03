@@ -29,8 +29,6 @@ module.exports = function (grunt) {
 		pkg: grunt.file.readJSON('package.json'),
 		// Tasks configuration
 
-
-
 		// Copy svg-sources to svg-exports
 
 		// add comments about the regex-foo
@@ -144,7 +142,7 @@ module.exports = function (grunt) {
 			}
 		},
 		clean: {
-			dist: ['dist/**'],
+			dist: ['dist/css', 'dist/*.zip'],
 			zipsrc: ['dist/fuelux-mctheme']
 		},
 		compress: {
@@ -219,9 +217,6 @@ module.exports = function (grunt) {
 				}
 			}
 		},
-
-
-
 		less: {
 			dev: {
 				options: {
@@ -247,7 +242,6 @@ module.exports = function (grunt) {
 					'dist/css/fuelux-mctheme.css': 'less/fuelux-mctheme.less'
 				}
 			},
-
 			minify: {
 				options: {
 					cleancss: true,
@@ -309,6 +303,9 @@ module.exports = function (grunt) {
 			},
 			syncDistWithMaster: {
 				command: 'git checkout master -- dist/'
+			},
+			tokenCreate: {
+				command: 'gulp'	// Runs theo token build task, see gulpfile.js
 			}
 		},
 		svgmin: {
@@ -342,14 +339,14 @@ module.exports = function (grunt) {
 		},
 		watch: {
 			full: {
-				files: ['Gruntfile.js', 'examples/**', 'less/**'],
+				files: ['Gruntfile.js', 'examples/**', 'less/**', 'tokens/**'],
 				options: {
 					livereload: isLivereloadEnabled
 				},
 				tasks: ['distcss']
 			},
 			dev: {
-				files: ['Gruntfile.js', 'less/**', 'index.html', 'index-dev.html', '*-dev.html', 'dev.html'],
+				files: ['Gruntfile.js', 'less/**', 'tokens/**', 'index.html', 'index-dev.html', '*-dev.html', 'dev.html'],
 				options: {
 					livereload: isLivereloadEnabled
 				},
@@ -371,7 +368,7 @@ module.exports = function (grunt) {
 	grunt.registerTask('iconify', ['svgmin', 'grunticon']);
 
 	// CSS distribution task
-	grunt.registerTask('distcss', 'Compile LESS into the dist CSS', ['less:dist', 'replace:imgpaths', 'less:minify', 'usebanner']);
+	grunt.registerTask('distcss', 'Compile LESS into the dist CSS', ['less:dist', 'replace:imgpaths', 'less:minify', 'usebanner', 'shell:tokenCreate']);
 
 	// CSS dev distribution task
 	grunt.registerTask('distcssdev', 'Compile LESS into the dev CSS', ['less:dev']);

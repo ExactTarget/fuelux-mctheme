@@ -1,0 +1,62 @@
+{
+  "global": {
+    "type": "color",
+    "category": "text-color",
+    "cssProperties": "color"
+  },
+  "imports": [
+    "./aliases.json"
+  ],
+  "props": {
+    "COLOR_TEXT_ERROR": {
+      "value": "{!RED_IRON}",
+      "comment": "Error text for inputs and error misc"
+    },
+    "COLOR_TEXT_INPUT_DISABLED": {
+      "value": "{!GRAY_33}",
+      "comment": "Input disabled text"
+    },
+    "COLOR_TEXT_INVERSE": {
+      "value": "{!WHITE}",
+      "comment": "Inverse text color for dark backgrounds"
+    },
+    "COLOR_TEXT_INVERSE_ACTIVE": {
+      "value": "{!WHITE}",
+      "comment": "Active state on a standalone link on a dark background."
+    },
+    "COLOR_TEXT_INVERSE_HOVER": {
+      "value": "{!WHITE}",
+      "comment": "Hover state on a standalone link on a dark background."
+    },
+    "COLOR_TEXT_LINK": {
+      "value": "{!BLUE_ROYALE}",
+      "comment": ""
+    },
+    "COLOR_TEXT_LINK_ACTIVE": {
+      "value": "{!BLUE_ROYALE}",
+      "comment": "Active link text"
+    },
+    "COLOR_TEXT_LINK_DISABLED": {
+      "value": "{!GRAY_47}",
+      "comment": "Disabled link text"
+    },
+    "COLOR_TEXT_LINK_FOCUS": {
+      "value": "{!BLUE_ROYALE}",
+      "category": "text-color",
+      "comment": "Focus link text"
+    },
+    "COLOR_TEXT_LINK_HOVER": {
+      "value": "{!BLUE_ROYALE}",
+      "comment": "Hover link text"
+    },
+    "COLOR_TEXT_WARNING": {
+      "value": "{!BROWN_GOLDENROD}",
+      "cssProperties": ["color", "fill"],
+      "comment": "Color for texts or icons that are related to warnings."
+    },
+    "COLOR_TEXT_WEAK": {
+      "value": "{!GRAY_46}",
+      "comment": "Color for text that is purposefully de-emphasized to create visual hierarchy."
+    }
+  }
+}

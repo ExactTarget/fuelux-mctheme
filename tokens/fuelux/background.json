@@ -1,0 +1,269 @@
+{
+  "imports": [
+    "./aliases.json"
+  ],
+  "props": {
+    "COLOR_BACKGROUND": {
+      "value": "{!WHITE}",
+      "type": "color",
+      "category": "background-color",
+      "cssProperties": ["background", "background-color"],
+      "comment": ""
+    },
+    "COLOR_BACKGROUND_ALT": {
+      "value": "{!GRAY_96}",
+      "type": "color",
+      "category": "background-color",
+      "cssProperties": ["background", "background-color"],
+      "comment": ""
+    },
+    "COLOR_BACKGROUND_ALT_2": {
+      "value": "{!GRAY_93}",
+      "type": "color",
+      "category": "background-color",
+      "cssProperties": ["background", "background-color"],
+      "comment": ""
+    },
+    "COLOR_BACKGROUND_ALT_INVERSE": {
+      "value": "{!BLUE_RAINSTORM}",
+      "type": "color",
+      "category": "background-color",
+      "cssProperties": ["background", "background-color"],
+      "comment": ""
+    },
+    "COLOR_BACKGROUND_ROW_HOVER": {
+      "value": "{!GRAY_96}",
+      "type": "color",
+      "category": "background-color",
+      "cssProperties": ["background", "background-color"],
+      "comment": ""
+    },
+    "COLOR_BACKGROUND_ROW_ACTIVE": {
+      "value": "{!GRAY_96}",
+      "type": "color",
+      "category": "background-color",
+      "cssProperties": ["background", "background-color"],
+      "comment": ""
+    },
+    "COLOR_BACKGROUND_ROW_SELECTED": {
+      "value": "{!BLUE_SLATE}",
+      "type": "color",
+      "category": "background-color",
+      "cssProperties": ["background", "background-color"],
+      "comment": ""
+    },
+    "COLOR_BACKGROUND_INVERSE": {
+      "value": "{!BLUE_RAINSTORM}",
+      "type": "color",
+      "category": "background-color",
+      "cssProperties": ["background", "background-color"],
+      "comment": ""
+    },
+    "COLOR_BACKGROUND_ANCHOR": {
+      "value": "{!GRAY_96}",
+      "type": "color",
+      "category": "background-color",
+      "cssProperties": ["background", "background-color"],
+      "comment": ""
+    },
+    "COLOR_BACKGROUND_BROWSER": {
+      "value": "{!WHITE}",
+      "type": "color",
+      "category": "background-color",
+      "cssProperties": ["background", "background-color"],
+      "comment": ""
+    },
+    "COLOR_BACKGROUND_HIGHLIGHT": {
+      "value": "{!BLUE_SKY}",
+      "type": "color",
+      "category": "background-color",
+      "cssProperties": ["background", "background-color"],
+      "comment": ""
+    },
+    "COLOR_BACKGROUND_MODAL": {
+      "value": "{!WHITE}",
+      "type": "color",
+      "category": "background-color",
+      "cssProperties": ["background", "background-color"],
+      "comment": ""
+    },
+    "COLOR_BACKGROUND_INPUT": {
+      "value": "{!WHITE}",
+      "type": "color",
+      "category": "background-color",
+      "cssProperties": ["background", "background-color"],
+      "comment": ""
+    },
+    "COLOR_BACKGROUND_INPUT_ACTIVE": {
+      "value": "{!WHITE}",
+      "type": "color",
+      "category": "background-color",
+      "cssProperties": ["background", "background-color"],
+      "comment": ""
+    },
+    "COLOR_BACKGROUND_BROWSER": {
+      "value": "{!WHITE}",
+      "type": "color",
+      "category": "background-color",
+      "cssProperties": ["background", "background-color"],
+      "comment": ""
+    },
+    "COLOR_BACKGROUND_INPUT_DISABLED": {
+      "value": "{!GRAY_98}",
+      "type": "color",
+      "category": "background-color",
+      "cssProperties": ["background", "background-color"],
+      "comment": ""
+    },
+    "COLOR_BACKGROUND_INPUT_SEARCH": {
+      "value": "{!WHITE}",
+      "type": "color",
+      "category": "background-color",
+      "cssProperties": ["background", "background-color"],
+      "comment": ""
+    },
+    "COLOR_BACKGROUND_PILL": {
+      "value": "{!GRAY_93}",
+      "type": "color",
+      "category": "background-color",
+      "cssProperties": ["background", "background-color"],
+      "comment": ""
+    },
+    "COLOR_BACKGROUND_ERROR": {
+      "value": "{!PINK_COTTON_CANDY}",
+      "type": "color",
+      "category": "background-color",
+      "cssProperties": ["background", "background-color"],
+      "comment": ""
+    },
+    "COLOR_BACKGROUND_SUCCESS": {
+      "value": "{!GREEN_MINT}",
+      "type": "color",
+      "category": "background-color",
+      "cssProperties": ["background", "background-color"],
+      "comment": ""
+    },
+    "COLOR_BACKGROUND_WARNING": {
+      "value": "{!ORANGE_PEACH}",
+      "type": "color",
+      "category": "background-color",
+      "cssProperties": ["background", "background-color"],
+      "comment": ""
+    },
+
+    "COLOR_BRAND": {
+      "value": "linear-gradient(to bottom, {!BLUE_CORNFLOWER}, {!BLUE_STEEL})",
+      "type": "gradient",
+      "category": "gradient",
+      "cssProperties": ["background", "background-image"],
+      "comment": ""
+    },
+    "COLOR_BRAND_DARK": {
+      "value": "linear-gradient(to bottom, {!BLUE_STEEL}, {!BLUE_ROYALE})",
+      "type": "gradient",
+      "category": "gradient",
+      "cssProperties": ["background", "background-image"],
+      "comment": ""
+    },
+    "COLOR_BACKGROUND_BUTTON_BRAND": {
+      "value": "linear-gradient(to bottom, {!BLUE_CORNFLOWER}, {!BLUE_STEEL})",
+      "type": "gradient",
+      "category": "gradient",
+      "cssProperties": ["background", "background-image"],
+      "comment": ""
+    },
+    "COLOR_BACKGROUND_BUTTON_BRAND_ACTIVE": {
+      "value": "linear-gradient(to bottom, {!BLUE_STEEL}, {!BLUE_ROYALE})",
+      "type": "gradient",
+      "category": "gradient",
+      "cssProperties": ["background", "background-image"],
+      "comment": ""
+    },
+    "COLOR_BACKGROUND_BUTTON_BRAND_HOVER": {
+      "value": "linear-gradient(to bottom, {!BLUE_CORNFLOWER}, {!BLUE_STEEL})",
+      "type": "gradient",
+      "category": "gradient",
+      "cssProperties": ["background", "background-image"],
+      "comment": ""
+    },
+    "COLOR_BACKGROUND_BUTTON_BRAND_DISABLED": {
+      "value": "linear-gradient(to bottom, {!BLUE_CORNFLOWER}, {!BLUE_STEEL})",
+      "type": "gradient",
+      "category": "gradient",
+      "cssProperties": ["background", "background-image"],
+      "comment": ""
+    },
+    "COLOR_BACKGROUND_BUTTON_DEFAULT": {
+      "value": "linear-gradient(to bottom, {!WHITE}, {!BLUE_SLATE})",
+      "type": "gradient",
+      "category": "gradient",
+      "cssProperties": ["background", "background-image"],
+      "comment": ""
+    },
+    "COLOR_BACKGROUND_BUTTON_DEFAULT_HOVER": {
+      "value": "linear-gradient(to bottom, {!BLUE_SMOKE}, {!BLUE_SLATE})",
+      "type": "gradient",
+      "category": "gradient",
+      "cssProperties": ["background", "background-image"],
+      "comment": ""
+    },
+
+
+    "COLOR_BACKGROUND_MODAL_BRAND": {
+      "value": "linear-gradient(to bottom, {!BLUE_CORNFLOWER}, {!BLUE_STEEL})",
+      "type": "gradient",
+      "category": "gradient",
+      "cssProperties": ["background", "background-image"],
+      "comment": ""
+    },
+    "COLOR_BACKGROUND_BUTTON_DEFAULT_FOCUS": {
+      "value": "linear-gradient(to bottom, {!WHITE}, {!BLUE_SLATE})",
+      "type": "gradient",
+      "category": "gradient",
+      "cssProperties": ["background", "background-image"],
+      "comment": ""
+    },
+    "COLOR_BACKGROUND_BUTTON_DEFAULT_DISABLED": {
+      "value": "linear-gradient(to bottom, {!WHITE}, {!BLUE_SLATE})",
+      "type": "gradient",
+      "category": "gradient",
+      "cssProperties": ["background", "background-image"],
+      "comment": ""
+    },
+    "COLOR_BACKGROUND_BUTTON_ICON": {
+      "value": "linear-gradient(to bottom, {!WHITE}, {!BLUE_SLATE})",
+      "type": "gradient",
+      "category": "gradient",
+      "cssProperties": ["background", "background-image"],
+      "comment": ""
+    },
+    "COLOR_BACKGROUND_BUTTON_ICON_HOVER": {
+      "value": "linear-gradient(to bottom, {!BLUE_SMOKE}, {!BLUE_SLATE})",
+      "type": "gradient",
+      "category": "gradient",
+      "cssProperties": ["background", "background-image"],
+      "comment": ""
+    },
+    "COLOR_BACKGROUND_BUTTON_ICON_FOCUS": {
+      "value": "linear-gradient(to bottom, {!WHITE}, {!BLUE_SLATE})",
+      "type": "gradient",
+      "category": "gradient",
+      "cssProperties": ["background", "background-image"],
+      "comment": ""
+    },
+    "COLOR_BACKGROUND_BUTTON_ICON_ACTIVE": {
+      "value": "linear-gradient(to bottom, {!BLUE_SMOKE}, {!BLUE_SLATE})",
+      "type": "gradient",
+      "category": "gradient",
+      "cssProperties": ["background", "background-image"],
+      "comment": ""
+    },
+    "COLOR_BACKGROUND_BUTTON_ICON_DISABLED": {
+      "value": "linear-gradient(to bottom, {!WHITE}, {!BLUE_SLATE})",
+      "type": "gradient",
+      "category": "gradient",
+      "cssProperties": ["background", "background-image"],
+      "comment": ""
+    }
+  }
+}
