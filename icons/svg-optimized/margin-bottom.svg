@@ -1,27 +1,30 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="iso-8859-1"?>
 <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="13px" height="13.002px" viewBox="0 0 13 13.002" enable-background="new 0 0 13 13.002" xml:space="preserve">
+	 width="20px" height="20px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
 <g id="margin-bottom">
 	<g>
+		<rect id="le_wrappier_147_" style="fill:none;" width="20" height="20"/>
 		<g>
-			<rect x="0.5" y="9.502" fill="#B9B9BA" width="12" height="3"/>
-			<path fill="#8D8E8D" d="M1,12.002v-2h11v2H1 M0,13.002h13v-4H0V13.002L0,13.002z"/>
-		</g>
-		<g>
-			<rect x="3.5" y="3.5" fill="#F1F1F1" width="6" height="6"/>
-			<path fill="#323232" d="M4,9.002V4h5v5H4 M3,10.002h7V3H3V10.002L3,10.002z"/>
-		</g>
-		<g>
-			<rect x="12" y="3" fill="#797979" width="1" height="1"/>
-			<rect x="10" y="3" fill="#797979" width="1" height="1"/>
-			<rect x="9" y="2" fill="#797979" width="1" height="1"/>
-			<rect x="9" fill="#797979" width="1" height="1"/>
-			<rect x="3" y="2" fill="#797979" width="1" height="1"/>
-			<rect x="3" fill="#797979" width="1" height="1"/>
-			<rect x="2" y="3" fill="#797979" width="1" height="1"/>
-			<rect y="3" fill="#797979" width="1" height="1"/>
+			<g>
+				<rect x="4.213" y="13" style="fill:#B9B9BA;" width="12" height="3"/>
+				<path style="fill:#8D8E8D;" d="M4.713,15.5v-2h11v2H4.713 M3.713,16.5h13v-4h-13V16.5L3.713,16.5z"/>
+			</g>
+			<g>
+				<rect x="7.213" y="6.999" style="fill:#F1F1F1;" width="6" height="6"/>
+				<path style="fill:#323232;" d="M7.713,12.5V7.499h5v5L7.713,12.5 M6.713,13.5h7V6.499h-7V13.5L6.713,13.5z"/>
+			</g>
+			<g>
+				<rect x="15.713" y="6.499" style="fill:#797979;" width="1" height="1"/>
+				<rect x="13.713" y="6.499" style="fill:#797979;" width="1" height="1"/>
+				<rect x="12.713" y="5.499" style="fill:#797979;" width="1" height="1"/>
+				<rect x="12.713" y="3.499" style="fill:#797979;" width="1" height="1"/>
+				<rect x="6.713" y="5.499" style="fill:#797979;" width="1" height="1"/>
+				<rect x="6.713" y="3.499" style="fill:#797979;" width="1" height="1"/>
+				<rect x="5.713" y="6.499" style="fill:#797979;" width="1" height="1"/>
+				<rect x="3.713" y="6.499" style="fill:#797979;" width="1" height="1"/>
+			</g>
 		</g>
 	</g>
 </g>

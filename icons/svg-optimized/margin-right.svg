@@ -1,27 +1,30 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="iso-8859-1"?>
 <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="13px" height="13px" viewBox="0 0 13 13" enable-background="new 0 0 13 13" xml:space="preserve">
+	 width="20px" height="20px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
 <g id="margin-right">
 	<g>
+		<rect id="le_wrappier_145_" style="fill:none;" width="20" height="20"/>
 		<g>
-			<rect x="9.5" y="0.5" fill="#B9B9BA" width="3" height="12"/>
-			<path fill="#8D8E8D" d="M12,12h-2V1h2V12 M13,13V0H9v13H13L13,13z"/>
-		</g>
-		<g>
-			<rect x="3.5" y="3.5" fill="#F1F1F1" width="6" height="6"/>
-			<path fill="#323232" d="M9,9H4V4h5V9 M10,10V3H3v7H10L10,10z"/>
-		</g>
-		<g>
-			<rect x="3" fill="#797979" width="1" height="1"/>
-			<rect x="3" y="2" fill="#797979" width="1" height="1"/>
-			<rect x="2" y="3" fill="#797979" width="1" height="1"/>
-			<rect y="3" fill="#797979" width="1" height="1"/>
-			<rect x="2" y="9" fill="#797979" width="1" height="1"/>
-			<rect y="9" fill="#797979" width="1" height="1"/>
-			<rect x="3" y="10" fill="#797979" width="1" height="1"/>
-			<rect x="3" y="12" fill="#797979" width="1" height="1"/>
+			<g>
+				<rect x="13.275" y="4" style="fill:#B9B9BA;" width="3" height="12"/>
+				<path style="fill:#8D8E8D;" d="M15.775,15.5h-2v-11h2V15.5 M16.775,16.5v-13h-4v13H16.775L16.775,16.5z"/>
+			</g>
+			<g>
+				<rect x="7.275" y="7" style="fill:#F1F1F1;" width="6" height="6"/>
+				<path style="fill:#323232;" d="M12.775,12.5h-5v-5h5V12.5 M13.775,13.5v-7h-7v7H13.775L13.775,13.5z"/>
+			</g>
+			<g>
+				<rect x="6.775" y="3.5" style="fill:#797979;" width="1" height="1"/>
+				<rect x="6.775" y="5.5" style="fill:#797979;" width="1" height="1"/>
+				<rect x="5.775" y="6.5" style="fill:#797979;" width="1" height="1"/>
+				<rect x="3.775" y="6.5" style="fill:#797979;" width="1" height="1"/>
+				<rect x="5.775" y="12.5" style="fill:#797979;" width="1" height="1"/>
+				<rect x="3.775" y="12.5" style="fill:#797979;" width="1" height="1"/>
+				<rect x="6.775" y="13.5" style="fill:#797979;" width="1" height="1"/>
+				<rect x="6.775" y="15.5" style="fill:#797979;" width="1" height="1"/>
+			</g>
 		</g>
 	</g>
 </g>

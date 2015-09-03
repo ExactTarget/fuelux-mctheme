@@ -1,14 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="iso-8859-1"?>
 <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="15px" height="15px" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+	 width="20px" height="20px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
 <g id="align-horizontal-right">
 	<g>
-		<rect y="6.924" fill="#989898" width="15" height="1.152"/>
+		<rect id="le_wrappier_132_" style="fill:none;" width="20" height="20"/>
 		<g>
-			<rect x="8.652" y="0.576" fill="#F1F1F1" width="4.615" height="13.848"/>
-			<path fill="#323232" d="M12.691,1.154v12.69H9.23V1.154H12.691 M13.846,0h-5.77v15h5.77V0L13.846,0z"/>
+			<rect x="2.5" y="9.424" style="fill:#989898;" width="15" height="1.152"/>
+			<g>
+				<rect x="11.152" y="3.076" style="fill:#F1F1F1;" width="4.615" height="13.848"/>
+				<path style="fill:#323232;" d="M15.191,3.654v12.69H11.73V3.654H15.191 M16.346,2.5h-5.77v15h5.77V2.5L16.346,2.5z"/>
+			</g>
 		</g>
 	</g>
 </g>
