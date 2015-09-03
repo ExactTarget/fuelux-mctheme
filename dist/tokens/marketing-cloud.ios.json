@@ -1,0 +1,1147 @@
+{
+  "properties": [
+    {
+      "value": "rgb(255, 255, 255)",
+      "type": "color",
+      "category": "background-color",
+      "cssProperties": [
+        "background",
+        "background-color"
+      ],
+      "comment": "",
+      "name": "colorBackground"
+    },
+    {
+      "value": "rgb(245, 245, 245)",
+      "type": "color",
+      "category": "background-color",
+      "cssProperties": [
+        "background",
+        "background-color"
+      ],
+      "comment": "",
+      "name": "colorBackgroundAlt"
+    },
+    {
+      "value": "rgb(238, 238, 238)",
+      "type": "color",
+      "category": "background-color",
+      "cssProperties": [
+        "background",
+        "background-color"
+      ],
+      "comment": "",
+      "name": "colorBackgroundAlt2"
+    },
+    {
+      "value": "rgb(56, 91, 107)",
+      "type": "color",
+      "category": "background-color",
+      "cssProperties": [
+        "background",
+        "background-color"
+      ],
+      "comment": "",
+      "name": "colorBackgroundAltInverse"
+    },
+    {
+      "value": "rgb(245, 245, 245)",
+      "type": "color",
+      "category": "background-color",
+      "cssProperties": [
+        "background",
+        "background-color"
+      ],
+      "comment": "",
+      "name": "colorBackgroundRowHover"
+    },
+    {
+      "value": "rgb(245, 245, 245)",
+      "type": "color",
+      "category": "background-color",
+      "cssProperties": [
+        "background",
+        "background-color"
+      ],
+      "comment": "",
+      "name": "colorBackgroundRowActive"
+    },
+    {
+      "value": "rgb(217, 234, 245)",
+      "type": "color",
+      "category": "background-color",
+      "cssProperties": [
+        "background",
+        "background-color"
+      ],
+      "comment": "",
+      "name": "colorBackgroundRowSelected"
+    },
+    {
+      "value": "rgb(56, 91, 107)",
+      "type": "color",
+      "category": "background-color",
+      "cssProperties": [
+        "background",
+        "background-color"
+      ],
+      "comment": "",
+      "name": "colorBackgroundInverse"
+    },
+    {
+      "value": "rgb(245, 245, 245)",
+      "type": "color",
+      "category": "background-color",
+      "cssProperties": [
+        "background",
+        "background-color"
+      ],
+      "comment": "",
+      "name": "colorBackgroundAnchor"
+    },
+    {
+      "value": "rgb(255, 255, 255)",
+      "type": "color",
+      "category": "background-color",
+      "cssProperties": [
+        "background",
+        "background-color"
+      ],
+      "comment": "",
+      "name": "colorBackgroundBrowser"
+    },
+    {
+      "value": "rgb(185, 223, 241)",
+      "type": "color",
+      "category": "background-color",
+      "cssProperties": [
+        "background",
+        "background-color"
+      ],
+      "comment": "",
+      "name": "colorBackgroundHighlight"
+    },
+    {
+      "value": "rgb(255, 255, 255)",
+      "type": "color",
+      "category": "background-color",
+      "cssProperties": [
+        "background",
+        "background-color"
+      ],
+      "comment": "",
+      "name": "colorBackgroundModal"
+    },
+    {
+      "value": "rgb(255, 255, 255)",
+      "type": "color",
+      "category": "background-color",
+      "cssProperties": [
+        "background",
+        "background-color"
+      ],
+      "comment": "",
+      "name": "colorBackgroundInput"
+    },
+    {
+      "value": "rgb(255, 255, 255)",
+      "type": "color",
+      "category": "background-color",
+      "cssProperties": [
+        "background",
+        "background-color"
+      ],
+      "comment": "",
+      "name": "colorBackgroundInputActive"
+    },
+    {
+      "value": "rgb(249, 249, 249)",
+      "type": "color",
+      "category": "background-color",
+      "cssProperties": [
+        "background",
+        "background-color"
+      ],
+      "comment": "",
+      "name": "colorBackgroundInputDisabled"
+    },
+    {
+      "value": "rgb(255, 255, 255)",
+      "type": "color",
+      "category": "background-color",
+      "cssProperties": [
+        "background",
+        "background-color"
+      ],
+      "comment": "",
+      "name": "colorBackgroundInputSearch"
+    },
+    {
+      "value": "rgb(238, 238, 238)",
+      "type": "color",
+      "category": "background-color",
+      "cssProperties": [
+        "background",
+        "background-color"
+      ],
+      "comment": "",
+      "name": "colorBackgroundPill"
+    },
+    {
+      "value": "rgb(252, 236, 237)",
+      "type": "color",
+      "category": "background-color",
+      "cssProperties": [
+        "background",
+        "background-color"
+      ],
+      "comment": "",
+      "name": "colorBackgroundError"
+    },
+    {
+      "value": "rgb(233, 252, 222)",
+      "type": "color",
+      "category": "background-color",
+      "cssProperties": [
+        "background",
+        "background-color"
+      ],
+      "comment": "",
+      "name": "colorBackgroundSuccess"
+    },
+    {
+      "value": "rgb(255, 241, 225)",
+      "type": "color",
+      "category": "background-color",
+      "cssProperties": [
+        "background",
+        "background-color"
+      ],
+      "comment": "",
+      "name": "colorBackgroundWarning"
+    },
+    {
+      "value": "linear-gradient(to bottom, #66afe9, #4E8ABE)",
+      "type": "gradient",
+      "category": "gradient",
+      "cssProperties": [
+        "background",
+        "background-image"
+      ],
+      "comment": "",
+      "name": "colorBrand"
+    },
+    {
+      "value": "linear-gradient(to bottom, #4E8ABE, #3074af)",
+      "type": "gradient",
+      "category": "gradient",
+      "cssProperties": [
+        "background",
+        "background-image"
+      ],
+      "comment": "",
+      "name": "colorBrandDark"
+    },
+    {
+      "value": "linear-gradient(to bottom, #66afe9, #4E8ABE)",
+      "type": "gradient",
+      "category": "gradient",
+      "cssProperties": [
+        "background",
+        "background-image"
+      ],
+      "comment": "",
+      "name": "colorBackgroundButtonBrand"
+    },
+    {
+      "value": "linear-gradient(to bottom, #4E8ABE, #3074af)",
+      "type": "gradient",
+      "category": "gradient",
+      "cssProperties": [
+        "background",
+        "background-image"
+      ],
+      "comment": "",
+      "name": "colorBackgroundButtonBrandActive"
+    },
+    {
+      "value": "linear-gradient(to bottom, #66afe9, #4E8ABE)",
+      "type": "gradient",
+      "category": "gradient",
+      "cssProperties": [
+        "background",
+        "background-image"
+      ],
+      "comment": "",
+      "name": "colorBackgroundButtonBrandHover"
+    },
+    {
+      "value": "linear-gradient(to bottom, #66afe9, #4E8ABE)",
+      "type": "gradient",
+      "category": "gradient",
+      "cssProperties": [
+        "background",
+        "background-image"
+      ],
+      "comment": "",
+      "name": "colorBackgroundButtonBrandDisabled"
+    },
+    {
+      "value": "linear-gradient(to bottom, #FFFFFF, #D9EAF5)",
+      "type": "gradient",
+      "category": "gradient",
+      "cssProperties": [
+        "background",
+        "background-image"
+      ],
+      "comment": "",
+      "name": "colorBackgroundButtonDefault"
+    },
+    {
+      "value": "linear-gradient(to bottom, #EDF5FA, #D9EAF5)",
+      "type": "gradient",
+      "category": "gradient",
+      "cssProperties": [
+        "background",
+        "background-image"
+      ],
+      "comment": "",
+      "name": "colorBackgroundButtonDefaultHover"
+    },
+    {
+      "value": "linear-gradient(to bottom, #66afe9, #4E8ABE)",
+      "type": "gradient",
+      "category": "gradient",
+      "cssProperties": [
+        "background",
+        "background-image"
+      ],
+      "comment": "",
+      "name": "colorBackgroundModalBrand"
+    },
+    {
+      "value": "linear-gradient(to bottom, #FFFFFF, #D9EAF5)",
+      "type": "gradient",
+      "category": "gradient",
+      "cssProperties": [
+        "background",
+        "background-image"
+      ],
+      "comment": "",
+      "name": "colorBackgroundButtonDefaultFocus"
+    },
+    {
+      "value": "linear-gradient(to bottom, #FFFFFF, #D9EAF5)",
+      "type": "gradient",
+      "category": "gradient",
+      "cssProperties": [
+        "background",
+        "background-image"
+      ],
+      "comment": "",
+      "name": "colorBackgroundButtonDefaultDisabled"
+    },
+    {
+      "value": "linear-gradient(to bottom, #FFFFFF, #D9EAF5)",
+      "type": "gradient",
+      "category": "gradient",
+      "cssProperties": [
+        "background",
+        "background-image"
+      ],
+      "comment": "",
+      "name": "colorBackgroundButtonIcon"
+    },
+    {
+      "value": "linear-gradient(to bottom, #EDF5FA, #D9EAF5)",
+      "type": "gradient",
+      "category": "gradient",
+      "cssProperties": [
+        "background",
+        "background-image"
+      ],
+      "comment": "",
+      "name": "colorBackgroundButtonIconHover"
+    },
+    {
+      "value": "linear-gradient(to bottom, #FFFFFF, #D9EAF5)",
+      "type": "gradient",
+      "category": "gradient",
+      "cssProperties": [
+        "background",
+        "background-image"
+      ],
+      "comment": "",
+      "name": "colorBackgroundButtonIconFocus"
+    },
+    {
+      "value": "linear-gradient(to bottom, #EDF5FA, #D9EAF5)",
+      "type": "gradient",
+      "category": "gradient",
+      "cssProperties": [
+        "background",
+        "background-image"
+      ],
+      "comment": "",
+      "name": "colorBackgroundButtonIconActive"
+    },
+    {
+      "value": "linear-gradient(to bottom, #FFFFFF, #D9EAF5)",
+      "type": "gradient",
+      "category": "gradient",
+      "cssProperties": [
+        "background",
+        "background-image"
+      ],
+      "comment": "",
+      "name": "colorBackgroundButtonIconDisabled"
+    },
+    {
+      "value": "1px",
+      "type": "size",
+      "cssProperties": [
+        "border",
+        "border-width",
+        "border-top-width",
+        "border-right-width",
+        "border-bottom-width",
+        "border-left-width"
+      ],
+      "category": "spacing",
+      "name": "borderWidthThin"
+    },
+    {
+      "value": "2px",
+      "type": "size",
+      "cssProperties": [
+        "border",
+        "border-width",
+        "border-top-width",
+        "border-right-width",
+        "border-bottom-width",
+        "border-left-width"
+      ],
+      "category": "spacing",
+      "name": "borderWidthThick"
+    },
+    {
+      "value": "2",
+      "type": "size",
+      "cssProperties": [
+        "border-radius",
+        "border-top-left-radius",
+        "border-top-right-radius",
+        "border-bottom-right-radius",
+        "border-bottom-left-radius"
+      ],
+      "category": "radius",
+      "name": "borderRadiusSmall"
+    },
+    {
+      "value": "4",
+      "category": "radius",
+      "type": "size",
+      "cssProperties": [
+        "border-radius",
+        "border-top-left-radius",
+        "border-top-right-radius",
+        "border-bottom-right-radius",
+        "border-bottom-left-radius"
+      ],
+      "comment": "Icons in lists, record home icon, unbound input elements",
+      "name": "borderRadiusMedium"
+    },
+    {
+      "value": "8",
+      "type": "size",
+      "cssProperties": [
+        "border-radius",
+        "border-top-left-radius",
+        "border-top-right-radius",
+        "border-bottom-right-radius",
+        "border-bottom-left-radius"
+      ],
+      "category": "radius",
+      "name": "borderRadiusLarge"
+    },
+    {
+      "value": "240",
+      "type": "size",
+      "cssProperties": [
+        "border-radius",
+        "border-top-left-radius",
+        "border-top-right-radius",
+        "border-bottom-right-radius",
+        "border-bottom-left-radius"
+      ],
+      "category": "radius",
+      "name": "borderRadiusPill"
+    },
+    {
+      "value": "0.5",
+      "type": "size",
+      "category": "radius",
+      "cssProperties": [
+        "border-radius",
+        "border-top-left-radius",
+        "border-top-right-radius",
+        "border-bottom-right-radius",
+        "border-bottom-left-radius"
+      ],
+      "comment": "Circle for global use, action icon bgd shape",
+      "name": "borderRadiusCircle"
+    },
+    {
+      "value": "rgb(221, 221, 221)",
+      "type": "color",
+      "category": "border-color",
+      "cssProperties": [
+        "border",
+        "border-color",
+        "border-top-color",
+        "border-right-color",
+        "border-bottom-color",
+        "border-left-color"
+      ],
+      "comment": "",
+      "name": "colorBorder"
+    },
+    {
+      "value": "rgb(238, 103, 103)",
+      "type": "color",
+      "category": "border-color",
+      "cssProperties": [
+        "border",
+        "border-color",
+        "border-top-color",
+        "border-right-color",
+        "border-bottom-color",
+        "border-left-color"
+      ],
+      "comment": "",
+      "name": "colorBorderError"
+    },
+    {
+      "value": "rgb(75, 202, 129)",
+      "type": "color",
+      "category": "border-color",
+      "cssProperties": [
+        "border",
+        "border-color",
+        "border-top-color",
+        "border-right-color",
+        "border-bottom-color",
+        "border-left-color"
+      ],
+      "comment": "",
+      "name": "colorBorderSuccess"
+    },
+    {
+      "value": "rgb(255, 181, 94)",
+      "type": "color",
+      "category": "border-color",
+      "cssProperties": [
+        "border",
+        "border-color",
+        "border-top-color",
+        "border-right-color",
+        "border-bottom-color",
+        "border-left-color"
+      ],
+      "comment": "",
+      "name": "colorBorderWarning"
+    },
+    {
+      "value": "rgb(221, 221, 221)",
+      "type": "color",
+      "category": "border-color",
+      "cssProperties": [
+        "border",
+        "border-color",
+        "border-top-color",
+        "border-right-color",
+        "border-bottom-color",
+        "border-left-color"
+      ],
+      "comment": "",
+      "name": "colorBorderTabSelected"
+    },
+    {
+      "value": "rgb(221, 221, 221)",
+      "type": "color",
+      "category": "border-color",
+      "cssProperties": [
+        "border",
+        "border-color",
+        "border-top-color",
+        "border-right-color",
+        "border-bottom-color",
+        "border-left-color"
+      ],
+      "comment": "",
+      "name": "colorBorderSeparator"
+    },
+    {
+      "value": "rgb(204, 204, 204)",
+      "type": "color",
+      "category": "border-color",
+      "cssProperties": [
+        "border",
+        "border-color",
+        "border-top-color",
+        "border-right-color",
+        "border-bottom-color",
+        "border-left-color"
+      ],
+      "comment": "",
+      "name": "colorBorderRowSelected"
+    },
+    {
+      "value": "rgb(204, 204, 204)",
+      "type": "color",
+      "category": "border-color",
+      "cssProperties": [
+        "border",
+        "border-color",
+        "border-top-color",
+        "border-right-color",
+        "border-bottom-color",
+        "border-left-color"
+      ],
+      "comment": "",
+      "name": "colorBorderRowSelectedHover"
+    },
+    {
+      "value": "rgb(204, 204, 204)",
+      "type": "color",
+      "category": "border-color",
+      "cssProperties": [
+        "border",
+        "border-color",
+        "border-top-color",
+        "border-right-color",
+        "border-bottom-color",
+        "border-left-color"
+      ],
+      "comment": "",
+      "name": "colorBorderSelection"
+    },
+    {
+      "value": "rgb(204, 204, 204)",
+      "type": "color",
+      "category": "border-color",
+      "cssProperties": [
+        "border",
+        "border-color",
+        "border-top-color",
+        "border-right-color",
+        "border-bottom-color",
+        "border-left-color"
+      ],
+      "comment": "",
+      "name": "colorBorderSelectionHover"
+    },
+    {
+      "value": "rgb(204, 204, 204)",
+      "type": "color",
+      "category": "border-color",
+      "cssProperties": [
+        "border",
+        "border-color",
+        "border-top-color",
+        "border-right-color",
+        "border-bottom-color",
+        "border-left-color"
+      ],
+      "comment": "",
+      "name": "colorBorderSelectionActive"
+    },
+    {
+      "value": "rgb(255, 255, 255)",
+      "type": "color",
+      "category": "border-color",
+      "cssProperties": [
+        "border",
+        "border-color",
+        "border-top-color",
+        "border-right-color",
+        "border-bottom-color",
+        "border-left-color"
+      ],
+      "comment": "",
+      "name": "colorBorderButtonBrand"
+    },
+    {
+      "value": "rgb(255, 255, 255)",
+      "type": "color",
+      "category": "border-color",
+      "cssProperties": [
+        "border",
+        "border-color",
+        "border-top-color",
+        "border-right-color",
+        "border-bottom-color",
+        "border-left-color"
+      ],
+      "comment": "",
+      "name": "colorBorderButtonBrandDisabled"
+    },
+    {
+      "value": "rgb(170, 170, 170)",
+      "type": "color",
+      "category": "border-color",
+      "cssProperties": [
+        "border",
+        "border-color",
+        "border-top-color",
+        "border-right-color",
+        "border-bottom-color",
+        "border-left-color"
+      ],
+      "comment": "",
+      "name": "colorBorderButtonDefault"
+    },
+    {
+      "value": "rgb(204, 204, 204)",
+      "type": "color",
+      "category": "border-color",
+      "cssProperties": [
+        "border",
+        "border-color",
+        "border-top-color",
+        "border-right-color",
+        "border-bottom-color",
+        "border-left-color"
+      ],
+      "comment": "",
+      "name": "colorBorderInput"
+    },
+    {
+      "value": "rgb(102, 175, 233)",
+      "type": "color",
+      "category": "border-color",
+      "cssProperties": [
+        "border",
+        "border-color",
+        "border-top-color",
+        "border-right-color",
+        "border-bottom-color",
+        "border-left-color"
+      ],
+      "comment": "",
+      "name": "colorBorderInputFocus"
+    },
+    {
+      "value": "rgb(204, 204, 204)",
+      "type": "color",
+      "category": "border-color",
+      "cssProperties": [
+        "border",
+        "border-color",
+        "border-top-color",
+        "border-right-color",
+        "border-bottom-color",
+        "border-left-color"
+      ],
+      "comment": "",
+      "name": "colorBorderInputDisabled"
+    },
+    {
+      "category": "font",
+      "comment": "",
+      "value": "Arial, sans-serif",
+      "type": "font",
+      "cssProperties": [
+        "font",
+        "font-family"
+      ],
+      "name": "fontFamily"
+    },
+    {
+      "category": "font",
+      "comment": "",
+      "value": "Arial, sans-serif",
+      "type": "font",
+      "cssProperties": [
+        "font",
+        "font-family"
+      ],
+      "name": "fontFamilyBody"
+    },
+    {
+      "category": "font",
+      "comment": "",
+      "value": "Georgia, Times New Roman, Times, serif",
+      "type": "font",
+      "cssProperties": [
+        "font",
+        "font-family"
+      ],
+      "name": "fontFamilyAlt"
+    },
+    {
+      "category": "font",
+      "comment": "",
+      "value": "Menlo, Monaco, Consolas, 'Courier New', monospace",
+      "type": "font",
+      "cssProperties": [
+        "font",
+        "font-family"
+      ],
+      "name": "fontFamilyMono"
+    },
+    {
+      "category": "font-weight",
+      "comment": "Use for large headings only. Has no affect when used with Arial.",
+      "value": "300",
+      "cssProperties": [
+        "font-weight"
+      ],
+      "type": "font-weight",
+      "name": "fontWeightLight"
+    },
+    {
+      "category": "font-weight",
+      "comment": "Most body copy.",
+      "value": "400",
+      "cssProperties": [
+        "font-weight"
+      ],
+      "type": "font-weight",
+      "name": "fontWeightRegular"
+    },
+    {
+      "category": "font-weight",
+      "comment": "Used sparingly for emphasized text within regular body copy.",
+      "value": "700",
+      "cssProperties": [
+        "font-weight"
+      ],
+      "type": "font-weight",
+      "name": "fontWeightBold"
+    },
+    {
+      "category": "font-size",
+      "comment": "",
+      "value": "10px",
+      "type": "size",
+      "cssProperties": [
+        "font",
+        "font-size"
+      ],
+      "name": "fontSizeXSmall"
+    },
+    {
+      "category": "font-size",
+      "comment": "",
+      "value": "12px",
+      "type": "size",
+      "cssProperties": [
+        "font",
+        "font-size"
+      ],
+      "name": "fontSizeSmall"
+    },
+    {
+      "category": "font-size",
+      "comment": "",
+      "value": "16px",
+      "type": "size",
+      "cssProperties": [
+        "font",
+        "font-size"
+      ],
+      "name": "fontSizeMedium"
+    },
+    {
+      "category": "font-size",
+      "comment": "",
+      "value": "20px",
+      "type": "size",
+      "cssProperties": [
+        "font",
+        "font-size"
+      ],
+      "name": "fontSizeLarge"
+    },
+    {
+      "category": "font-size",
+      "comment": "",
+      "value": "24px",
+      "type": "size",
+      "cssProperties": [
+        "font",
+        "font-size"
+      ],
+      "name": "fontSizeXLarge"
+    },
+    {
+      "category": "font-size",
+      "comment": "",
+      "value": "32px",
+      "type": "size",
+      "cssProperties": [
+        "font",
+        "font-size"
+      ],
+      "name": "fontSizeXxLarge"
+    },
+    {
+      "category": "font-size",
+      "comment": "Default body text size that may be used for reset.",
+      "value": "11px",
+      "type": "size",
+      "cssProperties": [
+        "font",
+        "font-size"
+      ],
+      "name": "fontSizeBase"
+    },
+    {
+      "category": "font-size",
+      "comment": "",
+      "value": "14px",
+      "type": "size",
+      "cssProperties": [
+        "font",
+        "font-size"
+      ],
+      "name": "fontSizeBaseMedium"
+    },
+    {
+      "category": "spacing",
+      "type": "size",
+      "comment": "",
+      "cssProperties": [
+        "margin",
+        "margin-top",
+        "margin-right",
+        "margin-bottom",
+        "margin-left",
+        "padding",
+        "padding-top",
+        "padding-right",
+        "padding-bottom",
+        "padding-left"
+      ],
+      "value": "2px",
+      "name": "spacingXxxSmall"
+    },
+    {
+      "category": "spacing",
+      "type": "size",
+      "comment": "",
+      "cssProperties": [
+        "margin",
+        "margin-top",
+        "margin-right",
+        "margin-bottom",
+        "margin-left",
+        "padding",
+        "padding-top",
+        "padding-right",
+        "padding-bottom",
+        "padding-left"
+      ],
+      "value": "4px",
+      "name": "spacingXxSmall"
+    },
+    {
+      "category": "spacing",
+      "type": "size",
+      "comment": "",
+      "cssProperties": [
+        "margin",
+        "margin-top",
+        "margin-right",
+        "margin-bottom",
+        "margin-left",
+        "padding",
+        "padding-top",
+        "padding-right",
+        "padding-bottom",
+        "padding-left"
+      ],
+      "value": "8px",
+      "name": "spacingXSmall"
+    },
+    {
+      "category": "spacing",
+      "type": "size",
+      "comment": "",
+      "cssProperties": [
+        "margin",
+        "margin-top",
+        "margin-right",
+        "margin-bottom",
+        "margin-left",
+        "padding",
+        "padding-top",
+        "padding-right",
+        "padding-bottom",
+        "padding-left"
+      ],
+      "value": "12PX",
+      "name": "spacingSmall"
+    },
+    {
+      "category": "spacing",
+      "type": "size",
+      "comment": "",
+      "cssProperties": [
+        "margin",
+        "margin-top",
+        "margin-right",
+        "margin-bottom",
+        "margin-left",
+        "padding",
+        "padding-top",
+        "padding-right",
+        "padding-bottom",
+        "padding-left"
+      ],
+      "value": "16px",
+      "name": "spacingMedium"
+    },
+    {
+      "category": "spacing",
+      "type": "size",
+      "comment": "",
+      "cssProperties": [
+        "margin",
+        "margin-top",
+        "margin-right",
+        "margin-bottom",
+        "margin-left",
+        "padding",
+        "padding-top",
+        "padding-right",
+        "padding-bottom",
+        "padding-left"
+      ],
+      "value": "24px",
+      "name": "spacingLarge"
+    },
+    {
+      "category": "spacing",
+      "type": "size",
+      "comment": "",
+      "cssProperties": [
+        "margin",
+        "margin-top",
+        "margin-right",
+        "margin-bottom",
+        "margin-left",
+        "padding",
+        "padding-top",
+        "padding-right",
+        "padding-bottom",
+        "padding-left"
+      ],
+      "value": "32px",
+      "name": "spacingXLarge"
+    },
+    {
+      "type": "color",
+      "category": "text-color",
+      "cssProperties": "color",
+      "value": "rgb(194, 57, 52)",
+      "comment": "Error text for inputs and error misc",
+      "name": "colorTextError"
+    },
+    {
+      "type": "color",
+      "category": "text-color",
+      "cssProperties": "color",
+      "value": "rgb(85, 85, 85)",
+      "comment": "Input disabled text",
+      "name": "colorTextInputDisabled"
+    },
+    {
+      "type": "color",
+      "category": "text-color",
+      "cssProperties": "color",
+      "value": "rgb(255, 255, 255)",
+      "comment": "Inverse text color for dark backgrounds",
+      "name": "colorTextInverse"
+    },
+    {
+      "type": "color",
+      "category": "text-color",
+      "cssProperties": "color",
+      "value": "rgb(255, 255, 255)",
+      "comment": "Active state on a standalone link on a dark background.",
+      "name": "colorTextInverseActive"
+    },
+    {
+      "type": "color",
+      "category": "text-color",
+      "cssProperties": "color",
+      "value": "rgb(255, 255, 255)",
+      "comment": "Hover state on a standalone link on a dark background.",
+      "name": "colorTextInverseHover"
+    },
+    {
+      "type": "color",
+      "category": "text-color",
+      "cssProperties": "color",
+      "value": "rgb(48, 116, 175)",
+      "comment": "",
+      "name": "colorTextLink"
+    },
+    {
+      "type": "color",
+      "category": "text-color",
+      "cssProperties": "color",
+      "value": "rgb(48, 116, 175)",
+      "comment": "Active link text",
+      "name": "colorTextLinkActive"
+    },
+    {
+      "type": "color",
+      "category": "text-color",
+      "cssProperties": "color",
+      "value": "rgb(119, 119, 119)",
+      "comment": "Disabled link text",
+      "name": "colorTextLinkDisabled"
+    },
+    {
+      "type": "color",
+      "category": "text-color",
+      "cssProperties": "color",
+      "value": "rgb(48, 116, 175)",
+      "comment": "Focus link text",
+      "name": "colorTextLinkFocus"
+    },
+    {
+      "type": "color",
+      "category": "text-color",
+      "cssProperties": "color",
+      "value": "rgb(48, 116, 175)",
+      "comment": "Hover link text",
+      "name": "colorTextLinkHover"
+    },
+    {
+      "type": "color",
+      "category": "text-color",
+      "cssProperties": [
+        "color",
+        "fill",
+        "l",
+        "o",
+        "r"
+      ],
+      "value": "rgb(152, 96, 0)",
+      "comment": "Color for texts or icons that are related to warnings.",
+      "name": "colorTextWarning"
+    },
+    {
+      "type": "color",
+      "category": "text-color",
+      "cssProperties": "color",
+      "value": "rgb(117, 117, 117)",
+      "comment": "Color for text that is purposefully de-emphasized to create visual hierarchy.",
+      "name": "colorTextWeak"
+    }
+  ]
+}

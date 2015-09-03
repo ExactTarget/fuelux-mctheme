@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="COLOR_BACKGROUND" category="background-color">#ffffffff</color>
+  <color name="COLOR_BACKGROUND_ALT" category="background-color">#fff5f5f5</color>
+  <color name="COLOR_BACKGROUND_ALT_2" category="background-color">#ffeeeeee</color>
+  <color name="COLOR_BACKGROUND_ALT_INVERSE" category="background-color">#ff385b6b</color>
+  <color name="COLOR_BACKGROUND_ROW_HOVER" category="background-color">#fff5f5f5</color>
+  <color name="COLOR_BACKGROUND_ROW_ACTIVE" category="background-color">#fff5f5f5</color>
+  <color name="COLOR_BACKGROUND_ROW_SELECTED" category="background-color">#ffd9eaf5</color>
+  <color name="COLOR_BACKGROUND_INVERSE" category="background-color">#ff385b6b</color>
+  <color name="COLOR_BACKGROUND_ANCHOR" category="background-color">#fff5f5f5</color>
+  <color name="COLOR_BACKGROUND_BROWSER" category="background-color">#ffffffff</color>
+  <color name="COLOR_BACKGROUND_HIGHLIGHT" category="background-color">#ffb9dff1</color>
+  <color name="COLOR_BACKGROUND_MODAL" category="background-color">#ffffffff</color>
+  <color name="COLOR_BACKGROUND_INPUT" category="background-color">#ffffffff</color>
+  <color name="COLOR_BACKGROUND_INPUT_ACTIVE" category="background-color">#ffffffff</color>
+  <color name="COLOR_BACKGROUND_INPUT_DISABLED" category="background-color">#fff9f9f9</color>
+  <color name="COLOR_BACKGROUND_INPUT_SEARCH" category="background-color">#ffffffff</color>
+  <color name="COLOR_BACKGROUND_PILL" category="background-color">#ffeeeeee</color>
+  <color name="COLOR_BACKGROUND_ERROR" category="background-color">#fffceced</color>
+  <color name="COLOR_BACKGROUND_SUCCESS" category="background-color">#ffe9fcde</color>
+  <color name="COLOR_BACKGROUND_WARNING" category="background-color">#fffff1e1</color>
+  <property name="COLOR_BRAND" category="gradient">linear-gradient(to bottom, #66afe9, #4E8ABE)</property>
+  <property name="COLOR_BRAND_DARK" category="gradient">linear-gradient(to bottom, #4E8ABE, #3074af)</property>
+  <property name="COLOR_BACKGROUND_BUTTON_BRAND" category="gradient">linear-gradient(to bottom, #66afe9, #4E8ABE)</property>
+  <property name="COLOR_BACKGROUND_BUTTON_BRAND_ACTIVE" category="gradient">linear-gradient(to bottom, #4E8ABE, #3074af)</property>
+  <property name="COLOR_BACKGROUND_BUTTON_BRAND_HOVER" category="gradient">linear-gradient(to bottom, #66afe9, #4E8ABE)</property>
+  <property name="COLOR_BACKGROUND_BUTTON_BRAND_DISABLED" category="gradient">linear-gradient(to bottom, #66afe9, #4E8ABE)</property>
+  <property name="COLOR_BACKGROUND_BUTTON_DEFAULT" category="gradient">linear-gradient(to bottom, #FFFFFF, #D9EAF5)</property>
+  <property name="COLOR_BACKGROUND_BUTTON_DEFAULT_HOVER" category="gradient">linear-gradient(to bottom, #EDF5FA, #D9EAF5)</property>
+  <property name="COLOR_BACKGROUND_MODAL_BRAND" category="gradient">linear-gradient(to bottom, #66afe9, #4E8ABE)</property>
+  <property name="COLOR_BACKGROUND_BUTTON_DEFAULT_FOCUS" category="gradient">linear-gradient(to bottom, #FFFFFF, #D9EAF5)</property>
+  <property name="COLOR_BACKGROUND_BUTTON_DEFAULT_DISABLED" category="gradient">linear-gradient(to bottom, #FFFFFF, #D9EAF5)</property>
+  <property name="COLOR_BACKGROUND_BUTTON_ICON" category="gradient">linear-gradient(to bottom, #FFFFFF, #D9EAF5)</property>
+  <property name="COLOR_BACKGROUND_BUTTON_ICON_HOVER" category="gradient">linear-gradient(to bottom, #EDF5FA, #D9EAF5)</property>
+  <property name="COLOR_BACKGROUND_BUTTON_ICON_FOCUS" category="gradient">linear-gradient(to bottom, #FFFFFF, #D9EAF5)</property>
+  <property name="COLOR_BACKGROUND_BUTTON_ICON_ACTIVE" category="gradient">linear-gradient(to bottom, #EDF5FA, #D9EAF5)</property>
+  <property name="COLOR_BACKGROUND_BUTTON_ICON_DISABLED" category="gradient">linear-gradient(to bottom, #FFFFFF, #D9EAF5)</property>
+  <property name="BORDER_WIDTH_THIN" category="spacing">1px</property>
+  <property name="BORDER_WIDTH_THICK" category="spacing">2px</property>
+  <property name="BORDER_RADIUS_SMALL" category="radius">2</property>
+  <property name="BORDER_RADIUS_MEDIUM" category="radius">4</property>
+  <property name="BORDER_RADIUS_LARGE" category="radius">8</property>
+  <property name="BORDER_RADIUS_PILL" category="radius">240</property>
+  <property name="BORDER_RADIUS_CIRCLE" category="radius">0.5</property>
+  <color name="COLOR_BORDER" category="border-color">#ffdddddd</color>
+  <color name="COLOR_BORDER_ERROR" category="border-color">#ffee6767</color>
+  <color name="COLOR_BORDER_SUCCESS" category="border-color">#ff4bca81</color>
+  <color name="COLOR_BORDER_WARNING" category="border-color">#ffffb55e</color>
+  <color name="COLOR_BORDER_TAB_SELECTED" category="border-color">#ffdddddd</color>
+  <color name="COLOR_BORDER_SEPARATOR" category="border-color">#ffdddddd</color>
+  <color name="COLOR_BORDER_ROW_SELECTED" category="border-color">#ffcccccc</color>
+  <color name="COLOR_BORDER_ROW_SELECTED_HOVER" category="border-color">#ffcccccc</color>
+  <color name="COLOR_BORDER_SELECTION" category="border-color">#ffcccccc</color>
+  <color name="COLOR_BORDER_SELECTION_HOVER" category="border-color">#ffcccccc</color>
+  <color name="COLOR_BORDER_SELECTION_ACTIVE" category="border-color">#ffcccccc</color>
+  <color name="COLOR_BORDER_BUTTON_BRAND" category="border-color">#ffffffff</color>
+  <color name="COLOR_BORDER_BUTTON_BRAND_DISABLED" category="border-color">#ffffffff</color>
+  <color name="COLOR_BORDER_BUTTON_DEFAULT" category="border-color">#ffaaaaaa</color>
+  <color name="COLOR_BORDER_INPUT" category="border-color">#ffcccccc</color>
+  <color name="COLOR_BORDER_INPUT_FOCUS" category="border-color">#ff66afe9</color>
+  <color name="COLOR_BORDER_INPUT_DISABLED" category="border-color">#ffcccccc</color>
+  <property name="FONT_FAMILY" category="font">Arial, sans-serif</property>
+  <property name="FONT_FAMILY_BODY" category="font">Arial, sans-serif</property>
+  <property name="FONT_FAMILY_ALT" category="font">Georgia, Times New Roman, Times, serif</property>
+  <property name="FONT_FAMILY_MONO" category="font">Menlo, Monaco, Consolas, 'Courier New', monospace</property>
+  <property name="FONT_WEIGHT_LIGHT" category="font-weight">300</property>
+  <property name="FONT_WEIGHT_REGULAR" category="font-weight">400</property>
+  <property name="FONT_WEIGHT_BOLD" category="font-weight">700</property>
+  <property name="FONT_SIZE_X_SMALL" category="font-size">10px</property>
+  <property name="FONT_SIZE_SMALL" category="font-size">12px</property>
+  <property name="FONT_SIZE_MEDIUM" category="font-size">16px</property>
+  <property name="FONT_SIZE_LARGE" category="font-size">20px</property>
+  <property name="FONT_SIZE_X_LARGE" category="font-size">24px</property>
+  <property name="FONT_SIZE_XX_LARGE" category="font-size">32px</property>
+  <property name="FONT_SIZE_BASE" category="font-size">11px</property>
+  <property name="FONT_SIZE_BASE_MEDIUM" category="font-size">14px</property>
+  <property name="SPACING_XXX_SMALL" category="spacing">2px</property>
+  <property name="SPACING_XX_SMALL" category="spacing">4px</property>
+  <property name="SPACING_X_SMALL" category="spacing">8px</property>
+  <property name="SPACING_SMALL" category="spacing">12PX</property>
+  <property name="SPACING_MEDIUM" category="spacing">16px</property>
+  <property name="SPACING_LARGE" category="spacing">24px</property>
+  <property name="SPACING_X_LARGE" category="spacing">32px</property>
+  <color name="COLOR_TEXT_ERROR" category="text-color">#ffc23934</color>
+  <color name="COLOR_TEXT_INPUT_DISABLED" category="text-color">#ff555555</color>
+  <color name="COLOR_TEXT_INVERSE" category="text-color">#ffffffff</color>
+  <color name="COLOR_TEXT_INVERSE_ACTIVE" category="text-color">#ffffffff</color>
+  <color name="COLOR_TEXT_INVERSE_HOVER" category="text-color">#ffffffff</color>
+  <color name="COLOR_TEXT_LINK" category="text-color">#ff3074af</color>
+  <color name="COLOR_TEXT_LINK_ACTIVE" category="text-color">#ff3074af</color>
+  <color name="COLOR_TEXT_LINK_DISABLED" category="text-color">#ff777777</color>
+  <color name="COLOR_TEXT_LINK_FOCUS" category="text-color">#ff3074af</color>
+  <color name="COLOR_TEXT_LINK_HOVER" category="text-color">#ff3074af</color>
+  <color name="COLOR_TEXT_WARNING" category="text-color">#ff986000</color>
+  <color name="COLOR_TEXT_WEAK" category="text-color">#ff757575</color>
+</resources>
