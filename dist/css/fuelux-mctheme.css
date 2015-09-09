@@ -1,5 +1,5 @@
 /*!
- * Marketing Cloud Theme v1.9.0 
+ * Marketing Cloud Theme v1.10.0 
  * Copyright 2015 ExactTarget
  * Licensed under BSD-3-Clause (https://github.com/ExactTarget/fuelux-mctheme/blob/master/LICENSE)
  */
@@ -43,7 +43,7 @@ button:hover > .fuelux-icon-add,
 .glyphicon-add-hover,
 .glyphicon-add:hover,
 button:hover > .glyphicon-add {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cg%3E%3ClinearGradient%20id%3D%22a%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%229.999%22%20x2%3D%229.999%22%20y2%3D%2220%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23A0C7E7%22%2F%3E%3Cstop%20offset%3D%22.9%22%20stop-color%3D%22%23448CCA%22%2F%3E%3C%2FlinearGradient%3E%3Cpath%20d%3D%22M0%2017c0%201.65%201.35%203%203%203h14c1.65%200%203-1.35%203-3V3c0-1.65-1.35-3-3-3H3C1.35%200%200%201.35%200%203v14z%22%20fill%3D%22url%28%23a%29%22%2F%3E%3Cg%20opacity%3D%22.7%22%3E%3ClinearGradient%20id%3D%22b%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%2210.001%22%20y1%3D%2220%22%20x2%3D%2210.001%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23A0C7E7%22%2F%3E%3Cstop%20offset%3D%22.9%22%20stop-color%3D%22%23448CCA%22%2F%3E%3C%2FlinearGradient%3E%3Cpath%20d%3D%22M17%202c.542%200%201%20.458%201%201v14c0%20.542-.458%201-1%201H3c-.542%200-1-.458-1-1V3c0-.542.458-1%201-1h14m0-2H3C1.35%200%200%201.35%200%203v14c0%201.65%201.35%203%203%203h14c1.65%200%203-1.35%203-3V3c0-1.65-1.35-3-3-3z%22%20fill%3D%22url%28%23b%29%22%2F%3E%3C%2Fg%3E%3Cpath%20d%3D%22M17%201c1.103%200%202%20.897%202%202v14c0%201.103-.897%202-2%202H3c-1.103%200-2-.897-2-2V3c0-1.103.897-2%202-2h14m0-1H3C1.35%200%200%201.35%200%203v14c0%201.65%201.35%203%203%203h14c1.65%200%203-1.35%203-3V3c0-1.65-1.35-3-3-3z%22%20fill%3D%22%2345494D%22%20opacity%3D%22.7%22%2F%3E%3C%2Fg%3E%3Cpath%20d%3D%22M16.24%208.86H11.3V3.92c0-.144-.117-.26-.26-.26H8.96c-.143%200-.26.116-.26.26v4.94H3.76c-.144%200-.26.118-.26.26v2.08c0%20.143.116.26.26.26H8.7v4.94c0%20.144.118.26.26.26h2.08c.143%200%20.26-.116.26-.26v-4.94h4.94c.144%200%20.26-.117.26-.26V9.12c0-.142-.116-.26-.26-.26z%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3ClinearGradient%20id%3D%22a%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%229.999%22%20x2%3D%229.999%22%20y2%3D%2220%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23A0C7E7%22%2F%3E%3Cstop%20offset%3D%22.9%22%20stop-color%3D%22%23448CCA%22%2F%3E%3C%2FlinearGradient%3E%3Cpath%20d%3D%22M0%2017c0%201.65%201.35%203%203%203h14c1.65%200%203-1.35%203-3V3c0-1.65-1.35-3-3-3H3C1.35%200%200%201.35%200%203v14z%22%20fill%3D%22url%28%23a%29%22%2F%3E%3Cg%20opacity%3D%22.7%22%3E%3ClinearGradient%20id%3D%22b%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%2210.001%22%20y1%3D%2220%22%20x2%3D%2210.001%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23A0C7E7%22%2F%3E%3Cstop%20offset%3D%22.9%22%20stop-color%3D%22%23448CCA%22%2F%3E%3C%2FlinearGradient%3E%3Cpath%20d%3D%22M17%202c.542%200%201%20.458%201%201v14c0%20.542-.458%201-1%201H3c-.542%200-1-.458-1-1V3c0-.542.458-1%201-1h14m0-2H3C1.35%200%200%201.35%200%203v14c0%201.65%201.35%203%203%203h14c1.65%200%203-1.35%203-3V3c0-1.65-1.35-3-3-3z%22%20fill%3D%22url%28%23b%29%22%2F%3E%3C%2Fg%3E%3Cpath%20d%3D%22M17%201c1.103%200%202%20.897%202%202v14c0%201.103-.897%202-2%202H3c-1.103%200-2-.897-2-2V3c0-1.103.897-2%202-2h14m0-1H3C1.35%200%200%201.35%200%203v14c0%201.65%201.35%203%203%203h14c1.65%200%203-1.35%203-3V3c0-1.65-1.35-3-3-3z%22%20fill%3D%22%2345494D%22%20opacity%3D%22.7%22%2F%3E%3Cpath%20d%3D%22M16.24%208.86H11.3V3.92c0-.144-.117-.26-.26-.26H8.96c-.143%200-.26.116-.26.26v4.94H3.76c-.144%200-.26.118-.26.26v2.08c0%20.143.116.26.26.26H8.7v4.94c0%20.144.118.26.26.26h2.08c.143%200%20.26-.116.26-.26v-4.94h4.94c.144%200%20.26-.117.26-.26V9.12c0-.142-.116-.26-.26-.26z%22%20fill%3D%22%23FFF%22%2F%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -60,7 +60,7 @@ button:hover > .glyphicon-add:before {
 }
 .fuelux-icon-add,
 .glyphicon-add {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cg%3E%3ClinearGradient%20id%3D%22a%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%229.999%22%20x2%3D%229.999%22%20y2%3D%2220%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23fff%22%2F%3E%3Cstop%20offset%3D%22.25%22%20stop-color%3D%22%23FBFCFD%22%2F%3E%3Cstop%20offset%3D%22.509%22%20stop-color%3D%22%23EEF4F8%22%2F%3E%3Cstop%20offset%3D%22.771%22%20stop-color%3D%22%23DAE7F0%22%2F%3E%3Cstop%20offset%3D%22.8%22%20stop-color%3D%22%23D7E5EF%22%2F%3E%3C%2FlinearGradient%3E%3Cpath%20d%3D%22M0%2017c0%201.65%201.35%203%203%203h14c1.65%200%203-1.35%203-3V3c0-1.65-1.35-3-3-3H3C1.35%200%200%201.35%200%203v14z%22%20fill%3D%22url%28%23a%29%22%2F%3E%3Cpath%20d%3D%22M17%202c.542%200%201%20.458%201%201v14c0%20.542-.458%201-1%201H3c-.542%200-1-.458-1-1V3c0-.542.458-1%201-1h14m0-2H3C1.35%200%200%201.35%200%203v14c0%201.65%201.35%203%203%203h14c1.65%200%203-1.35%203-3V3c0-1.65-1.35-3-3-3z%22%20fill%3D%22%23fff%22%20opacity%3D%22.7%22%2F%3E%3Cpath%20d%3D%22M17%201c1.103%200%202%20.897%202%202v14c0%201.103-.897%202-2%202H3c-1.103%200-2-.897-2-2V3c0-1.103.897-2%202-2h14m0-1H3C1.35%200%200%201.35%200%203v14c0%201.65%201.35%203%203%203h14c1.65%200%203-1.35%203-3V3c0-1.65-1.35-3-3-3z%22%20fill%3D%22%2345494D%22%20opacity%3D%22.7%22%2F%3E%3C%2Fg%3E%3Cpath%20d%3D%22M16.24%208.7H11.3V3.76c0-.143-.117-.26-.26-.26H8.96c-.143%200-.26.117-.26.26V8.7H3.76c-.143%200-.26.118-.26.26v2.08c0%20.143.117.26.26.26H8.7v4.94c0%20.144.118.26.26.26h2.08c.143%200%20.26-.116.26-.26V11.3h4.94c.144%200%20.26-.117.26-.26V8.96c0-.142-.116-.26-.26-.26z%22%20fill%3D%22%23aaa%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3ClinearGradient%20id%3D%22a%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%229.999%22%20x2%3D%229.999%22%20y2%3D%2220%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23FFF%22%2F%3E%3Cstop%20offset%3D%22.25%22%20stop-color%3D%22%23FBFCFD%22%2F%3E%3Cstop%20offset%3D%22.509%22%20stop-color%3D%22%23EEF4F8%22%2F%3E%3Cstop%20offset%3D%22.771%22%20stop-color%3D%22%23DAE7F0%22%2F%3E%3Cstop%20offset%3D%22.8%22%20stop-color%3D%22%23D7E5EF%22%2F%3E%3C%2FlinearGradient%3E%3Cpath%20d%3D%22M0%2017c0%201.65%201.35%203%203%203h14c1.65%200%203-1.35%203-3V3c0-1.65-1.35-3-3-3H3C1.35%200%200%201.35%200%203v14z%22%20fill%3D%22url%28%23a%29%22%2F%3E%3Cpath%20d%3D%22M17%202c.542%200%201%20.458%201%201v14c0%20.542-.458%201-1%201H3c-.542%200-1-.458-1-1V3c0-.542.458-1%201-1h14m0-2H3C1.35%200%200%201.35%200%203v14c0%201.65%201.35%203%203%203h14c1.65%200%203-1.35%203-3V3c0-1.65-1.35-3-3-3z%22%20fill%3D%22%23FFF%22%20opacity%3D%22.7%22%2F%3E%3Cpath%20d%3D%22M17%201c1.103%200%202%20.897%202%202v14c0%201.103-.897%202-2%202H3c-1.103%200-2-.897-2-2V3c0-1.103.897-2%202-2h14m0-1H3C1.35%200%200%201.35%200%203v14c0%201.65%201.35%203%203%203h14c1.65%200%203-1.35%203-3V3c0-1.65-1.35-3-3-3z%22%20fill%3D%22%2345494D%22%20opacity%3D%22.7%22%2F%3E%3Cpath%20d%3D%22M16.24%208.7H11.3V3.76c0-.143-.117-.26-.26-.26H8.96c-.143%200-.26.117-.26.26V8.7H3.76c-.143%200-.26.118-.26.26v2.08c0%20.143.117.26.26.26H8.7v4.94c0%20.144.118.26.26.26h2.08c.143%200%20.26-.116.26-.26V11.3h4.94c.144%200%20.26-.117.26-.26V8.96c0-.142-.116-.26-.26-.26z%22%20fill%3D%22%23AAA%22%2F%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -71,13 +71,52 @@ button:hover > .glyphicon-add:before {
 .glyphicon-add:before {
   content: "";
 }
+.fuelux-icon-align-horizontal-center,
+.glyphicon-align-horizontal-center {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2220px%22%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22align-horizontal-center%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_130_%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cg%3E%20%20%20%3Crect%20x%3D%222.5%22%20y%3D%229.424%22%20style%3D%22fill%3A%23989898%3B%22%20width%3D%2215%22%20height%3D%221.152%22%2F%3E%20%20%20%3Cg%3E%20%20%20%20%3Crect%20x%3D%227.692%22%20y%3D%223.076%22%20style%3D%22fill%3A%23F1F1F1%3B%22%20width%3D%224.615%22%20height%3D%2213.848%22%2F%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%23323232%3B%22%20d%3D%22M11.73%2C16.346H8.268V3.654h3.462V16.346%20M12.885%2C17.5v-15h-5.77v15H12.885L12.885%2C17.5z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1_1_%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+.fuelux-icon-align-horizontal-center:before,
+.glyphicon-align-horizontal-center:before {
+  content: "";
+}
+.fuelux-icon-align-horizontal-left,
+.glyphicon-align-horizontal-left {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2220px%22%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22align-horizontal-left%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_129_%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cg%3E%20%20%20%3Crect%20x%3D%222.5%22%20y%3D%229.424%22%20style%3D%22fill%3A%23989898%3B%22%20width%3D%2215%22%20height%3D%221.152%22%2F%3E%20%20%20%3Cg%3E%20%20%20%20%3Crect%20x%3D%224.23%22%20y%3D%223.076%22%20style%3D%22fill%3A%23F1F1F1%3B%22%20width%3D%224.615%22%20height%3D%2213.848%22%2F%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%23323232%3B%22%20d%3D%22M8.269%2C3.654v12.69H4.808V3.654H8.269%20M9.423%2C2.5h-5.77v15h5.77V2.5L9.423%2C2.5z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1_1_%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+.fuelux-icon-align-horizontal-left:before,
+.glyphicon-align-horizontal-left:before {
+  content: "";
+}
+.fuelux-icon-align-horizontal-right,
+.glyphicon-align-horizontal-right {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2220px%22%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22align-horizontal-right%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_132_%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cg%3E%20%20%20%3Crect%20x%3D%222.5%22%20y%3D%229.424%22%20style%3D%22fill%3A%23989898%3B%22%20width%3D%2215%22%20height%3D%221.152%22%2F%3E%20%20%20%3Cg%3E%20%20%20%20%3Crect%20x%3D%2211.152%22%20y%3D%223.076%22%20style%3D%22fill%3A%23F1F1F1%3B%22%20width%3D%224.615%22%20height%3D%2213.848%22%2F%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%23323232%3B%22%20d%3D%22M15.191%2C3.654v12.69H11.73V3.654H15.191%20M16.346%2C2.5h-5.77v15h5.77V2.5L16.346%2C2.5z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1_1_%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+.fuelux-icon-align-horizontal-right:before,
+.glyphicon-align-horizontal-right:before {
+  content: "";
+}
 .fuelux-icon-arrow-east-hover,
 .fuelux-icon-arrow-east:hover,
 button:hover > .fuelux-icon-arrow-east,
 .glyphicon-arrow-east-hover,
 .glyphicon-arrow-east:hover,
 button:hover > .glyphicon-arrow-east {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20fill%3D%22%234E8ABE%22%20d%3D%22M20%2010l-9.107-7.658v4.842H0v5.634h10.893v4.84z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20fill%3D%22%234E8ABE%22%20d%3D%22M20%2010l-9.107-7.658v4.842H0v5.634h10.893v4.84%22%2F%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -94,7 +133,7 @@ button:hover > .glyphicon-arrow-east:before {
 }
 .fuelux-icon-arrow-east,
 .glyphicon-arrow-east {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20fill%3D%22%23ccc%22%20d%3D%22M20%2010l-9.107-7.658v4.842H0v5.634h10.893v4.84z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20fill%3D%22%23CCC%22%20d%3D%22M20%2010l-9.107-7.658v4.842H0v5.634h10.893v4.84%22%2F%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -111,7 +150,7 @@ button:hover > .fuelux-icon-arrow-north,
 .glyphicon-arrow-north-hover,
 .glyphicon-arrow-north:hover,
 button:hover > .glyphicon-arrow-north {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20fill%3D%22%234E8ABE%22%20d%3D%22M10%200L2.343%209.107h4.84V20h5.636V9.107h4.84z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20fill%3D%22%234E8ABE%22%20d%3D%22M10%200L2.343%209.107h4.84V20h5.636V9.107h4.84%22%2F%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -128,7 +167,7 @@ button:hover > .glyphicon-arrow-north:before {
 }
 .fuelux-icon-arrow-north,
 .glyphicon-arrow-north {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20fill%3D%22%23ccc%22%20d%3D%22M10%200L2.343%209.107h4.84V20h5.636V9.107h4.84z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20fill%3D%22%23CCC%22%20d%3D%22M10%200L2.343%209.107h4.84V20h5.636V9.107h4.84%22%2F%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -145,7 +184,7 @@ button:hover > .fuelux-icon-arrow-south,
 .glyphicon-arrow-south-hover,
 .glyphicon-arrow-south:hover,
 button:hover > .glyphicon-arrow-south {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20fill%3D%22%234E8ABE%22%20d%3D%22M10%2020l7.658-9.107h-4.842V0H7.18v10.893H2.343z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20fill%3D%22%234E8ABE%22%20d%3D%22M10%2020l7.658-9.107h-4.842V0H7.18v10.893H2.343%22%2F%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -162,7 +201,7 @@ button:hover > .glyphicon-arrow-south:before {
 }
 .fuelux-icon-arrow-south,
 .glyphicon-arrow-south {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20fill%3D%22%23ccc%22%20d%3D%22M10%2020l7.658-9.107h-4.842V0H7.18v10.893H2.343z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20fill%3D%22%23CCC%22%20d%3D%22M10%2020l7.658-9.107h-4.842V0H7.18v10.893H2.343%22%2F%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -179,7 +218,7 @@ button:hover > .fuelux-icon-arrow-west,
 .glyphicon-arrow-west-hover,
 .glyphicon-arrow-west:hover,
 button:hover > .glyphicon-arrow-west {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20fill%3D%22%234E8ABE%22%20d%3D%22M0%2010l9.107%207.658v-4.842H20V7.182H9.107v-4.84z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20fill%3D%22%234E8ABE%22%20d%3D%22M0%2010l9.107%207.658v-4.842H20V7.182H9.107v-4.84%22%2F%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -196,7 +235,7 @@ button:hover > .glyphicon-arrow-west:before {
 }
 .fuelux-icon-arrow-west,
 .glyphicon-arrow-west {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20fill%3D%22%23ccc%22%20d%3D%22M0%2010l9.107%207.658v-4.842H20V7.182H9.107v-4.84z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20fill%3D%22%23CCC%22%20d%3D%22M0%2010l9.107%207.658v-4.842H20V7.182H9.107v-4.84%22%2F%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -209,7 +248,7 @@ button:hover > .glyphicon-arrow-west:before {
 }
 .fuelux-icon-breadcrumb,
 .glyphicon-breadcrumb {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cg%20fill%3D%22%23aaa%22%3E%3Cpath%20d%3D%22M4.314%206.263C4.377%206.14%204.317%206%204.177%206h-1.94c-.138%200-.303.14-.366.263L.048%209.88c-.062.125-.062.335%200%20.458l1.824%203.52c.064.12.23.142.37.142h1.937c.14%200%20.2-.016.138-.14L2.49%2010.308c-.062-.125-.062-.325%200-.445l1.824-3.6zM8%204.75v10.5h12V4.75H8zm3.22%209.432h-2v-2.234h2v2.234zm0-3.065h-2V8.883h2v2.234zm0-3.065h-2V5.818h2v2.234zm7.56%206.13h-6.56v-2.234h6.56v2.234zm0-3.065h-6.56V8.883h6.56v2.234zm0-3.065h-6.56V5.818h6.56v2.234z%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cg%20fill%3D%22%23AAA%22%3E%3Cpath%20d%3D%22M4.314%206.263C4.377%206.14%204.317%206%204.177%206h-1.94c-.138%200-.303.14-.366.263L.048%209.88c-.062.125-.062.335%200%20.458l1.824%203.52c.064.12.23.142.37.142h1.937c.14%200%20.2-.016.138-.14L2.49%2010.308c-.062-.125-.062-.325%200-.445l1.824-3.6zM8%204.75v10.5h12V4.75H8zm3.22%209.432h-2v-2.234h2v2.234zm0-3.065h-2V8.883h2v2.234zm0-3.065h-2V5.818h2v2.234zm7.56%206.13h-6.56v-2.234h6.56v2.234zm0-3.065h-6.56V8.883h6.56v2.234zm0-3.065h-6.56V5.818h6.56v2.234z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -226,7 +265,7 @@ button:hover > .fuelux-icon-calendar,
 .glyphicon-calendar-hover,
 .glyphicon-calendar:hover,
 button:hover > .glyphicon-calendar {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3ClinearGradient%20id%3D%22a%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%229.999%22%20x2%3D%229.999%22%20y2%3D%2219%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%2372B9F7%22%2F%3E%3Cstop%20offset%3D%22.271%22%20stop-color%3D%22%23378DD7%22%2F%3E%3Cstop%20offset%3D%22.829%22%20stop-color%3D%22%23378DD7%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23336B9A%22%2F%3E%3C%2FlinearGradient%3E%3Cpath%20d%3D%22M0%2017c0%201.1.9%202%202%202h16c1.1%200%202-.9%202-2V2c0-1.1-.9-2-2-2H2C.9%200%200%20.9%200%202v15z%22%20fill%3D%22url%28%23a%29%22%2F%3E%3Cpath%20d%3D%22M17.5%205.346H1.25v10.75c0%20.688.562%201.25%201.25%201.25h15c.688%200%201.25-.562%201.25-1.25V5.346H17.5z%22%20fill%3D%22%23fff%22%2F%3E%3Cpath%20d%3D%22M17.08%2015.21c0%20.274-.225.5-.5.5H3.42c-.275%200-.5-.226-.5-.5V7.133c0-.275.225-.5.5-.5h13.16c.275%200%20.5.225.5.5v8.075z%22%20fill%3D%22%23C2DCF2%22%2F%3E%3Cpath%20d%3D%22M4.04%209.19c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1zM6.64%209.19c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1zM9.24%209.19c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1zM11.84%209.19c0%20.138.112.25.25.25h1c.138%200%20.25-.112.25-.25v-1c0-.138-.112-.25-.25-.25h-1c-.138%200-.25.112-.25.25v1zM14.44%209.19c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1zM4.04%2011.69c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1z%22%20fill%3D%22%23fff%22%2F%3E%3Cpath%20d%3D%22M6.64%2011.69c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1z%22%20stroke%3D%22%23378DD7%22%20stroke-width%3D%22.5%22%20stroke-miterlimit%3D%2210%22%20fill%3D%22none%22%2F%3E%3Cpath%20d%3D%22M6.64%2011.69c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1z%22%20fill%3D%22%23378DD7%22%2F%3E%3Cpath%20d%3D%22M9.24%2011.69c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1zM11.84%2011.69c0%20.138.112.25.25.25h1c.138%200%20.25-.112.25-.25v-1c0-.138-.112-.25-.25-.25h-1c-.138%200-.25.112-.25.25v1zM14.44%2011.69c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1zM4.04%2014.19c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1zM6.64%2014.19c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1zM9.24%2014.19c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1zM11.84%2014.19c0%20.138.112.25.25.25h1c.138%200%20.25-.112.25-.25v-1c0-.138-.112-.25-.25-.25h-1c-.138%200-.25.112-.25.25v1zM14.44%2014.19c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1z%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3ClinearGradient%20id%3D%22a%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%229.999%22%20x2%3D%229.999%22%20y2%3D%2219%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%2372B9F7%22%2F%3E%3Cstop%20offset%3D%22.271%22%20stop-color%3D%22%23378DD7%22%2F%3E%3Cstop%20offset%3D%22.829%22%20stop-color%3D%22%23378DD7%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23336B9A%22%2F%3E%3C%2FlinearGradient%3E%3Cpath%20d%3D%22M0%2017c0%201.1.9%202%202%202h16c1.1%200%202-.9%202-2V2c0-1.1-.9-2-2-2H2C.9%200%200%20.9%200%202v15z%22%20fill%3D%22url%28%23a%29%22%2F%3E%3Cpath%20d%3D%22M17.5%205.346H1.25v10.75c0%20.688.562%201.25%201.25%201.25h15c.688%200%201.25-.562%201.25-1.25V5.346H17.5z%22%20fill%3D%22%23FFF%22%2F%3E%3Cpath%20d%3D%22M17.08%2015.21c0%20.274-.225.5-.5.5H3.42c-.275%200-.5-.226-.5-.5V7.133c0-.275.225-.5.5-.5h13.16c.275%200%20.5.225.5.5v8.075z%22%20fill%3D%22%23C2DCF2%22%2F%3E%3Cpath%20d%3D%22M4.04%209.19c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1zM6.64%209.19c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1zM9.24%209.19c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1zM11.84%209.19c0%20.138.112.25.25.25h1c.138%200%20.25-.112.25-.25v-1c0-.138-.112-.25-.25-.25h-1c-.138%200-.25.112-.25.25v1zM14.44%209.19c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1zM4.04%2011.69c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1z%22%20fill%3D%22%23FFF%22%2F%3E%3Cpath%20d%3D%22M6.64%2011.69c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1z%22%20fill%3D%22none%22%20stroke%3D%22%23378DD7%22%20stroke-width%3D%22.5%22%20stroke-miterlimit%3D%2210%22%2F%3E%3Cpath%20d%3D%22M6.64%2011.69c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1z%22%20fill%3D%22%23378DD7%22%2F%3E%3Cpath%20d%3D%22M9.24%2011.69c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1zM11.84%2011.69c0%20.138.112.25.25.25h1c.138%200%20.25-.112.25-.25v-1c0-.138-.112-.25-.25-.25h-1c-.138%200-.25.112-.25.25v1zM14.44%2011.69c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1zM4.04%2014.19c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1zM6.64%2014.19c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1zM9.24%2014.19c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1z%22%20fill%3D%22%23FFF%22%2F%3E%3Cg%3E%3Cpath%20d%3D%22M11.84%2014.19c0%20.138.112.25.25.25h1c.138%200%20.25-.112.25-.25v-1c0-.138-.112-.25-.25-.25h-1c-.138%200-.25.112-.25.25v1z%22%20fill%3D%22%23FFF%22%2F%3E%3C%2Fg%3E%3Cg%3E%3Cpath%20d%3D%22M14.44%2014.19c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1z%22%20fill%3D%22%23FFF%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -243,7 +282,7 @@ button:hover > .glyphicon-calendar:before {
 }
 .fuelux-icon-calendar,
 .glyphicon-calendar {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3ClinearGradient%20id%3D%22a%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%229.999%22%20x2%3D%229.999%22%20y2%3D%2219%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%2372B9F7%22%2F%3E%3Cstop%20offset%3D%22.27%22%20stop-color%3D%22%23448CCA%22%2F%3E%3Cstop%20offset%3D%22.27%22%20stop-color%3D%22%23336B9A%22%2F%3E%3Cstop%20offset%3D%22.273%22%20stop-color%3D%22%23356C9B%22%2F%3E%3Cstop%20offset%3D%22.275%22%20stop-color%3D%22%233D719C%22%2F%3E%3Cstop%20offset%3D%22.276%22%20stop-color%3D%22%234B799F%22%2F%3E%3Cstop%20offset%3D%22.277%22%20stop-color%3D%22%235E84A3%22%2F%3E%3Cstop%20offset%3D%22.278%22%20stop-color%3D%22%237792A9%22%2F%3E%3Cstop%20offset%3D%22.279%22%20stop-color%3D%22%2395A3B0%22%2F%3E%3Cstop%20offset%3D%22.28%22%20stop-color%3D%22%23B6B6B7%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23B6B6B7%22%2F%3E%3C%2FlinearGradient%3E%3Cpath%20d%3D%22M0%2017c0%201.1.9%202%202%202h16c1.1%200%202-.9%202-2V2c0-1.1-.9-2-2-2H2C.9%200%200%20.9%200%202v15z%22%20fill%3D%22url%28%23a%29%22%2F%3E%3Cpath%20d%3D%22M17.5%205.346H1.25v10.75c0%20.688.562%201.25%201.25%201.25h15c.688%200%201.25-.562%201.25-1.25V5.346H17.5z%22%20fill%3D%22%23fff%22%2F%3E%3Cpath%20d%3D%22M17.08%2015.21c0%20.274-.225.5-.5.5H3.42c-.275%200-.5-.226-.5-.5V7.133c0-.275.225-.5.5-.5h13.16c.275%200%20.5.225.5.5v8.075z%22%20fill%3D%22%23BBBDBF%22%2F%3E%3Cpath%20d%3D%22M4.04%209.19c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1zM6.64%209.19c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1zM9.24%209.19c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1zM11.84%209.19c0%20.138.112.25.25.25h1c.138%200%20.25-.112.25-.25v-1c0-.138-.112-.25-.25-.25h-1c-.138%200-.25.112-.25.25v1zM14.44%209.19c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1zM4.04%2011.69c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1z%22%20fill%3D%22%23fff%22%2F%3E%3Cpath%20d%3D%22M6.64%2011.69c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1z%22%20stroke%3D%22%23448CCA%22%20stroke-width%3D%22.5%22%20stroke-miterlimit%3D%2210%22%20fill%3D%22none%22%2F%3E%3Cpath%20d%3D%22M6.64%2011.69c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1z%22%20fill%3D%22%23448CCA%22%2F%3E%3Cpath%20d%3D%22M9.24%2011.69c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1zM11.84%2011.69c0%20.138.112.25.25.25h1c.138%200%20.25-.112.25-.25v-1c0-.138-.112-.25-.25-.25h-1c-.138%200-.25.112-.25.25v1zM14.44%2011.69c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1zM4.04%2014.19c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1zM6.64%2014.19c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1zM9.24%2014.19c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1zM11.84%2014.19c0%20.138.112.25.25.25h1c.138%200%20.25-.112.25-.25v-1c0-.138-.112-.25-.25-.25h-1c-.138%200-.25.112-.25.25v1zM14.44%2014.19c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1z%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3ClinearGradient%20id%3D%22a%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%229.999%22%20x2%3D%229.999%22%20y2%3D%2219%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%2372B9F7%22%2F%3E%3Cstop%20offset%3D%22.27%22%20stop-color%3D%22%23448CCA%22%2F%3E%3Cstop%20offset%3D%22.27%22%20stop-color%3D%22%23336B9A%22%2F%3E%3Cstop%20offset%3D%22.273%22%20stop-color%3D%22%23356C9B%22%2F%3E%3Cstop%20offset%3D%22.275%22%20stop-color%3D%22%233D719C%22%2F%3E%3Cstop%20offset%3D%22.276%22%20stop-color%3D%22%234B799F%22%2F%3E%3Cstop%20offset%3D%22.277%22%20stop-color%3D%22%235E84A3%22%2F%3E%3Cstop%20offset%3D%22.278%22%20stop-color%3D%22%237792A9%22%2F%3E%3Cstop%20offset%3D%22.279%22%20stop-color%3D%22%2395A3B0%22%2F%3E%3Cstop%20offset%3D%22.28%22%20stop-color%3D%22%23B6B6B7%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23B6B6B7%22%2F%3E%3C%2FlinearGradient%3E%3Cpath%20d%3D%22M0%2017c0%201.1.9%202%202%202h16c1.1%200%202-.9%202-2V2c0-1.1-.9-2-2-2H2C.9%200%200%20.9%200%202v15z%22%20fill%3D%22url%28%23a%29%22%2F%3E%3Cpath%20d%3D%22M17.5%205.346H1.25v10.75c0%20.688.562%201.25%201.25%201.25h15c.688%200%201.25-.562%201.25-1.25V5.346H17.5z%22%20fill%3D%22%23FFF%22%2F%3E%3Cpath%20d%3D%22M17.08%2015.21c0%20.274-.225.5-.5.5H3.42c-.275%200-.5-.226-.5-.5V7.133c0-.275.225-.5.5-.5h13.16c.275%200%20.5.225.5.5v8.075z%22%20fill%3D%22%23BBBDBF%22%2F%3E%3Cpath%20d%3D%22M4.04%209.19c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1zM6.64%209.19c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1zM9.24%209.19c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1zM11.84%209.19c0%20.138.112.25.25.25h1c.138%200%20.25-.112.25-.25v-1c0-.138-.112-.25-.25-.25h-1c-.138%200-.25.112-.25.25v1zM14.44%209.19c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1zM4.04%2011.69c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1z%22%20fill%3D%22%23FFF%22%2F%3E%3Cpath%20d%3D%22M6.64%2011.69c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1z%22%20fill%3D%22none%22%20stroke%3D%22%23448CCA%22%20stroke-width%3D%22.5%22%20stroke-miterlimit%3D%2210%22%2F%3E%3Cpath%20d%3D%22M6.64%2011.69c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1z%22%20fill%3D%22%23448CCA%22%2F%3E%3Cpath%20d%3D%22M9.24%2011.69c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1zM11.84%2011.69c0%20.138.112.25.25.25h1c.138%200%20.25-.112.25-.25v-1c0-.138-.112-.25-.25-.25h-1c-.138%200-.25.112-.25.25v1zM14.44%2011.69c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1zM4.04%2014.19c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1zM6.64%2014.19c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1zM9.24%2014.19c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1z%22%20fill%3D%22%23FFF%22%2F%3E%3Cg%3E%3Cpath%20d%3D%22M11.84%2014.19c0%20.138.112.25.25.25h1c.138%200%20.25-.112.25-.25v-1c0-.138-.112-.25-.25-.25h-1c-.138%200-.25.112-.25.25v1z%22%20fill%3D%22%23FFF%22%2F%3E%3C%2Fg%3E%3Cg%3E%3Cpath%20d%3D%22M14.44%2014.19c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1z%22%20fill%3D%22%23FFF%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -805,6 +844,79 @@ button:hover > .glyphicon-chevron-right:before {
 .glyphicon-close-content-block:before {
   content: "";
 }
+.fuelux-icon-content-cloud-upload,
+.glyphicon-content-cloud-upload {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2220px%22%20%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22content-cloud-upload%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_156_%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cg%3E%20%20%20%3Cg%20style%3D%22opacity%3A0.15%3B%22%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%23FFFFFF%3B%22%20d%3D%22M7.587%2C8.9c0%2C0-1.073-1.011-2.528-0.186c-1.304%2C0.789-1.073%2C2.235-1.073%2C2.235%20%20%20%20%20S1.094%2C11.5%2C1.094%2C14.391c0.062%2C2.891%2C3.141%2C2.918%2C3.141%2C2.918h4.621v-2.918H7.374l2.581-2.927l2.58%2C2.927h-1.472v2.918h4.479%20%20%20%20%20c0%2C0%2C2.863%2C0%2C3.263-2.75c0.195-3.006-2.767-3.6-2.767-3.6S16.375%2C6.506%2C12.216%2C6C8.669%2C5.655%2C7.587%2C8.9%2C7.587%2C8.9z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%20%3Cg%3E%20%20%20%20%20%20%20%20%20%3ClinearGradient%20id%3D%22SVGID_1_%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%22-843.019%22%20y1%3D%22576.9141%22%20x2%3D%22-843.019%22%20y2%3D%22577.1104%22%20gradientTransform%3D%22matrix%2857.6%200%200%20-57.6%2048567.8438%2033246.1562%29%22%3E%20%20%20%20%20%3Cstop%20%20offset%3D%220%22%20style%3D%22stop-color%3A%23C2C2C2%22%2F%3E%20%20%20%20%20%3Cstop%20%20offset%3D%221%22%20style%3D%22stop-color%3A%23C7C7C7%22%2F%3E%20%20%20%20%3C%2FlinearGradient%3E%20%20%20%20%3Cpath%20style%3D%22fill%3Aurl%28%23SVGID_1_%29%3B%22%20d%3D%22M7.587%2C7.518c0%2C0-1.073-1.011-2.528-0.187C3.755%2C8.129%2C3.985%2C9.566%2C3.985%2C9.566%20%20%20%20%20s-2.892%2C0.559-2.892%2C3.449c0.062%2C2.893%2C3.141%2C2.918%2C3.141%2C2.918h4.621v-2.918H7.374l2.589-2.935l2.582%2C2.927h-1.473v2.918h4.479%20%20%20%20%20c0%2C0%2C2.865%2C0%2C3.264-2.75c0.195-3.006-2.768-3.601-2.768-3.601s0.337-4.453-3.821-4.958C8.669%2C4.271%2C7.587%2C7.518%2C7.587%2C7.518z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+.fuelux-icon-content-cloud-upload:before,
+.glyphicon-content-cloud-upload:before {
+  content: "";
+}
+.fuelux-icon-content-image,
+.glyphicon-content-image {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2220px%22%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22content-image%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_141_%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cg%3E%20%20%20%3Cg%3E%20%20%20%20%3Crect%20x%3D%222.803%22%20y%3D%222.941%22%20style%3D%22fill%3A%23FFFFFF%3B%22%20width%3D%2214.317%22%20height%3D%2214.117%22%2F%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%234C89BE%3B%22%20d%3D%22M16.779%2C3.383v13.234H3.143V3.383H16.779%20M17.461%2C2.5h-15v15h15V2.5L17.461%2C2.5z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%20%3Cpolygon%20style%3D%22fill%3A%234C89BE%3B%22%20points%3D%224.778%2C13.145%2015.146%2C13.145%2012.498%2C6.527%2010.513%2C11.16%209.189%2C8.512%207.314%2C11.932%20%20%20%20%206.652%2C9.945%20%20%20%20%22%2F%3E%20%20%20%3Ccircle%20style%3D%22fill%3A%234C89BE%3B%22%20cx%3D%226.321%22%20cy%3D%227.851%22%20r%3D%220.993%22%2F%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1_1_%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+.fuelux-icon-content-image:before,
+.glyphicon-content-image:before {
+  content: "";
+}
+.fuelux-icon-content-replace-hover,
+.fuelux-icon-content-replace:hover,
+button:hover > .fuelux-icon-content-replace,
+.glyphicon-content-replace-hover,
+.glyphicon-content-replace:hover,
+button:hover > .glyphicon-content-replace {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2220px%22%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20enable-background%3D%22new%200%200%2020%2020%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%3E%20%3Crect%20id%3D%22le_wrappier_157_%22%20fill%3D%22none%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%3Cg%3E%20%20%3Cpath%20fill%3D%22%234C89BE%22%20d%3D%22M7.259%2C1.333C5.787%2C1.333%2C4.593%2C2.528%2C4.593%2C4h1.925L3.926%2C6.595L1.333%2C4h1.926c0-2.205%2C1.794-4%2C4-4%22%2F%3E%20%20%3Cpath%20fill%3D%22%234C89BE%22%20d%3D%22M12.739%2C18.668c1.473%2C0%2C2.667-1.196%2C2.667-2.667h-1.921l2.588-2.591l2.594%2C2.591h-1.928%20%20%20c0%2C2.205-1.794%2C3.999-4%2C3.999%22%2F%3E%20%20%3Cpolyline%20fill%3D%22%234C89BE%22%20points%3D%2220%2C4%2020%2C12%209.333%2C12%209.333%2C0%2016%2C0%20%20%20%22%2F%3E%20%20%3Cpolygon%20fill%3D%22%23A1C7E4%22%20points%3D%2216%2C4%2020%2C4%2016%2C0%20%20%20%22%2F%3E%20%20%3Cg%3E%20%20%20%3Cpolygon%20fill%3D%22%23A1C7E4%22%20points%3D%228%2C13.334%208%2C8%200%2C8%200%2C20%2010.666%2C20%2010.666%2C13.334%20%20%20%20%22%2F%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+.fuelux-icon-content-replace-hover:before,
+.fuelux-icon-content-replace:hover:before,
+button:hover > .fuelux-icon-content-replace:before,
+.glyphicon-content-replace-hover:before,
+.glyphicon-content-replace:hover:before,
+button:hover > .glyphicon-content-replace:before {
+  content: "";
+}
+.fuelux-icon-content-replace,
+.glyphicon-content-replace {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2215px%22%20height%3D%2215px%22%20viewBox%3D%220%200%2015%2015%22%20style%3D%22enable-background%3Anew%200%200%2015%2015%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22content-replace%22%3E%20%3Cg%3E%20%20%3Cpath%20style%3D%22fill%3A%238D8E8D%3B%22%20d%3D%22M5.444%2C1c-1.104%2C0-2%2C0.896-2%2C2h1.444L2.944%2C4.945L1%2C3h1.444c0-1.654%2C1.346-3%2C3-3%22%2F%3E%20%20%3Cpath%20style%3D%22fill%3A%238D8E8D%3B%22%20d%3D%22M9.555%2C14c1.104%2C0%2C2-0.896%2C2-2h-1.441l1.941-1.943L14%2C12h-1.445c0%2C1.654-1.346%2C3-3%2C3%22%2F%3E%20%20%3Cpolyline%20style%3D%22fill%3A%238D8E8D%3B%22%20points%3D%2215%2C3%2015%2C9%207%2C9%207%2C0%2012%2C0%20%20%20%22%2F%3E%20%20%3Cpolygon%20style%3D%22fill%3A%23B9B9BA%3B%22%20points%3D%2212%2C3%2015%2C3%2012%2C0%20%20%20%22%2F%3E%20%20%3Cg%3E%20%20%20%3Cpolygon%20style%3D%22fill%3A%23B9B9BA%3B%22%20points%3D%226%2C10%206%2C6%200%2C6%200%2C15%208%2C15%208%2C10%20%20%20%20%22%2F%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1_1_%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+.fuelux-icon-content-replace:before,
+.glyphicon-content-replace:before {
+  content: "";
+}
+.fuelux-icon-content-text,
+.glyphicon-content-text {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2220px%22%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22content-text%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_139_%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cg%3E%20%20%20%3Cg%3E%20%20%20%20%3Crect%20x%3D%222.477%22%20y%3D%223.484%22%20style%3D%22fill%3A%234C89BE%3B%22%20width%3D%226.818%22%20height%3D%221.363%22%2F%3E%20%20%20%20%3Crect%20x%3D%222.477%22%20y%3D%228.939%22%20style%3D%22fill%3A%234C89BE%3B%22%20width%3D%2212.273%22%20height%3D%221.362%22%2F%3E%20%20%20%20%3Crect%20x%3D%222.477%22%20y%3D%226.211%22%20style%3D%22fill%3A%234C89BE%3B%22%20width%3D%2215%22%20height%3D%221.364%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%20%3Cg%3E%20%20%20%20%3Crect%20x%3D%222.477%22%20y%3D%2211.666%22%20style%3D%22fill%3A%234C89BE%3B%22%20width%3D%2215%22%20height%3D%221.363%22%2F%3E%20%20%20%20%3Crect%20x%3D%222.477%22%20y%3D%2214.395%22%20style%3D%22fill%3A%234C89BE%3B%22%20width%3D%2212.273%22%20height%3D%221.363%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1_1_%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+.fuelux-icon-content-text:before,
+.glyphicon-content-text:before {
+  content: "";
+}
 .fuelux-icon-copy-hover,
 .fuelux-icon-copy:hover,
 button:hover > .fuelux-icon-copy,
@@ -837,6 +949,19 @@ button:hover > .glyphicon-copy:before {
 }
 .fuelux-icon-copy:before,
 .glyphicon-copy:before {
+  content: "";
+}
+.fuelux-icon-corner-radius,
+.glyphicon-corner-radius {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2220px%22%20%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22corner-radius%22%3E%20%3Cg%3E%20%20%3Cline%20style%3D%22fill%3A%23FFFFFF%3B%22%20x1%3D%223.317%22%20y1%3D%222.837%22%20x2%3D%223.317%22%20y2%3D%2216.838%22%2F%3E%20%20%3Cg%3E%20%20%20%3Cline%20style%3D%22fill%3Anone%3Bstroke%3A%23A6A6A6%3Bstroke-width%3A0.75%3B%22%20x1%3D%223.317%22%20y1%3D%222.837%22%20x2%3D%223.317%22%20y2%3D%223.837%22%2F%3E%20%20%20%20%20%20%20%3Cline%20style%3D%22fill%3Anone%3Bstroke%3A%23A6A6A6%3Bstroke-width%3A0.75%3Bstroke-dasharray%3A1.7144%2C1.7144%3B%22%20x1%3D%223.317%22%20y1%3D%225.552%22%20x2%3D%223.317%22%20y2%3D%2214.98%22%2F%3E%20%20%20%3Cline%20style%3D%22fill%3Anone%3Bstroke%3A%23A6A6A6%3Bstroke-width%3A0.75%3B%22%20x1%3D%223.317%22%20y1%3D%2215.838%22%20x2%3D%223.317%22%20y2%3D%2216.838%22%2F%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_138_%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cg%3E%20%20%20%3Cline%20style%3D%22fill%3A%23FFFFFF%3B%22%20x1%3D%223.317%22%20y1%3D%222.837%22%20x2%3D%2216.975%22%20y2%3D%222.837%22%2F%3E%20%20%20%3Cg%3E%20%20%20%20%3Cline%20style%3D%22fill%3Anone%3Bstroke%3A%23A6A6A6%3Bstroke-width%3A0.75%3B%22%20x1%3D%223.317%22%20y1%3D%222.837%22%20x2%3D%224.317%22%20y2%3D%222.837%22%2F%3E%20%20%20%20%20%20%20%20%20%3Cline%20style%3D%22fill%3Anone%3Bstroke%3A%23A6A6A6%3Bstroke-width%3A0.75%3Bstroke-dasharray%3A2.3314%2C2.3314%3B%22%20x1%3D%226.649%22%20y1%3D%222.837%22%20x2%3D%2214.809%22%20y2%3D%222.837%22%2F%3E%20%20%20%20%3Cline%20style%3D%22fill%3Anone%3Bstroke%3A%23A6A6A6%3Bstroke-width%3A0.75%3B%22%20x1%3D%2215.975%22%20y1%3D%222.837%22%20x2%3D%2216.975%22%20y2%3D%222.837%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%20%3Cpath%20style%3D%22fill%3A%23FFFFFF%3Bstroke%3A%23A6A6A6%3Bstroke-width%3A1.5%3B%22%20d%3D%22M3.317%2C16.865c0-7.739%2C6.108-14.001%2C13.657-14.001%22%2F%3E%20%3C%2Fg%3E%20%3Ccircle%20style%3D%22fill%3A%23FFFFFF%3Bstroke%3A%23A6A6A6%3Bstroke-width%3A0.75%3B%22%20cx%3D%223.431%22%20cy%3D%222.837%22%20r%3D%221.5%22%2F%3E%20%3Ccircle%20style%3D%22fill%3A%23FFFFFF%3Bstroke%3A%23A6A6A6%3Bstroke-width%3A0.75%3B%22%20cx%3D%223.431%22%20cy%3D%2216.865%22%20r%3D%221.5%22%2F%3E%20%3Ccircle%20style%3D%22fill%3A%23FFFFFF%3Bstroke%3A%23A6A6A6%3Bstroke-width%3A0.75%3B%22%20cx%3D%2217.088%22%20cy%3D%222.837%22%20r%3D%221.5%22%2F%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+.fuelux-icon-corner-radius:before,
+.glyphicon-corner-radius:before {
   content: "";
 }
 .fuelux-icon-danger,
@@ -933,6 +1058,32 @@ button:hover > .glyphicon-dot:before {
 .glyphicon-dot:before {
   content: "";
 }
+.fuelux-icon-dots-horizontal,
+.glyphicon-dots-horizontal {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2220px%22%20%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22dots-horizontal%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_154_%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cg%3E%20%20%20%3Ccircle%20style%3D%22fill%3A%23989898%3B%22%20cx%3D%224.88%22%20cy%3D%2210%22%20r%3D%221.5%22%2F%3E%20%20%20%3Ccircle%20style%3D%22fill%3A%23989898%3B%22%20cx%3D%229.88%22%20cy%3D%2210%22%20r%3D%221.5%22%2F%3E%20%20%20%3Ccircle%20style%3D%22fill%3A%23989898%3B%22%20cx%3D%2214.88%22%20cy%3D%2210%22%20r%3D%221.5%22%2F%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+.fuelux-icon-dots-horizontal:before,
+.glyphicon-dots-horizontal:before {
+  content: "";
+}
+.fuelux-icon-dots-verticle,
+.glyphicon-dots-verticle {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2220px%22%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22dots-verticle%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_165_%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cg%3E%20%20%20%3Ccircle%20style%3D%22fill%3A%23989898%3B%22%20cx%3D%229.88%22%20cy%3D%225%22%20r%3D%221.5%22%2F%3E%20%20%20%3Ccircle%20style%3D%22fill%3A%23989898%3B%22%20cx%3D%229.88%22%20cy%3D%2210%22%20r%3D%221.5%22%2F%3E%20%20%20%3Ccircle%20style%3D%22fill%3A%23989898%3B%22%20cx%3D%229.88%22%20cy%3D%2215%22%20r%3D%221.5%22%2F%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1_1_%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+.fuelux-icon-dots-verticle:before,
+.glyphicon-dots-verticle:before {
+  content: "";
+}
 .fuelux-icon-download-document-hover,
 .fuelux-icon-download-document:hover,
 button:hover > .fuelux-icon-download-document,
@@ -999,6 +1150,40 @@ button:hover > .glyphicon-download:before {
 }
 .fuelux-icon-download:before,
 .glyphicon-download:before {
+  content: "";
+}
+.fuelux-icon-drag-handle-squares-hover,
+.fuelux-icon-drag-handle-squares:hover,
+button:hover > .fuelux-icon-drag-handle-squares,
+.glyphicon-drag-handle-squares-hover,
+.glyphicon-drag-handle-squares:hover,
+button:hover > .glyphicon-drag-handle-squares {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2220px%22%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22drag-handle-squares-hover%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_164_%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cg%3E%20%20%20%3Crect%20x%3D%226.713%22%20y%3D%225%22%20style%3D%22fill%3A%2383BCD7%3B%22%20width%3D%222%22%20height%3D%222%22%2F%3E%20%20%20%3Crect%20x%3D%2210.713%22%20y%3D%225%22%20style%3D%22fill%3A%2383BCD7%3B%22%20width%3D%222%22%20height%3D%222%22%2F%3E%20%20%20%3Crect%20x%3D%226.713%22%20y%3D%229%22%20style%3D%22fill%3A%2383BCD7%3B%22%20width%3D%222%22%20height%3D%222%22%2F%3E%20%20%20%3Crect%20x%3D%2210.713%22%20y%3D%229%22%20style%3D%22fill%3A%2383BCD7%3B%22%20width%3D%222%22%20height%3D%222%22%2F%3E%20%20%20%3Crect%20x%3D%226.713%22%20y%3D%2213%22%20style%3D%22fill%3A%2383BCD7%3B%22%20width%3D%222%22%20height%3D%222%22%2F%3E%20%20%20%3Crect%20x%3D%2210.713%22%20y%3D%2213%22%20style%3D%22fill%3A%2383BCD7%3B%22%20width%3D%222%22%20height%3D%222%22%2F%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1_1_%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+.fuelux-icon-drag-handle-squares-hover:before,
+.fuelux-icon-drag-handle-squares:hover:before,
+button:hover > .fuelux-icon-drag-handle-squares:before,
+.glyphicon-drag-handle-squares-hover:before,
+.glyphicon-drag-handle-squares:hover:before,
+button:hover > .glyphicon-drag-handle-squares:before {
+  content: "";
+}
+.fuelux-icon-drag-handle-squares,
+.glyphicon-drag-handle-squares {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2220px%22%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22drag-handle-squares%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_153_%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cg%3E%20%20%20%3Crect%20x%3D%226.713%22%20y%3D%225%22%20style%3D%22fill%3A%23DFDEDE%3B%22%20width%3D%222%22%20height%3D%222%22%2F%3E%20%20%20%3Crect%20x%3D%2210.713%22%20y%3D%225%22%20style%3D%22fill%3A%23DFDEDE%3B%22%20width%3D%222%22%20height%3D%222%22%2F%3E%20%20%20%3Crect%20x%3D%226.713%22%20y%3D%229%22%20style%3D%22fill%3A%23DFDEDE%3B%22%20width%3D%222%22%20height%3D%222%22%2F%3E%20%20%20%3Crect%20x%3D%2210.713%22%20y%3D%229%22%20style%3D%22fill%3A%23DFDEDE%3B%22%20width%3D%222%22%20height%3D%222%22%2F%3E%20%20%20%3Crect%20x%3D%226.713%22%20y%3D%2213%22%20style%3D%22fill%3A%23DFDEDE%3B%22%20width%3D%222%22%20height%3D%222%22%2F%3E%20%20%20%3Crect%20x%3D%2210.713%22%20y%3D%2213%22%20style%3D%22fill%3A%23DFDEDE%3B%22%20width%3D%222%22%20height%3D%222%22%2F%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1_1_%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+.fuelux-icon-drag-handle-squares:before,
+.glyphicon-drag-handle-squares:before {
   content: "";
 }
 .fuelux-icon-email-hover,
@@ -1350,6 +1535,84 @@ button:hover > .glyphicon-help:before {
 .glyphicon-loader:before {
   content: "";
 }
+.fuelux-icon-margin-all,
+.glyphicon-margin-all {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2220px%22%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22margin-all%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_150_%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cg%3E%20%20%20%3Cg%3E%20%20%20%20%3Crect%20x%3D%224.088%22%20y%3D%224%22%20style%3D%22fill%3A%23B9B9BA%3B%22%20width%3D%2212%22%20height%3D%2212%22%2F%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%238D8E8D%3B%22%20d%3D%22M15.588%2C4.5v11h-11v-11H15.588%20M16.588%2C3.5h-13v13h13V3.5L16.588%2C3.5z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%20%3Cg%3E%20%20%20%20%3Crect%20x%3D%227.088%22%20y%3D%227%22%20style%3D%22fill%3A%23F1F1F1%3B%22%20width%3D%226%22%20height%3D%226%22%2F%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%23323232%3B%22%20d%3D%22M12.588%2C7.5v5h-5v-5H12.588%20M13.588%2C6.5h-7v7h7V6.5L13.588%2C6.5z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1_1_%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+.fuelux-icon-margin-all:before,
+.glyphicon-margin-all:before {
+  content: "";
+}
+.fuelux-icon-margin-bottom,
+.glyphicon-margin-bottom {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2220px%22%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22margin-bottom%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_147_%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cg%3E%20%20%20%3Cg%3E%20%20%20%20%3Crect%20x%3D%224.213%22%20y%3D%2213%22%20style%3D%22fill%3A%23B9B9BA%3B%22%20width%3D%2212%22%20height%3D%223%22%2F%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%238D8E8D%3B%22%20d%3D%22M4.713%2C15.5v-2h11v2H4.713%20M3.713%2C16.5h13v-4h-13V16.5L3.713%2C16.5z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%20%3Cg%3E%20%20%20%20%3Crect%20x%3D%227.213%22%20y%3D%226.999%22%20style%3D%22fill%3A%23F1F1F1%3B%22%20width%3D%226%22%20height%3D%226%22%2F%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%23323232%3B%22%20d%3D%22M7.713%2C12.5V7.499h5v5L7.713%2C12.5%20M6.713%2C13.5h7V6.499h-7V13.5L6.713%2C13.5z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%20%3Cg%3E%20%20%20%20%3Crect%20x%3D%2215.713%22%20y%3D%226.499%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%2213.713%22%20y%3D%226.499%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%2212.713%22%20y%3D%225.499%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%2212.713%22%20y%3D%223.499%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%226.713%22%20y%3D%225.499%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%226.713%22%20y%3D%223.499%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%225.713%22%20y%3D%226.499%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%223.713%22%20y%3D%226.499%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1_1_%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+.fuelux-icon-margin-bottom:before,
+.glyphicon-margin-bottom:before {
+  content: "";
+}
+.fuelux-icon-margin-left,
+.glyphicon-margin-left {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2220px%22%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22margin-left%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_148_%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cg%3E%20%20%20%3Cg%3E%20%20%20%20%3Crect%20x%3D%224.15%22%20y%3D%224%22%20style%3D%22fill%3A%23B9B9BA%3B%22%20width%3D%223%22%20height%3D%2212%22%2F%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%238D8E8D%3B%22%20d%3D%22M4.65%2C4.5h2v11h-2V4.5%20M3.65%2C3.5v13h4v-13H3.65L3.65%2C3.5z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%20%3Cg%3E%20%20%20%20%3Crect%20x%3D%227.15%22%20y%3D%227%22%20style%3D%22fill%3A%23F1F1F1%3B%22%20width%3D%226%22%20height%3D%226%22%2F%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%23323232%3B%22%20d%3D%22M7.65%2C7.5h5v5h-5V7.5%20M6.65%2C6.5v7h7v-7H6.65L6.65%2C6.5z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%20%3Cg%3E%20%20%20%20%3Crect%20x%3D%2212.65%22%20y%3D%2215.498%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%2212.65%22%20y%3D%2213.498%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%2213.65%22%20y%3D%2212.498%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%2215.65%22%20y%3D%2212.498%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%2213.65%22%20y%3D%226.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%2215.65%22%20y%3D%226.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%2212.65%22%20y%3D%225.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%2212.65%22%20y%3D%223.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1_1_%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+.fuelux-icon-margin-left:before,
+.glyphicon-margin-left:before {
+  content: "";
+}
+.fuelux-icon-margin-none,
+.glyphicon-margin-none {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2220px%22%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22margin-none%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_151_%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cg%3E%20%20%20%3Cg%3E%20%20%20%20%3Crect%20x%3D%227.025%22%20y%3D%227%22%20style%3D%22fill%3A%23F1F1F1%3B%22%20width%3D%226%22%20height%3D%226%22%2F%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%23323232%3B%22%20d%3D%22M12.525%2C7.5v5h-5v-5H12.525%20M13.525%2C6.5h-7v7h7V6.5L13.525%2C6.5z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%20%3Cg%3E%20%20%20%20%3Crect%20x%3D%223.525%22%20y%3D%2212.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%225.525%22%20y%3D%2212.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%226.525%22%20y%3D%2213.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%226.525%22%20y%3D%2215.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%2212.525%22%20y%3D%2213.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%2212.525%22%20y%3D%2215.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%2213.525%22%20y%3D%2212.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%2215.525%22%20y%3D%2212.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%20%3Cg%3E%20%20%20%20%3Crect%20x%3D%2215.525%22%20y%3D%226.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%2213.525%22%20y%3D%226.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%2212.525%22%20y%3D%225.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%2212.525%22%20y%3D%223.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%226.525%22%20y%3D%225.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%226.525%22%20y%3D%223.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%225.525%22%20y%3D%226.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%223.525%22%20y%3D%226.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1_1_%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+.fuelux-icon-margin-none:before,
+.glyphicon-margin-none:before {
+  content: "";
+}
+.fuelux-icon-margin-right,
+.glyphicon-margin-right {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2220px%22%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22margin-right%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_145_%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cg%3E%20%20%20%3Cg%3E%20%20%20%20%3Crect%20x%3D%2213.275%22%20y%3D%224%22%20style%3D%22fill%3A%23B9B9BA%3B%22%20width%3D%223%22%20height%3D%2212%22%2F%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%238D8E8D%3B%22%20d%3D%22M15.775%2C15.5h-2v-11h2V15.5%20M16.775%2C16.5v-13h-4v13H16.775L16.775%2C16.5z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%20%3Cg%3E%20%20%20%20%3Crect%20x%3D%227.275%22%20y%3D%227%22%20style%3D%22fill%3A%23F1F1F1%3B%22%20width%3D%226%22%20height%3D%226%22%2F%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%23323232%3B%22%20d%3D%22M12.775%2C12.5h-5v-5h5V12.5%20M13.775%2C13.5v-7h-7v7H13.775L13.775%2C13.5z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%20%3Cg%3E%20%20%20%20%3Crect%20x%3D%226.775%22%20y%3D%223.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%226.775%22%20y%3D%225.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%225.775%22%20y%3D%226.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%223.775%22%20y%3D%226.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%225.775%22%20y%3D%2212.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%223.775%22%20y%3D%2212.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%226.775%22%20y%3D%2213.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%226.775%22%20y%3D%2215.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1_1_%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+.fuelux-icon-margin-right:before,
+.glyphicon-margin-right:before {
+  content: "";
+}
+.fuelux-icon-margin-top,
+.glyphicon-margin-top {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2220px%22%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22margin-top%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_144_%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cg%3E%20%20%20%3Cg%3E%20%20%20%20%3Crect%20x%3D%224.338%22%20y%3D%224%22%20style%3D%22fill%3A%23B9B9BA%3B%22%20width%3D%2212%22%20height%3D%223%22%2F%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%238D8E8D%3B%22%20d%3D%22M15.838%2C4.5v2h-11v-2H15.838%20M16.838%2C3.5h-13v4h13V3.5L16.838%2C3.5z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%20%3Cg%3E%20%20%20%20%3Crect%20x%3D%227.338%22%20y%3D%227%22%20style%3D%22fill%3A%23F1F1F1%3B%22%20width%3D%226%22%20height%3D%226%22%2F%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%23323232%3B%22%20d%3D%22M12.838%2C7.5v5h-5v-5H12.838%20M13.838%2C6.5h-7v7h7V6.5L13.838%2C6.5z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%20%3Cg%3E%20%20%20%20%3Crect%20x%3D%223.838%22%20y%3D%2212.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%225.838%22%20y%3D%2212.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%226.838%22%20y%3D%2213.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%226.838%22%20y%3D%2215.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%2212.838%22%20y%3D%2213.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%2212.838%22%20y%3D%2215.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%2213.838%22%20y%3D%2212.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%2215.838%22%20y%3D%2212.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1_1_%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+.fuelux-icon-margin-top:before,
+.glyphicon-margin-top:before {
+  content: "";
+}
 .fuelux-icon-message-type-in,
 .glyphicon-message-type-in {
   background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20d%3D%22M18.102%201c.495%200%20.898.426.898.95v12.182c0%20.522-.403.947-.898.947h-6.77c-.23%200-.454.08-.633.225L7.535%2017.89v-1.81c0-.554-.448-1-1-1h-1.83c-.495%200-.897-.426-.897-.948V1.95c0-.524.4-.95.895-.95h13.397m0-1H4.705C3.66%200%202.81.875%202.81%201.95v12.182c0%201.077.85%201.947%201.895%201.947h1.83V20l4.797-3.92h6.77c1.05%200%201.898-.87%201.898-1.948V1.95C20%20.875%2019.15%200%2018.102%200z%22%20fill%3D%22%23fff%22%2F%3E%3ClinearGradient%20id%3D%22a%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%2211.404%22%20y1%3D%221%22%20x2%3D%2211.404%22%20y2%3D%2217.891%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23F1F8FF%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23DDEBF7%22%2F%3E%3C%2FlinearGradient%3E%3Cpath%20d%3D%22M7.536%2015.08h-2.83c-.495%200-.897-.426-.897-.948V1.95c0-.524.4-.95.895-.95H18.1c.497%200%20.9.426.9.95v12.182c0%20.522-.403.947-.898.947h-7.126l-3.44%202.81v-2.81z%22%20fill%3D%22url%28%23a%29%22%2F%3E%3Cpath%20d%3D%22M18.102.5c.77%200%201.398.65%201.398%201.45v12.182c0%20.798-.627%201.447-1.398%201.447H11.152l-.137.112-3.98%203.253V15.58h-2.33c-.77%200-1.396-.65-1.396-1.448V1.95c0-.8.625-1.45%201.395-1.45h13.397m0-.5H4.705C3.66%200%202.81.875%202.81%201.95v12.182c0%201.077.85%201.947%201.895%201.947h1.83V20l4.797-3.92h6.77c1.05%200%201.898-.87%201.898-1.948V1.95C20%20.875%2019.15%200%2018.102%200z%22%20fill%3D%22%23aaa%22%2F%3E%3Cpath%20stroke%3D%22%23fff%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-miterlimit%3D%2210%22%20fill%3D%22none%22%20d%3D%22M12.857%208.528L7.46%203.988v2.87H1v3.34h6.46v2.87z%22%2F%3E%3Cpath%20fill%3D%22%23378DD7%22%20d%3D%22M12.857%208.528L7.46%203.988v2.87H1v3.34h6.46v2.87z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
@@ -1465,6 +1728,110 @@ button:hover > .glyphicon-help:before {
 }
 .fuelux-icon-mobile-sms:before,
 .glyphicon-mobile-sms:before {
+  content: "";
+}
+.fuelux-icon-padding-all,
+.glyphicon-padding-all {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2220px%22%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22padding-all%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_162_%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cg%3E%20%20%20%3Cg%3E%20%20%20%20%3Crect%20x%3D%223.863%22%20y%3D%223.5%22%20style%3D%22fill%3A%23B9B9BA%3B%22%20width%3D%2212%22%20height%3D%2212%22%2F%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%23313131%3B%22%20d%3D%22M15.363%2C4v11h-11V4H15.363%20M16.363%2C3h-13v13h13V3L16.363%2C3z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%20%3Crect%20x%3D%227.363%22%20y%3D%227%22%20style%3D%22fill%3A%23F1F1F1%3B%22%20width%3D%225%22%20height%3D%225%22%2F%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1_1_%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+.fuelux-icon-padding-all:before,
+.glyphicon-padding-all:before {
+  content: "";
+}
+.fuelux-icon-padding-bottom,
+.glyphicon-padding-bottom {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2220px%22%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22padding-bottom%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_160_%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cg%3E%20%20%20%3Cg%3E%20%20%20%20%3Crect%20x%3D%223.913%22%20y%3D%223.5%22%20style%3D%22fill%3A%23FFFFFF%3B%22%20width%3D%2212%22%20height%3D%2212%22%2F%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%23313131%3B%22%20d%3D%22M15.413%2C4v11h-11V4H15.413%20M16.413%2C3h-13v13h13V3L16.413%2C3z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%20%3Crect%20x%3D%224.413%22%20y%3D%2212%22%20style%3D%22fill%3A%23B9B9BA%3B%22%20width%3D%2211%22%20height%3D%223%22%2F%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1_1_%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+.fuelux-icon-padding-bottom:before,
+.glyphicon-padding-bottom:before {
+  content: "";
+}
+.fuelux-icon-padding-left,
+.glyphicon-padding-left {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2220px%22%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22padding-left%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_161_%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cg%3E%20%20%20%3Cg%3E%20%20%20%20%3Crect%20x%3D%223.888%22%20y%3D%223.5%22%20style%3D%22fill%3A%23FFFFFF%3B%22%20width%3D%2212%22%20height%3D%2212%22%2F%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%23313131%3B%22%20d%3D%22M15.388%2C15h-11V4h11V15%20M16.388%2C16V3h-13v13H16.388L16.388%2C16z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%20%3Crect%20x%3D%224.388%22%20y%3D%224%22%20style%3D%22fill%3A%23B9B9BA%3B%22%20width%3D%223%22%20height%3D%2211%22%2F%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1_1_%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+.fuelux-icon-padding-left:before,
+.glyphicon-padding-left:before {
+  content: "";
+}
+.fuelux-icon-padding-none,
+.glyphicon-padding-none {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2220px%22%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22padding-none%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_163_%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cg%3E%20%20%20%3Cg%3E%20%20%20%20%3Crect%20x%3D%223.838%22%20y%3D%223.5%22%20style%3D%22fill%3A%23FFFFFF%3B%22%20width%3D%2212%22%20height%3D%2212%22%2F%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%23313131%3B%22%20d%3D%22M15.338%2C4v11h-11V4H15.338%20M16.338%2C3h-13v13h13V3L16.338%2C3z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1_1_%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+.fuelux-icon-padding-none:before,
+.glyphicon-padding-none:before {
+  content: "";
+}
+.fuelux-icon-padding-right,
+.glyphicon-padding-right {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2220px%22%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22padding-right%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_159_%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cg%3E%20%20%20%3Cg%3E%20%20%20%20%3Crect%20x%3D%223.938%22%20y%3D%223.5%22%20style%3D%22fill%3A%23FFFFFF%3B%22%20width%3D%2212%22%20height%3D%2212%22%2F%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%23313131%3B%22%20d%3D%22M4.438%2C4h11v11h-11V4%20M3.438%2C3v13h13V3H3.438L3.438%2C3z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%20%3Crect%20x%3D%2212.438%22%20y%3D%224%22%20style%3D%22fill%3A%23B9B9BA%3B%22%20width%3D%223%22%20height%3D%2211%22%2F%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1_1_%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+.fuelux-icon-padding-right:before,
+.glyphicon-padding-right:before {
+  content: "";
+}
+.fuelux-icon-padding-top,
+.glyphicon-padding-top {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2220px%22%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22padding-top%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_158_%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cg%3E%20%20%20%3Cg%3E%20%20%20%20%3Crect%20x%3D%223.963%22%20y%3D%223.5%22%20style%3D%22fill%3A%23FFFFFF%3B%22%20width%3D%2212%22%20height%3D%2212%22%2F%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%23313131%3B%22%20d%3D%22M15.463%2C4v11h-11V4H15.463%20M16.463%2C3h-13v13h13V3L16.463%2C3z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%20%3Crect%20x%3D%224.463%22%20y%3D%224%22%20style%3D%22fill%3A%23B9B9BA%3B%22%20width%3D%2211%22%20height%3D%223%22%2F%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1_1_%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+.fuelux-icon-padding-top:before,
+.glyphicon-padding-top:before {
+  content: "";
+}
+.fuelux-icon-padlock-locked,
+.glyphicon-padlock-locked {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2220px%22%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22padlock-locked%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_136_%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cg%3E%20%20%20%3Crect%20x%3D%224.296%22%20y%3D%229.25%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%2211.25%22%20height%3D%228.75%22%2F%3E%20%20%20%3Cg%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%23797979%3B%22%20d%3D%22M9.921%2C3C7.546%2C3%2C5.546%2C5%2C5.546%2C7.375V9.25h2.5V7.375c0-1%2C0.875-1.875%2C1.875-1.875%20%20%20%20%20s1.875%2C0.875%2C1.875%2C1.875V9.25h2.5V7.375C14.296%2C5%2C12.296%2C3%2C9.921%2C3z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1_1_%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+.fuelux-icon-padlock-locked:before,
+.glyphicon-padlock-locked:before {
+  content: "";
+}
+.fuelux-icon-padlock-unlocked,
+.glyphicon-padlock-unlocked {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2220px%22%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22padlock-unlocked%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_135_%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cg%3E%20%20%20%3Crect%20x%3D%224.746%22%20y%3D%229.924%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%2210.385%22%20height%3D%228.076%22%2F%3E%20%20%20%3Cg%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%23797979%3B%22%20d%3D%22M8.208%2C7.039c0-0.924%2C0.808-1.73%2C1.731-1.73c0.922%2C0%2C1.73%2C0.808%2C1.73%2C1.73v2.885h2.308V7.039%20%20%20%20%20C13.977%2C4.846%2C12.13%2C3%2C9.939%2C3C7.746%2C3%2C5.9%2C4.846%2C5.9%2C7.039%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1_1_%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+.fuelux-icon-padlock-unlocked:before,
+.glyphicon-padlock-unlocked:before {
   content: "";
 }
 .fuelux-icon-pencil-hover,
@@ -2158,7 +2525,7 @@ button:hover > .glyphicon-subtract:before {
 }
 .fuelux-icon-thumbs-up-grey,
 .glyphicon-thumbs-up-grey {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cg%20fill%3D%22%23aaa%22%3E%3Cpath%20d%3D%22M19.834%2012.365c.092.16.166.338.166.396%200%20.058-.158.42-.352.677%200%200-.03.04-.244.277-.244.27-.31.553-.16.894l.113.26c.102.3.2.637.213.752.016.115-.176.478-.262.59-.084.112-.484.526-.654.727-.17.2-.21.98-.205%201.08l-.015.088c-.02.12-.03.258-.096.352-.513.728-1.53%201.188-1.53%201.188-.293.134-.678.26-.855.28-.176.02-.906.075-1.228.075h-1.055c-.322%200-.62-.006-.662-.013-.04-.007-.416-.03-.738-.047%200%200-1.416-.07-2.41-.183-.857-.098-1.98-.325-1.98-.325-.316-.064-.824-.16-1.13-.216-.306-.054-1.106-.462-1.106-.784v-7.028c0-.322.252-.657.56-.743.306-.086%201.022-.665%201.09-.747s.374-.534.54-.81l.963-1.84c.128-.296.36-.77.52-1.05l.554-.722c.234-.22.613-.587.84-.816l.51-.688c.145-.29.32-.782.39-1.097l.327-1.796c.03-.32.065-.682.08-.802S12.374%200%2012.46%200s.333.013.358.026l.023.006c.886.208%201.43%201.113%201.43%201.113.167.275.327.765.358%201.086l-.176%201.985c-.09.31-.28.8-.424%201.088%200%200-.34.686-.592%201.31-.133.325-.148.458-.148.458-.04.32-.06.653-.047.74s.565.16.886.16l3.04.035c.323.004.85.03%201.17.06%200%200%20.487.045.88.507.338.396.527.784.527.784.142.29.257.59.257.67s-.133.477-.295.71l-.168.195c-.238.28-.232.3-.232.3.1.307.437.975.53%201.135zM4.844%2014.96v3.925c0%20.608-.38%201-.99%201.008-.783.01-2.07.008-2.854%200-.627-.006-.998-.392-.998-1.02-.002-2.608-.002-5.22%200-7.828%200-.625.377-1%201.008-1.004.775-.002%202.057-.002%202.834%200%20.62.004%201%20.39%201%201.016v3.904z%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2220px%22%20height%3D%2220px%22%20viewBox%3D%22140.019%200%2020%2020%22%20style%3D%22enable-background%3Anew%20140.019%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%3E%20%3Crect%20id%3D%22le_wrappier_65_%22%20x%3D%22140.019%22%20y%3D%220.001%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%3Cg%3E%20%20%3Cpath%20style%3D%22fill%3A%23AAAAAA%3B%22%20d%3D%22M159.853%2C12.366c0.092%2C0.159%2C0.166%2C0.338%2C0.166%2C0.396c0%2C0.057-0.158%2C0.42-0.352%2C0.676%20%20%20c0%2C0-0.031%2C0.041-0.244%2C0.277c-0.244%2C0.271-0.309%2C0.553-0.16%2C0.895c0.113%2C0.261%2C0.113%2C0.261%2C0.113%2C0.261%20%20%20c0.102%2C0.299%2C0.199%2C0.637%2C0.213%2C0.752c0.016%2C0.114-0.176%2C0.478-0.262%2C0.59c-0.084%2C0.111-0.484%2C0.524-0.654%2C0.728%20%20%20c-0.17%2C0.199-0.211%2C0.979-0.205%2C1.08c0%2C0%2C0%2C0-0.014%2C0.088c-0.021%2C0.119-0.031%2C0.258-0.097%2C0.352%20%20%20c-0.512%2C0.729-1.528%2C1.188-1.528%2C1.188c-0.293%2C0.135-0.679%2C0.262-0.855%2C0.28c-0.176%2C0.021-0.906%2C0.076-1.229%2C0.076h-1.056%20%20%20c-0.321%2C0-0.619-0.006-0.662-0.014c-0.041-0.007-0.416-0.031-0.737-0.048c0%2C0-1.416-0.067-2.411-0.184%20%20%20c-0.857-0.098-1.98-0.324-1.98-0.324c-0.316-0.063-0.824-0.16-1.129-0.217c-0.307-0.053-1.107-0.461-1.107-0.783v-7.026%20%20%20c0-0.322%2C0.252-0.658%2C0.559-0.744s1.023-0.666%2C1.092-0.748c0.069-0.082%2C0.374-0.535%2C0.54-0.811l0.963-1.84%20%20%20c0.129-0.296%2C0.361-0.769%2C0.52-1.05l0.555-0.722c0.234-0.221%2C0.613-0.588%2C0.84-0.817l0.511-0.688%20%20%20c0.145-0.289%2C0.319-0.782%2C0.391-1.097l0.326-1.795c0.029-0.32%2C0.063-0.682%2C0.078-0.802C152.052%2C0.173%2C152.395%2C0%2C152.48%2C0%20%20%20s0.332%2C0.013%2C0.356%2C0.026c0%2C0%2C0%2C0%2C0.023%2C0.006c0.885%2C0.208%2C1.43%2C1.113%2C1.43%2C1.113c0.166%2C0.275%2C0.326%2C0.765%2C0.357%2C1.086%20%20%20l-0.176%2C1.984c-0.09%2C0.31-0.279%2C0.799-0.424%2C1.088c0%2C0-0.34%2C0.688-0.592%2C1.312c-0.133%2C0.324-0.148%2C0.457-0.148%2C0.457%20%20%20c-0.039%2C0.319-0.061%2C0.652-0.047%2C0.738s0.564%2C0.16%2C0.885%2C0.162l3.041%2C0.034c0.322%2C0.004%2C0.85%2C0.03%2C1.17%2C0.06%20%20%20c0%2C0%2C0.486%2C0.045%2C0.879%2C0.507c0.338%2C0.396%2C0.527%2C0.784%2C0.527%2C0.784c0.141%2C0.29%2C0.256%2C0.591%2C0.256%2C0.67%20%20%20c0%2C0.079-0.133%2C0.478-0.295%2C0.709c0%2C0%2C0%2C0-0.168%2C0.195c-0.238%2C0.279-0.232%2C0.301-0.232%2C0.301%20%20%20C159.425%2C11.538%2C159.761%2C12.206%2C159.853%2C12.366z%22%2F%3E%20%20%3Cpath%20style%3D%22fill%3A%23AAAAAA%3B%22%20d%3D%22M144.863%2C14.961c0%2C1.309%2C0%2C2.617%2C0%2C3.924c0%2C0.609-0.379%2C1.002-0.99%2C1.01%20%20%20c-0.783%2C0.008-2.07%2C0.008-2.854%2C0c-0.627-0.006-0.998-0.393-0.998-1.02c-0.002-2.609-0.002-5.22%2C0-7.83%20%20%20c0-0.625%2C0.377-1%2C1.008-1.003c0.775-0.003%2C2.057-0.003%2C2.834%2C0c0.621%2C0.003%2C1%2C0.39%2C1%2C1.015%20%20%20C144.863%2C12.357%2C144.863%2C13.659%2C144.863%2C14.961z%22%2F%3E%20%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -2532,6 +2899,8 @@ button:hover > .glyphicon-triangle-west:before {
   margin-bottom: -1px;
   position: relative;
   top: 1px;
+  display: inline-block;
+  background-size: contain;
 }
 .btn-lg .fuelux-icon,
 .btn-lg:hover .fuelux-icon {
@@ -5657,7 +6026,7 @@ fieldset[disabled] .pagination-btn.active {
 }
 .breadcrumb > li + li:before,
 .breadcrumb > li:first-child:before {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cg%20fill%3D%22%23aaa%22%3E%3Cpath%20d%3D%22M4.314%206.263C4.377%206.14%204.317%206%204.177%206h-1.94c-.138%200-.303.14-.366.263L.048%209.88c-.062.125-.062.335%200%20.458l1.824%203.52c.064.12.23.142.37.142h1.937c.14%200%20.2-.016.138-.14L2.49%2010.308c-.062-.125-.062-.325%200-.445l1.824-3.6zM8%204.75v10.5h12V4.75H8zm3.22%209.432h-2v-2.234h2v2.234zm0-3.065h-2V8.883h2v2.234zm0-3.065h-2V5.818h2v2.234zm7.56%206.13h-6.56v-2.234h6.56v2.234zm0-3.065h-6.56V8.883h6.56v2.234zm0-3.065h-6.56V5.818h6.56v2.234z%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cg%20fill%3D%22%23AAA%22%3E%3Cpath%20d%3D%22M4.314%206.263C4.377%206.14%204.317%206%204.177%206h-1.94c-.138%200-.303.14-.366.263L.048%209.88c-.062.125-.062.335%200%20.458l1.824%203.52c.064.12.23.142.37.142h1.937c.14%200%20.2-.016.138-.14L2.49%2010.308c-.062-.125-.062-.325%200-.445l1.824-3.6zM8%204.75v10.5h12V4.75H8zm3.22%209.432h-2v-2.234h2v2.234zm0-3.065h-2V8.883h2v2.234zm0-3.065h-2V5.818h2v2.234zm7.56%206.13h-6.56v-2.234h6.56v2.234zm0-3.065h-6.56V8.883h6.56v2.234zm0-3.065h-6.56V5.818h6.56v2.234z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
