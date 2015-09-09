@@ -8,6 +8,59 @@
     "./aliases.json"
   ],
   "props": {
+    "COLOR_TEXT_BUTTON_BRAND": {
+      "value": "{!WHITE}",
+      "cssProperties": ["color", "fill"],
+      "comment": "Primary buttons that have a dark blue background."
+    },
+    "COLOR_TEXT_BUTTON_BRAND_HOVER": {
+      "value": "{!WHITE}",
+      "cssProperties": ["color", "fill"]
+    },
+    "COLOR_TEXT_BUTTON_BRAND_ACTIVE": {
+      "value": "{!WHITE}",
+      "cssProperties": ["color", "fill"]
+    },
+    "COLOR_TEXT_BUTTON_BRAND_DISABLED": {
+      "value": "{!WHITE}",
+      "cssProperties": ["color", "fill"]
+    },
+    "COLOR_TEXT_BUTTON_DEFAULT": {
+      "value": "{!BLUE_STEEL}",
+      "cssProperties": ["color", "fill"],
+      "comment": "Default buttons have a light blue-gray background."
+    },
+    "COLOR_TEXT_BUTTON_DEFAULT_HOVER": {
+      "value": "{!BLUE_STEEL}",
+      "cssProperties": ["color", "fill"]
+    },
+    "COLOR_TEXT_BUTTON_DEFAULT_ACTIVE": {
+      "value": "{!BLUE_STEEL}",
+      "cssProperties": ["color", "fill"]
+    },
+    "COLOR_TEXT_BUTTON_DEFAULT_DISABLED": {
+      "value": "{!BLUE_STEEL}",
+      "cssProperties": ["color", "fill"]
+    },
+
+
+    "COLOR_TEXT_ACTION_LABEL": {
+      "value": "{!BLUE_STEEL}",
+      "comment": "Action label text color"
+    },
+    "COLOR_TEXT_ACTION_LABEL_ACTIVE": {
+      "value": "{!BLUE_STEEL}",
+      "comment": "Action label active text color"
+    },
+    "COLOR_TEXT_BROWSER": {
+      "value": "{!GRAY_13}",
+      "cssProperties": ["color", "fill"],
+      "comment": "Top bar icon color"
+    },
+    "COLOR_TEXT_DEFAULT": {
+      "value": "{!GRAY_13}",
+      "comment": "Body text color"
+    },
     "COLOR_TEXT_ERROR": {
       "value": "{!RED_IRON}",
       "comment": "Error text for inputs and error misc"
