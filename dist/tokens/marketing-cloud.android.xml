@@ -78,10 +78,22 @@
   <property name="SPACING_XXX_SMALL" category="spacing">2px</property>
   <property name="SPACING_XX_SMALL" category="spacing">4px</property>
   <property name="SPACING_X_SMALL" category="spacing">8px</property>
-  <property name="SPACING_SMALL" category="spacing">12PX</property>
+  <property name="SPACING_SMALL" category="spacing">12px</property>
   <property name="SPACING_MEDIUM" category="spacing">16px</property>
   <property name="SPACING_LARGE" category="spacing">24px</property>
   <property name="SPACING_X_LARGE" category="spacing">32px</property>
+  <color name="COLOR_TEXT_BUTTON_BRAND" category="text-color">#ffffffff</color>
+  <color name="COLOR_TEXT_BUTTON_BRAND_HOVER" category="text-color">#ffffffff</color>
+  <color name="COLOR_TEXT_BUTTON_BRAND_ACTIVE" category="text-color">#ffffffff</color>
+  <color name="COLOR_TEXT_BUTTON_BRAND_DISABLED" category="text-color">#ffffffff</color>
+  <color name="COLOR_TEXT_BUTTON_DEFAULT" category="text-color">#ff4e8abe</color>
+  <color name="COLOR_TEXT_BUTTON_DEFAULT_HOVER" category="text-color">#ff4e8abe</color>
+  <color name="COLOR_TEXT_BUTTON_DEFAULT_ACTIVE" category="text-color">#ff4e8abe</color>
+  <color name="COLOR_TEXT_BUTTON_DEFAULT_DISABLED" category="text-color">#ff4e8abe</color>
+  <color name="COLOR_TEXT_ACTION_LABEL" category="text-color">#ff4e8abe</color>
+  <color name="COLOR_TEXT_ACTION_LABEL_ACTIVE" category="text-color">#ff4e8abe</color>
+  <color name="COLOR_TEXT_BROWSER" category="text-color">#ff222222</color>
+  <color name="COLOR_TEXT_DEFAULT" category="text-color">#ff222222</color>
   <color name="COLOR_TEXT_ERROR" category="text-color">#ffc23934</color>
   <color name="COLOR_TEXT_INPUT_DISABLED" category="text-color">#ff555555</color>
   <color name="COLOR_TEXT_INVERSE" category="text-color">#ffffffff</color>

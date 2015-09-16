@@ -981,7 +981,7 @@
         "padding-bottom",
         "padding-left"
       ],
-      "value": "12PX",
+      "value": "12px",
       "name": "spacingSmall"
     },
     {
@@ -1040,6 +1040,150 @@
       ],
       "value": "32px",
       "name": "spacingXLarge"
+    },
+    {
+      "type": "color",
+      "category": "text-color",
+      "cssProperties": [
+        "color",
+        "fill",
+        "l",
+        "o",
+        "r"
+      ],
+      "value": "rgb(255, 255, 255)",
+      "comment": "Primary buttons that have a dark blue background.",
+      "name": "colorTextButtonBrand"
+    },
+    {
+      "type": "color",
+      "category": "text-color",
+      "cssProperties": [
+        "color",
+        "fill",
+        "l",
+        "o",
+        "r"
+      ],
+      "value": "rgb(255, 255, 255)",
+      "name": "colorTextButtonBrandHover"
+    },
+    {
+      "type": "color",
+      "category": "text-color",
+      "cssProperties": [
+        "color",
+        "fill",
+        "l",
+        "o",
+        "r"
+      ],
+      "value": "rgb(255, 255, 255)",
+      "name": "colorTextButtonBrandActive"
+    },
+    {
+      "type": "color",
+      "category": "text-color",
+      "cssProperties": [
+        "color",
+        "fill",
+        "l",
+        "o",
+        "r"
+      ],
+      "value": "rgb(255, 255, 255)",
+      "name": "colorTextButtonBrandDisabled"
+    },
+    {
+      "type": "color",
+      "category": "text-color",
+      "cssProperties": [
+        "color",
+        "fill",
+        "l",
+        "o",
+        "r"
+      ],
+      "value": "rgb(78, 138, 190)",
+      "comment": "Default buttons have a light blue-gray background.",
+      "name": "colorTextButtonDefault"
+    },
+    {
+      "type": "color",
+      "category": "text-color",
+      "cssProperties": [
+        "color",
+        "fill",
+        "l",
+        "o",
+        "r"
+      ],
+      "value": "rgb(78, 138, 190)",
+      "name": "colorTextButtonDefaultHover"
+    },
+    {
+      "type": "color",
+      "category": "text-color",
+      "cssProperties": [
+        "color",
+        "fill",
+        "l",
+        "o",
+        "r"
+      ],
+      "value": "rgb(78, 138, 190)",
+      "name": "colorTextButtonDefaultActive"
+    },
+    {
+      "type": "color",
+      "category": "text-color",
+      "cssProperties": [
+        "color",
+        "fill",
+        "l",
+        "o",
+        "r"
+      ],
+      "value": "rgb(78, 138, 190)",
+      "name": "colorTextButtonDefaultDisabled"
+    },
+    {
+      "type": "color",
+      "category": "text-color",
+      "cssProperties": "color",
+      "value": "rgb(78, 138, 190)",
+      "comment": "Action label text color",
+      "name": "colorTextActionLabel"
+    },
+    {
+      "type": "color",
+      "category": "text-color",
+      "cssProperties": "color",
+      "value": "rgb(78, 138, 190)",
+      "comment": "Action label active text color",
+      "name": "colorTextActionLabelActive"
+    },
+    {
+      "type": "color",
+      "category": "text-color",
+      "cssProperties": [
+        "color",
+        "fill",
+        "l",
+        "o",
+        "r"
+      ],
+      "value": "rgb(34, 34, 34)",
+      "comment": "Top bar icon color",
+      "name": "colorTextBrowser"
+    },
+    {
+      "type": "color",
+      "category": "text-color",
+      "cssProperties": "color",
+      "value": "rgb(34, 34, 34)",
+      "comment": "Body text color",
+      "name": "colorTextDefault"
     },
     {
       "type": "color",
