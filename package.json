@@ -24,7 +24,7 @@
     "node": ">= 0.8.0"
   },
   "scripts": {
-    "postinstall": "bower install",
+    "postinstall": "node postinstall.js",
     "start": "node www/server.js"
   },
   "dependencies": {
