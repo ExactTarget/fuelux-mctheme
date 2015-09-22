@@ -218,11 +218,15 @@
 
 .fuelux-icon-minus-sign, .glyphicon-minus-sign { background-image: url('png/minus-sign.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
+.fuelux-icon-mobile-drag, .glyphicon-mobile-drag { background-image: url('png/mobile-drag.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
 .fuelux-icon-mobile-push, .glyphicon-mobile-push { background-image: url('png/mobile-push.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
 .fuelux-icon-mobile-sms-deprecated, .glyphicon-mobile-sms-deprecated { background-image: url('png/mobile-sms-deprecated.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
 .fuelux-icon-mobile-sms, .glyphicon-mobile-sms { background-image: url('png/mobile-sms.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-multimail, .glyphicon-multimail { background-image: url('png/multimail.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
 .fuelux-icon-padding-all, .glyphicon-padding-all { background-image: url('png/padding-all.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
