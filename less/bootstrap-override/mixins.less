@@ -13,7 +13,11 @@
 	background-size: 240px auto;
 }
 
-.btn {
+//
+// Buttons
+// --------------------------------------------------
+
+.btn (){
 	display: inline-block;
 	margin-bottom: 0; // For input.btn
 	font-weight: @btn-font-weight;
@@ -67,7 +71,7 @@
 
 // Alternate buttons
 // --------------------------------------------------
-.btn-default {
+.btn-default (){
 	//because this button has 1px border, padding needs to be adjusted
 	//padding + border = 5px
 	padding: 4px 10px;
@@ -124,7 +128,7 @@
 	}
 }
 
-.btn-basic {
+.btn-basic (){
 	padding: 4px 10px;
 	#gradient > .gradient-bg(@true-white, @gray93);
 
@@ -163,7 +167,7 @@
 	}
 }
 
-.btn-primary {
+.btn-primary (){
 	//.button-variant(@btn-primary-color; @btn-primary-bg; @btn-primary-bg-hover; @btn-primary-bg-press; @btn-primary-bg-disabled);
 
 	.button-variant(@btn-primary-color;
@@ -236,7 +240,7 @@
 }
 
 // Success appears as green
-.btn-success {
+.btn-success (){
 	//#gradient > .gradient-bg(lighten(@btn-success-bg, 15%), @btn-success-bg);
 	.button-variant(@btn-success-color;
 									lighten(@btn-success-bg, 18%); @btn-success-bg;
@@ -254,7 +258,7 @@
 	//.button-variant(@btn-info-color; @btn-info-bg; @btn-info-border);
 //}
 //// Warning appears as orange
-.btn-warning {
+.btn-warning (){
 	.button-variant(@btn-warning-color;
 									lighten(@btn-warning-bg, 18%); @btn-warning-bg;
 									lighten(@btn-warning-bg, 20%); lighten(@btn-warning-bg, 5%);
@@ -266,7 +270,7 @@
 	}
 }
 // Danger and error appear as red
-.btn-danger {
+.btn-danger (){
 	.button-variant(@btn-danger-color;
 									@brand-danger-medium; @brand-danger-dark;
 									lighten(@brand-danger-medium, 5%); lighten(@brand-danger-dark, 5%);
@@ -283,7 +287,7 @@
 // -------------------------
 
 // Make a button look and behave like a link
-.btn-link {
+.btn-link (){
 	border:0;
 	color: @link-color;
 	cursor: pointer;
@@ -328,6 +332,11 @@
 	}
 
 }
+
+
+//
+// Gradients
+// --------------------------------------------------
 
 #gradient {
 	//Background gradient
