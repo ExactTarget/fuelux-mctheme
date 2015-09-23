@@ -86,6 +86,8 @@
 
 .fuelux-icon-checked-indicator, .glyphicon-checked-indicator { background-image: url('png/checked-indicator.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
+.fuelux-icon-chevron-down-hover, .fuelux-icon-chevron-down:hover, button:hover > .fuelux-icon-chevron-down , .glyphicon-chevron-down-hover, .glyphicon-chevron-down:hover, button:hover > .glyphicon-chevron-down { background-image: url('png/chevron-down-hover.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
 .fuelux-icon-chevron-down, .glyphicon-chevron-down { background-image: url('png/chevron-down.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
 .fuelux-icon-chevron-left-hover, .fuelux-icon-chevron-left:hover, button:hover > .fuelux-icon-chevron-left , .glyphicon-chevron-left-hover, .glyphicon-chevron-left:hover, button:hover > .glyphicon-chevron-left { background-image: url('png/chevron-left-hover.png'); background-repeat: no-repeat; .fuelux-icon; } 
@@ -95,6 +97,24 @@
 .fuelux-icon-chevron-right-hover, .fuelux-icon-chevron-right:hover, button:hover > .fuelux-icon-chevron-right , .glyphicon-chevron-right-hover, .glyphicon-chevron-right:hover, button:hover > .glyphicon-chevron-right { background-image: url('png/chevron-right-hover.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
 .fuelux-icon-chevron-right, .glyphicon-chevron-right { background-image: url('png/chevron-right.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-chevron-thin-down-hover, .fuelux-icon-chevron-thin-down:hover, button:hover > .fuelux-icon-chevron-thin-down , .glyphicon-chevron-thin-down-hover, .glyphicon-chevron-thin-down:hover, button:hover > .glyphicon-chevron-thin-down { background-image: url('png/chevron-thin-down-hover.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-chevron-thin-down, .glyphicon-chevron-thin-down { background-image: url('png/chevron-thin-down.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-chevron-thin-left-hover, .fuelux-icon-chevron-thin-left:hover, button:hover > .fuelux-icon-chevron-thin-left , .glyphicon-chevron-thin-left-hover, .glyphicon-chevron-thin-left:hover, button:hover > .glyphicon-chevron-thin-left { background-image: url('png/chevron-thin-left-hover.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-chevron-thin-left, .glyphicon-chevron-thin-left { background-image: url('png/chevron-thin-left.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-chevron-thin-right-hover, .fuelux-icon-chevron-thin-right:hover, button:hover > .fuelux-icon-chevron-thin-right , .glyphicon-chevron-thin-right-hover, .glyphicon-chevron-thin-right:hover, button:hover > .glyphicon-chevron-thin-right { background-image: url('png/chevron-thin-right-hover.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-chevron-thin-right, .glyphicon-chevron-thin-right { background-image: url('png/chevron-thin-right.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-chevron-thin-up-hover, .fuelux-icon-chevron-thin-up:hover, button:hover > .fuelux-icon-chevron-thin-up , .glyphicon-chevron-thin-up-hover, .glyphicon-chevron-thin-up:hover, button:hover > .glyphicon-chevron-thin-up { background-image: url('png/chevron-thin-up-hover.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-chevron-thin-up, .glyphicon-chevron-thin-up { background-image: url('png/chevron-thin-up.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-chevron-up-hover, .fuelux-icon-chevron-up:hover, button:hover > .fuelux-icon-chevron-up , .glyphicon-chevron-up-hover, .glyphicon-chevron-up:hover, button:hover > .glyphicon-chevron-up { background-image: url('png/chevron-up-hover.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
 .fuelux-icon-chevron-up, .glyphicon-chevron-up { background-image: url('png/chevron-up.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
