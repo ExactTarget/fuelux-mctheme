@@ -1,8 +1,7 @@
 /*!
- * Marketing Cloud Theme EDGE - Built 2015/09/16, 11:51:28 AM 
- * Previous release: v1.10.0 
- * Copyright 2012-2015 ExactTarget
- * Licensed under the BSD-3-Clause license (https://github.com/ExactTarget/fuelux-mctheme/blob/master/LICENSE)
+ * Marketing Cloud Theme v1.11.0 
+ * Copyright 2015 ExactTarget
+ * Licensed under BSD-3-Clause (https://github.com/ExactTarget/fuelux-mctheme/blob/master/LICENSE)
  */
 
 .clearfix,
@@ -38,13 +37,93 @@
   padding: 0;
   text-shadow: 0 1px #ffffff;
 }
+.btn .fuelux-icon,
+.btn:hover .fuelux-icon {
+  width: 12px;
+  height: 12px;
+  margin-top: -2px;
+  margin-bottom: -1px;
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  background-size: contain;
+}
+.btn-lg .fuelux-icon,
+.btn-lg:hover .fuelux-icon {
+  width: 14px;
+  height: 14px;
+  margin-top: -3px;
+  margin-bottom: -2px;
+}
+.btn-sm .fuelux-icon,
+.btn-sm:hover .fuelux-icon {
+  width: 10px;
+  height: 10px;
+  margin-top: -1px;
+  margin-bottom: -1px;
+}
+.btn-xs .fuelux-icon,
+.btn-xs:hover .fuelux-icon {
+  width: 9px;
+  height: 9px;
+  margin-top: -1px;
+  margin-bottom: -1px;
+}
+.fuelux-icon.fuelux-icon-gridview-columns-configure,
+.btn:hover .fuelux-icon.fuelux-icon-gridview-columns-configure {
+  width: 18px;
+  height: 18px;
+  margin-bottom: -5px;
+}
+.fueluxicon-question-mark,
+.fuel-help {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cg%3E%3ClinearGradient%20id%3D%22a%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%229.999%22%20x2%3D%229.999%22%20y2%3D%2220%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23fff%22%2F%3E%3Cstop%20offset%3D%22.25%22%20stop-color%3D%22%23FBFCFD%22%2F%3E%3Cstop%20offset%3D%22.509%22%20stop-color%3D%22%23EEF4F8%22%2F%3E%3Cstop%20offset%3D%22.771%22%20stop-color%3D%22%23DAE7F0%22%2F%3E%3Cstop%20offset%3D%22.8%22%20stop-color%3D%22%23D7E5EF%22%2F%3E%3C%2FlinearGradient%3E%3Cpath%20d%3D%22M0%2017c0%201.65%201.35%203%203%203h14c1.65%200%203-1.35%203-3V3c0-1.65-1.35-3-3-3H3C1.35%200%200%201.35%200%203v14z%22%20fill%3D%22url%28%23a%29%22%2F%3E%3Cpath%20d%3D%22M17%202c.542%200%201%20.458%201%201v14c0%20.542-.458%201-1%201H3c-.542%200-1-.458-1-1V3c0-.542.458-1%201-1h14m0-2H3C1.35%200%200%201.35%200%203v14c0%201.65%201.35%203%203%203h14c1.65%200%203-1.35%203-3V3c0-1.65-1.35-3-3-3z%22%20fill%3D%22%23fff%22%20opacity%3D%22.7%22%2F%3E%3Cpath%20d%3D%22M17%201c1.103%200%202%20.897%202%202v14c0%201.103-.897%202-2%202H3c-1.103%200-2-.897-2-2V3c0-1.103.897-2%202-2h14m0-1H3C1.35%200%200%201.35%200%203v14c0%201.65%201.35%203%203%203h14c1.65%200%203-1.35%203-3V3c0-1.65-1.35-3-3-3z%22%20fill%3D%22%2345494D%22%20opacity%3D%22.7%22%2F%3E%3C%2Fg%3E%3Cpath%20d%3D%22M8.812%2012.8c0-1.73.18-2.485%201.836-3.655.702-.486%201.116-1.044%201.116-1.782%200-1.404-.99-1.783-1.747-1.783-1.62%200-1.854%201.225-1.944%202.07v.02H5.535c0-3.134%202.36-4.214%204.32-4.214%201.082%200%204.61.306%204.61%203.835%200%201.46-.79%202.324-2.178%203.314-.774.558-1.1.9-1.1%202.197H8.813zm2.557%203.745H8.74v-2.54h2.63v2.54z%22%20fill%3D%22%23aaa%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  width: 13px;
+  height: 13px;
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  outline: 0;
+}
+.fueluxicon-question-mark:before,
+.fuel-help:before {
+  content: "";
+}
+.fueluxicon-question-mark:before,
+.fuel-help:before {
+  content: "";
+}
+.fueluxicon-question-mark:hover,
+.fuel-help:hover,
+.fueluxicon-question-mark:focus,
+.fuel-help:focus {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cg%3E%3ClinearGradient%20id%3D%22a%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%229.999%22%20x2%3D%229.999%22%20y2%3D%2220%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23A0C7E7%22%2F%3E%3Cstop%20offset%3D%22.9%22%20stop-color%3D%22%23448CCA%22%2F%3E%3C%2FlinearGradient%3E%3Cpath%20d%3D%22M0%2017c0%201.65%201.35%203%203%203h14c1.65%200%203-1.35%203-3V3c0-1.65-1.35-3-3-3H3C1.35%200%200%201.35%200%203v14z%22%20fill%3D%22url%28%23a%29%22%2F%3E%3Cg%20opacity%3D%22.7%22%3E%3ClinearGradient%20id%3D%22b%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%2210.001%22%20y1%3D%2220%22%20x2%3D%2210.001%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23A0C7E7%22%2F%3E%3Cstop%20offset%3D%22.9%22%20stop-color%3D%22%23448CCA%22%2F%3E%3C%2FlinearGradient%3E%3Cpath%20d%3D%22M17%202c.542%200%201%20.458%201%201v14c0%20.542-.458%201-1%201H3c-.542%200-1-.458-1-1V3c0-.542.458-1%201-1h14m0-2H3C1.35%200%200%201.35%200%203v14c0%201.65%201.35%203%203%203h14c1.65%200%203-1.35%203-3V3c0-1.65-1.35-3-3-3z%22%20fill%3D%22url%28%23b%29%22%2F%3E%3C%2Fg%3E%3Cpath%20d%3D%22M17%201c1.103%200%202%20.897%202%202v14c0%201.103-.897%202-2%202H3c-1.103%200-2-.897-2-2V3c0-1.103.897-2%202-2h14m0-1H3C1.35%200%200%201.35%200%203v14c0%201.65%201.35%203%203%203h14c1.65%200%203-1.35%203-3V3c0-1.65-1.35-3-3-3z%22%20fill%3D%22%2345494D%22%20opacity%3D%22.7%22%2F%3E%3C%2Fg%3E%3Cpath%20d%3D%22M8.812%2012.8c0-1.73.18-2.485%201.836-3.655.702-.486%201.116-1.044%201.116-1.782%200-1.404-.99-1.783-1.747-1.783-1.62%200-1.854%201.225-1.944%202.07v.02H5.535c0-3.134%202.36-4.214%204.32-4.214%201.082%200%204.61.306%204.61%203.835%200%201.46-.79%202.324-2.178%203.314-.774.558-1.1.9-1.1%202.197H8.813zm2.557%203.745H8.74v-2.54h2.63v2.54z%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  width: 13px;
+  height: 13px;
+}
+.fueluxicon-question-mark:hover:before,
+.fuel-help:hover:before,
+.fueluxicon-question-mark:focus:before,
+.fuel-help:focus:before {
+  content: "";
+}
 .fuelux-icon-add-hover,
 .fuelux-icon-add:hover,
 button:hover > .fuelux-icon-add,
 .glyphicon-add-hover,
 .glyphicon-add:hover,
 button:hover > .glyphicon-add {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3ClinearGradient%20id%3D%22a%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%229.999%22%20x2%3D%229.999%22%20y2%3D%2220%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23A0C7E7%22%2F%3E%3Cstop%20offset%3D%22.9%22%20stop-color%3D%22%23448CCA%22%2F%3E%3C%2FlinearGradient%3E%3Cpath%20d%3D%22M0%2017c0%201.65%201.35%203%203%203h14c1.65%200%203-1.35%203-3V3c0-1.65-1.35-3-3-3H3C1.35%200%200%201.35%200%203v14z%22%20fill%3D%22url%28%23a%29%22%2F%3E%3Cg%20opacity%3D%22.7%22%3E%3ClinearGradient%20id%3D%22b%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%2210.001%22%20y1%3D%2220%22%20x2%3D%2210.001%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23A0C7E7%22%2F%3E%3Cstop%20offset%3D%22.9%22%20stop-color%3D%22%23448CCA%22%2F%3E%3C%2FlinearGradient%3E%3Cpath%20d%3D%22M17%202c.542%200%201%20.458%201%201v14c0%20.542-.458%201-1%201H3c-.542%200-1-.458-1-1V3c0-.542.458-1%201-1h14m0-2H3C1.35%200%200%201.35%200%203v14c0%201.65%201.35%203%203%203h14c1.65%200%203-1.35%203-3V3c0-1.65-1.35-3-3-3z%22%20fill%3D%22url%28%23b%29%22%2F%3E%3C%2Fg%3E%3Cpath%20d%3D%22M17%201c1.103%200%202%20.897%202%202v14c0%201.103-.897%202-2%202H3c-1.103%200-2-.897-2-2V3c0-1.103.897-2%202-2h14m0-1H3C1.35%200%200%201.35%200%203v14c0%201.65%201.35%203%203%203h14c1.65%200%203-1.35%203-3V3c0-1.65-1.35-3-3-3z%22%20fill%3D%22%2345494D%22%20opacity%3D%22.7%22%2F%3E%3Cpath%20d%3D%22M16.24%208.86H11.3V3.92c0-.144-.117-.26-.26-.26H8.96c-.143%200-.26.116-.26.26v4.94H3.76c-.144%200-.26.118-.26.26v2.08c0%20.143.116.26.26.26H8.7v4.94c0%20.144.118.26.26.26h2.08c.143%200%20.26-.116.26-.26v-4.94h4.94c.144%200%20.26-.117.26-.26V9.12c0-.142-.116-.26-.26-.26z%22%20fill%3D%22%23FFF%22%2F%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cg%3E%3ClinearGradient%20id%3D%22a%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%229.999%22%20x2%3D%229.999%22%20y2%3D%2220%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23A0C7E7%22%2F%3E%3Cstop%20offset%3D%22.9%22%20stop-color%3D%22%23448CCA%22%2F%3E%3C%2FlinearGradient%3E%3Cpath%20d%3D%22M0%2017c0%201.65%201.35%203%203%203h14c1.65%200%203-1.35%203-3V3c0-1.65-1.35-3-3-3H3C1.35%200%200%201.35%200%203v14z%22%20fill%3D%22url%28%23a%29%22%2F%3E%3Cg%20opacity%3D%22.7%22%3E%3ClinearGradient%20id%3D%22b%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%2210.001%22%20y1%3D%2220%22%20x2%3D%2210.001%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23A0C7E7%22%2F%3E%3Cstop%20offset%3D%22.9%22%20stop-color%3D%22%23448CCA%22%2F%3E%3C%2FlinearGradient%3E%3Cpath%20d%3D%22M17%202c.542%200%201%20.458%201%201v14c0%20.542-.458%201-1%201H3c-.542%200-1-.458-1-1V3c0-.542.458-1%201-1h14m0-2H3C1.35%200%200%201.35%200%203v14c0%201.65%201.35%203%203%203h14c1.65%200%203-1.35%203-3V3c0-1.65-1.35-3-3-3z%22%20fill%3D%22url%28%23b%29%22%2F%3E%3C%2Fg%3E%3Cpath%20d%3D%22M17%201c1.103%200%202%20.897%202%202v14c0%201.103-.897%202-2%202H3c-1.103%200-2-.897-2-2V3c0-1.103.897-2%202-2h14m0-1H3C1.35%200%200%201.35%200%203v14c0%201.65%201.35%203%203%203h14c1.65%200%203-1.35%203-3V3c0-1.65-1.35-3-3-3z%22%20fill%3D%22%2345494D%22%20opacity%3D%22.7%22%2F%3E%3C%2Fg%3E%3Cpath%20d%3D%22M16.24%208.86H11.3V3.92c0-.144-.117-.26-.26-.26H8.96c-.143%200-.26.116-.26.26v4.94H3.76c-.144%200-.26.118-.26.26v2.08c0%20.143.116.26.26.26H8.7v4.94c0%20.144.118.26.26.26h2.08c.143%200%20.26-.116.26-.26v-4.94h4.94c.144%200%20.26-.117.26-.26V9.12c0-.142-.116-.26-.26-.26z%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -61,7 +140,7 @@ button:hover > .glyphicon-add:before {
 }
 .fuelux-icon-add,
 .glyphicon-add {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3ClinearGradient%20id%3D%22a%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%229.999%22%20x2%3D%229.999%22%20y2%3D%2220%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23FFF%22%2F%3E%3Cstop%20offset%3D%22.25%22%20stop-color%3D%22%23FBFCFD%22%2F%3E%3Cstop%20offset%3D%22.509%22%20stop-color%3D%22%23EEF4F8%22%2F%3E%3Cstop%20offset%3D%22.771%22%20stop-color%3D%22%23DAE7F0%22%2F%3E%3Cstop%20offset%3D%22.8%22%20stop-color%3D%22%23D7E5EF%22%2F%3E%3C%2FlinearGradient%3E%3Cpath%20d%3D%22M0%2017c0%201.65%201.35%203%203%203h14c1.65%200%203-1.35%203-3V3c0-1.65-1.35-3-3-3H3C1.35%200%200%201.35%200%203v14z%22%20fill%3D%22url%28%23a%29%22%2F%3E%3Cpath%20d%3D%22M17%202c.542%200%201%20.458%201%201v14c0%20.542-.458%201-1%201H3c-.542%200-1-.458-1-1V3c0-.542.458-1%201-1h14m0-2H3C1.35%200%200%201.35%200%203v14c0%201.65%201.35%203%203%203h14c1.65%200%203-1.35%203-3V3c0-1.65-1.35-3-3-3z%22%20fill%3D%22%23FFF%22%20opacity%3D%22.7%22%2F%3E%3Cpath%20d%3D%22M17%201c1.103%200%202%20.897%202%202v14c0%201.103-.897%202-2%202H3c-1.103%200-2-.897-2-2V3c0-1.103.897-2%202-2h14m0-1H3C1.35%200%200%201.35%200%203v14c0%201.65%201.35%203%203%203h14c1.65%200%203-1.35%203-3V3c0-1.65-1.35-3-3-3z%22%20fill%3D%22%2345494D%22%20opacity%3D%22.7%22%2F%3E%3Cpath%20d%3D%22M16.24%208.7H11.3V3.76c0-.143-.117-.26-.26-.26H8.96c-.143%200-.26.117-.26.26V8.7H3.76c-.143%200-.26.118-.26.26v2.08c0%20.143.117.26.26.26H8.7v4.94c0%20.144.118.26.26.26h2.08c.143%200%20.26-.116.26-.26V11.3h4.94c.144%200%20.26-.117.26-.26V8.96c0-.142-.116-.26-.26-.26z%22%20fill%3D%22%23AAA%22%2F%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cg%3E%3ClinearGradient%20id%3D%22a%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%229.999%22%20x2%3D%229.999%22%20y2%3D%2220%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23fff%22%2F%3E%3Cstop%20offset%3D%22.25%22%20stop-color%3D%22%23FBFCFD%22%2F%3E%3Cstop%20offset%3D%22.509%22%20stop-color%3D%22%23EEF4F8%22%2F%3E%3Cstop%20offset%3D%22.771%22%20stop-color%3D%22%23DAE7F0%22%2F%3E%3Cstop%20offset%3D%22.8%22%20stop-color%3D%22%23D7E5EF%22%2F%3E%3C%2FlinearGradient%3E%3Cpath%20d%3D%22M0%2017c0%201.65%201.35%203%203%203h14c1.65%200%203-1.35%203-3V3c0-1.65-1.35-3-3-3H3C1.35%200%200%201.35%200%203v14z%22%20fill%3D%22url%28%23a%29%22%2F%3E%3Cpath%20d%3D%22M17%202c.542%200%201%20.458%201%201v14c0%20.542-.458%201-1%201H3c-.542%200-1-.458-1-1V3c0-.542.458-1%201-1h14m0-2H3C1.35%200%200%201.35%200%203v14c0%201.65%201.35%203%203%203h14c1.65%200%203-1.35%203-3V3c0-1.65-1.35-3-3-3z%22%20fill%3D%22%23fff%22%20opacity%3D%22.7%22%2F%3E%3Cpath%20d%3D%22M17%201c1.103%200%202%20.897%202%202v14c0%201.103-.897%202-2%202H3c-1.103%200-2-.897-2-2V3c0-1.103.897-2%202-2h14m0-1H3C1.35%200%200%201.35%200%203v14c0%201.65%201.35%203%203%203h14c1.65%200%203-1.35%203-3V3c0-1.65-1.35-3-3-3z%22%20fill%3D%22%2345494D%22%20opacity%3D%22.7%22%2F%3E%3C%2Fg%3E%3Cpath%20d%3D%22M16.24%208.7H11.3V3.76c0-.143-.117-.26-.26-.26H8.96c-.143%200-.26.117-.26.26V8.7H3.76c-.143%200-.26.118-.26.26v2.08c0%20.143.117.26.26.26H8.7v4.94c0%20.144.118.26.26.26h2.08c.143%200%20.26-.116.26-.26V11.3h4.94c.144%200%20.26-.117.26-.26V8.96c0-.142-.116-.26-.26-.26z%22%20fill%3D%22%23aaa%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -74,7 +153,7 @@ button:hover > .glyphicon-add:before {
 }
 .fuelux-icon-align-horizontal-center,
 .glyphicon-align-horizontal-center {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2220px%22%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22align-horizontal-center%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_130_%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cg%3E%20%20%20%3Crect%20x%3D%222.5%22%20y%3D%229.424%22%20style%3D%22fill%3A%23989898%3B%22%20width%3D%2215%22%20height%3D%221.152%22%2F%3E%20%20%20%3Cg%3E%20%20%20%20%3Crect%20x%3D%227.692%22%20y%3D%223.076%22%20style%3D%22fill%3A%23F1F1F1%3B%22%20width%3D%224.615%22%20height%3D%2213.848%22%2F%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%23323232%3B%22%20d%3D%22M11.73%2C16.346H8.268V3.654h3.462V16.346%20M12.885%2C17.5v-15h-5.77v15H12.885L12.885%2C17.5z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1_1_%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20fill%3D%22%23989898%22%20d%3D%22M2.5%209.424h15v1.152h-15z%22%2F%3E%3Cpath%20fill%3D%22%23F1F1F1%22%20d%3D%22M7.692%203.076h4.615v13.848H7.692z%22%2F%3E%3Cpath%20d%3D%22M11.73%2016.346H8.268V3.654h3.462v12.692m1.155%201.154v-15h-5.77v15h5.77z%22%20fill%3D%22%23323232%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -87,7 +166,7 @@ button:hover > .glyphicon-add:before {
 }
 .fuelux-icon-align-horizontal-left,
 .glyphicon-align-horizontal-left {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2220px%22%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22align-horizontal-left%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_129_%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cg%3E%20%20%20%3Crect%20x%3D%222.5%22%20y%3D%229.424%22%20style%3D%22fill%3A%23989898%3B%22%20width%3D%2215%22%20height%3D%221.152%22%2F%3E%20%20%20%3Cg%3E%20%20%20%20%3Crect%20x%3D%224.23%22%20y%3D%223.076%22%20style%3D%22fill%3A%23F1F1F1%3B%22%20width%3D%224.615%22%20height%3D%2213.848%22%2F%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%23323232%3B%22%20d%3D%22M8.269%2C3.654v12.69H4.808V3.654H8.269%20M9.423%2C2.5h-5.77v15h5.77V2.5L9.423%2C2.5z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1_1_%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20fill%3D%22%23989898%22%20d%3D%22M2.5%209.424h15v1.152h-15z%22%2F%3E%3Cpath%20fill%3D%22%23F1F1F1%22%20d%3D%22M4.23%203.076h4.615v13.848H4.23z%22%2F%3E%3Cpath%20d%3D%22M8.27%203.654v12.69H4.807V3.654h3.46M9.424%202.5h-5.77v15h5.77v-15z%22%20fill%3D%22%23323232%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -100,7 +179,7 @@ button:hover > .glyphicon-add:before {
 }
 .fuelux-icon-align-horizontal-right,
 .glyphicon-align-horizontal-right {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2220px%22%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22align-horizontal-right%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_132_%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cg%3E%20%20%20%3Crect%20x%3D%222.5%22%20y%3D%229.424%22%20style%3D%22fill%3A%23989898%3B%22%20width%3D%2215%22%20height%3D%221.152%22%2F%3E%20%20%20%3Cg%3E%20%20%20%20%3Crect%20x%3D%2211.152%22%20y%3D%223.076%22%20style%3D%22fill%3A%23F1F1F1%3B%22%20width%3D%224.615%22%20height%3D%2213.848%22%2F%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%23323232%3B%22%20d%3D%22M15.191%2C3.654v12.69H11.73V3.654H15.191%20M16.346%2C2.5h-5.77v15h5.77V2.5L16.346%2C2.5z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1_1_%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20fill%3D%22%23989898%22%20d%3D%22M2.5%209.424h15v1.152h-15z%22%2F%3E%3Cpath%20fill%3D%22%23F1F1F1%22%20d%3D%22M11.152%203.076h4.615v13.848h-4.615z%22%2F%3E%3Cpath%20d%3D%22M15.19%203.654v12.69h-3.46V3.654h3.46M16.347%202.5h-5.77v15h5.77v-15z%22%20fill%3D%22%23323232%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -117,7 +196,7 @@ button:hover > .fuelux-icon-arrow-east,
 .glyphicon-arrow-east-hover,
 .glyphicon-arrow-east:hover,
 button:hover > .glyphicon-arrow-east {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20fill%3D%22%234E8ABE%22%20d%3D%22M20%2010l-9.107-7.658v4.842H0v5.634h10.893v4.84%22%2F%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20fill%3D%22%234E8ABE%22%20d%3D%22M20%2010l-9.107-7.658v4.842H0v5.634h10.893v4.84z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -134,7 +213,7 @@ button:hover > .glyphicon-arrow-east:before {
 }
 .fuelux-icon-arrow-east,
 .glyphicon-arrow-east {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20fill%3D%22%23CCC%22%20d%3D%22M20%2010l-9.107-7.658v4.842H0v5.634h10.893v4.84%22%2F%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20fill%3D%22%23ccc%22%20d%3D%22M20%2010l-9.107-7.658v4.842H0v5.634h10.893v4.84z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -151,7 +230,7 @@ button:hover > .fuelux-icon-arrow-north,
 .glyphicon-arrow-north-hover,
 .glyphicon-arrow-north:hover,
 button:hover > .glyphicon-arrow-north {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20fill%3D%22%234E8ABE%22%20d%3D%22M10%200L2.343%209.107h4.84V20h5.636V9.107h4.84%22%2F%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20fill%3D%22%234E8ABE%22%20d%3D%22M10%200L2.343%209.107h4.84V20h5.636V9.107h4.84z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -168,7 +247,7 @@ button:hover > .glyphicon-arrow-north:before {
 }
 .fuelux-icon-arrow-north,
 .glyphicon-arrow-north {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20fill%3D%22%23CCC%22%20d%3D%22M10%200L2.343%209.107h4.84V20h5.636V9.107h4.84%22%2F%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20fill%3D%22%23ccc%22%20d%3D%22M10%200L2.343%209.107h4.84V20h5.636V9.107h4.84z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -185,7 +264,7 @@ button:hover > .fuelux-icon-arrow-south,
 .glyphicon-arrow-south-hover,
 .glyphicon-arrow-south:hover,
 button:hover > .glyphicon-arrow-south {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20fill%3D%22%234E8ABE%22%20d%3D%22M10%2020l7.658-9.107h-4.842V0H7.18v10.893H2.343%22%2F%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20fill%3D%22%234E8ABE%22%20d%3D%22M10%2020l7.658-9.107h-4.842V0H7.18v10.893H2.343z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -202,7 +281,7 @@ button:hover > .glyphicon-arrow-south:before {
 }
 .fuelux-icon-arrow-south,
 .glyphicon-arrow-south {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20fill%3D%22%23CCC%22%20d%3D%22M10%2020l7.658-9.107h-4.842V0H7.18v10.893H2.343%22%2F%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20fill%3D%22%23ccc%22%20d%3D%22M10%2020l7.658-9.107h-4.842V0H7.18v10.893H2.343z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -219,7 +298,7 @@ button:hover > .fuelux-icon-arrow-west,
 .glyphicon-arrow-west-hover,
 .glyphicon-arrow-west:hover,
 button:hover > .glyphicon-arrow-west {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20fill%3D%22%234E8ABE%22%20d%3D%22M0%2010l9.107%207.658v-4.842H20V7.182H9.107v-4.84%22%2F%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20fill%3D%22%234E8ABE%22%20d%3D%22M0%2010l9.107%207.658v-4.842H20V7.182H9.107v-4.84z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -236,7 +315,7 @@ button:hover > .glyphicon-arrow-west:before {
 }
 .fuelux-icon-arrow-west,
 .glyphicon-arrow-west {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20fill%3D%22%23CCC%22%20d%3D%22M0%2010l9.107%207.658v-4.842H20V7.182H9.107v-4.84%22%2F%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20fill%3D%22%23ccc%22%20d%3D%22M0%2010l9.107%207.658v-4.842H20V7.182H9.107v-4.84z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -249,7 +328,7 @@ button:hover > .glyphicon-arrow-west:before {
 }
 .fuelux-icon-breadcrumb,
 .glyphicon-breadcrumb {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cg%20fill%3D%22%23AAA%22%3E%3Cpath%20d%3D%22M4.314%206.263C4.377%206.14%204.317%206%204.177%206h-1.94c-.138%200-.303.14-.366.263L.048%209.88c-.062.125-.062.335%200%20.458l1.824%203.52c.064.12.23.142.37.142h1.937c.14%200%20.2-.016.138-.14L2.49%2010.308c-.062-.125-.062-.325%200-.445l1.824-3.6zM8%204.75v10.5h12V4.75H8zm3.22%209.432h-2v-2.234h2v2.234zm0-3.065h-2V8.883h2v2.234zm0-3.065h-2V5.818h2v2.234zm7.56%206.13h-6.56v-2.234h6.56v2.234zm0-3.065h-6.56V8.883h6.56v2.234zm0-3.065h-6.56V5.818h6.56v2.234z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cg%20fill%3D%22%23aaa%22%3E%3Cpath%20d%3D%22M4.314%206.263C4.377%206.14%204.317%206%204.177%206h-1.94c-.138%200-.303.14-.366.263L.048%209.88c-.062.125-.062.335%200%20.458l1.824%203.52c.064.12.23.142.37.142h1.937c.14%200%20.2-.016.138-.14L2.49%2010.308c-.062-.125-.062-.325%200-.445l1.824-3.6zM8%204.75v10.5h12V4.75H8zm3.22%209.432h-2v-2.234h2v2.234zm0-3.065h-2V8.883h2v2.234zm0-3.065h-2V5.818h2v2.234zm7.56%206.13h-6.56v-2.234h6.56v2.234zm0-3.065h-6.56V8.883h6.56v2.234zm0-3.065h-6.56V5.818h6.56v2.234z%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -266,7 +345,7 @@ button:hover > .fuelux-icon-calendar,
 .glyphicon-calendar-hover,
 .glyphicon-calendar:hover,
 button:hover > .glyphicon-calendar {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3ClinearGradient%20id%3D%22a%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%229.999%22%20x2%3D%229.999%22%20y2%3D%2219%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%2372B9F7%22%2F%3E%3Cstop%20offset%3D%22.271%22%20stop-color%3D%22%23378DD7%22%2F%3E%3Cstop%20offset%3D%22.829%22%20stop-color%3D%22%23378DD7%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23336B9A%22%2F%3E%3C%2FlinearGradient%3E%3Cpath%20d%3D%22M0%2017c0%201.1.9%202%202%202h16c1.1%200%202-.9%202-2V2c0-1.1-.9-2-2-2H2C.9%200%200%20.9%200%202v15z%22%20fill%3D%22url%28%23a%29%22%2F%3E%3Cpath%20d%3D%22M17.5%205.346H1.25v10.75c0%20.688.562%201.25%201.25%201.25h15c.688%200%201.25-.562%201.25-1.25V5.346H17.5z%22%20fill%3D%22%23FFF%22%2F%3E%3Cpath%20d%3D%22M17.08%2015.21c0%20.274-.225.5-.5.5H3.42c-.275%200-.5-.226-.5-.5V7.133c0-.275.225-.5.5-.5h13.16c.275%200%20.5.225.5.5v8.075z%22%20fill%3D%22%23C2DCF2%22%2F%3E%3Cpath%20d%3D%22M4.04%209.19c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1zM6.64%209.19c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1zM9.24%209.19c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1zM11.84%209.19c0%20.138.112.25.25.25h1c.138%200%20.25-.112.25-.25v-1c0-.138-.112-.25-.25-.25h-1c-.138%200-.25.112-.25.25v1zM14.44%209.19c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1zM4.04%2011.69c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1z%22%20fill%3D%22%23FFF%22%2F%3E%3Cpath%20d%3D%22M6.64%2011.69c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1z%22%20fill%3D%22none%22%20stroke%3D%22%23378DD7%22%20stroke-width%3D%22.5%22%20stroke-miterlimit%3D%2210%22%2F%3E%3Cpath%20d%3D%22M6.64%2011.69c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1z%22%20fill%3D%22%23378DD7%22%2F%3E%3Cpath%20d%3D%22M9.24%2011.69c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1zM11.84%2011.69c0%20.138.112.25.25.25h1c.138%200%20.25-.112.25-.25v-1c0-.138-.112-.25-.25-.25h-1c-.138%200-.25.112-.25.25v1zM14.44%2011.69c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1zM4.04%2014.19c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1zM6.64%2014.19c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1zM9.24%2014.19c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1z%22%20fill%3D%22%23FFF%22%2F%3E%3Cg%3E%3Cpath%20d%3D%22M11.84%2014.19c0%20.138.112.25.25.25h1c.138%200%20.25-.112.25-.25v-1c0-.138-.112-.25-.25-.25h-1c-.138%200-.25.112-.25.25v1z%22%20fill%3D%22%23FFF%22%2F%3E%3C%2Fg%3E%3Cg%3E%3Cpath%20d%3D%22M14.44%2014.19c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1z%22%20fill%3D%22%23FFF%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3ClinearGradient%20id%3D%22a%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%229.999%22%20x2%3D%229.999%22%20y2%3D%2219%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%2372B9F7%22%2F%3E%3Cstop%20offset%3D%22.271%22%20stop-color%3D%22%23378DD7%22%2F%3E%3Cstop%20offset%3D%22.829%22%20stop-color%3D%22%23378DD7%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23336B9A%22%2F%3E%3C%2FlinearGradient%3E%3Cpath%20d%3D%22M0%2017c0%201.1.9%202%202%202h16c1.1%200%202-.9%202-2V2c0-1.1-.9-2-2-2H2C.9%200%200%20.9%200%202v15z%22%20fill%3D%22url%28%23a%29%22%2F%3E%3Cpath%20d%3D%22M17.5%205.346H1.25v10.75c0%20.688.562%201.25%201.25%201.25h15c.688%200%201.25-.562%201.25-1.25V5.346H17.5z%22%20fill%3D%22%23fff%22%2F%3E%3Cpath%20d%3D%22M17.08%2015.21c0%20.274-.225.5-.5.5H3.42c-.275%200-.5-.226-.5-.5V7.133c0-.275.225-.5.5-.5h13.16c.275%200%20.5.225.5.5v8.075z%22%20fill%3D%22%23C2DCF2%22%2F%3E%3Cpath%20d%3D%22M4.04%209.19c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1zM6.64%209.19c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1zM9.24%209.19c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1zM11.84%209.19c0%20.138.112.25.25.25h1c.138%200%20.25-.112.25-.25v-1c0-.138-.112-.25-.25-.25h-1c-.138%200-.25.112-.25.25v1zM14.44%209.19c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1zM4.04%2011.69c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1z%22%20fill%3D%22%23fff%22%2F%3E%3Cpath%20d%3D%22M6.64%2011.69c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1z%22%20stroke%3D%22%23378DD7%22%20stroke-width%3D%22.5%22%20stroke-miterlimit%3D%2210%22%20fill%3D%22none%22%2F%3E%3Cpath%20d%3D%22M6.64%2011.69c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1z%22%20fill%3D%22%23378DD7%22%2F%3E%3Cpath%20d%3D%22M9.24%2011.69c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1zM11.84%2011.69c0%20.138.112.25.25.25h1c.138%200%20.25-.112.25-.25v-1c0-.138-.112-.25-.25-.25h-1c-.138%200-.25.112-.25.25v1zM14.44%2011.69c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1zM4.04%2014.19c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1zM6.64%2014.19c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1zM9.24%2014.19c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1zM11.84%2014.19c0%20.138.112.25.25.25h1c.138%200%20.25-.112.25-.25v-1c0-.138-.112-.25-.25-.25h-1c-.138%200-.25.112-.25.25v1zM14.44%2014.19c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1z%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -283,7 +362,7 @@ button:hover > .glyphicon-calendar:before {
 }
 .fuelux-icon-calendar,
 .glyphicon-calendar {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3ClinearGradient%20id%3D%22a%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%229.999%22%20x2%3D%229.999%22%20y2%3D%2219%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%2372B9F7%22%2F%3E%3Cstop%20offset%3D%22.27%22%20stop-color%3D%22%23448CCA%22%2F%3E%3Cstop%20offset%3D%22.27%22%20stop-color%3D%22%23336B9A%22%2F%3E%3Cstop%20offset%3D%22.273%22%20stop-color%3D%22%23356C9B%22%2F%3E%3Cstop%20offset%3D%22.275%22%20stop-color%3D%22%233D719C%22%2F%3E%3Cstop%20offset%3D%22.276%22%20stop-color%3D%22%234B799F%22%2F%3E%3Cstop%20offset%3D%22.277%22%20stop-color%3D%22%235E84A3%22%2F%3E%3Cstop%20offset%3D%22.278%22%20stop-color%3D%22%237792A9%22%2F%3E%3Cstop%20offset%3D%22.279%22%20stop-color%3D%22%2395A3B0%22%2F%3E%3Cstop%20offset%3D%22.28%22%20stop-color%3D%22%23B6B6B7%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23B6B6B7%22%2F%3E%3C%2FlinearGradient%3E%3Cpath%20d%3D%22M0%2017c0%201.1.9%202%202%202h16c1.1%200%202-.9%202-2V2c0-1.1-.9-2-2-2H2C.9%200%200%20.9%200%202v15z%22%20fill%3D%22url%28%23a%29%22%2F%3E%3Cpath%20d%3D%22M17.5%205.346H1.25v10.75c0%20.688.562%201.25%201.25%201.25h15c.688%200%201.25-.562%201.25-1.25V5.346H17.5z%22%20fill%3D%22%23FFF%22%2F%3E%3Cpath%20d%3D%22M17.08%2015.21c0%20.274-.225.5-.5.5H3.42c-.275%200-.5-.226-.5-.5V7.133c0-.275.225-.5.5-.5h13.16c.275%200%20.5.225.5.5v8.075z%22%20fill%3D%22%23BBBDBF%22%2F%3E%3Cpath%20d%3D%22M4.04%209.19c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1zM6.64%209.19c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1zM9.24%209.19c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1zM11.84%209.19c0%20.138.112.25.25.25h1c.138%200%20.25-.112.25-.25v-1c0-.138-.112-.25-.25-.25h-1c-.138%200-.25.112-.25.25v1zM14.44%209.19c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1zM4.04%2011.69c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1z%22%20fill%3D%22%23FFF%22%2F%3E%3Cpath%20d%3D%22M6.64%2011.69c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1z%22%20fill%3D%22none%22%20stroke%3D%22%23448CCA%22%20stroke-width%3D%22.5%22%20stroke-miterlimit%3D%2210%22%2F%3E%3Cpath%20d%3D%22M6.64%2011.69c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1z%22%20fill%3D%22%23448CCA%22%2F%3E%3Cpath%20d%3D%22M9.24%2011.69c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1zM11.84%2011.69c0%20.138.112.25.25.25h1c.138%200%20.25-.112.25-.25v-1c0-.138-.112-.25-.25-.25h-1c-.138%200-.25.112-.25.25v1zM14.44%2011.69c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1zM4.04%2014.19c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1zM6.64%2014.19c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1zM9.24%2014.19c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1z%22%20fill%3D%22%23FFF%22%2F%3E%3Cg%3E%3Cpath%20d%3D%22M11.84%2014.19c0%20.138.112.25.25.25h1c.138%200%20.25-.112.25-.25v-1c0-.138-.112-.25-.25-.25h-1c-.138%200-.25.112-.25.25v1z%22%20fill%3D%22%23FFF%22%2F%3E%3C%2Fg%3E%3Cg%3E%3Cpath%20d%3D%22M14.44%2014.19c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1z%22%20fill%3D%22%23FFF%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3ClinearGradient%20id%3D%22a%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%229.999%22%20x2%3D%229.999%22%20y2%3D%2219%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%2372B9F7%22%2F%3E%3Cstop%20offset%3D%22.27%22%20stop-color%3D%22%23448CCA%22%2F%3E%3Cstop%20offset%3D%22.27%22%20stop-color%3D%22%23336B9A%22%2F%3E%3Cstop%20offset%3D%22.273%22%20stop-color%3D%22%23356C9B%22%2F%3E%3Cstop%20offset%3D%22.275%22%20stop-color%3D%22%233D719C%22%2F%3E%3Cstop%20offset%3D%22.276%22%20stop-color%3D%22%234B799F%22%2F%3E%3Cstop%20offset%3D%22.277%22%20stop-color%3D%22%235E84A3%22%2F%3E%3Cstop%20offset%3D%22.278%22%20stop-color%3D%22%237792A9%22%2F%3E%3Cstop%20offset%3D%22.279%22%20stop-color%3D%22%2395A3B0%22%2F%3E%3Cstop%20offset%3D%22.28%22%20stop-color%3D%22%23B6B6B7%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23B6B6B7%22%2F%3E%3C%2FlinearGradient%3E%3Cpath%20d%3D%22M0%2017c0%201.1.9%202%202%202h16c1.1%200%202-.9%202-2V2c0-1.1-.9-2-2-2H2C.9%200%200%20.9%200%202v15z%22%20fill%3D%22url%28%23a%29%22%2F%3E%3Cpath%20d%3D%22M17.5%205.346H1.25v10.75c0%20.688.562%201.25%201.25%201.25h15c.688%200%201.25-.562%201.25-1.25V5.346H17.5z%22%20fill%3D%22%23fff%22%2F%3E%3Cpath%20d%3D%22M17.08%2015.21c0%20.274-.225.5-.5.5H3.42c-.275%200-.5-.226-.5-.5V7.133c0-.275.225-.5.5-.5h13.16c.275%200%20.5.225.5.5v8.075z%22%20fill%3D%22%23BBBDBF%22%2F%3E%3Cpath%20d%3D%22M4.04%209.19c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1zM6.64%209.19c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1zM9.24%209.19c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1zM11.84%209.19c0%20.138.112.25.25.25h1c.138%200%20.25-.112.25-.25v-1c0-.138-.112-.25-.25-.25h-1c-.138%200-.25.112-.25.25v1zM14.44%209.19c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1zM4.04%2011.69c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1z%22%20fill%3D%22%23fff%22%2F%3E%3Cpath%20d%3D%22M6.64%2011.69c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1z%22%20stroke%3D%22%23448CCA%22%20stroke-width%3D%22.5%22%20stroke-miterlimit%3D%2210%22%20fill%3D%22none%22%2F%3E%3Cpath%20d%3D%22M6.64%2011.69c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1z%22%20fill%3D%22%23448CCA%22%2F%3E%3Cpath%20d%3D%22M9.24%2011.69c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1zM11.84%2011.69c0%20.138.112.25.25.25h1c.138%200%20.25-.112.25-.25v-1c0-.138-.112-.25-.25-.25h-1c-.138%200-.25.112-.25.25v1zM14.44%2011.69c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1zM4.04%2014.19c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1zM6.64%2014.19c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1zM9.24%2014.19c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1zM11.84%2014.19c0%20.138.112.25.25.25h1c.138%200%20.25-.112.25-.25v-1c0-.138-.112-.25-.25-.25h-1c-.138%200-.25.112-.25.25v1zM14.44%2014.19c0%20.138.11.25.25.25h1c.137%200%20.25-.112.25-.25v-1c0-.138-.113-.25-.25-.25h-1c-.14%200-.25.112-.25.25v1z%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -738,9 +817,30 @@ button:hover > .glyphicon-checkbox-indeterminate:before {
 .glyphicon-checked-indicator:before {
   content: "";
 }
+.fuelux-icon-chevron-down-hover,
+.fuelux-icon-chevron-down:hover,
+button:hover > .fuelux-icon-chevron-down,
+.glyphicon-chevron-down-hover,
+.glyphicon-chevron-down:hover,
+button:hover > .glyphicon-chevron-down {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2019.999%2020%22%20enable-background%3D%22new%200%200%2019.999%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20d%3D%22M10.532%208.402c-.29.3-.773.3-1.066%200L4.35%203.18c-.294-.303-.776-.303-1.075%200L.22%206.3c-.293.302-.293.792%200%201.095l5.117%205.22c.293.296.78.79%201.07%201.093l3.06%203.115c.292.297.774.297%201.065%200l3.057-3.115c.294-.303.776-.797%201.073-1.094l5.113-5.22c.297-.302.297-.792%200-1.095l-3.054-3.12c-.295-.303-.777-.303-1.072%200l-5.118%205.222z%22%20fill%3D%22%234E8ABE%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+.fuelux-icon-chevron-down-hover:before,
+.fuelux-icon-chevron-down:hover:before,
+button:hover > .fuelux-icon-chevron-down:before,
+.glyphicon-chevron-down-hover:before,
+.glyphicon-chevron-down:hover:before,
+button:hover > .glyphicon-chevron-down:before {
+  content: "";
+}
 .fuelux-icon-chevron-down,
 .glyphicon-chevron-down {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2219.999%22%20height%3D%2220%22%20viewBox%3D%220%200%2019.999%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20d%3D%22M10.532%208.402c-.29.3-.773.3-1.066%200L4.35%203.18c-.294-.303-.776-.303-1.075%200L.22%206.3c-.293.302-.293.792%200%201.095l5.117%205.22c.293.296.78.79%201.07%201.093l3.06%203.115c.292.297.774.297%201.065%200l3.057-3.115c.294-.303.776-.797%201.073-1.094l5.113-5.22c.297-.302.297-.792%200-1.095l-3.054-3.12c-.295-.303-.777-.303-1.072%200l-5.118%205.222z%22%20fill%3D%22%234E8ABE%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2019.999%2020%22%20enable-background%3D%22new%200%200%2019.999%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20d%3D%22M10.532%208.402c-.29.3-.773.3-1.066%200L4.35%203.18c-.294-.303-.776-.303-1.075%200L.22%206.3c-.293.302-.293.792%200%201.095l5.117%205.22c.293.296.78.79%201.07%201.093l3.06%203.115c.292.297.774.297%201.065%200l3.057-3.115c.294-.303.776-.797%201.073-1.094l5.113-5.22c.297-.302.297-.792%200-1.095l-3.054-3.12c-.295-.303-.777-.303-1.072%200l-5.118%205.222z%22%20fill%3D%22%23ccc%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -757,7 +857,7 @@ button:hover > .fuelux-icon-chevron-left,
 .glyphicon-chevron-left-hover,
 .glyphicon-chevron-left:hover,
 button:hover > .glyphicon-chevron-left {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220.001%22%20viewBox%3D%220%200%2020%2020.001%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20d%3D%22M11.6%209.463c-.3.295-.3.78%200%201.072l5.223%205.117c.3.293.3.777%200%201.07l-3.12%203.057c-.3.294-.792.294-1.093%200l-5.22-5.116-1.092-1.07-3.115-3.06c-.303-.292-.303-.776%200-1.07l3.115-3.056c.3-.295.79-.78%201.092-1.072L12.61.22c.3-.292.792-.292%201.093%200l3.12%203.058c.298.293.298.777%200%201.07L11.6%209.463z%22%20fill%3D%22%234E8ABE%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2020%2020%22%20enable-background%3D%22new%200%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20d%3D%22M11.6%209.463c-.3.295-.3.78%200%201.072l5.222%205.117c.3.293.3.777%200%201.07l-3.12%203.057c-.3.294-.792.294-1.093%200l-5.22-5.116-1.092-1.07-3.115-3.06c-.303-.292-.303-.776%200-1.07l3.115-3.056c.3-.295.79-.78%201.092-1.072L12.61.22c.3-.292.792-.292%201.093%200l3.12%203.058c.298.293.298.777%200%201.07l-5.224%205.115z%22%20fill%3D%22%234E8ABE%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -774,7 +874,7 @@ button:hover > .glyphicon-chevron-left:before {
 }
 .fuelux-icon-chevron-left,
 .glyphicon-chevron-left {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220.001%22%20viewBox%3D%220%200%2020%2020.001%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20d%3D%22M11.6%209.463c-.3.295-.3.78%200%201.072l5.223%205.117c.3.293.3.777%200%201.07l-3.12%203.057c-.3.294-.792.294-1.093%200l-5.22-5.116-1.092-1.07-3.115-3.06c-.303-.292-.303-.776%200-1.07l3.115-3.056c.3-.295.79-.78%201.092-1.072L12.61.22c.3-.292.792-.292%201.093%200l3.12%203.058c.298.293.298.777%200%201.07L11.6%209.463z%22%20opacity%3D%22.8%22%20fill%3D%22%23aaa%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2020%2020%22%20enable-background%3D%22new%200%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20d%3D%22M11.6%209.463c-.3.295-.3.78%200%201.072l5.222%205.117c.3.293.3.777%200%201.07l-3.12%203.057c-.3.294-.792.294-1.093%200l-5.22-5.116-1.092-1.07-3.115-3.06c-.303-.292-.303-.776%200-1.07l3.115-3.056c.3-.295.79-.78%201.092-1.072L12.61.22c.3-.292.792-.292%201.093%200l3.12%203.058c.298.293.298.777%200%201.07l-5.224%205.115z%22%20fill%3D%22%23ccc%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -791,7 +891,7 @@ button:hover > .fuelux-icon-chevron-right,
 .glyphicon-chevron-right-hover,
 .glyphicon-chevron-right:hover,
 button:hover > .glyphicon-chevron-right {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220.001%22%20viewBox%3D%220%200%2020%2020.001%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20d%3D%22M8.404%209.463c.297.295.297.78%200%201.072L3.18%2015.652c-.3.293-.3.777%200%201.07L6.3%2019.78c.3.294.792.294%201.093%200l5.22-5.116c.296-.295.792-.777%201.09-1.07l3.116-3.06c.3-.292.3-.776%200-1.07L13.7%206.407c-.297-.295-.793-.78-1.09-1.072L7.392.22C7.093-.07%206.6-.07%206.3.22L3.18%203.278c-.3.293-.3.777%200%201.07l5.224%205.116z%22%20fill%3D%22%234E8ABE%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2020%2020%22%20enable-background%3D%22new%200%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20d%3D%22M8.404%209.463c.297.295.297.78%200%201.072L3.18%2015.652c-.3.293-.3.777%200%201.07L6.3%2019.78c.3.294.792.294%201.093%200l5.22-5.116c.296-.295.792-.777%201.09-1.07l3.116-3.06c.3-.292.3-.776%200-1.07L13.7%206.407c-.297-.295-.793-.78-1.09-1.072L7.392.22C7.093-.07%206.6-.07%206.3.22L3.18%203.278c-.3.293-.3.777%200%201.07l5.224%205.116z%22%20fill%3D%22%234E8ABE%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -808,7 +908,7 @@ button:hover > .glyphicon-chevron-right:before {
 }
 .fuelux-icon-chevron-right,
 .glyphicon-chevron-right {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220.001%22%20viewBox%3D%220%200%2020%2020.001%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20d%3D%22M8.404%209.463c.297.295.297.78%200%201.072L3.18%2015.652c-.3.293-.3.777%200%201.07L6.3%2019.78c.3.294.792.294%201.093%200l5.22-5.116c.296-.295.792-.777%201.09-1.07l3.116-3.06c.3-.292.3-.776%200-1.07L13.7%206.407c-.297-.295-.793-.78-1.09-1.072L7.392.22C7.093-.07%206.6-.07%206.3.22L3.18%203.278c-.3.293-.3.777%200%201.07l5.224%205.116z%22%20opacity%3D%22.8%22%20fill%3D%22%23aaa%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2020%2020%22%20enable-background%3D%22new%200%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20d%3D%22M8.404%209.463c.297.295.297.78%200%201.072L3.18%2015.652c-.3.293-.3.777%200%201.07L6.3%2019.78c.3.294.792.294%201.093%200l5.22-5.116c.296-.295.792-.777%201.09-1.07l3.116-3.06c.3-.292.3-.776%200-1.07L13.7%206.407c-.297-.295-.793-.78-1.09-1.072L7.392.22C7.093-.07%206.6-.07%206.3.22L3.18%203.278c-.3.293-.3.777%200%201.07l5.224%205.116z%22%20fill%3D%22%23ccc%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -819,9 +919,166 @@ button:hover > .glyphicon-chevron-right:before {
 .glyphicon-chevron-right:before {
   content: "";
 }
+.fuelux-icon-chevron-thin-down-hover,
+.fuelux-icon-chevron-thin-down:hover,
+button:hover > .fuelux-icon-chevron-thin-down,
+.glyphicon-chevron-thin-down-hover,
+.glyphicon-chevron-thin-down:hover,
+button:hover > .glyphicon-chevron-thin-down {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2020%2020%22%20enable-background%3D%22new%200%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20d%3D%22M19.844%205.762c.212.208.206.552-.005.76l-9.473%209.367c-.215.212-.566.208-.777%200L.164%206.523c-.214-.213-.22-.558-.014-.772l1.58-1.635c.206-.214.553-.21.754-.01l7.114%207.035c.21.207.557.198.755%200l7.04-7.036c.207-.207.552-.202.76%200l1.69%201.656z%22%20fill%3D%22%234E8ABE%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+.fuelux-icon-chevron-thin-down-hover:before,
+.fuelux-icon-chevron-thin-down:hover:before,
+button:hover > .fuelux-icon-chevron-thin-down:before,
+.glyphicon-chevron-thin-down-hover:before,
+.glyphicon-chevron-thin-down:hover:before,
+button:hover > .glyphicon-chevron-thin-down:before {
+  content: "";
+}
+.fuelux-icon-chevron-thin-down,
+.glyphicon-chevron-thin-down {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2020%2020%22%20enable-background%3D%22new%200%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20d%3D%22M19.844%205.762c.212.208.206.552-.005.76l-9.473%209.367c-.215.212-.566.208-.777%200L.164%206.523c-.214-.213-.22-.558-.014-.772l1.58-1.635c.206-.214.553-.21.754-.01l7.114%207.035c.21.207.557.198.755%200l7.04-7.036c.207-.207.552-.202.76%200l1.69%201.656z%22%20fill%3D%22%23ccc%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+.fuelux-icon-chevron-thin-down:before,
+.glyphicon-chevron-thin-down:before {
+  content: "";
+}
+.fuelux-icon-chevron-thin-left-hover,
+.fuelux-icon-chevron-thin-left:hover,
+button:hover > .fuelux-icon-chevron-thin-left,
+.glyphicon-chevron-thin-left-hover,
+.glyphicon-chevron-thin-left:hover,
+button:hover > .glyphicon-chevron-thin-left {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2020%2020%22%20enable-background%3D%22new%200%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20d%3D%22M15.893%201.848c.203.207.208.553%200%20.76L8.86%209.648c-.198.197-.208.545%200%20.754l7.036%207.114c.198.2.202.547-.01.754l-1.636%201.58c-.214.205-.56.2-.772-.015L4.11%2010.41c-.21-.21-.213-.562%200-.777L13.476.16c.21-.21.554-.216.76-.004l1.657%201.692z%22%20fill%3D%22%234E8ABE%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+.fuelux-icon-chevron-thin-left-hover:before,
+.fuelux-icon-chevron-thin-left:hover:before,
+button:hover > .fuelux-icon-chevron-thin-left:before,
+.glyphicon-chevron-thin-left-hover:before,
+.glyphicon-chevron-thin-left:hover:before,
+button:hover > .glyphicon-chevron-thin-left:before {
+  content: "";
+}
+.fuelux-icon-chevron-thin-left,
+.glyphicon-chevron-thin-left {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2020%2020%22%20enable-background%3D%22new%200%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20d%3D%22M15.893%201.848c.203.207.208.553%200%20.76L8.86%209.648c-.198.197-.208.545%200%20.754l7.036%207.114c.198.2.202.547-.01.754l-1.636%201.58c-.214.205-.56.2-.772-.015L4.11%2010.41c-.21-.21-.213-.562%200-.777L13.476.16c.21-.21.554-.216.76-.004l1.657%201.692z%22%20fill%3D%22%23ccc%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+.fuelux-icon-chevron-thin-left:before,
+.glyphicon-chevron-thin-left:before {
+  content: "";
+}
+.fuelux-icon-chevron-thin-right-hover,
+.fuelux-icon-chevron-thin-right:hover,
+button:hover > .fuelux-icon-chevron-thin-right,
+.glyphicon-chevron-thin-right-hover,
+.glyphicon-chevron-thin-right:hover,
+button:hover > .glyphicon-chevron-thin-right {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2020%2020%22%20enable-background%3D%22new%200%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20d%3D%22M5.762.156c.208-.212.552-.206.76.005l9.367%209.473c.212.215.208.566%200%20.777l-9.367%209.426c-.213.214-.558.22-.772.014l-1.633-1.58c-.214-.206-.21-.553-.01-.754l7.035-7.114c.207-.21.198-.557%200-.755l-7.037-7.04c-.207-.207-.202-.552%200-.76L5.763.158z%22%20fill%3D%22%234E8ABE%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+.fuelux-icon-chevron-thin-right-hover:before,
+.fuelux-icon-chevron-thin-right:hover:before,
+button:hover > .fuelux-icon-chevron-thin-right:before,
+.glyphicon-chevron-thin-right-hover:before,
+.glyphicon-chevron-thin-right:hover:before,
+button:hover > .glyphicon-chevron-thin-right:before {
+  content: "";
+}
+.fuelux-icon-chevron-thin-right,
+.glyphicon-chevron-thin-right {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2020%2020%22%20enable-background%3D%22new%200%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20d%3D%22M5.762.156c.208-.212.552-.206.76.005l9.367%209.473c.212.215.208.566%200%20.777l-9.367%209.426c-.213.214-.558.22-.772.014l-1.633-1.58c-.214-.206-.21-.553-.01-.754l7.035-7.114c.207-.21.198-.557%200-.755l-7.037-7.04c-.207-.207-.202-.552%200-.76L5.763.158z%22%20fill%3D%22%23ccc%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+.fuelux-icon-chevron-thin-right:before,
+.glyphicon-chevron-thin-right:before {
+  content: "";
+}
+.fuelux-icon-chevron-thin-up-hover,
+.fuelux-icon-chevron-thin-up:hover,
+button:hover > .fuelux-icon-chevron-thin-up,
+.glyphicon-chevron-thin-up-hover,
+.glyphicon-chevron-thin-up:hover,
+button:hover > .glyphicon-chevron-thin-up {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2020%2020%22%20enable-background%3D%22new%200%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20d%3D%22M18.152%2015.894c-.207.203-.553.208-.76%200l-7.04-7.035c-.197-.2-.545-.208-.754%200l-7.114%207.035c-.2.198-.547.202-.754-.01L.15%2014.248c-.206-.215-.2-.56.015-.773L9.59%204.11c.21-.21.562-.213.777%200l9.472%209.366c.21.21.216.554.004.76l-1.692%201.658z%22%20fill%3D%22%234E8ABE%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+.fuelux-icon-chevron-thin-up-hover:before,
+.fuelux-icon-chevron-thin-up:hover:before,
+button:hover > .fuelux-icon-chevron-thin-up:before,
+.glyphicon-chevron-thin-up-hover:before,
+.glyphicon-chevron-thin-up:hover:before,
+button:hover > .glyphicon-chevron-thin-up:before {
+  content: "";
+}
+.fuelux-icon-chevron-thin-up,
+.glyphicon-chevron-thin-up {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2020%2020%22%20enable-background%3D%22new%200%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20d%3D%22M18.152%2015.894c-.207.203-.553.208-.76%200l-7.04-7.035c-.197-.2-.545-.208-.754%200l-7.114%207.035c-.2.198-.547.202-.754-.01L.15%2014.248c-.206-.215-.2-.56.015-.773L9.59%204.11c.21-.21.562-.213.777%200l9.472%209.366c.21.21.216.554.004.76l-1.692%201.658z%22%20fill%3D%22%23ccc%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+.fuelux-icon-chevron-thin-up:before,
+.glyphicon-chevron-thin-up:before {
+  content: "";
+}
+.fuelux-icon-chevron-up-hover,
+.fuelux-icon-chevron-up:hover,
+button:hover > .fuelux-icon-chevron-up,
+.glyphicon-chevron-up-hover,
+.glyphicon-chevron-up:hover,
+button:hover > .glyphicon-chevron-up {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2020.001%2020%22%20enable-background%3D%22new%200%200%2020.001%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20d%3D%22M10.535%2011.598c-.293-.3-.775-.3-1.07%200L4.348%2016.82c-.293.305-.777.305-1.07%200L.223%2013.703c-.295-.303-.295-.793%200-1.096l5.117-5.22c.293-.297.777-.793%201.068-1.094l3.057-3.117c.295-.297.777-.297%201.07%200l3.06%203.117c.292.3.776.797%201.07%201.094l5.116%205.22c.294.304.294.794%200%201.097l-3.056%203.117c-.295.306-.775.306-1.07%200l-5.12-5.222z%22%20fill%3D%22%234E8ABE%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+.fuelux-icon-chevron-up-hover:before,
+.fuelux-icon-chevron-up:hover:before,
+button:hover > .fuelux-icon-chevron-up:before,
+.glyphicon-chevron-up-hover:before,
+.glyphicon-chevron-up:hover:before,
+button:hover > .glyphicon-chevron-up:before {
+  content: "";
+}
 .fuelux-icon-chevron-up,
 .glyphicon-chevron-up {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220.001%22%20height%3D%2220%22%20viewBox%3D%220%200%2020.001%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20d%3D%22M10.535%2011.598c-.293-.3-.775-.3-1.07%200L4.348%2016.82c-.293.305-.777.305-1.07%200L.223%2013.703c-.295-.303-.295-.793%200-1.096l5.117-5.22c.293-.297.777-.793%201.068-1.094l3.057-3.117c.295-.297.777-.297%201.07%200l3.06%203.117c.292.3.776.797%201.07%201.094l5.116%205.22c.294.304.294.794%200%201.097l-3.056%203.117c-.295.306-.775.306-1.07%200l-5.12-5.222z%22%20fill%3D%22%234E8ABE%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2020.001%2020%22%20enable-background%3D%22new%200%200%2020.001%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20d%3D%22M10.535%2011.598c-.293-.3-.775-.3-1.07%200L4.348%2016.82c-.293.305-.777.305-1.07%200L.223%2013.703c-.295-.303-.295-.793%200-1.096l5.117-5.22c.293-.297.777-.793%201.068-1.094l3.057-3.117c.295-.297.777-.297%201.07%200l3.06%203.117c.292.3.776.797%201.07%201.094l5.116%205.22c.294.304.294.794%200%201.097l-3.056%203.117c-.295.306-.775.306-1.07%200l-5.12-5.222z%22%20fill%3D%22%23ccc%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -847,7 +1104,7 @@ button:hover > .glyphicon-chevron-right:before {
 }
 .fuelux-icon-content-cloud-upload,
 .glyphicon-content-cloud-upload {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2220px%22%20%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22content-cloud-upload%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_156_%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cg%3E%20%20%20%3Cg%20style%3D%22opacity%3A0.15%3B%22%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%23FFFFFF%3B%22%20d%3D%22M7.587%2C8.9c0%2C0-1.073-1.011-2.528-0.186c-1.304%2C0.789-1.073%2C2.235-1.073%2C2.235%20%20%20%20%20S1.094%2C11.5%2C1.094%2C14.391c0.062%2C2.891%2C3.141%2C2.918%2C3.141%2C2.918h4.621v-2.918H7.374l2.581-2.927l2.58%2C2.927h-1.472v2.918h4.479%20%20%20%20%20c0%2C0%2C2.863%2C0%2C3.263-2.75c0.195-3.006-2.767-3.6-2.767-3.6S16.375%2C6.506%2C12.216%2C6C8.669%2C5.655%2C7.587%2C8.9%2C7.587%2C8.9z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%20%3Cg%3E%20%20%20%20%20%20%20%20%20%3ClinearGradient%20id%3D%22SVGID_1_%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%22-843.019%22%20y1%3D%22576.9141%22%20x2%3D%22-843.019%22%20y2%3D%22577.1104%22%20gradientTransform%3D%22matrix%2857.6%200%200%20-57.6%2048567.8438%2033246.1562%29%22%3E%20%20%20%20%20%3Cstop%20%20offset%3D%220%22%20style%3D%22stop-color%3A%23C2C2C2%22%2F%3E%20%20%20%20%20%3Cstop%20%20offset%3D%221%22%20style%3D%22stop-color%3A%23C7C7C7%22%2F%3E%20%20%20%20%3C%2FlinearGradient%3E%20%20%20%20%3Cpath%20style%3D%22fill%3Aurl%28%23SVGID_1_%29%3B%22%20d%3D%22M7.587%2C7.518c0%2C0-1.073-1.011-2.528-0.187C3.755%2C8.129%2C3.985%2C9.566%2C3.985%2C9.566%20%20%20%20%20s-2.892%2C0.559-2.892%2C3.449c0.062%2C2.893%2C3.141%2C2.918%2C3.141%2C2.918h4.621v-2.918H7.374l2.589-2.935l2.582%2C2.927h-1.473v2.918h4.479%20%20%20%20%20c0%2C0%2C2.865%2C0%2C3.264-2.75c0.195-3.006-2.768-3.601-2.768-3.601s0.337-4.453-3.821-4.958C8.669%2C4.271%2C7.587%2C7.518%2C7.587%2C7.518z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20d%3D%22M7.587%208.9S6.514%207.89%205.06%208.714c-1.305.79-1.074%202.235-1.074%202.235s-2.892.55-2.892%203.44c.062%202.892%203.14%202.92%203.14%202.92h4.622v-2.92H7.374l2.58-2.926%202.58%202.927h-1.47v2.92h4.478s2.863%200%203.263-2.75c.195-3.007-2.767-3.6-2.767-3.6s.337-4.454-3.822-4.96c-3.547-.345-4.63%202.9-4.63%202.9z%22%20fill%3D%22%23fff%22%20opacity%3D%22.15%22%2F%3E%3ClinearGradient%20id%3D%22a%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%22-843.019%22%20y1%3D%22576.914%22%20x2%3D%22-843.019%22%20y2%3D%22577.11%22%20gradientTransform%3D%22matrix%2857.6%200%200%20-57.6%2048567.844%2033246.156%29%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23C2C2C2%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23C7C7C7%22%2F%3E%3C%2FlinearGradient%3E%3Cpath%20d%3D%22M7.587%207.518S6.514%206.508%205.06%207.33c-1.305.8-1.075%202.236-1.075%202.236s-2.892.56-2.892%203.45c.062%202.892%203.14%202.917%203.14%202.917h4.622v-2.918h-1.48l2.588-2.935%202.582%202.927h-1.473v2.918h4.48s2.864%200%203.263-2.75c.195-3.006-2.768-3.6-2.768-3.6s.337-4.454-3.82-4.96c-3.558-.344-4.64%202.903-4.64%202.903z%22%20fill%3D%22url%28%23a%29%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -860,7 +1117,7 @@ button:hover > .glyphicon-chevron-right:before {
 }
 .fuelux-icon-content-image,
 .glyphicon-content-image {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2220px%22%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22content-image%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_141_%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cg%3E%20%20%20%3Cg%3E%20%20%20%20%3Crect%20x%3D%222.803%22%20y%3D%222.941%22%20style%3D%22fill%3A%23FFFFFF%3B%22%20width%3D%2214.317%22%20height%3D%2214.117%22%2F%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%234C89BE%3B%22%20d%3D%22M16.779%2C3.383v13.234H3.143V3.383H16.779%20M17.461%2C2.5h-15v15h15V2.5L17.461%2C2.5z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%20%3Cpolygon%20style%3D%22fill%3A%234C89BE%3B%22%20points%3D%224.778%2C13.145%2015.146%2C13.145%2012.498%2C6.527%2010.513%2C11.16%209.189%2C8.512%207.314%2C11.932%20%20%20%20%206.652%2C9.945%20%20%20%20%22%2F%3E%20%20%20%3Ccircle%20style%3D%22fill%3A%234C89BE%3B%22%20cx%3D%226.321%22%20cy%3D%227.851%22%20r%3D%220.993%22%2F%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1_1_%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M2.803%202.94H17.12V17.06H2.803z%22%2F%3E%3Cpath%20d%3D%22M16.78%203.383v13.234H3.142V3.383H16.78m.68-.883h-15v15h15v-15zM4.778%2013.145h10.368l-2.648-6.618-1.985%204.633L9.19%208.512l-1.876%203.42-.662-1.987z%22%20fill%3D%22%234C89BE%22%2F%3E%3Ccircle%20cx%3D%226.321%22%20cy%3D%227.851%22%20r%3D%22.993%22%20fill%3D%22%234C89BE%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -877,7 +1134,7 @@ button:hover > .fuelux-icon-content-replace,
 .glyphicon-content-replace-hover,
 .glyphicon-content-replace:hover,
 button:hover > .glyphicon-content-replace {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2220px%22%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20enable-background%3D%22new%200%200%2020%2020%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%3E%20%3Crect%20id%3D%22le_wrappier_157_%22%20fill%3D%22none%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%3Cg%3E%20%20%3Cpath%20fill%3D%22%234C89BE%22%20d%3D%22M7.259%2C1.333C5.787%2C1.333%2C4.593%2C2.528%2C4.593%2C4h1.925L3.926%2C6.595L1.333%2C4h1.926c0-2.205%2C1.794-4%2C4-4%22%2F%3E%20%20%3Cpath%20fill%3D%22%234C89BE%22%20d%3D%22M12.739%2C18.668c1.473%2C0%2C2.667-1.196%2C2.667-2.667h-1.921l2.588-2.591l2.594%2C2.591h-1.928%20%20%20c0%2C2.205-1.794%2C3.999-4%2C3.999%22%2F%3E%20%20%3Cpolyline%20fill%3D%22%234C89BE%22%20points%3D%2220%2C4%2020%2C12%209.333%2C12%209.333%2C0%2016%2C0%20%20%20%22%2F%3E%20%20%3Cpolygon%20fill%3D%22%23A1C7E4%22%20points%3D%2216%2C4%2020%2C4%2016%2C0%20%20%20%22%2F%3E%20%20%3Cg%3E%20%20%20%3Cpolygon%20fill%3D%22%23A1C7E4%22%20points%3D%228%2C13.334%208%2C8%200%2C8%200%2C20%2010.666%2C20%2010.666%2C13.334%20%20%20%20%22%2F%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20d%3D%22M7.907%203.445c-1.104%200-2%20.896-2%202H7.35L5.408%207.39%203.463%205.446h1.444c0-1.654%201.346-3%203-3M12.018%2016.445c1.104%200%202-.896%202-2h-1.44l1.94-1.943%201.945%201.943h-1.445c0%201.654-1.346%203-3%203M17.463%205.445v6h-8v-9h5%22%20fill%3D%22%234C89BE%22%2F%3E%3Cpath%20fill%3D%22%23A1C7E4%22%20d%3D%22M14.463%205.445h3l-3-3zM8.463%2012.445v-4h-6v9h8v-5z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -894,7 +1151,7 @@ button:hover > .glyphicon-content-replace:before {
 }
 .fuelux-icon-content-replace,
 .glyphicon-content-replace {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2215px%22%20height%3D%2215px%22%20viewBox%3D%220%200%2015%2015%22%20style%3D%22enable-background%3Anew%200%200%2015%2015%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22content-replace%22%3E%20%3Cg%3E%20%20%3Cpath%20style%3D%22fill%3A%238D8E8D%3B%22%20d%3D%22M5.444%2C1c-1.104%2C0-2%2C0.896-2%2C2h1.444L2.944%2C4.945L1%2C3h1.444c0-1.654%2C1.346-3%2C3-3%22%2F%3E%20%20%3Cpath%20style%3D%22fill%3A%238D8E8D%3B%22%20d%3D%22M9.555%2C14c1.104%2C0%2C2-0.896%2C2-2h-1.441l1.941-1.943L14%2C12h-1.445c0%2C1.654-1.346%2C3-3%2C3%22%2F%3E%20%20%3Cpolyline%20style%3D%22fill%3A%238D8E8D%3B%22%20points%3D%2215%2C3%2015%2C9%207%2C9%207%2C0%2012%2C0%20%20%20%22%2F%3E%20%20%3Cpolygon%20style%3D%22fill%3A%23B9B9BA%3B%22%20points%3D%2212%2C3%2015%2C3%2012%2C0%20%20%20%22%2F%3E%20%20%3Cg%3E%20%20%20%3Cpolygon%20style%3D%22fill%3A%23B9B9BA%3B%22%20points%3D%226%2C10%206%2C6%200%2C6%200%2C15%208%2C15%208%2C10%20%20%20%20%22%2F%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1_1_%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2215%22%20height%3D%2215%22%20viewBox%3D%220%200%2015%2015%22%3E%3Cg%3E%3Cpath%20d%3D%22M5.444%201c-1.104%200-2%20.896-2%202h1.444L2.944%204.945%201%203h1.444c0-1.654%201.346-3%203-3M9.555%2014c1.104%200%202-.896%202-2h-1.44l1.94-1.943L14%2012h-1.445c0%201.654-1.346%203-3%203M15%203v6H7V0h5%22%20fill%3D%22%238D8E8D%22%2F%3E%3Cpath%20fill%3D%22%23B9B9BA%22%20d%3D%22M12%203h3l-3-3zM6%2010V6H0v9h8v-5z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -907,7 +1164,7 @@ button:hover > .glyphicon-content-replace:before {
 }
 .fuelux-icon-content-text,
 .glyphicon-content-text {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2220px%22%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22content-text%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_139_%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cg%3E%20%20%20%3Cg%3E%20%20%20%20%3Crect%20x%3D%222.477%22%20y%3D%223.484%22%20style%3D%22fill%3A%234C89BE%3B%22%20width%3D%226.818%22%20height%3D%221.363%22%2F%3E%20%20%20%20%3Crect%20x%3D%222.477%22%20y%3D%228.939%22%20style%3D%22fill%3A%234C89BE%3B%22%20width%3D%2212.273%22%20height%3D%221.362%22%2F%3E%20%20%20%20%3Crect%20x%3D%222.477%22%20y%3D%226.211%22%20style%3D%22fill%3A%234C89BE%3B%22%20width%3D%2215%22%20height%3D%221.364%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%20%3Cg%3E%20%20%20%20%3Crect%20x%3D%222.477%22%20y%3D%2211.666%22%20style%3D%22fill%3A%234C89BE%3B%22%20width%3D%2215%22%20height%3D%221.363%22%2F%3E%20%20%20%20%3Crect%20x%3D%222.477%22%20y%3D%2214.395%22%20style%3D%22fill%3A%234C89BE%3B%22%20width%3D%2212.273%22%20height%3D%221.363%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1_1_%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cg%20fill%3D%22%234C89BE%22%3E%3Cpath%20d%3D%22M2.477%203.484h6.818v1.363H2.477zM2.477%208.94H14.75v1.36H2.477zM2.477%206.21h15v1.365h-15zM2.477%2011.666h15v1.363h-15zM2.477%2014.395H14.75v1.363H2.477z%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -954,7 +1211,7 @@ button:hover > .glyphicon-copy:before {
 }
 .fuelux-icon-corner-radius,
 .glyphicon-corner-radius {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2220px%22%20%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22corner-radius%22%3E%20%3Cg%3E%20%20%3Cline%20style%3D%22fill%3A%23FFFFFF%3B%22%20x1%3D%223.317%22%20y1%3D%222.837%22%20x2%3D%223.317%22%20y2%3D%2216.838%22%2F%3E%20%20%3Cg%3E%20%20%20%3Cline%20style%3D%22fill%3Anone%3Bstroke%3A%23A6A6A6%3Bstroke-width%3A0.75%3B%22%20x1%3D%223.317%22%20y1%3D%222.837%22%20x2%3D%223.317%22%20y2%3D%223.837%22%2F%3E%20%20%20%20%20%20%20%3Cline%20style%3D%22fill%3Anone%3Bstroke%3A%23A6A6A6%3Bstroke-width%3A0.75%3Bstroke-dasharray%3A1.7144%2C1.7144%3B%22%20x1%3D%223.317%22%20y1%3D%225.552%22%20x2%3D%223.317%22%20y2%3D%2214.98%22%2F%3E%20%20%20%3Cline%20style%3D%22fill%3Anone%3Bstroke%3A%23A6A6A6%3Bstroke-width%3A0.75%3B%22%20x1%3D%223.317%22%20y1%3D%2215.838%22%20x2%3D%223.317%22%20y2%3D%2216.838%22%2F%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_138_%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cg%3E%20%20%20%3Cline%20style%3D%22fill%3A%23FFFFFF%3B%22%20x1%3D%223.317%22%20y1%3D%222.837%22%20x2%3D%2216.975%22%20y2%3D%222.837%22%2F%3E%20%20%20%3Cg%3E%20%20%20%20%3Cline%20style%3D%22fill%3Anone%3Bstroke%3A%23A6A6A6%3Bstroke-width%3A0.75%3B%22%20x1%3D%223.317%22%20y1%3D%222.837%22%20x2%3D%224.317%22%20y2%3D%222.837%22%2F%3E%20%20%20%20%20%20%20%20%20%3Cline%20style%3D%22fill%3Anone%3Bstroke%3A%23A6A6A6%3Bstroke-width%3A0.75%3Bstroke-dasharray%3A2.3314%2C2.3314%3B%22%20x1%3D%226.649%22%20y1%3D%222.837%22%20x2%3D%2214.809%22%20y2%3D%222.837%22%2F%3E%20%20%20%20%3Cline%20style%3D%22fill%3Anone%3Bstroke%3A%23A6A6A6%3Bstroke-width%3A0.75%3B%22%20x1%3D%2215.975%22%20y1%3D%222.837%22%20x2%3D%2216.975%22%20y2%3D%222.837%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%20%3Cpath%20style%3D%22fill%3A%23FFFFFF%3Bstroke%3A%23A6A6A6%3Bstroke-width%3A1.5%3B%22%20d%3D%22M3.317%2C16.865c0-7.739%2C6.108-14.001%2C13.657-14.001%22%2F%3E%20%3C%2Fg%3E%20%3Ccircle%20style%3D%22fill%3A%23FFFFFF%3Bstroke%3A%23A6A6A6%3Bstroke-width%3A0.75%3B%22%20cx%3D%223.431%22%20cy%3D%222.837%22%20r%3D%221.5%22%2F%3E%20%3Ccircle%20style%3D%22fill%3A%23FFFFFF%3Bstroke%3A%23A6A6A6%3Bstroke-width%3A0.75%3B%22%20cx%3D%223.431%22%20cy%3D%2216.865%22%20r%3D%221.5%22%2F%3E%20%3Ccircle%20style%3D%22fill%3A%23FFFFFF%3Bstroke%3A%23A6A6A6%3Bstroke-width%3A0.75%3B%22%20cx%3D%2217.088%22%20cy%3D%222.837%22%20r%3D%221.5%22%2F%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M3.317%202.837v14%22%2F%3E%3Cg%20stroke%3D%22%23A6A6A6%22%20stroke-width%3D%22.75%22%20fill%3D%22none%22%3E%3Cpath%20d%3D%22M3.317%202.837v1%22%2F%3E%3Cpath%20stroke-dasharray%3D%221.7144%2C1.7144%22%20d%3D%22M3.317%205.552v9.428%22%2F%3E%3Cpath%20d%3D%22M3.317%2015.838v1%22%2F%3E%3C%2Fg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M3.317%202.837h13.658%22%2F%3E%3Cg%20stroke%3D%22%23A6A6A6%22%20stroke-width%3D%22.75%22%20fill%3D%22none%22%3E%3Cpath%20d%3D%22M3.317%202.837h1%22%2F%3E%3Cpath%20stroke-dasharray%3D%222.3314%2C2.3314%22%20d%3D%22M6.65%202.837h8.16%22%2F%3E%3Cpath%20d%3D%22M15.975%202.837h1%22%2F%3E%3C%2Fg%3E%3Cpath%20d%3D%22M3.317%2016.865c0-7.74%206.108-14%2013.657-14%22%20fill%3D%22%23fff%22%20stroke%3D%22%23A6A6A6%22%20stroke-width%3D%221.5%22%2F%3E%3Ccircle%20cx%3D%223.431%22%20cy%3D%222.837%22%20r%3D%221.5%22%20fill%3D%22%23fff%22%20stroke%3D%22%23A6A6A6%22%20stroke-width%3D%22.75%22%2F%3E%3Ccircle%20cx%3D%223.431%22%20cy%3D%2216.865%22%20r%3D%221.5%22%20fill%3D%22%23fff%22%20stroke%3D%22%23A6A6A6%22%20stroke-width%3D%22.75%22%2F%3E%3Ccircle%20cx%3D%2217.088%22%20cy%3D%222.837%22%20r%3D%221.5%22%20fill%3D%22%23fff%22%20stroke%3D%22%23A6A6A6%22%20stroke-width%3D%22.75%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -1061,7 +1318,7 @@ button:hover > .glyphicon-dot:before {
 }
 .fuelux-icon-dots-horizontal,
 .glyphicon-dots-horizontal {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2220px%22%20%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22dots-horizontal%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_154_%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cg%3E%20%20%20%3Ccircle%20style%3D%22fill%3A%23989898%3B%22%20cx%3D%224.88%22%20cy%3D%2210%22%20r%3D%221.5%22%2F%3E%20%20%20%3Ccircle%20style%3D%22fill%3A%23989898%3B%22%20cx%3D%229.88%22%20cy%3D%2210%22%20r%3D%221.5%22%2F%3E%20%20%20%3Ccircle%20style%3D%22fill%3A%23989898%3B%22%20cx%3D%2214.88%22%20cy%3D%2210%22%20r%3D%221.5%22%2F%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cg%20fill%3D%22%23989898%22%3E%3Ccircle%20cx%3D%224.88%22%20cy%3D%2210%22%20r%3D%221.5%22%2F%3E%3Ccircle%20cx%3D%229.88%22%20cy%3D%2210%22%20r%3D%221.5%22%2F%3E%3Ccircle%20cx%3D%2214.88%22%20cy%3D%2210%22%20r%3D%221.5%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -1074,7 +1331,7 @@ button:hover > .glyphicon-dot:before {
 }
 .fuelux-icon-dots-verticle,
 .glyphicon-dots-verticle {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2220px%22%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22dots-verticle%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_165_%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cg%3E%20%20%20%3Ccircle%20style%3D%22fill%3A%23989898%3B%22%20cx%3D%229.88%22%20cy%3D%225%22%20r%3D%221.5%22%2F%3E%20%20%20%3Ccircle%20style%3D%22fill%3A%23989898%3B%22%20cx%3D%229.88%22%20cy%3D%2210%22%20r%3D%221.5%22%2F%3E%20%20%20%3Ccircle%20style%3D%22fill%3A%23989898%3B%22%20cx%3D%229.88%22%20cy%3D%2215%22%20r%3D%221.5%22%2F%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1_1_%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cg%20fill%3D%22%23989898%22%3E%3Ccircle%20cx%3D%229.88%22%20cy%3D%225%22%20r%3D%221.5%22%2F%3E%3Ccircle%20cx%3D%229.88%22%20cy%3D%2210%22%20r%3D%221.5%22%2F%3E%3Ccircle%20cx%3D%229.88%22%20cy%3D%2215%22%20r%3D%221.5%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -1159,7 +1416,7 @@ button:hover > .fuelux-icon-drag-handle-squares,
 .glyphicon-drag-handle-squares-hover,
 .glyphicon-drag-handle-squares:hover,
 button:hover > .glyphicon-drag-handle-squares {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2220px%22%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22drag-handle-squares-hover%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_164_%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cg%3E%20%20%20%3Crect%20x%3D%226.713%22%20y%3D%225%22%20style%3D%22fill%3A%2383BCD7%3B%22%20width%3D%222%22%20height%3D%222%22%2F%3E%20%20%20%3Crect%20x%3D%2210.713%22%20y%3D%225%22%20style%3D%22fill%3A%2383BCD7%3B%22%20width%3D%222%22%20height%3D%222%22%2F%3E%20%20%20%3Crect%20x%3D%226.713%22%20y%3D%229%22%20style%3D%22fill%3A%2383BCD7%3B%22%20width%3D%222%22%20height%3D%222%22%2F%3E%20%20%20%3Crect%20x%3D%2210.713%22%20y%3D%229%22%20style%3D%22fill%3A%2383BCD7%3B%22%20width%3D%222%22%20height%3D%222%22%2F%3E%20%20%20%3Crect%20x%3D%226.713%22%20y%3D%2213%22%20style%3D%22fill%3A%2383BCD7%3B%22%20width%3D%222%22%20height%3D%222%22%2F%3E%20%20%20%3Crect%20x%3D%2210.713%22%20y%3D%2213%22%20style%3D%22fill%3A%2383BCD7%3B%22%20width%3D%222%22%20height%3D%222%22%2F%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1_1_%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cg%20fill%3D%22%2383BCD7%22%3E%3Cpath%20d%3D%22M6.713%205h2v2h-2zM10.713%205h2v2h-2zM6.713%209h2v2h-2zM10.713%209h2v2h-2zM6.713%2013h2v2h-2zM10.713%2013h2v2h-2z%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -1176,7 +1433,7 @@ button:hover > .glyphicon-drag-handle-squares:before {
 }
 .fuelux-icon-drag-handle-squares,
 .glyphicon-drag-handle-squares {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2220px%22%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22drag-handle-squares%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_153_%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cg%3E%20%20%20%3Crect%20x%3D%226.713%22%20y%3D%225%22%20style%3D%22fill%3A%23DFDEDE%3B%22%20width%3D%222%22%20height%3D%222%22%2F%3E%20%20%20%3Crect%20x%3D%2210.713%22%20y%3D%225%22%20style%3D%22fill%3A%23DFDEDE%3B%22%20width%3D%222%22%20height%3D%222%22%2F%3E%20%20%20%3Crect%20x%3D%226.713%22%20y%3D%229%22%20style%3D%22fill%3A%23DFDEDE%3B%22%20width%3D%222%22%20height%3D%222%22%2F%3E%20%20%20%3Crect%20x%3D%2210.713%22%20y%3D%229%22%20style%3D%22fill%3A%23DFDEDE%3B%22%20width%3D%222%22%20height%3D%222%22%2F%3E%20%20%20%3Crect%20x%3D%226.713%22%20y%3D%2213%22%20style%3D%22fill%3A%23DFDEDE%3B%22%20width%3D%222%22%20height%3D%222%22%2F%3E%20%20%20%3Crect%20x%3D%2210.713%22%20y%3D%2213%22%20style%3D%22fill%3A%23DFDEDE%3B%22%20width%3D%222%22%20height%3D%222%22%2F%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1_1_%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cg%20fill%3D%22%23DFDEDE%22%3E%3Cpath%20d%3D%22M6.713%205h2v2h-2zM10.713%205h2v2h-2zM6.713%209h2v2h-2zM10.713%209h2v2h-2zM6.713%2013h2v2h-2zM10.713%2013h2v2h-2z%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -1538,7 +1795,7 @@ button:hover > .glyphicon-help:before {
 }
 .fuelux-icon-margin-all,
 .glyphicon-margin-all {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2220px%22%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22margin-all%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_150_%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cg%3E%20%20%20%3Cg%3E%20%20%20%20%3Crect%20x%3D%224.088%22%20y%3D%224%22%20style%3D%22fill%3A%23B9B9BA%3B%22%20width%3D%2212%22%20height%3D%2212%22%2F%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%238D8E8D%3B%22%20d%3D%22M15.588%2C4.5v11h-11v-11H15.588%20M16.588%2C3.5h-13v13h13V3.5L16.588%2C3.5z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%20%3Cg%3E%20%20%20%20%3Crect%20x%3D%227.088%22%20y%3D%227%22%20style%3D%22fill%3A%23F1F1F1%3B%22%20width%3D%226%22%20height%3D%226%22%2F%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%23323232%3B%22%20d%3D%22M12.588%2C7.5v5h-5v-5H12.588%20M13.588%2C6.5h-7v7h7V6.5L13.588%2C6.5z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1_1_%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20fill%3D%22%23B9B9BA%22%20d%3D%22M4.088%204h12v12h-12z%22%2F%3E%3Cpath%20d%3D%22M15.588%204.5v11h-11v-11h11m1-1h-13v13h13v-13z%22%20fill%3D%22%238D8E8D%22%2F%3E%3Cpath%20fill%3D%22%23F1F1F1%22%20d%3D%22M7.088%207h6v6h-6z%22%2F%3E%3Cpath%20d%3D%22M12.588%207.5v5h-5v-5h5m1-1h-7v7h7v-7z%22%20fill%3D%22%23323232%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -1551,7 +1808,7 @@ button:hover > .glyphicon-help:before {
 }
 .fuelux-icon-margin-bottom,
 .glyphicon-margin-bottom {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2220px%22%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22margin-bottom%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_147_%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cg%3E%20%20%20%3Cg%3E%20%20%20%20%3Crect%20x%3D%224.213%22%20y%3D%2213%22%20style%3D%22fill%3A%23B9B9BA%3B%22%20width%3D%2212%22%20height%3D%223%22%2F%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%238D8E8D%3B%22%20d%3D%22M4.713%2C15.5v-2h11v2H4.713%20M3.713%2C16.5h13v-4h-13V16.5L3.713%2C16.5z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%20%3Cg%3E%20%20%20%20%3Crect%20x%3D%227.213%22%20y%3D%226.999%22%20style%3D%22fill%3A%23F1F1F1%3B%22%20width%3D%226%22%20height%3D%226%22%2F%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%23323232%3B%22%20d%3D%22M7.713%2C12.5V7.499h5v5L7.713%2C12.5%20M6.713%2C13.5h7V6.499h-7V13.5L6.713%2C13.5z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%20%3Cg%3E%20%20%20%20%3Crect%20x%3D%2215.713%22%20y%3D%226.499%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%2213.713%22%20y%3D%226.499%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%2212.713%22%20y%3D%225.499%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%2212.713%22%20y%3D%223.499%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%226.713%22%20y%3D%225.499%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%226.713%22%20y%3D%223.499%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%225.713%22%20y%3D%226.499%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%223.713%22%20y%3D%226.499%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1_1_%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20fill%3D%22%23B9B9BA%22%20d%3D%22M4.213%2013h12v3h-12z%22%2F%3E%3Cpath%20d%3D%22M4.713%2015.5v-2h11v2h-11m-1%201h13v-4h-13v4z%22%20fill%3D%22%238D8E8D%22%2F%3E%3Cpath%20fill%3D%22%23F1F1F1%22%20d%3D%22M7.213%207h6v6h-6z%22%2F%3E%3Cpath%20d%3D%22M7.713%2012.5v-5h5v5h-5m-1%201h7v-7h-7v7z%22%20fill%3D%22%23323232%22%2F%3E%3Cg%20fill%3D%22%23797979%22%3E%3Cpath%20d%3D%22M15.713%206.5h1v1h-1zM13.713%206.5h1v1h-1zM12.713%205.5h1v1h-1zM12.713%203.5h1v1h-1zM6.713%205.5h1v1h-1zM6.713%203.5h1v1h-1zM5.713%206.5h1v1h-1zM3.713%206.5h1v1h-1z%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -1564,7 +1821,7 @@ button:hover > .glyphicon-help:before {
 }
 .fuelux-icon-margin-left,
 .glyphicon-margin-left {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2220px%22%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22margin-left%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_148_%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cg%3E%20%20%20%3Cg%3E%20%20%20%20%3Crect%20x%3D%224.15%22%20y%3D%224%22%20style%3D%22fill%3A%23B9B9BA%3B%22%20width%3D%223%22%20height%3D%2212%22%2F%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%238D8E8D%3B%22%20d%3D%22M4.65%2C4.5h2v11h-2V4.5%20M3.65%2C3.5v13h4v-13H3.65L3.65%2C3.5z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%20%3Cg%3E%20%20%20%20%3Crect%20x%3D%227.15%22%20y%3D%227%22%20style%3D%22fill%3A%23F1F1F1%3B%22%20width%3D%226%22%20height%3D%226%22%2F%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%23323232%3B%22%20d%3D%22M7.65%2C7.5h5v5h-5V7.5%20M6.65%2C6.5v7h7v-7H6.65L6.65%2C6.5z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%20%3Cg%3E%20%20%20%20%3Crect%20x%3D%2212.65%22%20y%3D%2215.498%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%2212.65%22%20y%3D%2213.498%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%2213.65%22%20y%3D%2212.498%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%2215.65%22%20y%3D%2212.498%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%2213.65%22%20y%3D%226.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%2215.65%22%20y%3D%226.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%2212.65%22%20y%3D%225.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%2212.65%22%20y%3D%223.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1_1_%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20fill%3D%22%23B9B9BA%22%20d%3D%22M4.15%204h3v12h-3z%22%2F%3E%3Cpath%20d%3D%22M4.65%204.5h2v11h-2v-11m-1-1v13h4v-13h-4z%22%20fill%3D%22%238D8E8D%22%2F%3E%3Cpath%20fill%3D%22%23F1F1F1%22%20d%3D%22M7.15%207h6v6h-6z%22%2F%3E%3Cpath%20d%3D%22M7.65%207.5h5v5h-5v-5m-1-1v7h7v-7h-7z%22%20fill%3D%22%23323232%22%2F%3E%3Cg%20fill%3D%22%23797979%22%3E%3Cpath%20d%3D%22M12.65%2015.498h1v1h-1zM12.65%2013.498h1v1h-1zM13.65%2012.498h1v1h-1zM15.65%2012.498h1v1h-1zM13.65%206.5h1v1h-1zM15.65%206.5h1v1h-1zM12.65%205.5h1v1h-1zM12.65%203.5h1v1h-1z%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -1577,7 +1834,7 @@ button:hover > .glyphicon-help:before {
 }
 .fuelux-icon-margin-none,
 .glyphicon-margin-none {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2220px%22%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22margin-none%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_151_%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cg%3E%20%20%20%3Cg%3E%20%20%20%20%3Crect%20x%3D%227.025%22%20y%3D%227%22%20style%3D%22fill%3A%23F1F1F1%3B%22%20width%3D%226%22%20height%3D%226%22%2F%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%23323232%3B%22%20d%3D%22M12.525%2C7.5v5h-5v-5H12.525%20M13.525%2C6.5h-7v7h7V6.5L13.525%2C6.5z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%20%3Cg%3E%20%20%20%20%3Crect%20x%3D%223.525%22%20y%3D%2212.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%225.525%22%20y%3D%2212.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%226.525%22%20y%3D%2213.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%226.525%22%20y%3D%2215.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%2212.525%22%20y%3D%2213.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%2212.525%22%20y%3D%2215.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%2213.525%22%20y%3D%2212.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%2215.525%22%20y%3D%2212.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%20%3Cg%3E%20%20%20%20%3Crect%20x%3D%2215.525%22%20y%3D%226.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%2213.525%22%20y%3D%226.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%2212.525%22%20y%3D%225.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%2212.525%22%20y%3D%223.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%226.525%22%20y%3D%225.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%226.525%22%20y%3D%223.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%225.525%22%20y%3D%226.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%223.525%22%20y%3D%226.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1_1_%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20fill%3D%22%23F1F1F1%22%20d%3D%22M7.025%207h6v6h-6z%22%2F%3E%3Cpath%20d%3D%22M12.525%207.5v5h-5v-5h5m1-1h-7v7h7v-7z%22%20fill%3D%22%23323232%22%2F%3E%3Cg%20fill%3D%22%23797979%22%3E%3Cpath%20d%3D%22M3.525%2012.5h1v1h-1zM5.525%2012.5h1v1h-1zM6.525%2013.5h1v1h-1zM6.525%2015.5h1v1h-1zM12.525%2013.5h1v1h-1zM12.525%2015.5h1v1h-1zM13.525%2012.5h1v1h-1zM15.525%2012.5h1v1h-1z%22%2F%3E%3C%2Fg%3E%3Cg%20fill%3D%22%23797979%22%3E%3Cpath%20d%3D%22M15.525%206.5h1v1h-1zM13.525%206.5h1v1h-1zM12.525%205.5h1v1h-1zM12.525%203.5h1v1h-1zM6.525%205.5h1v1h-1zM6.525%203.5h1v1h-1zM5.525%206.5h1v1h-1zM3.525%206.5h1v1h-1z%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -1590,7 +1847,7 @@ button:hover > .glyphicon-help:before {
 }
 .fuelux-icon-margin-right,
 .glyphicon-margin-right {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2220px%22%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22margin-right%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_145_%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cg%3E%20%20%20%3Cg%3E%20%20%20%20%3Crect%20x%3D%2213.275%22%20y%3D%224%22%20style%3D%22fill%3A%23B9B9BA%3B%22%20width%3D%223%22%20height%3D%2212%22%2F%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%238D8E8D%3B%22%20d%3D%22M15.775%2C15.5h-2v-11h2V15.5%20M16.775%2C16.5v-13h-4v13H16.775L16.775%2C16.5z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%20%3Cg%3E%20%20%20%20%3Crect%20x%3D%227.275%22%20y%3D%227%22%20style%3D%22fill%3A%23F1F1F1%3B%22%20width%3D%226%22%20height%3D%226%22%2F%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%23323232%3B%22%20d%3D%22M12.775%2C12.5h-5v-5h5V12.5%20M13.775%2C13.5v-7h-7v7H13.775L13.775%2C13.5z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%20%3Cg%3E%20%20%20%20%3Crect%20x%3D%226.775%22%20y%3D%223.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%226.775%22%20y%3D%225.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%225.775%22%20y%3D%226.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%223.775%22%20y%3D%226.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%225.775%22%20y%3D%2212.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%223.775%22%20y%3D%2212.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%226.775%22%20y%3D%2213.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%226.775%22%20y%3D%2215.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1_1_%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20fill%3D%22%23B9B9BA%22%20d%3D%22M13.275%204h3v12h-3z%22%2F%3E%3Cpath%20d%3D%22M15.775%2015.5h-2v-11h2v11m1%201v-13h-4v13h4z%22%20fill%3D%22%238D8E8D%22%2F%3E%3Cpath%20fill%3D%22%23F1F1F1%22%20d%3D%22M7.275%207h6v6h-6z%22%2F%3E%3Cpath%20d%3D%22M12.775%2012.5h-5v-5h5v5m1%201v-7h-7v7h7z%22%20fill%3D%22%23323232%22%2F%3E%3Cg%20fill%3D%22%23797979%22%3E%3Cpath%20d%3D%22M6.775%203.5h1v1h-1zM6.775%205.5h1v1h-1zM5.775%206.5h1v1h-1zM3.775%206.5h1v1h-1zM5.775%2012.5h1v1h-1zM3.775%2012.5h1v1h-1zM6.775%2013.5h1v1h-1zM6.775%2015.5h1v1h-1z%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -1603,7 +1860,7 @@ button:hover > .glyphicon-help:before {
 }
 .fuelux-icon-margin-top,
 .glyphicon-margin-top {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2220px%22%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22margin-top%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_144_%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cg%3E%20%20%20%3Cg%3E%20%20%20%20%3Crect%20x%3D%224.338%22%20y%3D%224%22%20style%3D%22fill%3A%23B9B9BA%3B%22%20width%3D%2212%22%20height%3D%223%22%2F%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%238D8E8D%3B%22%20d%3D%22M15.838%2C4.5v2h-11v-2H15.838%20M16.838%2C3.5h-13v4h13V3.5L16.838%2C3.5z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%20%3Cg%3E%20%20%20%20%3Crect%20x%3D%227.338%22%20y%3D%227%22%20style%3D%22fill%3A%23F1F1F1%3B%22%20width%3D%226%22%20height%3D%226%22%2F%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%23323232%3B%22%20d%3D%22M12.838%2C7.5v5h-5v-5H12.838%20M13.838%2C6.5h-7v7h7V6.5L13.838%2C6.5z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%20%3Cg%3E%20%20%20%20%3Crect%20x%3D%223.838%22%20y%3D%2212.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%225.838%22%20y%3D%2212.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%226.838%22%20y%3D%2213.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%226.838%22%20y%3D%2215.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%2212.838%22%20y%3D%2213.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%2212.838%22%20y%3D%2215.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%2213.838%22%20y%3D%2212.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%20%3Crect%20x%3D%2215.838%22%20y%3D%2212.5%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1_1_%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20fill%3D%22%23B9B9BA%22%20d%3D%22M4.338%204h12v3h-12z%22%2F%3E%3Cpath%20d%3D%22M15.838%204.5v2h-11v-2h11m1-1h-13v4h13v-4z%22%20fill%3D%22%238D8E8D%22%2F%3E%3Cpath%20fill%3D%22%23F1F1F1%22%20d%3D%22M7.338%207h6v6h-6z%22%2F%3E%3Cpath%20d%3D%22M12.838%207.5v5h-5v-5h5m1-1h-7v7h7v-7z%22%20fill%3D%22%23323232%22%2F%3E%3Cg%20fill%3D%22%23797979%22%3E%3Cpath%20d%3D%22M3.838%2012.5h1v1h-1zM5.838%2012.5h1v1h-1zM6.838%2013.5h1v1h-1zM6.838%2015.5h1v1h-1zM12.838%2013.5h1v1h-1zM12.838%2015.5h1v1h-1zM13.838%2012.5h1v1h-1zM15.838%2012.5h1v1h-1z%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -1692,6 +1949,19 @@ button:hover > .glyphicon-help:before {
 .glyphicon-minus-sign:before {
   content: "";
 }
+.fuelux-icon-mobile-drag,
+.glyphicon-mobile-drag {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2021%2020%22%20enable-background%3D%22new%200%200%2021%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M.5%200h20v20H.5z%22%2F%3E%3Cpath%20d%3D%22M12.957%2018.343c0%20.55-.45%201-1%201H1.5c-.55%200-1-.45-1-1V7.886c0-.55.45-1%201-1h10.457c.55%200%201%20.45%201%201v10.457z%22%20fill%3D%22%23D9D9D9%22%2F%3E%3Cpath%20d%3D%22M12.957%2018.343c0%20.55-.45%201-1%201H1.5c-.55%200-1-.45-1-1V7.886c0-.55.45-1%201-1h10.457c.55%200%201%20.45%201%201v10.457z%22%20stroke%3D%22%23fff%22%20fill%3D%22none%22%2F%3E%3Cpath%20d%3D%22M16.75%2015.196c0%20.55-.45%201-1%201H5.296c-.55%200-1-.45-1-1V4.74c0-.55.45-1%201-1h10.457c.55%200%201%20.45%201%201v10.456z%22%20fill%3D%22%23BFBFBF%22%2F%3E%3Cpath%20d%3D%22M16.75%2015.196c0%20.55-.45%201-1%201H5.296c-.55%200-1-.45-1-1V4.74c0-.55.45-1%201-1h10.457c.55%200%201%20.45%201%201v10.456z%22%20stroke%3D%22%23fff%22%20fill%3D%22none%22%2F%3E%3Cpath%20d%3D%22M20.5%2012.115c0%20.55-.45%201-1%201H9.043c-.55%200-1-.45-1-1V1.657c0-.55.45-1%201-1H19.5c.55%200%201%20.45%201%201v10.458z%22%20fill%3D%22%23999%22%2F%3E%3Cpath%20d%3D%22M20.5%2012.115c0%20.55-.45%201-1%201H9.043c-.55%200-1-.45-1-1V1.657c0-.55.45-1%201-1H19.5c.55%200%201%20.45%201%201v10.458z%22%20stroke%3D%22%23fff%22%20fill%3D%22none%22%2F%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M20.236%209.173L13.99%203.736l1.124%208.206%201.56-1.74%201.707%203.063%201.192-.665-1.71-3.068z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+.fuelux-icon-mobile-drag:before,
+.glyphicon-mobile-drag:before {
+  content: "";
+}
 .fuelux-icon-mobile-push,
 .glyphicon-mobile-push {
   background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20d%3D%22M15.156%201.814H4.843c-.232%200-.423.19-.423.426v13.616c0%20.233.19.423.423.423h10.313c.234%200%20.426-.19.426-.424V2.242c0-.237-.19-.428-.426-.428z%22%20fill%3D%22none%22%2F%3E%3Cpath%20fill%3D%22%23aaa%22%20d%3D%22M15.156%200H4.843C3.405%200%202.96.443%202.96%201.88v15.515C2.96%2018.29%202.89%2020%2010.58%2020h.293c6.237%200%206.17-1.575%206.17-2.605V1.88C17.04.443%2016.597%200%2015.157%200zM10%2019.5c-.552%200-1-.447-1-1%200-.552.448-1%201-1%20.553%200%201%20.448%201%201s-.447%201-1%201zm5.582-3.644c0%20.233-.19.423-.426.423H4.843c-.233%200-.423-.19-.423-.424V2.24c0-.234.19-.426.423-.426h10.313c.234%200%20.426.19.426.428v13.614z%22%2F%3E%3Cpath%20fill%3D%22%23448CCA%22%20d%3D%22M14.307%203.1H5.694c-.194%200-.353.16-.353.355v11.37c0%20.195.16.353.354.353h8.613c.195%200%20.355-.156.355-.352V3.456c0-.197-.16-.356-.355-.356zM10.82%2013.184c-.22.22-.49.33-.806.33-.314%200-.584-.11-.805-.33-.224-.222-.333-.49-.333-.806%200-.315.11-.582.332-.805.22-.22.488-.332.804-.332.314%200%20.584.112.806.333.22.223.332.488.332.805%200%20.315-.11.584-.332.806zm.223-6.56c-.072.298-.202.79-.39%201.475-.114.41-.192.753-.233%201.025-.043.274-.11.528-.2%201.356h-.39c-.127-1.04-.21-1.39-.256-1.634-.043-.246-.13-.59-.262-1.032-.167-.564-.274-.94-.322-1.13-.074-.293-.11-.522-.11-.688%200-.5.11-.854.337-1.062.226-.208.492-.312.8-.312.296%200%20.56.104.79.31.23.206.346.546.346%201.02%200%20.146-.038.37-.11.67z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
@@ -1731,9 +2001,22 @@ button:hover > .glyphicon-help:before {
 .glyphicon-mobile-sms:before {
   content: "";
 }
+.fuelux-icon-multimail,
+.glyphicon-multimail {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2020%2020%22%20enable-background%3D%22new%200%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20fill%3D%22%23ACACAC%22%20d%3D%22M15.67%205.573l2.888-2.888H9.51l2.913%202.888zM17.144%205.552L20%208.45V2.696zM8.092%202.678v2.895h2.9zM17.178%209.23h2.394l-2.394-2.397zM11.57%209.672l2.89-2.888.006-.007-9.055.007%202.913%202.888zM15.87%2012.52V6.824l-2.826%202.827zM3.992%206.777v2.895H6.89zM13.044%2013.33h2.43l-2.43-2.432zM15.87%206.777v.005l.006-.005h-.005zM0%2010.777v5.746l2.856-2.897zM6.427%2016.23l-.107.106c-.014.016-.028.03-.044.044-.09.08-.204.13-.333.13s-.244-.05-.333-.13c-.016-.014-.03-.028-.044-.044l-.107-.107-1.982-1.985-3.073%203.078h11.077L8.41%2014.245%206.426%2016.23zM10.474%2010.777H1.418l4.544%204.504zM11.908%2016.54v-5.748l-2.856%202.852z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+.fuelux-icon-multimail:before,
+.glyphicon-multimail:before {
+  content: "";
+}
 .fuelux-icon-padding-all,
 .glyphicon-padding-all {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2220px%22%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22padding-all%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_162_%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cg%3E%20%20%20%3Cg%3E%20%20%20%20%3Crect%20x%3D%223.863%22%20y%3D%223.5%22%20style%3D%22fill%3A%23B9B9BA%3B%22%20width%3D%2212%22%20height%3D%2212%22%2F%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%23313131%3B%22%20d%3D%22M15.363%2C4v11h-11V4H15.363%20M16.363%2C3h-13v13h13V3L16.363%2C3z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%20%3Crect%20x%3D%227.363%22%20y%3D%227%22%20style%3D%22fill%3A%23F1F1F1%3B%22%20width%3D%225%22%20height%3D%225%22%2F%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1_1_%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20fill%3D%22%23B9B9BA%22%20d%3D%22M3.863%203.5h12v12h-12z%22%2F%3E%3Cpath%20d%3D%22M15.363%204v11h-11V4h11m1-1h-13v13h13V3z%22%20fill%3D%22%23313131%22%2F%3E%3Cpath%20fill%3D%22%23F1F1F1%22%20d%3D%22M7.363%207h5v5h-5z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -1746,7 +2029,7 @@ button:hover > .glyphicon-help:before {
 }
 .fuelux-icon-padding-bottom,
 .glyphicon-padding-bottom {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2220px%22%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22padding-bottom%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_160_%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cg%3E%20%20%20%3Cg%3E%20%20%20%20%3Crect%20x%3D%223.913%22%20y%3D%223.5%22%20style%3D%22fill%3A%23FFFFFF%3B%22%20width%3D%2212%22%20height%3D%2212%22%2F%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%23313131%3B%22%20d%3D%22M15.413%2C4v11h-11V4H15.413%20M16.413%2C3h-13v13h13V3L16.413%2C3z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%20%3Crect%20x%3D%224.413%22%20y%3D%2212%22%20style%3D%22fill%3A%23B9B9BA%3B%22%20width%3D%2211%22%20height%3D%223%22%2F%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1_1_%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M3.913%203.5h12v12h-12z%22%2F%3E%3Cpath%20d%3D%22M15.413%204v11h-11V4h11m1-1h-13v13h13V3z%22%20fill%3D%22%23313131%22%2F%3E%3Cpath%20fill%3D%22%23B9B9BA%22%20d%3D%22M4.413%2012h11v3h-11z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -1759,7 +2042,7 @@ button:hover > .glyphicon-help:before {
 }
 .fuelux-icon-padding-left,
 .glyphicon-padding-left {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2220px%22%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22padding-left%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_161_%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cg%3E%20%20%20%3Cg%3E%20%20%20%20%3Crect%20x%3D%223.888%22%20y%3D%223.5%22%20style%3D%22fill%3A%23FFFFFF%3B%22%20width%3D%2212%22%20height%3D%2212%22%2F%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%23313131%3B%22%20d%3D%22M15.388%2C15h-11V4h11V15%20M16.388%2C16V3h-13v13H16.388L16.388%2C16z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%20%3Crect%20x%3D%224.388%22%20y%3D%224%22%20style%3D%22fill%3A%23B9B9BA%3B%22%20width%3D%223%22%20height%3D%2211%22%2F%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1_1_%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M3.888%203.5h12v12h-12z%22%2F%3E%3Cpath%20d%3D%22M15.388%2015h-11V4h11v11m1%201V3h-13v13h13z%22%20fill%3D%22%23313131%22%2F%3E%3Cpath%20fill%3D%22%23B9B9BA%22%20d%3D%22M4.388%204h3v11h-3z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -1772,7 +2055,7 @@ button:hover > .glyphicon-help:before {
 }
 .fuelux-icon-padding-none,
 .glyphicon-padding-none {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2220px%22%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22padding-none%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_163_%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cg%3E%20%20%20%3Cg%3E%20%20%20%20%3Crect%20x%3D%223.838%22%20y%3D%223.5%22%20style%3D%22fill%3A%23FFFFFF%3B%22%20width%3D%2212%22%20height%3D%2212%22%2F%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%23313131%3B%22%20d%3D%22M15.338%2C4v11h-11V4H15.338%20M16.338%2C3h-13v13h13V3L16.338%2C3z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1_1_%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M3.838%203.5h12v12h-12z%22%2F%3E%3Cpath%20d%3D%22M15.338%204v11h-11V4h11m1-1h-13v13h13V3z%22%20fill%3D%22%23313131%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -1785,7 +2068,7 @@ button:hover > .glyphicon-help:before {
 }
 .fuelux-icon-padding-right,
 .glyphicon-padding-right {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2220px%22%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22padding-right%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_159_%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cg%3E%20%20%20%3Cg%3E%20%20%20%20%3Crect%20x%3D%223.938%22%20y%3D%223.5%22%20style%3D%22fill%3A%23FFFFFF%3B%22%20width%3D%2212%22%20height%3D%2212%22%2F%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%23313131%3B%22%20d%3D%22M4.438%2C4h11v11h-11V4%20M3.438%2C3v13h13V3H3.438L3.438%2C3z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%20%3Crect%20x%3D%2212.438%22%20y%3D%224%22%20style%3D%22fill%3A%23B9B9BA%3B%22%20width%3D%223%22%20height%3D%2211%22%2F%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1_1_%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M3.938%203.5h12v12h-12z%22%2F%3E%3Cpath%20d%3D%22M4.438%204h11v11h-11V4m-1-1v13h13V3h-13z%22%20fill%3D%22%23313131%22%2F%3E%3Cpath%20fill%3D%22%23B9B9BA%22%20d%3D%22M12.438%204h3v11h-3z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -1798,7 +2081,7 @@ button:hover > .glyphicon-help:before {
 }
 .fuelux-icon-padding-top,
 .glyphicon-padding-top {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2220px%22%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22padding-top%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_158_%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cg%3E%20%20%20%3Cg%3E%20%20%20%20%3Crect%20x%3D%223.963%22%20y%3D%223.5%22%20style%3D%22fill%3A%23FFFFFF%3B%22%20width%3D%2212%22%20height%3D%2212%22%2F%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%23313131%3B%22%20d%3D%22M15.463%2C4v11h-11V4H15.463%20M16.463%2C3h-13v13h13V3L16.463%2C3z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%20%3Crect%20x%3D%224.463%22%20y%3D%224%22%20style%3D%22fill%3A%23B9B9BA%3B%22%20width%3D%2211%22%20height%3D%223%22%2F%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1_1_%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M3.963%203.5h12v12h-12z%22%2F%3E%3Cpath%20d%3D%22M15.463%204v11h-11V4h11m1-1h-13v13h13V3z%22%20fill%3D%22%23313131%22%2F%3E%3Cpath%20fill%3D%22%23B9B9BA%22%20d%3D%22M4.463%204h11v3h-11z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -1811,7 +2094,7 @@ button:hover > .glyphicon-help:before {
 }
 .fuelux-icon-padlock-locked,
 .glyphicon-padlock-locked {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2220px%22%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22padlock-locked%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_136_%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cg%3E%20%20%20%3Crect%20x%3D%224.296%22%20y%3D%229.25%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%2211.25%22%20height%3D%228.75%22%2F%3E%20%20%20%3Cg%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%23797979%3B%22%20d%3D%22M9.921%2C3C7.546%2C3%2C5.546%2C5%2C5.546%2C7.375V9.25h2.5V7.375c0-1%2C0.875-1.875%2C1.875-1.875%20%20%20%20%20s1.875%2C0.875%2C1.875%2C1.875V9.25h2.5V7.375C14.296%2C5%2C12.296%2C3%2C9.921%2C3z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1_1_%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20fill%3D%22%23797979%22%20d%3D%22M4.296%209.25h11.25V18H4.296zM9.92%203C7.547%203%205.547%205%205.547%207.375V9.25h2.5V7.375c0-1%20.875-1.875%201.875-1.875s1.876.875%201.876%201.875V9.25h2.5V7.375C14.296%205%2012.296%203%209.92%203z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -1824,7 +2107,7 @@ button:hover > .glyphicon-help:before {
 }
 .fuelux-icon-padlock-unlocked,
 .glyphicon-padlock-unlocked {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2220px%22%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22padlock-unlocked%22%3E%20%3Cg%3E%20%20%3Crect%20id%3D%22le_wrappier_135_%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%20%3Cg%3E%20%20%20%3Crect%20x%3D%224.746%22%20y%3D%229.924%22%20style%3D%22fill%3A%23797979%3B%22%20width%3D%2210.385%22%20height%3D%228.076%22%2F%3E%20%20%20%3Cg%3E%20%20%20%20%3Cpath%20style%3D%22fill%3A%23797979%3B%22%20d%3D%22M8.208%2C7.039c0-0.924%2C0.808-1.73%2C1.731-1.73c0.922%2C0%2C1.73%2C0.808%2C1.73%2C1.73v2.885h2.308V7.039%20%20%20%20%20C13.977%2C4.846%2C12.13%2C3%2C9.939%2C3C7.746%2C3%2C5.9%2C4.846%2C5.9%2C7.039%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_1_1_%22%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20fill%3D%22%23797979%22%20d%3D%22M4.746%209.924H15.13V18H4.747zM8.208%207.04c0-.925.808-1.73%201.73-1.73.923%200%201.73.807%201.73%201.73v2.884h2.31V7.04c0-2.194-1.848-4.04-4.04-4.04S5.9%204.846%205.9%207.04%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -2526,7 +2809,7 @@ button:hover > .glyphicon-subtract:before {
 }
 .fuelux-icon-thumbs-up-grey,
 .glyphicon-thumbs-up-grey {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2220px%22%20height%3D%2220px%22%20viewBox%3D%22140.019%200%2020%2020%22%20style%3D%22enable-background%3Anew%20140.019%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%3E%20%3Crect%20id%3D%22le_wrappier_65_%22%20x%3D%22140.019%22%20y%3D%220.001%22%20style%3D%22fill%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%2F%3E%20%3Cg%3E%20%20%3Cpath%20style%3D%22fill%3A%23AAAAAA%3B%22%20d%3D%22M159.853%2C12.366c0.092%2C0.159%2C0.166%2C0.338%2C0.166%2C0.396c0%2C0.057-0.158%2C0.42-0.352%2C0.676%20%20%20c0%2C0-0.031%2C0.041-0.244%2C0.277c-0.244%2C0.271-0.309%2C0.553-0.16%2C0.895c0.113%2C0.261%2C0.113%2C0.261%2C0.113%2C0.261%20%20%20c0.102%2C0.299%2C0.199%2C0.637%2C0.213%2C0.752c0.016%2C0.114-0.176%2C0.478-0.262%2C0.59c-0.084%2C0.111-0.484%2C0.524-0.654%2C0.728%20%20%20c-0.17%2C0.199-0.211%2C0.979-0.205%2C1.08c0%2C0%2C0%2C0-0.014%2C0.088c-0.021%2C0.119-0.031%2C0.258-0.097%2C0.352%20%20%20c-0.512%2C0.729-1.528%2C1.188-1.528%2C1.188c-0.293%2C0.135-0.679%2C0.262-0.855%2C0.28c-0.176%2C0.021-0.906%2C0.076-1.229%2C0.076h-1.056%20%20%20c-0.321%2C0-0.619-0.006-0.662-0.014c-0.041-0.007-0.416-0.031-0.737-0.048c0%2C0-1.416-0.067-2.411-0.184%20%20%20c-0.857-0.098-1.98-0.324-1.98-0.324c-0.316-0.063-0.824-0.16-1.129-0.217c-0.307-0.053-1.107-0.461-1.107-0.783v-7.026%20%20%20c0-0.322%2C0.252-0.658%2C0.559-0.744s1.023-0.666%2C1.092-0.748c0.069-0.082%2C0.374-0.535%2C0.54-0.811l0.963-1.84%20%20%20c0.129-0.296%2C0.361-0.769%2C0.52-1.05l0.555-0.722c0.234-0.221%2C0.613-0.588%2C0.84-0.817l0.511-0.688%20%20%20c0.145-0.289%2C0.319-0.782%2C0.391-1.097l0.326-1.795c0.029-0.32%2C0.063-0.682%2C0.078-0.802C152.052%2C0.173%2C152.395%2C0%2C152.48%2C0%20%20%20s0.332%2C0.013%2C0.356%2C0.026c0%2C0%2C0%2C0%2C0.023%2C0.006c0.885%2C0.208%2C1.43%2C1.113%2C1.43%2C1.113c0.166%2C0.275%2C0.326%2C0.765%2C0.357%2C1.086%20%20%20l-0.176%2C1.984c-0.09%2C0.31-0.279%2C0.799-0.424%2C1.088c0%2C0-0.34%2C0.688-0.592%2C1.312c-0.133%2C0.324-0.148%2C0.457-0.148%2C0.457%20%20%20c-0.039%2C0.319-0.061%2C0.652-0.047%2C0.738s0.564%2C0.16%2C0.885%2C0.162l3.041%2C0.034c0.322%2C0.004%2C0.85%2C0.03%2C1.17%2C0.06%20%20%20c0%2C0%2C0.486%2C0.045%2C0.879%2C0.507c0.338%2C0.396%2C0.527%2C0.784%2C0.527%2C0.784c0.141%2C0.29%2C0.256%2C0.591%2C0.256%2C0.67%20%20%20c0%2C0.079-0.133%2C0.478-0.295%2C0.709c0%2C0%2C0%2C0-0.168%2C0.195c-0.238%2C0.279-0.232%2C0.301-0.232%2C0.301%20%20%20C159.425%2C11.538%2C159.761%2C12.206%2C159.853%2C12.366z%22%2F%3E%20%20%3Cpath%20style%3D%22fill%3A%23AAAAAA%3B%22%20d%3D%22M144.863%2C14.961c0%2C1.309%2C0%2C2.617%2C0%2C3.924c0%2C0.609-0.379%2C1.002-0.99%2C1.01%20%20%20c-0.783%2C0.008-2.07%2C0.008-2.854%2C0c-0.627-0.006-0.998-0.393-0.998-1.02c-0.002-2.609-0.002-5.22%2C0-7.83%20%20%20c0-0.625%2C0.377-1%2C1.008-1.003c0.775-0.003%2C2.057-0.003%2C2.834%2C0c0.621%2C0.003%2C1%2C0.39%2C1%2C1.015%20%20%20C144.863%2C12.357%2C144.863%2C13.659%2C144.863%2C14.961z%22%2F%3E%20%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%22140.019%200%2020%2020%22%20enable-background%3D%22new%20140.019%200%2020%2020%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M140.02%200h20v20h-20z%22%2F%3E%3Cg%20fill%3D%22%23aaa%22%3E%3Cpath%20d%3D%22M159.853%2012.366c.092.16.166.338.166.396%200%20.057-.16.42-.353.676%200%200-.03.04-.244.277-.244.27-.31.553-.16.895l.113.26c.102.3.2.638.213.753.015.114-.177.478-.263.59-.084.11-.484.524-.654.728-.17.2-.21.98-.205%201.08l-.014.09c-.02.118-.03.257-.097.35-.512.73-1.528%201.19-1.528%201.19-.294.134-.68.26-.856.28-.176.02-.906.075-1.23.075h-1.055c-.322%200-.62-.006-.663-.014-.04-.006-.416-.03-.737-.047%200%200-1.416-.067-2.41-.184-.858-.1-1.98-.325-1.98-.325-.317-.063-.825-.16-1.13-.217-.307-.053-1.107-.46-1.107-.783V11.41c0-.323.252-.66.56-.745s1.022-.666%201.09-.748c.07-.082.375-.535.54-.81l.964-1.84c.13-.297.36-.77.52-1.05l.555-.723c.234-.22.613-.588.84-.817l.51-.688c.146-.29.32-.783.392-1.098l.326-1.795c.03-.32.063-.682.078-.802.014-.122.357-.295.442-.295s.332.013.356.026l.023.006c.884.208%201.43%201.113%201.43%201.113.165.275.325.765.356%201.086l-.176%201.985c-.09.31-.28.8-.424%201.088%200%200-.34.688-.592%201.312-.133.324-.148.457-.148.457-.04.32-.06.652-.047.738s.563.16.884.162l3.04.034c.323.004.85.03%201.17.06%200%200%20.487.045.88.507.338.396.527.784.527.784.142.29.257.59.257.67%200%20.08-.133.478-.295.71l-.168.194c-.238.28-.232.302-.232.302.103.306.44.974.53%201.134zM144.863%2014.96v3.925c0%20.61-.38%201.002-.99%201.01-.783.008-2.07.008-2.854%200-.628-.006-1-.393-1-1.02v-7.83c0-.625.378-1%201.01-1.003.774-.003%202.056-.003%202.833%200%20.62.003%201%20.39%201%201.015v3.904z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -2850,90 +3133,6 @@ button:hover > .glyphicon-triangle-west:before {
 .glyphicon-zoom-out:before {
   content: "";
 }
-.fueluxicon-question-mark,
-.fuel-help {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cg%3E%3ClinearGradient%20id%3D%22a%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%229.999%22%20x2%3D%229.999%22%20y2%3D%2220%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23fff%22%2F%3E%3Cstop%20offset%3D%22.25%22%20stop-color%3D%22%23FBFCFD%22%2F%3E%3Cstop%20offset%3D%22.509%22%20stop-color%3D%22%23EEF4F8%22%2F%3E%3Cstop%20offset%3D%22.771%22%20stop-color%3D%22%23DAE7F0%22%2F%3E%3Cstop%20offset%3D%22.8%22%20stop-color%3D%22%23D7E5EF%22%2F%3E%3C%2FlinearGradient%3E%3Cpath%20d%3D%22M0%2017c0%201.65%201.35%203%203%203h14c1.65%200%203-1.35%203-3V3c0-1.65-1.35-3-3-3H3C1.35%200%200%201.35%200%203v14z%22%20fill%3D%22url%28%23a%29%22%2F%3E%3Cpath%20d%3D%22M17%202c.542%200%201%20.458%201%201v14c0%20.542-.458%201-1%201H3c-.542%200-1-.458-1-1V3c0-.542.458-1%201-1h14m0-2H3C1.35%200%200%201.35%200%203v14c0%201.65%201.35%203%203%203h14c1.65%200%203-1.35%203-3V3c0-1.65-1.35-3-3-3z%22%20fill%3D%22%23fff%22%20opacity%3D%22.7%22%2F%3E%3Cpath%20d%3D%22M17%201c1.103%200%202%20.897%202%202v14c0%201.103-.897%202-2%202H3c-1.103%200-2-.897-2-2V3c0-1.103.897-2%202-2h14m0-1H3C1.35%200%200%201.35%200%203v14c0%201.65%201.35%203%203%203h14c1.65%200%203-1.35%203-3V3c0-1.65-1.35-3-3-3z%22%20fill%3D%22%2345494D%22%20opacity%3D%22.7%22%2F%3E%3C%2Fg%3E%3Cpath%20d%3D%22M8.812%2012.8c0-1.73.18-2.485%201.836-3.655.702-.486%201.116-1.044%201.116-1.782%200-1.404-.99-1.783-1.747-1.783-1.62%200-1.854%201.225-1.944%202.07v.02H5.535c0-3.134%202.36-4.214%204.32-4.214%201.082%200%204.61.306%204.61%203.835%200%201.46-.79%202.324-2.178%203.314-.774.558-1.1.9-1.1%202.197H8.813zm2.557%203.745H8.74v-2.54h2.63v2.54z%22%20fill%3D%22%23aaa%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  width: 13px;
-  height: 13px;
-  cursor: pointer;
-  border: 0;
-  padding: 0;
-  outline: 0;
-}
-.fueluxicon-question-mark:before,
-.fuel-help:before {
-  content: "";
-}
-.fueluxicon-question-mark:before,
-.fuel-help:before {
-  content: "";
-}
-.fueluxicon-question-mark:hover,
-.fuel-help:hover,
-.fueluxicon-question-mark:focus,
-.fuel-help:focus {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cg%3E%3ClinearGradient%20id%3D%22a%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%229.999%22%20x2%3D%229.999%22%20y2%3D%2220%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23A0C7E7%22%2F%3E%3Cstop%20offset%3D%22.9%22%20stop-color%3D%22%23448CCA%22%2F%3E%3C%2FlinearGradient%3E%3Cpath%20d%3D%22M0%2017c0%201.65%201.35%203%203%203h14c1.65%200%203-1.35%203-3V3c0-1.65-1.35-3-3-3H3C1.35%200%200%201.35%200%203v14z%22%20fill%3D%22url%28%23a%29%22%2F%3E%3Cg%20opacity%3D%22.7%22%3E%3ClinearGradient%20id%3D%22b%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%2210.001%22%20y1%3D%2220%22%20x2%3D%2210.001%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23A0C7E7%22%2F%3E%3Cstop%20offset%3D%22.9%22%20stop-color%3D%22%23448CCA%22%2F%3E%3C%2FlinearGradient%3E%3Cpath%20d%3D%22M17%202c.542%200%201%20.458%201%201v14c0%20.542-.458%201-1%201H3c-.542%200-1-.458-1-1V3c0-.542.458-1%201-1h14m0-2H3C1.35%200%200%201.35%200%203v14c0%201.65%201.35%203%203%203h14c1.65%200%203-1.35%203-3V3c0-1.65-1.35-3-3-3z%22%20fill%3D%22url%28%23b%29%22%2F%3E%3C%2Fg%3E%3Cpath%20d%3D%22M17%201c1.103%200%202%20.897%202%202v14c0%201.103-.897%202-2%202H3c-1.103%200-2-.897-2-2V3c0-1.103.897-2%202-2h14m0-1H3C1.35%200%200%201.35%200%203v14c0%201.65%201.35%203%203%203h14c1.65%200%203-1.35%203-3V3c0-1.65-1.35-3-3-3z%22%20fill%3D%22%2345494D%22%20opacity%3D%22.7%22%2F%3E%3C%2Fg%3E%3Cpath%20d%3D%22M8.812%2012.8c0-1.73.18-2.485%201.836-3.655.702-.486%201.116-1.044%201.116-1.782%200-1.404-.99-1.783-1.747-1.783-1.62%200-1.854%201.225-1.944%202.07v.02H5.535c0-3.134%202.36-4.214%204.32-4.214%201.082%200%204.61.306%204.61%203.835%200%201.46-.79%202.324-2.178%203.314-.774.558-1.1.9-1.1%202.197H8.813zm2.557%203.745H8.74v-2.54h2.63v2.54z%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  width: 13px;
-  height: 13px;
-}
-.fueluxicon-question-mark:hover:before,
-.fuel-help:hover:before,
-.fueluxicon-question-mark:focus:before,
-.fuel-help:focus:before {
-  content: "";
-}
-.btn .fuelux-icon,
-.btn:hover .fuelux-icon {
-  width: 12px;
-  height: 12px;
-  margin-top: -2px;
-  margin-bottom: -1px;
-  position: relative;
-  top: 1px;
-  display: inline-block;
-  background-size: contain;
-}
-.btn-lg .fuelux-icon,
-.btn-lg:hover .fuelux-icon {
-  width: 13px;
-  height: 13px;
-  margin-top: -2px;
-  margin-bottom: -1px;
-}
-.btn-sm .fuelux-icon,
-.btn-sm:hover .fuelux-icon {
-  width: 10px;
-  height: 10px;
-  margin-top: -1px;
-  margin-bottom: -1px;
-}
-.btn-xs .fuelux-icon,
-.btn-xs:hover .fuelux-icon {
-  width: 9px;
-  height: 9px;
-  margin-top: -1px;
-  margin-bottom: -1px;
-}
-.fuelux-icon.fuelux-icon-gridview-columns-configure,
-.btn:hover .fuelux-icon.fuelux-icon-gridview-columns-configure {
-  width: 18px;
-  height: 18px;
-  margin-bottom: -5px;
-}
-/*
-	BOOTSTRAP OVERRIDE RULES
-	Please do not add the .fuelux namespace wrapper class.
- */
 /*
 	BOOTSTRAP OVERRIDE RULES
 	Please do not add the .fuelux namespace wrapper class.
@@ -3042,13 +3241,6 @@ h6,
   font-size: 11px;
   border-radius: 3px;
 }
-.btn:focus,
-.btn:active:focus,
-.btn.active:focus {
-  outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
-}
 .btn:hover,
 .btn:focus {
   text-decoration: none;
@@ -3071,7 +3263,8 @@ fieldset[disabled] .btn {
 .btn .caret {
   margin-left: 2px;
 }
-.btn-default {
+.btn-default,
+.btn-secondary {
   border: 1px solid #aaaaaa;
   padding: 4px 10px;
   font-size: 11px;
@@ -3086,17 +3279,21 @@ fieldset[disabled] .btn {
   -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
 }
-.repeater-views .btn-default {
+.repeater-views .btn-default,
+.repeater-views .btn-secondary {
   padding: 3px 5px;
   font-size: 11px;
   border-radius: 3px;
 }
 .repeater-views .btn-default .glyphicon,
-.repeater-views .btn-default .fuelux-icon {
+.repeater-views .btn-secondary .glyphicon,
+.repeater-views .btn-default .fuelux-icon,
+.repeater-views .btn-secondary .fuelux-icon {
   width: 11px;
   height: 11px;
 }
-.btn-default:hover {
+.btn-default:hover,
+.btn-secondary:hover {
   color: #4e8abe;
   background-color: #edf5fa;
   background: -webkit-linear-gradient(#edf5fa, #d9eaf5);
@@ -3105,7 +3302,8 @@ fieldset[disabled] .btn {
   background: linear-gradient(#edf5fa, #d9eaf5);
   background-repeat: no-repeat;
 }
-.btn-default:active {
+.btn-default:active,
+.btn-secondary:active {
   color: #4e8abe;
   background-color: #edf5fa;
   background: -webkit-linear-gradient(#edf5fa, #d9eaf5);
@@ -3114,7 +3312,8 @@ fieldset[disabled] .btn {
   background: linear-gradient(#edf5fa, #d9eaf5);
   background-repeat: no-repeat;
 }
-.open > .dropdown-toggle.btn-default {
+.open > .dropdown-toggle.btn-default,
+.open > .dropdown-toggle.btn-secondary {
   color: #4e8abe;
   background-color: #edf5fa;
   background: -webkit-linear-gradient(#edf5fa, #d9eaf5);
@@ -3123,52 +3322,44 @@ fieldset[disabled] .btn {
   background: linear-gradient(#edf5fa, #d9eaf5);
   background-repeat: no-repeat;
 }
-.btn-default:visited {
+.btn-default:visited,
+.btn-secondary:visited {
   color: #4e8abe;
   text-decoration: none;
 }
-.btn-default.disabled,
-.btn-default[disabled],
-fieldset[disabled] .btn-default,
-.btn-default.disabled:hover,
-.btn-default[disabled]:hover,
-fieldset[disabled] .btn-default:hover,
-.btn-default.disabled:focus,
-.btn-default[disabled]:focus,
-fieldset[disabled] .btn-default:focus,
-.btn-default.disabled:active,
-.btn-default[disabled]:active,
-fieldset[disabled] .btn-default:active,
-.btn-default.disabled.active,
-.btn-default[disabled].active,
-fieldset[disabled] .btn-default.active {
-  background-color: #ffffff;
-  background: -webkit-linear-gradient(#ffffff, #d9eaf5);
-  background: -moz-linear-gradient(#ffffff, #d9eaf5);
-  background: -o-linear-gradient(#ffffff, #d9eaf5);
-  background: linear-gradient(#ffffff, #d9eaf5);
-  background-repeat: no-repeat;
-  opacity: 0.5;
-  pointer-events: none;
-}
-.btn-default .badge {
+.btn-default .badge,
+.btn-secondary .badge {
   color: #d9eaf5;
   background: #4e8abe;
 }
 .btn-default:active,
+.btn-secondary:active,
 .btn-default:active:hover,
+.btn-secondary:active:hover,
 .btn-default.active,
+.btn-secondary.active,
 .btn-default.active:hover,
+.btn-secondary.active:hover,
 .btn-default:active:focus,
+.btn-secondary:active:focus,
 .btn-default.active:focus,
+.btn-secondary.active:focus,
 .btn-default.active.focus,
+.btn-secondary.active.focus,
 .btn-default:focus,
+.btn-secondary:focus,
 .btn-default.focus,
+.btn-secondary.focus,
 .btn-default.focus:active,
+.btn-secondary.focus:active,
 .btn-default:hover,
+.btn-secondary:hover,
 .open > .dropdown-toggle.btn-default:hover,
+.open > .dropdown-toggle.btn-secondary:hover,
 .open > .dropdown-toggle.btn-default:focus,
-.open > .dropdown-toggle.btn-default.focus {
+.open > .dropdown-toggle.btn-secondary:focus,
+.open > .dropdown-toggle.btn-default.focus,
+.open > .dropdown-toggle.btn-secondary.focus {
   background-color: #edf5fa;
   background: -webkit-linear-gradient(#edf5fa, #d9eaf5);
   background: -moz-linear-gradient(#edf5fa, #d9eaf5);
@@ -3179,14 +3370,19 @@ fieldset[disabled] .btn-default.active {
   border-color: #aaaaaa;
 }
 .btn-default:hover,
-.open > .dropdown-toggle.btn-default {
+.btn-secondary:hover,
+.open > .dropdown-toggle.btn-default,
+.open > .dropdown-toggle.btn-secondary {
   border-color: #aaaaaa;
 }
-.btn-default.btn-lg {
+.btn-default.btn-lg,
+.btn-secondary.btn-lg {
   padding: 6px 10px;
 }
 .btn-default.btn-sm,
-.btn-default.btn-xs {
+.btn-secondary.btn-sm,
+.btn-default.btn-xs,
+.btn-secondary.btn-xs {
   padding: 2px 8px;
 }
 .btn-basic {
@@ -3248,30 +3444,6 @@ fieldset[disabled] .btn-default.active {
 .btn-basic:visited {
   color: #666666;
   text-decoration: none;
-}
-.btn-basic.disabled,
-.btn-basic[disabled],
-fieldset[disabled] .btn-basic,
-.btn-basic.disabled:hover,
-.btn-basic[disabled]:hover,
-fieldset[disabled] .btn-basic:hover,
-.btn-basic.disabled:focus,
-.btn-basic[disabled]:focus,
-fieldset[disabled] .btn-basic:focus,
-.btn-basic.disabled:active,
-.btn-basic[disabled]:active,
-fieldset[disabled] .btn-basic:active,
-.btn-basic.disabled.active,
-.btn-basic[disabled].active,
-fieldset[disabled] .btn-basic.active {
-  background-color: #ffffff;
-  background: -webkit-linear-gradient(#ffffff, #dddddd);
-  background: -moz-linear-gradient(#ffffff, #dddddd);
-  background: -o-linear-gradient(#ffffff, #dddddd);
-  background: linear-gradient(#ffffff, #dddddd);
-  background-repeat: no-repeat;
-  opacity: 0.5;
-  pointer-events: none;
 }
 .btn-basic .badge {
   color: #dddddd;
@@ -3342,30 +3514,6 @@ fieldset[disabled] .btn-basic.active {
   color: #ffffff;
   text-decoration: none;
 }
-.btn-primary.disabled,
-.btn-primary[disabled],
-fieldset[disabled] .btn-primary,
-.btn-primary.disabled:hover,
-.btn-primary[disabled]:hover,
-fieldset[disabled] .btn-primary:hover,
-.btn-primary.disabled:focus,
-.btn-primary[disabled]:focus,
-fieldset[disabled] .btn-primary:focus,
-.btn-primary.disabled:active,
-.btn-primary[disabled]:active,
-fieldset[disabled] .btn-primary:active,
-.btn-primary.disabled.active,
-.btn-primary[disabled].active,
-fieldset[disabled] .btn-primary.active {
-  background-color: #66afe9;
-  background: -webkit-linear-gradient(#66afe9, #4e8abe);
-  background: -moz-linear-gradient(#66afe9, #4e8abe);
-  background: -o-linear-gradient(#66afe9, #4e8abe);
-  background: linear-gradient(#66afe9, #4e8abe);
-  background-repeat: no-repeat;
-  opacity: 0.5;
-  pointer-events: none;
-}
 .btn-primary .badge {
   color: #4e8abe;
   background: #ffffff;
@@ -3387,56 +3535,6 @@ fieldset[disabled] .btn-primary.active {
   height: 21px;
   border-radius: 10.5px;
   padding: 5px 10px 5px 4px;
-}
-.btn-primary.btn-create:before {
-  content: "+";
-  position: relative;
-  padding: 1px 5px;
-  margin-right: 5px;
-  border-radius: 100%;
-  background-color: #4e8abe;
-  background: -webkit-linear-gradient(#4e8abe, #66afe9);
-  background: -moz-linear-gradient(#4e8abe, #66afe9);
-  background: -o-linear-gradient(#4e8abe, #66afe9);
-  background: linear-gradient(#4e8abe, #66afe9);
-  background-repeat: no-repeat;
-}
-.btn-primary.btn-create.hover:before,
-.btn-primary.btn-create:hover:before {
-  background-color: #6196c5;
-  background: -webkit-linear-gradient(#6196c5, #7cbbec);
-  background: -moz-linear-gradient(#6196c5, #7cbbec);
-  background: -o-linear-gradient(#6196c5, #7cbbec);
-  background: linear-gradient(#6196c5, #7cbbec);
-  background-repeat: no-repeat;
-}
-.btn-primary.btn-create:active:before,
-.btn-primary.btn-create.active:before,
-.btn-primary.btn-create:focus:before {
-  background-color: #507587;
-  background: -webkit-linear-gradient(#507587, #7cbbec);
-  background: -moz-linear-gradient(#507587, #7cbbec);
-  background: -o-linear-gradient(#507587, #7cbbec);
-  background: linear-gradient(#507587, #7cbbec);
-  background-repeat: no-repeat;
-}
-.btn-primary.btn-create.btn-lg {
-  height: 26px;
-  border-radius: 13px;
-  padding: 7px 12px 7px 5px;
-}
-.btn-primary.btn-create.btn-lg:before {
-  margin-right: 6px;
-}
-.btn-primary.btn-create.btn-xs {
-  height: auto;
-  padding: 3px 8px;
-  font-size: 10px;
-  border-radius: 8px;
-}
-.btn-primary.btn-create.btn-xs:before {
-  margin-left: -5px;
-  padding: 0px 3px;
 }
 .btn-success {
   color: #e9fcde;
@@ -3479,30 +3577,6 @@ fieldset[disabled] .btn-primary.active {
 .btn-success:visited {
   color: #e9fcde;
   text-decoration: none;
-}
-.btn-success.disabled,
-.btn-success[disabled],
-fieldset[disabled] .btn-success,
-.btn-success.disabled:hover,
-.btn-success[disabled]:hover,
-fieldset[disabled] .btn-success:hover,
-.btn-success.disabled:focus,
-.btn-success[disabled]:focus,
-fieldset[disabled] .btn-success:focus,
-.btn-success.disabled:active,
-.btn-success[disabled]:active,
-fieldset[disabled] .btn-success:active,
-.btn-success.disabled.active,
-.btn-success[disabled].active,
-fieldset[disabled] .btn-success.active {
-  background-color: #29f89c;
-  background: -webkit-linear-gradient(#29f89c, #5afab3);
-  background: -moz-linear-gradient(#29f89c, #5afab3);
-  background: -o-linear-gradient(#29f89c, #5afab3);
-  background: linear-gradient(#29f89c, #5afab3);
-  background-repeat: no-repeat;
-  opacity: 0.5;
-  pointer-events: none;
 }
 .btn-success .badge {
   color: #04844b;
@@ -3553,30 +3627,6 @@ fieldset[disabled] .btn-success.active {
   color: #fff1e1;
   text-decoration: none;
 }
-.btn-warning.disabled,
-.btn-warning[disabled],
-fieldset[disabled] .btn-warning,
-.btn-warning.disabled:hover,
-.btn-warning[disabled]:hover,
-fieldset[disabled] .btn-warning:hover,
-.btn-warning.disabled:focus,
-.btn-warning[disabled]:focus,
-fieldset[disabled] .btn-warning:focus,
-.btn-warning.disabled:active,
-.btn-warning[disabled]:active,
-fieldset[disabled] .btn-warning:active,
-.btn-warning.disabled.active,
-.btn-warning[disabled].active,
-fieldset[disabled] .btn-warning.active {
-  background-color: #fcd4b1;
-  background: -webkit-linear-gradient(#fcd4b1, #feefe2);
-  background: -moz-linear-gradient(#fcd4b1, #feefe2);
-  background: -o-linear-gradient(#fcd4b1, #feefe2);
-  background: linear-gradient(#fcd4b1, #feefe2);
-  background-repeat: no-repeat;
-  opacity: 0.5;
-  pointer-events: none;
-}
 .btn-warning .badge {
   color: #f7841d;
   background: #fff1e1;
@@ -3626,30 +3676,6 @@ fieldset[disabled] .btn-warning.active {
   color: #ffffff;
   text-decoration: none;
 }
-.btn-danger.disabled,
-.btn-danger[disabled],
-fieldset[disabled] .btn-danger,
-.btn-danger.disabled:hover,
-.btn-danger[disabled]:hover,
-fieldset[disabled] .btn-danger:hover,
-.btn-danger.disabled:focus,
-.btn-danger[disabled]:focus,
-fieldset[disabled] .btn-danger:focus,
-.btn-danger.disabled:active,
-.btn-danger[disabled]:active,
-fieldset[disabled] .btn-danger:active,
-.btn-danger.disabled.active,
-.btn-danger[disabled].active,
-fieldset[disabled] .btn-danger.active {
-  background-color: #fdf1f1;
-  background: -webkit-linear-gradient(#fdf1f1, #f2d1d0);
-  background: -moz-linear-gradient(#fdf1f1, #f2d1d0);
-  background: -o-linear-gradient(#fdf1f1, #f2d1d0);
-  background: linear-gradient(#fdf1f1, #f2d1d0);
-  background-repeat: no-repeat;
-  opacity: 0.5;
-  pointer-events: none;
-}
 .btn-danger .badge {
   color: #c23934;
   background: #ffffff;
@@ -3686,14 +3712,6 @@ fieldset[disabled] .btn-link {
   background-color: transparent;
   -webkit-box-shadow: none;
   box-shadow: none;
-}
-.btn-link[disabled]:hover,
-fieldset[disabled] .btn-link:hover,
-.btn-link[disabled]:focus,
-fieldset[disabled] .btn-link:focus {
-  color: #777777;
-  text-decoration: none;
-  cursor: not-allowed;
 }
 .btn-link .fuelux-icon {
   width: 12px;
@@ -4510,20 +4528,11 @@ table th[class*="col-"] {
 .table > tfoot > tr > td.active,
 .table > thead > tr > th.active,
 .table > tbody > tr > th.active,
-.table > tfoot > tr > th.active,
-.table > thead > tr.active > td,
-.table > tbody > tr.active > td,
-.table > tfoot > tr.active > td,
-.table > thead > tr.active > th,
-.table > tbody > tr.active > th,
-.table > tfoot > tr.active > th {
+.table > tfoot > tr > th.active {
   background-color: #f5f5f5;
 }
 .table-hover > tbody > tr > td.active:hover,
-.table-hover > tbody > tr > th.active:hover,
-.table-hover > tbody > tr.active:hover > td,
-.table-hover > tbody > tr:hover > .active,
-.table-hover > tbody > tr.active:hover > th {
+.table-hover > tbody > tr > th.active:hover {
   background-color: #e8e8e8;
 }
 .table > thead > tr > td.success,
@@ -4531,20 +4540,11 @@ table th[class*="col-"] {
 .table > tfoot > tr > td.success,
 .table > thead > tr > th.success,
 .table > tbody > tr > th.success,
-.table > tfoot > tr > th.success,
-.table > thead > tr.success > td,
-.table > tbody > tr.success > td,
-.table > tfoot > tr.success > td,
-.table > thead > tr.success > th,
-.table > tbody > tr.success > th,
-.table > tfoot > tr.success > th {
+.table > tfoot > tr > th.success {
   background-color: #e9fcde;
 }
 .table-hover > tbody > tr > td.success:hover,
-.table-hover > tbody > tr > th.success:hover,
-.table-hover > tbody > tr.success:hover > td,
-.table-hover > tbody > tr:hover > .success,
-.table-hover > tbody > tr.success:hover > th {
+.table-hover > tbody > tr > th.success:hover {
   background-color: #d9fac7;
 }
 .table > thead > tr > td.info,
@@ -4552,20 +4552,11 @@ table th[class*="col-"] {
 .table > tfoot > tr > td.info,
 .table > thead > tr > th.info,
 .table > tbody > tr > th.info,
-.table > tfoot > tr > th.info,
-.table > thead > tr.info > td,
-.table > tbody > tr.info > td,
-.table > tfoot > tr.info > td,
-.table > thead > tr.info > th,
-.table > tbody > tr.info > th,
-.table > tfoot > tr.info > th {
+.table > tfoot > tr > th.info {
   background-color: #d9eaf5;
 }
 .table-hover > tbody > tr > td.info:hover,
-.table-hover > tbody > tr > th.info:hover,
-.table-hover > tbody > tr.info:hover > td,
-.table-hover > tbody > tr:hover > .info,
-.table-hover > tbody > tr.info:hover > th {
+.table-hover > tbody > tr > th.info:hover {
   background-color: #c5dff0;
 }
 .table > thead > tr > td.warning,
@@ -4573,20 +4564,11 @@ table th[class*="col-"] {
 .table > tfoot > tr > td.warning,
 .table > thead > tr > th.warning,
 .table > tbody > tr > th.warning,
-.table > tfoot > tr > th.warning,
-.table > thead > tr.warning > td,
-.table > tbody > tr.warning > td,
-.table > tfoot > tr.warning > td,
-.table > thead > tr.warning > th,
-.table > tbody > tr.warning > th,
-.table > tfoot > tr.warning > th {
+.table > tfoot > tr > th.warning {
   background-color: #fff1e1;
 }
 .table-hover > tbody > tr > td.warning:hover,
-.table-hover > tbody > tr > th.warning:hover,
-.table-hover > tbody > tr.warning:hover > td,
-.table-hover > tbody > tr:hover > .warning,
-.table-hover > tbody > tr.warning:hover > th {
+.table-hover > tbody > tr > th.warning:hover {
   background-color: #ffe5c7;
 }
 .table > thead > tr > td.danger,
@@ -4594,20 +4576,11 @@ table th[class*="col-"] {
 .table > tfoot > tr > td.danger,
 .table > thead > tr > th.danger,
 .table > tbody > tr > th.danger,
-.table > tfoot > tr > th.danger,
-.table > thead > tr.danger > td,
-.table > tbody > tr.danger > td,
-.table > tfoot > tr.danger > td,
-.table > thead > tr.danger > th,
-.table > tbody > tr.danger > th,
-.table > tfoot > tr.danger > th {
+.table > tfoot > tr > th.danger {
   background-color: #fceced;
 }
 .table-hover > tbody > tr > td.danger:hover,
-.table-hover > tbody > tr > th.danger:hover,
-.table-hover > tbody > tr.danger:hover > td,
-.table-hover > tbody > tr:hover > .danger,
-.table-hover > tbody > tr.danger:hover > th {
+.table-hover > tbody > tr > th.danger:hover {
   background-color: #f9d6d8;
 }
 @media screen and (max-width: 767px) {
@@ -4667,44 +4640,20 @@ table th[class*="col-"] {
 .label-default {
   background-color: #777777;
 }
-.label-default[href]:hover,
-.label-default[href]:focus {
-  background-color: #5e5e5e;
-}
 .label-primary {
   background-color: #3074af;
-}
-.label-primary[href]:hover,
-.label-primary[href]:focus {
-  background-color: #255987;
 }
 .label-success {
   background-color: #04844b;
 }
-.label-success[href]:hover,
-.label-success[href]:focus {
-  background-color: #03532f;
-}
 .label-info {
   background-color: #385b6b;
-}
-.label-info[href]:hover,
-.label-info[href]:focus {
-  background-color: #263f4a;
 }
 .label-warning {
   background-color: #f7841d;
 }
-.label-warning[href]:hover,
-.label-warning[href]:focus {
-  background-color: #d96b08;
-}
 .label-danger {
   background-color: #c23934;
-}
-.label-danger[href]:hover,
-.label-danger[href]:focus {
-  background-color: #9a2d29;
 }
 /*
 	BOOTSTRAP OVERRIDE RULES
@@ -4757,7 +4706,7 @@ table th[class*="col-"] {
 }
 .progress-striped .progress-bar,
 .progress-bar-striped {
-  background: repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 0, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), /* on "bottom" */ linear-gradient(#ffffff, #dbdbdb);
+  background: repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 0, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(#ffffff, #dbdbdb);
   background-size: 14px 14px;
 }
 .progress-bar-info {
@@ -4769,7 +4718,7 @@ table th[class*="col-"] {
   background-repeat: no-repeat;
 }
 .progress-bar-info.progress-bar-striped {
-  background: repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 0, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), /* on "bottom" */ linear-gradient(#ecf5fc, #66afe9);
+  background: repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 0, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(#ecf5fc, #66afe9);
   background-size: 14px 14px;
 }
 .progress-bar-success {
@@ -4781,7 +4730,7 @@ table th[class*="col-"] {
   background-repeat: no-repeat;
 }
 .progress-bar-success.progress-bar-striped {
-  background: repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 0, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), /* on "bottom" */ linear-gradient(#c1edd4, #4bca81);
+  background: repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 0, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(#c1edd4, #4bca81);
   background-size: 14px 14px;
 }
 .progress-bar-warning {
@@ -4793,7 +4742,7 @@ table th[class*="col-"] {
   background-repeat: no-repeat;
 }
 .progress-bar-warning.progress-bar-striped {
-  background: repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 0, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), /* on "bottom" */ linear-gradient(#fffbf7, #ffb55e);
+  background: repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 0, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(#fffbf7, #ffb55e);
   background-size: 14px 14px;
 }
 .progress-bar-danger {
@@ -4805,7 +4754,7 @@ table th[class*="col-"] {
   background-repeat: no-repeat;
 }
 .progress-bar-danger.progress-bar-striped {
-  background: repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 0, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), /* on "bottom" */ linear-gradient(#e8aaa7, #c23934);
+  background: repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 0, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(#e8aaa7, #c23934);
   background-size: 14px 14px;
 }
 .progress.active .progress-bar,
@@ -5484,89 +5433,17 @@ a.list-group-item.active > .badge,
   color: #04844b;
   background-color: #e9fcde;
 }
-a.list-group-item-success {
-  color: #04844b;
-}
-a.list-group-item-success .list-group-item-heading {
-  color: inherit;
-}
-a.list-group-item-success:hover,
-a.list-group-item-success:focus {
-  color: #04844b;
-  background-color: #d9fac7;
-}
-a.list-group-item-success.active,
-a.list-group-item-success.active:hover,
-a.list-group-item-success.active:focus {
-  color: #ffffff;
-  background-color: #04844b;
-  border-color: #04844b;
-}
 .list-group-item-info {
   color: #385b6b;
   background-color: #d9eaf5;
-}
-a.list-group-item-info {
-  color: #385b6b;
-}
-a.list-group-item-info .list-group-item-heading {
-  color: inherit;
-}
-a.list-group-item-info:hover,
-a.list-group-item-info:focus {
-  color: #385b6b;
-  background-color: #c5dff0;
-}
-a.list-group-item-info.active,
-a.list-group-item-info.active:hover,
-a.list-group-item-info.active:focus {
-  color: #ffffff;
-  background-color: #385b6b;
-  border-color: #385b6b;
 }
 .list-group-item-warning {
   color: #f7841d;
   background-color: #fff1e1;
 }
-a.list-group-item-warning {
-  color: #f7841d;
-}
-a.list-group-item-warning .list-group-item-heading {
-  color: inherit;
-}
-a.list-group-item-warning:hover,
-a.list-group-item-warning:focus {
-  color: #f7841d;
-  background-color: #ffe5c7;
-}
-a.list-group-item-warning.active,
-a.list-group-item-warning.active:hover,
-a.list-group-item-warning.active:focus {
-  color: #ffffff;
-  background-color: #f7841d;
-  border-color: #f7841d;
-}
 .list-group-item-danger {
   color: #c23934;
   background-color: #fceced;
-}
-a.list-group-item-danger {
-  color: #c23934;
-}
-a.list-group-item-danger .list-group-item-heading {
-  color: inherit;
-}
-a.list-group-item-danger:hover,
-a.list-group-item-danger:focus {
-  color: #c23934;
-  background-color: #f9d6d8;
-}
-a.list-group-item-danger.active,
-a.list-group-item-danger.active:hover,
-a.list-group-item-danger.active:focus {
-  color: #ffffff;
-  background-color: #c23934;
-  border-color: #c23934;
 }
 /*
 	BOOTSTRAP OVERRIDE RULES
@@ -5894,29 +5771,84 @@ a.list-group-item-danger.active:focus {
   color: #4e8abe;
   text-decoration: none;
 }
-.pagination-btn.disabled,
-.pagination-btn[disabled],
-fieldset[disabled] .pagination-btn,
-.pagination-btn.disabled:hover,
-.pagination-btn[disabled]:hover,
-fieldset[disabled] .pagination-btn:hover,
-.pagination-btn.disabled:focus,
-.pagination-btn[disabled]:focus,
-fieldset[disabled] .pagination-btn:focus,
-.pagination-btn.disabled:active,
-.pagination-btn[disabled]:active,
-fieldset[disabled] .pagination-btn:active,
-.pagination-btn.disabled.active,
-.pagination-btn[disabled].active,
-fieldset[disabled] .pagination-btn.active {
-  background-color: #ffffff;
-  background: -webkit-linear-gradient(#ffffff, #d9eaf5);
-  background: -moz-linear-gradient(#ffffff, #d9eaf5);
-  background: -o-linear-gradient(#ffffff, #d9eaf5);
-  background: linear-gradient(#ffffff, #d9eaf5);
+.pagination-btn .badge {
+  color: #d9eaf5;
+  background: #4e8abe;
+}
+.pagination-btn:active,
+.pagination-btn:active:hover,
+.pagination-btn.active,
+.pagination-btn.active:hover,
+.pagination-btn:active:focus,
+.pagination-btn.active:focus,
+.pagination-btn.active.focus,
+.pagination-btn:focus,
+.pagination-btn.focus,
+.pagination-btn.focus:active,
+.pagination-btn:hover,
+.open > .dropdown-toggle.pagination-btn:hover,
+.open > .dropdown-toggle.pagination-btn:focus,
+.open > .dropdown-toggle.pagination-btn.focus {
+  background-color: #edf5fa;
+  background: -webkit-linear-gradient(#edf5fa, #d9eaf5);
+  background: -moz-linear-gradient(#edf5fa, #d9eaf5);
+  background: -o-linear-gradient(#edf5fa, #d9eaf5);
+  background: linear-gradient(#edf5fa, #d9eaf5);
   background-repeat: no-repeat;
-  opacity: 0.5;
-  pointer-events: none;
+  color: #4e8abe;
+  border-color: #aaaaaa;
+}
+.pagination-btn:hover,
+.open > .dropdown-toggle.pagination-btn {
+  border-color: #aaaaaa;
+}
+.pagination-btn.btn-lg {
+  padding: 6px 10px;
+}
+.pagination-btn.btn-sm,
+.pagination-btn.btn-xs {
+  padding: 2px 8px;
+}
+.repeater-views .pagination-btn {
+  padding: 3px 5px;
+  font-size: 11px;
+  border-radius: 3px;
+}
+.repeater-views .pagination-btn .glyphicon,
+.repeater-views .pagination-btn .fuelux-icon {
+  width: 11px;
+  height: 11px;
+}
+.pagination-btn:hover {
+  color: #4e8abe;
+  background-color: #edf5fa;
+  background: -webkit-linear-gradient(#edf5fa, #d9eaf5);
+  background: -moz-linear-gradient(#edf5fa, #d9eaf5);
+  background: -o-linear-gradient(#edf5fa, #d9eaf5);
+  background: linear-gradient(#edf5fa, #d9eaf5);
+  background-repeat: no-repeat;
+}
+.pagination-btn:active {
+  color: #4e8abe;
+  background-color: #edf5fa;
+  background: -webkit-linear-gradient(#edf5fa, #d9eaf5);
+  background: -moz-linear-gradient(#edf5fa, #d9eaf5);
+  background: -o-linear-gradient(#edf5fa, #d9eaf5);
+  background: linear-gradient(#edf5fa, #d9eaf5);
+  background-repeat: no-repeat;
+}
+.open > .dropdown-toggle.pagination-btn {
+  color: #4e8abe;
+  background-color: #edf5fa;
+  background: -webkit-linear-gradient(#edf5fa, #d9eaf5);
+  background: -moz-linear-gradient(#edf5fa, #d9eaf5);
+  background: -o-linear-gradient(#edf5fa, #d9eaf5);
+  background: linear-gradient(#edf5fa, #d9eaf5);
+  background-repeat: no-repeat;
+}
+.pagination-btn:visited {
+  color: #4e8abe;
+  text-decoration: none;
 }
 .pagination-btn .badge {
   color: #d9eaf5;
@@ -6027,7 +5959,7 @@ fieldset[disabled] .pagination-btn.active {
 }
 .breadcrumb > li + li:before,
 .breadcrumb > li:first-child:before {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cg%20fill%3D%22%23AAA%22%3E%3Cpath%20d%3D%22M4.314%206.263C4.377%206.14%204.317%206%204.177%206h-1.94c-.138%200-.303.14-.366.263L.048%209.88c-.062.125-.062.335%200%20.458l1.824%203.52c.064.12.23.142.37.142h1.937c.14%200%20.2-.016.138-.14L2.49%2010.308c-.062-.125-.062-.325%200-.445l1.824-3.6zM8%204.75v10.5h12V4.75H8zm3.22%209.432h-2v-2.234h2v2.234zm0-3.065h-2V8.883h2v2.234zm0-3.065h-2V5.818h2v2.234zm7.56%206.13h-6.56v-2.234h6.56v2.234zm0-3.065h-6.56V8.883h6.56v2.234zm0-3.065h-6.56V5.818h6.56v2.234z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cg%20fill%3D%22%23aaa%22%3E%3Cpath%20d%3D%22M4.314%206.263C4.377%206.14%204.317%206%204.177%206h-1.94c-.138%200-.303.14-.366.263L.048%209.88c-.062.125-.062.335%200%20.458l1.824%203.52c.064.12.23.142.37.142h1.937c.14%200%20.2-.016.138-.14L2.49%2010.308c-.062-.125-.062-.325%200-.445l1.824-3.6zM8%204.75v10.5h12V4.75H8zm3.22%209.432h-2v-2.234h2v2.234zm0-3.065h-2V8.883h2v2.234zm0-3.065h-2V5.818h2v2.234zm7.56%206.13h-6.56v-2.234h6.56v2.234zm0-3.065h-6.56V8.883h6.56v2.234zm0-3.065h-6.56V5.818h6.56v2.234z%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -6297,9 +6229,6 @@ fieldset[disabled] .pagination-btn.active {
 	BOOTSTRAP OVERRIDE RULES
 	Please do not add the .fuelux namespace wrapper class.
  */
-.column-header {
-  padding: 6px 10px;
-}
 .fuelux .serif {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
@@ -8615,6 +8544,151 @@ fieldset[disabled] .fuelux .repeater-pagination .repeater-prev.active {
 .fuelux .repeater-pagination .repeater-prev.btn-xs {
   padding: 2px 8px;
 }
+.repeater-views .fuelux .repeater-pagination .repeater-next,
+.repeater-views .fuelux .repeater-pagination .repeater-prev {
+  padding: 3px 5px;
+  font-size: 11px;
+  border-radius: 3px;
+}
+.repeater-views .fuelux .repeater-pagination .repeater-next .glyphicon,
+.repeater-views .fuelux .repeater-pagination .repeater-prev .glyphicon,
+.repeater-views .fuelux .repeater-pagination .repeater-next .fuelux-icon,
+.repeater-views .fuelux .repeater-pagination .repeater-prev .fuelux-icon {
+  width: 11px;
+  height: 11px;
+}
+.fuelux .repeater-pagination .repeater-next:hover,
+.fuelux .repeater-pagination .repeater-prev:hover {
+  color: #4e8abe;
+  background-color: #edf5fa;
+  background: -webkit-linear-gradient(#edf5fa, #d9eaf5);
+  background: -moz-linear-gradient(#edf5fa, #d9eaf5);
+  background: -o-linear-gradient(#edf5fa, #d9eaf5);
+  background: linear-gradient(#edf5fa, #d9eaf5);
+  background-repeat: no-repeat;
+}
+.fuelux .repeater-pagination .repeater-next:active,
+.fuelux .repeater-pagination .repeater-prev:active {
+  color: #4e8abe;
+  background-color: #edf5fa;
+  background: -webkit-linear-gradient(#edf5fa, #d9eaf5);
+  background: -moz-linear-gradient(#edf5fa, #d9eaf5);
+  background: -o-linear-gradient(#edf5fa, #d9eaf5);
+  background: linear-gradient(#edf5fa, #d9eaf5);
+  background-repeat: no-repeat;
+}
+.open > .dropdown-toggle.fuelux .repeater-pagination .repeater-next,
+.open > .dropdown-toggle.fuelux .repeater-pagination .repeater-prev {
+  color: #4e8abe;
+  background-color: #edf5fa;
+  background: -webkit-linear-gradient(#edf5fa, #d9eaf5);
+  background: -moz-linear-gradient(#edf5fa, #d9eaf5);
+  background: -o-linear-gradient(#edf5fa, #d9eaf5);
+  background: linear-gradient(#edf5fa, #d9eaf5);
+  background-repeat: no-repeat;
+}
+.fuelux .repeater-pagination .repeater-next:visited,
+.fuelux .repeater-pagination .repeater-prev:visited {
+  color: #4e8abe;
+  text-decoration: none;
+}
+.fuelux .repeater-pagination .repeater-next.disabled,
+.fuelux .repeater-pagination .repeater-prev.disabled,
+.fuelux .repeater-pagination .repeater-next[disabled],
+.fuelux .repeater-pagination .repeater-prev[disabled],
+fieldset[disabled] .fuelux .repeater-pagination .repeater-next,
+fieldset[disabled] .fuelux .repeater-pagination .repeater-prev,
+.fuelux .repeater-pagination .repeater-next.disabled:hover,
+.fuelux .repeater-pagination .repeater-prev.disabled:hover,
+.fuelux .repeater-pagination .repeater-next[disabled]:hover,
+.fuelux .repeater-pagination .repeater-prev[disabled]:hover,
+fieldset[disabled] .fuelux .repeater-pagination .repeater-next:hover,
+fieldset[disabled] .fuelux .repeater-pagination .repeater-prev:hover,
+.fuelux .repeater-pagination .repeater-next.disabled:focus,
+.fuelux .repeater-pagination .repeater-prev.disabled:focus,
+.fuelux .repeater-pagination .repeater-next[disabled]:focus,
+.fuelux .repeater-pagination .repeater-prev[disabled]:focus,
+fieldset[disabled] .fuelux .repeater-pagination .repeater-next:focus,
+fieldset[disabled] .fuelux .repeater-pagination .repeater-prev:focus,
+.fuelux .repeater-pagination .repeater-next.disabled:active,
+.fuelux .repeater-pagination .repeater-prev.disabled:active,
+.fuelux .repeater-pagination .repeater-next[disabled]:active,
+.fuelux .repeater-pagination .repeater-prev[disabled]:active,
+fieldset[disabled] .fuelux .repeater-pagination .repeater-next:active,
+fieldset[disabled] .fuelux .repeater-pagination .repeater-prev:active,
+.fuelux .repeater-pagination .repeater-next.disabled.active,
+.fuelux .repeater-pagination .repeater-prev.disabled.active,
+.fuelux .repeater-pagination .repeater-next[disabled].active,
+.fuelux .repeater-pagination .repeater-prev[disabled].active,
+fieldset[disabled] .fuelux .repeater-pagination .repeater-next.active,
+fieldset[disabled] .fuelux .repeater-pagination .repeater-prev.active {
+  background-color: #ffffff;
+  background: -webkit-linear-gradient(#ffffff, #d9eaf5);
+  background: -moz-linear-gradient(#ffffff, #d9eaf5);
+  background: -o-linear-gradient(#ffffff, #d9eaf5);
+  background: linear-gradient(#ffffff, #d9eaf5);
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  pointer-events: none;
+}
+.fuelux .repeater-pagination .repeater-next .badge,
+.fuelux .repeater-pagination .repeater-prev .badge {
+  color: #d9eaf5;
+  background: #4e8abe;
+}
+.fuelux .repeater-pagination .repeater-next:active,
+.fuelux .repeater-pagination .repeater-prev:active,
+.fuelux .repeater-pagination .repeater-next:active:hover,
+.fuelux .repeater-pagination .repeater-prev:active:hover,
+.fuelux .repeater-pagination .repeater-next.active,
+.fuelux .repeater-pagination .repeater-prev.active,
+.fuelux .repeater-pagination .repeater-next.active:hover,
+.fuelux .repeater-pagination .repeater-prev.active:hover,
+.fuelux .repeater-pagination .repeater-next:active:focus,
+.fuelux .repeater-pagination .repeater-prev:active:focus,
+.fuelux .repeater-pagination .repeater-next.active:focus,
+.fuelux .repeater-pagination .repeater-prev.active:focus,
+.fuelux .repeater-pagination .repeater-next.active.focus,
+.fuelux .repeater-pagination .repeater-prev.active.focus,
+.fuelux .repeater-pagination .repeater-next:focus,
+.fuelux .repeater-pagination .repeater-prev:focus,
+.fuelux .repeater-pagination .repeater-next.focus,
+.fuelux .repeater-pagination .repeater-prev.focus,
+.fuelux .repeater-pagination .repeater-next.focus:active,
+.fuelux .repeater-pagination .repeater-prev.focus:active,
+.fuelux .repeater-pagination .repeater-next:hover,
+.fuelux .repeater-pagination .repeater-prev:hover,
+.open > .dropdown-toggle.fuelux .repeater-pagination .repeater-next:hover,
+.open > .dropdown-toggle.fuelux .repeater-pagination .repeater-prev:hover,
+.open > .dropdown-toggle.fuelux .repeater-pagination .repeater-next:focus,
+.open > .dropdown-toggle.fuelux .repeater-pagination .repeater-prev:focus,
+.open > .dropdown-toggle.fuelux .repeater-pagination .repeater-next.focus,
+.open > .dropdown-toggle.fuelux .repeater-pagination .repeater-prev.focus {
+  background-color: #edf5fa;
+  background: -webkit-linear-gradient(#edf5fa, #d9eaf5);
+  background: -moz-linear-gradient(#edf5fa, #d9eaf5);
+  background: -o-linear-gradient(#edf5fa, #d9eaf5);
+  background: linear-gradient(#edf5fa, #d9eaf5);
+  background-repeat: no-repeat;
+  color: #4e8abe;
+  border-color: #aaaaaa;
+}
+.fuelux .repeater-pagination .repeater-next:hover,
+.fuelux .repeater-pagination .repeater-prev:hover,
+.open > .dropdown-toggle.fuelux .repeater-pagination .repeater-next,
+.open > .dropdown-toggle.fuelux .repeater-pagination .repeater-prev {
+  border-color: #aaaaaa;
+}
+.fuelux .repeater-pagination .repeater-next.btn-lg,
+.fuelux .repeater-pagination .repeater-prev.btn-lg {
+  padding: 6px 10px;
+}
+.fuelux .repeater-pagination .repeater-next.btn-sm,
+.fuelux .repeater-pagination .repeater-prev.btn-sm,
+.fuelux .repeater-pagination .repeater-next.btn-xs,
+.fuelux .repeater-pagination .repeater-prev.btn-xs {
+  padding: 2px 8px;
+}
 .fuelux .repeater-pagination .repeater-next .glyphicon,
 .fuelux .repeater-pagination .repeater-prev .glyphicon {
   display: block;
@@ -9257,6 +9331,18 @@ fieldset[disabled] .fuelux .repeater-pagination .repeater-prev.active {
   background-image: -webkit-linear-gradient(top, #fafafa, #eeeeee);
   background-image: linear-gradient(to bottom, #fafafa, #eeeeee);
   *zoom: 1;
+}
+.fuelux .wizard > ul.steps:before,
+.fuelux .wizard > .steps-container > ul.steps:before,
+.fuelux .wizard > ul.steps:after,
+.fuelux .wizard > .steps-container > ul.steps:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.fuelux .wizard > ul.steps:after,
+.fuelux .wizard > .steps-container > ul.steps:after {
+  clear: both;
 }
 .fuelux .wizard > ul.steps:before,
 .fuelux .wizard > .steps-container > ul.steps:before,
