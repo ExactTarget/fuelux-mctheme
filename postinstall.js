@@ -1,4 +1,4 @@
 
-if (process.env.INSTALL_BOWER === 'true') {
+if (process.env.INSTALL_FUELUX_MCTHEME_BOWER === 'true') {
    require("bower").commands.install();
 }
