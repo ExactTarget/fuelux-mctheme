@@ -339,14 +339,14 @@ module.exports = function (grunt) {
 		},
 		watch: {
 			full: {
-				files: ['Gruntfile.js', 'examples/**', 'less/**', 'tokens/**'],
+				files: ['Gruntfile.js', 'examples/**', 'less/**', '!less/tokens/**', 'tokens/**'],
 				options: {
 					livereload: isLivereloadEnabled
 				},
 				tasks: ['distcss']
 			},
 			dev: {
-				files: ['Gruntfile.js', 'less/**', 'tokens/**', 'index.html', 'index-dev.html', '*-dev.html', 'dev.html'],
+				files: ['Gruntfile.js', 'less/**', '!less/tokens/**', 'tokens/**', 'index.html', 'index-dev.html', '*-dev.html', 'dev.html'],
 				options: {
 					livereload: isLivereloadEnabled
 				},
