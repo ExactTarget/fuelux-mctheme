@@ -32,7 +32,8 @@ gulp.task('clean', function(done) {
 // Tasks - Tokens
 ////////////////////////////////////////////////////////////////////
 
-var convertOptions = _({
+// for external use
+var distConvertOptions = _({
   'web': [
     'styl',
     'less',
@@ -53,10 +54,21 @@ var convertOptions = _({
   return formats.map(function(format) {
     return {
       format: format,
-      transform: transform
+      transform: transform,
+      outputFolder: 'dist/tokens'
     };
   });
 }).flatten().value();
+
+// for use in MCtheme (output one type)
+var themeConvertOptions = [
+  {
+    format: 'less',
+    transform: 'web',
+    outputFolder: 'less/tokens'
+  }];
+
+console.log(themeConvertOptions);
 
 function convert(options, done) {
   gulp.src([
@@ -66,13 +78,17 @@ function convert(options, done) {
   .on('error', done)
   .pipe(theo.plugins.format(options.format))
   .on('error', done)
-  .pipe(gulp.dest(path.resolve(__dirname, 'dist/tokens')))
+  .pipe(gulp.dest(path.resolve(__dirname, options.outputFolder)))
   .on('error', done)
   .on('finish', done);
 }
 
-gulp.task('tokens', ['clean', 'lint'], function(done) {
-  async.each(convertOptions, convert, done);
+gulp.task('distTokens', ['clean', 'lint'], function(done) {
+  async.each(distConvertOptions, convert, done);
+});
+
+gulp.task('themeTokens', ['clean', 'lint'], function(done) {
+  async.each(themeConvertOptions, convert, done);
 });
 
 ////////////////////////////////////////////////////////////////////
@@ -90,7 +106,7 @@ gulp.task('lint', function() {
 ////////////////////////////////////////////////////////////////////
 
 gulp.task('dev', function() {
-  gulp.watch('./tokens/**', ['tokens']);
+  gulp.watch('./tokens/**', ['distTokens']);
 });
 
-gulp.task('default', ['tokens']);
+gulp.task('default', ['themeTokens', 'distTokens']);
