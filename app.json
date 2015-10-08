@@ -1,0 +1,16 @@
+{
+  "name":"fuelux-mctheme",
+  "scripts":{},
+  "env":{
+    "INSTALL_FUELUX_MCTHEME_BOWER":{
+      "required":true
+    },
+    "NPM_CONFIG_PRODUCTION":{
+      "required":true
+    },
+    "TZ":{
+      "required":true
+    }
+  },
+  "addons":[]
+}
