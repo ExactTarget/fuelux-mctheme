@@ -8,6 +8,7 @@
 	<link href="../../bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css">
 	<link href="../../dist/css/fuelux-mctheme.css" rel="stylesheet" type="text/css"/>
 	<link href="bootstrap-components-examples.css" rel="stylesheet" type="text/css"/>
+	<link href="/dist/css/fuelux-mctheme-content.css" rel="stylesheet" type="text/css">
 
 	<script src="../../bower_components/jquery/dist/jquery.js" type="text/javascript"></script>
 	<script src="../../bower_components/bootstrap/dist/js/bootstrap.js" type="text/javascript"></script>
@@ -59,6 +60,71 @@
 
 		<div class="row" style="margin-top:60px;">
 			<div class="col-md-9">
+
+				<h1 id="Overlays" class="section">Overlays</h1>
+				<hr class="darker"/>
+
+				<h2>Overlay Container</h2>
+
+				<div class="overlay-container">
+					<div class="dropdown clearfix">
+						<button data-toggle="dropdown" id="dropdownMenuInverse" type="button" class="btn btn-inverse-alt dropdown-toggle">
+							<div class="btn-dropdown-text sr-only">Context menu</div>
+							<span class="fuelux-icon fuelux-icon fuelux-icon-inverse-chevron-thin-down"></span>
+						</button>
+						<ul aria-labelledby="dropdownMenuInverse" role="menu" class="dropdown-menu pull-right dropdown-menu-inverse-alt">
+							<li role="presentation"><a href="javaScript:void(0);" tabindex="-1" role="menuitem">Action</a></li>
+							<li role="presentation"><a href="javaScript:void(0);" tabindex="-1" role="menuitem">Another action</a></li>
+							<li role="presentation"><a href="javaScript:void(0);" tabindex="-1" role="menuitem">Something else here</a></li>
+							<li class="divider" role="presentation"></li>
+							<li role="presentation"><a href="javaScript:void(0);" tabindex="-1" role="menuitem">Separated link</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<h2>Overlay with image</h2>
+
+				<div class="image-background">
+	
+					<div class="overlay">
+						<div class="dropdown clearfix">
+							<button data-toggle="dropdown" id="content-block-dropdown" type="button" class="btn btn-inverse dropdown-toggle">
+								<div class="btn-dropdown-text sr-only">Context menu</div>
+								<span class="fuelux-icon fuelux-icon fuelux-icon-inverse-chevron-thin-down"></span>
+							</button>
+							<ul aria-labelledby="content-block-dropdown" role="menu" class="dropdown-menu pull-right dropdown-menu-inverse">
+								<li role="presentation"><a href="javaScript:void(0);" tabindex="-1" role="menuitem">Action</a></li>
+								<li role="presentation"><a href="javaScript:void(0);" tabindex="-1" role="menuitem">Another action</a></li>
+								<li role="presentation"><a href="javaScript:void(0);" tabindex="-1" role="menuitem">Something else here</a></li>
+								<li class="divider" role="presentation"></li>
+								<li role="presentation"><a href="javaScript:void(0);" tabindex="-1" role="menuitem">Separated link</a></li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+
+				<h2>Overlay</h2>
+
+				<div class="overlay">
+					<div class="dropdown clearfix">
+						<button data-toggle="dropdown" id="dropdownMenuInverse" type="button" class="btn btn-inverse dropdown-toggle">
+							<div class="btn-dropdown-text">Dropdown</div>
+							<span class="caret"></span>
+						</button>
+						<ul aria-labelledby="dropdownMenuInverse" role="menu" class="dropdown-menu dropdown-menu-inverse">
+							<li role="presentation"><a href="javaScript:void(0);" tabindex="-1" role="menuitem">Action</a></li>
+							<li role="presentation"><a href="javaScript:void(0);" tabindex="-1" role="menuitem">Another action</a></li>
+							<li role="presentation"><a href="javaScript:void(0);" tabindex="-1" role="menuitem">Something else here</a></li>
+							<li class="divider" role="presentation"></li>
+							<li role="presentation"><a href="javaScript:void(0);" tabindex="-1" role="menuitem">Separated link</a></li>
+						</ul>
+					</div>
+					<button class="btn btn-inverse" type="button">Button Inverse</button>
+				</div>
+
+				
+
 				<h1 id="Dropdowns" class="section">Dropdowns</h1>
 				<hr class="darker"/>
 

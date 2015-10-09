@@ -10,11 +10,96 @@
 
 // Base styles
 // --------------------------------------------------
-@import 'mixins.less';
+@import '../reference-imports.less';
 
 .btn {
 	.btn();
 }
+
+
+// Inverse Buttons
+.btn-inverse {
+	.button-variant(@gray93;
+									transparent; transparent;
+									@gray93; @gray93;
+									@gray93; @gray93;
+									transparent; transparent);
+	box-shadow: none;
+	border: 2px solid @gray80;
+
+	&:active,
+	&:active:hover,
+	&.active,
+	&.active:hover,
+	&:active:focus,
+	&.active:focus,
+	&.active.focus,
+	&:focus,
+	&.focus,
+	&.focus:active,
+	&:hover,
+	.open > .dropdown-toggle&:hover {
+		background: @gray33;
+		color: @true-white;
+		outline: none;
+		box-shadow: none;
+
+		.caret {
+			color: @true-white;
+		}
+	}
+
+	.open > .dropdown-toggle&,
+	.open > .dropdown-toggle&,
+	.open > .dropdown-toggle& {
+		color: @true-white;
+		background: transparent;
+	}
+
+	.caret {
+		color: @gray93;
+	}
+}
+
+// Inverse Buttons
+.btn-inverse-alt {
+	.button-variant(@gray80;
+									transparent; transparent;
+									@gray33; @gray33;
+									@gray33; @gray33;
+									transparent; transparent);
+	box-shadow: none;
+	padding: 5px 7px;
+
+	&:active,
+	&:active:hover,
+	&.active,
+	&.active:hover,
+	&:active:focus,
+	&.active:focus,
+	&.active.focus,
+	&:focus,
+	&.focus,
+	&.focus:active,
+	&:hover,
+	.open > .dropdown-toggle&:hover,
+	.open > .dropdown-toggle&:focus,
+	.open > .dropdown-toggle&.focus {
+		background: @gray33;
+		color: @gray80;
+		outline: none;
+		box-shadow: none;
+
+		.caret {
+			color: @gray80;
+		}
+	}
+
+	.caret {
+		color: @gray80;
+	}
+}
+
 
 
 // Alternate buttons
