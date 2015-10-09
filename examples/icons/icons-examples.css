@@ -40,6 +40,12 @@ body {
 	color: #fff;
 }
 
+#docnav .subnav > li > a {
+	color: #fff;
+	padding: 10px;
+	font-size: 12px;
+}
+
 .fu-sidebar .nav > li > ul {
 	display: none;
 }
@@ -89,7 +95,7 @@ body {
 }
 
 #main-wrapper {
-	margin: 60px 3em 40px;
+	margin: 100px 3em 40px;
 }
 .panel-footer {
 	min-height: 6rem;
