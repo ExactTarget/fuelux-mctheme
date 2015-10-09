@@ -341,7 +341,7 @@ module.exports = function (grunt) {
 			full: {
 				files: ['Gruntfile.js', 'examples/**', 'less/**', '!less/tokens/**', 'tokens/**'],
 				options: {
-					livereload: isLivereloadEnabled
+					livereload: true
 				},
 				tasks: ['distcss']
 			},
@@ -368,7 +368,7 @@ module.exports = function (grunt) {
 	grunt.registerTask('iconify', ['svgmin', 'grunticon']);
 
 	// CSS distribution task
-	grunt.registerTask('distcss', 'Compile LESS into the dist CSS', ['less:dist', 'replace:imgpaths', 'less:minify', 'usebanner', 'shell:tokenCreate']);
+	grunt.registerTask('distcss', 'Compile LESS into the dist CSS', ['shell:tokenCreate', 'less:dist', 'replace:imgpaths', 'less:minify', 'usebanner']);
 
 	// CSS dev distribution task
 	grunt.registerTask('distcssdev', 'Compile LESS into the dev CSS', ['less:dev']);
