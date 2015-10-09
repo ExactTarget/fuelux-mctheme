@@ -3,6 +3,7 @@
     "TRANSPARENT": "transparent",
     "WHITE": "#FFFFFF",
     "BLACK": "#000000",
+    "GRAY_TRANSPARENT_70": "rgba(34,34,34,.7)",
     "BLUE_SLATE": "#D9EAF5",
     "BLUE_SMOKE": "#EDF5FA",
     "BLUE_SKY": "#B9DFF1",
