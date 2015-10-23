@@ -32,7 +32,7 @@
       "comment": ""
     },
     "COLOR_BACKGROUND_OVERLAY_INVERSE": {
-      "value": "{!GRAY_TRANSPARENT_70}",
+      "value": "{!GRAY_TRANSPARENT_60}",
       "type": "color",
       "category": "background-color",
       "cssProperties": ["background", "background-color"],
