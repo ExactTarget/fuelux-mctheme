@@ -4,15 +4,16 @@ body {
 
 .overlay-container {
 	text-align: right;
-	min-height: 100px;
+	padding: 4px;
 }
 
 .image-background {
-	background: url('http://lorempixel.com/600/100/');
+	background: url('http://lorempixel.com/800/200/');
 }
 
 .image-background .overlay {
 	text-align: right;
+	min-height: 200px;
 }
 
 .overlay {

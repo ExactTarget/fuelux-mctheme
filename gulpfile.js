@@ -68,8 +68,6 @@ var themeConvertOptions = [
     outputFolder: 'less/tokens'
   }];
 
-console.log(themeConvertOptions);
-
 function convert(options, done) {
   gulp.src([
     './tokens/*.json', '!./tokens/_*.json'

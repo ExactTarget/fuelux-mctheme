@@ -3,13 +3,6 @@
 	Please do not add the .fuelux namespace wrapper class.
  */
 
-.dropdown {
-	.btn-inverse-alt {
-		border-bottom-right-radius: 0; 
-		border-bottom-left-radius: 0; 
-	}
-}
-
 // Dropdown button
 //
 .btn-dropdown {
@@ -103,6 +96,13 @@
 		background-color: @gray33;
 	}
 
+	.fuelux-icon {
+		width: 10px;
+		height: 10px;
+		margin-top: -1px;
+		margin-bottom: -1px;
+	}
+
 	&.pull-right {
 		transform: translate(0,8px);
 		right: -@dropdown-menu-inverse-offset;
@@ -128,12 +128,10 @@
 
 .dropdown-menu-inverse-alt {
 	font-size: @font-size-base; // ~11px
-	border-radius: 0;
 	padding: 6px 0px;
-	background: @gray33;
+	background: @gray13;
 	border: 0;
 	box-shadow: none;
-	margin-top: 0;
 
 	// Links within the dropdown menu
 	> li > a {
@@ -143,7 +141,7 @@
 		line-height: 1.5;
 
 		&:hover {
-			background-color: @gray20;
+			background-color: @gray33;
 			color: @true-white;
 		}
 	}
@@ -151,7 +149,15 @@
 	// Divider within the menu
 	.divider {
 		margin: 5px 0;
-		background-color: @gray60;
+		background-color: @gray33;
+	}
+
+	//.action-item 
+	.fuelux-icon {
+		width: 10px;
+		height: 10px;
+		margin-top: -1px;
+		margin-bottom: -1px;
 	}
 
 }
