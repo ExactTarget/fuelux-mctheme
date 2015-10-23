@@ -4,6 +4,8 @@
 
 .fuelux-icon-align-horizontal-right { background-image: url('png/align-horizontal-right.png'); background-repeat: no-repeat; }
 
+.fuelux-icon-close-content-block { background-image: url('png/close-content-block.png'); background-repeat: no-repeat; }
+
 .fuelux-icon-content-cloud-upload { background-image: url('png/content-cloud-upload.png'); background-repeat: no-repeat; }
 
 .fuelux-icon-content-image { background-image: url('png/content-image.png'); background-repeat: no-repeat; }
@@ -40,6 +42,12 @@
 
 .fuelux-icon-inverse-chevron-up { background-image: url('png/inverse-chevron-up.png'); background-repeat: no-repeat; }
 
+.fuelux-icon-inverse-duplicate-white { background-image: url('png/inverse-duplicate-white.png'); background-repeat: no-repeat; }
+
+.fuelux-icon-inverse-pencil-white { background-image: url('png/inverse-pencil-white.png'); background-repeat: no-repeat; }
+
+.fuelux-icon-inverse-trashcan-white { background-image: url('png/inverse-trashcan-white.png'); background-repeat: no-repeat; }
+
 .fuelux-icon-margin-all { background-image: url('png/margin-all.png'); background-repeat: no-repeat; }
 
 .fuelux-icon-margin-bottom { background-image: url('png/margin-bottom.png'); background-repeat: no-repeat; }
@@ -64,7 +72,11 @@
 
 .fuelux-icon-padding-top { background-image: url('png/padding-top.png'); background-repeat: no-repeat; }
 
+.fuelux-icon-padlock-locked-white { background-image: url('png/padlock-locked-white.png'); background-repeat: no-repeat; }
+
 .fuelux-icon-padlock-locked { background-image: url('png/padlock-locked.png'); background-repeat: no-repeat; }
+
+.fuelux-icon-padlock-unlocked-white { background-image: url('png/padlock-unlocked-white.png'); background-repeat: no-repeat; }
 
 .fuelux-icon-padlock-unlocked { background-image: url('png/padlock-unlocked.png'); background-repeat: no-repeat; }
 
