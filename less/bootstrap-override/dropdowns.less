@@ -107,6 +107,10 @@
 		transform: translate(0,8px);
 		right: -@dropdown-menu-inverse-offset;
 
+		.dropup & {
+			transform: translate(0,-8px)
+		}
+
 		&:after {
 			position: absolute;
 			display: block;
@@ -119,8 +123,17 @@
 			right: (@popover-arrow-width + @dropdown-menu-inverse-offset - 7px);
 			margin-left: -@popover-arrow-width;
 			border-top-width: 0;
-			border-bottom-color: @true-black;
+			border-bottom-color: @gray13;
 			top: -@popover-arrow-width;
+
+		.dropup & {
+			top: auto;
+			bottom: -@popover-arrow-width;
+			border-bottom-width: 0;
+			border-top-width: @popover-arrow-width;
+			border-top-color: @gray13;
+		}
+
 		}
 
 	}
