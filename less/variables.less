@@ -366,22 +366,23 @@
 @btn-primary-bg-disabled-end:    @blue-steel;
 @btn-primary-border:             transparent;
 
-@btn-info-color:              @true-white;
-@btn-info-bg-start:           @blue-cornflower;
-@btn-info-bg-end:             @blue-steel;
-@btn-info-bg-hover-start:     lighten(@blue-cornflower, 5%);
-@btn-info-bg-hover-end:       lighten(@blue-steel, 5%);
-@btn-info-bg-press-start:     @blue-steel;
-@btn-info-bg-press-end:       darken(@blue-steel, 10%);
-@btn-info-bg-disabled-start:  @blue-cornflower;
-@btn-info-bg-disabled-end:    @blue-steel;
-@btn-info-border:             transparent;
 
 @btn-success-color:              @brand-success-light;
 @btn-success-bg:                 @brand-success-dark;
 
-@btn-info-color:                 @brand-info-light;
-@btn-info-bg:                    @brand-info-dark;
+@btn-info-bg:                    #31708f;
+
+@btn-info-color:                 @true-white;
+@btn-info-bg-start:              @btn-info-bg;
+@btn-info-bg-end:                darken(@btn-info-bg, 10%);
+@btn-info-bg-hover-start:        lighten(@btn-info-bg-start, 5%);
+@btn-info-bg-hover-end:          lighten(@btn-info-bg-end, 5%);
+@btn-info-bg-press-start:        @btn-info-bg;
+@btn-info-bg-press-end:          darken(@btn-info-bg, 10%);
+@btn-info-bg-disabled-start:     @btn-info-bg-start;
+@btn-info-bg-disabled-end:       @btn-info-bg-end;
+@btn-info-border:                transparent;
+
 
 @btn-warning-color:              @brand-warning-light;
 @btn-warning-bg:                 @brand-warning-dark;
