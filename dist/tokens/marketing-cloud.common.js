@@ -3,6 +3,8 @@ module.exports = {
   colorBackgroundAlt: "rgb(245, 245, 245)",
   colorBackgroundAlt2: "rgb(238, 238, 238)",
   colorBackgroundAltInverse: "rgb(56, 91, 107)",
+  colorBackgroundOverlayInverse: "rgba(34, 34, 34, 0.6)",
+  colorBackgroundOverlayContainer: "rgb(136, 136, 136)",
   colorBackgroundRowHover: "rgb(245, 245, 245)",
   colorBackgroundRowActive: "rgb(245, 245, 245)",
   colorBackgroundRowSelected: "rgb(217, 234, 245)",
