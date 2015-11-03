@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px"
+	 height="20px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
+<g id="corner-radius">
+	<g>
+		<path style="fill:#A6A6A6;" d="M3.313,17.727H1.661c0-8.96,7.12-16.25,15.87-16.25v1.652C9.692,3.129,3.313,9.677,3.313,17.727z"
+			/>
+	</g>
+	<g>
+		<rect id="le_wrappier_138_" style="fill:none;" width="20" height="20"/>
+		<g>
+			<g>
+				<line style="fill:#FFFFFF;" x1="2.487" y1="2.273" x2="2.487" y2="17.696"/>
+				<g>
+					<line style="fill:none;stroke:#A6A6A6;stroke-width:0.8262;" x1="2.487" y1="2.273" x2="2.487" y2="3.375"/>
+					
+						<line style="fill:none;stroke:#A6A6A6;stroke-width:0.8262;stroke-dasharray:1.8885,1.8885;" x1="2.487" y1="5.264" x2="2.487" y2="15.65"/>
+					<line style="fill:none;stroke:#A6A6A6;stroke-width:0.8262;" x1="2.487" y1="16.595" x2="2.487" y2="17.696"/>
+				</g>
+			</g>
+			<g>
+				<line style="fill:#FFFFFF;" x1="2.487" y1="2.273" x2="17.531" y2="2.273"/>
+				<g>
+					<line style="fill:none;stroke:#A6A6A6;stroke-width:0.8262;" x1="2.487" y1="2.273" x2="3.589" y2="2.273"/>
+					
+						<line style="fill:none;stroke:#A6A6A6;stroke-width:0.8262;stroke-dasharray:2.5682,2.5682;" x1="6.157" y1="2.273" x2="15.146" y2="2.273"/>
+					<line style="fill:none;stroke:#A6A6A6;stroke-width:0.8262;" x1="16.43" y1="2.273" x2="17.531" y2="2.273"/>
+				</g>
+			</g>
+			<circle style="fill:#FFFFFF;stroke:#A6A6A6;stroke-width:0.8262;" cx="2.613" cy="2.273" r="1.653"/>
+			<circle style="fill:#FFFFFF;stroke:#A6A6A6;stroke-width:0.8262;" cx="2.613" cy="17.727" r="1.653"/>
+			<circle style="fill:#FFFFFF;stroke:#A6A6A6;stroke-width:0.8262;" cx="17.657" cy="2.273" r="1.653"/>
+		</g>
+	</g>
+</g>
+<g id="Layer_1">
+</g>
+</svg>

@@ -77,12 +77,18 @@
 	}
 }
 
-
-
-
 // ----------------
 // Effects (CSS3) Mixins
 // ----------------
+
+#fuelux-mctheme {
+	.transform-translate(@translateX, @translateY) {
+		-webkit-transform: translate(@translateX, @translateY); /* Ch <36, Saf 5.1+, iOS, An =<4.4.4 */
+		-ms-transform: translate(@translateX, @translateY); /* IE 9 */
+		transform: translate(@translateX, @translateY); /* IE 10, Fx 16+, Op 12.1+ */
+	}
+}
+
 #fuelux-gradient {
 	// hex, rgb, and rgba values accepted!
 	.horizontal(...) {

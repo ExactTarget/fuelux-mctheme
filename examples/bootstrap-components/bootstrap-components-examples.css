@@ -2,6 +2,39 @@ body {
 	position: relative;
 }
 
+.overlay-container {
+	text-align: right;
+	padding: 4px;
+}
+
+.image-background {
+	background: url('http://lorempixel.com/800/200/');
+}
+
+.image-background .overlay {
+	text-align: right;
+	min-height: 200px;
+}
+
+.overlay {
+	padding: 10px;
+	margin-top: 20px;
+}
+
+.image-background .overlay .btn-inverse {
+	border-radius: 50%;
+	width: 26px;
+	height: 26px;
+	padding: 5px 5px;
+	line-height: .5;
+}
+
+#content-block-dropdown .fuelux-icon {
+	width: 10px;
+	height: 10px;
+}
+
+
 #docnav .navbar-nav > li > a {
 	color: #fff;
 	padding: 15px;

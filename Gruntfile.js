@@ -36,6 +36,7 @@ module.exports = function (grunt) {
 			inline: {
 				files: {
 					"less/icons/icons-svg.less": "less/icons/icons-svg.less",
+					"less/icons-content/icons-svg.less": "less/icons-content/icons-svg.less",
 					"less/icons/icons-png.css": "less/icons/icons-png.css",
 					"less/icons/icons-png-fallback.css": "less/icons/icons-png-fallback.css"
 				},
@@ -198,11 +199,11 @@ module.exports = function (grunt) {
 		},
 
 		grunticon: {
-			makeSvgIcons: {
+			core: {
 				files: [{
 					expand: true,
 					cwd: "icons/svg-optimized",
-					src: ['*.svg', '*.png'],
+					src: ['*.svg'],
 					dest: "less/icons"
 				}],
 				options: {
@@ -214,6 +215,22 @@ module.exports = function (grunt) {
 					"defaultHeight": "20px",
 					"previewTemplate": "icons/preview-custom.hbs",
 					"previewhtml": "../../examples/icons/icons.html"
+				}
+			},
+			content: {
+				files: [{
+					expand: true,
+					cwd: "icons/svg-optimized-content",
+					src: ['*.svg'],
+					dest: "less/icons-content"
+				}],
+				options: {
+					"cssprefix": ".fuelux-icon-",
+					"datasvgcss": "icons-svg.less",
+					"defaultWidth": "20px",
+					"defaultHeight": "20px",
+					"previewTemplate": "icons/preview-custom.hbs",
+					"previewhtml": "../../examples/icons/icons-content.html"
 				}
 			}
 		},
@@ -239,7 +256,8 @@ module.exports = function (grunt) {
 					sourceMapFilename: 'dist/css/<%= pkg.name %>.css.map'
 				},
 				files: {
-					'dist/css/fuelux-mctheme.css': 'less/fuelux-mctheme.less'
+					'dist/css/fuelux-mctheme.css': 'less/fuelux-mctheme.less',
+					'dist/css/fuelux-mctheme-content.css': 'less/fuelux-mctheme-content.less'
 				}
 			},
 			minify: {
@@ -249,7 +267,8 @@ module.exports = function (grunt) {
 					report: 'min'
 				},
 				files: {
-					'dist/css/<%= pkg.name %>.min.css': 'dist/css/<%= pkg.name %>.css'
+					'dist/css/<%= pkg.name %>.min.css': 'dist/css/<%= pkg.name %>.css',
+					'dist/css/<%= pkg.name %>-content.min.css': 'dist/css/<%= pkg.name %>-content.css'
 				}
 			}
 		},
@@ -314,12 +333,20 @@ module.exports = function (grunt) {
 					{ removeXMLProcInst: false } // prevent the XML header from being stripped
 				]
 			},
-			dist: {
+			core: {
 				files: [{
 					expand: true,
 					cwd: 'icons/svg-exports',
 					src: ['*.svg'],
 					dest: 'icons/svg-optimized'
+				}]
+			},
+			content: {
+				files: [{
+					expand: true,
+					cwd: 'icons/svg-exports-content',
+					src: ['*.svg'],
+					dest: 'icons/svg-optimized-content'
 				}]
 			}
 		},
@@ -339,14 +366,14 @@ module.exports = function (grunt) {
 		},
 		watch: {
 			full: {
-				files: ['Gruntfile.js', 'examples/**', 'less/**', 'tokens/**'],
+				files: ['Gruntfile.js', 'examples/**', 'less/**', '!less/tokens/**', 'tokens/**'],
 				options: {
-					livereload: isLivereloadEnabled
+					livereload: true
 				},
 				tasks: ['distcss']
 			},
 			dev: {
-				files: ['Gruntfile.js', 'less/**', 'tokens/**', 'index.html', 'index-dev.html', '*-dev.html', 'dev.html'],
+				files: ['Gruntfile.js', 'less/**', '!less/tokens/**', 'tokens/**', 'index.html', 'index-dev.html', '*-dev.html', 'dev.html'],
 				options: {
 					livereload: isLivereloadEnabled
 				},
@@ -365,10 +392,10 @@ module.exports = function (grunt) {
 	 ------------- */
 
 	// Icon creation task
-	grunt.registerTask('iconify', ['svgmin', 'grunticon']);
+	grunt.registerTask('iconify', ['svgmin:core', 'grunticon']);
 
 	// CSS distribution task
-	grunt.registerTask('distcss', 'Compile LESS into the dist CSS', ['less:dist', 'replace:imgpaths', 'less:minify', 'usebanner', 'shell:tokenCreate']);
+	grunt.registerTask('distcss', 'Compile LESS into the dist CSS', ['shell:tokenCreate', 'less:dist', 'replace:imgpaths', 'less:minify', 'usebanner']);
 
 	// CSS dev distribution task
 	grunt.registerTask('distcssdev', 'Compile LESS into the dev CSS', ['less:dev']);
@@ -396,8 +423,9 @@ module.exports = function (grunt) {
 	/* ----------------
 		Making Icons
 	---------------- */
-	grunt.registerTask('make-icons', ['svgmin', 'copy:svgSources', 'grunticon:makeSvgIcons', 'string-replace']);
-	grunt.registerTask('make-icons-base', ['copy:svgSources','grunticon:makeSvgIcons']);
+	grunt.registerTask('make-icons', ['svgmin:core', 'svgmin:content', 'copy:svgSources', 'grunticon:core', 
+		'grunticon:content', 'string-replace']);
+	grunt.registerTask('make-icons-base', ['copy:svgSources','grunticon:core']);
 	grunt.registerTask('glyphify-icons', ['string-replace']);
 
 	/* -------------

@@ -1,24 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html class="fuelux">
 <head>
 	<meta charset="utf-8">
 	<title>Bootstrap Components (MC Theme)</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link href="../../bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="../../bower_components/fuelux/dist/css/fuelux.css" rel="stylesheet" type="text/css">
 	<link href="../../dist/css/fuelux-mctheme.css" rel="stylesheet" type="text/css"/>
 	<link href="bootstrap-components-examples.css" rel="stylesheet" type="text/css"/>
-
-	<script src="../../bower_components/jquery/dist/jquery.js" type="text/javascript"></script>
-	<script src="../../bower_components/bootstrap/dist/js/bootstrap.js" type="text/javascript"></script>
-
-	<script>
-		$(function(){
-			$('body').scrollspy({
-				target: '.scrollspy'
-			});
-		});
-	</script>
+	<link href="/dist/css/fuelux-mctheme-content.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 
@@ -59,7 +50,66 @@
 
 		<div class="row" style="margin-top:60px;">
 			<div class="col-md-9">
-				<h1 id="Dropdowns" class="section">Dropdowns</h1>
+
+				<h1 id="overlays" class="section">Overlays</h1>
+				<hr class="darker"/>
+
+				<h2>Overlay Container and Overlay with image</h2>
+
+				<div class="overlay-container">
+					<div class="dropdown clearfix">
+						<button data-toggle="dropdown" data-flip="auto" id="dropdownMenuInverse" type="button" class="btn btn-inverse-alt dropdown-toggle">
+							<div class="btn-dropdown-text sr-only">Context menu</div>
+							<span class="fuelux-icon fuelux-icon fuelux-icon-inverse-chevron-thin-down"></span>
+						</button>
+						<ul aria-labelledby="dropdownMenuInverse" role="menu" class="dropdown-menu pull-right dropdown-menu-inverse-alt">
+							<li role="presentation"><a href="javaScript:void(0);" tabindex="-1" role="menuitem"><span class="fuelux-icon fuelux-icon-gear-white"></span>&nbsp;&nbsp;Properties</a></li>
+							<li role="presentation"><a href="javaScript:void(0);" tabindex="-1" role="menuitem"><span class="fuelux-icon fuelux-icon-padlock-locked-white"></span>&nbsp;&nbsp;Lock</a></li>
+							<li class="divider" role="presentation"></li>
+							<li role="presentation"><a href="javaScript:void(0);" tabindex="-1" role="menuitem">Separated Action</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="image-background">
+	
+					<div class="overlay">
+						<div class="dropdown clearfix">
+							<button data-toggle="dropdown" data-flip="auto" id="content-block-dropdown" type="button" class="btn btn-inverse dropdown-toggle">
+								<div class="btn-dropdown-text sr-only">Context menu</div>
+								<span class="fuelux-icon fuelux-icon fuelux-icon-inverse-chevron-thin-down"></span>
+							</button>
+							<ul aria-labelledby="content-block-dropdown" role="menu" class="dropdown-menu pull-right dropdown-menu-inverse">
+								<li role="presentation"><a href="javaScript:void(0);" tabindex="-1" role="menuitem"><span class="fuelux-icon fuelux-icon-inverse-trashcan-white"></span>&nbsp;&nbsp;Delete</a></li>
+								<li role="presentation"><a href="javaScript:void(0);" tabindex="-1" role="menuitem"><span class="fuelux-icon fuelux-icon-inverse-duplicate-white"></span>&nbsp;&nbsp;Duplicate</a></li>
+								<li role="presentation"><a href="javaScript:void(0);" tabindex="-1" role="menuitem"><span class="fuelux-icon fuelux-icon-inverse-pencil-white"></span>&nbsp;&nbsp;Edit</a></li>
+								<li class="divider" role="presentation"></li>
+								<li role="presentation"><a href="javaScript:void(0);" tabindex="-1" role="menuitem">Separated Action</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<h2>Overlay</h2>
+
+				<div class="overlay">
+					<div class="dropdown clearfix">
+						<button data-toggle="dropdown" id="dropdownMenuInverse" type="button" class="btn btn-inverse dropdown-toggle">
+							<div class="btn-dropdown-text">Dropdown</div>
+							<span class="caret"></span>
+						</button>
+						<ul aria-labelledby="dropdownMenuInverse" role="menu" class="dropdown-menu dropdown-menu-inverse">
+							<li role="presentation"><a href="javaScript:void(0);" tabindex="-1" role="menuitem">Action</a></li>
+							<li role="presentation"><a href="javaScript:void(0);" tabindex="-1" role="menuitem">Another action</a></li>
+							<li role="presentation"><a href="javaScript:void(0);" tabindex="-1" role="menuitem">Something else here</a></li>
+							<li class="divider" role="presentation"></li>
+							<li role="presentation"><a href="javaScript:void(0);" tabindex="-1" role="menuitem">Separated link</a></li>
+						</ul>
+					</div>
+					<button class="btn btn-inverse" type="button">Button Inverse</button>
+				</div>
+
+
 				<hr class="darker"/>
 
 				<h2>Example</h2>
@@ -2165,6 +2215,9 @@
 					<ul class="nav" id="side-nav">
 
 						<li class="">
+							<a href="#overlays">Overlays</a>
+						</li>
+						<li class="">
 							<a href="#Dropdowns">Dropdowns</a>
 						</li>
 						<li class="">
@@ -2227,5 +2280,16 @@
 			</div>
 		</div>
 	</div>
+
+	<script src="../../bower_components/jquery/dist/jquery.js" type="text/javascript"></script>
+	<script src="../../bower_components/bootstrap/dist/js/bootstrap.js" type="text/javascript"></script>
+	<script src="../../bower_components/fuelux/dist/js/fuelux.js" type="text/javascript"></script>
+	<script>
+		$(function(){
+			$('body').scrollspy({
+				target: '.scrollspy'
+			});
+		});
+	</script>
 </body>
 </html>
