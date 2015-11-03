@@ -4,6 +4,8 @@
   <color name="COLOR_BACKGROUND_ALT" category="background-color">#fff5f5f5</color>
   <color name="COLOR_BACKGROUND_ALT_2" category="background-color">#ffeeeeee</color>
   <color name="COLOR_BACKGROUND_ALT_INVERSE" category="background-color">#ff385b6b</color>
+  <color name="COLOR_BACKGROUND_OVERLAY_INVERSE" category="background-color">#99222222</color>
+  <color name="COLOR_BACKGROUND_OVERLAY_CONTAINER" category="background-color">#ff888888</color>
   <color name="COLOR_BACKGROUND_ROW_HOVER" category="background-color">#fff5f5f5</color>
   <color name="COLOR_BACKGROUND_ROW_ACTIVE" category="background-color">#fff5f5f5</color>
   <color name="COLOR_BACKGROUND_ROW_SELECTED" category="background-color">#ffd9eaf5</color>

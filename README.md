@@ -21,15 +21,15 @@ View [demos of the Marketing Cloud Theme](http://fuelux-mctheme.herokuapp.com).
 2. Use a single css tag ***after Bootstrap and Fuel UX styles***:
 
 	```
-    <link href="http://www.fuelcdn.com/fuelux-mctheme/1.10.0/css/fuelux-mctheme.min.css" rel="stylesheet" type="text/css"/>
+    <link href="http://www.fuelcdn.com/fuelux-mctheme/1.12.0/css/fuelux-mctheme.min.css" rel="stylesheet" type="text/css"/>
     ```
 3. [Use Fuel UX as normal](http://exacttarget.github.io/fuelux/).
 
 ### Download
 The Marketing Cloud Theme can be obtained through:
 
-1. [CDN](http://www.fuelcdn.com/fuelux-mctheme/1.10.0/css/fuelux-mctheme.min.css)
-1. [Zip](http://www.fuelcdn.com/fuelux-mctheme/1.10.0/fuelux.zip)
+1. CDN [Core CSS](http://www.fuelcdn.com/fuelux-mctheme/1.12.0/css/fuelux-mctheme.min.css) [Content CSS](http://www.fuelcdn.com/fuelux-mctheme/1.12.0/css/fuelux-mctheme-content.min.css)
+1. [Zip](http://www.fuelcdn.com/fuelux-mctheme/1.12.0/fuelux.zip)
 2. Clone git repo:
    ```
    git clone https://github.com/ExactTarget/fuelux-mctheme/
@@ -80,7 +80,25 @@ A download of FuelUX provides the following directories and files, which are gro
 fuelux-mctheme/
 └── css/
     ├── fuelux-mctheme.css
-    └── fuelux-mctheme.min.css
+    ├── fuelux-mctheme.min.css
+    ├── fuelux-mctheme.css.map
+    ├── fuelux-mctheme-content.css
+    └── fuelux-mctheme-content.min.css
+└── tokens
+    ├── marketing-cloud.amd.js
+    ├── marketing-cloud.android.xml
+    ├── marketing-cloud.common.js
+    ├── marketing-cloud.default.sass
+    ├── marketing-cloud.default.scss
+    ├── marketing-cloud.html
+    ├── marketing-cloud.ios.json
+    ├── marketing-cloud.json
+    ├── marketing-cloud.less
+    ├── marketing-cloud.map.scss
+    ├── marketing-cloud.map.variables.scss
+    ├── marketing-cloud.sass
+    ├── marketing-cloud.scss
+    └── marketing-cloud.styl
 
 ```
 SVGs of theme icons are base64-encoded into the CSS files above.
@@ -115,6 +133,6 @@ Our aim is to provide a suite of related but independent projects that help web 
 
 ## Copyright and license
 
-Copyright &copy; 2012-2014 ExactTarget, Inc.
+Copyright &copy; 2012-2015 ExactTarget, Inc.
 
 View [BSD-3 license](https://github.com/ExactTarget/fuelux-mctheme/blob/master/LICENSE).

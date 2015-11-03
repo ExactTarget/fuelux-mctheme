@@ -45,6 +45,28 @@
       "name": "colorBackgroundAltInverse"
     },
     {
+      "value": "rgba(34, 34, 34, 0.6)",
+      "type": "color",
+      "category": "background-color",
+      "cssProperties": [
+        "background",
+        "background-color"
+      ],
+      "comment": "",
+      "name": "colorBackgroundOverlayInverse"
+    },
+    {
+      "value": "rgb(136, 136, 136)",
+      "type": "color",
+      "category": "background-color",
+      "cssProperties": [
+        "background",
+        "background-color"
+      ],
+      "comment": "",
+      "name": "colorBackgroundOverlayContainer"
+    },
+    {
       "value": "rgb(245, 245, 245)",
       "type": "color",
       "category": "background-color",
