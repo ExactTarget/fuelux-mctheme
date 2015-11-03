@@ -104,11 +104,11 @@
 	}
 
 	&.pull-right {
-		transform: translate(0,8px);
+		#fuelux-mctheme.transform-translate( 0, (@popover-arrow-width - (@popover-arrow-width / 5)) );
 		right: -@dropdown-menu-inverse-offset;
 
 		.dropup & {
-			transform: translate(0,-8px)
+			#fuelux-mctheme.transform-translate( 0, (-@popover-arrow-width + (@popover-arrow-width / 5)) );
 		}
 
 		&:after {
