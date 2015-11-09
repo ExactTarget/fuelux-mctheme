@@ -4,6 +4,18 @@
 
 .fuelux-icon-align-horizontal-right { background-image: url('png/align-horizontal-right.png'); background-repeat: no-repeat; }
 
+.fuelux-icon-border-all { background-image: url('png/border-all.png'); background-repeat: no-repeat; }
+
+.fuelux-icon-border-bottom { background-image: url('png/border-bottom.png'); background-repeat: no-repeat; }
+
+.fuelux-icon-border-left { background-image: url('png/border-left.png'); background-repeat: no-repeat; }
+
+.fuelux-icon-border-none { background-image: url('png/border-none.png'); background-repeat: no-repeat; }
+
+.fuelux-icon-border-right { background-image: url('png/border-right.png'); background-repeat: no-repeat; }
+
+.fuelux-icon-border-top { background-image: url('png/border-top.png'); background-repeat: no-repeat; }
+
 .fuelux-icon-close-content-block { background-image: url('png/close-content-block.png'); background-repeat: no-repeat; }
 
 .fuelux-icon-content-cloud-upload { background-image: url('png/content-cloud-upload.png'); background-repeat: no-repeat; }
