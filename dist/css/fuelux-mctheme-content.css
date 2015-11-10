@@ -37,6 +37,84 @@
 .glyphicon-align-horizontal-right:before {
   content: "";
 }
+.fuelux-icon-border-all,
+.glyphicon-border-all {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%20fill%3D%22%23313131%22%3E%3Cpath%20d%3D%22M0%200h2.308v20H0zM17.69%200H20v20h-2.31zM0%200h20v2.31H0zM0%2017.69h20V20H0z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+.fuelux-icon-border-all:before,
+.glyphicon-border-all:before {
+  content: "";
+}
+.fuelux-icon-border-bottom,
+.glyphicon-border-bottom {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M.77.77h18.46v18.46H.77z%22%2F%3E%3Cpath%20d%3D%22M18.46%201.54v16.92H1.54V1.54H18.46M20%200H0v20h20V0z%22%20fill%3D%22%23B9B9BA%22%2F%3E%3Cpath%20fill%3D%22%23313131%22%20d%3D%22M0%2017.69h20V20H0z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+.fuelux-icon-border-bottom:before,
+.glyphicon-border-bottom:before {
+  content: "";
+}
+.fuelux-icon-border-left,
+.glyphicon-border-left {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M.77.77h18.46v18.46H.77z%22%2F%3E%3Cpath%20d%3D%22M18.46%2018.46H1.54V1.54H18.46v16.92M20%2020V0H0v20h20z%22%20fill%3D%22%23B9B9BA%22%2F%3E%3Cpath%20fill%3D%22%23313131%22%20d%3D%22M0%200h2.308v20H0z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+.fuelux-icon-border-left:before,
+.glyphicon-border-left:before {
+  content: "";
+}
+.fuelux-icon-border-none,
+.glyphicon-border-none {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M.77.77h18.46v18.46H.77z%22%2F%3E%3Cpath%20d%3D%22M18.46%201.54v16.92H1.54V1.54H18.46M20%200H0v20h20V0z%22%20fill%3D%22%23B9B9BA%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+.fuelux-icon-border-none:before,
+.glyphicon-border-none:before {
+  content: "";
+}
+.fuelux-icon-border-right,
+.glyphicon-border-right {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M.77.77h18.46v18.46H.77z%22%2F%3E%3Cpath%20d%3D%22M1.54%201.54H18.46v16.92H1.54V1.54M0%200v20h20V0H0z%22%20fill%3D%22%23B9B9BA%22%2F%3E%3Cpath%20fill%3D%22%23313131%22%20d%3D%22M17.69%200H20v20h-2.31z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+.fuelux-icon-border-right:before,
+.glyphicon-border-right:before {
+  content: "";
+}
+.fuelux-icon-border-top,
+.glyphicon-border-top {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M.77.77h18.46v18.46H.77z%22%2F%3E%3Cpath%20d%3D%22M18.46%201.54v16.92H1.54V1.54H18.46M20%200H0v20h20V0z%22%20fill%3D%22%23B9B9BA%22%2F%3E%3Cpath%20fill%3D%22%23313131%22%20d%3D%22M0%200h20v2.31H0z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+.fuelux-icon-border-top:before,
+.glyphicon-border-top:before {
+  content: "";
+}
 .fuelux-icon-close-content-block,
 .glyphicon-close-content-block {
   background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20fill%3D%22%234E8ABE%22%20d%3D%22M19.98%205.92l-4.03%204.03c-.027.026-.027.073%200%20.103l4.028%204.027c.026.03.026.074%200%20.103l-5.797%205.8c-.027.025-.072.025-.103%200l-4.027-4.03c-.025-.028-.073-.028-.104%200l-4.027%204.03c-.025.025-.073.025-.102%200l-5.797-5.8c-.03-.027-.03-.072%200-.103l4.028-4.027c.027-.028.027-.075%200-.104L.022%205.92c-.03-.025-.03-.072%200-.1L5.82.02c.026-.03.074-.03.1%200L9.947%204.05c.03.027.077.027.104%200L14.08.023c.03-.03.074-.03.104%200L19.98%205.82c.025.028.025.075%200%20.1z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
