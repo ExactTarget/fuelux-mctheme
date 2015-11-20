@@ -1,5 +1,5 @@
 /*!
- * Marketing Cloud Theme v1.12.1 
+ * Marketing Cloud Theme v1.12.2 
  * Copyright 2015 ExactTarget
  * Licensed under BSD-3-Clause (https://github.com/ExactTarget/fuelux-mctheme/blob/master/LICENSE)
  */
@@ -3364,6 +3364,56 @@ fieldset[disabled] .btn {
   border-radius: 10.5px;
   padding: 5px 10px 5px 4px;
 }
+.btn-primary.btn-create.btn-xs {
+  height: auto;
+  padding: 3px 8px;
+  font-size: 10px;
+  border-radius: 8px;
+}
+.btn-primary.btn-create.btn-lg {
+  height: 26px;
+  border-radius: 13px;
+  padding: 7px 12px 7px 5px;
+}
+.btn-primary.btn-create:before {
+  content: "\2b";
+  position: relative;
+  padding: 1px 5px;
+  margin-right: 5px;
+  border-radius: 100%;
+  background-color: #4e8abe;
+  background: -webkit-linear-gradient(#4e8abe, #66afe9);
+  background: -moz-linear-gradient(#4e8abe, #66afe9);
+  background: -o-linear-gradient(#4e8abe, #66afe9);
+  background: linear-gradient(#4e8abe, #66afe9);
+  background-repeat: no-repeat;
+}
+.btn-primary.btn-create.hover:before,
+.btn-primary.btn-create:hover:before {
+  background-color: #6196c5;
+  background: -webkit-linear-gradient(#6196c5, #7cbbec);
+  background: -moz-linear-gradient(#6196c5, #7cbbec);
+  background: -o-linear-gradient(#6196c5, #7cbbec);
+  background: linear-gradient(#6196c5, #7cbbec);
+  background-repeat: no-repeat;
+}
+.btn-primary.btn-create:active:before,
+.btn-primary.btn-create.active:before,
+.btn-primary.btn-create:focus:before {
+  background-color: #507587;
+  background: -webkit-linear-gradient(#507587, #7cbbec);
+  background: -moz-linear-gradient(#507587, #7cbbec);
+  background: -o-linear-gradient(#507587, #7cbbec);
+  background: linear-gradient(#507587, #7cbbec);
+  background-repeat: no-repeat;
+}
+.btn-primary.btn-create.btn-lg:before {
+  margin-right: 6px;
+}
+.btn-primary.btn-create.btn-xs:before {
+  margin-left: -5px;
+  padding: 0px 3px;
+}
 .btn-success {
   color: #e9fcde;
   background-color: #07dd7e;
@@ -3423,6 +3473,59 @@ fieldset[disabled] .btn {
   background-repeat: no-repeat;
   -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+}
+.btn-info:hover {
+  color: #ffffff;
+  background-color: #387fa2;
+  background: -webkit-linear-gradient(#387fa2, #2a617c);
+  background: -moz-linear-gradient(#387fa2, #2a617c);
+  background: -o-linear-gradient(#387fa2, #2a617c);
+  background: linear-gradient(#387fa2, #2a617c);
+  background-repeat: no-repeat;
+}
+.btn-info:active {
+  color: #ffffff;
+  background-color: #31708f;
+  background: -webkit-linear-gradient(#31708f, #245269);
+  background: -moz-linear-gradient(#31708f, #245269);
+  background: -o-linear-gradient(#31708f, #245269);
+  background: linear-gradient(#31708f, #245269);
+  background-repeat: no-repeat;
+}
+.open > .dropdown-toggle.btn-info {
+  color: #ffffff;
+  background-color: #31708f;
+  background: -webkit-linear-gradient(#31708f, #245269);
+  background: -moz-linear-gradient(#31708f, #245269);
+  background: -o-linear-gradient(#31708f, #245269);
+  background: linear-gradient(#31708f, #245269);
+  background-repeat: no-repeat;
+}
+.btn-info:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+.btn-info .badge {
+  color: #245269;
+  background: #ffffff;
+}
+.btn-info:active,
+.btn-info.active,
+.btn-info:focus {
+  background-color: #31708f;
+  background: -webkit-linear-gradient(#31708f, #245269);
+  background: -moz-linear-gradient(#31708f, #245269);
+  background: -o-linear-gradient(#31708f, #245269);
+  background: linear-gradient(#31708f, #245269);
+  background-repeat: no-repeat;
+}
+.btn-info.dropdown-toggle .caret {
+  color: #ffffff;
+}
+.btn-info.btn-create {
+  height: 21px;
+  border-radius: 10.5px;
+  padding: 5px 10px 5px 4px;
 }
 .btn-info:hover {
   color: #ffffff;
