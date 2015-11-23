@@ -105,7 +105,7 @@ As it is, the Grunticon node module does not allow us to make enough changes to 
 
 So we had to go in and modify some of Grunticon's code manually.
 
-The file in question is at: `node_modules/grunt-grunticon/lib/grunticon-helper.js`.
+The file in question is at: `/node_modules/grunt-grunticon/node_modules/grunticon-lib/lib/grunticon-helper.js`.
 
 The code you need to put into place is starts at about line 72, and you want this in there:
 
