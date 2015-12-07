@@ -3,7 +3,7 @@
 	height: @checkbox-height;
 }
 .checkbox-before() {
-	
+
 	input[type="checkbox"] {
 		height: 1px;
 		width: 1px;
@@ -103,6 +103,17 @@
 		}
 		input[type="checkbox"] {
 			position: absolute;
+		}
+	}
+
+	// Fuel UX Checkboxes in input groups
+	// -------------------------
+	&.input-group-addon {
+		padding-left: 16px;
+
+		&:before {
+			left: 4px;
+			top: 3px;
 		}
 	}
 }
