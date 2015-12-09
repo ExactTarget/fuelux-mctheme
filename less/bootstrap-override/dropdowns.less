@@ -128,14 +128,28 @@
 			border-bottom-color: @gray13;
 			top: -@popover-arrow-width;
 
-		.dropup & {
-			top: auto;
-			bottom: -@popover-arrow-width;
-			border-bottom-width: 0;
-			border-top-width: @popover-arrow-width;
-			border-top-color: @gray13;
+			.dropup & {
+				top: auto;
+				bottom: -@popover-arrow-width;
+				border-bottom-width: 0;
+				border-top-width: @popover-arrow-width;
+				border-top-color: @gray13;
+			}
+
 		}
 
+		&:before {
+			width: 100%;
+			background-color: transparent;
+			height: 12px;
+			content: "";
+			position: absolute;
+			top: -12px;
+
+			.dropup & {
+				bottom: -12px;
+				top: auto;
+			}
 		}
 
 	}
