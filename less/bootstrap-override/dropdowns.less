@@ -71,6 +71,7 @@
 
 .dropdown-menu-inverse {
 	@dropdown-menu-inverse-offset: 20px;
+	@dropdown-menu-inverse-arrow-height: 12px;
 
 	font-size: @font-size-base; // ~11px
 	border-radius: 6px;
@@ -136,19 +137,18 @@
 				border-top-width: @popover-arrow-width;
 				border-top-color: @gray13;
 			}
-
 		}
 
 		&:before {
 			width: 100%;
 			background-color: transparent;
-			height: 12px;
+			height: @dropdown-menu-inverse-arrow-height;
 			content: "";
 			position: absolute;
-			top: -12px;
+			top: -@dropdown-menu-inverse-arrow-height;
 
 			.dropup & {
-				bottom: -12px;
+				bottom: -@dropdown-menu-inverse-arrow-height;
 				top: auto;
 			}
 		}
