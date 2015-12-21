@@ -84,6 +84,8 @@
 
 .fuelux-icon-padding-top { background-image: url('png/padding-top.png'); background-repeat: no-repeat; }
 
+.fuelux-icon-padlock-blue { background-image: url('png/padlock-blue.png'); background-repeat: no-repeat; }
+
 .fuelux-icon-padlock-locked-white { background-image: url('png/padlock-locked-white.png'); background-repeat: no-repeat; }
 
 .fuelux-icon-padlock-locked { background-image: url('png/padlock-locked.png'); background-repeat: no-repeat; }
@@ -91,4 +93,8 @@
 .fuelux-icon-padlock-unlocked-white { background-image: url('png/padlock-unlocked-white.png'); background-repeat: no-repeat; }
 
 .fuelux-icon-padlock-unlocked { background-image: url('png/padlock-unlocked.png'); background-repeat: no-repeat; }
+
+.fuelux-icon-people-blue-plus { background-image: url('png/people-blue-plus.png'); background-repeat: no-repeat; }
+
+.fuelux-icon-people-blue-three { background-image: url('png/people-blue-three.png'); background-repeat: no-repeat; }
 
