@@ -71,6 +71,7 @@
 
 .dropdown-menu-inverse {
 	@dropdown-menu-inverse-offset: 20px;
+	@dropdown-menu-inverse-arrow-height: 12px;
 
 	font-size: @font-size-base; // ~11px
 	border-radius: 6px;
@@ -86,7 +87,8 @@
 		color: @true-white;
 		line-height: 1.5;
 
-		&:hover {
+		&:hover,
+		&:focus {
 			background-color: @gray33;
 			color: @true-white;
 		}
@@ -128,14 +130,27 @@
 			border-bottom-color: @gray13;
 			top: -@popover-arrow-width;
 
-		.dropup & {
-			top: auto;
-			bottom: -@popover-arrow-width;
-			border-bottom-width: 0;
-			border-top-width: @popover-arrow-width;
-			border-top-color: @gray13;
+			.dropup & {
+				top: auto;
+				bottom: -@popover-arrow-width;
+				border-bottom-width: 0;
+				border-top-width: @popover-arrow-width;
+				border-top-color: @gray13;
+			}
 		}
 
+		&:before {
+			width: 100%;
+			background-color: transparent;
+			height: @dropdown-menu-inverse-arrow-height;
+			content: "";
+			position: absolute;
+			top: -@dropdown-menu-inverse-arrow-height;
+
+			.dropup & {
+				bottom: -@dropdown-menu-inverse-arrow-height;
+				top: auto;
+			}
 		}
 
 	}
