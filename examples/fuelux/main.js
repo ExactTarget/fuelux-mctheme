@@ -29,7 +29,7 @@ define(function(require) {
 	});
 
 	//CHECKBOX NO JS
-	$("#checkboxes-no-js-block-indeterminate").prop("indeterminate", true); 
+	$("#checkboxes-no-js-block-indeterminate").prop("indeterminate", true);
 
 
 	//COMBOBOX
@@ -512,41 +512,7 @@ define(function(require) {
 	initRepeaterActions();
 
 
-	//SCHEDULER
-	$('#myScheduler').on('changed.fu.scheduler', function(){
-		log('scheduler changed.fu.scheduler: ', arguments);
-	});
 
-	$('#btnSchedulerEnable').on('click', function(){
-		$('#myScheduler').scheduler('enable');
-	});
-	$('#btnSchedulerDisable').on('click', function(){
-		$('#myScheduler').scheduler('disable');
-	});
-	$('#btnSchedulerLogValue').on('click', function(){
-		var val = $('#myScheduler').scheduler('value');
-		log(val);
-	});
-	$('#btnSchedulerSetValue').on('click', function(){
-		var newVal = {
-			"startDateTime": "2014-03-31T03:23+02:00",
-			"timeZone": {
-				"name": "Namibia Standard Time",
-				"offset": "+02:00"
-			},
-			"recurrencePattern": "FREQ=MONTHLY;INTERVAL=6;BYDAY=WE;BYSETPOS=3;UNTIL=20140919;"
-		};
-		log(newVal);
-		$('#myScheduler').scheduler('value', newVal);
-	});
-
-	$('#btnSchedulerDestroy').on('click', function() {
-		var $cont = $('#myScheduler').parent();
-		var markup = $('#myScheduler').scheduler('destroy');
-		log(markup);
-		$cont.append(markup);
-		$('#myScheduler').scheduler();
-	});
 
 
 	//SEARCH
