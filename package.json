@@ -16,10 +16,7 @@
   "bugs": {
     "url": "https://github.com/ExactTarget/fuelux-mctheme/issues"
   },
-  "license": {
-    "type": "BSD-3-Clause",
-    "url": "https://github.com/ExactTarget/fuelux-mctheme/blob/master/LICENSE"
-  },
+  "license": "BSD-3-Clause",
   "engines": {
     "node": "0.12.x"
   },
