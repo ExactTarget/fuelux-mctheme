@@ -18,7 +18,7 @@ module.exports = function (grunt) {
 		bannerRelease: '/*!\n' +
 				' * Marketing Cloud Theme v<%= pkg.version %> \n' +
 				' * Copyright <%= grunt.template.today("yyyy") %> <%= pkg.author.name %>\n' +
-				' * Licensed under <%= pkg.license.type %> (<%= pkg.license.url %>)\n' +
+				' * Licensed under <%= pkg.license %> (https://github.com/ExactTarget/fuelux-mctheme/blob/master/LICENSE)\n' +
 				' */\n',
 		banner: '/*!\n' +
 				' * Marketing Cloud Theme EDGE - Built <%= grunt.template.today("yyyy/mm/dd, h:MM:ss TT") %> \n' +
