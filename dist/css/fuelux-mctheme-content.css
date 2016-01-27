@@ -605,6 +605,19 @@ button:hover > .glyphicon-inverse-chevron-up:before {
 .glyphicon-padding-top:before {
   content: "";
 }
+.fuelux-icon-padlock-blue,
+.glyphicon-padlock-blue {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2219.971%22%20height%3D%2220%22%20viewBox%3D%220%200%2019.971%2020%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%20.03h19.97V20H0z%22%2F%3E%3Cpath%20d%3D%22M15.514%208.778V5.5c0-3.004-2.436-5.442-5.44-5.442h-.2c-3.005%200-5.44%202.438-5.44%205.442v3.278H2.51v11.25h14.98V8.78h-1.976zM7.154%205.5c0-1.5%201.22-2.718%202.72-2.718l.133-.003.068.002c1.5%200%202.72%201.22%202.72%202.718v3.278h-5.64V5.5z%22%20fill%3D%22%234C89BE%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+.fuelux-icon-padlock-blue:before,
+.glyphicon-padlock-blue:before {
+  content: "";
+}
 .fuelux-icon-padlock-locked-white,
 .glyphicon-padlock-locked-white {
   background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220.029%22%20viewBox%3D%220%200%2020%2020.029%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M2.732%208.344h15.02v11.684H2.733zM10.243%200C7.073%200%204.4%202.67%204.4%205.842v2.504h3.34V5.842c0-1.335%201.168-2.504%202.503-2.504s2.504%201.17%202.504%202.504v2.504h3.337V5.842c0-3.172-2.67-5.842-5.84-5.842z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
@@ -655,6 +668,71 @@ button:hover > .glyphicon-inverse-chevron-up:before {
 }
 .fuelux-icon-padlock-unlocked:before,
 .glyphicon-padlock-unlocked:before {
+  content: "";
+}
+.fuelux-icon-people-blue-plus,
+.glyphicon-people-blue-plus {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cpath%20d%3D%22M4.18%2014.293v-.005c0-.282.124-1.16%201.432-1.963.24-.327.44-.77.64-1.28.14-.357.116-.658.116-1.09%200-.316.06-.828-.018-1.11-.267-.948-.94-1.21-1.73-1.21s-1.46.262-1.727%201.215c-.08.277-.02.79-.02%201.105%200%20.432-.023.735.118%201.09.243.617.472%201.13.778%201.462-1.196.218-2.005.844-2.55%201.09-1.13.5-1.135%201.053-1.135%201.053v.938l4.095-.002v-1.293z%22%20fill%3D%22%23C4D6DF%22%2F%3E%3Cpath%20d%3D%22M15.182%2014.405h-2.16v-2.951c-.17-.045-.343-.085-.526-.12.42-.446.74-1.152%201.067-1.988.19-.485.157-.897.157-1.48%200-.437.083-1.132-.026-1.513-.362-1.294-1.28-1.65-2.356-1.65-1.073%200-1.992.356-2.354%201.653-.108.38-.023%201.073-.023%201.51%200%20.585-.034%201%20.158%201.485.333.838.645%201.543%201.062%201.99-1.632.3-2.735%201.153-3.48%201.483-1.542.687-1.547%201.438-1.547%201.438v1.282l10.03-.003v-1.136zM20.084%2011.667h-2.162v-2.16h-1.707v2.16h-2.162v1.707h2.162v2.16h1.707v-2.16h2.162z%22%20fill%3D%22%234C89BE%22%2F%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M.084%200h20v20h-20z%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+.fuelux-icon-people-blue-plus:before,
+.glyphicon-people-blue-plus:before {
+  content: "";
+}
+.fuelux-icon-people-blue-three,
+.glyphicon-people-blue-three {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M.06.03h19.97V20H.06z%22%2F%3E%3Cpath%20d%3D%22M4.163%206.63c-.71%200-1.336.25-1.587%201.126-.083.25%200%20.71%200%201.002%200%20.376-.042.668.125%201.002.21.584.42%201.044.71%201.336-1.084.208-1.836.793-2.337%201.002-1.044.46-1.044.96-1.044.96v.877h3.757v-1.17c0-.25.125-1.084%201.294-1.795.21-.29.418-.71.585-1.168.127-.334.127-.584.127-1.002%200-.292.042-.752%200-1.002-.293-.92-.877-1.17-1.63-1.17M15.854%206.42c.752%200%201.336.25%201.587%201.17.084.25%200%20.75%200%201.042%200%20.418.043.71-.124%201.044-.21.584-.418%201.086-.71%201.378%201.127.21%201.88.793%202.38%201.044%201.044.46%201.044%201.002%201.044%201.002v.877h-3.8v-1.21c0-.252-.125-1.086-1.336-1.838-.21-.294-.417-.71-.585-1.212-.126-.334-.126-.626-.126-1.044%200-.292-.04-.793%200-1.044.334-.96.96-1.21%201.67-1.21%22%20fill%3D%22%23C4D6DF%22%2F%3E%3Cpath%20d%3D%22M14.226%2011.43c-.71-.29-1.712-1.085-3.215-1.377.377-.417.67-1.085%201.003-1.837.167-.46.167-.836.167-1.38%200-.416.084-1.042-.042-1.418-.334-1.21-1.17-1.545-2.17-1.545s-1.84.334-2.173%201.545c-.083.334-.04%201.002-.04%201.378%200%20.543-.043.918.124%201.378.292.793.583%201.42.96%201.837-1.504.293-2.506%201.087-3.215%201.38-1.42.626-1.42%201.335-1.42%201.335v1.17h11.44v-1.17c0%20.042%200-.668-1.42-1.294z%22%20fill%3D%22%234C89BE%22%2F%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M.06.03h19.97V20H.06z%22%2F%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M.03%200h20v20h-20z%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+.fuelux-icon-people-blue-three:before,
+.glyphicon-people-blue-three:before {
+  content: "";
+}
+.fuelux-icon-restricted-gray-background,
+.glyphicon-restricted-gray-background {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220.004%22%20viewBox%3D%220%200%2020%2020.004%22%3E%3Cg%3E%3Cpath%20d%3D%22M20%2010c0%205.525-4.48%2010.004-10%2010.004-5.524%200-10-4.48-10-10.003C0%204.48%204.476%200%2010%200c5.52%200%2010%204.48%2010%2010%22%20fill%3D%22%23A7A9AC%22%2F%3E%3Cpath%20d%3D%22M10%202.077c-4.377%200-7.926%203.548-7.926%207.924%200%204.375%203.548%207.924%207.925%207.924s7.924-3.55%207.924-7.923c0-4.375-3.55-7.923-7.925-7.923M15.94%2010c0%201.28-.408%202.465-1.1%203.44L6.562%205.153c.97-.69%202.156-1.098%203.436-1.098%203.277.003%205.943%202.67%205.943%205.945M4.06%2010c0-1.288.412-2.482%201.114-3.457l8.287%208.29c-.976.692-2.17%201.11-3.46%201.11-3.275%200-5.942-2.668-5.942-5.942%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+.fuelux-icon-restricted-gray-background:before,
+.glyphicon-restricted-gray-background:before {
+  content: "";
+}
+.fuelux-icon-restricted-red-background,
+.glyphicon-restricted-red-background {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220.004%22%20viewBox%3D%220%200%2020%2020.004%22%3E%3Cg%3E%3Cpath%20d%3D%22M20%2010c0%205.525-4.48%2010.004-10%2010.004-5.524%200-10-4.48-10-10.003C0%204.48%204.476%200%2010%200c5.52%200%2010%204.48%2010%2010%22%20fill%3D%22%23EE4249%22%2F%3E%3Cpath%20d%3D%22M10%202.077c-4.377%200-7.926%203.548-7.926%207.924%200%204.375%203.548%207.924%207.925%207.924s7.924-3.55%207.924-7.923c0-4.375-3.55-7.923-7.925-7.923M15.94%2010c0%201.28-.408%202.465-1.1%203.44L6.562%205.153c.97-.69%202.156-1.098%203.436-1.098%203.277.003%205.943%202.67%205.943%205.945M4.06%2010c0-1.288.412-2.482%201.114-3.457l8.287%208.29c-.976.692-2.17%201.11-3.46%201.11-3.275%200-5.942-2.668-5.942-5.942%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+.fuelux-icon-restricted-red-background:before,
+.glyphicon-restricted-red-background:before {
+  content: "";
+}
+.fuelux-icon-restricted-white,
+.glyphicon-restricted-white {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20d%3D%22M10%202.077c-4.377%200-7.926%203.548-7.926%207.924%200%204.375%203.548%207.924%207.925%207.924s7.924-3.55%207.924-7.923c0-4.375-3.55-7.923-7.925-7.923M15.94%2010c0%201.28-.408%202.465-1.1%203.44L6.562%205.154c.97-.69%202.156-1.1%203.436-1.1%203.277.004%205.943%202.67%205.943%205.946M4.06%2010c0-1.288.412-2.482%201.114-3.457l8.287%208.29c-.976.692-2.17%201.11-3.46%201.11-3.275%200-5.942-2.668-5.942-5.942%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+.fuelux-icon-restricted-white:before,
+.glyphicon-restricted-white:before {
   content: "";
 }
 /* Overlay rules

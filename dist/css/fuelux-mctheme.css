@@ -1,7 +1,7 @@
 /*!
- * Marketing Cloud Theme v1.12.2 
- * Copyright 2015 ExactTarget
- * Licensed under BSD-3-Clause (https://github.com/ExactTarget/fuelux-mctheme/blob/master/LICENSE)
+ * Marketing Cloud Theme v1.13.0 
+ * Copyright 2016 ExactTarget
+ * Licensed under  ()
  */
 
 .clearfix,
@@ -4993,7 +4993,8 @@ table th[class*="col-"] {
   color: #ffffff;
   line-height: 1.5;
 }
-.dropdown-menu-inverse > li > a:hover {
+.dropdown-menu-inverse > li > a:hover,
+.dropdown-menu-inverse > li > a:focus {
   background-color: #555555;
   color: #ffffff;
 }
@@ -5045,6 +5046,18 @@ table th[class*="col-"] {
   border-bottom-width: 0;
   border-top-width: 10px;
   border-top-color: #222222;
+}
+.dropdown-menu-inverse.pull-right:before {
+  width: 100%;
+  background-color: transparent;
+  height: 12px;
+  content: "";
+  position: absolute;
+  top: -12px;
+}
+.dropup .dropdown-menu-inverse.pull-right:before {
+  bottom: -12px;
+  top: auto;
 }
 .dropdown-menu-inverse-alt {
   font-size: 11px;
@@ -6055,10 +6068,11 @@ a.list-group-item.active > .badge,
   width: 16px;
   height: 16px;
   content: '';
-  margin: 0px 3px -3px 4px;
+  margin: 0px 2px -2px 6px;
   padding: 0px;
   width: 7px;
-  background-size: 25px 26px;
+  height: 12px;
+  background-size: 22px 23px;
   background-position: 0px -4px;
 }
 .breadcrumb > li + li:before:before,
@@ -6070,7 +6084,8 @@ a.list-group-item.active > .badge,
   content: "";
 }
 .breadcrumb > li:first-child:before {
-  width: 26px;
+  width: 25px;
+  margin-left: 0px;
 }
 .breadcrumb .active {
   color: #222222;
@@ -7324,6 +7339,13 @@ a.list-group-item.active > .badge,
 }
 .fuelux .checkbox-custom.checkbox-inline input[type="checkbox"] {
   position: absolute;
+}
+.fuelux .checkbox-custom.input-group-addon {
+  padding-left: 16px;
+}
+.fuelux .checkbox-custom.input-group-addon:before {
+  left: 4px;
+  top: 3px;
 }
 .fuelux label.checkbox-custom {
   margin-bottom: 5px;
