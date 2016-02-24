@@ -15,6 +15,9 @@
 	if (typeof define === 'function' && define.amd) {
 		// if AMD loader is available, register as an anonymous module.
 		define(['jquery'], factory);
+	} else if (typeof exports === 'object') {
+		// Node/CommonJS
+		module.exports = factory(require('jquery'));
 	} else {
 		// OR use browser globals if AMD is not present
 		factory(jQuery);
@@ -42,7 +45,13 @@
 			this.toggleFolder(ev.currentTarget);
 		}, this));
 
+		this.$element.on('click.fu.tree', '.tree-overflow', $.proxy(function (ev){
+			this.populate($(ev.currentTarget));
+		}, this));
+
+		// folderSelect default is true
 		if (this.options.folderSelect) {
+			this.$element.addClass('tree-folder-select');
 			this.$element.off('click.fu.tree', '.tree-branch-name');
 			this.$element.on('click.fu.tree', '.icon-caret', $.proxy(function (ev) {
 				this.toggleFolder($(ev.currentTarget).parent());
@@ -58,6 +67,16 @@
 	Tree.prototype = {
 		constructor: Tree,
 
+		deselectAll: function deselectAll(nodes) {
+			// clear all child tree nodes and style as deselected
+			nodes = nodes || this.$element;
+			var $selectedElements = $(nodes).find('.tree-selected');
+			$selectedElements.each(function (index, element) {
+				styleNodeDeselected( $(element), $(element).find( '.glyphicon' ) );
+			});
+			return $selectedElements;
+		},
+
 		destroy: function destroy() {
 			// any external bindings [none]
 			// empty elements to return to original markup
@@ -72,26 +91,60 @@
 			this.populate(this.$element);
 		},
 
-		populate: function populate($el) {
+		populate: function populate($el, isBackgroundProcess) {
 			var self = this;
+
+			// populate was initiated based on clicking overflow link
+			var isOverflow = $el.hasClass('tree-overflow');
+
 			var $parent = ($el.hasClass('tree')) ? $el : $el.parent();
-			var loader = $parent.find('.tree-loader:eq(0)');
+			var atRoot = $parent.hasClass('tree');
+
+			if(isOverflow && !atRoot){
+				$parent = $parent.parent();
+			}
+
 			var treeData = $parent.data();
+			// expose overflow data to datasource so it can be responded to appropriately.
+			if(isOverflow){
+				treeData.overflow = $el.data();
+			}
 
-			loader.removeClass('hide');
+			isBackgroundProcess = isBackgroundProcess || false;	// no user affordance needed (ex.- "loading")
+
+			if(isOverflow){
+				if(atRoot){
+					// the loader at the root level needs to continually replace the overflow trigger
+					// otherwise, when loader is shown below, it will be the loader for the last folder
+					// in the tree, instead of the loader at the root level.
+					$el.replaceWith($parent.find('> .tree-loader').remove());
+				}else{
+					$el.remove();
+				}
+			}
+
+			var $loader = $parent.find('.tree-loader:last');
+
+			if (isBackgroundProcess === false) {
+				$loader.removeClass('hide hidden'); // jQuery deprecated hide in 3.0. Use hidden instead. Leaving hide here to support previous markup
+			}
+
+
 			this.options.dataSource(treeData ? treeData : {}, function (items) {
-				loader.addClass('hide');
-
 				$.each(items.data, function (index, value) {
 					var $entity;
 
 					if (value.type === 'folder') {
-						$entity = self.$element.find('[data-template=treebranch]:eq(0)').clone().removeClass('hide').removeData('template');
+						$entity = self.$element.find('[data-template=treebranch]:eq(0)').clone().removeClass('hide hidden').removeData('template').removeAttr('data-template'); // jQuery deprecated hide in 3.0. Use hidden instead. Leaving hide here to support previous markup
 						$entity.data(value);
 						$entity.find('.tree-branch-name > .tree-label').html(value.text || value.name);
 					} else if (value.type === 'item') {
-						$entity = self.$element.find('[data-template=treeitem]:eq(0)').clone().removeClass('hide').removeData('template');
+						$entity = self.$element.find('[data-template=treeitem]:eq(0)').clone().removeClass('hide hidden').removeData('template').removeAttr('data-template'); // jQuery deprecated hide in 3.0. Use hidden instead. Leaving hide here to support previous markup
 						$entity.find('.tree-item-name > .tree-label').html(value.text || value.name);
+						$entity.data(value);
+					} else if (value.type === 'overflow') {
+						$entity = self.$element.find('[data-template=treeoverflow]:eq(0)').clone().removeClass('hide hidden').removeData('template').removeAttr('data-template'); // jQuery deprecated hide in 3.0. Use hidden instead. Leaving hide here to support previous markup
+						$entity.find('.tree-overflow-name > .tree-label').html(value.text || value.name);
 						$entity.data(value);
 					}
 
@@ -144,82 +197,63 @@
 						}
 					});
 
-					// add child nodes
-					if ($el.hasClass('tree-branch-header')) {
-						$parent.find('.tree-branch-children:eq(0)').append($entity);
+					// add child node
+					if (atRoot) {
+						$parent.append($entity);
 					} else {
-						$el.append($entity);
+						$parent.find('.tree-branch-children:eq(0)').append($entity);
 					}
 				});
+
+				$parent.find('.tree-loader').addClass('hidden');
 
 				// return newly populated folder
 				self.$element.trigger('loaded.fu.tree', $parent);
 			});
 		},
 
-		selectItem: function selectItem(el) {
-			if (!this.options.itemSelect) return;
-			var $el = $(el);
-			var selData = $el.data();
-			var $all = this.$element.find('.tree-selected');
-			var data = [];
-			var $icon = $el.find('.icon-item');
+		selectTreeNode: function selectItem(clickedElement, nodeType) {
+			var clicked = {};	// object for clicked element
+			clicked.$element = $(clickedElement);
 
-			if (this.options.multiSelect) {
-				$.each($all, function (index, value) {
-					var $val = $(value);
-					if ($val[0] !== $el[0]) {
-						data.push($(value).data());
-					}
-				});
-			} else if ($all[0] !== $el[0]) {
-				$all.removeClass('tree-selected')
-					.find('.glyphicon').removeClass('glyphicon-ok').addClass('fueluxicon-bullet');
-				data.push(selData);
+			var selected = {}; // object for selected elements
+			selected.$elements = this.$element.find('.tree-selected');
+			selected.dataForEvent = [];
+
+			// determine clicked element and it's icon
+			if (nodeType === 'folder') {
+				// make the clicked.$element the container branch
+				clicked.$element = clicked.$element.closest('.tree-branch');
+				clicked.$icon = clicked.$element.find('.icon-folder');
+			}
+			else {
+				clicked.$icon = clicked.$element.find('.icon-item');
+			}
+			clicked.elementData = clicked.$element.data();
+
+			// the below functions pass objects by copy/reference and use modified object in this function
+			if ( this.options.multiSelect ) {
+				multiSelectSyncNodes(this, clicked, selected);
+			}
+			else {
+				singleSelectSyncNodes(this, clicked, selected);
 			}
 
-			var eventType = 'selected';
-			if ($el.hasClass('tree-selected')) {
-				eventType = 'deselected';
-				$el.removeClass('tree-selected');
-				if ($icon.hasClass('glyphicon-ok') || $icon.hasClass('fueluxicon-bullet')) {
-					$icon.removeClass('glyphicon-ok').addClass('fueluxicon-bullet');
-				}
-
-			} else {
-				$el.addClass ('tree-selected');
-				// add tree dot back in
-				if ($icon.hasClass('glyphicon-ok') || $icon.hasClass('fueluxicon-bullet')) {
-					$icon.removeClass('fueluxicon-bullet').addClass('glyphicon-ok');
-				}
-
-				if (this.options.multiSelect) {
-					data.push(selData);
-				}
-
-			}
-
-			this.$element.trigger(eventType + '.fu.tree', {
-				target: selData,
-				selected: data
+			// all done with the DOM, now fire events
+			this.$element.trigger(selected.eventType + '.fu.tree', {
+				target: clicked.elementData,
+				selected: selected.dataForEvent
 			});
 
-			// Return new list of selected items, the item
-			// clicked, and the type of event:
-			$el.trigger('updated.fu.tree', {
-				selected: data,
-				item: $el,
-				eventType: eventType
+			clicked.$element.trigger('updated.fu.tree', {
+				selected: selected.dataForEvent,
+				item: clicked.$element,
+				eventType: selected.eventType
 			});
 		},
 
-		openFolder: function openFolder(el, ignoreRedundantOpens) {
+		discloseFolder: function discloseFolder(el) {
 			var $el = $(el);
-
-			//don't break the API :| (make this functionally the same as calling 'toggleFolder')
-			if (!ignoreRedundantOpens && $el.find('.glyphicon-folder-open').length && !this.options.ignoreRedundantOpens) {
-				this.closeFolder(el);
-			}
 
 			var $branch = $el.closest('.tree-branch');
 			var $treeFolderContent = $branch.find('.tree-branch-children');
@@ -228,7 +262,7 @@
 			//take care of the styles
 			$branch.addClass('tree-open');
 			$branch.attr('aria-expanded', 'true');
-			$treeFolderContentFirstChild.removeClass('hide');
+			$treeFolderContentFirstChild.removeClass('hide hidden'); // jQuery deprecated hide in 3.0. Use hidden instead. Leaving hide here to support previous markup
 			$branch.find('> .tree-branch-header .icon-folder').eq(0)
 				.removeClass('glyphicon-folder-close')
 				.addClass('glyphicon-folder-open');
@@ -238,7 +272,7 @@
 				this.populate($treeFolderContent);
 			}
 
-			this.$element.trigger('opened.fu.tree', $branch.data());
+			this.$element.trigger('disclosedFolder.fu.tree', $branch.data());
 		},
 
 		closeFolder: function closeFolder(el) {
@@ -250,7 +284,7 @@
 			//take care of the styles
 			$branch.removeClass('tree-open');
 			$branch.attr('aria-expanded', 'false');
-			$treeFolderContentFirstChild.addClass('hide');
+			$treeFolderContentFirstChild.addClass('hidden');
 			$branch.find('> .tree-branch-header .icon-folder').eq(0)
 				.removeClass('glyphicon-folder-open')
 				.addClass('glyphicon-folder-close');
@@ -267,58 +301,22 @@
 			var $el = $(el);
 
 			if ($el.find('.glyphicon-folder-close').length) {
-				this.openFolder(el);
+				this.discloseFolder(el);
 			} else if ($el.find('.glyphicon-folder-open').length) {
 				this.closeFolder(el);
 			}
 		},
 
-		selectFolder: function selectFolder(clickedElement) {
-			if (!this.options.folderSelect) return;
-			var $clickedElement = $(clickedElement);
-			var $clickedBranch = $clickedElement.closest('.tree-branch');
-			var $selectedBranch = this.$element.find('.tree-branch.tree-selected');
-			var clickedData = $clickedBranch.data();
-			var selectedData = [];
-			var eventType = 'selected';
-
-			// select clicked item
-			if ($clickedBranch.hasClass('tree-selected')) {
-				eventType = 'deselected';
-				$clickedBranch.removeClass('tree-selected');
-			} else {
-				$clickedBranch.addClass('tree-selected');
+		selectFolder: function selectFolder(el) {
+			if (this.options.folderSelect) {
+				this.selectTreeNode(el, 'folder');
 			}
+		},
 
-			if (this.options.multiSelect) {
-				// get currently selected
-				$selectedBranch = this.$element.find('.tree-branch.tree-selected');
-
-				$.each($selectedBranch, function (index, value) {
-					var $value = $(value);
-					if ($value[0] !== $clickedElement[0]) {
-						selectedData.push($(value).data());
-					}
-				});
-
-			} else if ($selectedBranch[0] !== $clickedElement[0]) {
-				$selectedBranch.removeClass('tree-selected');
-
-				selectedData.push(clickedData);
+		selectItem: function selectItem(el) {
+			if (this.options.itemSelect) {
+				this.selectTreeNode(el, 'item');
 			}
-
-			this.$element.trigger(eventType + '.fu.tree', {
-				target: clickedData,
-				selected: selectedData
-			});
-
-			// Return new list of selected items, the item
-			// clicked, and the type of event:
-			$clickedElement.trigger('updated.fu.tree', {
-				selected: selectedData,
-				item: $clickedElement,
-				eventType: eventType
-			});
 		},
 
 		selectedItems: function selectedItems() {
@@ -339,7 +337,8 @@
 			var closedReported = function closedReported(event, closed) {
 				reportedClosed.push(closed);
 
-				if (self.$element.find(".tree-branch.tree-open:not('.hide')").length === 0) {
+				// jQuery deprecated hide in 3.0. Use hidden instead. Leaving hide here to support previous markup
+				if (self.$element.find(".tree-branch.tree-open:not('.hidden, .hide')").length === 0) {
 					self.$element.trigger('closedAll.fu.tree', {
 						tree: self.$element,
 						reportedClosed: reportedClosed
@@ -351,7 +350,7 @@
 			//trigger callback when all folders have reported closed
 			self.$element.on('closed.fu.tree', closedReported);
 
-			self.$element.find(".tree-branch.tree-open:not('.hide')").each(function () {
+			self.$element.find(".tree-branch.tree-open:not('.hidden, .hide')").each(function () {
 				self.closeFolder(this);
 			});
 		},
@@ -359,7 +358,8 @@
 		//disclose visible will only disclose visible tree folders
 		discloseVisible: function discloseVisible() {
 			var self = this;
-			var $openableFolders = self.$element.find(".tree-branch:not('.tree-open, .hide')");
+
+			var $openableFolders = self.$element.find(".tree-branch:not('.tree-open, .hidden, .hide')");
 			var reportedOpened = [];
 
 			var openReported = function openReported(event, opened) {
@@ -382,8 +382,8 @@
 			self.$element.on('loaded.fu.tree', openReported);
 
 			// open all visible folders
-			self.$element.find(".tree-branch:not('.tree-open, .hide')").each(function triggerOpen() {
-				self.openFolder($(this).find('.tree-branch-header'), true);
+			self.$element.find(".tree-branch:not('.tree-open, .hidden, .hide')").each(function triggerOpen() {
+				self.discloseFolder($(this).find('.tree-branch-header'));
 			});
 		},
 
@@ -401,7 +401,7 @@
 			}
 
 			var isExceededLimit = (self.options.disclosuresUpperLimit >= 1 && self.$element.data('disclosures') >= self.options.disclosuresUpperLimit);
-			var isAllDisclosed = self.$element.find(".tree-branch:not('.tree-open, .hide')").length === 0;
+			var isAllDisclosed = self.$element.find(".tree-branch:not('.tree-open, .hidden, .hide')").length === 0;
 
 
 			if (!isAllDisclosed) {
@@ -463,11 +463,92 @@
 				}
 
 			}
+		},
+
+		// This refreshes the children of a folder. Please destroy and re-initilize for "root level" refresh.
+		// The data of the refreshed folder is not updated. This control's architecture only allows updating of children.
+		// Folder renames should probably be handled directly on the node.
+		refreshFolder: function refreshFolder($el) {
+			var $treeFolder = $el.closest('.tree-branch');
+			var $treeFolderChildren = $treeFolder.find('.tree-branch-children');
+			$treeFolderChildren.eq(0).empty();
+
+			if ($treeFolder.hasClass('tree-open')) {
+				this.populate($treeFolderChildren, false);
+			}
+			else {
+				this.populate($treeFolderChildren, true);
+			}
+
+			this.$element.trigger('refreshedFolder.fu.tree', $treeFolder.data());
 		}
+
 	};
+
+	// ALIASES
 
 	//alias for collapse for consistency. "Collapse" is an ambiguous term (collapse what? All? One specific branch?)
 	Tree.prototype.closeAll = Tree.prototype.collapse;
+	//alias for backwards compatibility because there's no reason not to.
+	Tree.prototype.openFolder = Tree.prototype.discloseFolder;
+	//For library consistency
+	Tree.prototype.getValue = Tree.prototype.selectedItems;
+
+	// PRIVATE FUNCTIONS
+
+	function styleNodeSelected ($element, $icon) {
+		$element.addClass('tree-selected');
+		if ( $element.data('type') === 'item' && $icon.hasClass('fueluxicon-bullet') ) {
+			$icon.removeClass('fueluxicon-bullet').addClass('glyphicon-ok'); // make checkmark
+		}
+	}
+
+	function styleNodeDeselected ($element, $icon) {
+		$element.removeClass('tree-selected');
+		if ( $element.data('type') === 'item' && $icon.hasClass('glyphicon-ok') ) {
+			$icon.removeClass('glyphicon-ok').addClass('fueluxicon-bullet'); // make bullet
+		}
+	}
+
+	function multiSelectSyncNodes (self, clicked, selected) {
+		// search for currently selected and add to selected data list if needed
+		$.each(selected.$elements, function (index, element) {
+			var $element = $(element);
+			if ($element[0] !== clicked.$element[0]) {
+				selected.dataForEvent.push( $($element).data() );
+			}
+		});
+
+		if (clicked.$element.hasClass('tree-selected')) {
+			styleNodeDeselected (clicked.$element, clicked.$icon);
+			// set event data
+			selected.eventType = 'deselected';
+		}
+		else {
+			styleNodeSelected(clicked.$element, clicked.$icon);
+			// set event data
+			selected.eventType = 'selected';
+			selected.dataForEvent.push(clicked.elementData);
+		}
+	}
+
+	function singleSelectSyncNodes(self, clicked, selected) {
+		// element is not currently selected
+		if (selected.$elements[0] !== clicked.$element[0]) {
+			var clearedElements = self.deselectAll(self.$element);
+			styleNodeSelected(clicked.$element, clicked.$icon);
+			// set event data
+			selected.eventType = 'selected';
+			selected.dataForEvent = [clicked.elementData];
+		}
+		else {
+			styleNodeDeselected(clicked.$element, clicked.$icon);
+			// set event data
+			selected.eventType = 'deselected';
+			selected.dataForEvent = [];
+		}
+	}
+
 
 	// TREE PLUGIN DEFINITION
 
@@ -498,15 +579,6 @@
 		cacheItems: true,
 		folderSelect: true,
 		itemSelect: true,
-		/*
-		* Calling "open" on something, should do that. However, the current API
-		* instead treats "open" as a "toggle" and will close a folder that is open
-		* if you call `openFolder` on it. Setting `ignoreRedundantOpens` to `true`
-		* will make the folder instead ignore the redundant call and stay open.
-		* This allows you to fix the API until 3.7.x when we can deprecate the switch
-		* and make `openFolder` behave correctly by default.
-		*/
-		ignoreRedundantOpens: false,
 		/*
 		* How many times `discloseAll` should be called before a stopping and firing
 		* an `exceededDisclosuresLimit` event. You can force it to continue by

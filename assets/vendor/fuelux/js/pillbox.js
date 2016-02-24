@@ -15,6 +15,9 @@
 	if (typeof define === 'function' && define.amd) {
 		// if AMD loader is available, register as an anonymous module.
 		define(['jquery', 'fuelux/dropdown-autoflip'], factory);
+	} else if (typeof exports === 'object') {
+		// Node/CommonJS
+		module.exports = factory(require('jquery'), require('./dropdown-autoflip'));
 	} else {
 		// OR use browser globals if AMD is not present
 		factory(jQuery);
@@ -689,6 +692,8 @@
 			}
 		}
 	};
+
+	Pillbox.prototype.getValue = Pillbox.prototype.items;
 
 	// PILLBOX PLUGIN DEFINITION
 

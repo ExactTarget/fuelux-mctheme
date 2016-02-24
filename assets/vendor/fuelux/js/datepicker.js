@@ -15,6 +15,9 @@
 	if (typeof define === 'function' && define.amd) {
 		// if AMD loader is available, register as an anonymous module.
 		define(['jquery'], factory);
+	} else if (typeof exports === 'object') {
+		// Node/CommonJS
+		module.exports = factory(require('jquery'), require('moment'));
 	} else {
 		// OR use browser globals if AMD is not present
 		factory(jQuery);
@@ -67,6 +70,7 @@
 		this.$header = this.$calendar.find('.datepicker-calendar-header');
 		this.$headerTitle = this.$header.find('.title');
 		this.$input = this.$element.find('input');
+		this.$inputGroupBtn = this.$element.find('.input-group-btn');
 		this.$wheels = this.$element.find('.datepicker-wheels');
 		this.$wheelsMonth = this.$element.find('.datepicker-wheels-month');
 		this.$wheelsYear = this.$element.find('.datepicker-wheels-year');
@@ -87,12 +91,13 @@
 
 		this.$calendar.find('.datepicker-today').on('click.fu.datepicker', $.proxy(this.todayClicked, this));
 		this.$days.on('click.fu.datepicker', 'tr td button', $.proxy(this.dateClicked, this));
-		this.$element.find('.dropdown-menu').on('mousedown.fu.datepicker', $.proxy(this.dropdownMousedown, this));
 		this.$header.find('.next').on('click.fu.datepicker', $.proxy(this.next, this));
 		this.$header.find('.prev').on('click.fu.datepicker', $.proxy(this.prev, this));
 		this.$headerTitle.on('click.fu.datepicker', $.proxy(this.titleClicked, this));
-		this.$input.on('blur.fu.datepicker', $.proxy(this.inputBlurred, this));
-		this.$input.on('focus.fu.datepicker', $.proxy(this.inputFocused, this));
+		this.$input.on('change.fu.datepicker', $.proxy(this.inputChanged, this));
+		this.$input.on('mousedown.fu.datepicker', $.proxy(this.showDropdown, this));
+		this.$inputGroupBtn.on('hidden.bs.dropdown', $.proxy(this.hide, this));
+		this.$inputGroupBtn.on('shown.bs.dropdown', $.proxy(this.show, this));
 		this.$wheels.find('.datepicker-wheels-back').on('click.fu.datepicker', $.proxy(this.backClicked, this));
 		this.$wheels.find('.datepicker-wheels-select').on('click.fu.datepicker', $.proxy(this.selectClicked, this));
 		this.$wheelsMonth.on('click.fu.datepicker', 'ul button', $.proxy(this.monthClicked, this));
@@ -161,7 +166,7 @@
 			if (
 			($.isFunction(window.moment) || (typeof moment !== 'undefined' && $.isFunction(moment))) &&
 				$.isPlainObject(this.options.momentConfig) &&
-				this.options.momentConfig.culture && this.options.momentConfig.format
+				(typeof this.options.momentConfig.culture === 'string' && typeof this.options.momentConfig.format === 'string')
 			) {
 				return true;
 			} else {
@@ -184,6 +189,7 @@
 			this.selectedDate = date;
 			this.$input.val(this.formatDate(date));
 			this.inputValue = this.$input.val();
+			this.hide();
 			this.$input.focus();
 			this.$element.trigger('dateClicked.fu.datepicker', date);
 		},
@@ -203,15 +209,7 @@
 		disable: function () {
 			this.$element.addClass('disabled');
 			this.$element.find('input, button').attr('disabled', 'disabled');
-			this.$element.find('.input-group-btn').removeClass('open');
-		},
-
-		dropdownMousedown: function () {
-			var self = this;
-			this.preventBlurHide = true;
-			setTimeout(function () {
-				self.preventBlurHide = false;
-			}, 0);
+			this.$inputGroupBtn.removeClass('open');
 		},
 
 		enable: function () {
@@ -260,7 +258,7 @@
 			return this.restricted;
 		},
 
-		inputBlurred: function (e) {
+		inputChanged: function () {
 			var inputVal = this.$input.val();
 			var date;
 			if (inputVal !== this.inputValue) {
@@ -274,14 +272,28 @@
 				}
 
 			}
+		},
 
-			if (!this.preventBlurHide) {
-				this.$element.find('.input-group-btn').removeClass('open');
+		show: function () {
+			var date = (this.selectedDate) ? this.selectedDate : new Date();
+			this.changeView('calendar', date);
+			this.$inputGroupBtn.addClass('open');
+			this.$element.trigger('shown.fu.datepicker');
+		},
+
+		showDropdown: function (e) {	//input mousedown handler, name retained for legacy support of showDropdown
+			if (!this.$input.is(':focus') && !this.$inputGroupBtn.hasClass('open')) {
+				this.show();
 			}
 		},
 
-		inputFocused: function (e) {
-			this.$element.find('.input-group-btn').addClass('open');
+		hide: function () {
+			this.$inputGroupBtn.removeClass('open');
+			this.$element.trigger('hidden.fu.datepicker');
+		},
+
+		hideDropdown: function () {		//for legacy support of hideDropdown
+			this.hide();
 		},
 
 		isInvalidDate: function (date) {
@@ -471,7 +483,7 @@
 			var selected = this.selectedDate;
 			var $tbody = this.$days.find('tbody');
 			var year = date.getFullYear();
-			var curDate, curMonth, curYear, i, j, rows, stage, $td, $tr;
+			var curDate, curMonth, curYear, i, j, rows, stage, previousStage, lastStage, $td, $tr;
 
 			if (selected) {
 				selected = {
@@ -489,6 +501,7 @@
 				'data-year': year
 			});
 
+
 			$tbody.empty();
 			if (firstDay !== 0) {
 				curDate = lastMonthDate - firstDay + 1;
@@ -505,8 +518,14 @@
 					$td = $('<td></td>');
 					if (stage === -1) {
 						$td.addClass('last-month');
+						if (previousStage !== stage) {
+							$td.addClass('first');
+						}
 					} else if (stage === 1) {
 						$td.addClass('next-month');
+						if (previousStage !== stage) {
+							$td.addClass('first');
+						}
 					}
 
 					curMonth = month + stage;
@@ -550,12 +569,23 @@
 					}
 
 					curDate++;
+					lastStage = previousStage;
+					previousStage = stage;
 					if (stage === -1 && curDate > lastMonthDate) {
 						curDate = 1;
 						stage = 0;
+						if (lastStage !== stage) {
+							$td.addClass('last');
+						}
 					} else if (stage === 0 && curDate > lastDate) {
 						curDate = 1;
 						stage = 1;
+						if (lastStage !== stage) {
+							$td.addClass('last');
+						}
+					}
+					if (i === (rows - 1) && j === 6) {
+						$td.addClass('last');
 					}
 
 					$tr.append($td);
@@ -573,10 +603,10 @@
 
 			if (this.sameYearOnly) {
 				this.$wheelsMonth.addClass('full');
-				this.$wheelsYear.addClass('hide');
+				this.$wheelsYear.addClass('hidden');
 			} else {
 				this.$wheelsMonth.removeClass('full');
-				this.$wheelsYear.removeClass('hide');
+				this.$wheelsYear.removeClass('hide hidden');	// .hide is deprecated
 			}
 
 			$monthUl.find('.selected').removeClass('selected');
@@ -702,7 +732,8 @@
 			$(e.currentTarget).parent().addClass('selected');
 		}
 	};
-
+	//for control library consistency
+	Datepicker.prototype.getValue = Datepicker.prototype.getDate;
 
 	// DATEPICKER PLUGIN DEFINITION
 
