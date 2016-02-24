@@ -618,6 +618,19 @@ button:hover > .glyphicon-inverse-chevron-up:before {
 .glyphicon-padlock-blue:before {
   content: "";
 }
+.fuelux-icon-padlock-locked-red,
+.glyphicon-padlock-locked-red {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220.029%22%20viewBox%3D%220%200%2020%2020.029%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20fill%3D%22%23EE4249%22%20d%3D%22M2.732%208.344h15.02v11.684H2.733zM10.243%200C7.073%200%204.4%202.67%204.4%205.842v2.504h3.34V5.842c0-1.335%201.167-2.504%202.502-2.504s2.504%201.17%202.504%202.504v2.504h3.337V5.842C16.083%202.67%2013.415%200%2010.243%200z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+.fuelux-icon-padlock-locked-red:before,
+.glyphicon-padlock-locked-red:before {
+  content: "";
+}
 .fuelux-icon-padlock-locked-white,
 .glyphicon-padlock-locked-white {
   background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220.029%22%20viewBox%3D%220%200%2020%2020.029%22%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h20v20H0z%22%2F%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M2.732%208.344h15.02v11.684H2.733zM10.243%200C7.073%200%204.4%202.67%204.4%205.842v2.504h3.34V5.842c0-1.335%201.168-2.504%202.503-2.504s2.504%201.17%202.504%202.504v2.504h3.337V5.842c0-3.172-2.67-5.842-5.84-5.842z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
