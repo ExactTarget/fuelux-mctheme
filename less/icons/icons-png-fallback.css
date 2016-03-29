@@ -18,8 +18,6 @@
 
 .fuelux-icon-arrow-west, .glyphicon-arrow-west { background-image: url('png/arrow-west.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
-.fuelux-icon-breadcrumb, .glyphicon-breadcrumb (in3357.et's conflicted copy 2015-11-10) { background-image: url('png/breadcrumb (in3357.et's conflicted copy 2015-11-10).png'); background-repeat: no-repeat; .fuelux-icon; } 
-
 .fuelux-icon-breadcrumb, .glyphicon-breadcrumb { background-image: url('png/breadcrumb.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
 .fuelux-icon-calendar-hover, .fuelux-icon-calendar:hover, button:hover > .fuelux-icon-calendar , .glyphicon-calendar-hover, .glyphicon-calendar:hover, button:hover > .glyphicon-calendar { background-image: url('png/calendar-hover.png'); background-repeat: no-repeat; .fuelux-icon; } 
@@ -114,6 +112,8 @@
 
 .fuelux-icon-chevron-up, .glyphicon-chevron-up { background-image: url('png/chevron-up.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
+.fuelux-icon-clock, .glyphicon-clock { background-image: url('png/clock.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
 .fuelux-icon-copy-hover, .fuelux-icon-copy:hover, button:hover > .fuelux-icon-copy , .glyphicon-copy-hover, .glyphicon-copy:hover, button:hover > .glyphicon-copy { background-image: url('png/copy-hover.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
 .fuelux-icon-copy, .glyphicon-copy { background-image: url('png/copy.png'); background-repeat: no-repeat; .fuelux-icon; } 
@@ -125,6 +125,10 @@
 .fuelux-icon-default-size, .glyphicon-default-size { background-image: url('png/default-size.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
 .fuelux-icon-delete, .glyphicon-delete { background-image: url('png/delete.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-desktop-grey, .glyphicon-desktop-grey { background-image: url('png/desktop-grey.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-desktop-white, .glyphicon-desktop-white { background-image: url('png/desktop-white.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
 .fuelux-icon-dot-hover, .fuelux-icon-dot:hover, button:hover > .fuelux-icon-dot , .glyphicon-dot-hover, .glyphicon-dot:hover, button:hover > .glyphicon-dot { background-image: url('png/dot-hover.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
@@ -206,13 +210,21 @@
 
 .fuelux-icon-mobile-drag, .glyphicon-mobile-drag { background-image: url('png/mobile-drag.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
+.fuelux-icon-mobile-grey, .glyphicon-mobile-grey { background-image: url('png/mobile-grey.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
 .fuelux-icon-mobile-push, .glyphicon-mobile-push { background-image: url('png/mobile-push.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
 .fuelux-icon-mobile-sms-deprecated, .glyphicon-mobile-sms-deprecated { background-image: url('png/mobile-sms-deprecated.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
 .fuelux-icon-mobile-sms, .glyphicon-mobile-sms { background-image: url('png/mobile-sms.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
+.fuelux-icon-mobile-white, .glyphicon-mobile-white { background-image: url('png/mobile-white.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
 .fuelux-icon-multimail, .glyphicon-multimail { background-image: url('png/multimail.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-notification-orange, .glyphicon-notification-orange { background-image: url('png/notification-orange.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
+.fuelux-icon-notification, .glyphicon-notification { background-image: url('png/notification.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
 .fuelux-icon-pencil-hover, .fuelux-icon-pencil:hover, button:hover > .fuelux-icon-pencil , .glyphicon-pencil-hover, .glyphicon-pencil:hover, button:hover > .glyphicon-pencil { background-image: url('png/pencil-hover.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
@@ -303,8 +315,6 @@
 .fuelux-icon-thumbs-up-blue, .glyphicon-thumbs-up-blue { background-image: url('png/thumbs-up-blue.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
 .fuelux-icon-thumbs-up-green, .glyphicon-thumbs-up-green { background-image: url('png/thumbs-up-green.png'); background-repeat: no-repeat; .fuelux-icon; } 
-
-.fuelux-icon-thumbs-up-grey, .glyphicon-thumbs-up-grey (in3357.et's conflicted copy 2015-11-10) { background-image: url('png/thumbs-up-grey (in3357.et's conflicted copy 2015-11-10).png'); background-repeat: no-repeat; .fuelux-icon; } 
 
 .fuelux-icon-thumbs-up-grey, .glyphicon-thumbs-up-grey { background-image: url('png/thumbs-up-grey.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
