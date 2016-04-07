@@ -98,7 +98,7 @@ body {
 	margin: 100px 3em 40px;
 }
 .panel-footer {
-	min-height: 6rem;
+	min-height: 10rem;
 	padding: 20px 10px 8px 10px;
 }
 
@@ -110,6 +110,10 @@ body {
 	/*display: inline-block;*/
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.panel {
+	min-height: 280px;
 }
 
 [class*="white"] {
