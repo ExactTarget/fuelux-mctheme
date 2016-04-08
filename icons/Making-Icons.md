@@ -101,6 +101,8 @@ Do not hit "retry", your export probably worked just fine.
 
 ## Modifying Grunticon to generate an icon preview HTML file we can live with
 
+_[This is no longer valid and has been replaced with floating columns with min-heights and an increased responsive breakpoint, so grunticon no longer needs to be modified.]_
+
 As it is, the Grunticon node module does not allow us to make enough changes to its preview.hbs file to arrive at a preview we consider good enough. 
 
 So we had to go in and modify some of Grunticon's code manually.
