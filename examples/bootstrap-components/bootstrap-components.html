@@ -2284,6 +2284,24 @@
 	<script src="../../bower_components/jquery/dist/jquery.js" type="text/javascript"></script>
 	<script src="../../bower_components/bootstrap/dist/js/bootstrap.js" type="text/javascript"></script>
 	<script src="../../bower_components/fuelux/dist/js/fuelux.js" type="text/javascript"></script>
+
+	<script src="../../bower_components/requirejs/require.js"></script>
+	<script type="text/javascript">
+		(function () {
+			requirejs.config({
+				config: {
+					moment: {
+						noGlobal: true
+					}
+				},
+				paths: {
+					jquery: '../../bower_components/jquery/dist/jquery',
+					cssAlternatives: '../cssAlternatives',
+				}
+			});
+		})();
+		require(['jquery', 'cssAlternatives'], function($){ });
+	</script>
 	<script>
 		$(function(){
 			$('body').scrollspy({
