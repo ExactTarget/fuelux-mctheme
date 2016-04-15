@@ -222,6 +222,8 @@
 
 .fuelux-icon-multimail, .glyphicon-multimail { background-image: url('png/multimail.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
+.fuelux-icon-new-window, .glyphicon-new-window { background-image: url('png/new-window.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
 .fuelux-icon-notification-orange, .glyphicon-notification-orange { background-image: url('png/notification-orange.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
 .fuelux-icon-notification, .glyphicon-notification { background-image: url('png/notification.png'); background-repeat: no-repeat; .fuelux-icon; } 

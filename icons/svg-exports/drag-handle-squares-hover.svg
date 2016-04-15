@@ -7,12 +7,12 @@
 	<g>
 		<rect id="le_wrappier_164_" style="fill:none;" width="20" height="20"/>
 		<g>
-			<rect x="6.713" y="5" style="fill:#83BCD7;" width="2" height="2"/>
-			<rect x="10.713" y="5" style="fill:#83BCD7;" width="2" height="2"/>
-			<rect x="6.713" y="9" style="fill:#83BCD7;" width="2" height="2"/>
-			<rect x="10.713" y="9" style="fill:#83BCD7;" width="2" height="2"/>
-			<rect x="6.713" y="13" style="fill:#83BCD7;" width="2" height="2"/>
-			<rect x="10.713" y="13" style="fill:#83BCD7;" width="2" height="2"/>
+			<rect x="5.532" y="3.031" style="fill:#83BCD7;" width="2.787" height="2.787"/>
+			<rect x="11.105" y="3.031" style="fill:#83BCD7;" width="2.787" height="2.787"/>
+			<rect x="5.532" y="8.605" style="fill:#83BCD7;" width="2.787" height="2.787"/>
+			<rect x="11.105" y="8.605" style="fill:#83BCD7;" width="2.787" height="2.787"/>
+			<rect x="5.532" y="14.182" style="fill:#83BCD7;" width="2.787" height="2.787"/>
+			<rect x="11.105" y="14.182" style="fill:#83BCD7;" width="2.787" height="2.787"/>
 		</g>
 	</g>
 </g>

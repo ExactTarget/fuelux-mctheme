@@ -28,6 +28,7 @@
 				paths: {
 					jquery: '../../bower_components/jquery/dist/jquery',
 					underscore: '../../bower_components/underscore/underscore',
+					cssAlternatives: '../cssAlternatives',
 					bootstrap: '../../bower_components/bootstrap/dist/js/bootstrap',
 					//moment: '../../bower_components/moment/min/moment-with-langs',
 					fuelux: '../../bower_components/fuelux/dist/js/fuelux'
@@ -40,7 +41,7 @@
 				}
 			});
 		})();
-		require(['jquery', 'main'], function($){ });
+		require(['jquery', 'main', 'cssAlternatives'], function($){ });
 	</script>
 </head>
 <body>
