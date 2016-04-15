@@ -114,5 +114,23 @@
 		</div>
 	</div>
 
+	<script src="../../bower_components/requirejs/require.js"></script>
+	<script type="text/javascript">
+		(function () {
+			requirejs.config({
+				config: {
+					moment: {
+						noGlobal: true
+					}
+				},
+				paths: {
+					jquery: 'bower_components/jquery/dist/jquery',
+					cssAlternatives: 'examples/cssAlternatives',
+				}
+			});
+		})();
+		require(['jquery', 'cssAlternatives'], function($){ });
+	</script>
+
 </body>
 </html>

@@ -12,4 +12,5 @@ define(function (require) {
 		placement: 'right',
 		trigger: 'focus'
 	}).tooltip('show');*/
+
 });
