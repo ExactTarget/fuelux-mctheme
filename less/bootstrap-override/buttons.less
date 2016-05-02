@@ -105,7 +105,7 @@
 // Alternate buttons
 // --------------------------------------------------
 
-// .btn-secondary is only present for compatibility with bootstrap and MCtheme 
+// .btn-secondary is only present for compatibility with bootstrap and MCtheme
 // prior to v1.8.0. Please do not use .btn-secondary
 .btn-default, .btn-secondary {
 	.btn-default();
@@ -216,8 +216,23 @@ input[type="button"] {
 		font-size: 0;
 	}
 
+	label:active,
+	label:active:hover,
 	label.active,
-	label.active:hover {
+	label.active:hover,
+	label:focus,
+	label:focus:hover,
+	label.focus,
+	label.focus:hover,
+	label:focus.active,
+	label:focus.active:hover,
+	label.focus:active,
+	label.focus:active:hover,
+	label:focus:active,
+	label:focus:active:hover,
+	label.focus.active,
+	label.focus.active:hover
+   	{
 		background: none;
 		background-color: @brand-primary-medium; // light blue
 		color: @true-white;
