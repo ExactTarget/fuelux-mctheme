@@ -1,7 +1,8 @@
 /*!
- * Marketing Cloud Theme v1.15.2 
- * Copyright 2016 ExactTarget
- * Licensed under BSD-3-Clause (https://github.com/ExactTarget/fuelux-mctheme/blob/master/LICENSE)
+ * Marketing Cloud Theme EDGE - Built 2016/05/02, 2:39:42 PM 
+ * Previous release: v1.15.2 
+ * Copyright 2012-2016 ExactTarget
+ * Licensed under the  license ()
  */
 
 .clearfix,
@@ -4218,12 +4219,42 @@ input[type="button"].btn-block {
 .btn-group-check-toggle span {
   font-size: 0;
 }
-.btn-group-check-toggle label.active {
+.btn-group-check-toggle label:active,
+.btn-group-check-toggle label:active:hover,
+.btn-group-check-toggle label.active,
+.btn-group-check-toggle label.active:hover,
+.btn-group-check-toggle label:focus,
+.btn-group-check-toggle label:focus:hover,
+.btn-group-check-toggle label.focus,
+.btn-group-check-toggle label.focus:hover,
+.btn-group-check-toggle label:focus.active,
+.btn-group-check-toggle label:focus.active:hover,
+.btn-group-check-toggle label.focus:active,
+.btn-group-check-toggle label.focus:active:hover,
+.btn-group-check-toggle label:focus:active,
+.btn-group-check-toggle label:focus:active:hover,
+.btn-group-check-toggle label.focus.active,
+.btn-group-check-toggle label.focus.active:hover {
   background: none;
   background-color: #4E8ABE;
   color: #fff;
 }
-.btn-group-check-toggle label.active span {
+.btn-group-check-toggle label:active span,
+.btn-group-check-toggle label:active:hover span,
+.btn-group-check-toggle label.active span,
+.btn-group-check-toggle label.active:hover span,
+.btn-group-check-toggle label:focus span,
+.btn-group-check-toggle label:focus:hover span,
+.btn-group-check-toggle label.focus span,
+.btn-group-check-toggle label.focus:hover span,
+.btn-group-check-toggle label:focus.active span,
+.btn-group-check-toggle label:focus.active:hover span,
+.btn-group-check-toggle label.focus:active span,
+.btn-group-check-toggle label.focus:active:hover span,
+.btn-group-check-toggle label:focus:active span,
+.btn-group-check-toggle label:focus:active:hover span,
+.btn-group-check-toggle label.focus.active span,
+.btn-group-check-toggle label.focus.active:hover span {
   font-size: inherit;
   line-height: 8px;
 }
@@ -9679,7 +9710,8 @@ fieldset[disabled] .fuelux .repeater-pagination .repeater-prev.active {
   line-height: 1.56;
 }
 .fuelux .repeater[data-viewtype="list"] .repeater-canvas.multi-select-enabled .repeater-list thead tr:first-child .header-checkbox label {
-  left: 3px;
+  left: -1px;
+  top: -5px;
 }
 .fuelux .repeater[data-viewtype="list"] .repeater-canvas.multi-select-enabled .repeater-list tbody tr .body-checkbox {
   left: 3px;
