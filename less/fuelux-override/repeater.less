@@ -18,7 +18,7 @@
 				padding-left: 7px;
 			}
 		}
-		
+
 	}
 
 	&-footer {
@@ -70,6 +70,21 @@
 					display: none;
 				}
 			}
+
+			.fuelux-icon {
+				display: block;
+				left: 6px;
+				position: absolute;
+				top: 4px;
+				width: 8px;
+				height: 8px;
+				background-image: none;
+
+				&:before {
+					display: none;
+				}
+			}
+
 		}
 
 		.repeater-next {
@@ -78,10 +93,22 @@
 				border-style: solid none solid solid;
 				border-width: 4px medium 4px 4px;
 			}
+			.fuelux-icon {
+				border-color: transparent transparent transparent @brand-primary-medium;
+				border-style: solid none solid solid;
+				border-width: 4px medium 4px 4px;
+			}
 		}
 
 		.repeater-prev {
 			.glyphicon {
+				border-color: transparent @brand-primary-medium transparent transparent;
+				border-style: solid solid solid none;
+				border-width: 4px 4px 4px medium;
+				left: 2px;
+			}
+
+			.fuelux-icon {
 				border-color: transparent @brand-primary-medium transparent transparent;
 				border-style: solid solid solid none;
 				border-width: 4px 4px 4px medium;
