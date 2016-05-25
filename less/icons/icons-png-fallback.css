@@ -228,6 +228,8 @@
 
 .fuelux-icon-notification, .glyphicon-notification { background-image: url('png/notification.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
+.fuelux-icon-paper-plane, .glyphicon-paper-plane { background-image: url('png/paper-plane.png'); background-repeat: no-repeat; .fuelux-icon; } 
+
 .fuelux-icon-pencil-hover, .fuelux-icon-pencil:hover, button:hover > .fuelux-icon-pencil , .glyphicon-pencil-hover, .glyphicon-pencil:hover, button:hover > .glyphicon-pencil { background-image: url('png/pencil-hover.png'); background-repeat: no-repeat; .fuelux-icon; } 
 
 .fuelux-icon-pencil, .glyphicon-pencil { background-image: url('png/pencil.png'); background-repeat: no-repeat; .fuelux-icon; } 
