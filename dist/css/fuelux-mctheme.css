@@ -1,7 +1,8 @@
 /*!
- * Marketing Cloud Theme v1.15.5 
- * Copyright 2016 ExactTarget
- * Licensed under BSD-3-Clause (https://github.com/ExactTarget/fuelux-mctheme/blob/master/LICENSE)
+ * Marketing Cloud Theme EDGE - Built 2016/06/13, 1:57:41 PM 
+ * Previous release: v1.15.5 
+ * Copyright 2012-2016 ExactTarget
+ * Licensed under the  license ()
  */
 
 .clearfix,
@@ -1887,6 +1888,19 @@ button:hover > .glyphicon-help:before {
 }
 .fuelux-icon-paper-plane:before,
 .glyphicon-paper-plane:before {
+  content: "";
+}
+.fuelux-icon-pause,
+.glyphicon-pause {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%20standalone%3D%22no%22%3F%3E%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ctitle%3ERectangle%202%3C%2Ftitle%3E%3Cpath%20d%3D%22M18%202v16H2V2h16zM7%202h6v16H7V2z%22%20fill%3D%22%235876A3%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+.fuelux-icon-pause:before,
+.glyphicon-pause:before {
   content: "";
 }
 .fuelux-icon-pencil-hover,
