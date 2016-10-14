@@ -4,7 +4,7 @@
     "requirejs": "2.x",
     "bootstrap": "3.x",
     "moment": "2.x",
-    "fuelux": "3.x",
+    "fuelux": "3.15.8",
     "require-handlebars-plugin": "~1.0.0"
   },
   "devDependencies": {
