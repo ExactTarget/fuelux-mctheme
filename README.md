@@ -50,15 +50,11 @@ To work on the Marketing Cloud theme:
   ```
   npm install
   ```
-1. Run bower install:
-  ```
-  bower install
-  ```
 1. Start up the server:
   ```
-  grunt serve
+  npm start
   ```
-1. View output in browser [http://localhost:8000](http://localhost:8000)
+1. View output in browser [http://localhost:9000](http://localhost:9000)
 
 If you have changes you would like to contribute, please:
 
