@@ -1,1 +1,0 @@
-Deploys to http://fuelux-mctheme.herokuapp.com happen automatically on merge to master.
