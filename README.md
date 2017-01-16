@@ -6,15 +6,10 @@ This theme enables a first-class user experience for your applications that seam
 
 ## Table of contents
 
- * [Demos](#demos)
  * [Quick start](#quick-start)
  * [Bugs and feature requests](#bugs-and-feature-requests)
  * [Philosophy and authors](#philosophy-and-authors)
  * [Copyright and license](#copyright-and-license)
-
-## Demos
-
-View [demos of the Marketing Cloud Theme](http://fuelux-mctheme.herokuapp.com).
 
 ## Quick start
 1. Install [Fuel UX](https://getfuelux.com).
