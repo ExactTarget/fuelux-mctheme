@@ -1068,10 +1068,7 @@
       "category": "text-color",
       "cssProperties": [
         "color",
-        "fill",
-        "l",
-        "o",
-        "r"
+        "fill"
       ],
       "value": "rgb(255, 255, 255)",
       "comment": "Primary buttons that have a dark blue background.",
@@ -1082,10 +1079,7 @@
       "category": "text-color",
       "cssProperties": [
         "color",
-        "fill",
-        "l",
-        "o",
-        "r"
+        "fill"
       ],
       "value": "rgb(255, 255, 255)",
       "name": "colorTextButtonBrandHover"
@@ -1095,10 +1089,7 @@
       "category": "text-color",
       "cssProperties": [
         "color",
-        "fill",
-        "l",
-        "o",
-        "r"
+        "fill"
       ],
       "value": "rgb(255, 255, 255)",
       "name": "colorTextButtonBrandActive"
@@ -1108,10 +1099,7 @@
       "category": "text-color",
       "cssProperties": [
         "color",
-        "fill",
-        "l",
-        "o",
-        "r"
+        "fill"
       ],
       "value": "rgb(255, 255, 255)",
       "name": "colorTextButtonBrandDisabled"
@@ -1121,10 +1109,7 @@
       "category": "text-color",
       "cssProperties": [
         "color",
-        "fill",
-        "l",
-        "o",
-        "r"
+        "fill"
       ],
       "value": "rgb(78, 138, 190)",
       "comment": "Default buttons have a light blue-gray background.",
@@ -1135,10 +1120,7 @@
       "category": "text-color",
       "cssProperties": [
         "color",
-        "fill",
-        "l",
-        "o",
-        "r"
+        "fill"
       ],
       "value": "rgb(78, 138, 190)",
       "name": "colorTextButtonDefaultHover"
@@ -1148,10 +1130,7 @@
       "category": "text-color",
       "cssProperties": [
         "color",
-        "fill",
-        "l",
-        "o",
-        "r"
+        "fill"
       ],
       "value": "rgb(78, 138, 190)",
       "name": "colorTextButtonDefaultActive"
@@ -1161,10 +1140,7 @@
       "category": "text-color",
       "cssProperties": [
         "color",
-        "fill",
-        "l",
-        "o",
-        "r"
+        "fill"
       ],
       "value": "rgb(78, 138, 190)",
       "name": "colorTextButtonDefaultDisabled"
@@ -1190,10 +1166,7 @@
       "category": "text-color",
       "cssProperties": [
         "color",
-        "fill",
-        "l",
-        "o",
-        "r"
+        "fill"
       ],
       "value": "rgb(34, 34, 34)",
       "comment": "Top bar icon color",
@@ -1292,10 +1265,7 @@
       "category": "text-color",
       "cssProperties": [
         "color",
-        "fill",
-        "l",
-        "o",
-        "r"
+        "fill"
       ],
       "value": "rgb(152, 96, 0)",
       "comment": "Color for texts or icons that are related to warnings.",

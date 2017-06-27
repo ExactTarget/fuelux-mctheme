@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <color name="COLOR_BACKGROUND" category="background-color">#ffffffff</color>
-  <color name="COLOR_BACKGROUND_ALT" category="background-color">#fff5f5f5</color>
-  <color name="COLOR_BACKGROUND_ALT_2" category="background-color">#ffeeeeee</color>
-  <color name="COLOR_BACKGROUND_ALT_INVERSE" category="background-color">#ff385b6b</color>
-  <color name="COLOR_BACKGROUND_OVERLAY_INVERSE" category="background-color">#99222222</color>
-  <color name="COLOR_BACKGROUND_OVERLAY_CONTAINER" category="background-color">#ff888888</color>
-  <color name="COLOR_BACKGROUND_ROW_HOVER" category="background-color">#fff5f5f5</color>
-  <color name="COLOR_BACKGROUND_ROW_ACTIVE" category="background-color">#fff5f5f5</color>
-  <color name="COLOR_BACKGROUND_ROW_SELECTED" category="background-color">#ffd9eaf5</color>
-  <color name="COLOR_BACKGROUND_INVERSE" category="background-color">#ff385b6b</color>
-  <color name="COLOR_BACKGROUND_ANCHOR" category="background-color">#fff5f5f5</color>
+  <color name="COLOR_BACKGROUND_ALT" category="background-color">#f5f5f5ff</color>
+  <color name="COLOR_BACKGROUND_ALT_2" category="background-color">#eeeeeeff</color>
+  <color name="COLOR_BACKGROUND_ALT_INVERSE" category="background-color">#385b6bff</color>
+  <color name="COLOR_BACKGROUND_OVERLAY_INVERSE" category="background-color">#22222299</color>
+  <color name="COLOR_BACKGROUND_OVERLAY_CONTAINER" category="background-color">#888888ff</color>
+  <color name="COLOR_BACKGROUND_ROW_HOVER" category="background-color">#f5f5f5ff</color>
+  <color name="COLOR_BACKGROUND_ROW_ACTIVE" category="background-color">#f5f5f5ff</color>
+  <color name="COLOR_BACKGROUND_ROW_SELECTED" category="background-color">#d9eaf5ff</color>
+  <color name="COLOR_BACKGROUND_INVERSE" category="background-color">#385b6bff</color>
+  <color name="COLOR_BACKGROUND_ANCHOR" category="background-color">#f5f5f5ff</color>
   <color name="COLOR_BACKGROUND_BROWSER" category="background-color">#ffffffff</color>
-  <color name="COLOR_BACKGROUND_HIGHLIGHT" category="background-color">#ffb9dff1</color>
+  <color name="COLOR_BACKGROUND_HIGHLIGHT" category="background-color">#b9dff1ff</color>
   <color name="COLOR_BACKGROUND_MODAL" category="background-color">#ffffffff</color>
   <color name="COLOR_BACKGROUND_INPUT" category="background-color">#ffffffff</color>
   <color name="COLOR_BACKGROUND_INPUT_ACTIVE" category="background-color">#ffffffff</color>
-  <color name="COLOR_BACKGROUND_INPUT_DISABLED" category="background-color">#fff9f9f9</color>
+  <color name="COLOR_BACKGROUND_INPUT_DISABLED" category="background-color">#f9f9f9ff</color>
   <color name="COLOR_BACKGROUND_INPUT_SEARCH" category="background-color">#ffffffff</color>
-  <color name="COLOR_BACKGROUND_PILL" category="background-color">#ffeeeeee</color>
-  <color name="COLOR_BACKGROUND_ERROR" category="background-color">#fffceced</color>
-  <color name="COLOR_BACKGROUND_SUCCESS" category="background-color">#ffe9fcde</color>
-  <color name="COLOR_BACKGROUND_WARNING" category="background-color">#fffff1e1</color>
+  <color name="COLOR_BACKGROUND_PILL" category="background-color">#eeeeeeff</color>
+  <color name="COLOR_BACKGROUND_ERROR" category="background-color">#fcecedff</color>
+  <color name="COLOR_BACKGROUND_SUCCESS" category="background-color">#e9fcdeff</color>
+  <color name="COLOR_BACKGROUND_WARNING" category="background-color">#fff1e1ff</color>
   <property name="COLOR_BRAND" category="gradient">linear-gradient(to bottom, #66afe9, #4E8ABE)</property>
   <property name="COLOR_BRAND_DARK" category="gradient">linear-gradient(to bottom, #4E8ABE, #3074af)</property>
   <property name="COLOR_BACKGROUND_BUTTON_BRAND" category="gradient">linear-gradient(to bottom, #66afe9, #4E8ABE)</property>
@@ -45,23 +45,23 @@
   <property name="BORDER_RADIUS_LARGE" category="radius">8</property>
   <property name="BORDER_RADIUS_PILL" category="radius">240</property>
   <property name="BORDER_RADIUS_CIRCLE" category="radius">0.5</property>
-  <color name="COLOR_BORDER" category="border-color">#ffdddddd</color>
-  <color name="COLOR_BORDER_ERROR" category="border-color">#ffee6767</color>
-  <color name="COLOR_BORDER_SUCCESS" category="border-color">#ff4bca81</color>
-  <color name="COLOR_BORDER_WARNING" category="border-color">#ffffb55e</color>
-  <color name="COLOR_BORDER_TAB_SELECTED" category="border-color">#ffdddddd</color>
-  <color name="COLOR_BORDER_SEPARATOR" category="border-color">#ffdddddd</color>
-  <color name="COLOR_BORDER_ROW_SELECTED" category="border-color">#ffcccccc</color>
-  <color name="COLOR_BORDER_ROW_SELECTED_HOVER" category="border-color">#ffcccccc</color>
-  <color name="COLOR_BORDER_SELECTION" category="border-color">#ffcccccc</color>
-  <color name="COLOR_BORDER_SELECTION_HOVER" category="border-color">#ffcccccc</color>
-  <color name="COLOR_BORDER_SELECTION_ACTIVE" category="border-color">#ffcccccc</color>
+  <color name="COLOR_BORDER" category="border-color">#ddddddff</color>
+  <color name="COLOR_BORDER_ERROR" category="border-color">#ee6767ff</color>
+  <color name="COLOR_BORDER_SUCCESS" category="border-color">#4bca81ff</color>
+  <color name="COLOR_BORDER_WARNING" category="border-color">#ffb55eff</color>
+  <color name="COLOR_BORDER_TAB_SELECTED" category="border-color">#ddddddff</color>
+  <color name="COLOR_BORDER_SEPARATOR" category="border-color">#ddddddff</color>
+  <color name="COLOR_BORDER_ROW_SELECTED" category="border-color">#ccccccff</color>
+  <color name="COLOR_BORDER_ROW_SELECTED_HOVER" category="border-color">#ccccccff</color>
+  <color name="COLOR_BORDER_SELECTION" category="border-color">#ccccccff</color>
+  <color name="COLOR_BORDER_SELECTION_HOVER" category="border-color">#ccccccff</color>
+  <color name="COLOR_BORDER_SELECTION_ACTIVE" category="border-color">#ccccccff</color>
   <color name="COLOR_BORDER_BUTTON_BRAND" category="border-color">#ffffffff</color>
   <color name="COLOR_BORDER_BUTTON_BRAND_DISABLED" category="border-color">#ffffffff</color>
-  <color name="COLOR_BORDER_BUTTON_DEFAULT" category="border-color">#ffaaaaaa</color>
-  <color name="COLOR_BORDER_INPUT" category="border-color">#ffcccccc</color>
-  <color name="COLOR_BORDER_INPUT_FOCUS" category="border-color">#ff66afe9</color>
-  <color name="COLOR_BORDER_INPUT_DISABLED" category="border-color">#ffcccccc</color>
+  <color name="COLOR_BORDER_BUTTON_DEFAULT" category="border-color">#aaaaaaff</color>
+  <color name="COLOR_BORDER_INPUT" category="border-color">#ccccccff</color>
+  <color name="COLOR_BORDER_INPUT_FOCUS" category="border-color">#66afe9ff</color>
+  <color name="COLOR_BORDER_INPUT_DISABLED" category="border-color">#ccccccff</color>
   <property name="FONT_FAMILY" category="font">Arial, sans-serif</property>
   <property name="FONT_FAMILY_BODY" category="font">Arial, sans-serif</property>
   <property name="FONT_FAMILY_ALT" category="font">Georgia, Times New Roman, Times, serif</property>
@@ -88,24 +88,24 @@
   <color name="COLOR_TEXT_BUTTON_BRAND_HOVER" category="text-color">#ffffffff</color>
   <color name="COLOR_TEXT_BUTTON_BRAND_ACTIVE" category="text-color">#ffffffff</color>
   <color name="COLOR_TEXT_BUTTON_BRAND_DISABLED" category="text-color">#ffffffff</color>
-  <color name="COLOR_TEXT_BUTTON_DEFAULT" category="text-color">#ff4e8abe</color>
-  <color name="COLOR_TEXT_BUTTON_DEFAULT_HOVER" category="text-color">#ff4e8abe</color>
-  <color name="COLOR_TEXT_BUTTON_DEFAULT_ACTIVE" category="text-color">#ff4e8abe</color>
-  <color name="COLOR_TEXT_BUTTON_DEFAULT_DISABLED" category="text-color">#ff4e8abe</color>
-  <color name="COLOR_TEXT_ACTION_LABEL" category="text-color">#ff4e8abe</color>
-  <color name="COLOR_TEXT_ACTION_LABEL_ACTIVE" category="text-color">#ff4e8abe</color>
-  <color name="COLOR_TEXT_BROWSER" category="text-color">#ff222222</color>
-  <color name="COLOR_TEXT_DEFAULT" category="text-color">#ff222222</color>
-  <color name="COLOR_TEXT_ERROR" category="text-color">#ffc23934</color>
-  <color name="COLOR_TEXT_INPUT_DISABLED" category="text-color">#ff555555</color>
+  <color name="COLOR_TEXT_BUTTON_DEFAULT" category="text-color">#4e8abeff</color>
+  <color name="COLOR_TEXT_BUTTON_DEFAULT_HOVER" category="text-color">#4e8abeff</color>
+  <color name="COLOR_TEXT_BUTTON_DEFAULT_ACTIVE" category="text-color">#4e8abeff</color>
+  <color name="COLOR_TEXT_BUTTON_DEFAULT_DISABLED" category="text-color">#4e8abeff</color>
+  <color name="COLOR_TEXT_ACTION_LABEL" category="text-color">#4e8abeff</color>
+  <color name="COLOR_TEXT_ACTION_LABEL_ACTIVE" category="text-color">#4e8abeff</color>
+  <color name="COLOR_TEXT_BROWSER" category="text-color">#222222ff</color>
+  <color name="COLOR_TEXT_DEFAULT" category="text-color">#222222ff</color>
+  <color name="COLOR_TEXT_ERROR" category="text-color">#c23934ff</color>
+  <color name="COLOR_TEXT_INPUT_DISABLED" category="text-color">#555555ff</color>
   <color name="COLOR_TEXT_INVERSE" category="text-color">#ffffffff</color>
   <color name="COLOR_TEXT_INVERSE_ACTIVE" category="text-color">#ffffffff</color>
   <color name="COLOR_TEXT_INVERSE_HOVER" category="text-color">#ffffffff</color>
-  <color name="COLOR_TEXT_LINK" category="text-color">#ff3074af</color>
-  <color name="COLOR_TEXT_LINK_ACTIVE" category="text-color">#ff3074af</color>
-  <color name="COLOR_TEXT_LINK_DISABLED" category="text-color">#ff777777</color>
-  <color name="COLOR_TEXT_LINK_FOCUS" category="text-color">#ff3074af</color>
-  <color name="COLOR_TEXT_LINK_HOVER" category="text-color">#ff3074af</color>
-  <color name="COLOR_TEXT_WARNING" category="text-color">#ff986000</color>
-  <color name="COLOR_TEXT_WEAK" category="text-color">#ff757575</color>
+  <color name="COLOR_TEXT_LINK" category="text-color">#3074afff</color>
+  <color name="COLOR_TEXT_LINK_ACTIVE" category="text-color">#3074afff</color>
+  <color name="COLOR_TEXT_LINK_DISABLED" category="text-color">#777777ff</color>
+  <color name="COLOR_TEXT_LINK_FOCUS" category="text-color">#3074afff</color>
+  <color name="COLOR_TEXT_LINK_HOVER" category="text-color">#3074afff</color>
+  <color name="COLOR_TEXT_WARNING" category="text-color">#986000ff</color>
+  <color name="COLOR_TEXT_WEAK" category="text-color">#757575ff</color>
 </resources>
