@@ -1,0 +1,24 @@
+{
+  "global": {
+    "category": "icon-color",
+    "cssProperties": ["fill"],
+    "type": "color"
+  },
+  "imports": [
+    "./aliases.json"
+  ],
+  "props": {
+    "COLOR_TEXT_ICON_DEFAULT": {
+      "value": "{!BLUE_ROYALE}",
+      "comment": "Default icons have a blue color."
+    },
+    "COLOR_TEXT_ICON_UTILITY": {
+      "value": "{!GRAY_80}",
+      "comment": "Utility icons have a gray color."
+    },
+    "COLOR_TEXT_ICON_INVERSE": {
+      "value": "{!WHITE}",
+      "comment": "Inverse icon color for dark backgrounds."
+    }
+  }
+}
