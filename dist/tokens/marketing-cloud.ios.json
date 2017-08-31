@@ -769,6 +769,36 @@
       "name": "colorBorderInputDisabled"
     },
     {
+      "category": "icon-color",
+      "cssProperties": [
+        "fill"
+      ],
+      "type": "color",
+      "value": "rgb(48, 116, 175)",
+      "comment": "Default icons have a blue color.",
+      "name": "colorTextIconDefault"
+    },
+    {
+      "category": "icon-color",
+      "cssProperties": [
+        "fill"
+      ],
+      "type": "color",
+      "value": "rgb(204, 204, 204)",
+      "comment": "Utility icons have a gray color.",
+      "name": "colorTextIconUtility"
+    },
+    {
+      "category": "icon-color",
+      "cssProperties": [
+        "fill"
+      ],
+      "type": "color",
+      "value": "rgb(255, 255, 255)",
+      "comment": "Inverse icon color for dark backgrounds.",
+      "name": "colorTextIconInverse"
+    },
+    {
       "category": "font",
       "comment": "",
       "value": "Arial, sans-serif",

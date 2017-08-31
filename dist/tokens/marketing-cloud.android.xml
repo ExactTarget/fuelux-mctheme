@@ -62,6 +62,9 @@
   <color name="COLOR_BORDER_INPUT" category="border-color">#ccccccff</color>
   <color name="COLOR_BORDER_INPUT_FOCUS" category="border-color">#66afe9ff</color>
   <color name="COLOR_BORDER_INPUT_DISABLED" category="border-color">#ccccccff</color>
+  <color name="COLOR_TEXT_ICON_DEFAULT" category="icon-color">#3074afff</color>
+  <color name="COLOR_TEXT_ICON_UTILITY" category="icon-color">#ccccccff</color>
+  <color name="COLOR_TEXT_ICON_INVERSE" category="icon-color">#ffffffff</color>
   <property name="FONT_FAMILY" category="font">Arial, sans-serif</property>
   <property name="FONT_FAMILY_BODY" category="font">Arial, sans-serif</property>
   <property name="FONT_FAMILY_ALT" category="font">Georgia, Times New Roman, Times, serif</property>
