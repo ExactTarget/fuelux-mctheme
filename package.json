@@ -21,7 +21,7 @@
     "node": "4.4.2"
   },
   "scripts": {
-    "postinstall": "bower install",
+    "postinstall": "./node_modules/.bin/bower install",
     "start": "node www/server.js"
   },
   "dependencies": {
