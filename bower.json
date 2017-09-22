@@ -4,7 +4,7 @@
     "requirejs": "2.x",
     "bootstrap": "3.x",
     "moment": "2.x",
-    "fuelux": "3.15.11",
+    "fuelux": "3.16.1",
     "require-handlebars-plugin": "~1.0.0"
   },
   "devDependencies": {
@@ -40,5 +40,5 @@
     "dist/css/fuelux-mctheme.min.css"
   ],
   "name": "fuelux-mctheme",
-  "version": "1.15.7"
+  "version": "1.15.8"
 }
