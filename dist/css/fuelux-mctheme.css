@@ -1,7 +1,7 @@
 /*!
- * Marketing Cloud Theme EDGE - Built 2017/10/17, 3:50:29 PM 
- * Previous release: v1.15.9 
- * Copyright 2012-2017 ExactTarget
+ * Marketing Cloud Theme EDGE - Built 2018/02/21, 2:13:03 PM 
+ * Previous release: v1.15.10 
+ * Copyright 2012-2018 ExactTarget
  * Licensed under the  license ()
  */
 
@@ -4245,40 +4245,20 @@ input[type="button"].btn-block {
 .btn-group-check-toggle span {
   font-size: 0;
 }
-.btn-group-check-toggle label:active,
-.btn-group-check-toggle label:active:hover,
 .btn-group-check-toggle label.active,
 .btn-group-check-toggle label.active:hover,
-.btn-group-check-toggle label:focus,
-.btn-group-check-toggle label:focus:hover,
-.btn-group-check-toggle label.focus,
-.btn-group-check-toggle label.focus:hover,
 .btn-group-check-toggle label:focus.active,
 .btn-group-check-toggle label:focus.active:hover,
-.btn-group-check-toggle label.focus:active,
-.btn-group-check-toggle label.focus:active:hover,
-.btn-group-check-toggle label:focus:active,
-.btn-group-check-toggle label:focus:active:hover,
 .btn-group-check-toggle label.focus.active,
 .btn-group-check-toggle label.focus.active:hover {
   background: none;
   background-color: #4E8ABE;
   color: #fff;
 }
-.btn-group-check-toggle label:active span,
-.btn-group-check-toggle label:active:hover span,
 .btn-group-check-toggle label.active span,
 .btn-group-check-toggle label.active:hover span,
-.btn-group-check-toggle label:focus span,
-.btn-group-check-toggle label:focus:hover span,
-.btn-group-check-toggle label.focus span,
-.btn-group-check-toggle label.focus:hover span,
 .btn-group-check-toggle label:focus.active span,
 .btn-group-check-toggle label:focus.active:hover span,
-.btn-group-check-toggle label.focus:active span,
-.btn-group-check-toggle label.focus:active:hover span,
-.btn-group-check-toggle label:focus:active span,
-.btn-group-check-toggle label:focus:active:hover span,
 .btn-group-check-toggle label.focus.active span,
 .btn-group-check-toggle label.focus.active:hover span {
   font-size: inherit;
