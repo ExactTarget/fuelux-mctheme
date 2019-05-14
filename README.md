@@ -41,9 +41,9 @@ To work on the Marketing Cloud theme:
    ```
    git clone https://github.com/ExactTarget/fuelux-mctheme/
    ```
-1. Run npm install:
+1. Run npm setup:
   ```
-  npm install
+  npm run setup
   ```
 1. Start up the server:
   ```
